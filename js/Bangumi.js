@@ -21,6 +21,7 @@ var WidgetMetadata = {
     title: "Bangumi 热门榜单",
     description: "从Bangumi获取榜单，智能匹配TMDB数据",
     author: "Autism ",
+    site: "https://github.com/opix-maker/Forward", 
     version: "1.0.1",
     requiredVersion: "0.0.1",
     modules: [
