@@ -1,5 +1,5 @@
 name: Build Bangumi Widget Data
-
+# A small change to trigger detection
 on:
   workflow_dispatch: # 允许手动触发
   schedule:
