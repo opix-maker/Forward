@@ -13,26 +13,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          # 移除 cache: 'npm'，因为我们无法提供锁文件，所以禁用缓存功能以避免错误。
-          # 对于一个定时任务来说，每次多花几秒钟安装依赖是可以接受的。
+      # 我们不再需要 actions/setup-node。
+      # GitHub Actions的ubuntu-latest运行器已预装Node.js。
+      # 这将从根本上解决之前的锁文件错误。
 
-      - name: Install dependencies
-        run: |
-          # 动态创建 package.json 文件来定义依赖
-          echo '{ "dependencies": { "node-fetch": "^2.7.0", "cheerio": "^1.0.0-rc.12" } }' > package.json
-          # 运行 npm install 来安装定义的依赖
-          npm install
-
-      - name: Run data build script
+      - name: Install dependencies and Run Build Script
+        # 将安装和运行合并为一个步骤，使用系统自带的Node.js
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           BGM_USER_AGENT: ${{ secrets.BGM_USER_AGENT }}
-        # 直接用node运行脚本，因为我们没有复杂的构建流程
-        run: node build_data.js
+        run: |
+          # 1. 动态创建 package.json
+          echo '{ "dependencies": { "node-fetch": "^2.7.0", "cheerio": "^1.0.0-rc.12" } }' > package.json
+          
+          # 2. 安装依赖
+          npm install
+          
+          # 3. 运行构建脚本
+          node build_data.js
 
       - name: Commit and push if changed
         uses: stefanzweifel/git-auto-commit-action@v5
