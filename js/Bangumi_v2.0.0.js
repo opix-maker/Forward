@@ -5,6 +5,7 @@ const RECENT_DATA_URL = `${BASE_DATA_URL}/recent_data.json`;
 var WidgetMetadata = {
     id: "bangumi_charts_tmdb_v3",
     title: "Bangumi 热门榜单",
+    description: "从Bangumi获取近期热门、每日放送数据，支持榜单筛选，智能匹配TMDB数据。",
     version: "2.0.0-sharded",
     author: "Autism ",
     site: "https://github.com/opix-maker/Forward",
