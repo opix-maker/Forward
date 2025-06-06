@@ -1,14 +1,15 @@
 {
   "name": "bangumi-widget-builder",
   "version": "1.0.0",
-  "description": "Builds pre-computed data for the Bangumi Charts Widget",
+  "description": "Data builder for Bangumi Widget",
   "main": "build_data.js",
-  "type": "module",
   "scripts": {
     "build": "node build_data.js"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^2.7.0"
   }
 }
