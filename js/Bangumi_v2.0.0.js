@@ -1,13 +1,13 @@
 // --- 核心配置 ---
-const STATIC_DATA_URL = "https://raw.githubusercontent.com/opix-maker/Forward/refs/heads/main/precomputed_data.json"; // 
+const BASE_DATA_URL = "https://raw.githubusercontent.com/opix-maker/Forward/main"; 
+const RECENT_DATA_URL = `${BASE_DATA_URL}/recent_data.json`;
 
 var WidgetMetadata = {
     id: "bangumi_charts_tmdb_v3",
     title: "Bangumi 热门榜单",
-    description: "从Bangumi获取近期热门、每日放送数据，支持榜单筛选，智能匹配TMDB数据。",
+    version: "2.0.0-sharded",
     author: "Autism ",
     site: "https://github.com/opix-maker/Forward",
-    version: "2.0.0-static", 
     requiredVersion: "0.0.1",
     modules: [
         {
@@ -16,7 +16,7 @@ var WidgetMetadata = {
             requiresWebView: false,
             functionName: "fetchRecentHot",
             params: [
-                { name: "category", title: "分类", type: "enumeration", value: "anime", enumOptions: [ { title: "动画", value: "anime" }, { title: "三次元", value: "real" } ] },
+                { name: "category", title: "分类", type: "enumeration", value: "anime", enumOptions: [ { title: "动画", value: "anime" } ] },
                 { name: "page", title: "页码", type: "page", value: "1" }
             ]
         },
@@ -95,130 +95,129 @@ var WidgetMetadata = {
 
 
 // --- 全局数据管理 ---
-let globalPrecomputedData = null;
+let globalData = null;
 let dataFetchPromise = null;
 
 async function fetchAndCacheGlobalData() {
-    if (globalPrecomputedData) {
-        return globalPrecomputedData;
-    }
-    if (dataFetchPromise) {
-        return await dataFetchPromise;
-    }
+    if (globalData) return globalData;
+    if (dataFetchPromise) return await dataFetchPromise;
 
     dataFetchPromise = (async () => {
+        console.log(`[BGM Widget v10] 开始获取近期数据...`);
         try {
-            console.log(`[BGM Widget v7] 开始获取预构建数据: ${STATIC_DATA_URL}`);
-            const response = await Widget.http.get(STATIC_DATA_URL, {
-                headers: { 'Accept': 'application/json', 'Cache-Control': 'no-cache' }
-            });
-            if (!response || !response.data) {
-                throw new Error("预构建数据响应为空或无效");
-            }
-            globalPrecomputedData = response.data;
-            console.log(`[BGM Widget v7] 预构建数据获取成功，构建于: ${new Date(globalPrecomputedData.buildTimestamp).toLocaleString()}`);
-            return globalPrecomputedData;
-        } catch (error) {
-            console.error(`[BGM Widget v7] 获取预构建数据失败:`, error.message);
-            dataFetchPromise = null; // 允许重试
-            throw error; // 向上抛出错误
+            const response = await Widget.http.get(RECENT_DATA_URL, { headers: { 'Cache-Control': 'no-cache' } });
+            globalData = response.data;
+            globalData.dynamic = {}; // 用于缓存在线获取的数据
+            globalData.loadedArchives = {}; // 用于跟踪已加载的存档年份
+            console.log(`[BGM Widget v10] 近期数据初始化完成。`);
+            return globalData;
+        } catch (e) {
+            console.error("[BGM Widget v10] 获取近期数据失败! 将完全回退到动态模式。", e.message);
+            globalData = { airtimeRanking: {}, recentHot: {}, dailyCalendar: {}, dynamic: {}, loadedArchives: {} };
+            return globalData;
         }
     })();
 
     return await dataFetchPromise;
 }
 
-
-// --- 模块实现 (纯数据过滤) ---
+// --- 模块实现 ---
 
 async function fetchRecentHot(params = {}) {
-    const data = await fetchAndCacheGlobalData();
-    if (!data || !data.recentHot) return [];
-
-    const category = params.category || "anime";
+    await fetchAndCacheGlobalData();
+    const category = "anime";
     const page = parseInt(params.page || "1", 10);
-
-    // 假设 precomputed_data.json 结构为: { recentHot: { anime: [ [page1_items], [page2_items] ], real: [...] } }
-    const pages = data.recentHot[category] || [];
+    const pages = globalData.recentHot?.[category] || [];
     return pages[page - 1] || [];
 }
 
 async function fetchAirtimeRanking(params = {}) {
-    const data = await fetchAndCacheGlobalData();
-    if (!data || !data.airtimeRanking) return [];
-
+    await fetchAndCacheGlobalData();
     const category = params.category || "anime";
     const year = params.year || "2025";
     const month = params.month || "all";
     const sort = params.sort || "collects";
     const page = parseInt(params.page || "1", 10);
 
-    // 假设 precomputed_data.json 结构为: { airtimeRanking: { anime: { "2025": { "all": { "collects": [ [page1_items], ... ] } } } } }
-    try {
-        const pages = data.airtimeRanking[category][year][month][sort] || [];
-        return pages[page - 1] || [];
-    } catch (e) {
-        console.warn(`[BGM Widget v7] 在预构建数据中未找到路径: ${category}.${year}.${month}.${sort}`);
-        return [];
+    const isArchiveYear = !globalData.airtimeRanking[category]?.[year];
+    if (isArchiveYear && !globalData.loadedArchives[year]) {
+        console.log(`[BGM Widget v10] 检测到存档年份请求: ${year}。开始按需加载...`);
+        try {
+            const archiveUrl = `${BASE_DATA_URL}/archive/${year}.json`;
+            const response = await Widget.http.get(archiveUrl, { headers: { 'Cache-Control': 'no-cache' } });
+            const archiveYearData = response.data;
+            if (!globalData.airtimeRanking[category]) globalData.airtimeRanking[category] = {};
+            globalData.airtimeRanking[category][year] = archiveYearData.airtimeRanking[category][year];
+            globalData.loadedArchives[year] = true;
+            console.log(`[BGM Widget v10] 存档年份 ${year} 加载并合并成功。`);
+        } catch (e) {
+            console.warn(`[BGM Widget v10] 按需加载存档 ${year} 失败: ${e.message}. 将回退到动态获取。`);
+            globalData.loadedArchives[year] = 'failed';
+        }
     }
+
+    try {
+        const pages = globalData.airtimeRanking[category][year][month][sort];
+        if (pages && pages[page - 1]) {
+            console.log(`[BGM Widget v10] 命中预构建数据: ${year}-${sort}-p${page}`);
+            return pages[page - 1];
+        }
+    } catch (e) {}
+
+    const dynamicKey = `airtime-${category}-${year}-${month}-${sort}-${page}`;
+    if (globalData.dynamic[dynamicKey]) {
+        console.log(`[BGM Widget v10] 命中动态缓存: ${year}-${sort}-p${page}`);
+        return globalData.dynamic[dynamicKey];
+    }
+    console.log(`[BGM Widget v10] 未命中，启动动态获取: ${year}-${sort}-p${page}`);
+    let url = `https://bgm.tv/${category}/browser/airtime/${year}/${month}?sort=${sort}&page=${page}`;
+    const results = await DynamicDataProcessor.processBangumiPage(url, category);
+    globalData.dynamic[dynamicKey] = results;
+    return results;
 }
 
 async function fetchDailyCalendarApi(params = {}) {
-    const data = await fetchAndCacheGlobalData();
-    if (!data || !data.dailyCalendar) return [];
+    await fetchAndCacheGlobalData();
+    
+    let items = globalData.dailyCalendar?.all_week || [];
+    if (items.length === 0) {
+        console.log("[BGM Widget v10] 每日放送无预构建数据，尝试动态获取...");
+        items = await DynamicDataProcessor.processDailyCalendar();
+        if(!globalData.dailyCalendar) globalData.dailyCalendar = {};
+        globalData.dailyCalendar.all_week = items;
+    }
 
-    const filterType = params.filterType || "today";
-    const specificWeekday = params.specificWeekday || "1";
-    const sortOrder = params.dailySortOrder || "popularity_rat_bgm";
-    const regionFilter = params.dailyRegionFilter || "all";
-
-    // 假设 precomputed_data.json 结构为: { dailyCalendar: { all_week: [item1, item2], ... } }
-    // 筛选和排序逻辑在客户端执行，以保持UI的灵活性
+    const { filterType = "today", specificWeekday = "1", dailySortOrder = "popularity_rat_bgm", dailyRegionFilter = "all" } = params;
     
     const JS_DAY_TO_BGM_API_ID = { 0: 7, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 };
     const REGION_FILTER_US_EU_COUNTRIES = ["US", "GB", "FR", "DE", "CA", "AU", "ES", "IT"];
     
-    let items = data.dailyCalendar.all_week || [];
-
-    // 1. 按星期筛选
     let filteredByDay = [];
     if (filterType === "all_week") {
         filteredByDay = items;
     } else {
         const today = new Date();
-        const currentJsDay = today.getDay(); // 0 for Sunday, 1 for Monday...
-        
+        const currentJsDay = today.getDay();
         const targetBgmIds = new Set();
         switch (filterType) {
-            case "today":
-                targetBgmIds.add(JS_DAY_TO_BGM_API_ID[currentJsDay]);
-                break;
-            case "specific_day":
-                targetBgmIds.add(parseInt(specificWeekday, 10));
-                break;
-            case "mon_thu":
-                [1, 2, 3, 4].forEach(id => targetBgmIds.add(id));
-                break;
-            case "fri_sun":
-                [5, 6, 7].forEach(id => targetBgmIds.add(id));
-                break;
+            case "today": targetBgmIds.add(JS_DAY_TO_BGM_API_ID[currentJsDay]); break;
+            case "specific_day": targetBgmIds.add(parseInt(specificWeekday, 10)); break;
+            case "mon_thu": [1, 2, 3, 4].forEach(id => targetBgmIds.add(id)); break;
+            case "fri_sun": [5, 6, 7].forEach(id => targetBgmIds.add(id)); break;
         }
-        filteredByDay = items.filter(item => targetBgmIds.has(item.bgm_weekday_id));
+        filteredByDay = items.filter(item => item.bgm_weekday_id && targetBgmIds.has(item.bgm_weekday_id));
     }
 
-    // 2. 按地区筛选
     let filteredByRegion = filteredByDay;
-    if (regionFilter !== "all") {
+    if (dailyRegionFilter !== "all") {
         filteredByRegion = filteredByDay.filter(item => {
-            if (item.type !== "tmdb" || !item.tmdb_id) {
-                return regionFilter === "OTHER"; // BGM原生条目归为其他
-            }
+            if (item.type !== "tmdb" || !item.tmdb_id) return dailyRegionFilter === "OTHER";
             const countries = item.tmdb_origin_countries || [];
-            if (countries.length === 0) return regionFilter === "OTHER";
-            if (regionFilter === "JP") return countries.includes("JP");
-            if (regionFilter === "CN") return countries.includes("CN");
-            if (regionFilter === "US_EU") return countries.some(c => REGION_FILTER_US_EU_COUNTRIES.includes(c));
-            if (regionFilter === "OTHER") {
+            if (countries.length === 0) return dailyRegionFilter === "OTHER";
+            if (dailyRegionFilter === "JP") return countries.includes("JP");
+            if (dailyRegionFilter === "CN") return countries.includes("CN");
+            if (dailyRegionFilter === "US_EU") return countries.some(c => REGION_FILTER_US_EU_COUNTRIES.includes(c));
+            if (dailyRegionFilter === "OTHER") {
                 const isJPCNUSEU = countries.includes("JP") || countries.includes("CN") || countries.some(c => REGION_FILTER_US_EU_COUNTRIES.includes(c));
                 return !isJPCNUSEU;
             }
@@ -226,13 +225,12 @@ async function fetchDailyCalendarApi(params = {}) {
         });
     }
 
-    // 3. 排序
-    let sortedResults = filteredByRegion;
-    if (sortOrder !== "default") {
+    let sortedResults = [...filteredByRegion];
+    if (dailySortOrder !== "default") {
         sortedResults.sort((a, b) => {
-            if (sortOrder === "popularity_rat_bgm") return (b.bgm_rating_total || 0) - (a.bgm_rating_total || 0);
-            if (sortOrder === "score_bgm_desc") return (b.bgm_score || 0) - (a.bgm_score || 0);
-            if (sortOrder === "airdate_desc") {
+            if (dailySortOrder === "popularity_rat_bgm") return (b.bgm_rating_total || 0) - (a.bgm_rating_total || 0);
+            if (dailySortOrder === "score_bgm_desc") return (b.bgm_score || 0) - (a.bgm_score || 0);
+            if (dailySortOrder === "airdate_desc") {
                 const dateA = a.releaseDate || a.bgm_air_date || 0;
                 const dateB = b.releaseDate || b.bgm_air_date || 0;
                 return new Date(dateB).getTime() - new Date(dateA).getTime();
@@ -243,3 +241,160 @@ async function fetchDailyCalendarApi(params = {}) {
     
     return sortedResults;
 }
+
+
+// --- 动态数据处理器 (备用引擎) ---
+const DynamicDataProcessor = (() => {
+    const BGM_BASE_URL = "https://bgm.tv";
+    const TMDB_ANIMATION_GENRE_ID = 16;
+    const MAX_CONCURRENT_DETAILS_FETCH = 8;
+
+    function normalizeTmdbQuery(query) { if (!query || typeof query !== 'string') return ""; return query.toLowerCase().trim().replace(/[\[\]【】（）()「」『』:：\-－_,\.・]/g, ' ').replace(/\s+/g, ' ').trim();}
+    function parseDate(dateStr) { if (!dateStr || typeof dateStr !== 'string') return ''; dateStr = dateStr.trim(); let match; match = dateStr.match(/^(\d{4})年(\d{1,2})月(\d{1,2})日/); if (match) return `${match[1]}-${String(match[2]).padStart(2, '0')}-${String(match[3]).padStart(2, '0')}`; match = dateStr.match(/^(\d{4})年(\d{1,2})月(?!日)/); if (match) return `${match[1]}-${String(match[2]).padStart(2, '0')}-01`; match = dateStr.match(/^(\d{4})$/); if (match) return `${match[1]}-01-01`; return '';}
+
+    function scoreTmdbResult(result, query, validYear) {
+        let score = 0;
+        const resultTitle = normalizeTmdbQuery(result.title || result.name);
+        const queryLower = normalizeTmdbQuery(query);
+        if (resultTitle === queryLower) score += 15;
+        else if (resultTitle.includes(queryLower)) score += 7;
+        if (validYear) {
+            const resDate = result.release_date || result.first_air_date;
+            if (resDate && resDate.startsWith(validYear)) score += 6;
+        }
+        score += Math.log10((result.popularity || 0) + 1) * 2.2;
+        return score;
+    }
+
+    async function searchTmdb(originalTitle, chineseTitle, year) {
+        let bestMatch = null;
+        let maxScore = -1;
+        const searchMediaType = 'tv';
+        const query = chineseTitle || originalTitle;
+        const response = await Widget.tmdb.get(`/search/${searchMediaType}`, { params: { query, language: "zh-CN", include_adult: false, year: year } });
+        const results = response?.results || [];
+        for (const result of results) {
+            if (!(result.genre_ids && result.genre_ids.includes(TMDB_ANIMATION_GENRE_ID))) continue;
+            const score = scoreTmdbResult(result, query, year);
+            if (score > maxScore) {
+                maxScore = score;
+                bestMatch = result;
+            }
+        }
+        return bestMatch;
+    }
+
+    function parseBangumiListItems(htmlContent) {
+        const $ = Widget.html.load(htmlContent);
+        const items = [];
+        $('ul#browserItemList li.item').each((_, element) => {
+            const $item = $(element);
+            const id = $item.attr('id')?.substring(5);
+            if (!id) return;
+            const title = $item.find('h3 a.l').text().trim();
+            let cover = $item.find('a.subjectCover img.cover').attr('src');
+            if (cover?.startsWith('//')) cover = 'https:' + cover;
+            const info = $item.find('p.info.tip').text().trim();
+            const rating = $item.find('small.fade').text().trim();
+            items.push({ id, title, cover, info, rating });
+        });
+        return items;
+    }
+
+    async function fetchItemDetails(item, category) {
+        const yearMatch = item.info.match(/(\d{4})/);
+        const year = yearMatch ? yearMatch[1] : '';
+        const baseItem = {
+            id: item.id, type: "link", title: item.title,
+            posterPath: item.cover, releaseDate: parseDate(item.info),
+            mediaType: category, rating: item.rating,
+            description: item.info, link: `${BGM_BASE_URL}/subject/${item.id}`
+        };
+        const tmdbResult = await searchTmdb(item.title, null, year);
+        if (tmdbResult) {
+            baseItem.id = String(tmdbResult.id);
+            baseItem.type = "tmdb";
+            baseItem.title = tmdbResult.name || tmdbResult.title || baseItem.title;
+            baseItem.posterPath = tmdbResult.poster_path ? `https://image.tmdb.org/t/p/w500${tmdbResult.poster_path}` : baseItem.posterPath;
+            baseItem.releaseDate = tmdbResult.first_air_date || tmdbResult.release_date || baseItem.releaseDate;
+            baseItem.rating = tmdbResult.vote_average ? tmdbResult.vote_average.toFixed(1) : baseItem.rating;
+            baseItem.description = tmdbResult.overview || baseItem.description;
+            baseItem.link = null;
+            baseItem.tmdb_id = String(tmdbResult.id);
+            baseItem.tmdb_origin_countries = tmdbResult.origin_country || [];
+        }
+        return baseItem;
+    }
+
+    async function processBangumiPage(url, category) {
+        try {
+            const listHtmlResp = await Widget.http.get(url);
+            const pendingItems = parseBangumiListItems(listHtmlResp.data);
+            const results = [];
+            for (let i = 0; i < pendingItems.length; i += MAX_CONCURRENT_DETAILS_FETCH) {
+                const batch = pendingItems.slice(i, i + MAX_CONCURRENT_DETAILS_FETCH);
+                const promises = batch.map(item => fetchItemDetails(item, category));
+                const settled = await Promise.allSettled(promises);
+                settled.forEach(res => {
+                    if (res.status === 'fulfilled' && res.value) results.push(res.value);
+                });
+            }
+            return results;
+        } catch (error) {
+            console.error(`[BGM Widget v10] 动态处理页面失败 (${url}): ${error.message}`);
+            return [];
+        }
+    }
+
+    async function processDailyCalendar() {
+        try {
+            const apiResponse = await Widget.http.get("https://api.bgm.tv/calendar");
+            const allItems = [];
+            apiResponse.data.forEach(dayData => {
+                if (dayData.items) {
+                    dayData.items.forEach(item => {
+                        item.bgm_weekday_id = dayData.weekday?.id;
+                        allItems.push(item);
+                    });
+                }
+            });
+            const enhancedItems = [];
+            for (let i = 0; i < allItems.length; i += MAX_CONCURRENT_DETAILS_FETCH) {
+                const batch = allItems.slice(i, i + MAX_CONCURRENT_DETAILS_FETCH);
+                const promises = batch.map(async (item) => {
+                    const baseItem = {
+                        id: String(item.id), type: "link", title: item.name_cn || item.name,
+                        posterPath: item.images?.large?.startsWith('//') ? 'https:' + item.images.large : item.images?.large,
+                        releaseDate: item.air_date, mediaType: 'anime', rating: item.rating?.score?.toFixed(1) || "N/A",
+                        description: `[${item.weekday?.cn || ''}] ${item.summary || ''}`.trim(),
+                        link: item.url, bgm_id: String(item.id), bgm_score: item.rating?.score || 0,
+                        bgm_rating_total: item.rating?.total || 0, bgm_weekday_id: item.bgm_weekday_id
+                    };
+                    const tmdbResult = await searchTmdb(item.name, item.name_cn, item.air_date?.substring(0, 4));
+                    if (tmdbResult) {
+                        baseItem.id = String(tmdbResult.id);
+                        baseItem.type = "tmdb";
+                        baseItem.title = tmdbResult.name || tmdbResult.title || baseItem.title;
+                        baseItem.posterPath = tmdbResult.poster_path ? `https://image.tmdb.org/t/p/w500${tmdbResult.poster_path}` : baseItem.posterPath;
+                        baseItem.releaseDate = tmdbResult.first_air_date || tmdbResult.release_date || baseItem.releaseDate;
+                        baseItem.rating = tmdbResult.vote_average ? tmdbResult.vote_average.toFixed(1) : baseItem.rating;
+                        baseItem.description = tmdbResult.overview || baseItem.description;
+                        baseItem.link = null;
+                        baseItem.tmdb_id = String(tmdbResult.id);
+                        baseItem.tmdb_origin_countries = tmdbResult.origin_country || [];
+                    }
+                    return baseItem;
+                });
+                const settled = await Promise.allSettled(promises);
+                settled.forEach(res => {
+                    if (res.status === 'fulfilled' && res.value) enhancedItems.push(res.value);
+                });
+            }
+            return enhancedItems;
+        } catch (error) {
+            console.error(`[BGM Widget v10] 动态处理每日放送失败: ${error.message}`);
+            return [];
+        }
+    }
+    return { processBangumiPage, processDailyCalendar };
+})();
