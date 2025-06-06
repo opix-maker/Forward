@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: '0 */6 * * *' # 每6小时运行一次
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,12 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 我们不再需要 actions/setup-node。
-      # GitHub Actions的ubuntu-latest运行器已预装Node.js。
-      # 这将从根本上解决之前的锁文件错误。
-
       - name: Install dependencies and Run Build Script
-        # 将安装和运行合并为一个步骤，使用系统自带的Node.js
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           BGM_USER_AGENT: ${{ secrets.BGM_USER_AGENT }}
