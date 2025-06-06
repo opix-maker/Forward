@@ -1,6 +1,6 @@
 /*
  * =================================================================================================
- *   Bangumi Charts Widget - DATA BUILD SCRIPT
+ *   Bangumi Charts Widget - DATA BUILD SCRIPT (v1.0)
  * =================================================================================================
  *
  *   职责:
@@ -16,16 +16,10 @@
  */
 
 const fs = require('fs').promises;
-
-// 动态导入 node-fetch
-let fetch;
-import('node-fetch').then(module => {
-    fetch = module.default;
-    main(); // 导入后执行主函数
-});
+const fetch = require('node-fetch');
+const cheerio = require('cheerio');
 
 // --- 核心配置 ---
-// 注意：这些配置现在是为构建脚本服务的，可以设置得更激进，因为它们在服务器上运行。
 const WidgetConfig = {
     MAX_CONCURRENT_DETAILS_FETCH: 32,
     MAX_CONCURRENT_TMDB_SEARCHES: 16,
@@ -35,17 +29,17 @@ const WidgetConfig = {
     TMDB_SEARCH_MIN_SCORE_THRESHOLD: 6,
     MAX_TOTAL_TMDB_QUERIES_TO_PROCESS: 4,
     TMDB_ANIMATION_GENRE_ID: 16,
-    // 从环境变量中获取敏感信息
     TMDB_API_KEY: process.env.TMDB_API_KEY,
-    BGM_API_USER_AGENT: process.env.BGM_USER_AGENT || `Bangumi-Data-Builder/1.0 (https://github.com/opix-maker/Forward)`
+    BGM_API_USER_AGENT: process.env.BGM_USER_AGENT || `Bangumi-Data-Builder/1.0`
 };
 
-// --- 实用工具 (从旧脚本迁移并适配Node.js) ---
+const CONSTANTS = {
+    MEDIA_TYPES: { TV: "tv", MOVIE: "movie", ANIME: "anime", REAL: "real" },
+    BGM_API_TYPE_MAPPING: { 2: "anime", 6: "real" },
+};
 
-// 简单的HTML加载器和选择器 (用于替代Widget.html.load)
-const cheerio = require('cheerio');
+// --- HTTP & API 工具 ---
 
-// 简单的HTTP客户端 (用于替代Widget.http/tmdb)
 async function http_get(url, options = {}) {
     const response = await fetch(url, {
         method: 'GET',
@@ -54,7 +48,6 @@ async function http_get(url, options = {}) {
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status} for ${url}`);
     }
-    // 检查是否是JSON响应
     const contentType = response.headers.get("content-type");
     if (contentType && contentType.includes("application/json")) {
         return { data: await response.json() };
@@ -73,31 +66,17 @@ async function tmdb_get(path, options = {}) {
     if (!response.ok) {
         throw new Error(`TMDB API error! status: ${response.status} for ${url}`);
     }
-    return await response.json();
+    return response.json();
 }
 
-
-// --- 所有数据处理函数 (从旧脚本迁移并适配Node.js) ---
-// ... (这里将粘贴之前版本的所有数据处理函数，如 fetchWithRetry, searchTmdb, parseBangumiListItems, fetchItemDetails 等)
-// 为了简洁，我将直接提供完整的、适配后的函数代码。
-
-const CONSTANTS = {
-    MEDIA_TYPES: { TV: "tv", MOVIE: "movie", ANIME: "anime", REAL: "real" },
-    BGM_API_TYPE_MAPPING: { 2: "anime", 6: "real" },
-    JS_DAY_TO_BGM_API_ID: { 0: 7, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
-};
-
-async function fetchWithRetry(url, options, method = 'get', isTmdb = false, customRetries) {
+async function fetchWithRetry(fetchFn, ...args) {
     let attempts = 0;
-    const maxRetries = customRetries !== undefined ? customRetries : WidgetConfig.HTTP_MAIN_RETRIES;
+    const maxRetries = WidgetConfig.HTTP_MAIN_RETRIES;
     const retryDelay = WidgetConfig.HTTP_RETRY_DELAY;
     while (attempts <= maxRetries) {
         try {
-            if (attempts > 0) console.log(`  Retrying (${attempts}/${maxRetries}): ${url.substring(0, 90)}...`);
-            const api = isTmdb ? tmdb_get : http_get;
-            const response = await api(url, options);
-            if (isTmdb) return response; // tmdb_get 直接返回JSON
-            return response; // http_get 返回 { data: ... }
+            if (attempts > 0) console.log(`  Retrying (${attempts}/${maxRetries})...`);
+            return await fetchFn(...args);
         } catch (error) {
             attempts++;
             console.warn(`  Fetch error on attempt ${attempts}: ${error.message}`);
@@ -106,6 +85,8 @@ async function fetchWithRetry(url, options, method = 'get', isTmdb = false, cust
         }
     }
 }
+
+// --- 数据处理与解析工具 ---
 
 function normalizeTmdbQuery(query) { if (!query || typeof query !== 'string') return ""; return query.toLowerCase().trim().replace(/[\[\]【】（）()「」『』:：\-－_,\.・]/g, ' ').replace(/\s+/g, ' ').trim();}
 function parseDate(dateStr) { if (!dateStr || typeof dateStr !== 'string') return ''; dateStr = dateStr.trim(); let match; match = dateStr.match(/^(\d{4})年(\d{1,2})月(\d{1,2})日/); if (match) return `${match[1]}-${String(match[2]).padStart(2, '0')}-${String(match[3]).padStart(2, '0')}`; match = dateStr.match(/^(\d{4})年(\d{1,2})月(?!日)/); if (match) return `${match[1]}-${String(match[2]).padStart(2, '0')}-01`; match = dateStr.match(/^(\d{4})年(冬|春|夏|秋)/); if (match) { let m = '01'; if (match[2] === '春') m = '04'; else if (match[2] === '夏') m = '07'; else if (match[2] === '秋') m = '10'; return `${match[1]}-${m}-01`; } match = dateStr.match(/^(\d{4})年(?![\d月春夏秋冬])/); if (match) return `${match[1]}-01-01`; match = dateStr.match(/^(\d{4})[-/](\d{1,2})[-/](\d{1,2})/); if (match) return `${match[1]}-${String(match[2]).padStart(2, '0')}-${String(match[3]).padStart(2, '0')}`; match = dateStr.match(/^(\d{4})[-/](\d{1,2})(?!.*[-/])/); if (match) return `${match[1]}-${String(match[2]).padStart(2, '0')}-01`; match = dateStr.match(/^(\d{4})$/); if (match) return `${match[1]}-01-01`; return '';}
@@ -187,12 +168,13 @@ async function searchTmdb(originalTitle, chineseTitle, listTitle, searchMediaTyp
 
     const queryPromises = queriesToProcess.flatMap(query => {
         const tasks = [];
-        tasks.push(async () => ({ response: await tmdb_get(`/search/${searchMediaType}`, { params: { query, language: "zh-CN", include_adult: false } }), query }));
+        const params = { query, language: "zh-CN", include_adult: false };
+        tasks.push(async () => ({ response: await fetchWithRetry(tmdb_get, `/search/${searchMediaType}`, { params }), query }));
         if (validYear) {
-            const params = { query, language: "zh-CN", include_adult: false };
-            if (searchMediaType === CONSTANTS.MEDIA_TYPES.TV) params.first_air_date_year = validYear;
-            else params.primary_release_year = validYear;
-            tasks.push(async () => ({ response: await tmdb_get(`/search/${searchMediaType}`, { params }), query }));
+            const yearParams = { ...params };
+            if (searchMediaType === CONSTANTS.MEDIA_TYPES.TV) yearParams.first_air_date_year = validYear;
+            else yearParams.primary_release_year = validYear;
+            tasks.push(async () => ({ response: await fetchWithRetry(tmdb_get, `/search/${searchMediaType}`, { params: yearParams }), query }));
         }
         return tasks;
     });
@@ -246,14 +228,14 @@ async function integrateTmdbDataToItem(baseItem, tmdbResult, tmdbSearchType) {
     baseItem.mediaType = tmdbSearchType;
     baseItem.tmdb_id = String(tmdbResult.id);
     baseItem.title = (tmdbResult.title || tmdbResult.name || baseItem.title).trim();
-    baseItem.posterPath = tmdbResult.poster_path || baseItem.posterPath;
-    baseItem.backdropPath = tmdbResult.backdrop_path || '';
+    baseItem.posterPath = tmdbResult.poster_path ? `https://image.tmdb.org/t/p/w500${tmdbResult.poster_path}` : baseItem.posterPath;
+    baseItem.backdropPath = tmdbResult.backdrop_path ? `https://image.tmdb.org/t/p/w780${tmdbResult.backdrop_path}` : '';
     baseItem.releaseDate = parseDate(tmdbResult.release_date || tmdbResult.first_air_date) || baseItem.releaseDate;
     baseItem.rating = tmdbResult.vote_average ? tmdbResult.vote_average.toFixed(1) : baseItem.rating;
     baseItem.description = tmdbResult.overview || baseItem.description;
     baseItem.tmdb_origin_countries = tmdbResult.origin_country || [];
     baseItem.tmdb_vote_count = tmdbResult.vote_count;
-    baseItem.link = null; // Link becomes irrelevant once it's a TMDB item
+    baseItem.link = null;
 }
 
 async function fetchItemDetails(pendingItem, categoryHint) {
@@ -286,7 +268,7 @@ async function fetchItemDetails(pendingItem, categoryHint) {
 
 async function processBangumiPage(url, categoryHint) {
     console.log(`  Fetching list page: ${url}`);
-    const listHtmlResp = await fetchWithRetry(url, { headers: { "User-Agent": WidgetConfig.BGM_API_USER_AGENT } }, 'get', false);
+    const listHtmlResp = await fetchWithRetry(http_get, url, { headers: { "User-Agent": WidgetConfig.BGM_API_USER_AGENT } });
     if (!listHtmlResp?.data) throw new Error("List page response empty");
     const pendingItems = parseBangumiListItems(listHtmlResp.data);
     console.log(`  Parsed ${pendingItems.length} items. Processing details...`);
@@ -336,7 +318,7 @@ async function buildAirtimeRanking(category, year, month, sort, totalPages) {
 async function buildDailyCalendar() {
     console.log("Building Daily Calendar data...");
     const apiUrl = `https://api.bgm.tv/calendar`;
-    const apiResponse = await http_get(apiUrl, { headers: { "User-Agent": WidgetConfig.BGM_API_USER_AGENT } });
+    const apiResponse = await fetchWithRetry(http_get, apiUrl, { headers: { "User-Agent": WidgetConfig.BGM_API_USER_AGENT } });
     if (!Array.isArray(apiResponse.data)) throw new Error("Calendar API response not an array");
 
     const allItems = [];
@@ -382,7 +364,6 @@ async function buildDailyCalendar() {
     return enhancedItems;
 }
 
-
 // --- 主执行函数 ---
 async function main() {
     if (!WidgetConfig.TMDB_API_KEY) {
@@ -398,30 +379,34 @@ async function main() {
         dailyCalendar: {}
     };
 
-    // --- 定义构建任务 ---
-    console.log("\n[1/3] Building Recent Hot...");
-    finalData.recentHot.anime = await buildRecentHot('anime', 5);
-    finalData.recentHot.real = await buildRecentHot('real', 2);
+    try {
+        console.log("\n[1/3] Building Recent Hot...");
+        finalData.recentHot.anime = await buildRecentHot('anime', 5);
+        finalData.recentHot.real = await buildRecentHot('real', 2);
 
-    console.log("\n[2/3] Building Airtime Rankings...");
-    const yearsToBuild = ["2025", "2024"];
-    const sortsToBuild = ["collects", "rank", "trends"];
-    finalData.airtimeRanking.anime = {};
-    for (const year of yearsToBuild) {
-        finalData.airtimeRanking.anime[year] = { all: {} };
-        for (const sort of sortsToBuild) {
-            console.log(`- Building Anime, Year: ${year}, Sort: ${sort}`);
-            finalData.airtimeRanking.anime[year].all[sort] = await buildAirtimeRanking('anime', year, 'all', sort, 5);
+        console.log("\n[2/3] Building Airtime Rankings...");
+        const yearsToBuild = ["2025", "2024"];
+        const sortsToBuild = ["collects", "rank", "trends"];
+        finalData.airtimeRanking.anime = {};
+        for (const year of yearsToBuild) {
+            finalData.airtimeRanking.anime[year] = { all: {} };
+            for (const sort of sortsToBuild) {
+                console.log(`- Building Anime, Year: ${year}, Sort: ${sort}`);
+                finalData.airtimeRanking.anime[year].all[sort] = await buildAirtimeRanking('anime', year, 'all', sort, 5);
+            }
         }
+
+        console.log("\n[3/3] Building Daily Calendar...");
+        finalData.dailyCalendar.all_week = await buildDailyCalendar();
+
+        await fs.writeFile('precomputed_data.json', JSON.stringify(finalData, null, 2));
+
+        const duration = (Date.now() - startTime) / 1000;
+        console.log(`\nBuild process finished in ${duration.toFixed(2)} seconds.`);
+        console.log("`precomputed_data.json` has been successfully generated.");
+
+    } catch (error) {
+        console.error("\nFATAL ERROR during build process:", error);
+        process.exit(1); // 退出并返回错误码，让GitHub Action失败
     }
-
-    console.log("\n[3/3] Building Daily Calendar...");
-    finalData.dailyCalendar.all_week = await buildDailyCalendar();
-
-    // --- 写入文件 ---
-    await fs.writeFile('precomputed_data.json', JSON.stringify(finalData, null, 2));
-
-    const duration = (Date.now() - startTime) / 1000;
-    console.log(`\nBuild process finished in ${duration.toFixed(2)} seconds.`);
-    console.log("`precomputed_data.json` has been successfully generated.");
 }
