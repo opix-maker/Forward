@@ -1,0 +1,14 @@
+{
+  "name": "bangumi-widget-builder",
+  "version": "1.0.0",
+  "description": "Builds pre-computed data for the Bangumi Charts Widget",
+  "main": "build_data.js",
+  "type": "module",
+  "scripts": {
+    "build": "node build_data.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "node-fetch": "^3.3.2"
+  }
+}
