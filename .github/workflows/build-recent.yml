@@ -12,7 +12,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Build and Commit Recent Data
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
@@ -22,7 +24,12 @@ jobs:
           echo '{ "dependencies": { "node-fetch": "^2.7.0", "cheerio": "^1.0.0-rc.12" } }' > package.json
           npm install
           node build_data.js
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      
+      - name: Pull latest changes
+        run: git pull
+
+      - name: Commit and push if changed
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'chore(data): Auto-update recent_data.json'
           file_pattern: 'recent_data.json'
