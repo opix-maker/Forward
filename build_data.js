@@ -1,16 +1,12 @@
 /*
  * =================================================================================================
- *   Bangumi Charts Widget - DATA BUILD SCRIPT (v1.0)
+ *   Bangumi Charts Widget - DATA BUILD SCRIPT (v1.1)
  * =================================================================================================
  *
  *   职责:
  *   - 这是一个在Node.js环境中运行的独立脚本。
  *   - 它负责执行所有繁重的数据获取、处理和TMDB匹配。
- *   - 最终输出一个 `precomputed_data.json` 文件，供小部件客户端使用。
- *
- *   运行方式:
- *   - 通过GitHub Actions定时自动运行。
- *   - 从环境变量中读取必要的API密钥和配置。
+ *   - 根据环境变量 BUILD_TYPE，它可以构建“近期数据”或“存档数据”。
  *
  * =================================================================================================
  */
@@ -39,7 +35,6 @@ const CONSTANTS = {
 };
 
 // --- HTTP & API 工具 ---
-
 async function http_get(url, options = {}) {
     const response = await fetch(url, {
         method: 'GET',
@@ -87,7 +82,6 @@ async function fetchWithRetry(fetchFn, ...args) {
 }
 
 // --- 数据处理与解析工具 ---
-
 function normalizeTmdbQuery(query) { if (!query || typeof query !== 'string') return ""; return query.toLowerCase().trim().replace(/[\[\]【】（）()「」『』:：\-－_,\.・]/g, ' ').replace(/\s+/g, ' ').trim();}
 function parseDate(dateStr) { if (!dateStr || typeof dateStr !== 'string') return ''; dateStr = dateStr.trim(); let match; match = dateStr.match(/^(\d{4})年(\d{1,2})月(\d{1,2})日/); if (match) return `${match[1]}-${String(match[2]).padStart(2, '0')}-${String(match[3]).padStart(2, '0')}`; match = dateStr.match(/^(\d{4})年(\d{1,2})月(?!日)/); if (match) return `${match[1]}-${String(match[2]).padStart(2, '0')}-01`; match = dateStr.match(/^(\d{4})年(冬|春|夏|秋)/); if (match) { let m = '01'; if (match[2] === '春') m = '04'; else if (match[2] === '夏') m = '07'; else if (match[2] === '秋') m = '10'; return `${match[1]}-${m}-01`; } match = dateStr.match(/^(\d{4})年(?![\d月春夏秋冬])/); if (match) return `${match[1]}-01-01`; match = dateStr.match(/^(\d{4})[-/](\d{1,2})[-/](\d{1,2})/); if (match) return `${match[1]}-${String(match[2]).padStart(2, '0')}-${String(match[3]).padStart(2, '0')}`; match = dateStr.match(/^(\d{4})[-/](\d{1,2})(?!.*[-/])/); if (match) return `${match[1]}-${String(match[2]).padStart(2, '0')}-01`; match = dateStr.match(/^(\d{4})$/); if (match) return `${match[1]}-01-01`; return '';}
 
@@ -287,7 +281,6 @@ async function processBangumiPage(url, categoryHint) {
 }
 
 // --- 构建任务定义 ---
-
 async function buildRecentHot(category, totalPages) {
     const results = [];
     for (let page = 1; page <= totalPages; page++) {
@@ -369,7 +362,9 @@ async function main() {
     if (!WidgetConfig.TMDB_API_KEY) {
         throw new Error("TMDB_API_KEY environment variable is not set!");
     }
-    console.log("Starting data build process...");
+    
+    const buildType = process.env.BUILD_TYPE || 'recent';
+    console.log(`Starting data build process for: ${buildType}`);
     const startTime = Date.now();
 
     const finalData = {
@@ -380,33 +375,55 @@ async function main() {
     };
 
     try {
-        console.log("\n[1/3] Building Recent Hot...");
-        finalData.recentHot.anime = await buildRecentHot('anime', 5);
-        finalData.recentHot.real = await buildRecentHot('real', 2);
-
-        console.log("\n[2/3] Building Airtime Rankings...");
-        const yearsToBuild = ["2025", "2024"];
-        const sortsToBuild = ["collects", "rank", "trends"];
-        finalData.airtimeRanking.anime = {};
-        for (const year of yearsToBuild) {
-            finalData.airtimeRanking.anime[year] = { all: {} };
-            for (const sort of sortsToBuild) {
-                console.log(`- Building Anime, Year: ${year}, Sort: ${sort}`);
-                finalData.airtimeRanking.anime[year].all[sort] = await buildAirtimeRanking('anime', year, 'all', sort, 5);
+        if (buildType === 'recent') {
+            console.log("\nBuilding Recent Data...");
+            finalData.recentHot.anime = await buildRecentHot('anime', 5);
+            
+            const recentYears = ["2025", "2024"];
+            const sortsToBuild = ["collects", "rank", "trends"];
+            finalData.airtimeRanking.anime = {};
+            finalData.airtimeRanking.real = {};
+            for (const year of recentYears) {
+                finalData.airtimeRanking.anime[year] = { all: {} };
+                finalData.airtimeRanking.real[year] = { all: {} };
+                for (const sort of sortsToBuild) {
+                    console.log(`- Building Anime, Year: ${year}, Sort: ${sort}`);
+                    finalData.airtimeRanking.anime[year].all[sort] = await buildAirtimeRanking('anime', year, 'all', sort, 5);
+                    console.log(`- Building Real, Year: ${year}, Sort: ${sort}`);
+                    finalData.airtimeRanking.real[year].all[sort] = await buildAirtimeRanking('real', year, 'all', sort, 2);
+                }
             }
+            finalData.dailyCalendar.all_week = await buildDailyCalendar();
+            await fs.writeFile('recent_data.json', JSON.stringify(finalData));
+
+        } else if (buildType === 'archive') {
+            console.log("\nBuilding Archive Data...");
+            const archiveYears = Array.from({length: 2024 - 2000}, (_, i) => 2023 - i);
+            const sortsToBuild = ["collects", "rank"];
+            finalData.airtimeRanking.anime = {};
+            finalData.airtimeRanking.real = {};
+            for (const year of archiveYears) {
+                finalData.airtimeRanking.anime[year] = { all: {} };
+                finalData.airtimeRanking.real[year] = { all: {} };
+                for (const sort of sortsToBuild) {
+                    console.log(`- Building Archive Anime, Year: ${year}, Sort: ${sort}`);
+                    finalData.airtimeRanking.anime[year].all[sort] = await buildAirtimeRanking('anime', year, 'all', sort, 5);
+                    console.log(`- Building Archive Real, Year: ${year}, Sort: ${sort}`);
+                    finalData.airtimeRanking.real[year].all[sort] = await buildAirtimeRanking('real', year, 'all', sort, 2);
+                }
+            }
+            await fs.writeFile('archive_data.json', JSON.stringify(finalData));
         }
 
-        console.log("\n[3/3] Building Daily Calendar...");
-        finalData.dailyCalendar.all_week = await buildDailyCalendar();
-
-        await fs.writeFile('precomputed_data.json', JSON.stringify(finalData, null, 2));
-
         const duration = (Date.now() - startTime) / 1000;
-        console.log(`\nBuild process finished in ${duration.toFixed(2)} seconds.`);
-        console.log("`precomputed_data.json` has been successfully generated.");
+        console.log(`\nBuild process for ${buildType} finished in ${duration.toFixed(2)} seconds.`);
 
     } catch (error) {
-        console.error("\nFATAL ERROR during build process:", error);
-        process.exit(1); // 退出并返回错误码，让GitHub Action失败
+        console.error(`\nFATAL ERROR during ${buildType} build:`, error);
+        process.exit(1);
     }
+}
+
+if (require.main === module) {
+    main();
 }
