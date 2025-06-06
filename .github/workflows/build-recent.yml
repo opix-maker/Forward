@@ -15,6 +15,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Synchronize with remote branch
+        run: git pull --rebase
+
       - name: Build Recent Data
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
@@ -25,9 +28,6 @@ jobs:
           npm install
           node build_data.js
       
-      - name: Pull latest changes with rebase
-        run: git pull --rebase
-
       - name: Commit and push if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
