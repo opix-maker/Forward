@@ -1,0 +1,28 @@
+name: Build Recent Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */23 * * *' # 每23小时运行一次
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and Commit Recent Data
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          BGM_USER_AGENT: ${{ secrets.BGM_USER_AGENT }}
+          BUILD_TYPE: 'recent'
+        run: |
+          echo '{ "dependencies": { "node-fetch": "^2.7.0", "cheerio": "^1.0.0-rc.12" } }' > package.json
+          npm install
+          node build_data.js
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore(data): Auto-update recent_data.json'
+          file_pattern: 'recent_data.json'
