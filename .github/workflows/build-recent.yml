@@ -3,7 +3,7 @@ name: Build Recent Data
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */23 * * *' # 每23小时运行一次
+    - cron: '0 */23 * * *'
 
 permissions:
   contents: write
