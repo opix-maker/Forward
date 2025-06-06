@@ -15,6 +15,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Synchronize with remote branch
+        run: git pull --rebase
+
       - name: Build Archive Data
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
@@ -24,10 +27,6 @@ jobs:
           echo '{ "dependencies": { "node-fetch": "^2.7.0", "cheerio": "^1.0.0-rc.12" } }' > package.json
           npm install
           node build_data.js
-
-
-      - name: Pull latest changes with rebase
-        run: git pull --rebase
 
       - name: Commit and push if changed
         uses: stefanzweifel/git-auto-commit-action@v5
