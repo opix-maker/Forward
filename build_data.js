@@ -1,17 +1,17 @@
 /*
  * =================================================================================================
- *   Bangumi Charts Widget - DATA BUILD SCRIPT (v1.1)
+ *   Bangumi Charts Widget - DATA BUILD SCRIPT (v1.4 - Sharded)
  * =================================================================================================
  *
  *   职责:
- *   - 这是一个在Node.js环境中运行的独立脚本。
- *   - 它负责执行所有繁重的数据获取、处理和TMDB匹配。
- *   - 根据环境变量 BUILD_TYPE，它可以构建“近期数据”或“存档数据”。
+ *   - 根据环境变量 BUILD_TYPE，构建“近期数据”或“存档数据”。
+ *   - 存档数据现在被拆分为按年份的独立文件，存放在 `archive/` 目录下。
  *
  * =================================================================================================
  */
 
 const fs = require('fs').promises;
+const path = require('path');
 const fetch = require('node-fetch');
 const cheerio = require('cheerio');
 
@@ -367,15 +367,14 @@ async function main() {
     console.log(`Starting data build process for: ${buildType}`);
     const startTime = Date.now();
 
-    const finalData = {
-        buildTimestamp: new Date().toISOString(),
-        recentHot: {},
-        airtimeRanking: {},
-        dailyCalendar: {}
-    };
-
     try {
         if (buildType === 'recent') {
+            const finalData = {
+                buildTimestamp: new Date().toISOString(),
+                recentHot: {},
+                airtimeRanking: {},
+                dailyCalendar: {}
+            };
             console.log("\nBuilding Recent Data...");
             finalData.recentHot.anime = await buildRecentHot('anime', 5);
             
@@ -398,21 +397,27 @@ async function main() {
 
         } else if (buildType === 'archive') {
             console.log("\nBuilding Archive Data...");
+            await fs.mkdir('archive', { recursive: true }); // 确保 archive 目录存在
             const archiveYears = Array.from({length: 2024 - 2000}, (_, i) => 2023 - i);
             const sortsToBuild = ["collects", "rank"];
-            finalData.airtimeRanking.anime = {};
-            finalData.airtimeRanking.real = {};
+            
             for (const year of archiveYears) {
-                finalData.airtimeRanking.anime[year] = { all: {} };
-                finalData.airtimeRanking.real[year] = { all: {} };
+                const yearData = {
+                    buildTimestamp: new Date().toISOString(),
+                    airtimeRanking: { anime: {}, real: {} }
+                };
+                yearData.airtimeRanking.anime[year] = { all: {} };
+                yearData.airtimeRanking.real[year] = { all: {} };
                 for (const sort of sortsToBuild) {
                     console.log(`- Building Archive Anime, Year: ${year}, Sort: ${sort}`);
-                    finalData.airtimeRanking.anime[year].all[sort] = await buildAirtimeRanking('anime', year, 'all', sort, 5);
+                    yearData.airtimeRanking.anime[year].all[sort] = await buildAirtimeRanking('anime', year, 'all', sort, 5);
                     console.log(`- Building Archive Real, Year: ${year}, Sort: ${sort}`);
-                    finalData.airtimeRanking.real[year].all[sort] = await buildAirtimeRanking('real', year, 'all', sort, 2);
+                    yearData.airtimeRanking.real[year].all[sort] = await buildAirtimeRanking('real', year, 'all', sort, 2);
                 }
+                const filePath = path.join('archive', `${year}.json`);
+                await fs.writeFile(filePath, JSON.stringify(yearData));
+                console.log(`  Successfully wrote ${filePath}`);
             }
-            await fs.writeFile('archive_data.json', JSON.stringify(finalData));
         }
 
         const duration = (Date.now() - startTime) / 1000;
