@@ -1,0 +1,41 @@
+name: Build Widget Data
+
+on:
+  workflow_dispatch: # 允许手动触发
+  schedule:
+    - cron: '0 */6 * * *' # 每6小时运行一次
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # 使用Node.js 18
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build data file
+        run: npm run build
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }} # 从仓库Secrets中读取API密钥
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add precomputed_data.json
+          # 只有在文件有变动时才提交
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Automated: Update precomputed_data.json"
+            git push
+          fi
