@@ -1,7 +1,7 @@
 {
-  "name": "imdb-data-platform",
-  "version": "1.0.0",
-  "description": "Build system for pre-computing IMDB data.",
+  "name": "imdb-data-platform-v2",
+  "version": "2.0.0",
+  "description": "Advanced build system for pre-computing multi-faceted IMDb data.",
   "main": "build.js",
   "type": "module",
   "scripts": {
