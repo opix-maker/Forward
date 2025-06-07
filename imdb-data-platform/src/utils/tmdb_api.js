@@ -1,6 +1,3 @@
-/**
- * TMDB API 封装
- */
 import fetch from 'node-fetch';
 
 const TMDB_ACCESS_TOKEN_V4 = process.env.TMDB_ACCESS_TOKEN_V4;
@@ -24,12 +21,11 @@ async function fetchFromTmdb(endpoint, params = {}) {
 
     const response = await fetch(url, options);
     if (!response.ok) {
-        const errorData = await response.text();
-        // 如果是404错误，静默处理，返回null
         if (response.status === 404) {
             console.warn(`  TMDB 404 Not Found for endpoint: ${endpoint}`);
             return null;
         }
+        const errorData = await response.text();
         throw new Error(`TMDB API Error for ${endpoint}: ${response.status} - ${errorData}`);
     }
     return response.json();
@@ -48,10 +44,9 @@ export async function findByImdbId(imdbId) {
 
 export async function getTmdbDetails(tmdbId, mediaType = 'movie') {
     try {
-        // 请求中文数据和翻译
         return await fetchFromTmdb(`/${mediaType}/${tmdbId}`, {
             language: 'zh-CN',
-            append_to_response: 'credits,keywords,translations'
+            append_to_response: 'credits,keywords,translations,external_ids' // 增加keywords和external_ids
         });
     } catch (error) {
         console.error(`  Error fetching details for TMDB ID ${tmdbId}:`, error.message);
