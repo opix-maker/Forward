@@ -47,7 +47,7 @@ async function enrichListWithTmdb(imdbIdList) {
 }
 
 async function main() {
-    console.log('Starting unified build process v4...');
+    console.log('Starting unified build process v5 (Bangumi-style)...');
     const startTime = Date.now();
     const finalDataObject = {
         buildTimestamp: new Date().toISOString(),
@@ -70,12 +70,12 @@ async function main() {
         poolItems.forEach(item => dataPool.set(item.id, item));
         console.log(`  Data pool built with ${dataPool.size} unique items.`);
 
-        // --- 阶段二: 生成所有榜单 ---
+        // --- 阶段二: 生成所有榜单并放入最终对象 ---
         console.log('\nPHASE 2: Generating all lists...');
         const analyzedData = Array.from(dataPool.values());
 
         for (const [key, config] of Object.entries(BUILD_MATRIX)) {
-            if (config.type === 'series') continue; // 系列电影最后处理
+            if (config.type === 'series') continue;
 
             let listData = [];
             if (config.sourcePool) {
@@ -95,7 +95,6 @@ async function main() {
             console.log(`  Generated list: ${config.name} -> ${key} (${listData.length} items)`);
         }
         
-        // 处理系列电影
         const seriesCollection = new Map();
         analyzedData.forEach(item => {
             if (item.belongs_to_collection) {
