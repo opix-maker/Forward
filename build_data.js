@@ -5,10 +5,10 @@
  */
 
 const fs = require('fs').promises;
-const path = require('path');
 const fetch = require('node-fetch');
 const cheerio = require('cheerio');
 
+// --- 核心配置 ---
 const WidgetConfig = {
     MAX_CONCURRENT_DETAILS_FETCH: 32,
     MAX_CONCURRENT_TMDB_SEARCHES: 16,
@@ -21,10 +21,14 @@ const WidgetConfig = {
     TMDB_API_KEY: process.env.TMDB_API_KEY,
     BGM_API_USER_AGENT: process.env.BGM_USER_AGENT || `Bangumi-Data-Builder/1.0`
 };
+
 const CONSTANTS = {
     MEDIA_TYPES: { TV: "tv", MOVIE: "movie", ANIME: "anime", REAL: "real" },
     BGM_API_TYPE_MAPPING: { 2: "anime", 6: "real" },
 };
+
+// --- HTTP & API 工具 ---
+
 async function http_get(url, options = {}) {
     const response = await fetch(url, {
         method: 'GET',
@@ -39,6 +43,7 @@ async function http_get(url, options = {}) {
     }
     return { data: await response.text() };
 }
+
 async function tmdb_get(path, options = {}) {
     const params = new URLSearchParams(options.params || {});
     params.append('api_key', WidgetConfig.TMDB_API_KEY);
@@ -52,6 +57,7 @@ async function tmdb_get(path, options = {}) {
     }
     return response.json();
 }
+
 async function fetchWithRetry(fetchFn, ...args) {
     let attempts = 0;
     const maxRetries = WidgetConfig.HTTP_MAIN_RETRIES;
@@ -68,8 +74,12 @@ async function fetchWithRetry(fetchFn, ...args) {
         }
     }
 }
+
+// --- 数据处理与解析工具 ---
+
 function normalizeTmdbQuery(query) { if (!query || typeof query !== 'string') return ""; return query.toLowerCase().trim().replace(/[\[\]【】（）()「」『』:：\-－_,\.・]/g, ' ').replace(/\s+/g, ' ').trim();}
 function parseDate(dateStr) { if (!dateStr || typeof dateStr !== 'string') return ''; dateStr = dateStr.trim(); let match; match = dateStr.match(/^(\d{4})年(\d{1,2})月(\d{1,2})日/); if (match) return `${match[1]}-${String(match[2]).padStart(2, '0')}-${String(match[3]).padStart(2, '0')}`; match = dateStr.match(/^(\d{4})年(\d{1,2})月(?!日)/); if (match) return `${match[1]}-${String(match[2]).padStart(2, '0')}-01`; match = dateStr.match(/^(\d{4})年(冬|春|夏|秋)/); if (match) { let m = '01'; if (match[2] === '春') m = '04'; else if (match[2] === '夏') m = '07'; else if (match[2] === '秋') m = '10'; return `${match[1]}-${m}-01`; } match = dateStr.match(/^(\d{4})年(?![\d月春夏秋冬])/); if (match) return `${match[1]}-01-01`; match = dateStr.match(/^(\d{4})[-/](\d{1,2})[-/](\d{1,2})/); if (match) return `${match[1]}-${String(match[2]).padStart(2, '0')}-${String(match[3]).padStart(2, '0')}`; match = dateStr.match(/^(\d{4})[-/](\d{1,2})(?!.*[-/])/); if (match) return `${match[1]}-${String(match[2]).padStart(2, '0')}-01`; match = dateStr.match(/^(\d{4})$/); if (match) return `${match[1]}-01-01`; return '';}
+
 function scoreTmdbResult(result, query, validYear, searchMediaType, originalTitle, chineseTitle) {
     let currentScore = 0;
     const resultTitleLower = normalizeTmdbQuery(result.title || result.name);
@@ -104,6 +114,7 @@ function scoreTmdbResult(result, query, validYear, searchMediaType, originalTitl
     if (result.adult) currentScore -= 10;
     return currentScore;
 }
+
 function generateTmdbSearchQueries(originalTitle, chineseTitle, listTitle) {
     const coreQueries = new Set();
     const refineQueryForSearch = (text) => {
@@ -136,12 +147,14 @@ function generateTmdbSearchQueries(originalTitle, chineseTitle, listTitle) {
     }
     return queriesToProcess;
 }
+
 async function searchTmdb(originalTitle, chineseTitle, listTitle, searchMediaType, year) {
     let bestOverallMatch = null;
     let highestOverallScore = -Infinity;
     const validYear = year && /^\d{4}$/.test(year) ? parseInt(year, 10) : null;
     const queriesToProcess = generateTmdbSearchQueries(originalTitle, chineseTitle, listTitle);
     if (queriesToProcess.length === 0) return null;
+
     const queryPromises = queriesToProcess.flatMap(query => {
         const tasks = [];
         const params = { query, language: "zh-CN", include_adult: false };
@@ -154,6 +167,7 @@ async function searchTmdb(originalTitle, chineseTitle, listTitle, searchMediaTyp
         }
         return tasks;
     });
+
     for (let i = 0; i < queryPromises.length; i += WidgetConfig.MAX_CONCURRENT_TMDB_SEARCHES) {
         const batch = queryPromises.slice(i, i + WidgetConfig.MAX_CONCURRENT_TMDB_SEARCHES).map(p => p().catch(e => { console.error(`  TMDB search task failed: ${e.message}`); return null; }));
         const settledResults = await Promise.allSettled(batch);
@@ -176,6 +190,7 @@ async function searchTmdb(originalTitle, chineseTitle, listTitle, searchMediaTyp
     if (bestOverallMatch && highestOverallScore >= WidgetConfig.TMDB_SEARCH_MIN_SCORE_THRESHOLD) return bestOverallMatch;
     return null;
 }
+
 function parseBangumiListItems(htmlContent) {
     const $ = cheerio.load(htmlContent);
     const pendingItems = [];
@@ -195,6 +210,7 @@ function parseBangumiListItems(htmlContent) {
     });
     return pendingItems;
 }
+
 async function integrateTmdbDataToItem(baseItem, tmdbResult, tmdbSearchType) {
     baseItem.id = String(tmdbResult.id);
     baseItem.type = "tmdb";
@@ -210,6 +226,7 @@ async function integrateTmdbDataToItem(baseItem, tmdbResult, tmdbSearchType) {
     baseItem.tmdb_vote_count = tmdbResult.vote_count;
     baseItem.link = null;
 }
+
 async function fetchItemDetails(pendingItem, categoryHint) {
     let oTitle = pendingItem.titleFromList;
     let bPoster = pendingItem.coverFromList;
@@ -219,27 +236,32 @@ async function fetchItemDetails(pendingItem, categoryHint) {
     const yearMatch = pendingItem.infoTextFromList.match(/(\d{4})/);
     if (yearMatch) yearForTmdb = yearMatch[1];
     rDate = parseDate(pendingItem.infoTextFromList) || `${yearForTmdb}-01-01`;
+
     let tmdbSType = CONSTANTS.MEDIA_TYPES.TV;
     const infoLower = (pendingItem.infoTextFromList || "").toLowerCase();
     if (infoLower.includes("movie") || infoLower.includes("剧场版")) tmdbSType = CONSTANTS.MEDIA_TYPES.MOVIE;
+
     const item = {
         id: String(pendingItem.id), type: "link", title: oTitle, posterPath: bPoster,
         backdropPath: '', releaseDate: rDate, mediaType: categoryHint, rating: fRating,
         description: pendingItem.infoTextFromList, link: `${WidgetConfig.BGM_BASE_URL}/subject/${pendingItem.id}`,
         bgm_id: String(pendingItem.id), bgm_score: parseFloat(fRating) || 0,
     };
+
     const tmdbRes = await searchTmdb(oTitle, null, oTitle, tmdbSType, yearForTmdb);
     if (tmdbRes?.id) {
         await integrateTmdbDataToItem(item, tmdbRes, tmdbSType);
     }
     return item;
 }
+
 async function processBangumiPage(url, categoryHint) {
     console.log(`  Fetching list page: ${url}`);
     const listHtmlResp = await fetchWithRetry(http_get, url, { headers: { "User-Agent": WidgetConfig.BGM_API_USER_AGENT } });
     if (!listHtmlResp?.data) throw new Error("List page response empty");
     const pendingItems = parseBangumiListItems(listHtmlResp.data);
     console.log(`  Parsed ${pendingItems.length} items. Processing details...`);
+
     const results = [];
     for (let i = 0; i < pendingItems.length; i += WidgetConfig.MAX_CONCURRENT_DETAILS_FETCH) {
         const batch = pendingItems.slice(i, i + WidgetConfig.MAX_CONCURRENT_DETAILS_FETCH);
@@ -252,6 +274,9 @@ async function processBangumiPage(url, categoryHint) {
     }
     return results;
 }
+
+// --- 构建任务定义 ---
+
 async function buildRecentHot(category, totalPages) {
     const results = [];
     for (let page = 1; page <= totalPages; page++) {
@@ -261,6 +286,7 @@ async function buildRecentHot(category, totalPages) {
     }
     return results;
 }
+
 async function buildAirtimeRanking(category, year, month, sort, totalPages) {
     const results = [];
     for (let page = 1; page <= totalPages; page++) {
@@ -277,11 +303,13 @@ async function buildAirtimeRanking(category, year, month, sort, totalPages) {
     }
     return results;
 }
+
 async function buildDailyCalendar() {
     console.log("Building Daily Calendar data...");
     const apiUrl = `https://api.bgm.tv/calendar`;
     const apiResponse = await fetchWithRetry(http_get, apiUrl, { headers: { "User-Agent": WidgetConfig.BGM_API_USER_AGENT } });
     if (!Array.isArray(apiResponse.data)) throw new Error("Calendar API response not an array");
+
     const allItems = [];
     apiResponse.data.forEach(dayData => {
         if (dayData.items) {
@@ -291,6 +319,7 @@ async function buildDailyCalendar() {
             });
         }
     });
+
     const enhancedItems = [];
     for (let i = 0; i < allItems.length; i += WidgetConfig.MAX_CONCURRENT_DETAILS_FETCH) {
         const batch = allItems.slice(i, i + WidgetConfig.MAX_CONCURRENT_DETAILS_FETCH);
@@ -299,6 +328,7 @@ async function buildDailyCalendar() {
             let tmdbSearchType = '';
             if (bgmCategoryHint === 'anime') tmdbSearchType = 'tv';
             else if (bgmCategoryHint === 'real') tmdbSearchType = 'movie';
+
             const baseItem = {
                 id: String(item.id), type: "link", title: item.name_cn || item.name,
                 posterPath: item.images?.large?.startsWith('//') ? 'https:' + item.images.large : item.images?.large,
@@ -307,6 +337,7 @@ async function buildDailyCalendar() {
                 link: item.url, bgm_id: String(item.id), bgm_score: item.rating?.score || 0,
                 bgm_rating_total: item.rating?.total || 0, bgm_weekday_id: item.bgm_weekday_id
             };
+
             if (tmdbSearchType) {
                 const tmdbRes = await searchTmdb(item.name, item.name_cn, item.name, tmdbSearchType, item.air_date?.substring(0, 4));
                 if (tmdbRes?.id) {
@@ -322,79 +353,58 @@ async function buildDailyCalendar() {
     return enhancedItems;
 }
 
+
 // --- 主执行函数 ---
 async function main() {
     if (!WidgetConfig.TMDB_API_KEY) {
         throw new Error("TMDB_API_KEY environment variable is not set!");
     }
-    
-    const buildType = process.env.BUILD_TYPE || 'recent';
-    console.log(`Starting data build process for: ${buildType}`);
+    console.log("Starting data build process...");
     const startTime = Date.now();
 
-    try {
-        if (buildType === 'recent') {
-            const finalData = {
-                buildTimestamp: new Date().toISOString(),
-                recentHot: {},
-                airtimeRanking: {},
-                dailyCalendar: {}
-            };
-            console.log("\nBuilding Recent Data...");
-            finalData.recentHot.anime = await buildRecentHot('anime', 5);
-            
-            const recentYears = ["2025", "2024"]; // 确保2024年数据被每日更新
-            const sortsToBuild = ["collects", "rank", "trends"];
-            finalData.airtimeRanking.anime = {};
-            finalData.airtimeRanking.real = {};
-            for (const year of recentYears) {
-                finalData.airtimeRanking.anime[year] = { all: {} };
-                finalData.airtimeRanking.real[year] = { all: {} };
-                for (const sort of sortsToBuild) {
-                    console.log(`- Building Anime, Year: ${year}, Sort: ${sort}`);
-                    finalData.airtimeRanking.anime[year].all[sort] = await buildAirtimeRanking('anime', year, 'all', sort, 5);
-                    console.log(`- Building Real, Year: ${year}, Sort: ${sort}`);
-                    finalData.airtimeRanking.real[year].all[sort] = await buildAirtimeRanking('real', year, 'all', sort, 2);
-                }
-            }
-            finalData.dailyCalendar.all_week = await buildDailyCalendar();
-            await fs.writeFile('recent_data.json', JSON.stringify(finalData));
+    const finalData = {
+        buildTimestamp: new Date().toISOString(),
+        recentHot: {},
+        airtimeRanking: {},
+        dailyCalendar: {}
+    };
 
-        } else if (buildType === 'archive') {
-            console.log("\nBuilding Archive Data...");
-            await fs.mkdir('archive', { recursive: true });
-            const currentYear = new Date().getFullYear();
-            const archiveYears = Array.from({length: currentYear - 1940 + 1}, (_, i) => (currentYear - 1) - i).filter(y => y >= 1940); // 从去年开始，一直到1940
-            const sortsToBuild = ["collects", "rank"];
-            
-            for (const year of archiveYears) {
-                const yearData = {
-                    buildTimestamp: new Date().toISOString(),
-                    airtimeRanking: { anime: {}, real: {} }
-                };
-                yearData.airtimeRanking.anime[year] = { all: {} };
-                yearData.airtimeRanking.real[year] = { all: {} };
+    try {
+        console.log("\n[1/3] Building Recent Hot...");
+        finalData.recentHot.anime = await buildRecentHot('anime', 5);
+        finalData.recentHot.real = await buildRecentHot('real', 2);
+
+        console.log("\n[2/3] Building Airtime Rankings...");
+        const yearsToBuild = ["2025", "2024"];
+        const sortsToBuild = ["collects", "rank", "trends"];
+        const monthsToBuild = ["all", "1", "4", "7", "10"]; // **核心修复**
+        
+        finalData.airtimeRanking.anime = {};
+        for (const year of yearsToBuild) {
+            finalData.airtimeRanking.anime[year] = {};
+            for (const month of monthsToBuild) {
+                finalData.airtimeRanking.anime[year][month] = {};
                 for (const sort of sortsToBuild) {
-                    console.log(`- Building Archive Anime, Year: ${year}, Sort: ${sort}`);
-                    yearData.airtimeRanking.anime[year].all[sort] = await buildAirtimeRanking('anime', year, 'all', sort, 5);
-                    console.log(`- Building Archive Real, Year: ${year}, Sort: ${sort}`);
-                    yearData.airtimeRanking.real[year].all[sort] = await buildAirtimeRanking('real', year, 'all', sort, 2);
+                    console.log(`- Building Anime, Year: ${year}, Month: ${month}, Sort: ${sort}`);
+                    // **核心修复**：为每个季度/全年组合都构建数据
+                    finalData.airtimeRanking.anime[year][month][sort] = await buildAirtimeRanking('anime', year, month, sort, 5);
                 }
-                const filePath = path.join('archive', `${year}.json`);
-                await fs.writeFile(filePath, JSON.stringify(yearData));
-                console.log(`  Successfully wrote ${filePath}`);
             }
         }
 
+        console.log("\n[3/3] Building Daily Calendar...");
+        finalData.dailyCalendar.all_week = await buildDailyCalendar();
+
+        await fs.writeFile('precomputed_data.json', JSON.stringify(finalData, null, 2));
+
         const duration = (Date.now() - startTime) / 1000;
-        console.log(`\nBuild process for ${buildType} finished in ${duration.toFixed(2)} seconds.`);
+        console.log(`\nBuild process finished in ${duration.toFixed(2)} seconds.`);
+        console.log("`precomputed_data.json` has been successfully generated.");
 
     } catch (error) {
-        console.error(`\nFATAL ERROR during ${buildType} build:`, error);
+        console.error("\nFATAL ERROR during build process:", error);
         process.exit(1);
     }
 }
 
-if (require.main === module) {
-    main();
-}
+main();
