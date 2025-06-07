@@ -5,6 +5,7 @@ import { analyzeAndTagItem } from './src/core/analyzer.js';
 import { sleep, writeJsonFile } from './src/utils/helpers.js';
 
 const MAX_CONCURRENT_ENRICHMENTS = 15;
+const OUTPUT_DIR = './dist';
 
 const BUILD_MATRIX = {
     official_popular_movies: { name: 'IMDb 热门电影', crawlParams: { title_type: 'feature', sort: 'moviemeter,asc' } },
@@ -47,15 +48,11 @@ async function enrichListWithTmdb(imdbIdList) {
 }
 
 async function main() {
-    console.log('Starting unified build process v5 (Bangumi-style)...');
+    console.log('Starting data slicing build process v6...');
     const startTime = Date.now();
-    const finalDataObject = {
-        buildTimestamp: new Date().toISOString(),
-    };
     const dataPool = new Map();
 
     try {
-        // --- 阶段一: 构建通用数据池 ---
         console.log('\nPHASE 1: Building common data pool...');
         const poolCrawlTasks = [
             { title_type: 'feature,tv_series,tv_miniseries', sort: 'moviemeter,asc', count: 250 },
@@ -70,53 +67,49 @@ async function main() {
         poolItems.forEach(item => dataPool.set(item.id, item));
         console.log(`  Data pool built with ${dataPool.size} unique items.`);
 
-        // --- 阶段二: 生成所有榜单并放入最终对象 ---
-        console.log('\nPHASE 2: Generating all lists...');
+        console.log('\nPHASE 2: Generating individual list files...');
         const analyzedData = Array.from(dataPool.values());
+        const seriesCollection = new Map();
 
         for (const [key, config] of Object.entries(BUILD_MATRIX)) {
-            if (config.type === 'series') continue;
-
             let listData = [];
             if (config.sourcePool) {
+                if (config.type === 'series') {
+                    analyzedData.forEach(item => {
+                        if (item.belongs_to_collection) {
+                            const seriesId = item.belongs_to_collection.id;
+                            if (!seriesCollection.has(seriesId)) seriesCollection.set(seriesId, { name: item.belongs_to_collection.name, items: [] });
+                            seriesCollection.get(seriesId).items.push(item);
+                        }
+                    });
+                    continue;
+                }
                 let filteredData = analyzedData;
-                if (config.tags) {
-                    filteredData = filteredData.filter(item => config.tags.every(tag => item.semantic_tags.includes(tag)));
-                }
-                if (config.sortBy) {
-                    filteredData.sort((a, b) => (b[config.sortBy] || 0) - (a[config.sortBy] || 0));
-                }
+                if (config.tags) filteredData = filteredData.filter(item => config.tags.every(tag => item.semantic_tags.includes(tag)));
+                if (config.sortBy) filteredData.sort((a, b) => (b[config.sortBy] || 0) - (a[config.sortBy] || 0));
                 listData = filteredData.slice(0, 50);
             } else if (config.crawlParams) {
                 const imdbIdList = await fetchImdbIdList(config.crawlParams);
                 listData = await enrichListWithTmdb(imdbIdList);
             }
-            finalDataObject[key] = listData;
-            console.log(`  Generated list: ${config.name} -> ${key} (${listData.length} items)`);
+            await writeJsonFile(`${OUTPUT_DIR}/${key}.json`, listData);
+            console.log(`  Generated list: ${config.name} -> ${key}.json (${listData.length} items)`);
         }
         
-        const seriesCollection = new Map();
-        analyzedData.forEach(item => {
-            if (item.belongs_to_collection) {
-                const seriesId = item.belongs_to_collection.id;
-                if (!seriesCollection.has(seriesId)) {
-                    seriesCollection.set(seriesId, { name: item.belongs_to_collection.name, items: [] });
-                }
-                seriesCollection.get(seriesId).items.push(item);
-            }
-        });
         for (const [seriesId, seriesData] of seriesCollection.entries()) {
             if (seriesData.items.length < 2) continue;
             seriesData.items.sort((a, b) => new Date(a.release_date) - new Date(b.release_date));
-            finalDataObject[`series_${seriesId}`] = seriesData.items;
+            await writeJsonFile(`${OUTPUT_DIR}/series_${seriesId}.json`, seriesData.items);
         }
 
-        // --- 阶段三: 写入单一文件 ---
-        await writeJsonFile('imdb_precomputed_data.json', finalDataObject);
-        
+        const index = {
+            buildTimestamp: new Date().toISOString(),
+            // 客户端不再需要索引，但我们为调试保留它
+        };
+        await writeJsonFile(`${OUTPUT_DIR}/index.json`, index);
+
         const duration = (Date.now() - startTime) / 1000;
         console.log(`\n✅ Build process successful! Took ${duration.toFixed(2)} seconds.`);
-        console.log('`imdb_precomputed_data.json` has been generated.');
 
     } catch (error) {
         console.error('\n❌ FATAL ERROR during build process:', error);
