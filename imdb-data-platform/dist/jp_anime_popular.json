@@ -1,0 +1,2649 @@
+[
+  {
+    "adult": false,
+    "backdrop_path": "/aok7IhrbA83josNz9Dqh8tNA0Ao.jpg",
+    "created_by": [],
+    "episode_run_time": [],
+    "first_air_date": "2013-04-07",
+    "genres": [
+      {
+        "id": 16,
+        "name": "动画"
+      },
+      {
+        "id": 10765,
+        "name": "Sci-Fi & Fantasy"
+      },
+      {
+        "id": 10759,
+        "name": "动作冒险"
+      }
+    ],
+    "homepage": "https://shingeki.tv/",
+    "id": 1429,
+    "in_production": false,
+    "languages": [
+      "ja"
+    ],
+    "last_air_date": "2022-04-04",
+    "last_episode_to_air": {
+      "id": 3508327,
+      "name": "人类的黎明",
+      "overview": "那一天，看见的事物。那一天，交谈过的事情。那一天，做出的选择。全部都是他所希望的。他从没有任何改变。",
+      "vote_average": 8.8,
+      "vote_count": 29,
+      "air_date": "2022-04-04",
+      "episode_number": 28,
+      "episode_type": "standard",
+      "production_code": "",
+      "runtime": 23,
+      "season_number": 4,
+      "show_id": 1429,
+      "still_path": "/9IT29LxBTDd610r2XzzGZXeca0b.jpg"
+    },
+    "name": "进击的巨人",
+    "next_episode_to_air": null,
+    "networks": [
+      {
+        "id": 94,
+        "logo_path": "/7RNXnyiMbjgqtPAjja13wchcrGI.png",
+        "name": "MBS",
+        "origin_country": "JP"
+      },
+      {
+        "id": 469,
+        "logo_path": "/3E5bxm9VfOU9LkAX545jtpKAe6Z.png",
+        "name": "NHK G",
+        "origin_country": "JP"
+      },
+      {
+        "id": 614,
+        "logo_path": "/hSdroyVthq3CynxTIIY7lnS8w1.png",
+        "name": "Tokyo MX",
+        "origin_country": "JP"
+      }
+    ],
+    "number_of_episodes": 87,
+    "number_of_seasons": 4,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "進撃の巨人",
+    "overview": "曾几何时，世界上突然出现无数身形庞大的巨人，普通人类的生命受到前所未有的威胁。为了保护自身安全，最后的人类筑起三座高墙：玛莉亚、露丝和希娜。人类迎来了长达一个世纪的和平岁月，却也让自己成为圈养在笼中的鸟儿，屈辱地失去自由。845 年，高达 60 米的超大型巨人和铠之巨人登场， 摧毁了最外层的玛莉亚之壁，也惊醒了人类似乎永远不会苏醒的长梦。在此事件中，不愿蜷缩在墙内的少年艾伦·耶格尔亲眼目睹母亲遇害，由此更坚定了他加入调查兵团的决心。在此之后，艾伦和青梅竹马三笠·阿克曼、好友阿尔敏·亚鲁雷特加入第 104 期训练兵团，发誓成为足以消灭所有巨人的英勇战士。百年的和平结束，人类和巨人的战争再度拉开序幕。",
+    "popularity": 34.3104,
+    "poster_path": "/by4f66EHK82OZNyEuYbOW5RxFBa.jpg",
+    "production_companies": [
+      {
+        "id": 529,
+        "logo_path": "/rwB6w2aPENQbx756pBWSw44Ouk.png",
+        "name": "Production I.G",
+        "origin_country": "JP"
+      },
+      {
+        "id": 21444,
+        "logo_path": "/wSejGn3lAZdQ5muByxvzigwyDY6.png",
+        "name": "MAPPA",
+        "origin_country": "JP"
+      },
+      {
+        "id": 31058,
+        "logo_path": "/1vwZPG0zMVRvThCY8Lljh0ppxQo.png",
+        "name": "WIT STUDIO",
+        "origin_country": "JP"
+      },
+      {
+        "id": 9148,
+        "logo_path": "/rtW3NadfF4kR5mTW00ahiFxw6k7.png",
+        "name": "Pony Canyon",
+        "origin_country": "JP"
+      },
+      {
+        "id": 151984,
+        "logo_path": null,
+        "name": "Techno Sound",
+        "origin_country": "JP"
+      },
+      {
+        "id": 59118,
+        "logo_path": "/9nTCEBgGaaI5swkv8gy2vny0Mb5.png",
+        "name": "Kodansha",
+        "origin_country": "JP"
+      },
+      {
+        "id": 1778,
+        "logo_path": "/b5rT6VbYza3LyfltCmz1OcqzWJM.png",
+        "name": "dentsu",
+        "origin_country": "JP"
+      },
+      {
+        "id": 3363,
+        "logo_path": "/sj3vD7n63bTCih7bcf6GnWvRf1Q.png",
+        "name": "MBS",
+        "origin_country": "JP"
+      },
+      {
+        "id": 170262,
+        "logo_path": null,
+        "name": "Pony Canyon Enterprise",
+        "origin_country": "JP"
+      }
+    ],
+    "production_countries": [
+      {
+        "iso_3166_1": "JP",
+        "name": "Japan"
+      }
+    ],
+    "seasons": [
+      {
+        "air_date": "2013-07-07",
+        "episode_count": 37,
+        "id": 3789,
+        "name": "特别篇",
+        "overview": "所有与《进击的巨人》电视系列相关的特别篇的完整合集，其中包括各类衍生作品以及已播出的“最终章”特别篇。",
+        "poster_path": "/bMK9h9BtqlC1AMPyNW89ztYnzL6.jpg",
+        "season_number": 0,
+        "vote_average": 0
+      },
+      {
+        "air_date": "2013-04-07",
+        "episode_count": 25,
+        "id": 3788,
+        "name": "第 1 季",
+        "overview": "巨人支配着的世界。变成巨人的食物的人类建造起了高达50米的巨大墙壁、以自由为代价去防止墙外的巨人的侵略...10岁的少年艾伦·耶格尔对墙外的世界充满了好奇。艾伦满足于墙内暂时和平的生活，而墙外归来的人们却充满了绝望，与墙内的氛围格格不入。艾伦把他们称之为“家畜”，并认为这些人是“异物”。然而，能够越过墙壁的超大型巨人出现了，艾伦的“梦”以及人们的“和平”瞬间土崩瓦解...动画第一期于2013年4月7日起在每日放送首播，全25话。",
+        "poster_path": "/by4f66EHK82OZNyEuYbOW5RxFBa.jpg",
+        "season_number": 1,
+        "vote_average": 8.2
+      },
+      {
+        "air_date": "2017-04-01",
+        "episode_count": 12,
+        "id": 84756,
+        "name": "第 2 季",
+        "overview": "自从人类的和平被超大型巨人打破的那天起，艾伦·耶格尔便每天持续着没有尽头的战斗...因为眼睁睁看着母亲被巨人撕裂，艾伦发誓要将世间的巨人一只不留地杀灭。但是，在严酷的战斗中，艾伦自身也会变成巨人的姿态——。为了人类的自由，艾伦施展着巨人的力量，并和女人型的巨人发生了冲突。巨人间的战斗中艾伦最终得以胜出。巨人不断地造访，下一轮的战斗已经宣告开始。对于接连而来的巨人，人类将如何去面对！？第二期于2017年4月1日起每周六21：00在TOKYO MX首播  ，全12话。",
+        "poster_path": "/8BAsx5PQT4x4VyruU2omBmX51HS.jpg",
+        "season_number": 2,
+        "vote_average": 8.5
+      },
+      {
+        "air_date": "2018-07-23",
+        "episode_count": 22,
+        "id": 98013,
+        "name": "第 3 季",
+        "overview": "历经百年的时光，将人类与外侧世界隔开的墙壁。在墙壁的另一侧，似乎有前所未见的世界延伸开来。火焰之水、冰之大地、砂之雪原……。记载在书中的，尽是些激发少年探究心的文字。在时间流转，墙壁被巨人毁坏的现在，人类正一步步接近世界的真相。巨人的真实身份是什么？为何墙壁中会埋着巨人？巨人化的艾伦·耶格尔所持有的“坐标”之力是？以及，西斯托利亚·雷斯究竟知道这个世界的什么事情？在艾伦等104期兵的加入下，建立新体制的利威尔班。最强最恶的敌人，阻拦在开始行动的他们面前。第三期于2018年7月22日起每周日在NHK综合频道首播，全24话。 三期动画累计61话。",
+        "poster_path": "/wsLoz3TNnnPGaAkgHjbgOFxv8Ex.jpg",
+        "season_number": 3,
+        "vote_average": 8.6
+      },
+      {
+        "air_date": "2020-12-07",
+        "episode_count": 28,
+        "id": 126952,
+        "name": "最终季",
+        "overview": "「有一种巨人无论生在什么时代，都只会为了自由而不断前进，为了自由而不断战斗，它的名字是——“进击的巨人”」关于墙外的真实和巨人的真面目，逐渐地被揭露了出来。为了实现这个目标，人类付出了巨大的牺牲，在他们的不断前进下，他们终于可以看到自由的象征，墙外世界才能看得见的海。时光流逝，离第一次「超大型巨人」的袭击过去了6年后，调查兵团跑出玛利亚之墙外进行着调查「以前我一直相信，墙的外面有海，海的那边有自由...」墙内的人类，第一次面朝大海。但真的和梦想一样，那广阔的地平线的那边真的有自由吗？艾伦·耶格尔的故事，即将迎来新的局面。",
+        "poster_path": "/bHwEdQu5v0gCrCjiUufajPZvmuK.jpg",
+        "season_number": 4,
+        "vote_average": 8.6
+      }
+    ],
+    "spoken_languages": [
+      {
+        "english_name": "Japanese",
+        "iso_639_1": "ja",
+        "name": "日本語"
+      }
+    ],
+    "status": "Ended",
+    "tagline": "那一天，人类终于回想起了曾一度被它们所支配的恐怖和被囚禁于鸟笼中的那份屈辱。",
+    "type": "Scripted",
+    "vote_average": 8.665,
+    "vote_count": 6792,
+    "credits": {
+      "cast": [
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 149894,
+          "known_for_department": "Acting",
+          "name": "梶裕贵",
+          "original_name": "梶裕貴",
+          "popularity": 3.5972,
+          "profile_path": "/8wKdPV11IwowfwoqGqMMNt9hmp6.jpg",
+          "character": "Eren Yeager (voice)",
+          "credit_id": "547c859b9251411f4e001e9a",
+          "order": 0
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1224288,
+          "known_for_department": "Acting",
+          "name": "石川由依",
+          "original_name": "石川由依",
+          "popularity": 2.3918,
+          "profile_path": "/2y1y1W4q8UIR0Vbs4NNvc7722XT.jpg",
+          "character": "Mikasa Ackerman (voice)",
+          "credit_id": "5256dab319c2956ff60b748a",
+          "order": 1
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 90135,
+          "known_for_department": "Acting",
+          "name": "井上麻里奈",
+          "original_name": "井上麻里奈",
+          "popularity": 3.8662,
+          "profile_path": "/nQ7a3krkbea6ukw9KGvvTpMma96.jpg",
+          "character": "Armin Arlert (voice)",
+          "credit_id": "5d5fa849924ce50015154a9e",
+          "order": 2
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 553959,
+          "known_for_department": "Acting",
+          "name": "谷山纪章",
+          "original_name": "谷山紀章",
+          "popularity": 2.3057,
+          "profile_path": "/9lOnUF6C6xEhZ0FQmYNzNZhcUpd.jpg",
+          "character": "Jean Kirstein (voice)",
+          "credit_id": "5d5ff7be924ce54c7d14aa75",
+          "order": 4
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 119145,
+          "known_for_department": "Acting",
+          "name": "下野纮",
+          "original_name": "下野紘",
+          "popularity": 2.2519,
+          "profile_path": "/yrSDcgFefHtWkFmLnTrcw2t0MV.jpg",
+          "character": "Connie Springer (voice)",
+          "credit_id": "5d5fa95da894d63c769ba40d",
+          "order": 5
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1253008,
+          "known_for_department": "Acting",
+          "name": "细谷佳正",
+          "original_name": "細谷佳正",
+          "popularity": 2.3818,
+          "profile_path": "/lUR5oN1LrqGgp25IOcI1qOH1Ud5.jpg",
+          "character": "Reiner Braun (voice)",
+          "credit_id": "5d61e2347f6c8d0019ed8727",
+          "order": 6
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 84508,
+          "known_for_department": "Acting",
+          "name": "子安武人",
+          "original_name": "子安武人",
+          "popularity": 3.8053,
+          "profile_path": "/8uBkNDKPNmp9JWgMUI02NVyfhi1.jpg",
+          "character": "Zeke (voice)",
+          "credit_id": "5fc2ae4f174a87003fe1c909",
+          "order": 10
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 992869,
+          "known_for_department": "Acting",
+          "name": "佐仓绫音",
+          "original_name": "佐倉綾音",
+          "popularity": 3.4812,
+          "profile_path": "/yPbTmntASE9psPIMhNGU5oo6vIH.jpg",
+          "character": "Gabi Braun (voice)",
+          "credit_id": "6036a424eec5b5003d1b957e",
+          "order": 18
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1256603,
+          "known_for_department": "Acting",
+          "name": "花江夏树",
+          "original_name": "花江夏樹",
+          "popularity": 3.644,
+          "profile_path": "/alTb0DlcPIbcwM08WSmxFai58sd.jpg",
+          "character": "Falco Grice (voice)",
+          "credit_id": "620a6a3a297338132edc8d18",
+          "order": 19
+        }
+      ],
+      "crew": [
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 996639,
+          "known_for_department": "Directing",
+          "name": "宍户淳",
+          "original_name": "宍戸淳",
+          "popularity": 0.7547,
+          "profile_path": null,
+          "credit_id": "5f7a37fe9a64350037aa29bc",
+          "department": "Directing",
+          "job": "Series Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1553591,
+          "known_for_department": "Directing",
+          "name": "林祐一郎",
+          "original_name": "林祐一郎",
+          "popularity": 1.0454,
+          "profile_path": "/fnxPe3512mkUYw3OnYuZJSBtwXZ.jpg",
+          "credit_id": "5f7a380e1fd36f00374e84d3",
+          "department": "Directing",
+          "job": "Series Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1491902,
+          "known_for_department": "Camera",
+          "name": "淡轮雄介",
+          "original_name": "淡輪雄介",
+          "popularity": 0.5538,
+          "profile_path": "/8jFNhTVETAD7YiOgLJ7aR21pHgL.jpg",
+          "credit_id": "5f7ebc1ad55c3d0034ef7365",
+          "department": "Visual Effects",
+          "job": "Layout Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 552232,
+          "known_for_department": "Acting",
+          "name": "安藤裕子",
+          "original_name": "安藤裕子",
+          "popularity": 0.4186,
+          "profile_path": null,
+          "credit_id": "5ff39d3afab3fa003c77e1fd",
+          "department": "Sound",
+          "job": "Theme Song Performance"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1182783,
+          "known_for_department": "Editing",
+          "name": "吉武将人",
+          "original_name": "吉武将人",
+          "popularity": 0.689,
+          "profile_path": null,
+          "credit_id": "6166abf4a80236005e33e340",
+          "department": "Editing",
+          "job": "Editor"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 3101780,
+          "known_for_department": "Art",
+          "name": "伊良波理沙",
+          "original_name": "伊良波理沙",
+          "popularity": 0.5354,
+          "profile_path": null,
+          "credit_id": "616fe03adf86a80023e6dfc4",
+          "department": "Art",
+          "job": "Art Designer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3286727,
+          "known_for_department": "Production",
+          "name": "山崎博昭",
+          "original_name": "山崎博昭",
+          "popularity": 0.4079,
+          "profile_path": null,
+          "credit_id": "61796f06678259002ab51d24",
+          "department": "Production",
+          "job": "Associate Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2797830,
+          "known_for_department": "Production",
+          "name": "大塚学",
+          "original_name": "大塚学",
+          "popularity": 0.7717,
+          "profile_path": "/4JGI2EvcOn0NxMKU58dUFovJRwn.jpg",
+          "credit_id": "61796f27678259008fd4873b",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1591438,
+          "known_for_department": "Production",
+          "name": "伊藤整",
+          "original_name": "伊藤整",
+          "popularity": 0.4323,
+          "profile_path": "/zX5kAg49ZX8YOawmlb9hqhmREwy.jpg",
+          "credit_id": "61796f3f71f095008b837c18",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1777147,
+          "known_for_department": "Production",
+          "name": "木村誠",
+          "original_name": "木村誠",
+          "popularity": 0.4566,
+          "profile_path": "/5hTJCOaLiXYHoil6DGJQmQLK6AX.jpg",
+          "credit_id": "61796f49e9da69002b9f5285",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1971165,
+          "known_for_department": "Visual Effects",
+          "name": "横山夏木",
+          "original_name": "横山なつき",
+          "popularity": 0.4119,
+          "profile_path": null,
+          "credit_id": "6237696b2efe4e007532ccce",
+          "department": "Costume & Make-Up",
+          "job": "Costume Designer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2032339,
+          "known_for_department": "Crew",
+          "name": "徳田智瑛子",
+          "original_name": "徳田智瑛子",
+          "popularity": 0.7252,
+          "profile_path": null,
+          "credit_id": "61e44994162bc300429d26ba",
+          "department": "Crew",
+          "job": "Special Effects"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1877006,
+          "known_for_department": "Sound",
+          "name": "田上祐二",
+          "original_name": "田上祐二",
+          "popularity": 0.6882,
+          "profile_path": null,
+          "credit_id": "626678aa14956516548f3cab",
+          "department": "Sound",
+          "job": "Sound Recordist"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 116688,
+          "known_for_department": "Sound",
+          "name": "仓桥静男",
+          "original_name": "倉橋静男",
+          "popularity": 0.9583,
+          "profile_path": "/85G7woSi4vpLRlJX165p1DulfPJ.jpg",
+          "credit_id": "64219f3a08cf8700bfee560f",
+          "department": "Sound",
+          "job": "Foley Artist"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 3468743,
+          "known_for_department": "Editing",
+          "name": "木村瞳",
+          "original_name": "木村瞳",
+          "popularity": 0.2323,
+          "profile_path": null,
+          "credit_id": "6421a77a6a3448007bb6362d",
+          "department": "Editing",
+          "job": "Online Editor"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 3981858,
+          "known_for_department": "Editing",
+          "name": "杉山夏菜",
+          "original_name": "杉山夏菜",
+          "popularity": 0.1813,
+          "profile_path": null,
+          "credit_id": "6421a7a72dc9dc007f0dbdda",
+          "department": "Editing",
+          "job": "Online Editor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5075466,
+          "known_for_department": "Sound",
+          "name": "SIN",
+          "original_name": "SIN",
+          "popularity": 0.1105,
+          "profile_path": null,
+          "credit_id": "6740c5898b4e4c2ef6f79a05",
+          "department": "Sound",
+          "job": "Theme Song Performance"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 5075475,
+          "known_for_department": "Sound",
+          "name": "MAH",
+          "original_name": "MAH",
+          "popularity": 0.0975,
+          "profile_path": null,
+          "credit_id": "6740c5b07b825e685b4e317a",
+          "department": "Sound",
+          "job": "Theme Song Performance"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5075455,
+          "known_for_department": "Sound",
+          "name": "SHOW-HATE",
+          "original_name": "SHOW-HATE",
+          "popularity": 0.0847,
+          "profile_path": null,
+          "credit_id": "6740c5d34b15b8ae31b00402",
+          "department": "Sound",
+          "job": "Theme Song Performance"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 5075461,
+          "known_for_department": "Sound",
+          "name": "GODRi",
+          "original_name": "GODRi",
+          "popularity": 0.1213,
+          "profile_path": null,
+          "credit_id": "6740c5e84b15b8ae31b0040c",
+          "department": "Sound",
+          "job": "Theme Song Performance"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2659300,
+          "known_for_department": "Sound",
+          "name": "山本康太",
+          "original_name": "KOHTA YAMAMOTO",
+          "popularity": 0.2424,
+          "profile_path": "/83Iu3Ey3ym9ZwewSmUjOvimpTMd.jpg",
+          "credit_id": "5f74f0f319675700379a5119",
+          "department": "Sound",
+          "job": "Original Music Composer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1842744,
+          "known_for_department": "Visual Effects",
+          "name": "岸友洋",
+          "original_name": "岸友洋",
+          "popularity": 0.6237,
+          "profile_path": "/k2j640WK36R6unk4TBoXE95x9Hv.jpg",
+          "credit_id": "5ed15fd69638640024703be6",
+          "department": "Visual Effects",
+          "job": "Character Designer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1491863,
+          "known_for_department": "Writing",
+          "name": "濑古浩司",
+          "original_name": "瀬古浩司",
+          "popularity": 1.1389,
+          "profile_path": "/zdTUsjMPFEZhygVdKs5rABtHJyk.jpg",
+          "credit_id": "5fd20bee1443f400432e2b37",
+          "department": "Writing",
+          "job": "Series Composition"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1608129,
+          "known_for_department": "Directing",
+          "name": "薮田修平",
+          "original_name": "Shuhei Yabuta",
+          "popularity": 0.4449,
+          "profile_path": "/iA6289lz4GxEjMZXSHhQssvlLtx.jpg",
+          "credit_id": "5fce834d95c0af0040a8f537",
+          "department": "Visual Effects",
+          "job": "3D Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2393561,
+          "known_for_department": "Production",
+          "name": "角田真敏",
+          "original_name": "角田真敏",
+          "popularity": 0.6893,
+          "profile_path": null,
+          "credit_id": "5d5f6a4669d28076feff4dd5",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2393564,
+          "known_for_department": "Production",
+          "name": "Yutaka Ueda",
+          "original_name": "Yutaka Ueda",
+          "popularity": 0.0689,
+          "profile_path": null,
+          "credit_id": "5d5f6ab2a894d63c769b5999",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1827038,
+          "known_for_department": "Production",
+          "name": "藤田浩幸",
+          "original_name": "藤田浩幸",
+          "popularity": 0.2901,
+          "profile_path": null,
+          "credit_id": "5d5f6ad269d2804142001e93",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1315181,
+          "known_for_department": "Production",
+          "name": "丸山博雄",
+          "original_name": "丸山博雄",
+          "popularity": 0.7613,
+          "profile_path": null,
+          "credit_id": "5d6136a554f6eb00149b540f",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2018339,
+          "known_for_department": "Camera",
+          "name": "浅川茂辉",
+          "original_name": "浅川茂輝",
+          "popularity": 0.4998,
+          "profile_path": "/lKAIPnLquPnKJ1X1JjCAGmAnSnr.jpg",
+          "credit_id": "5ed1607398f1f1001eece40d",
+          "department": "Camera",
+          "job": "Director of Photography"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2524491,
+          "known_for_department": "Art",
+          "name": "多田周平",
+          "original_name": "多田周平",
+          "popularity": 0.5361,
+          "profile_path": null,
+          "credit_id": "616fe03f5c5cc80093274400",
+          "department": "Art",
+          "job": "Art Designer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 116686,
+          "known_for_department": "Art",
+          "name": "须江信人",
+          "original_name": "須江信人",
+          "popularity": 0.545,
+          "profile_path": null,
+          "credit_id": "616fe032d4b9d9002958daa1",
+          "department": "Art",
+          "job": "Art Designer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1806063,
+          "known_for_department": "Sound",
+          "name": "山谷尚人",
+          "original_name": "山谷尚人",
+          "popularity": 0.5368,
+          "profile_path": null,
+          "credit_id": "5ed160e1aaec7100206c63e4",
+          "department": "Sound",
+          "job": "Sound Effects"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2393555,
+          "known_for_department": "Production",
+          "name": "远藤哲哉",
+          "original_name": "遠藤哲哉",
+          "popularity": 0.6699,
+          "profile_path": null,
+          "credit_id": "5fd85f48a127e5003f139a7f",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3013025,
+          "known_for_department": "Production",
+          "name": "西矢泰之",
+          "original_name": "西矢泰之",
+          "popularity": 0.0843,
+          "profile_path": null,
+          "credit_id": "6050e2e72cde980028beecfa",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1778872,
+          "known_for_department": "Production",
+          "name": "Yoko Furukawa",
+          "original_name": "Yoko Furukawa",
+          "popularity": 0.1327,
+          "profile_path": null,
+          "credit_id": "5d5f69df69d2804142001cf0",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1816778,
+          "known_for_department": "Production",
+          "name": "前田俊博",
+          "original_name": "前田俊博",
+          "popularity": 0.8969,
+          "profile_path": "/uEKRPogU0Z1Lbgy3NWoxeTqX41T.jpg",
+          "credit_id": "5d5f6ed8924ce50016150d42",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1580406,
+          "known_for_department": "Production",
+          "name": "木下哲哉",
+          "original_name": "木下哲哉",
+          "popularity": 0.2162,
+          "profile_path": null,
+          "credit_id": "5d5f6e4769d28076feff52ef",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1880453,
+          "known_for_department": "Production",
+          "name": "立石谦介",
+          "original_name": "立石謙介",
+          "popularity": 0.5522,
+          "profile_path": "/4yM6ysQCnqXfWtdDiH1t4N6DE8x.jpg",
+          "credit_id": "5d5f6dcf69d280414200220d",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1208426,
+          "known_for_department": "Sound",
+          "name": "泽野弘之",
+          "original_name": "澤野弘之",
+          "popularity": 1.4603,
+          "profile_path": "/egKyVXXlJ2u3oI0tVxgGK5qeIO6.jpg",
+          "credit_id": "5f74f091fea0d700350eb0a6",
+          "department": "Sound",
+          "job": "Original Music Composer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 12183,
+          "known_for_department": "Production",
+          "name": "石川光久",
+          "original_name": "石川光久",
+          "popularity": 0.8962,
+          "profile_path": "/lXN5l6C5qRHGX9t8AZOgiB0jGxg.jpg",
+          "credit_id": "5d5f695ea894d63c769b56bd",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 40340,
+          "known_for_department": "Sound",
+          "name": "三间雅文",
+          "original_name": "三間雅文",
+          "popularity": 1.0702,
+          "profile_path": null,
+          "credit_id": "5d5f68a269d2804142001bac",
+          "department": "Sound",
+          "job": "Sound Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1363967,
+          "known_for_department": "Writing",
+          "name": "谏山创",
+          "original_name": "諫山創",
+          "popularity": 0.3224,
+          "profile_path": null,
+          "credit_id": "5faab84453866e00411664e1",
+          "department": "Writing",
+          "job": "Comic Book"
+        }
+      ]
+    },
+    "keywords": {
+      "results": [
+        {
+          "name": "fascism",
+          "id": 1755
+        },
+        {
+          "name": "dystopia",
+          "id": 4565
+        },
+        {
+          "name": "politics",
+          "id": 6078
+        },
+        {
+          "name": "gore",
+          "id": 10292
+        },
+        {
+          "name": "survival",
+          "id": 10349
+        },
+        {
+          "name": "tragedy",
+          "id": 10614
+        },
+        {
+          "name": "giant monster",
+          "id": 11100
+        },
+        {
+          "name": "based on manga",
+          "id": 13141
+        },
+        {
+          "name": "super power",
+          "id": 33637
+        },
+        {
+          "name": "family tragedy",
+          "id": 160234
+        },
+        {
+          "name": "military",
+          "id": 162365
+        },
+        {
+          "name": "dark fantasy",
+          "id": 177895
+        },
+        {
+          "name": "shounen",
+          "id": 207826
+        },
+        {
+          "name": "anime",
+          "id": 210024
+        },
+        {
+          "name": "war",
+          "id": 273967
+        },
+        {
+          "name": "suspense",
+          "id": 288394
+        },
+        {
+          "name": "grand",
+          "id": 291153
+        },
+        {
+          "name": "suspenseful",
+          "id": 314730
+        },
+        {
+          "name": "mystery",
+          "id": 316332
+        },
+        {
+          "name": "commanding",
+          "id": 325785
+        }
+      ]
+    },
+    "translations": {
+      "translations": [
+        {
+          "iso_3166_1": "US",
+          "iso_639_1": "en",
+          "name": "English",
+          "english_name": "English",
+          "data": {
+            "name": "Attack on Titan",
+            "overview": "Many years ago, the last remnants of humanity were forced to retreat behind the towering walls of a fortified city to escape the massive, man-eating Titans that roamed the land outside their fortress. Only the heroic members of the Scouting Legion dared to stray beyond the safety of the walls – but even those brave warriors seldom returned alive. Those within the city clung to the illusion of a peaceful existence until the day that dream was shattered, and their slim chance at survival was reduced to one horrifying choice: kill – or be devoured!",
+            "homepage": "",
+            "tagline": "Home was a pen. Humanity, cattle."
+          }
+        },
+        {
+          "iso_3166_1": "PT",
+          "iso_639_1": "pt",
+          "name": "Português",
+          "english_name": "Portuguese",
+          "data": {
+            "name": "Ataque dos Titãs",
+            "overview": "Há centenas de anos, a humanidade quase foi extinta pelos Titãs. Os Titãs, criaturas gigantescas sem qualquer inteligência aparente, devoram humanos e, pior ainda, parecem fazê-lo mais pelo prazer do que pela necessidade de se alimentarem. Uma pequena percentagem da humanidade sobreviveu, protegendo-se numa cidade rodeada por altíssimas muralhas, ainda mais altas que o maior dos gigantes. Atualmente, a cidade não vê nenhum gigante há mais de 100 anos. O adolescente Eren e a sua irmã adotiva Mikasa, testemunham algo terrível aquando da destruição das muralhas por um super Titã que apareceu do nada. Enquanto os Titãs mais pequenos inundam a cidade, os dois jovens veem, aterrorizados, a sua mãe a ser comida vida. Eren jura matar todos os Titãs e vingar toda a humanidade.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "FR",
+          "iso_639_1": "fr",
+          "name": "Français",
+          "english_name": "French",
+          "data": {
+            "name": "L'Attaque des Titans",
+            "overview": "Dans un monde ravagé par des titans mangeurs d’homme depuis plus d’un siècle, les rares survivants de l’Humanité n’ont d’autre choix pour survivre que de se barricader dans une cité-forteresse. Le jeune Eren, témoin de la mort de sa mère dévorée par un titan, n’a qu’un rêve : entrer dans le corps d’élite chargé de découvrir l’origine des titans, et les annihiler jusqu’au dernier…",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "ES",
+          "iso_639_1": "es",
+          "name": "Español",
+          "english_name": "Spanish",
+          "data": {
+            "name": "Ataque a los Titanes",
+            "overview": "Tras un siglo de aparente paz, un titán colosal rompe las murallas que protegían a la humanidad, desatando una nueva masacre. Eren Jaeger y el Cuerpo de Exploradores lucharán para recuperar su mundo y enfrentar la amenaza titán.",
+            "homepage": "",
+            "tagline": "Ese día, la humanidad recibió un triste recordatorio."
+          }
+        },
+        {
+          "iso_3166_1": "IR",
+          "iso_639_1": "fa",
+          "name": "فارسی",
+          "english_name": "Persian",
+          "data": {
+            "name": "حمله به تایتان‌ها",
+            "overview": "داستان انیمه به صدها سال قبل باز می‌گردد. جایی که انسان‌ها بدست تایتان‌ها کشته می‌شدند اما عده اندکی از آن‌ها موفق شدند در شهری با دیوارهای بسیار بلند (حتی بلندتر از بزرگترین تایتان‌ها) پناه بگیرند و جان سالم بدر ببرند. صد سال به همین منوال می‌گذرد تا اینکه...",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "DK",
+          "iso_639_1": "da",
+          "name": "Dansk",
+          "english_name": "Danish",
+          "data": {
+            "name": "Attack on Titan",
+            "overview": "",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "CZ",
+          "iso_639_1": "cs",
+          "name": "Český",
+          "english_name": "Czech",
+          "data": {
+            "name": "Šingeki no kjodžin",
+            "overview": "Lidé byli nuceni bojovat s obry o záchranu svého pokolení. Když se schylovalo k nejhoršímu, postavili několik měst pod ochranou mohutných zdí, které obři nedokázali překonat. Po jedno celé století si lidé za hradbami mohli oddechnout a žít v relativním míru, avšak odříznuti od okolního světa. Mír ale trval jen do dne, než jedno z těchto měst, obehnané zdí, Maria, bylo napadeno dosud nevídaným šedesátimetrovým obrem, kterému se ochranu města podařilo překonat. Ústřední postava příběhu Aren Jaegar se svou adoptivní sestrou Mikasou při útoku přicházejí o svoji matku a vydávají se vstříc nehostinému světu.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "UA",
+          "iso_639_1": "uk",
+          "name": "Український",
+          "english_name": "Ukrainian",
+          "data": {
+            "name": "Атака титанів",
+            "overview": "Кількасот років тому людство було майже винищене титанами. Титани не володіли інтелектом, вони пожирали людей просто заради розваги, а не як їжу. Невеликий відсоток людства пережив страшні часи в місті, захищеному п’ятидесятиметовою стіною.\n\nПеренесемося в наш час, де місто не бачило титанів останні 100 років. Двоє дітей стали свідками жахливого: міська стіна була пробита величезним титаном, який з’явився нізвідки, і трохи менші титани проникають до міста. Мати Ерена та Мікаси була з’їдена заживо. Ерен присягається, що знищить кожного титана та помститься за все людство.",
+            "homepage": "",
+            "tagline": "У той день людство отримало гірке нагадування"
+          }
+        },
+        {
+          "iso_3166_1": "SE",
+          "iso_639_1": "sv",
+          "name": "svenska",
+          "english_name": "Swedish",
+          "data": {
+            "name": "Attack on Titan",
+            "overview": "De senaste hundra åren har mänskligheten levt i trygghet innanför de tre enorma murarna Maria, Rose och Sina, som skyddar människorna från de hemska titanerna på utsidan. Eren Yeager bor i den lilla byn Shiganshina precis utanför Mariamuren tillsammans med sin adoptivsyster Mikasa Ackerman. En dag vänds hela världen upp och ner för hela mänskligheten när en enorm titan dyker upp och krossar muren.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "RU",
+          "iso_639_1": "ru",
+          "name": "Pусский",
+          "english_name": "Russian",
+          "data": {
+            "name": "Атака титанов",
+            "overview": "Уже многие годы человечество ведёт борьбу с титанами — огромными существами, которые не обладают особым интеллектом, зато едят людей и получают от этого удовольствие. После продолжительной борьбы остатки человечества построили высокую стену, окружившую страну людей, через которую титаны пройти не могли. С тех пор прошло сто лет, люди мирно живут под защитой стены. Но однажды подросток Эрэн и его сводная сестра Микаса становятся свидетелями страшного события — участок стены разрушается супертитаном, появившимся прямо из воздуха. Титаны нападают на город, и дети в ужасе видят, как один из монстров заживо съедает их мать. Эрэн клянётся, что убьёт всех титанов и отомстит за человечество.",
+            "homepage": "",
+            "tagline": "«Лик угасания человечества»"
+          }
+        },
+        {
+          "iso_3166_1": "CN",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "name": "进击的巨人",
+            "overview": "曾几何时，世界上突然出现无数身形庞大的巨人，普通人类的生命受到前所未有的威胁。为了保护自身安全，最后的人类筑起三座高墙：玛莉亚、露丝和希娜。人类迎来了长达一个世纪的和平岁月，却也让自己成为圈养在笼中的鸟儿，屈辱地失去自由。845 年，高达 60 米的超大型巨人和铠之巨人登场， 摧毁了最外层的玛莉亚之壁，也惊醒了人类似乎永远不会苏醒的长梦。在此事件中，不愿蜷缩在墙内的少年艾伦·耶格尔亲眼目睹母亲遇害，由此更坚定了他加入调查兵团的决心。在此之后，艾伦和青梅竹马三笠·阿克曼、好友阿尔敏·亚鲁雷特加入第 104 期训练兵团，发誓成为足以消灭所有巨人的英勇战士。百年的和平结束，人类和巨人的战争再度拉开序幕。",
+            "homepage": "",
+            "tagline": "那一天，人类终于回想起了曾一度被它们所支配的恐怖和被囚禁于鸟笼中的那份屈辱。"
+          }
+        },
+        {
+          "iso_3166_1": "KR",
+          "iso_639_1": "ko",
+          "name": "한국어/조선말",
+          "english_name": "Korean",
+          "data": {
+            "name": "진격의 거인",
+            "overview": "2013년 4월 MBS에서 방영을 시작한 애니메이션. 100여 년 전 갑자기 나타난 거인들에 의해 멸종 위기에 처한 인류는 거대한 벽을 쌓고 그 안에서 살아가고 있다. 에렌은 바깥 세계를 동경하며, 언젠가 저 방벽 밖으로 나가겠다는 꿈을 키우고 있었다. 그러던 어느 날, 60m가 넘는 초대형 거인의 등장으로 벽은 무너지고, 거인들이 벽 안으로 들어와 사람들을 잡아먹기 시작한다. 절규와 죽음으로 가득한 절망적인 상황에서 거인에게 어머니 카를라를 비롯한 소중한 사람들을 빼앗긴 엘런은 복수를 맹세하고, 사무친 복수심을 원동력으로 삼아 만 12세에 훈련병단의 훈련병으로 지원한다.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "DE",
+          "iso_639_1": "de",
+          "name": "Deutsch",
+          "english_name": "German",
+          "data": {
+            "name": "Attack on Titan",
+            "overview": "In 2000 Jahren lebt die Menschheit – oder das, was davon übrig ist – hinter 50 Meter hohen, gewaltigen Mauern. Diese Festung verspricht Sicherheit, doch wer sich nach draußen wagt, kehrt selten unversehrt zurück. Denn die Welt wird von riesigen Titanen beherrscht, die anscheinend nur ein Ziel haben: Menschen zu fressen! Als eines Tages ein Exemplar von ungeheuren Ausmaßen über die Mauer blickt, ahnen die Einwohner von Shiganshina schnell, dass ihrem Dorf nach hundert Jahren des Friedens erneut eine Katastrophe bevorsteht. Doch während sich die meisten hilflos ihrem Schicksal ergeben, schwört der junge Eren Jäger Rache. Eines Tages wird er die Welt jenseits der Mauern entdecken und die Titanen allesamt vernichten!",
+            "homepage": "",
+            "tagline": "Sie sind das Essen! Wir sind die Jäger!"
+          }
+        },
+        {
+          "iso_3166_1": "JP",
+          "iso_639_1": "ja",
+          "name": "日本語",
+          "english_name": "Japanese",
+          "data": {
+            "name": "",
+            "overview": "繁栄を築き上げた人類は、突如出現した巨人により滅亡の淵に立たされた。生き残った人類は巨大な三重の城壁の内側に生活圏を確保することで辛うじてその命脈を保っていた。城壁による平和を得てから約100年後。いつしか人類は巨人の脅威を忘れかけていた。",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "IL",
+          "iso_639_1": "he",
+          "name": "עִבְרִית",
+          "english_name": "Hebrew",
+          "data": {
+            "name": "התקפת הטיטאנים",
+            "overview": "ארן וחברתו מיקאסה חיים בעולם המלא בטיטאנים - יצורים חסרי אינטליגנציה וטורפי אדם. כתוצאה מכך, שארית האנושות חיה בעיר המוקפת חומות בגובה 50 מטרים, שם בני האנוש מנהלים אורח חיים רגיל, מוגנים  מכל סכנה. הטיטאנים לא ניתנים להריגה מכיוון שאיבריהם וחלקי גופם מתחדשים תוך פרק זמן קצר, אם כי חתך מדויק בעורפם יגרום למותם המיידי. לשם כך קיימות יחידות מיוחדות המצוידות באמצעים טכנולוגים, שמאפשרים להן להרוג את הטיטאנים.",
+            "homepage": "",
+            "tagline": "באותו היום, האנושות קיבלה תזכורת מזעזעת"
+          }
+        },
+        {
+          "iso_3166_1": "BR",
+          "iso_639_1": "pt",
+          "name": "Português",
+          "english_name": "Portuguese",
+          "data": {
+            "name": "Attack on Titan",
+            "overview": "Titãs estão quase exterminando a raça humana. Porém alguns estão dispostos a formar um exército de ataque aos seres assassinos. O jovem Eren, após ver sua mãe ser devorada por um titã, decide que não deixará nenhum deles vivo e buscará sua vingança completa.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "SA",
+          "iso_639_1": "ar",
+          "name": "العربية",
+          "english_name": "Arabic",
+          "data": {
+            "name": "هجوم العمالقة",
+            "overview": "تدور القصة حول حياة إيرين ييغر، وأخته المتبناة ميكاسا أكّرمان، وصديقهما أرمين أرليرت، الذين يعيشون في عالم حيث يسكن بقية الجنس البشري داخل مدن محاطة بأسوار ضخمة بسبب الظهور المفاجئ للعمالقة، مخلوقات ضخمة تقوم بالتهام البشر بلا سبب على ما يبدو. تتغير حياتهم للأبد بعد ظهور عملاق جبار وجلبه للدمار إلى موطنهم وموت والدة إيرين. سعيًا وراء الانتقام واستعادة العالم من يد العمالقة، قرر إيرين وميكاسا وأرمين الانضمام إلى فيلق الاستطلاع، مجموعة من نخبة الجنود يقاتلون العمالقة خارج الأسوار.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "IT",
+          "iso_639_1": "it",
+          "name": "Italiano",
+          "english_name": "Italian",
+          "data": {
+            "name": "L'attacco dei giganti",
+            "overview": "Diverse centinaia di anni fa, la razza umana fu quasi sterminata dai giganti. Si racconta di quanto questi fossero alti, privi di intelligenza e affamati di carne umana; peggio ancora, essi sembra divorassero umani più per piacere che per necessario sostentamento. Una piccola percentuale dell'umanità però sopravvisse asserragliandosi in una città circondata da mura estremamente alte, anche più alte del più grande di giganti. Eren è un adolescente che vive in questa città, dove non si vede un gigante da oltre un secolo. Ma presto un orrore indicibile si palesa alle sue porte, ed un gigante più grande di quanto si sia mai sentito narrare, appare dal nulla abbattendo le mura ed imperversando assieme ad altri suoi simili fra la popolazione. Eren, vinto il terrore iniziale, si ripromette di eliminare ogni singolo gigante, per vendicare l'umanità tutta.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "TW",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "name": "進擊的巨人",
+            "overview": "107年前（743年），世界上突然出現了以捕食人類為唯一行為的「巨人」。巨人力量強大且有再生能力，人類無法與之抗衡，面臨滅種之災。面臨著生存危機而殘存下來的人類逃到了一個地方，蓋起了三道巨大的城牆包圍此地，令牆外巨人無法入侵。人們在這隔絕的環境裡享受了一百多年的和平。直到主角艾連．葉卡十歲那年，60公尺高的「超大型巨人」突然出現，以壓倒性的力量破壞最外圍的「瑪利亞之牆」，其後瞬間消失；牆外的巨人們在破壞的城牆缺口成群的衝進牆內捕食人類，人類只好退到第二道城牆之內。\n\n艾連在親眼看著人們以及自己的母親被巨人吞食後，僥倖逃入第二道城牆「羅塞之牆」內。懷著對巨人無法形容的憎恨，艾連誓言一匹不留殺死所有巨人。瑪利亞城牆崩壞的兩年後，艾連加入104期訓練兵團學習和巨人戰鬥的技術。在訓練兵團的三年，艾連在同期訓練兵裡有著其他人無法比擬的強悍精神力。就在訓練兵團結訓之前，超大型巨人再次出現並衝毀羅塞之牆，艾連隨訓練兵團一同與巨人作戰……",
+            "homepage": "",
+            "tagline": "那一天，人類終於回想起了，曾經一度被他們所支配的恐怖，還有被囚禁於鳥籠中的那份屈辱。"
+          }
+        },
+        {
+          "iso_3166_1": "GR",
+          "iso_639_1": "el",
+          "name": "ελληνικά",
+          "english_name": "Greek",
+          "data": {
+            "name": "Η Επίθεση των Τιτάνων",
+            "overview": "Αρκετά χρόνια πριν οι άνθρωποι βρίσκονταν πολύ κοντά στο να αφανιστούν από τους γίγαντες. Οι γίγαντες όπως στις ιστορίες ήταν αρκετά ψηλοί, με μηδαμινή νοημοσύνη, καταβροχθίζουν ανθρώπους και το χειρότερο απ' όλα, φαίνεται πως το κάνουν περισσότερο για ευχαρίστηση παρά για εύρεση τροφής. Ένα μικρό ποσοστό ανθρώπων επέζησε επειδή κλείστηκαν σε μία πόλη η οποία προστατεύεται από πραγματικά τεράστιους τοίχους, ψηλότερους ακόμα κι από έναν τεράστιο γίγαντα.Στο παρόν πλέον, οι γίγαντες έχουν να εμφανιστούν στην πόλη πάνω από 100 χρόνια. Ένα έφηβο αγόρι που το λένε Eren και η θετή του αδελφή Mikasa έγιναν μάρτυρες ενός φρικιαστικού γεγονότος όταν οι τοίχοι της πόλης καταστράφηκαν από έναν τεράστιο και πολύ δυνατό γίγαντα που εμφανίστηκε από το πουθενά. Όσο οι μικρότεροι γίγαντες πλημμύριζαν την πόλη, τα δύο παιδιά έβλεπαν με τρόμο τη μητέρα τους να τρώγεται ζωντανή. Ο Eren υπόσχεται τότε ότι θα εξολοθρεύσει κάθε γίγαντα παίρνοντας εκδίκηση για όλο το ανθρώπινο είδος.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "FI",
+          "iso_639_1": "fi",
+          "name": "suomi",
+          "english_name": "Finnish",
+          "data": {
+            "name": "Titaanien sota – Attack on Titan",
+            "overview": "",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "BG",
+          "iso_639_1": "bg",
+          "name": "български език",
+          "english_name": "Bulgarian",
+          "data": {
+            "name": "Нападението на титаните",
+            "overview": "Историята разказва за човешки същества, които живеят зад стена, поколения наред. Те се опитват да се спасят от извънземни титани. Въпреки това, хората са любопитни какво има отвъд стената и така се формира скаутска мисия. Много скоро те се оказват в битка срещу самите титани и се опитват за пореден път да спасят човечеството.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "MX",
+          "iso_639_1": "es",
+          "name": "Español",
+          "english_name": "Spanish",
+          "data": {
+            "name": "Attack on Titan",
+            "overview": "Muchos años atrás, la humanidad estuvo al borde de la extinción con la aparición de unas criaturas gigantes que devoraban a todas las personas. Huyendo, la humanidad consiguió sobrevivir en una ciudad fortificada de altas murallas que se ha convertido en el último reducto de la civilización contra los Titanes que campan a sus anchas por el mundo. Ahora esa paz está a punto de verse interrumpida por una cadena de acontecimientos que llevará a desvelar qué son los Titanes y cómo aparecieron.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "TR",
+          "iso_639_1": "tr",
+          "name": "Türkçe",
+          "english_name": "Turkish",
+          "data": {
+            "name": "Attack on Titan",
+            "overview": "Birkaç yüzyıl önce insanlar, devler tarafından neredeyse tamamen yok edilmiştir. Bu devler uzun boyludur, zeki değildirler ve insanları yiyerek beslenirler. Küçük bir grup insan, çareyi en büyük devlerden bile uzun olan yüksek duvarlarla çevrili bir şehre kendilerini kapatarak bulmuşlardır. Günümüze gelindiğinde şehirde 100 yıldır hiç dev görülmemiştir. Genç çocuk Eren ve üvey kız kardeşi Mikasa, büyük bir dev tarafından şehrin duvarlarının yıkılışına tanık olurlar. Devler şehre akın etmeye başlar ve iki çocuk da annelerinin canlı canlı yenişine korku içinde tanıklık ederler. Eren her bir devi öldürüp tüm insanlığın intikamını alacağına yemin eder.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "TH",
+          "iso_639_1": "th",
+          "name": "ภาษาไทย",
+          "english_name": "Thai",
+          "data": {
+            "name": "ผ่าพิภพไททัน",
+            "overview": "หลายร้อยปีก่อน มนุษย์เกือบสูญพันธ์เพราะเผ่าพันธุ์ ไททันที่ปรากฏตัวและกินมนุษย์จำนวนมาก จนมนุษย์ที่เหลือรอดเพียงน้อยนิดได้ก่อสร้างกำแพงขนาดใหญ่กว่าพวกอะเบะมาคุ้มครองเมืองตัวเอง ซึ่งพวกไททันที่สูงพียง 3 15 เมตร ไม่สามารถผ่านกำแพงที่สูงร่วม 50 เมตรเข้ามาได้ วันหนึ่งหลังจากผ่านมานานร่วมศตวรรษ ก็มีไททันที่สูงใหญ่กว่ากำแพงและสูงถึง60เมตรและไททันเกราะมาทำลายกำแพงให้ไททันตนอื่นบุกเข้าเมืองชิกันชินะ และไล่กินประชากรในเมือง ทำให้ประชาชนส่วนหนึ่งต้องหนีไปกำแพงชั้นในด้วยความโกลาหล และเกิดการสูญเสียครั้งใหญ่ เอเลน เยเกอร์ ผู้ที่ฝันจะได้เป็นทหารในกองทัพ ในวันที่เกิดเหตุการณ์นั้น เขาได้อยู่ในเหตุการณ์ และได้เห็นแม่ของตนถูกพวกไททันกินต่อหน้าเขาโดยที่ไม่สามารถช่วยเหลือได้ ถึงจะมีชีวิตรอดมาได้ แต่ก็ทำให้เขาเริ่มตระหนักถึงความอ่อนแอของมนุษย์ที่พ่ายแพ้ต่อพวกไททัน และขอสาบานว่าจะกำจัดไททันทุกตนเพื่อแก้แค้นให้เหล่ามนุษยชาติ หลังจากนั้นเขาและพี่สาวบุญธรรม มิคาสะ อัคเคอร์แมน ได้เข้าร่วมกองทัพและฝึกฝนวิชาการต่อสู้ จนเข้าร่วมกองทัพและเตรียมรับมือต่อกรกับพวกไททันที่ครองผืนดินที่เคยเป็นของมนุษย์มาก่อน อีก5ปีต่อมาไททัน60เมตรได้มาทำลายกำแพงเขตทรอสต์และทำให้ไททันบุกเข้ามาอีกครั้ง",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "PL",
+          "iso_639_1": "pl",
+          "name": "Polski",
+          "english_name": "Polish",
+          "data": {
+            "name": "Atak Tytanów",
+            "overview": "W otoczonym wysokim murem mieście ostatni ocaleni starają się przetrwać ataki olbrzymów, które od wieków nękają ludzkość. Gdy pewnego razu potwory wdzierają się do miasta, jedną z wielu ofiar jest matka nastoletniego Erena. Chłopak poprzysięga zemstę i wraz z najbliższymi przyjaciółmi, Mikasą i Arminem dołącza do oddziałów obronnych. Kilka lat później młodzi żołnierze kończą szkolenie i właśnie mają dołączyć do jednej z jednostek specjalnych, gdy niespodziewanie olbrzymy ponownie atakują.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "LT",
+          "iso_639_1": "lt",
+          "name": "Lietuvių",
+          "english_name": "Lithuanian",
+          "data": {
+            "name": "Titanų medžioklė",
+            "overview": "\"Erenas trokšta tik vieno - pamatyti platųjį pasaulį. Tačiau ši svajonė nepasiekiama. Žmonijos likučiai gyvena pastatytame \"narve\", tokiu būdu izoliuodami save nuo išorėje dominuojančių ir siaubą keliančių Titanų... Lemtingą dieną, kaip iš niekur išdygęs Kolosas pralaužia įtvirtinimus, o užplūdę Titanai sukelia paniką ir baimę žmonių akyse. Tragiški tos dienos įvykiai sukrečia ne tik Ereną. Jaunuolis apimtas įniršio siekia atkeršyti už pralietą kraują. Kova už žmonijos išlikimą tęsiasi...\"",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "HU",
+          "iso_639_1": "hu",
+          "name": "Magyar",
+          "english_name": "Hungarian",
+          "data": {
+            "name": "Attack on Titan",
+            "overview": "A Singeki no kjodzsin egy olyan világban játszódik, ahol az emberiség magas falakkal körülvett városokban elzárkózva él, mivel a falakon kívül titánok, óriási emberszerű lények falják fel őket, minden ok nélkül. A történet középpontjában Eren Yeager, és gyermekkori barátai Mikasa Ackerman valamint Armin Arlert állnak, akik élete örökre megváltozik a Kolosszális Titán megjelenésével, aki szülővárosuk lerombolását és Eren édesanyjának a halálát is okozza. Eren megesküszik, hogy bosszút fog állni, és visszaszerzi a titánoktól az emberiség szabadságát. Ennek megvalósításához Mikasával és Arminnal együtt csatlakozik a Felderítő Egységhez, ahhoz az elit csapathoz, akik a falakon kívül harcolnak a titánok ellen.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "VN",
+          "iso_639_1": "vi",
+          "name": "Tiếng Việt",
+          "english_name": "Vietnamese",
+          "data": {
+            "name": "Đại Chiến Người Khổng Lồ",
+            "overview": "Chứng kiến quê hương bị tàn phá, chàng thanh niên Eren Yeager quyết tâm chiến đấu với bọn Titan khổng lồ đang đe dọa hủy diệt loài người.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "CA",
+          "iso_639_1": "fr",
+          "name": "Français",
+          "english_name": "French",
+          "data": {
+            "name": "L'attaque des titans",
+            "overview": "",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "ID",
+          "iso_639_1": "id",
+          "name": "Bahasa indonesia",
+          "english_name": "Indonesian",
+          "data": {
+            "name": "Shingeki no Kyojin",
+            "overview": "Beberapa ratus tahun yang lalu, Manusia hampir dimusnahkan oleh para Titan. Titans biasanya bertingkat beberapa, tampaknya tidak memiliki kecerdasan, melahap manusia dan, yang terburuk, tampaknya melakukannya untuk kesenangan daripada sebagai sumber makanan. Sebagian kecil umat manusia bertahan dengan membangun tembok di kota yang dilindungi oleh tembok yang sangat tinggi, bahkan lebih tinggi dari Titan terbesar. Berkedip maju ke masa kini dan kota ini belum pernah melihat Titan selama lebih dari 100 tahun. Remaja laki-laki Eren dan saudara perempuan angkatnya Mikasa menyaksikan sesuatu yang mengerikan saat tembok kota dihancurkan oleh Titan Kolosal yang muncul dari udara tipis. Saat Titan yang lebih kecil membanjiri kota, kedua anak itu menyaksikan dengan ngeri saat ibu mereka dimakan hidup-hidup. Eren bersumpah bahwa dia akan membunuh setiap Titan dan membalas dendam untuk seluruh umat manusia",
+            "homepage": "",
+            "tagline": "power tends to corrupt."
+          }
+        },
+        {
+          "iso_3166_1": "AE",
+          "iso_639_1": "ar",
+          "name": "العربية",
+          "english_name": "Arabic",
+          "data": {
+            "name": "هجوم العمالقة",
+            "overview": "تدور القصة حول حياة إرين ييغر وأخته المتبناة ميكاسا أكرمان وصديقهما ارمين أرليرت الذين يعيشون في عالم حيث يسكن بقية الجنس البشري داخل مدن محاطة بأسوار ضخمة بسبب الظهور المفاجئ للعمالقة وهي مخلوقات ضخمة تقوم بالتهام البشر بلا سبب, تتغير حياتهم بعد ظهور عملاق هائل وجلبه للدمار إلى موطنهم.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "NO",
+          "iso_639_1": "nb",
+          "name": "Bokmål",
+          "english_name": "Norwegian Bokmål",
+          "data": {
+            "name": "",
+            "overview": "",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "HK",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "name": "進擊的巨人",
+            "overview": "107年前（743年），世界上突然出現了以捕食人類為唯一行為的「巨人」。巨人力量強大且有再生能力，人類無法與之抗衡，面臨滅種之災。面臨著生存危機而殘存下來的人類逃到了一個地方，蓋起了三重巨大的城牆包圍此地，令牆外巨人無法入侵。人們在這隔絕的環境裡享受了一百多年的和平。直到主角艾連·葉卡十歲那年，60公尺高的「超大型巨人」突然出現，以壓倒性的力量破壞最外圍的「瑪利亞之牆」(Wall Maria)，其後瞬間消失；牆外的巨人們在破壞的城牆缺口成群的衝進牆內捕食人類，人類只好退到第二重城牆之內。\n\n艾連在親眼看著人們以及自己的母親被巨人吞食後，僥倖逃入第二重城牆「羅塞之牆」(Wall Rose)內。懷著對巨人無法形容的憎恨，艾連誓言一匹不留殺死所有巨人。瑪利亞城牆崩壞的兩年後，艾連加入104期訓練兵團學習和巨人戰鬥的技術。在訓練兵團的三年，艾連在同期訓練兵裡有著其他人無法比擬的強悍精神力。就在訓練兵團結訓之前，超大型巨人再次出現並衝毀羅塞之牆，艾連隨訓練兵團一同與巨人作戰……",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "NL",
+          "iso_639_1": "nl",
+          "name": "Nederlands",
+          "english_name": "Dutch",
+          "data": {
+            "name": "Attack on Titan",
+            "overview": "Honderden jaren geleden was de mensheid bijna uitgeroeid door de titanen. Een klein deel van de mensen overleefden het door een metropool te bouwen met gigantische muren, hoger dan de grootste titanen. In het heden heeft de metropool al in geen honderd jaar een titaan gezien. Maar op een dag verschijnt er ineens een kolossale titaan die een deel van de buitenste muur vernietigt. Eren Jaeger en zijn geadopteerde zus Mikasa Ackerman zijn getuige van de vernietiging van hun stad en de dood van hun moeder door de mensetende titanen. Eren zweert om elke titaan te doden en wraak te nemen voor de hele mensheid.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "ES",
+          "iso_639_1": "gl",
+          "name": "Galego",
+          "english_name": "Galician",
+          "data": {
+            "name": "",
+            "overview": "",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "LA",
+          "iso_639_1": "la",
+          "name": "Latin",
+          "english_name": "Latin",
+          "data": {
+            "name": "",
+            "overview": "",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "SK",
+          "iso_639_1": "sk",
+          "name": "Slovenčina",
+          "english_name": "Slovak",
+          "data": {
+            "name": "Shingeki no Kyojin",
+            "overview": "Ľudia boli nútení bojovať s obrami, aby zachránili svoj kmeň. Keď bolo najhoršie, postavili niekoľko miest pod ochranou mohutných hradieb, ktoré obri nedokázali prekonať. Ľudia za hradbami si mohli na sto rokov vydýchnuť a žiť v relatívnom pokoji, ale odrezaní od vonkajšieho sveta. Mier však trval len do dňa, keď na jedno z týchto opevnených miest, Máriu, zaútočil nikdy predtým nevidený 60-metrový obor, ktorému sa podarilo prekonať obranu mesta. Hlavná postava príbehu, Aren Jaegar, a jeho adoptívna sestra Mikasa, pri útoku stratia matku a vydávajú sa na cestu do nehostinného sveta.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "HY",
+          "iso_639_1": "hy",
+          "name": "",
+          "english_name": "Armenian",
+          "data": {
+            "name": "",
+            "overview": "",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "RO",
+          "iso_639_1": "ro",
+          "name": "Română",
+          "english_name": "Romanian",
+          "data": {
+            "name": "Atacul titanilor",
+            "overview": "",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "RS",
+          "iso_639_1": "sr",
+          "name": "Srpski",
+          "english_name": "Serbian",
+          "data": {
+            "name": "Напад на Титане",
+            "overview": "Пре неколико стотина година, Титани су скоро истребили људе. Титани су обично високи неколико спратова, изгледа да немају интелигенцију, прождиру људска бића и, што је најгоре, чини се да то раде из задовољства, а не као извора хране. Мали проценат човечанства преживео је зазидајући се у граду заштићеном изузетно високим зидовима, чак вишим од највећих Титана. Пребацујемо се у садашњост. Град није видео Титана више од 100 година. Тинејџер Ерен и његова сестра Микаса сведоче нечему ужасном док градске зидине уништава колосални Титан који се појављује из ваздуха. Док мањи Титани преплављују град, двоје деце ужаснуто гледају како им мајку једу живу. Ерен се заклиње да ће убити сваког Титана и осветити се за цело човечанство.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "SG",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "name": "",
+            "overview": "",
+            "homepage": "",
+            "tagline": ""
+          }
+        }
+      ]
+    },
+    "external_ids": {
+      "imdb_id": "tt2560140",
+      "freebase_mid": "/m/0vsphz0",
+      "freebase_id": null,
+      "tvdb_id": 267440,
+      "tvrage_id": null,
+      "wikidata_id": "Q22126305",
+      "facebook_id": "AttackOnTitan",
+      "instagram_id": "anime_shingeki_official",
+      "twitter_id": "anime_shingeki"
+    },
+    "semantic_tags": [
+      "genre:动画",
+      "genre:sci-fi-&-fantasy",
+      "genre:动作冒险",
+      "decade:2010s",
+      "country:jp",
+      "lang:ja",
+      "theme:cyberpunk",
+      "theme:monster"
+    ]
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/A6tMQAo6t6eRFCPhsrShmxZLqFB.jpg",
+    "created_by": [],
+    "episode_run_time": [
+      25
+    ],
+    "first_air_date": "2009-04-05",
+    "genres": [
+      {
+        "id": 10759,
+        "name": "动作冒险"
+      },
+      {
+        "id": 16,
+        "name": "动画"
+      },
+      {
+        "id": 10765,
+        "name": "Sci-Fi & Fantasy"
+      },
+      {
+        "id": 35,
+        "name": "喜剧"
+      }
+    ],
+    "homepage": "http://www.hagaren.jp/fa/",
+    "id": 31911,
+    "in_production": false,
+    "languages": [
+      "ja"
+    ],
+    "last_air_date": "2010-07-04",
+    "last_episode_to_air": {
+      "id": 761875,
+      "name": "旅途的尽头",
+      "overview": "爱德、阿尔的漫长旅途，即将划下休止符。",
+      "vote_average": 7.733,
+      "vote_count": 15,
+      "air_date": "2010-07-04",
+      "episode_number": 64,
+      "episode_type": "finale",
+      "production_code": "",
+      "runtime": 25,
+      "season_number": 1,
+      "show_id": 31911,
+      "still_path": "/jzCIX2bXrwTKfWApaJeTDWIASjj.jpg"
+    },
+    "name": "钢之炼金术师 FA",
+    "next_episode_to_air": null,
+    "networks": [
+      {
+        "id": 94,
+        "logo_path": "/7RNXnyiMbjgqtPAjja13wchcrGI.png",
+        "name": "MBS",
+        "origin_country": "JP"
+      },
+      {
+        "id": 160,
+        "logo_path": "/lUACMATs6jcscXIrzNCQzbvNVN5.png",
+        "name": "TBS",
+        "origin_country": "JP"
+      },
+      {
+        "id": 201,
+        "logo_path": "/qNooLje0YQh1y3y9LUM2Y5QCtiF.png",
+        "name": "CBC",
+        "origin_country": "JP"
+      },
+      {
+        "id": 896,
+        "logo_path": "/qfUzYnpnN5bnd2bqGUH0OlAMell.png",
+        "name": "Tulip Television",
+        "origin_country": "JP"
+      },
+      {
+        "id": 1559,
+        "logo_path": "/artkCykJgOAh6lAjfrNNgANasgk.png",
+        "name": "SBC",
+        "origin_country": "JP"
+      },
+      {
+        "id": 2460,
+        "logo_path": "/34sNEcsgcTAuDidRMrgxdfNyVjL.png",
+        "name": "BSN",
+        "origin_country": "JP"
+      },
+      {
+        "id": 2461,
+        "logo_path": "/b4Ivxqz6UY0EogjYc09Y22ctC6F.png",
+        "name": "tys",
+        "origin_country": "JP"
+      },
+      {
+        "id": 2462,
+        "logo_path": "/7zXfwh5ZhFqvdOWgWX80weU6Sqb.png",
+        "name": "NBC",
+        "origin_country": "JP"
+      },
+      {
+        "id": 3658,
+        "logo_path": "/sJwRsE1lfMwAwYZi1OtRfn7V03t.png",
+        "name": "HBC",
+        "origin_country": "JP"
+      },
+      {
+        "id": 3705,
+        "logo_path": "/zOgixhlAa61yUb32bsXvRtD63wI.png",
+        "name": "RKK",
+        "origin_country": "JP"
+      },
+      {
+        "id": 3969,
+        "logo_path": "/nhCsLIGjzIIp6jIFCdHN0cQEzjP.png",
+        "name": "i-Television",
+        "origin_country": "JP"
+      },
+      {
+        "id": 3970,
+        "logo_path": "/9coKtCf4jSNCdSqGveVFyzvjrZt.png",
+        "name": "SBS",
+        "origin_country": "JP"
+      },
+      {
+        "id": 3971,
+        "logo_path": "/6bhZ2SWdYTbSTQf8Bhmf1q0aBef.png",
+        "name": "IBC",
+        "origin_country": "JP"
+      },
+      {
+        "id": 3972,
+        "logo_path": "/rL2IlndcEiQnIbym5EoSEM7rGlx.png",
+        "name": "BSS",
+        "origin_country": "JP"
+      },
+      {
+        "id": 3973,
+        "logo_path": "/dh4E8hGvqD9Xqu51kbqUU06UKbt.png",
+        "name": "MRO",
+        "origin_country": "JP"
+      },
+      {
+        "id": 3974,
+        "logo_path": "/yMQxsmGs88q54bslmcSeXlmpObC.png",
+        "name": "OBS",
+        "origin_country": "JP"
+      },
+      {
+        "id": 3975,
+        "logo_path": "/6ACZlk44MWsIIwYHxjRGXGKlpRb.png",
+        "name": "TUF",
+        "origin_country": "JP"
+      },
+      {
+        "id": 3977,
+        "logo_path": "/sGMMrdCmptaLLwJX7CsXTDaduLO.png",
+        "name": "RSK",
+        "origin_country": "JP"
+      },
+      {
+        "id": 3978,
+        "logo_path": "/zOz9LK6WWLUWGuG0fthzDzCIXlA.png",
+        "name": "TUY",
+        "origin_country": "JP"
+      },
+      {
+        "id": 3979,
+        "logo_path": "/yWlWHPUn6FHjNUulL1vp8croYFw.png",
+        "name": "tbc",
+        "origin_country": "JP"
+      },
+      {
+        "id": 4748,
+        "logo_path": "/o5Hlt7ZXJPEm4Qrx2Pl2rtc9A5y.png",
+        "name": "RKB",
+        "origin_country": "JP"
+      },
+      {
+        "id": 4792,
+        "logo_path": "/8kzeHaKeW3gZubs3cqlGWFvfJI7.png",
+        "name": "KUTV",
+        "origin_country": "JP"
+      },
+      {
+        "id": 4859,
+        "logo_path": "/6jr76BpIItwLV5oKbZmRJsVh3c6.png",
+        "name": "RBC",
+        "origin_country": "JP"
+      },
+      {
+        "id": 6171,
+        "logo_path": "/ekXN1cfYutjLfudy1MKyGzNynEa.png",
+        "name": "UTY",
+        "origin_country": "JP"
+      },
+      {
+        "id": 6172,
+        "logo_path": "/mKslL0MTHHt9ukugWOv3Vh8Tn0E.png",
+        "name": "RCC",
+        "origin_country": "JP"
+      },
+      {
+        "id": 6173,
+        "logo_path": "/YfewT1YYtAqkgvdu8oCX4mnJCs.png",
+        "name": "MRT",
+        "origin_country": "JP"
+      },
+      {
+        "id": 6174,
+        "logo_path": "/aawphEBuBGT9RVP6xG3BZV8NOCw.png",
+        "name": "ATV",
+        "origin_country": "JP"
+      },
+      {
+        "id": 6175,
+        "logo_path": "/iaaU6q82URj2mBbjQIbfAMUz14J.png",
+        "name": "MBC",
+        "origin_country": "JP"
+      }
+    ],
+    "number_of_episodes": 64,
+    "number_of_seasons": 1,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "鋼の錬金術師 FULLMETAL ALCHEMIST",
+    "overview": "炼金术，一种建立在等价交换原则基础上的科学，将物质进行理解、分解、再构造，将一种物品变成另外一种。但是，这样先进的技术却不能进行人体炼成，这是炼金术绝对的禁忌。可是，拥有极高炼金术天赋的爱德华（朴璐美 配音）和阿尔冯斯（钉宫理恵 配音）兄弟，因为对母亲极大的思念不惜触犯禁忌。而最终的代价却是，爱德华失去了一条手臂和一条腿，弟弟阿尔冯斯只能将灵魂依附在一副巨大的装甲之内。终于明白一切的兄弟俩，为了恢复原状，寻求更多的炼金术知识，成为国家炼金术师踏上了寻找终极炼金物品——贤者之石的旅程。在不断的探索中，两兄弟终于发现了贤者之石背后的真相，对身处的这个军事化国家也有了更深入的了解。此时，面对国家、民族、家庭……炼金术的未来究竟在何处。",
+    "popularity": 34.8426,
+    "poster_path": "/dLIAaTiNN8XnUwSh9HW4FNNtEcQ.jpg",
+    "production_companies": [
+      {
+        "id": 2849,
+        "logo_path": "/cN3JNIKawjOMtfk0GBVIbsx69bg.png",
+        "name": "BONES",
+        "origin_country": "JP"
+      },
+      {
+        "id": 2883,
+        "logo_path": "/rDYExnBV61jGQnkhVVrPN4Yl7O1.png",
+        "name": "Aniplex",
+        "origin_country": "JP"
+      },
+      {
+        "id": 10038,
+        "logo_path": "/nCueXKwYIEXrZ5ofqSJBO1YcmRr.png",
+        "name": "Square Enix",
+        "origin_country": "JP"
+      },
+      {
+        "id": 3363,
+        "logo_path": "/sj3vD7n63bTCih7bcf6GnWvRf1Q.png",
+        "name": "MBS",
+        "origin_country": "JP"
+      },
+      {
+        "id": 151984,
+        "logo_path": null,
+        "name": "Techno Sound",
+        "origin_country": "JP"
+      }
+    ],
+    "production_countries": [
+      {
+        "iso_3166_1": "JP",
+        "name": "Japan"
+      }
+    ],
+    "seasons": [
+      {
+        "air_date": "2009-08-25",
+        "episode_count": 20,
+        "id": 43387,
+        "name": "特别篇",
+        "overview": "",
+        "poster_path": "/tXtBzlh6eLKSIyc9KUjRa3x0qX6.jpg",
+        "season_number": 0,
+        "vote_average": 0
+      },
+      {
+        "air_date": "2009-04-05",
+        "episode_count": 64,
+        "id": 43388,
+        "name": "第 1 季",
+        "overview": "《钢之炼金术师 FULLMETAL ALCHEMIST》是根据日本漫画家荒川弘创作的漫画作品改编的二度动画化作品，采用原作漫画剧情，一般简称“钢之炼金术师FA”。电视动画由BONES制作，于2009年4月5日起在日本MBS/TBS系电视台播放，至2010年7月4日完结，全64话。在电视动画最终回结尾宣布制作剧场版的消息，相关剧场版《钢之炼金术师：叹息之丘的圣星》于2011年7月2日在日本上映。",
+        "poster_path": "/dLIAaTiNN8XnUwSh9HW4FNNtEcQ.jpg",
+        "season_number": 1,
+        "vote_average": 7.1
+      }
+    ],
+    "spoken_languages": [
+      {
+        "english_name": "Japanese",
+        "iso_639_1": "ja",
+        "name": "日本語"
+      }
+    ],
+    "status": "Ended",
+    "tagline": "",
+    "type": "Scripted",
+    "vote_average": 8.695,
+    "vote_count": 2195,
+    "credits": {
+      "cast": [
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 81243,
+          "known_for_department": "Acting",
+          "name": "朴璐美",
+          "original_name": "朴璐美",
+          "popularity": 2.6104,
+          "profile_path": "/fl9vyA3HEkOyTiZBJBhAR3OSmrO.jpg",
+          "character": "Edward Elric (voice)",
+          "credit_id": "5258a118760ee346616538a3",
+          "order": 0
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 83928,
+          "known_for_department": "Acting",
+          "name": "钉宫理惠",
+          "original_name": "釘宮理恵",
+          "popularity": 3.3573,
+          "profile_path": "/xHonhNFpTpz9zCVXLAF7D4OuHLv.jpg",
+          "character": "Alphonse Elric (voice)",
+          "credit_id": "5258a118760ee3466165388d",
+          "order": 1
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 62318,
+          "known_for_department": "Acting",
+          "name": "三木真一郎",
+          "original_name": "三木眞一郎",
+          "popularity": 3.1034,
+          "profile_path": "/yL9Tx2HZgK7t5AssYl6oGE9bjdj.jpg",
+          "character": "Roy Mustang (voice)",
+          "credit_id": "5258a118760ee34661653861",
+          "order": 2
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 23988,
+          "known_for_department": "Acting",
+          "name": "折笠富美子",
+          "original_name": "折笠富美子",
+          "popularity": 2.7913,
+          "profile_path": "/f5d1J13fksa1hK8u7AS95aO8b9.jpg",
+          "character": "Riza Hawkeye (voice)",
+          "credit_id": "5258a118760ee346616538b9",
+          "order": 3
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 589612,
+          "known_for_department": "Acting",
+          "name": "高本惠",
+          "original_name": "高本めぐみ",
+          "popularity": 1.0698,
+          "profile_path": "/3gsw7BKhF70wCRDcnwavlz1U4FU.jpg",
+          "character": "Winry Rockbell (voice)",
+          "credit_id": "5258a118760ee346616538cf",
+          "order": 4
+        }
+      ],
+      "crew": [
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1777151,
+          "known_for_department": "Sound",
+          "name": "光村龍哉",
+          "original_name": "光村龍哉",
+          "popularity": 0.0973,
+          "profile_path": null,
+          "credit_id": "679433437660f09f3f485ea3",
+          "department": "Sound",
+          "job": "Theme Song Performance"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1777152,
+          "known_for_department": "Sound",
+          "name": "坂倉心悟",
+          "original_name": "坂倉心悟",
+          "popularity": 0.2747,
+          "profile_path": null,
+          "credit_id": "679433353be0b7b6f323a6d3",
+          "department": "Sound",
+          "job": "Theme Song Performance"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2797519,
+          "known_for_department": "Camera",
+          "name": "池上真崇",
+          "original_name": "池上真崇",
+          "popularity": 0.6196,
+          "profile_path": null,
+          "credit_id": "63cf1a62336e010087b0df36",
+          "department": "Crew",
+          "job": "Special Effects"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2050113,
+          "known_for_department": "Visual Effects",
+          "name": "鈴木雅久",
+          "original_name": "鈴木雅久",
+          "popularity": 0.1879,
+          "profile_path": null,
+          "credit_id": "63cf199f028f14007c641da9",
+          "department": "Visual Effects",
+          "job": "Mechanical Designer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1254256,
+          "known_for_department": "Writing",
+          "name": "荒川弘",
+          "original_name": "荒川弘",
+          "popularity": 0.7906,
+          "profile_path": "/3kPd7HGLPJxh8zIOAk4C6VwrEP9.jpg",
+          "credit_id": "625452993f8ede0051ec10c2",
+          "department": "Writing",
+          "job": "Comic Book"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1283006,
+          "known_for_department": "Sound",
+          "name": "山田富二男",
+          "original_name": "山田富二男",
+          "popularity": 0.4015,
+          "profile_path": null,
+          "credit_id": "6196ecc529733800920d6c18",
+          "department": "Sound",
+          "job": "Sound Recordist"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1848180,
+          "known_for_department": "Visual Effects",
+          "name": "菅野宏纪",
+          "original_name": "菅野宏紀",
+          "popularity": 0.6561,
+          "profile_path": null,
+          "credit_id": "6196ec9b70b4440042443638",
+          "department": "Visual Effects",
+          "job": "Character Designer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1909504,
+          "known_for_department": "Editing",
+          "name": "定松剛",
+          "original_name": "定松剛",
+          "popularity": 0.5614,
+          "profile_path": null,
+          "credit_id": "6196ec91ae38430061737a65",
+          "department": "Editing",
+          "job": "Editor"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1991210,
+          "known_for_department": "Camera",
+          "name": "古本真由子",
+          "original_name": "古本真由子",
+          "popularity": 0.5285,
+          "profile_path": null,
+          "credit_id": "6196ec7e1495650063b0fe32",
+          "department": "Camera",
+          "job": "Director of Photography"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3315674,
+          "known_for_department": "Production",
+          "name": "篠原广人",
+          "original_name": "篠原廣人",
+          "popularity": 0.3061,
+          "profile_path": null,
+          "credit_id": "6196ec2d4ccc50002b488d5e",
+          "department": "Sound",
+          "job": "Music Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1847874,
+          "known_for_department": "Production",
+          "name": "大山良",
+          "original_name": "大山良",
+          "popularity": 0.3302,
+          "profile_path": null,
+          "credit_id": "6196ec1e1495650063b0fcff",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3315673,
+          "known_for_department": "Production",
+          "name": "倉重宣之",
+          "original_name": "倉重宣之",
+          "popularity": 0.6619,
+          "profile_path": null,
+          "credit_id": "6196ec099512e10088d91dfd",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3315671,
+          "known_for_department": "Production",
+          "name": "米内則智",
+          "original_name": "米内則智",
+          "popularity": 0.1961,
+          "profile_path": null,
+          "credit_id": "6196ebcc25b955008eb658f5",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1315181,
+          "known_for_department": "Production",
+          "name": "丸山博雄",
+          "original_name": "丸山博雄",
+          "popularity": 0.7613,
+          "profile_path": null,
+          "credit_id": "6196ebb7a0f1a20042de6a08",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2919990,
+          "known_for_department": "Art",
+          "name": "佐藤豪志",
+          "original_name": "佐藤豪志",
+          "popularity": 0.4427,
+          "profile_path": null,
+          "credit_id": "6196ebaa4975600088ef8600",
+          "department": "Art",
+          "job": "Art Direction"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1982967,
+          "known_for_department": "Visual Effects",
+          "name": "中尾総子",
+          "original_name": "中尾総子",
+          "popularity": 0.3546,
+          "profile_path": null,
+          "credit_id": "6196eba2149565002b2580ce",
+          "department": "Visual Effects",
+          "job": "Color Designer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 40340,
+          "known_for_department": "Sound",
+          "name": "三间雅文",
+          "original_name": "三間雅文",
+          "popularity": 1.0702,
+          "profile_path": null,
+          "credit_id": "6196eb965c071b002a7b7bd3",
+          "department": "Sound",
+          "job": "Sound Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 116688,
+          "known_for_department": "Sound",
+          "name": "仓桥静男",
+          "original_name": "倉橋静男",
+          "popularity": 0.9583,
+          "profile_path": "/85G7woSi4vpLRlJX165p1DulfPJ.jpg",
+          "credit_id": "6196eb8d63536a002a79c72f",
+          "department": "Sound",
+          "job": "Sound Effects"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 3179991,
+          "known_for_department": "Visual Effects",
+          "name": "龍角里美",
+          "original_name": "龍角里美",
+          "popularity": 0.372,
+          "profile_path": null,
+          "credit_id": "6196cd859512e10062edb762",
+          "department": "Crew",
+          "job": "Special Effects"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 90696,
+          "known_for_department": "Directing",
+          "name": "武井良幸",
+          "original_name": "武井良幸",
+          "popularity": 0.3919,
+          "profile_path": null,
+          "credit_id": "615dafa966a7c3006200596d",
+          "department": "Camera",
+          "job": "Director of Photography"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1117480,
+          "known_for_department": "Writing",
+          "name": "大野木宽",
+          "original_name": "大野木寛",
+          "popularity": 0.9233,
+          "profile_path": "/j0I94iwdDTkzbervQwEPMwgUiO8.jpg",
+          "credit_id": "612e847d6a34480090f31f92",
+          "department": "Writing",
+          "job": "Series Composition"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1847875,
+          "known_for_department": "Art",
+          "name": "金平和茂",
+          "original_name": "金平和茂",
+          "popularity": 0.5125,
+          "profile_path": null,
+          "credit_id": "60a811b4681888004000c7a6",
+          "department": "Art",
+          "job": "Art Designer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1722277,
+          "known_for_department": "Directing",
+          "name": "入江泰浩",
+          "original_name": "入江泰浩",
+          "popularity": 0.6441,
+          "profile_path": null,
+          "credit_id": "5f97f4347464570039e6ee7d",
+          "department": "Directing",
+          "job": "Series Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 554361,
+          "known_for_department": "Sound",
+          "name": "千住明",
+          "original_name": "千住明",
+          "popularity": 0.5339,
+          "profile_path": "/bGblZO0rXNEJyquQh9x3xHSwfjj.jpg",
+          "credit_id": "5f41a1c647721500335f81ff",
+          "department": "Sound",
+          "job": "Original Music Composer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1254256,
+          "known_for_department": "Writing",
+          "name": "荒川弘",
+          "original_name": "荒川弘",
+          "popularity": 0.7906,
+          "profile_path": "/3kPd7HGLPJxh8zIOAk4C6VwrEP9.jpg",
+          "credit_id": "672253a5d9a8a77b5da45b65",
+          "department": "Crew",
+          "job": "Creator"
+        }
+      ]
+    },
+    "keywords": {
+      "results": [
+        {
+          "name": "politics",
+          "id": 6078
+        },
+        {
+          "name": "supernatural",
+          "id": 6152
+        },
+        {
+          "name": "remake",
+          "id": 9714
+        },
+        {
+          "name": "steampunk",
+          "id": 10028
+        },
+        {
+          "name": "conspiracy",
+          "id": 10410
+        },
+        {
+          "name": "based on manga",
+          "id": 13141
+        },
+        {
+          "name": "alchemy",
+          "id": 161395
+        },
+        {
+          "name": "alchemist",
+          "id": 202335
+        },
+        {
+          "name": "shounen",
+          "id": 207826
+        },
+        {
+          "name": "anime",
+          "id": 210024
+        },
+        {
+          "name": "fantasy",
+          "id": 293198
+        },
+        {
+          "name": "adventure",
+          "id": 322942
+        },
+        {
+          "name": "homunculi",
+          "id": 338008
+        }
+      ]
+    },
+    "translations": {
+      "translations": [
+        {
+          "iso_3166_1": "US",
+          "iso_639_1": "en",
+          "name": "English",
+          "english_name": "English",
+          "data": {
+            "name": "Fullmetal Alchemist: Brotherhood",
+            "overview": "Disregard for alchemy’s laws ripped half of Edward Elric’s limbs from his body and left his brother Alphonse’s soul clinging to a suit of armor. To restore what was lost, the brothers seek the Philosopher’s Stone. Enemies and allies – the corrupt military, the Homunculi, and foreign alchemists – will alter the Elric brothers course, but their purpose will remain unchanged and their bond unbreakable.",
+            "homepage": "",
+            "tagline": "Humankind cannot gain anything without first giving something in return. To obtain, something of equal value must be lost."
+          }
+        },
+        {
+          "iso_3166_1": "FR",
+          "iso_639_1": "fr",
+          "name": "Français",
+          "english_name": "French",
+          "data": {
+            "name": "Fullmetal Alchemist : Brotherhood",
+            "overview": "Edward Elric et son frère Alphonse Elric sont de jeunes Alchimistes. En tentant de ramener leur mère à la vie, ils ont payé un lourd tribut, et ils tentent désormais de récupérer ce qu'ils ont perdu. Pour cela, Edward est devenu Alchimiste d'État : le Fullmetal Alchemist.\n\nMais au cours de leurs recherches, bien des épreuves attendent les deux frères et des êtres étranges : les Homonculus, les poursuivent.",
+            "homepage": "",
+            "tagline": "L'humanité ne peut rien obtenir sans donner quelque chose en retour. Pour chaque chose reçue, il faut en abandonner une autre de même valeur. En alchimie, c'est la loi fondamentale de l'échange équivalent."
+          }
+        },
+        {
+          "iso_3166_1": "DE",
+          "iso_639_1": "de",
+          "name": "Deutsch",
+          "english_name": "German",
+          "data": {
+            "name": "Fullmetal Alchemist: Brotherhood",
+            "overview": "Die beiden Brüder und Alchemisten Edward und Alphonse Elric haben, als sie noch klein waren, einen verhängnisvollen Fehler begangen: Als ihnen die Durchführung einer streng verbotenen Transmutation misslingt, verliert Edward ein Bein. Seinen Bruder trifft es sogar noch schlimmer. Edward kann ihn nur retten, indem er im Zuge eines äquivalenten Tausches seinen eigenen Arm opfert und Alphons Seele an eine Rüstung bindet - dessen Körper aber scheint verloren. Ein viel zu hoher Preis, den die beiden für ihren Leichtsinn zahlen mussten. Deshalb beschließen sie alles zu versuchen, um ihre alten Körper zurückzubekommen.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "ES",
+          "iso_639_1": "es",
+          "name": "Español",
+          "english_name": "Spanish",
+          "data": {
+            "name": "Fullmetal Alchemist: Brotherhood",
+            "overview": "Remake de Fullmetal Alchemist. Edward y Alphonse rompieron la regla basica de la alquimia, la cual les trajo graves consecuencias. Para remediar esto, se embarcan en busca de alguna forma de solucionar sus males",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "IL",
+          "iso_639_1": "he",
+          "name": "עִבְרִית",
+          "english_name": "Hebrew",
+          "data": {
+            "name": "אלכימאי המתכת",
+            "overview": "שני האחים אלריק מאבדים את אמם למחלה ממארת, ומנסים להשיב אותה לחיים בעזרת כוח האלכימיה. המהלך נכשל, וכעונש על הניסיון לבצע את האיסור הגדול ביותר באלכימיה - החייאת מתים - אדוארד, הבכור, מאבד את רגלו השמאלית וידו הימנית, ואילו אלפונס, האח הצעיר, מאבד את כל גופו. למרבה המזל, אד מצליח לקבע את נשמתו של אל לשריון, ומציל את חייו. ווינרי, חברת ילדות של האחים, מכינה לאד גפיים מפלדה שיחליפו את אלו שאיבד לאלכימיה, וכעת האחים יוצאים לדרך, בחיפוש אחר אבן החכמים שתשיב להם את הגוף והגפיים שאיבדו.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "RU",
+          "iso_639_1": "ru",
+          "name": "Pусский",
+          "english_name": "Russian",
+          "data": {
+            "name": "Стальной Алхимик: Братство",
+            "overview": "Нарушив главный запрет Алхимии и попытавшись воскресить маму, талантливые братья Элрики заплатили высокую цену: младший, Альфонс, потерял тело, и теперь его душа прикреплена к стальным доспехам, а старший, Эдвард, лишился руки и ноги, поэтому ему приходится пользоваться протезами — автобронёй. Благодаря проявленным способностям Эд получил звание государственного алхимика и, таким образом, стал частью военной машины государства. Теперь у него есть шанс вернуть Алу прежнее тело. Впереди странствия и приключения, разгадки страшных тайн и бесконечные сражения.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "PT",
+          "iso_639_1": "pt",
+          "name": "Português",
+          "english_name": "Portuguese",
+          "data": {
+            "name": "Fullmetal Alchemist: Brotherhood",
+            "overview": "Dois irmãos perdem a sua mãe devido a uma doença incurável. Com o poder da alquimia, usam um conhecimento proibido para a ressuscitar. O processo falha e como consequência dos seus actos, Edward Elric sacrifica o seu braço direito para afixar a alma do irmão a uma armadura. Com a ajuda de amigos da família, Edward recebe próteses metálicas para substituir os membros que perdeu. Com isso, Edward compromete-se a procurar a Pedra Filosofal para recuperar os seus corpos originais mesmo que isso signifique tornar-se num Alquimista Nacional.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "CZ",
+          "iso_639_1": "cs",
+          "name": "Český",
+          "english_name": "Czech",
+          "data": {
+            "name": "Fullmetal Alchemist: Brotherhood",
+            "overview": "Není možné cokoli získat, aniž byste něco obětovali. Abyste něco získali, musíte dát věc stejné hodnoty. To je princip rovného obchodu v alchymii...\n\nOcelový alchmista Edward Elric a to brnění stojící vedle něj, jeho mladší bráška Alphonse, se opět vrací do pohyblivé formy. Jejich cíl se nezměnil - stále touží po kameni mudrců. Aby mohli získat zpět svá těla, o která přišli, když porušili největší tabu v alchymii, pokusili se o lidskou transmutaci v naději, že přivedou zpět svou milovanou maminku. Neúspěšně. Jedinou možností, jak získat informace o kameni, je stát se armádním psem, státním alchymistou, a to Ed rád pro svého bratra podstoupí. Na cestě za znovuzískáním jejich těl budou bratři Elricové nuceni překročit další tabu - morální i alchymistická. Jenomže po kameni pase i někdo další...\n\nJedná se o restart úspěšného anime z roku 2003, které se zhruba v polovině odchýlilo od populární předlohy. Jelikož manga brzy končí, přichází toto dílo, které se jí nebojí držet až do konce.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "KR",
+          "iso_639_1": "ko",
+          "name": "한국어/조선말",
+          "english_name": "Korean",
+          "data": {
+            "name": "강철의 연금술사 BROTHERHOOD",
+            "overview": "죽은 어머니를 살리기 위해 시도한 금단의 연금술로 인해 신체의 일부와 전부를 빼앗긴 에드워드와 알폰스 형제. 동생 알폰스의 신체를 되찾기 위해 현자의 돌을 찾아나선다. 강철의 연금술사 오리지널판 이후 제작되어 원작 만화를 더욱 충실히 반영한 리메이크 버전이다.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "BR",
+          "iso_639_1": "pt",
+          "name": "Português",
+          "english_name": "Portuguese",
+          "data": {
+            "name": "Fullmetal Alchemist: Brotherhood",
+            "overview": "Depois de perderem sua mãe, Alphonse e Edward Elric tentam trazê-la  de volta usando uma técnica de alquimia proíbida. Contudo, o princípio  básico da alquimia é a 'troca equivalente', e tentar ressucitar alguém  custa muito alto. Ed perde sua perna, e Al perde seu corpo. Ed consegue  selar a alma de Al dentro de uma grande armadura metálica, dando em  troca seu braço. Anos depois, Ed (com dois membros de metal) e Al (ainda  preso na armadura) deixam a sua cidade natal.Ed, que possui um talento  nato para a alquimia, se torna um alquimista com certificado nacional, e  logo passa a ser chamado de 'full metal alchemist'. Mas o verdadeiro  objetivo dos irmãos é encontrar a pedra filosofal, na esperança de  recuperarem os seus corpos originais. Logo eles descobrem que essa  mística pedra, que pode nem existir, é visada não só por eles, mas como  muitas outras pessoas também.",
+            "homepage": "",
+            "tagline": "Se você deseja obter alguma coisa, é preciso pagar um preço equivalente."
+          }
+        },
+        {
+          "iso_3166_1": "PL",
+          "iso_639_1": "pl",
+          "name": "Polski",
+          "english_name": "Polish",
+          "data": {
+            "name": "Fullmetal Alchemist: Brotherhood",
+            "overview": "Wydarzenia rozgrywają się w alternatywnym świecie w XX wieku. Głównymi bohaterami są dwaj bracia - starszy Edward Elric i młodszy Alphonse Elric. Obaj pasjonują się alchemią, formą nauki, która wymaga dużej wiedzy i zdolności. Pewnego dnia ich matka Trisha umiera. Bracia nie mogąc pogodzić się z utratą bliskiej im osoby, postanawiają przywrócić ją do życia za pomocą alchemii. Łamią wiec tabu i przeprowadzają transmutację. Wyniki ich działań okazują się tragiczne. Alphonse traci swoje ciało, a Edward lewą nogę. Ostatkiem sił starszemu bratu udaje się poświęcić prawą rękę i wiąże duszę swojego brata ze starą zbroją. Od tego czasu głównym zadaniem Eda i Ala jest odnalezienie kamienia filozoficznego, zwiększającego możliwości alchemii i tym samym przywrócenie utraconych ciał.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "CN",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "name": "钢之炼金术师 FA",
+            "overview": "炼金术，一种建立在等价交换原则基础上的科学，将物质进行理解、分解、再构造，将一种物品变成另外一种。但是，这样先进的技术却不能进行人体炼成，这是炼金术绝对的禁忌。可是，拥有极高炼金术天赋的爱德华（朴璐美 配音）和阿尔冯斯（钉宫理恵 配音）兄弟，因为对母亲极大的思念不惜触犯禁忌。而最终的代价却是，爱德华失去了一条手臂和一条腿，弟弟阿尔冯斯只能将灵魂依附在一副巨大的装甲之内。终于明白一切的兄弟俩，为了恢复原状，寻求更多的炼金术知识，成为国家炼金术师踏上了寻找终极炼金物品——贤者之石的旅程。在不断的探索中，两兄弟终于发现了贤者之石背后的真相，对身处的这个军事化国家也有了更深入的了解。此时，面对国家、民族、家庭……炼金术的未来究竟在何处。",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "UA",
+          "iso_639_1": "uk",
+          "name": "Український",
+          "english_name": "Ukrainian",
+          "data": {
+            "name": "Сталевий алхімік. Братерство",
+            "overview": "Порушивши головну заборону Алхімії та спробувавши воскресити маму, талановиті брати Елрікі заплатили високу ціну: молодший, Альфонс,  втратив тіло, і тепер його душа прикріплена до сталевих обладунків, а старший, Едвард, позбувся руки і ноги, тому йому доводиться користуватися протезами - автобронею. Завдяки виявленим здібностям, Ед отримав звання державного алхіміка і став частиною військової машини держави. Тепер у нього є шанс повернути Алу колишнє тіло. Попереду мандри, пригоди і нескінченні битви...",
+            "homepage": "",
+            "tagline": "Брати знаходяться між відчаєм і надією, але все одно рухаються вперед…"
+          }
+        },
+        {
+          "iso_3166_1": "IT",
+          "iso_639_1": "it",
+          "name": "Italiano",
+          "english_name": "Italian",
+          "data": {
+            "name": "Fullmetal Alchemist: Brotherhood",
+            "overview": "Ambientato in un mondo alternativo simile all'Europa di inizio 1900, narra i viaggi e la maturazione fisica e spirituale di due fratelli, Edward e Alphonse Elric. Abbandonati dal padre alchimista in tenera età e cresciuti quindi dalla sola madre Trisha, i due bambini manifestano fin da subito grandi attitudini nello studio delle scienze alchemiche. Questo li porta, anni dopo, a tentare una trasmutazione umana, il massimo dei tabù dell'alchimia, al fine di riportare in vita la madre, morta di malattia. Un’azione che pagheranno a caro prezzo, dando così inizio a una fantastica avventura che li porterà sulle tracce delle leggendaria Pietra Filosofale al fine di riparare all'errore commesso.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "FI",
+          "iso_639_1": "fi",
+          "name": "suomi",
+          "english_name": "Finnish",
+          "data": {
+            "name": "Fullmetal Alchemist: Brotherhood",
+            "overview": "",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "NL",
+          "iso_639_1": "nl",
+          "name": "Nederlands",
+          "english_name": "Dutch",
+          "data": {
+            "name": "Fullmetal Alchemist: Brotherhood",
+            "overview": "In deze bovennatuurlijke anime strijden de broers Edward en Alphonse tegen kwade krachten om hun lichamen terug te krijgen nadat deze zijn verminkt.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "NO",
+          "iso_639_1": "nb",
+          "name": "Bokmål",
+          "english_name": "Norwegian Bokmål",
+          "data": {
+            "name": "",
+            "overview": "",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "MX",
+          "iso_639_1": "es",
+          "name": "Español",
+          "english_name": "Spanish",
+          "data": {
+            "name": "Fullmetal Alchemist: Brotherhood",
+            "overview": "La imprudente indiferencia de Edward y Alphonse Elric por las leyes fundamentales de la alquimia le arrancaron la mitad de las extremidades a Ed y dejaron el alma de Al pegada a una fría armadura. Para restaurar lo que se perdió, los hermanos recorren una tierra devastada por la guerra para la Piedra Filosofal, una reliquia legendaria que otorga la capacidad de realizar la alquimia de maneras imposibles.\n\nLos Elrics no están solos en su búsqueda; el corrupto Estado Militar también está ansioso por aprovechar el poder del artefacto. También lo son los extraños Homúnculos y su oscuro creador. La gema mítica atrae a los alquimistas exóticos de reinos distantes, dejando cicatrices profundas que inspiran el asesinato. A medida que los Elrics encuentran su curso alterado por estos enemigos y aliados, su propósito permanece inalterado, y su vínculo es irrompible.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "HU",
+          "iso_639_1": "hu",
+          "name": "Magyar",
+          "english_name": "Hungarian",
+          "data": {
+            "name": "Fullmetal Alchemist: Testvériség",
+            "overview": "A legendák szerint létezik egy titokzatos tárgy, amely többszörösére növeli használója erejét; egy tárgy, amelynek segítségével áthághatók a tudomány és természet szabta határok. Egy vérvörösen csillogó kő, amelynek titkát évszázadok óta kutatják az alkímia mesterei: a Bölcsek Köve. Sokan próbálták már létrehozni, de eddig még senki nem járt sikerrel. Most azonban két nagyon fiatal és tehetséges alkimista eredt a nyomába, akiknek célja nem a hatalom vagy a hírnév. Edward és Alphonse Elric egy szörnyű hibát próbálnak helyrehozni, ám tudtukon kívül olyan veszélyes játszmába keverednek, amelyben nem csak a saját sorsuk a tét, hanem több millió ember élete is. A teremtő erőt csak egy hajszál választja el a pusztítótól, a Bölcsek Köve pedig olyan eszköz, amely még jó kezekben is veszélyes lehet. Az Elric testvérek pedig még nem sejtik, miféle teher nyugszik a vállukon.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "TW",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "name": "鋼之鍊金術師 BROTHERHOOD",
+            "overview": "背景設定在鍊金術相當發達的世界。愛德華·愛力克和他的弟弟阿爾馮斯十分思念亡故的母親，為了再次見到母親的微笑，而進行鍊金術中最大的禁忌「人體鍊成」──亦即讓死者復活的鍊成術──可是鍊成失敗時的反彈效應，愛德付出「過路費」左腳、阿爾則失去全身。為救回弟弟，愛德犧牲自己的右臂作為代價，將弟弟的靈魂固定在一副鎧甲上；而失去的右臂和左腿則由鋼製義肢「機械鎧」來替代，因此在取得國家鍊金術師資格時、大總統給予「鋼」的稱號，人們稱之為「鋼之鍊金術師」。大陸曆（相當於公曆）1911年，愛力克兄弟為取回他們所失去的一切，開始踏上了旅程。",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "JP",
+          "iso_639_1": "ja",
+          "name": "日本語",
+          "english_name": "Japanese",
+          "data": {
+            "name": "鋼の錬金術師 FULLMETAL ALCHEMIST",
+            "overview": "錬金術、それは「等価交換」の原則のもと、物質を理解、分解、そして再構築する、この世界で最先端の科学である。この錬金術において、最大の“禁忌”とされるもの「人体錬成」。亡き母親を想うがゆえ、禁忌を侵し、全てを失った幼き兄弟。機械鎧（オートメイル）をまとい、「鋼の錬金術師」の名を背負った兄、エドワード・エルリック。巨大な鎧に魂を定着された弟、アルフォンス・エルリック。二人は失ったものを取り戻すため、「賢者の石」を探す旅に出る。兄弟は「賢者の石」の真実に近づくにつれ、大きな陰謀の渦中へと突き進んでいく。暗躍する人ならざる者たちの存在。徐々にその本性をむき出しにする軍事国家アメストリス。虐げられた民の果て無き憎しみと復讐の念。錬金術がもたらす幾多の悲劇。点在する悲劇は、やがて線になり、人を、民を、そして国すらをも巻き込んでいく。兄弟は絶望と希望の狭間の、それでも前に進む--。",
+            "homepage": "",
+            "tagline": "兄弟は絶望と希望の狭間の中、それでも前に進む…。"
+          }
+        },
+        {
+          "iso_3166_1": "SA",
+          "iso_639_1": "ar",
+          "name": "العربية",
+          "english_name": "Arabic",
+          "data": {
+            "name": "الخيميائي الفولاذي : الأخوَّة",
+            "overview": "يتحث الانمي عن الاخوان ادوارد و الفونس الذان ارادا ان يعيدان امهما الى الحياء باستعمال اسلوب محرم في الكيمياء فكان ثمن ذلك باهضا حيث فقد ادوارد قدمه اليسرى و الفونس جسده كله و لكن ادوارد فقد يده اليمنى كذلك لكي يختم روح اخوه في درع، فاصبحا خيميائين تابعين للدولة لكي يبحثوا عن طريقة لاسترجاع جسديهما.",
+            "homepage": "",
+            "tagline": "لن تنال شيئًا دون مقابل... فلكل مكسب ثمنٌ يُدفَع، ولكل رغبةٍ تضحيةٌ تُقدَّم."
+          }
+        },
+        {
+          "iso_3166_1": "VN",
+          "iso_639_1": "vi",
+          "name": "Tiếng Việt",
+          "english_name": "Vietnamese",
+          "data": {
+            "name": "Cang Giả Kim Thuật Sư: Tình Anh Em",
+            "overview": "Sau khi cơ thể cả hai bị tổn thương – hai anh em Edward và Alphonse phải chiến đấu với những lực lượng xấu xa để phục hồi cơ thể trong bộ anime siêu nhiên này.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "TR",
+          "iso_639_1": "tr",
+          "name": "Türkçe",
+          "english_name": "Turkish",
+          "data": {
+            "name": "Fullmetal Alchemist: Brotherhood",
+            "overview": "Elric kardeşler Edward ve Alphonse ölen annelerini diriltmek için alchemy’e başvururlar. Ama insan ruhunu ile değiş-tokuş yapılacak eş değerde bir şey bulunmamaktadır. Deney sırasında büyük kardeş Edward bacağını, küçük kardeş Alphonse ise bedenini kaybeder. Edward elindeki son çareyi kullanıp Al’ın ruhunu bir zırha bağlamayı başarır ama bu esnada da kolunu kaybeder. İki kardeş annelerinin dirilmesinin imkansız olduğunu büyük kayıplardan sonra anlar. Automail sayesinde mekanik uzuvlarına kavuşan Ed, kardeşine olanların kendi suçu olduğuna inanır. Al'ın bedenini geri almak ve alchemy’i daha da iyi öğrenmek için Elric kardeşler evlerini yakıp yolcuğa çıkarlar.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "IR",
+          "iso_639_1": "fa",
+          "name": "فارسی",
+          "english_name": "Persian",
+          "data": {
+            "name": "کیمیاگر تمام‌فلزی: برادری",
+            "overview": "",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "GR",
+          "iso_639_1": "el",
+          "name": "ελληνικά",
+          "english_name": "Greek",
+          "data": {
+            "name": "Fullmetal Alchemist: Brotherhood",
+            "overview": "",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "RO",
+          "iso_639_1": "ro",
+          "name": "Română",
+          "english_name": "Romanian",
+          "data": {
+            "name": "Alchimistul de oțel: Frăția",
+            "overview": "După ce suferă traume fizice, frații Edward și Alphonse se luptă cu forțe malefice pentru a încerca să-și recapete corpurile în acest anime cu elemente supranaturale.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "HK",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "name": "鋼之鍊金術師 FA",
+            "overview": "煉金術，一種建立在等價交換原則基礎上的科學，將物質進行理解、分解、再構造，將一種物品變成另外一種。但是，這樣先進的技術卻不能進行人體煉成，這是煉金術絕對的禁忌。可是，擁有極高煉金術天賦的愛德華（樸璐美 配音）和阿爾馮斯（釘宮理恵 配音）兄弟，因為對母親極大的思念不惜觸犯禁忌。而最終的代價卻是，愛德華失去了一條手臂和一條腿，弟弟阿爾馮斯只能將靈魂依附在一副巨大的裝甲之內。終於明白一切的兄弟倆，為了恢復原狀，尋求更多的煉金術知識，成為國家煉金術師踏上了尋找終極煉金物品——賢者之石的旅程。在不斷的探索中，兩兄弟終於發現了賢者之石背後的真相，對身處的這個軍事化國家也有了更深入的了解。此時，面對國家、民族、家庭……煉金術的未來究竟在何處。",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "TH",
+          "iso_639_1": "th",
+          "name": "ภาษาไทย",
+          "english_name": "Thai",
+          "data": {
+            "name": "แขนกล คนแปรธาตุ: บราเธอร์ฮูด",
+            "overview": "เอ็ดเวิร์ด และ อัลฟองเส่ เอลริค สองพี่น้องตระกูลเอลริค ต้องสูญเสียแม่ที่รักไปอย่างกะทันหันด้วยโรคระบาด ทั้งคู่จึงตัดสินใจใช้วิชาแปรธาตุในการ “ชุบชีวิตมนุษย์” ซึ่งถือเป็นวิชาต้องห้ามของการเล่นแร่แปรธาตุ เพื่อคืนชีวิตให้กับแม่ ของตน แต่ เอ็ดและอัลต้องจ่ายค่าผ่านทางในการรับรู้แก่นแท้โดยแลกด้วยร่างกาย เอ็ดจ่ายด้วยขา ส่วนอัลจ่ายด้วยร่างกายทั้งหมด เอ็ดพบว่าร่างของน้องชายหายไปทั้งหมด จึงจ่ายด้วยแขนและดึงวิญญาณของน้องชายผนึกไว้ในชุดเกราะด้วยตราโลหิต พันเอก รอย มัสแตง แห่งกองทัพทราบเรื่องเห็นว่าเอ็ดมีฝีมือถึงขนาดสามารถผนึกวิญญาณได้ จึงเสนอให้เอ็ดเข้าเป็น “นักเล่นแร่แปรธาตุของทางการ”  เอ็ดได้ตอบตกลงเข้านักเล่นแร่แปรธาตุของทางการ ได้ฉายาว่า นักเล่นแร่แปรธาตุเหล็กไหล เขาได้เริ่มออกตามหาศิลานักปราชญ์ ศิลาวิเศษณ์ที่ทำให้เขาสามารถใช้พลังการแปรธาตุที่อยู่เหนือกฎเกณฑ์การแลกเปลี่ยนที่ทัดเทียม เพื่อค้นหาวิธีคืนร่างเดิม",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "ES",
+          "iso_639_1": "ca",
+          "name": "Català",
+          "english_name": "Catalan",
+          "data": {
+            "name": "Fullmetal Alchemist: Brotherhood",
+            "overview": "Nova versió de Fullmetal Alchemist. L'Edward i l'Alphonse trenquen la regla bàsica de l'alquímia, cosa que els porta greus conseqüències. Per posar-hi remei, s'embarquen a la recerca d'alguna manera de solucionar els seus mals.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "ID",
+          "iso_639_1": "id",
+          "name": "Bahasa indonesia",
+          "english_name": "Indonesian",
+          "data": {
+            "name": "",
+            "overview": "",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "MY",
+          "iso_639_1": "ms",
+          "name": "Bahasa melayu",
+          "english_name": "Malay",
+          "data": {
+            "name": "",
+            "overview": "",
+            "homepage": "",
+            "tagline": ""
+          }
+        }
+      ]
+    },
+    "external_ids": {
+      "imdb_id": "tt1355642",
+      "freebase_mid": "/m/0b4cxlh",
+      "freebase_id": "/en/fullmetal_alchemist_brotherhood",
+      "tvdb_id": 85249,
+      "tvrage_id": null,
+      "wikidata_id": "Q437808",
+      "facebook_id": null,
+      "instagram_id": null,
+      "twitter_id": "hagaren_anime"
+    },
+    "semantic_tags": [
+      "genre:动作冒险",
+      "genre:动画",
+      "genre:sci-fi-&-fantasy",
+      "genre:喜剧",
+      "decade:2000s",
+      "country:jp",
+      "lang:ja",
+      "theme:conspiracy"
+    ]
+  }
+]

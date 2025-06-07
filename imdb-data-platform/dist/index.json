@@ -1,0 +1,83 @@
+{
+  "lists": {
+    "official_popular_movies": {
+      "name": "IMDb 热门电影"
+    },
+    "official_top_movies": {
+      "name": "IMDb Top 250 电影"
+    },
+    "official_popular_tv": {
+      "name": "IMDb 热门剧集"
+    },
+    "official_top_tv": {
+      "name": "IMDb Top 250 剧集"
+    },
+    "jp_anime_top": {
+      "name": "日本高分动画"
+    },
+    "jp_anime_popular": {
+      "name": "日本热门动画"
+    },
+    "kr_tv_top": {
+      "name": "韩国高分剧集"
+    },
+    "kr_tv_popular": {
+      "name": "韩国热门剧集"
+    },
+    "us_tv_top": {
+      "name": "美国高分剧集"
+    },
+    "us_tv_popular": {
+      "name": "美国热门剧集"
+    },
+    "cn_tv_top": {
+      "name": "国产高分剧集"
+    },
+    "cn_anime_top": {
+      "name": "国产高分动画"
+    },
+    "theme_cyberpunk": {
+      "name": "赛博朋克精选"
+    },
+    "theme_zombie": {
+      "name": "僵尸末日"
+    },
+    "theme_wuxia": {
+      "name": "武侠世界"
+    },
+    "theme_film_noir": {
+      "name": "黑色电影"
+    },
+    "theme_space_opera": {
+      "name": "太空歌剧"
+    },
+    "theme_time_travel": {
+      "name": "时间旅行"
+    },
+    "theme_adult": {
+      "name": "成人内容精选 (R/NC-17)"
+    },
+    "series_collection": {
+      "name": "系列电影宇宙"
+    }
+  },
+  "series": [
+    {
+      "id": "series_87359",
+      "name": "碟中谍（系列）"
+    },
+    {
+      "id": "series_230",
+      "name": "教父（系列）"
+    },
+    {
+      "id": "series_473983",
+      "name": "Hababam Sınıfı Koleksiyonu"
+    },
+    {
+      "id": "series_119",
+      "name": "指环王（系列）"
+    }
+  ],
+  "buildTimestamp": "2025-06-07T17:15:53.619Z"
+}
