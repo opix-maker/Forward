@@ -1,92 +1,118 @@
 import fs from 'fs/promises';
-import { STATIC_CHARTS_CONFIG, CURATED_LISTS_CONFIG, fetchImdbIdList } from './src/builders/imdb_builder.js';
+import { fetchImdbIdList } from './src/builders/imdb_builder.js';
 import { findByImdbId, getTmdbDetails } from './src/utils/tmdb_api.js';
+import { analyzeAndTagItem } from './src/core/analyzer.js';
 import { sleep, writeJsonFile } from './src/utils/helpers.js';
 
-const MAX_CONCURRENT_ENRICHMENTS = 10;
+const MAX_CONCURRENT_ENRICHMENTS = 15;
 const OUTPUT_DIR = './dist';
 
-async function enrichListWithTmdb(imdbIdList) {
-    const enrichedItems = [];
-    for (let i = 0; i < imdbIdList.length; i += MAX_CONCURRENT_ENRICHMENTS) {
-        const batch = imdbIdList.slice(i, i + MAX_CONCURRENT_ENRICHMENTS);
-        const promises = batch.map(async (imdbId) => {
-            if (!imdbId) return null;
-            
-            const tmdbSearchResult = await findByImdbId(imdbId);
-            if (!tmdbSearchResult) return null;
+// --- 任务定义区 ---
+// 定义基础的、广撒网的抓取任务
+const CRAWL_TASKS = [
+    { title_type: 'feature,tv_series,tv_miniseries', sort: 'moviemeter,asc', count: 250 }, // 热门
+    { title_type: 'feature,tv_series,tv_miniseries', sort: 'user_rating,desc', num_votes: '25000,', count: 250 }, // 高分
+    { title_type: 'feature,tv_series', release_date: `${new Date().getFullYear() - 1}-01-01,`, sort: 'user_rating,desc', num_votes: '1000,' }, // 近期高分
+];
 
-            const mediaType = tmdbSearchResult.media_type || 'movie';
-            const tmdbDetails = await getTmdbDetails(tmdbSearchResult.id, mediaType);
-            if (!tmdbDetails) return null;
+// 定义最终要生成的榜单 (基于语义标签)
+const FINAL_LISTS_CONFIG = {
+    // 专属频道
+    anime_jp_top: { name: '日本高分动画', tags: ['lang:ja', 'genre:animation'], sortBy: 'vote_average' },
+    anime_jp_popular: { name: '日本热门动画', tags: ['lang:ja', 'genre:animation'], sortBy: 'vote_count' },
+    tv_kr_top: { name: '韩国高分剧集', tags: ['lang:ko', 'type:tv'], sortBy: 'vote_average' },
+    tv_kr_popular: { name: '韩国热门剧集', tags: ['lang:ko', 'type:tv'], sortBy: 'vote_count' },
+    tv_us_top: { name: '美国高分剧集', tags: ['lang:en', 'country:us', 'type:tv'], sortBy: 'vote_average' },
+    tv_cn_top: { name: '国产高分剧集', tags: ['lang:zh', 'country:cn', 'type:tv'], sortBy: 'vote_average' },
+    // 主题探索
+    theme_cyberpunk: { name: '赛博朋克精选', tags: ['theme:cyberpunk'], sortBy: 'vote_average' },
+    theme_zombie: { name: '僵尸题材精选', tags: ['theme:zombie'], sortBy: 'vote_average' },
+    theme_wuxia: { name: '武侠世界', tags: ['theme:wuxia'], sortBy: 'vote_average' },
+    theme_adult: { name: '成人内容精选', tags: ['theme:adult'], sortBy: 'vote_average' },
+    // 系列电影 (特殊处理)
+    series_collection: { name: '系列电影宇宙', type: 'series' }
+};
 
-            const chineseTranslation = tmdbDetails.translations?.translations?.find(t => t.iso_639_1 === 'zh');
-            const title_zh = chineseTranslation?.data?.title || chineseTranslation?.data?.name || tmdbDetails.title || tmdbDetails.name;
-            const overview_zh = chineseTranslation?.data?.overview || tmdbDetails.overview;
-
-            return {
-                imdb_id: imdbId,
-                tmdb_id: tmdbDetails.id,
-                title: title_zh,
-                overview: overview_zh,
-                poster_path: tmdbDetails.poster_path,
-                backdrop_path: tmdbDetails.backdrop_path,
-                release_date: tmdbDetails.release_date || tmdbDetails.first_air_date,
-                genres: tmdbDetails.genres.map(g => g.name),
-                vote_average: tmdbDetails.vote_average,
-                vote_count: tmdbDetails.vote_count,
-                media_type: mediaType,
-            };
-        });
-
-        const settledResults = await Promise.allSettled(promises);
-        settledResults.forEach(result => {
-            if (result.status === 'fulfilled' && result.value) {
-                enrichedItems.push(result.value);
-            }
-        });
-        await sleep(500);
-    }
-    return enrichedItems;
-}
+// --- 构建流程 ---
 
 async function main() {
-    console.log('Starting main build process...');
+    console.log('Starting intelligent build process...');
     const startTime = Date.now();
-    
-    const allTasks = {
-        ...STATIC_CHARTS_CONFIG,
-        ...CURATED_LISTS_CONFIG
-    };
+    const allEnrichedItems = new Map(); // 使用Map去重，key为tmdb_id
 
     try {
-        for (const [key, config] of Object.entries(allTasks)) {
-            console.log(`\nProcessing task: ${config.name} (${key})`);
-            
-            const imdbIdList = await fetchImdbIdList(config);
-            if (!imdbIdList || imdbIdList.length === 0) {
-                console.warn(`  No items found for ${config.name}. Skipping.`);
-                continue;
+        // --- 阶段一: 广撒网抓取 & 阶段二: 增强与智能打标 ---
+        console.log('\nPHASE 1 & 2: Crawling, Enriching, and Analyzing...');
+        for (const params of CRAWL_TASKS) {
+            const imdbIdList = await fetchImdbIdList(params);
+            for (let i = 0; i < imdbIdList.length; i += MAX_CONCURRENT_ENRICHMENTS) {
+                const batch = imdbIdList.slice(i, i + MAX_CONCURRENT_ENRICHMENTS);
+                const promises = batch.map(async (imdbId) => {
+                    const tmdbInfo = await findByImdbId(imdbId);
+                    if (!tmdbInfo || allEnrichedItems.has(tmdbInfo.id)) return;
+                    
+                    const details = await getTmdbDetails(tmdbInfo.id, tmdbInfo.media_type);
+                    if (!details) return;
+
+                    const taggedItem = analyzeAndTagItem(details);
+                    allEnrichedItems.set(taggedItem.id, taggedItem);
+                });
+                await Promise.allSettled(promises);
+                await sleep(500);
             }
-            console.log(`  Found ${imdbIdList.length} IMDb IDs.`);
+        }
+        console.log(`  Total unique items analyzed: ${allEnrichedItems.size}`);
 
-            const enrichedData = await enrichListWithTmdb(imdbIdList);
-            console.log(`  Enriched ${enrichedData.length} items with TMDB data.`);
+        // --- 阶段三: 根据配置生成最终榜单 ---
+        console.log('\nPHASE 3: Generating final lists from analyzed data...');
+        const analyzedData = Array.from(allEnrichedItems.values());
+        const seriesCollection = new Map();
 
-            const outputPath = `${OUTPUT_DIR}/${key}.json`;
-            await writeJsonFile(outputPath, enrichedData);
-            console.log(`  Successfully wrote data to ${outputPath}`);
+        for (const [key, config] of Object.entries(FINAL_LISTS_CONFIG)) {
+            let listData = [];
+            if (config.type === 'series') {
+                // 特殊处理系列电影
+                analyzedData.forEach(item => {
+                    const seriesTag = item.semantic_tags.find(t => t.startsWith('series:'));
+                    if (seriesTag) {
+                        const seriesId = seriesTag.split(':')[1];
+                        if (!seriesCollection.has(seriesId)) {
+                            seriesCollection.set(seriesId, {
+                                name: item.belongs_to_collection.name,
+                                items: []
+                            });
+                        }
+                        seriesCollection.get(seriesId).items.push(item);
+                    }
+                });
+                // 为每个系列生成一个文件
+                for (const [seriesId, seriesData] of seriesCollection.entries()) {
+                    seriesData.items.sort((a, b) => new Date(a.release_date) - new Date(b.release_date)); // 按上映日期排序
+                    const seriesKey = `series_${seriesId}`;
+                    await writeJsonFile(`${OUTPUT_DIR}/${seriesKey}.json`, seriesData.items);
+                    console.log(`  Generated series list: ${seriesData.name} -> ${seriesKey}.json`);
+                }
+                continue; // 跳过常规榜单生成
+            }
 
-            await sleep(1000);
+            listData = analyzedData.filter(item => 
+                config.tags.every(tag => item.semantic_tags.includes(tag))
+            );
+
+            listData.sort((a, b) => (b[config.sortBy] || 0) - (a[config.sortBy] || 0));
+            
+            await writeJsonFile(`${OUTPUT_DIR}/${key}.json`, listData.slice(0, 50));
+            console.log(`  Generated list: ${config.name} -> ${key}.json (${listData.length} items found)`);
         }
 
+        // 创建索引文件
         const index = {
-            staticCharts: Object.keys(STATIC_CHARTS_CONFIG).map(key => ({ id: key, name: STATIC_CHARTS_CONFIG[key].name })),
-            curatedLists: Object.keys(CURATED_LISTS_CONFIG).map(key => ({ id: key, name: CURATED_LISTS_CONFIG[key].name })),
+            lists: FINAL_LISTS_CONFIG,
+            series: Array.from(seriesCollection.values()).map((s, i) => ({ id: `series_${Array.from(seriesCollection.keys())[i]}`, name: s.name })),
             buildTimestamp: new Date().toISOString()
         };
         await writeJsonFile(`${OUTPUT_DIR}/index.json`, index);
-        console.log(`\nSuccessfully wrote index file to ${OUTPUT_DIR}/index.json`);
+        console.log(`\nSuccessfully wrote index file.`);
 
         const duration = (Date.now() - startTime) / 1000;
         console.log(`\n✅ Build process successful! Took ${duration.toFixed(2)} seconds.`);
