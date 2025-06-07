@@ -1,0 +1,14 @@
+{
+  "name": "imdb-data-platform",
+  "version": "1.0.0",
+  "description": "Build system for pre-computing IMDB data.",
+  "main": "build.js",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "node-fetch": "^3.3.2"
+  }
+}
