@@ -1,0 +1,47 @@
+{
+  "staticCharts": [
+    {
+      "id": "popularMovies",
+      "name": "热门电影"
+    },
+    {
+      "id": "topMovies",
+      "name": "高分电影"
+    },
+    {
+      "id": "popularTV",
+      "name": "热门剧集"
+    },
+    {
+      "id": "topTV",
+      "name": "高分剧集"
+    }
+  ],
+  "curatedLists": [
+    {
+      "id": "topSciFiMovies",
+      "name": "高分科幻电影"
+    },
+    {
+      "id": "topHorrorMovies",
+      "name": "高分恐怖电影"
+    },
+    {
+      "id": "recentPopularSeries",
+      "name": "近期热门剧集 (2022-)"
+    },
+    {
+      "id": "topActionSeries",
+      "name": "高分动作剧集"
+    },
+    {
+      "id": "gemsFromAsia",
+      "name": "亚洲之光"
+    },
+    {
+      "id": "mindBenders",
+      "name": "烧脑神作"
+    }
+  ],
+  "buildTimestamp": "2025-06-07T16:32:38.648Z"
+}

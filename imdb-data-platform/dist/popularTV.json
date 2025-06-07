@@ -1,0 +1,815 @@
+[
+  {
+    "imdb_id": "tt3581920",
+    "tmdb_id": 100088,
+    "title": "最后生还者",
+    "overview": "在现代文明被摧毁的二十年后，人类因现代传染病而面临绝种危机，幸存的人类为了生存自相残杀。中年男性走私犯乔尔（佩德罗·帕斯卡饰）为了完成“火萤”组织首领玛琳（梅尔·丹德里奇饰）的托付，带着14岁少女艾莉（贝拉·拉姆齐饰）一同踏出由军队保护的疫情隔离区，穿越化为废墟丛林的大都会。面对病毒感染变种人类与其他幸存者集团威胁，展开了一场改变两人一生的深刻旅程。",
+    "poster_path": "/c9H1vkVepqyE5R03Yi9eWbaIN8H.jpg",
+    "backdrop_path": "/uQ4lG7E7mlyKsGvbASftQ6Hu2IX.jpg",
+    "release_date": "2023-01-15",
+    "genres": [
+      "剧情"
+    ],
+    "vote_average": 8.529,
+    "vote_count": 6158,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt27995114",
+    "tmdb_id": 245703,
+    "title": "懸案解碼",
+    "overview": "一位個性傲慢卻才華出眾的警察當上新部門主管，率領一群跌破眾人眼鏡的怪咖，陸續偵破愛丁堡的多樁懸案。",
+    "poster_path": "/o7nkuWjhZIubd21flX02L6UUJOR.jpg",
+    "backdrop_path": "/wIoxMHbyUJnx5Fm9tI26hIYGI1D.jpg",
+    "release_date": "2025-05-29",
+    "genres": [
+      "剧情",
+      "犯罪",
+      "悬疑"
+    ],
+    "vote_average": 7.849,
+    "vote_count": 63,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt31429675",
+    "tmdb_id": 246992,
+    "title": "妖惑心計",
+    "overview": "一名鬥志旺盛的平凡女子擔心妹妹跟億萬富翁老闆走得太近，為此踏進一座奢華的濱海豪宅，力圖找出答案。",
+    "poster_path": "/dwh61LfUKOQrPjK9fMxay3e95rR.jpg",
+    "backdrop_path": "/shiCVH3B2J3ICB2BGm8SnWD97Nd.jpg",
+    "release_date": "2025-05-22",
+    "genres": [
+      "剧情",
+      "喜剧"
+    ],
+    "vote_average": 6.731,
+    "vote_count": 52,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt31510819",
+    "tmdb_id": 247718,
+    "title": "MobLand",
+    "overview": "伦敦两大犯罪家族——哈里根家族和史蒂文森家族互相争权夺力，正处于交战状态，不是你死，就是我亡。而陷入这场交火的，是哈利达索萨，他是精明的街头“调解人”，英俊又危险。哈利很清楚两股对立的力量发生冲突时，应该要向谁投以忠诚。当两座王国发生交战，原则的界限将会被打破，而唯一的底线，就是不惜赌上性命的誓言：家庭永远摆在第一位。",
+    "poster_path": "/co0HNOMrEc0OSk8zEIIebuukbFv.jpg",
+    "backdrop_path": "/cxejGoxpynd144zaivyEKFxCktm.jpg",
+    "release_date": "2025-03-30",
+    "genres": [
+      "犯罪",
+      "剧情"
+    ],
+    "vote_average": 8.5,
+    "vote_count": 170,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt9253284",
+    "tmdb_id": 83867,
+    "title": "Andor",
+    "overview": "在一个危机四伏的时代，卡西安·安多注定走上一条成为义军英雄的道路。",
+    "poster_path": "/tBW8IIeXkBMPnmdN56wRhmkigc7.jpg",
+    "backdrop_path": "/kCGwvjpqM1owt9kI4pkYPJWJLvc.jpg",
+    "release_date": "2022-09-21",
+    "genres": [
+      "Sci-Fi & Fantasy",
+      "动作冒险",
+      "剧情"
+    ],
+    "vote_average": 8.3,
+    "vote_count": 1544,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt32260680",
+    "tmdb_id": 253321,
+    "title": "姊妹相爭",
+    "overview": "這部高潮迭起的懸疑影集改編自亞菈法爾柏克的小說，講述一對形同陌路的姊妹因為一場突發的命案，人生出現天翻地覆的變化，眾多謊言也隨之暴露。",
+    "poster_path": "/x7KDzqrcrWnHiqdAu7bioOJMsJi.jpg",
+    "backdrop_path": "/25EBuAv16ZCsnxqJoDx0GwwQoSG.jpg",
+    "release_date": "2025-05-29",
+    "genres": [
+      "剧情",
+      "悬疑"
+    ],
+    "vote_average": 7.263,
+    "vote_count": 19,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt30459041",
+    "tmdb_id": 241609,
+    "title": "掩耳盗邻",
+    "overview": "一名金融巨擘突然痛失婚姻与事业，他开始抢劫富有的邻居来维生。在自己的社交圈中行窃，让他感到莫名的兴奋，但他也逐渐陷入一张错综复杂的致命之网中。",
+    "poster_path": "/YgCwo9KmeoUEQhkZ9ZNhiGcZE0.jpg",
+    "backdrop_path": "/8NX2kBLHS6vSrl8Lg3Y2JAqzmy9.jpg",
+    "release_date": "2025-04-10",
+    "genres": [
+      "剧情"
+    ],
+    "vote_average": 7.023,
+    "vote_count": 66,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt5834204",
+    "tmdb_id": 69478,
+    "title": "使女的故事",
+    "overview": "故事讲述未来世界遭遇严重污染，人口出生率骤降，美国部分地区经历血腥革命后建立了男性极权社会Gilead，当权者实行一夫多妻制，女性被当做国有财产，有生育能力的女性称为“女仆”，被迫作为统治阶级的生育工具，女主角Offred就是其中之一，她周旋于统治者、统治者凶残的“妻子”、为统治者打理家务的年长女人“Martha”之间，想在活下去的同时找到自己被夺走的女儿。",
+    "poster_path": "/wzff7Ca52nLjYaSO2J39DgwZCct.jpg",
+    "backdrop_path": "/atb20IUkdYcZISq3DJ769nc3h1G.jpg",
+    "release_date": "2017-04-26",
+    "genres": [
+      "剧情",
+      "Sci-Fi & Fantasy"
+    ],
+    "vote_average": 8.2,
+    "vote_count": 2928,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt13406094",
+    "tmdb_id": 111803,
+    "title": "白莲花度假村",
+    "overview": "在一周的时间里，随着每一天的过去，在一个独特的热带度假村中跟踪各种客人和员工的事迹，这些完美的旅客、酒店开朗的员工和田园诗般的地方本身都呈现出一种更黑暗的复杂性。",
+    "poster_path": "/erPcjgEmBUJQY1uz7UOeRNzKQSu.jpg",
+    "backdrop_path": "/rCTLaPwuApDx8vLGjYZ9pRl7zRB.jpg",
+    "release_date": "2021-07-11",
+    "genres": [
+      "喜剧",
+      "剧情",
+      "悬疑"
+    ],
+    "vote_average": 7.6,
+    "vote_count": 1095,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt4574334",
+    "tmdb_id": 66732,
+    "title": "Stranger Things",
+    "overview": "《怪奇物语》以 1983 年的印第安纳州为背景，一个小男孩莫名其妙地消失了。当朋友、家人和当地警察寻找答案时，他们都被卷入一个非同寻常的谜团，其中涉及绝密的政府实验、恐怖的超自然力量，还有一个非常奇怪的小女孩。",
+    "poster_path": "/2mYLTEQd1oHuXA6NICPIKX7OOvo.jpg",
+    "backdrop_path": "/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
+    "release_date": "2016-07-15",
+    "genres": [
+      "剧情",
+      "Sci-Fi & Fantasy",
+      "悬疑"
+    ],
+    "vote_average": 8.597,
+    "vote_count": 18358,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt0944947",
+    "tmdb_id": 1399,
+    "title": "权力的游戏",
+    "overview": "维斯特洛大陆边境处发现远古传说中早已灭绝的生物，危险也渐渐靠近这里。危情一触即发，整个王国看似平和的表面下却是波涛暗涌。权高位重的拜拉席恩家族、勇敢善良的史塔克家族、企图谋取王位的坦格利安家族、有着不可告人秘密的兰尼斯特家族。这些家族各怀鬼胎，这个国家将会陷入一场混战.....",
+    "poster_path": "/wr3myG67UJC6SGJaRYFwIYIm0Uu.jpg",
+    "backdrop_path": "/zZqpAXxVSBtxV9qPBcscfXBcL2w.jpg",
+    "release_date": "2011-04-17",
+    "genres": [
+      "Sci-Fi & Fantasy",
+      "剧情",
+      "动作冒险"
+    ],
+    "vote_average": 8.5,
+    "vote_count": 25083,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt31433814",
+    "tmdb_id": 239770,
+    "title": "超時空奇俠",
+    "overview": "博士和他的夥伴露比桑戴穿梭於時空之間，從英國的摄政時代到戰火燃燒的未來世界經歷了各種冒險。在他們搭乘一座外型像警用電話亭的時光機進行的冒險中，遇見了不可思議的朋友和敵人，包括一個可怕的畢氏妖怪，以及博士迄今為止最強大的敵人。",
+    "poster_path": "/hHZWEk39vgY1UcIc0tdQQ5W67zZ.jpg",
+    "backdrop_path": "/gDtZQmfzvErZpeXOVeCBQE9WkSF.jpg",
+    "release_date": "2024-05-11",
+    "genres": [
+      "动作冒险",
+      "剧情",
+      "Sci-Fi & Fantasy"
+    ],
+    "vote_average": 6.4,
+    "vote_count": 220,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt2085059",
+    "tmdb_id": 42009,
+    "title": "黑镜",
+    "overview": "《黑镜》（英语：Black Mirror）是一部由查理·布鲁克创作的英国独立单元剧，该剧展现现代社会发展，特别是对新技术利用的副作用，其中的每一集是独立的，背景通常设置在架空的现实或不久的将来，并以黑暗和讽刺的语气和或轻或重的实验感来表现剧情。",
+    "poster_path": "/bNqckNZP9OoOiB03m1sEtuVlCp3.jpg",
+    "backdrop_path": "/dg3OindVAGZBjlT3xYKqIAdukPL.jpg",
+    "release_date": "2011-12-04",
+    "genres": [
+      "Sci-Fi & Fantasy",
+      "剧情",
+      "悬疑"
+    ],
+    "vote_average": 8.285,
+    "vote_count": 5522,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt14269590",
+    "tmdb_id": 120998,
+    "title": "扑克脸",
+    "overview": "查莉是一名业余侦探，她总能分辨出有人在撒谎。从一个城镇漫游到另一个城镇，她利用她的特殊天赋破案，看穿每个人表面之下的真面目，以致于她遭受生命危险，成了不少人想解决的头号目标。",
+    "poster_path": "/8mqCNIdiCH4jrEAqYSexhOmiv6m.jpg",
+    "backdrop_path": "/ccOzCmrglAjRGtqv5ClTaBEsWt8.jpg",
+    "release_date": "2023-01-26",
+    "genres": [
+      "悬疑",
+      "犯罪"
+    ],
+    "vote_average": 7.6,
+    "vote_count": 369,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt30444310",
+    "tmdb_id": 241554,
+    "title": "Murderbot",
+    "overview": "在未来高科技世界，一台叛逃的安保机器人暗中获得了自由意志。虽然它只想窝在角落里追肥皂剧，但为了隐藏身份，它不得不接受一项新任务：在一个危险星球上保护一群科学家。",
+    "poster_path": "/naZzfL6hr1Gb68enEwSMjvkq0kC.jpg",
+    "backdrop_path": "/nn9vM29SKN227zupaOOmaJz5SA0.jpg",
+    "release_date": "2025-05-15",
+    "genres": [
+      "喜剧",
+      "剧情",
+      "Sci-Fi & Fantasy"
+    ],
+    "vote_average": 7.208,
+    "vote_count": 101,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt7587890",
+    "tmdb_id": 79744,
+    "title": "菜鳥警察大叔",
+    "overview": "主角約翰諾蘭（John Nolan）在多數人的職業生涯最高峰時，毅然決定離開舒適圈，前往洛杉磯警局追求當名警察的夢想。現在的他成為了警局中最老菜鳥，身邊圍繞著 20 多歲的新秀們，他必須在這個充滿危險、幽默又不可預測的「年輕」警察世界中前進，決心讓自己的人生活出第二次的精彩。",
+    "poster_path": "/cIKZfW9dchia6BVVNuBXoQ8zDQb.jpg",
+    "backdrop_path": "/2m1Mu0xPj4SikiqkaolTRUcNtWH.jpg",
+    "release_date": "2018-10-16",
+    "genres": [
+      "犯罪",
+      "剧情",
+      "喜剧"
+    ],
+    "vote_average": 8.523,
+    "vote_count": 2469,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt8760932",
+    "tmdb_id": 88989,
+    "title": "九个完美陌生人",
+    "overview": "故事讲述在一家以治愈和令人转变为目标的精品健康度假村里，九位在城市中饱受压力困扰的居民来到这里，向往一种更好的生活方式。在为期10天的静修期间，度假村的指导玛莎（妮可·基德曼 饰）将照顾他们，玛莎的目的是重振他们疲惫的心灵和身体。然而，这九个“完美”陌生人并不知道将会发生什么。",
+    "poster_path": "/aqKPngu09ZVwBQNZyvkNPMHYgmi.jpg",
+    "backdrop_path": "/RzCw9LQyAcoa9mn4xkEAyuvhgr.jpg",
+    "release_date": "2021-08-18",
+    "genres": [
+      "剧情",
+      "悬疑"
+    ],
+    "vote_average": 6.992,
+    "vote_count": 503,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt33049767",
+    "tmdb_id": 260458,
+    "title": "成年人",
+    "overview": "一群 20 多岁的纽约人试图成为好人，尽管他们既不是“好人”也不是“人”。",
+    "poster_path": "/8bIX69TDzv81hIsaWcW2HLl4RAt.jpg",
+    "backdrop_path": "/yEjAILmhzpRPx3DXOk6ley1M8PT.jpg",
+    "release_date": "2025-05-28",
+    "genres": [
+      "喜剧"
+    ],
+    "vote_average": 5.8,
+    "vote_count": 12,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt2861424",
+    "tmdb_id": 60625,
+    "title": "瑞克和莫蒂",
+    "overview": "天才兼疯子科学家瑞克，在失踪多年后突然回到女儿贝丝的身边，并且在她的车库里搞了一个科学实验室。瑞克有一把“传送门枪”，可以穿越到宇宙的各个次元。孙子莫蒂莫名其妙就成了他的助手，经常被拖进他的自制太空船内，跟他一同开展各种疯狂刺激的宇宙冒险。女儿女婿对他的疯狂行为感到不满，却又对这个天才科学家无可奈何。",
+    "poster_path": "/AcjbO2Kjk9OxoXApQIr8eTMNtmx.jpg",
+    "backdrop_path": "/Ao5pBFuWY32cVuh6iYjEjZMEscN.jpg",
+    "release_date": "2013-12-02",
+    "genres": [
+      "动画",
+      "喜剧",
+      "Sci-Fi & Fantasy",
+      "动作冒险"
+    ],
+    "vote_average": 8.687,
+    "vote_count": 10193,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt30826447",
+    "tmdb_id": 243316,
+    "title": "他們的春夏秋冬",
+    "overview": "三對已婚伴侶習慣每一季選個週末結伴出遊，但其中一對離婚後，安排行程變得複雜起來，也讓他們維持數十年的友誼面臨考驗。",
+    "poster_path": "/62mfAg6SEeRmezE9DZHlojxBN0J.jpg",
+    "backdrop_path": "/60zGoqvJzrflQEDiBKNxpZqVLNt.jpg",
+    "release_date": "2025-05-01",
+    "genres": [
+      "喜剧"
+    ],
+    "vote_average": 6.612,
+    "vote_count": 58,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt11815682",
+    "tmdb_id": 124101,
+    "title": "天后與草莓",
+    "overview": "述拉斯維加斯傳奇喜劇演員黛博拉凡斯為了自己的職業生涯，決定找來年僅25 歲的年輕寫手艾娃作為槍手，替她撰寫表演內容。",
+    "poster_path": "/ulBzMy5DZjBeUo6wHqn8ao0Zn6j.jpg",
+    "backdrop_path": "/fbA2hjjtyt0Q840yfHuGMM8efU.jpg",
+    "release_date": "2021-05-13",
+    "genres": [
+      "喜剧",
+      "剧情"
+    ],
+    "vote_average": 7.5,
+    "vote_count": 260,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt23488694",
+    "tmdb_id": 247619,
+    "title": "矫枉过正",
+    "overview": "《矫枉过正》是由贝尼托斯金纳打造的一部校园群像喜剧，讲述了曾是橄榄球明星和返校节国王的深柜少年班尼 的混乱成长之旅，他与拼命想要融入集体的边缘少女卡门意外成为挚友。这部犀利幽默又不乏温情的作品，深刻展现了我们在寻找真我的过程中用力过猛的狼狈瞬间。",
+    "poster_path": "/z58hhd1berLU6UjkA3V34M0TEkn.jpg",
+    "backdrop_path": "/8zfLJUB20LpFiIMoMHmC5u43YH1.jpg",
+    "release_date": "2025-05-15",
+    "genres": [
+      "喜剧"
+    ],
+    "vote_average": 7.5,
+    "vote_count": 47,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt0903747",
+    "tmdb_id": 1396,
+    "title": "绝命毒师",
+    "overview": "新墨西哥州的高中化学老师沃尔特·H·怀特是拮据家庭的唯一经济来源。他大半生安分守己，兢兢业业，却在50岁生日之际突然得知自己罹患肺癌晚期的噩耗，原本便不甚顺意的人生顿时雪上加霜。为了保障怀孕的妻子斯凯勒和残疾的儿子小沃特能在自己死后衣食无忧，沃尔特决意铤而走险。他主动找到曾经的学生、而今的毒贩小混混杰西·平克曼谈合作，并运用娴熟高超的化学技术提炼出高纯度冰毒交给后者贩售。孰料事态的发展却在平克曼带回毒品供销商疯狂小八及其表弟后急转直下，沃尔特的人生也由此彻底步向失控。他被迫开始了教书与制毒的双重生活，逐渐坠落至万劫不复的深渊。",
+    "poster_path": "/bSldznJEjkeojc5dzjLvlukqVEU.jpg",
+    "backdrop_path": "/9faGSFi5jam6pDWGNd0p8JcJgXQ.jpg",
+    "release_date": "2008-01-20",
+    "genres": [
+      "剧情",
+      "犯罪"
+    ],
+    "vote_average": 8.926,
+    "vote_count": 15624,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt12160826",
+    "tmdb_id": 113959,
+    "title": "德斯特",
+    "overview": "1972年，首位非裔女性联邦调查局探员前往西南部摧毁一个犯罪集团，延揽了一名逃亡司机协助她执行任务。",
+    "poster_path": "/wYBsKEFU0qHdhSI9QtQjL8HELMn.jpg",
+    "backdrop_path": "/8UuyKCIaX0MqcECmcgPxFCANkq4.jpg",
+    "release_date": "2025-05-15",
+    "genres": [
+      "犯罪",
+      "剧情"
+    ],
+    "vote_average": 5.611,
+    "vote_count": 18,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt11280740",
+    "tmdb_id": 95396,
+    "title": "Severance",
+    "overview": "故事发生在一家名为卢蒙的超级大公司内，一种名为记忆分割术的全新技术正在公司内部进行实验，接受了手术的员工将进行人格分离手术，形成公司人格和日常人格，当踏进公司大门的那一刻，他们的日常人格就会陷入沉睡，身体由公司人格主导。相对的，在离开公司的那一刻，日常人格会重新接管身体，当然，这个人格不会记得任何在公司里发生的事情。\n\n马克（亚当·斯科特 Adam Scott 饰）、迪伦（扎克·切利 Zach Cherry 饰）和埃尔文（约翰·特托罗 John Turturro 饰）三人都接受了分离手术，这一天，他们所在的部门迎来了一位名叫海莉（布丽特·洛薇尔 Britt Lower 饰）的新同事，她身上的反叛气质打破了长久萦绕在这个部门，以及整个公司内的平静。",
+    "poster_path": "/n9BtnJNV9rW1d0h4XhYIdA8m9YI.jpg",
+    "backdrop_path": "/ixgFmf1X59PUZam2qbAfskx2gQr.jpg",
+    "release_date": "2022-02-17",
+    "genres": [
+      "剧情",
+      "悬疑",
+      "Sci-Fi & Fantasy"
+    ],
+    "vote_average": 8.411,
+    "vote_count": 2002,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt9561862",
+    "tmdb_id": 86831,
+    "title": "Love, Death & Robots",
+    "overview": "融合恐怖、想象力和美，从揭示古老的邪恶力量到喜剧般的末日，剧集以标志性的巧思和创造性的视觉效果，为观众带来令人震惊的奇幻、恐怖和科幻短篇故事。",
+    "poster_path": "/1Ih4qcyMHvjuVtc7MqwiZtEtZjB.jpg",
+    "backdrop_path": "/nBrkOZyI75artyizuBFeya48KbO.jpg",
+    "release_date": "2019-03-15",
+    "genres": [
+      "动画",
+      "Sci-Fi & Fantasy"
+    ],
+    "vote_average": 8.237,
+    "vote_count": 3562,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt23649128",
+    "tmdb_id": 247767,
+    "title": "鬥戲影業",
+    "overview": "由薛夫洛根飾演的新任電影製片廠負責人不但急於獲得各路名人的認可，更需要和歐陸影業內的執行團隊在企業需求和創作野心之間取得平衡，盡力令電影充滿活力和意義。",
+    "poster_path": "/qj9tntW7Q23lxmoposJ90GVBjUh.jpg",
+    "backdrop_path": "/aSOrTfmIL211gjenXoRzvBoxgYv.jpg",
+    "release_date": "2025-03-25",
+    "genres": [
+      "喜剧",
+      "剧情"
+    ],
+    "vote_average": 7.61,
+    "vote_count": 114,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt7335184",
+    "tmdb_id": 78191,
+    "title": "你",
+    "overview": "乔伊·戈栢是个聪明但执著的纽约书店经理，迷上一位新人作家后，利用现代科技去夺取贝可的芳心。他不但由变态跟踪狂变为其男友，同时还要清除两人恋爱路上的 各种障碍—就连杀人也在所不惜。故事设定在当下 24 小时都有网路连线的世界，该剧探讨了现实生活中我们面对网路偷窥和控制的无助感。",
+    "poster_path": "/azSwlcLkPLLs0I7REr2dABRcJVG.jpg",
+    "backdrop_path": "/lTySSn1rE10KzYEC9UqJGdos5Vp.jpg",
+    "release_date": "2018-09-09",
+    "genres": [
+      "犯罪"
+    ],
+    "vote_average": 8.044,
+    "vote_count": 3515,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt32063523",
+    "tmdb_id": 255779,
+    "title": "狂赌之渊 BET",
+    "overview": "改编自河本焰创作的同名漫画，讲述在这所以赌技决定地位的私立学校里，一个背负不堪过往的神秘新生将掀起腥风血雨，她赌上一切，决心复仇。",
+    "poster_path": "/b15RS0NFe6tiTWhuOmFKSLuzVrY.jpg",
+    "backdrop_path": "/vx4UhH0RKQOG5etc2qVikStLFqG.jpg",
+    "release_date": "2025-05-15",
+    "genres": [
+      "剧情",
+      "悬疑",
+      "犯罪"
+    ],
+    "vote_average": 6.702,
+    "vote_count": 47,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt0452046",
+    "tmdb_id": 4057,
+    "title": "犯罪心理",
+    "overview": "犯罪心理研究小组隶属FBI，他们跨州行动，主要针对连环杀人案，从嫌疑人的犯罪心理和行为模式入手建立人物侧写，圈定罪犯的性别、年龄、职业特征、居住环境乃至成长经历，从而预测罪犯下一步行为，直至缉拿罪犯。他们的成员包括：高智商、强记忆力的少年天才斯拜瑟尔·瑞德博士——负责数据和资料分析；外冷内热的硬汉阿伦·哈奇——沟通能力极强，波多黎各小伙德里克·摩根——强制性犯罪行为专家；打扮招摇的小胖妹佩妮洛普·格西娅——数据库专家，美女媒体联络员JJ等，在老探员戴维·罗西带领下，飞往全美各地，展开一场场缉凶行动。",
+    "poster_path": "/drFXG1WmEXqgOcoI5SlxJtSitQA.jpg",
+    "backdrop_path": "/w88B4ooZ2LSYPw5107JOkjvI8PI.jpg",
+    "release_date": "2005-09-22",
+    "genres": [
+      "犯罪",
+      "剧情",
+      "悬疑"
+    ],
+    "vote_average": 8.307,
+    "vote_count": 3841,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt4236770",
+    "tmdb_id": 73586,
+    "title": "黄石",
+    "overview": "约翰·达顿是达顿家族的一家之长，坐拥着美国最大的牧场，与牧场毗邻的有美国首个国家公园、印第安人保留地以及土地开发商买下的地皮。在一次因牲畜误入印第安人保留地引起的争端中，不幸的意外伤亡事件发生，一场涉及多方的争端在蒙大拿州这片美丽的土地上拉开了序幕。",
+    "poster_path": "/8MndvwyeV98cd8jgcMe7BkDDAv0.jpg",
+    "backdrop_path": "/hFFAYkK8XkvIlQss9GYxo8TOhFi.jpg",
+    "release_date": "2018-06-20",
+    "genres": [
+      "西部",
+      "剧情"
+    ],
+    "vote_average": 8.3,
+    "vote_count": 2767,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt33496221",
+    "tmdb_id": 262878,
+    "title": "深居叵測",
+    "overview": "鄰居的安親保姆在富裕郊區人間蒸發後，瑟西莉開始追查真相。豈料過程中浮現一個個祕密，讓她看似完美的世界逐漸崩塌。",
+    "poster_path": "/rhHFvFQ97ZAPpyqpprYRKDpbsgs.jpg",
+    "backdrop_path": "/c8bp3lqchYLY7Y14uBXRmCPukUo.jpg",
+    "release_date": "2025-05-15",
+    "genres": [
+      "剧情",
+      "犯罪"
+    ],
+    "vote_average": 6.3,
+    "vote_count": 50,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt10802170",
+    "tmdb_id": 204284,
+    "title": "人生彩排",
+    "overview": "内森·菲尔德（Nathan Fielder）拥有一支建筑团队、大批演员和看似无限的资源，他让普通人能够通过精心制作的自己设计的模拟来“排练”生活中最重要的时刻，从而为生活中最重要的时刻做好准备。当一次失误就可以摧毁你的整个世界时，为什么要把生命留给机遇呢？",
+    "poster_path": "/mIevNYxovnH4sR22qkUmAgS5vdv.jpg",
+    "backdrop_path": "/iFPbB1II79kZNPbT7ePx2W06cd2.jpg",
+    "release_date": "2022-07-15",
+    "genres": [
+      "喜剧",
+      "纪录"
+    ],
+    "vote_average": 8.046,
+    "vote_count": 195,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt31938062",
+    "tmdb_id": 250307,
+    "title": "匹兹堡医魂",
+    "overview": "　　讲述匹兹堡一家医院的医护人员日常应对个人危机、职场政治和危重病人的情志护理等情况，检视当今美国医疗工作者所面临的挑战，揭示他们肩负崇高使命所需的韧性。",
+    "poster_path": "/c6JXvZBJ3MnGx7005mEUtreMIsH.jpg",
+    "backdrop_path": "/z3BkMbCy5ajZPMyKEUwsPHuz2cV.jpg",
+    "release_date": "2025-01-09",
+    "genres": [
+      "剧情"
+    ],
+    "vote_average": 8.64,
+    "vote_count": 164,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt13819960",
+    "tmdb_id": 116450,
+    "title": "欲望都市：华丽下半场",
+    "overview": "轰动全球的HBO影集《欲望都市》进入新篇章，讲述凯莉、米兰妲和夏绿蒂一路从三十到五十岁，持续追寻幸福生活和真挚友谊，并面对人生中复杂的挑战。",
+    "poster_path": "/2b6E0pN19IGsmxSv6HyTKydKKdb.jpg",
+    "backdrop_path": "/sHvTsXSWxuW7hoXAqWM4lBLJI50.jpg",
+    "release_date": "2021-12-09",
+    "genres": [
+      "喜剧",
+      "剧情"
+    ],
+    "vote_average": 7.367,
+    "vote_count": 502,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt13723084",
+    "tmdb_id": 243954,
+    "title": "驱车向前",
+    "overview": "《驱车向前》是一部关于初恋、初次心碎和转动人生第一辆车的车钥匙的故事。本剧发生在一个曾经繁荣、如今正寻求一线希望的铁锈地带小镇，讲述了一群边缘人因为对街头赛车的热爱而结下难以想象的友谊，同时在高中的小社会中摸爬滚打的令人肾上腺素飙升的故事。",
+    "poster_path": "/8n1Xr5xE5lqCaKAjDFQDGh6hs7z.jpg",
+    "backdrop_path": "/gPoncjnCliOiWRVW2ASyrocqQpM.jpg",
+    "release_date": "2025-05-20",
+    "genres": [
+      "剧情"
+    ],
+    "vote_average": 8.803,
+    "vote_count": 32,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt6226232",
+    "tmdb_id": 71728,
+    "title": "小谢尔顿",
+    "overview": "CBS电视台正式直接预定《小谢尔顿》（Young Sheldon）成剧，这部《生活大爆炸》（The Big Bang Theory）的衍生剧由母剧的主创查克·罗瑞（Chuck Lorre）和史蒂文·莫拉（Steven Molaro）打造。曾参与过《老友记》（Friends）、《宋飞正传》（Seinfeld）等喜剧的乔恩·费儒（Jon Favreau）会担任《小谢尔顿》第一集的导演和制片 。\n\n《小谢尔顿》是一部单镜头喜剧，主要讲述童年时期的谢尔顿·库珀（Sheldon Cooper）跟家人一同在德克萨斯州生活的故事，才9岁的谢尔顿就即将要去上高中了。\n\n兰斯·巴伯（Lance Barber）将饰演谢尔顿的父亲。拉根·雷沃德（Raegan Revord）和蒙塔纳·乔丹（Montana Jordan）会分别饰演谢尔顿的双胞胎妹妹及哥哥，佐伊·派瑞（Zoe Perry）饰演谢尔顿的母亲，一个虔诚的福音派基督教徒，有意思的是，在《生活大爆炸》中饰演谢尔顿母亲角色的演员劳里·梅特卡夫（Laurie Metcalf）正是佐伊·派瑞（Zoe Perry）的母亲 。麦肯娜·格瑞斯饰演天才少女，也是米西的朋友佩吉。",
+    "poster_path": "/33enybLLhZxp1bDomdfSGLFQROB.jpg",
+    "backdrop_path": "/nlDBlCtorM7nx130wYnfR5ZmyLX.jpg",
+    "release_date": "2017-09-25",
+    "genres": [
+      "喜剧",
+      "家庭",
+      "剧情"
+    ],
+    "vote_average": 8.043,
+    "vote_count": 2715,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt0068098",
+    "tmdb_id": 918,
+    "title": "陆军野战医院",
+    "overview": "第4077机动部队外科医院陷于朝鲜战争中期。在他们所处环境的帮助下，他们不得不自娱自乐。医生、护士、管理人员和士兵喜欢恶作剧和复仇，他们经常想方设法让战时生活变得可以忍受。",
+    "poster_path": "/6rhuM3oMoEWKxAdrm7IyM8oq8cC.jpg",
+    "backdrop_path": "/8nkOWsMtWZvp7IGuYdVbJeoWzQx.jpg",
+    "release_date": "1972-09-17",
+    "genres": [
+      "War & Politics",
+      "剧情",
+      "喜剧"
+    ],
+    "vote_average": 7.908,
+    "vote_count": 686,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt0141842",
+    "tmdb_id": 1398,
+    "title": "黑道家族",
+    "overview": "本剧呈现黑手党生活、美国家庭、意裔美国人社群、暴力支配的世界与道德的灰色地带。由詹姆士·甘多费尼（James Gandolfini）、萝兰·布雷柯（Lorraine Bracco）、艾迪·法柯（Edie Falco）及麦克·英普雷欧里（Michael Imperioli）领衔主演。剧情的主线围绕在东尼·沙普蓝诺（甘多费尼饰）的家庭与自己所领导的犯罪组织的各式矛盾与冲突。 ",
+    "poster_path": "/9Z3dU2I0ixIqXrVnlrtzxEBIlpw.jpg",
+    "backdrop_path": "/lNpkvX2s8LGB0mjGODMT4o6Up7j.jpg",
+    "release_date": "1999-01-10",
+    "genres": [
+      "犯罪",
+      "剧情"
+    ],
+    "vote_average": 8.6,
+    "vote_count": 2984,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt0413573",
+    "tmdb_id": 1416,
+    "title": "实习医生格蕾",
+    "overview": "西雅图格雷斯医院迎来新一批实习生，梅雷迪斯·格雷、克里斯蒂娜·杨、伊泽贝尔·斯蒂文、乔治·梅利 、亚里克斯·卡莱，五个医学院好友同期毕业，需要以良好表现争夺住院医师正式席位。进入医院伊始，梅雷迪斯崩溃地发现前晚在酒吧和她发生一夜情的男人，竟然是神经外科医生德立克·舍伯，两人纠葛就此开始；克里斯蒂娜吸引了胸外科医师普雷斯顿·伯克的注意，因为他们同样高傲和野心勃勃；乔治悄悄爱着梅雷迪斯；美丽的伊泽贝尔第一时间掀起流言，一年的实习期注定充满高密度的压力竞争与荷尔蒙……",
+    "poster_path": "/yH40xfaBI60J8WptdGyuhebyHhH.jpg",
+    "backdrop_path": "/fgvM6m7gAd8kDAaLF16aflbOSAK.jpg",
+    "release_date": "2005-03-27",
+    "genres": [
+      "剧情"
+    ],
+    "vote_average": 8.225,
+    "vote_count": 10525,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt0436992",
+    "tmdb_id": 57243,
+    "title": "神秘博士",
+    "overview": "名为“博士”的宇宙最后一个时间领主，有着重生的能力、体力及优越的智力，利用时光机器TARDIS英国传统的蓝色警亭，展开他勇敢的时光冒险之旅，拯救外星生物、地球与时空。",
+    "poster_path": "/2UPuYTatw3OI0WIO3XFZKAX9TL.jpg",
+    "backdrop_path": "/vcFW09U4834DyFOeRZpsx9x1D3S.jpg",
+    "release_date": "2005-03-26",
+    "genres": [
+      "动作冒险",
+      "剧情",
+      "Sci-Fi & Fantasy"
+    ],
+    "vote_average": 7.5,
+    "vote_count": 3138,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt6524350",
+    "tmdb_id": 74204,
+    "title": "青春无禁忌",
+    "overview": "在这部前卫的喜剧中，少年伙伴们发现青春期的奇妙和可怕之处让他们生活颠倒，该剧由现实生活中的好友尼克·克罗尔和安德鲁·戈尔德贝格打造。",
+    "poster_path": "/sZzO7abPmmupATMe7lVqKFMbifT.jpg",
+    "backdrop_path": "/uM6WJodeCyTp7h7NhE4rgd0RbRZ.jpg",
+    "release_date": "2017-09-29",
+    "genres": [
+      "喜剧",
+      "动画"
+    ],
+    "vote_average": 7.654,
+    "vote_count": 1119,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt1520211",
+    "tmdb_id": 1402,
+    "title": "行尸走肉",
+    "overview": "镇治安官瑞克·格莱姆斯在一次行动中遭受枪击，当他从昏迷中醒来时，发现小镇上阴气沉沉，死尸遍地。更为恐怖的是，有的死尸游走于街头巷尾，嗜血如命，早已化作恐怖的丧尸。从一对幸存的父子口中得知，大批的幸存者早已疏散到亚特兰大市的避难所。为了 找到失踪的妻儿，瑞克只身上路。然而亚特兰大早已沦陷成为死城，丧尸在此占有绝对的统治地位。被丧尸围攻的瑞克得到数名幸存者的救助，经过一番奋力厮杀，他们最终返回到野外的营地。在接下来的日子里，他们不仅要面临丧尸的威胁，更要承受来自灵魂深处的巨大考验……",
+    "poster_path": "/26cr6NvIdTZgNaNGLFqtPJmRsBc.jpg",
+    "backdrop_path": "/rAOjnEFTuNysY7bot8zonhImGMh.jpg",
+    "release_date": "2010-10-31",
+    "genres": [
+      "动作冒险",
+      "剧情",
+      "Sci-Fi & Fantasy"
+    ],
+    "vote_average": 8.1,
+    "vote_count": 16998,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt8634332",
+    "tmdb_id": 82782,
+    "title": "The Righteous Gemstones",
+    "overview": "这出全新喜剧影集的主轴围绕着一个世界知名的电视福音布道家族，该家族长期以来从事着贪婪、偏差的慈善工作，而一切都以耶稣的名义行事。",
+    "poster_path": "/bKb54fgtMrS54VMMl8KdDIFlG3g.jpg",
+    "backdrop_path": "/vXPxMNfuapkRXBUhac3LAkuzSzc.jpg",
+    "release_date": "2019-08-18",
+    "genres": [
+      "喜剧",
+      "剧情"
+    ],
+    "vote_average": 7.429,
+    "vote_count": 226,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt0773262",
+    "tmdb_id": 1405,
+    "title": "嗜血法医",
+    "overview": "主角德克斯特·摩根（Dexter Morgan，迈克尔·C·霍尔饰）幼时目睹母亲被谋杀，造成永久性的心灵创伤，令到他长大后有杀人倾向。他当警察的养父哈利·摩根（Harry Morgan）发现后，决定训练德克斯特只杀那些穷凶极恶的人，好为社会除害。哈利亦教晓德克斯特怎样消灭证据，让他不会被警方拘捕，而德克斯特最后则进入迈阿密大都会警局工作，成为他们的血迹喷溅分析师。",
+    "poster_path": "/aEja2B4A8RO86TJDuSzbPjGzaxV.jpg",
+    "backdrop_path": "/aSGSxGMTP893DPMCvMl9AdnEICE.jpg",
+    "release_date": "2006-10-01",
+    "genres": [
+      "犯罪",
+      "剧情",
+      "悬疑"
+    ],
+    "vote_average": 8.2,
+    "vote_count": 4680,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt2560140",
+    "tmdb_id": 1429,
+    "title": "进击的巨人",
+    "overview": "曾几何时，世界上突然出现无数身形庞大的巨人，普通人类的生命受到前所未有的威胁。为了保护自身安全，最后的人类筑起三座高墙：玛莉亚、露丝和希娜。人类迎来了长达一个世纪的和平岁月，却也让自己成为圈养在笼中的鸟儿，屈辱地失去自由。845 年，高达 60 米的超大型巨人和铠之巨人登场， 摧毁了最外层的玛莉亚之壁，也惊醒了人类似乎永远不会苏醒的长梦。在此事件中，不愿蜷缩在墙内的少年艾伦·耶格尔亲眼目睹母亲遇害，由此更坚定了他加入调查兵团的决心。在此之后，艾伦和青梅竹马三笠·阿克曼、好友阿尔敏·亚鲁雷特加入第 104 期训练兵团，发誓成为足以消灭所有巨人的英勇战士。百年的和平结束，人类和巨人的战争再度拉开序幕。",
+    "poster_path": "/by4f66EHK82OZNyEuYbOW5RxFBa.jpg",
+    "backdrop_path": "/aok7IhrbA83josNz9Dqh8tNA0Ao.jpg",
+    "release_date": "2013-04-07",
+    "genres": [
+      "动画",
+      "Sci-Fi & Fantasy",
+      "动作冒险"
+    ],
+    "vote_average": 8.665,
+    "vote_count": 6792,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt10541088",
+    "tmdb_id": 117648,
+    "title": "克拉克森的农场",
+    "overview": "着眼于著名主持人克拉克森在农村经营农场的糟糕尝试。2008年买下农场后，他租给了别人，10年的承包合同到期后，克拉克森突发奇想，由他自己来经营。",
+    "poster_path": "/9CFk1MQsRzNDP2Kh5ARj6GvC2K8.jpg",
+    "backdrop_path": "/i50h4Gz6e9BMGak5l6gg5qfIjcv.jpg",
+    "release_date": "2021-06-11",
+    "genres": [
+      "真人秀",
+      "喜剧"
+    ],
+    "vote_average": 8.5,
+    "vote_count": 318,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt0460681",
+    "tmdb_id": 1622,
+    "title": "邪恶力量",
+    "overview": "迪恩和萨姆是两兄弟，生在温切斯特家族的他们，血统里便带着与生俱来的责任——成为“猎人”，专门对付危害人类的恶魔与超自然力量。22年前，他们的母亲遭遇恶魔毒手，因此父亲约翰多年来一面试图追杀恶魔，一面训导两兄弟成为优秀猎人。不过，相比哥哥迪恩对“捕猎”的热衷，弟弟萨姆显然更爱普通生活，他进了斯坦福大学，有了美丽女友，一心要与古怪家庭脱离关系。怎料一次捕猎活动中父亲失踪，迪恩只能召来弟弟协助，萨姆先是勉为其难，但随着调查深入，他发现命中注定的事根本无法凭他个人力量改变。",
+    "poster_path": "/8a9dwW3OQVbkdm7BbTjXQNYPFYy.jpg",
+    "backdrop_path": "/lirPqYLTtd6XZqGn4cS1wiesTq0.jpg",
+    "release_date": "2005-09-13",
+    "genres": [
+      "剧情",
+      "悬疑",
+      "Sci-Fi & Fantasy"
+    ],
+    "vote_average": 8.296,
+    "vote_count": 7838,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt0412142",
+    "tmdb_id": 1408,
+    "title": "豪斯医生",
+    "overview": "普林斯顿大学附属医院有一位大名鼎鼎的内科医师——格雷戈·豪斯，他穿着邋遢随便，手拄拐杖，刚愎自用，锋芒毕露，全然没有人们印象中那类谦和严谨的专业医师的影子。可是令人咋舌的外表下却藏着高超医术和丰富学识，令同行和病患佩服得五体投地。豪斯医生治病的手法也独树一帜：他不当面问诊，也绝对不相信病患的道白感受，而完全凭借自己卓越的学识和高超的推理能力解决了诸多疑难杂症。他和团队（神经科医师泰勒·埃瑞克·弗曼、免疫学专家阿丽森·卡梅隆、心脏与急诊科医师罗伯特·蔡斯）绽放出耀眼夺目的光芒，创造了一个又一个医学奇迹……",
+    "poster_path": "/fDmWY8DeWhZg0nno0lcvYaKSWeQ.jpg",
+    "backdrop_path": "/r0Q6eeN9L1ORL9QsV0Sg8ZV3vnv.jpg",
+    "release_date": "2004-11-16",
+    "genres": [
+      "剧情",
+      "悬疑",
+      "喜剧"
+    ],
+    "vote_average": 8.593,
+    "vote_count": 6955,
+    "media_type": "tv"
+  },
+  {
+    "imdb_id": "tt10813940",
+    "tmdb_id": 117581,
+    "title": "金妮与乔治娅",
+    "overview": "　　为了寻找新的开始，自由奔放的乔治娅和她的两个孩子金妮和奥斯丁搬到北方，却发现通向新生活的道路充满曲折。",
+    "poster_path": "/vOwunzW4dx3n0J5mH40n9jTRSwY.jpg",
+    "backdrop_path": "/lPmUu3xkoksz3xsa1feIUoOBZrg.jpg",
+    "release_date": "2021-02-24",
+    "genres": [
+      "喜剧",
+      "剧情"
+    ],
+    "vote_average": 8.1,
+    "vote_count": 1620,
+    "media_type": "tv"
+  }
+]
