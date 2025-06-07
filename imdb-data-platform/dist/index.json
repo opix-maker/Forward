@@ -1,22 +1,22 @@
 {
   "lists": {
-    "anime_jp_top": {
+    "jp_anime_top": {
       "name": "日本高分动画",
       "tags": [
         "lang:ja",
-        "genre:animation"
+        "genre:动画"
       ],
       "sortBy": "vote_average"
     },
-    "anime_jp_popular": {
+    "jp_anime_popular": {
       "name": "日本热门动画",
       "tags": [
         "lang:ja",
-        "genre:animation"
+        "genre:动画"
       ],
       "sortBy": "vote_count"
     },
-    "tv_kr_top": {
+    "kr_tv_top": {
       "name": "韩国高分剧集",
       "tags": [
         "lang:ko",
@@ -24,7 +24,7 @@
       ],
       "sortBy": "vote_average"
     },
-    "tv_kr_popular": {
+    "kr_tv_popular": {
       "name": "韩国热门剧集",
       "tags": [
         "lang:ko",
@@ -32,7 +32,7 @@
       ],
       "sortBy": "vote_count"
     },
-    "tv_us_top": {
+    "us_tv_top": {
       "name": "美国高分剧集",
       "tags": [
         "lang:en",
@@ -41,12 +41,30 @@
       ],
       "sortBy": "vote_average"
     },
-    "tv_cn_top": {
+    "us_tv_popular": {
+      "name": "美国热门剧集",
+      "tags": [
+        "lang:en",
+        "country:us",
+        "type:tv"
+      ],
+      "sortBy": "vote_count"
+    },
+    "cn_tv_top": {
       "name": "国产高分剧集",
       "tags": [
-        "lang:zh",
+        "lang:chinese",
         "country:cn",
         "type:tv"
+      ],
+      "sortBy": "vote_average"
+    },
+    "cn_anime_top": {
+      "name": "国产高分动画",
+      "tags": [
+        "lang:chinese",
+        "country:cn",
+        "genre:动画"
       ],
       "sortBy": "vote_average"
     },
@@ -58,7 +76,7 @@
       "sortBy": "vote_average"
     },
     "theme_zombie": {
-      "name": "僵尸题材精选",
+      "name": "僵尸末日",
       "tags": [
         "theme:zombie"
       ],
@@ -67,16 +85,68 @@
     "theme_wuxia": {
       "name": "武侠世界",
       "tags": [
-        "theme:wuxia"
+        "theme:wuxia",
+        "lang:chinese"
+      ],
+      "sortBy": "vote_average"
+    },
+    "theme_film_noir": {
+      "name": "黑色电影",
+      "tags": [
+        "theme:film-noir"
+      ],
+      "sortBy": "vote_average"
+    },
+    "theme_space_opera": {
+      "name": "太空歌剧",
+      "tags": [
+        "theme:space-opera"
+      ],
+      "sortBy": "vote_average"
+    },
+    "theme_time_travel": {
+      "name": "时间旅行",
+      "tags": [
+        "theme:time-travel"
       ],
       "sortBy": "vote_average"
     },
     "theme_adult": {
-      "name": "成人内容精选",
+      "name": "成人内容精选 (R/NC-17)",
       "tags": [
         "theme:adult"
       ],
       "sortBy": "vote_average"
+    },
+    "official_top_movies": {
+      "name": "IMDb Top 250 电影",
+      "crawlParams": {
+        "title_type": "feature",
+        "sort": "user_rating,desc",
+        "num_votes": "25000,"
+      }
+    },
+    "official_top_tv": {
+      "name": "IMDb Top 250 剧集",
+      "crawlParams": {
+        "title_type": "tv_series",
+        "sort": "user_rating,desc",
+        "num_votes": "10000,"
+      }
+    },
+    "official_popular_movies": {
+      "name": "IMDb 热门电影",
+      "crawlParams": {
+        "title_type": "feature",
+        "sort": "moviemeter,asc"
+      }
+    },
+    "official_popular_tv": {
+      "name": "IMDb 热门剧集",
+      "crawlParams": {
+        "title_type": "tv_series",
+        "sort": "moviemeter,asc"
+      }
     },
     "series_collection": {
       "name": "系列电影宇宙",
@@ -85,37 +155,21 @@
   },
   "series": [
     {
-      "id": "series_8864",
-      "name": "死神来了（系列）"
-    },
-    {
-      "id": "series_131295",
-      "name": "美国队长（系列）"
-    },
-    {
-      "id": "series_1489663",
-      "name": "罪人（系列）"
-    },
-    {
-      "id": "series_87359",
-      "name": "碟中谍（系列）"
-    },
-    {
-      "id": "series_8580",
-      "name": "龙威小子（系列）"
+      "id": "series_473983",
+      "name": "Hababam Sınıfı Koleksiyonu"
     },
     {
       "id": "series_230",
       "name": "教父（系列）"
     },
     {
-      "id": "series_473983",
-      "name": "Hababam Sınıfı Koleksiyonu"
+      "id": "series_119",
+      "name": "指环王（系列）"
     },
     {
-      "id": "series_383987",
-      "name": "进击的巨人剧场版（系列）"
+      "id": "series_87359",
+      "name": "碟中谍（系列）"
     }
   ],
-  "buildTimestamp": "2025-06-07T17:00:11.210Z"
+  "buildTimestamp": "2025-06-07T17:06:57.516Z"
 }

@@ -2300,5 +2300,2811 @@
       "series:230",
       "theme:gangster"
     ]
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/kGzFbGhp99zva6oZODW5atUtnqi.jpg",
+    "belongs_to_collection": {
+      "id": 230,
+      "name": "教父（系列）",
+      "poster_path": "/zVb22YOMgljCEYbXlvCvEiN4VwT.jpg",
+      "backdrop_path": "/mDMCET9Ens5ANvZAWRpluBsMAtS.jpg"
+    },
+    "budget": 13000000,
+    "genres": [
+      {
+        "id": 18,
+        "name": "剧情"
+      },
+      {
+        "id": 80,
+        "name": "犯罪"
+      }
+    ],
+    "homepage": "",
+    "id": 240,
+    "imdb_id": "tt0071562",
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_title": "The Godfather Part II",
+    "overview": "影片主要讲述第二代教父麦克·柯里昂的奋斗历程，同时回忆了第一代教父维多·柯里昂创业的艰辛，反映了不同历史时期，两代教父的事业、家庭生活。麦克为儿子托尼举行圣餐仪式和庆祝活动的当夜，麦克在家中遭到袭击，凶手被人灭口，面临接管家族事业以来的重重危机，麦克回忆起了父亲维多·柯里昂年轻时在美国的创业历程。麦克一边调查袭击的真相，一边继续开展赌博、酒店等生意，和另一个黑帮人物海门罗斯斗智斗勇，不断扩大势力。终于，麦克的不法行为引起了政府的关注，麦克受到一系列的指控；同时，麦克的家庭也遇到了危机，夫妻感情濒临破裂；而最让麦克痛心的，却是家族中，亲人的背叛。和第一代教父其乐融融的家庭生活比起来，麦克无疑很失败。",
+    "popularity": 17.8898,
+    "poster_path": "/4J8jUmjgKPggRPJqqdkjWCj2k0D.jpg",
+    "production_companies": [
+      {
+        "id": 4,
+        "logo_path": "/gz66EfNoYPqHTYI4q9UEN4CbHRc.png",
+        "name": "Paramount Pictures",
+        "origin_country": "US"
+      },
+      {
+        "id": 536,
+        "logo_path": null,
+        "name": "The Coppola Company",
+        "origin_country": "US"
+      },
+      {
+        "id": 70,
+        "logo_path": "/ueaENQkPcy8rlr5fGZVBXKOhlBh.png",
+        "name": "American Zoetrope",
+        "origin_country": "US"
+      }
+    ],
+    "production_countries": [
+      {
+        "iso_3166_1": "US",
+        "name": "United States of America"
+      }
+    ],
+    "release_date": "1974-12-20",
+    "revenue": 102600000,
+    "runtime": 200,
+    "spoken_languages": [
+      {
+        "english_name": "English",
+        "iso_639_1": "en",
+        "name": "English"
+      },
+      {
+        "english_name": "Italian",
+        "iso_639_1": "it",
+        "name": "Italiano"
+      },
+      {
+        "english_name": "Latin",
+        "iso_639_1": "la",
+        "name": "Latin"
+      },
+      {
+        "english_name": "Spanish",
+        "iso_639_1": "es",
+        "name": "Español"
+      }
+    ],
+    "status": "Released",
+    "tagline": "",
+    "title": "教父2",
+    "video": false,
+    "vote_average": 8.57,
+    "vote_count": 12990,
+    "credits": {
+      "cast": [
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1158,
+          "known_for_department": "Acting",
+          "name": "阿尔·帕西诺",
+          "original_name": "Al Pacino",
+          "popularity": 6.1767,
+          "profile_path": "/2dGBb1fOcNdZjtQToVPFxXjm4ke.jpg",
+          "cast_id": 8,
+          "character": "Don Michael Corleone",
+          "credit_id": "52fe422bc3a36847f8009505",
+          "order": 0
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3087,
+          "known_for_department": "Acting",
+          "name": "罗伯特·杜瓦尔",
+          "original_name": "Robert Duvall",
+          "popularity": 4.3585,
+          "profile_path": "/ybMmK25h4IVtfE7qrnlVp47RQlh.jpg",
+          "cast_id": 9,
+          "character": "Tom Hagen",
+          "credit_id": "52fe422bc3a36847f8009509",
+          "order": 1
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 3092,
+          "known_for_department": "Acting",
+          "name": "黛安·基顿",
+          "original_name": "Diane Keaton",
+          "popularity": 2.5279,
+          "profile_path": "/A8B3BsFgbmw2WEmJuQX38qeU9eR.jpg",
+          "cast_id": 10,
+          "character": "Kay Corleone",
+          "credit_id": "52fe422bc3a36847f800950d",
+          "order": 2
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 380,
+          "known_for_department": "Acting",
+          "name": "罗伯特·德尼罗",
+          "original_name": "Robert De Niro",
+          "popularity": 8.4407,
+          "profile_path": "/cT8htcckIuyI1Lqwt1CvD02ynTh.jpg",
+          "cast_id": 11,
+          "character": "Vito Corleone",
+          "credit_id": "52fe422bc3a36847f8009511",
+          "order": 3
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3096,
+          "known_for_department": "Acting",
+          "name": "约翰·卡扎尔",
+          "original_name": "John Cazale",
+          "popularity": 0.7547,
+          "profile_path": "/7uKBc2BVbLlAiHuSdfioe1OUnCX.jpg",
+          "cast_id": 12,
+          "character": "Frederico 'Fredo' Corleone",
+          "credit_id": "52fe422bc3a36847f8009515",
+          "order": 4
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 3094,
+          "known_for_department": "Acting",
+          "name": "塔莉亚·夏尔",
+          "original_name": "Talia Shire",
+          "popularity": 1.6139,
+          "profile_path": "/RkFJejmEKM80ly6fPSN7octO5c.jpg",
+          "cast_id": 13,
+          "character": "Constanzia 'Connie' Corleone",
+          "credit_id": "52fe422bc3a36847f8009519",
+          "order": 5
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3171,
+          "known_for_department": "Acting",
+          "name": "李·斯特拉斯伯格",
+          "original_name": "Lee Strasberg",
+          "popularity": 0.3764,
+          "profile_path": "/niSM7ejzddgaTcxjgJMYEFCr9Y2.jpg",
+          "cast_id": 14,
+          "character": "Hyman Roth",
+          "credit_id": "52fe422bc3a36847f800951d",
+          "order": 6
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3172,
+          "known_for_department": "Acting",
+          "name": "迈克尔·V·格佐",
+          "original_name": "Michael V. Gazzo",
+          "popularity": 0.73,
+          "profile_path": "/cTY2Hlf6sIR9xLI95bBir7eI0N.jpg",
+          "cast_id": 15,
+          "character": "Frank Pentangeli",
+          "credit_id": "52fe422bc3a36847f8009521",
+          "order": 7
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3173,
+          "known_for_department": "Acting",
+          "name": "格瓦斯·杜安·斯普拉德林",
+          "original_name": "G. D. Spradlin",
+          "popularity": 0.7275,
+          "profile_path": "/pWNa9H3ABB3Ug9CwTfVNtHsCFjV.jpg",
+          "cast_id": 16,
+          "character": "Senator Pat Geary",
+          "credit_id": "52fe422bc3a36847f8009525",
+          "order": 8
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3174,
+          "known_for_department": "Acting",
+          "name": "理查德·布莱特",
+          "original_name": "Richard Bright",
+          "popularity": 0.7764,
+          "profile_path": "/potMaJ2u5PRjXZb7qF9lSW1ldNZ.jpg",
+          "cast_id": 17,
+          "character": "Al Neri",
+          "credit_id": "52fe422bc3a36847f8009529",
+          "order": 9
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3281,
+          "known_for_department": "Acting",
+          "name": "加斯通·莫辛",
+          "original_name": "Gastone Moschin",
+          "popularity": 0.4092,
+          "profile_path": "/dU58seqJs1NDkNodjwCbGZg3nqT.jpg",
+          "cast_id": 34,
+          "character": "Don Fanucci",
+          "credit_id": "52fe422bc3a36847f8009589",
+          "order": 10
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1213795,
+          "known_for_department": "Acting",
+          "name": "Tom Rosqui",
+          "original_name": "Tom Rosqui",
+          "popularity": 0.3241,
+          "profile_path": null,
+          "cast_id": 49,
+          "character": "Rocco Lampone",
+          "credit_id": "55c0e47a9251410f780020ba",
+          "order": 11
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 9257,
+          "known_for_department": "Acting",
+          "name": "布鲁诺·柯比",
+          "original_name": "Bruno Kirby",
+          "popularity": 0.7007,
+          "profile_path": "/qFvS4YHzZeIc77Gom56XkTn5wxA.jpg",
+          "cast_id": 37,
+          "character": "Young Clemenza",
+          "credit_id": "52fe422bc3a36847f8009597",
+          "order": 12
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 11480,
+          "known_for_department": "Acting",
+          "name": "弗兰克·西维罗",
+          "original_name": "Frank Sivero",
+          "popularity": 0.8334,
+          "profile_path": "/eqvhj0iNtcsN6EJhd21Goqi1DSq.jpg",
+          "cast_id": 38,
+          "character": "Genco Abbandando",
+          "credit_id": "52fe422bc3a36847f800959b",
+          "order": 13
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 3279,
+          "known_for_department": "Acting",
+          "name": "Francesca De Sapio",
+          "original_name": "Francesca De Sapio",
+          "popularity": 0.2935,
+          "profile_path": "/r4lBoLEBwFv1q5BFoqKJX7xQyDm.jpg",
+          "cast_id": 32,
+          "character": "Young Mama Corleone",
+          "credit_id": "52fe422bc3a36847f8009581",
+          "order": 14
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 933716,
+          "known_for_department": "Acting",
+          "name": "Morgana King",
+          "original_name": "Morgana King",
+          "popularity": 0.5963,
+          "profile_path": "/1zzGZpZqedECtHMwfFIqd51nncM.jpg",
+          "cast_id": 39,
+          "character": "Mama Corleone",
+          "credit_id": "52fe422bc3a36847f800959f",
+          "order": 15
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 15659,
+          "known_for_department": "Acting",
+          "name": "Marianna Hill",
+          "original_name": "Marianna Hill",
+          "popularity": 1.3377,
+          "profile_path": "/2Exz1SqtPkbM0EkkAKOk6I5OTg6.jpg",
+          "cast_id": 40,
+          "character": "Deanna Corleone",
+          "credit_id": "52fe422bc3a36847f80095a3",
+          "order": 16
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 14151,
+          "known_for_department": "Acting",
+          "name": "里奧普爾多·特里斯特",
+          "original_name": "Leopoldo Trieste",
+          "popularity": 1.1885,
+          "profile_path": "/rPvCj39OY7LClFh9CG2OXFKxioB.jpg",
+          "cast_id": 41,
+          "character": "Signor Roberto",
+          "credit_id": "52fe422bc3a36847f80095a7",
+          "order": 17
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 68186,
+          "known_for_department": "Acting",
+          "name": "多米尼克·查尼斯",
+          "original_name": "Dominic Chianese",
+          "popularity": 0.8663,
+          "profile_path": "/wJIybLAbVv6VEPFpZtpxRW26aq2.jpg",
+          "cast_id": 42,
+          "character": "Johnny Ola",
+          "credit_id": "52fe422bc3a36847f80095ab",
+          "order": 18
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 99788,
+          "known_for_department": "Acting",
+          "name": "Amerigo Tot",
+          "original_name": "Amerigo Tot",
+          "popularity": 0.161,
+          "profile_path": "/typSNLyasFnAn0uAEJDcmk0SKTQ.jpg",
+          "cast_id": 50,
+          "character": "Michael's Bodyguard",
+          "credit_id": "55c0e4d3c3a36823c9001c61",
+          "order": 19
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 45363,
+          "known_for_department": "Acting",
+          "name": "Troy Donahue",
+          "original_name": "Troy Donahue",
+          "popularity": 0.9752,
+          "profile_path": "/uA02pDqGnuISqTXmsmLMiNWcl8h.jpg",
+          "cast_id": 51,
+          "character": "Merle Johnson",
+          "credit_id": "55c0e511c3a36823f4001cdd",
+          "order": 20
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 104504,
+          "known_for_department": "Acting",
+          "name": "John Aprea",
+          "original_name": "John Aprea",
+          "popularity": 0.8685,
+          "profile_path": "/hZ8Wlv3WaRMqNrRtWZBkw4lcjJj.jpg",
+          "cast_id": 52,
+          "character": "Young Tessio",
+          "credit_id": "55c0e53d9251410ee7001da1",
+          "order": 21
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 16525,
+          "known_for_department": "Acting",
+          "name": "乔·斯皮内尔",
+          "original_name": "Joe Spinell",
+          "popularity": 0.7154,
+          "profile_path": "/jiok99ZvHDOj51BBgio2qvum0Mb.jpg",
+          "cast_id": 53,
+          "character": "William 'Willie' Cicci",
+          "credit_id": "55c0e566c3a3682379001ffb",
+          "order": 22
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3093,
+          "known_for_department": "Acting",
+          "name": "阿贝·维高达",
+          "original_name": "Abe Vigoda",
+          "popularity": 0.8973,
+          "profile_path": "/luWKPNb58IgJ2ovrtgPAzHGLLYL.jpg",
+          "cast_id": 54,
+          "character": "Salvatore 'Sal' Tessio",
+          "credit_id": "55c0e5879251410ee7001dab",
+          "order": 23
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 982089,
+          "known_for_department": "Acting",
+          "name": "Tere Livrano",
+          "original_name": "Tere Livrano",
+          "popularity": 0.3423,
+          "profile_path": "/zQo1Q7B3oLO9trJS0TTUKutiW27.jpg",
+          "cast_id": 55,
+          "character": "Theresa Hagen",
+          "credit_id": "55c0e5ccc3a36823c9001c7c",
+          "order": 24
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3095,
+          "known_for_department": "Acting",
+          "name": "詹尼·鲁索",
+          "original_name": "Gianni Russo",
+          "popularity": 0.6554,
+          "profile_path": "/jfeGnQfXMzKXsuSPm9oTxm6FOuz.jpg",
+          "cast_id": 56,
+          "character": "Carlo Rizzi",
+          "credit_id": "55c0e5ffc3a3682253001d4f",
+          "order": 25
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 24697,
+          "known_for_department": "Acting",
+          "name": "Maria Carta",
+          "original_name": "Maria Carta",
+          "popularity": 0.2395,
+          "profile_path": "/ifWc3ofLuTWwnC3oMcBU5ceUBFp.jpg",
+          "cast_id": 57,
+          "character": "Mrs. Andolini",
+          "credit_id": "55c0e6259251410f2a001d22",
+          "order": 26
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3280,
+          "known_for_department": "Acting",
+          "name": "Oreste Baldini",
+          "original_name": "Oreste Baldini",
+          "popularity": 0.1409,
+          "profile_path": null,
+          "cast_id": 33,
+          "character": "Young Vito",
+          "credit_id": "52fe422bc3a36847f8009585",
+          "order": 27
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3333,
+          "known_for_department": "Acting",
+          "name": "Giuseppe Sillato",
+          "original_name": "Giuseppe Sillato",
+          "popularity": 0.1161,
+          "profile_path": null,
+          "cast_id": 35,
+          "character": "Don Francesco Ciccio",
+          "credit_id": "52fe422bc3a36847f800958d",
+          "order": 28
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1343811,
+          "known_for_department": "Production",
+          "name": "Mario Cotone",
+          "original_name": "Mario Cotone",
+          "popularity": 0.3135,
+          "profile_path": null,
+          "cast_id": 58,
+          "character": "Don Tommasino",
+          "credit_id": "55c0e6f5c3a36823c9001ca1",
+          "order": 29
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1503033,
+          "known_for_department": "Acting",
+          "name": "James Gounaris",
+          "original_name": "James Gounaris",
+          "popularity": 0.0696,
+          "profile_path": null,
+          "cast_id": 68,
+          "character": "Anthony Corleone",
+          "credit_id": "55e52f7ec3a36813f80011d4",
+          "order": 30
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 116739,
+          "known_for_department": "Acting",
+          "name": "Fay Spain",
+          "original_name": "Fay Spain",
+          "popularity": 0.7628,
+          "profile_path": "/uzTEZKXxPdt4eqNapV4VRDC021B.jpg",
+          "cast_id": 43,
+          "character": "Mrs. Marcia Roth",
+          "credit_id": "52fe422bc3a36847f80095af",
+          "order": 31
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 5048,
+          "known_for_department": "Acting",
+          "name": "哈里·迪恩·斯坦顿",
+          "original_name": "Harry Dean Stanton",
+          "popularity": 2.3095,
+          "profile_path": "/197UiLVdxPOv8196sqmUpJzOQB5.jpg",
+          "cast_id": 44,
+          "character": "F.B.I. Man #1",
+          "credit_id": "52fe422bc3a36847f80095b3",
+          "order": 32
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3353549,
+          "known_for_department": "Acting",
+          "name": "David Baker",
+          "original_name": "David Baker",
+          "popularity": 0.2319,
+          "profile_path": "/mQweTKYqvIjJWWeTuLDdVLMxOi5.jpg",
+          "cast_id": 151,
+          "character": "F.B.I. Man #2",
+          "credit_id": "61c0b1aa014325001f990a3a",
+          "order": 33
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 133853,
+          "known_for_department": "Acting",
+          "name": "Carmine Caridi",
+          "original_name": "Carmine Caridi",
+          "popularity": 0.6476,
+          "profile_path": "/5lmuAhZ1Trk8vDeRf64UZ1rHvV8.jpg",
+          "cast_id": 59,
+          "character": "Carmine Rosato",
+          "credit_id": "55c0e7c79251410f58001e67",
+          "order": 34
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1004,
+          "known_for_department": "Acting",
+          "name": "丹尼尔·艾洛",
+          "original_name": "Danny Aiello",
+          "popularity": 1.4486,
+          "profile_path": "/2WiZ8SkiFU355GUT2QuSPlenrfM.jpg",
+          "cast_id": 45,
+          "character": "Tony Rosato",
+          "credit_id": "52fe422bc3a36847f80095b7",
+          "order": 35
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 14553,
+          "known_for_department": "Acting",
+          "name": "Carmine Foresta",
+          "original_name": "Carmine Foresta",
+          "popularity": 0.1538,
+          "profile_path": null,
+          "cast_id": 60,
+          "character": "Policeman",
+          "credit_id": "55c0e80ac3a36823f7002165",
+          "order": 36
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1503034,
+          "known_for_department": "Acting",
+          "name": "Nick Discenza",
+          "original_name": "Nick Discenza",
+          "popularity": 0.0461,
+          "profile_path": null,
+          "cast_id": 69,
+          "character": "Bartender",
+          "credit_id": "55e52f7e92514137a000124d",
+          "order": 37
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1503035,
+          "known_for_department": "Acting",
+          "name": "Joseph Medaglia",
+          "original_name": "Joseph Medaglia",
+          "popularity": 0.1608,
+          "profile_path": null,
+          "cast_id": 70,
+          "character": "Father Carmelo",
+          "credit_id": "55e52f7f925141379a001246",
+          "order": 38
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 69948,
+          "known_for_department": "Writing",
+          "name": "William Bowers",
+          "original_name": "William Bowers",
+          "popularity": 0.2109,
+          "profile_path": "/vpcZRLHdB6zJuKkvGhNTfvMKIdp.jpg",
+          "cast_id": 156,
+          "character": "Senate Committee Chairman",
+          "credit_id": "6489d651e272600147bc305d",
+          "order": 39
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1581646,
+          "known_for_department": "Acting",
+          "name": "Joseph Della Sorte",
+          "original_name": "Joseph Della Sorte",
+          "popularity": 0.1786,
+          "profile_path": null,
+          "cast_id": 111,
+          "character": "Michael's Buttonman #1",
+          "credit_id": "56cb9af5c3a36865ef0003ae",
+          "order": 40
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 28413,
+          "known_for_department": "Acting",
+          "name": "卡门·阿尔根齐亚诺",
+          "original_name": "Carmen Argenziano",
+          "popularity": 1.1851,
+          "profile_path": "/aiHWJmsVn7iWuohSg6lzF23XYVr.jpg",
+          "cast_id": 112,
+          "character": "Michael's Buttonman #2",
+          "credit_id": "56cb9b0b9251412452000385",
+          "order": 41
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1503036,
+          "known_for_department": "Acting",
+          "name": "Joe Lo Grippo",
+          "original_name": "Joe Lo Grippo",
+          "popularity": 0.1217,
+          "profile_path": null,
+          "cast_id": 71,
+          "character": "Michael's Buttonman #3",
+          "credit_id": "55e52f7fc3a3681408001327",
+          "order": 42
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1503037,
+          "known_for_department": "Acting",
+          "name": "Ezio Flagello",
+          "original_name": "Ezio Flagello",
+          "popularity": 0.0952,
+          "profile_path": null,
+          "cast_id": 72,
+          "character": "Impressario",
+          "credit_id": "55e52f7f925141379d001174",
+          "order": 43
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1503038,
+          "known_for_department": "Acting",
+          "name": "Livio Giorgi",
+          "original_name": "Livio Giorgi",
+          "popularity": 0.0368,
+          "profile_path": null,
+          "cast_id": 73,
+          "character": "Tenor in 'Senza Mamma'",
+          "credit_id": "55e52f80c3a36813f6000f76",
+          "order": 44
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 76064,
+          "known_for_department": "Acting",
+          "name": "Kathleen Beller",
+          "original_name": "Kathleen Beller",
+          "popularity": 0.6786,
+          "profile_path": "/vhJMUW99Jka8ISQc3Po0BPAAGE4.jpg",
+          "cast_id": 62,
+          "character": "Girl in 'Senza Mamma'",
+          "credit_id": "55c0e921c3a36823f700217a",
+          "order": 45
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1503039,
+          "known_for_department": "Acting",
+          "name": "Saveria Mazzola",
+          "original_name": "Saveria Mazzola",
+          "popularity": 0.044,
+          "profile_path": null,
+          "cast_id": 74,
+          "character": "Signora Colombo",
+          "credit_id": "55e52f8092514137a20010b9",
+          "order": 46
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1503040,
+          "known_for_department": "Acting",
+          "name": "Tito Alba",
+          "original_name": "Tito Alba",
+          "popularity": 0.0654,
+          "profile_path": null,
+          "cast_id": 75,
+          "character": "Cuban President",
+          "credit_id": "55e52f8092514137a600118b",
+          "order": 47
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1503041,
+          "known_for_department": "Acting",
+          "name": "Johnny Naranjo",
+          "original_name": "Johnny Naranjo",
+          "popularity": 0.0797,
+          "profile_path": null,
+          "cast_id": 76,
+          "character": "Cuban Translator",
+          "credit_id": "55e52f8192514137a20010be",
+          "order": 48
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1503042,
+          "known_for_department": "Acting",
+          "name": "Elda Maida",
+          "original_name": "Elda Maida",
+          "popularity": 0.0881,
+          "profile_path": null,
+          "cast_id": 77,
+          "character": "Pentangeli's Wife",
+          "credit_id": "55e52f81c3a36813eb0011b4",
+          "order": 49
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1503043,
+          "known_for_department": "Acting",
+          "name": "Salvatore Po",
+          "original_name": "Salvatore Po",
+          "popularity": 0.0591,
+          "profile_path": null,
+          "cast_id": 78,
+          "character": "Pentangeli's Brother",
+          "credit_id": "55e52f81925141379d001179",
+          "order": 50
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1503044,
+          "known_for_department": "Acting",
+          "name": "Ignazio Pappalardo",
+          "original_name": "Ignazio Pappalardo",
+          "popularity": 0.1644,
+          "profile_path": null,
+          "cast_id": 79,
+          "character": "Mosca",
+          "credit_id": "55e52f82c3a368140800132c",
+          "order": 51
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1503045,
+          "known_for_department": "Acting",
+          "name": "Andrea Maugeri",
+          "original_name": "Andrea Maugeri",
+          "popularity": 0.0418,
+          "profile_path": null,
+          "cast_id": 80,
+          "character": "Strollo",
+          "credit_id": "55e52f8292514137a0001252",
+          "order": 52
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1503046,
+          "known_for_department": "Acting",
+          "name": "Peter LaCorte",
+          "original_name": "Peter LaCorte",
+          "popularity": 0.088,
+          "profile_path": null,
+          "cast_id": 81,
+          "character": "Signor Abbandando",
+          "credit_id": "55e52f82925141379a00124c",
+          "order": 53
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1503047,
+          "known_for_department": "Acting",
+          "name": "Vincent Coppola",
+          "original_name": "Vincent Coppola",
+          "popularity": 0.068,
+          "profile_path": null,
+          "cast_id": 82,
+          "character": "Street Vendor",
+          "credit_id": "55e52f82c3a3681402001036",
+          "order": 54
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 14849,
+          "known_for_department": "Acting",
+          "name": "彼得·多纳特",
+          "original_name": "Peter Donat",
+          "popularity": 0.726,
+          "profile_path": "/9oxRUlGgSZCx58I8GKRKDbOIKyC.jpg",
+          "cast_id": 83,
+          "character": "Questadt",
+          "credit_id": "55e52f83925141379d00117e",
+          "order": 55
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1212995,
+          "known_for_department": "Acting",
+          "name": "Tom Dahlgren",
+          "original_name": "Tom Dahlgren",
+          "popularity": 0.4183,
+          "profile_path": "/lbpHsHZc6ELReiv5srMfClsObyo.jpg",
+          "cast_id": 84,
+          "character": "Fred Corngold",
+          "credit_id": "55e52f8392514137a0001257",
+          "order": 56
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3353640,
+          "known_for_department": "Acting",
+          "name": "Paul B. Brown",
+          "original_name": "Paul B. Brown",
+          "popularity": 0.0623,
+          "profile_path": null,
+          "cast_id": 152,
+          "character": "Senator Ream",
+          "credit_id": "61c0b285223e20009017b6f2",
+          "order": 57
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 7768,
+          "known_for_department": "Production",
+          "name": "Phil Feldman",
+          "original_name": "Phil Feldman",
+          "popularity": 0.1381,
+          "profile_path": null,
+          "cast_id": 85,
+          "character": "Senator #1",
+          "credit_id": "55e52f8392514137a80011ad",
+          "order": 58
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 102429,
+          "known_for_department": "Production",
+          "name": "罗杰·科曼",
+          "original_name": "Roger Corman",
+          "popularity": 2.3435,
+          "profile_path": "/6rFtY1r1SolTbdhqGj3ZuTcjg8U.jpg",
+          "cast_id": 46,
+          "character": "Senator #2",
+          "credit_id": "52fe422bc3a36847f80095bb",
+          "order": 59
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 46929,
+          "known_for_department": "Acting",
+          "name": "Ivonne Coll",
+          "original_name": "Ivonne Coll",
+          "popularity": 0.6417,
+          "profile_path": "/7cyzeWeX8zD4IwAUDfyE9BK8woY.jpg",
+          "cast_id": 63,
+          "character": "Yolanda",
+          "credit_id": "55c0e94bc3a36823c9001cca",
+          "order": 60
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1205819,
+          "known_for_department": "Acting",
+          "name": "Joe De Nicola",
+          "original_name": "Joe De Nicola",
+          "popularity": 0.068,
+          "profile_path": null,
+          "cast_id": 86,
+          "character": "Attendant at Brothel",
+          "credit_id": "55e52f84c3a36813eb0011b9",
+          "order": 61
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1503048,
+          "known_for_department": "Acting",
+          "name": "Edward Van Sickle",
+          "original_name": "Edward Van Sickle",
+          "popularity": 0.047,
+          "profile_path": null,
+          "cast_id": 87,
+          "character": "Ellis Island Doctor",
+          "credit_id": "55e52f84c3a36813eb0011bc",
+          "order": 62
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1503049,
+          "known_for_department": "Acting",
+          "name": "Gabriella Belloni",
+          "original_name": "Gabriella Belloni",
+          "popularity": 0.0264,
+          "profile_path": null,
+          "cast_id": 88,
+          "character": "Ellis Island Nurse",
+          "credit_id": "55e52f84c3a3681408001332",
+          "order": 63
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3353641,
+          "known_for_department": "Acting",
+          "name": "Richard Watson",
+          "original_name": "Richard Watson",
+          "popularity": 0.0795,
+          "profile_path": null,
+          "cast_id": 153,
+          "character": "Customs Official",
+          "credit_id": "61c0b2e0a44d090064b65c52",
+          "order": 64
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1503050,
+          "known_for_department": "Acting",
+          "name": "Venancia Grangerard",
+          "original_name": "Venancia Grangerard",
+          "popularity": 0.0362,
+          "profile_path": null,
+          "cast_id": 89,
+          "character": "Cuban Nurse",
+          "credit_id": "55e52f8592514137940010a7",
+          "order": 65
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 40349,
+          "known_for_department": "Acting",
+          "name": "Erica Yohn",
+          "original_name": "Erica Yohn",
+          "popularity": 0.4492,
+          "profile_path": "/ArpkNzcdaYQTjg6VdYtDFxAygIX.jpg",
+          "cast_id": 90,
+          "character": "Governess",
+          "credit_id": "55f2143e9251416707002d4c",
+          "order": 66
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2495753,
+          "known_for_department": "Acting",
+          "name": "Teresa Tirelli",
+          "original_name": "Teresa Tirelli",
+          "popularity": 0.1736,
+          "profile_path": null,
+          "cast_id": 154,
+          "character": "Midwife",
+          "credit_id": "61c0b323297338001e438078",
+          "order": 67
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3085,
+          "known_for_department": "Acting",
+          "name": "詹姆斯·凯恩",
+          "original_name": "James Caan",
+          "popularity": 2.718,
+          "profile_path": "/v3flJtQEyczxENi29yJyvnN6LVt.jpg",
+          "cast_id": 48,
+          "character": "Sonny Corleone (uncredited)",
+          "credit_id": "52fe422bc3a36847f80095c3",
+          "order": 68
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 126072,
+          "known_for_department": "Acting",
+          "name": "Italia Coppola",
+          "original_name": "Italia Coppola",
+          "popularity": 0.1226,
+          "profile_path": null,
+          "cast_id": 116,
+          "character": "Mama Corleone's Body (uncredited)",
+          "credit_id": "56cc78a4c3a36865ef002937",
+          "order": 69
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 38803,
+          "known_for_department": "Writing",
+          "name": "罗曼·科波拉",
+          "original_name": "Roman Coppola",
+          "popularity": 1.3816,
+          "profile_path": "/dq454EhrDVKBsiYzuLr0IkKa18v.jpg",
+          "cast_id": 64,
+          "character": "Sonny Corleone as a Boy (uncredited)",
+          "credit_id": "55c0e97bc3a3682253001db1",
+          "order": 70
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1769,
+          "known_for_department": "Directing",
+          "name": "索菲亚·科波拉",
+          "original_name": "Sofia Coppola",
+          "popularity": 3.9408,
+          "profile_path": "/dzHC2LxmarkBxWLhjp2DRa5oCev.jpg",
+          "cast_id": 65,
+          "character": "Child on Ship (uncredited)",
+          "credit_id": "55c0e9929251410f27002014",
+          "order": 71
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1403118,
+          "known_for_department": "Acting",
+          "name": "Victor Pujols Faneyte",
+          "original_name": "Victor Pujols Faneyte",
+          "popularity": 0.0975,
+          "profile_path": null,
+          "cast_id": 91,
+          "character": "Cuban Guerilla with Grenade (uncredited)",
+          "credit_id": "55f21765c3a36822f500305c",
+          "order": 72
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 160728,
+          "known_for_department": "Acting",
+          "name": "Julie Gregg",
+          "original_name": "Julie Gregg",
+          "popularity": 0.6346,
+          "profile_path": "/8Kx71BnZNtpzb86jH7fcArWhJBh.jpg",
+          "cast_id": 92,
+          "character": "Sandrinella 'Sandra' Corleone (uncredited)",
+          "credit_id": "55f217aa925141670d002fbb",
+          "order": 73
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1494522,
+          "known_for_department": "Acting",
+          "name": "Larry Guardino",
+          "original_name": "Larry Guardino",
+          "popularity": 0.1322,
+          "profile_path": null,
+          "cast_id": 93,
+          "character": "Vito's Uncle (uncredited)",
+          "credit_id": "55f217dbc3a36822fe002e85",
+          "order": 74
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 47756,
+          "known_for_department": "Production",
+          "name": "Buck Houghton",
+          "original_name": "Buck Houghton",
+          "popularity": 0.172,
+          "profile_path": "/awYLIMQA0KiIfMsFvmipseorWZv.jpg",
+          "cast_id": 94,
+          "character": "Senator with mustache (uncredited)",
+          "credit_id": "55f218199251410d6d001698",
+          "order": 75
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 99846,
+          "known_for_department": "Acting",
+          "name": "小杉翔",
+          "original_name": "Sho Kosugi",
+          "popularity": 0.6813,
+          "profile_path": "/cdoP2qnJILJlWT4xvYDxg2doaf6.jpg",
+          "cast_id": 66,
+          "character": "Passerby in Coat with Cap Pulled Down (uncredited)",
+          "credit_id": "55c0e9ab9251410f19001f2d",
+          "order": 76
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 12401,
+          "known_for_department": "Production",
+          "name": "Gary Kurtz",
+          "original_name": "Gary Kurtz",
+          "popularity": 0.2288,
+          "profile_path": "/q6tgPiNqzEOIYmHxMrpWoUirmmu.jpg",
+          "cast_id": 95,
+          "character": "Photographer in Court (uncredited)",
+          "credit_id": "55f21857c3a3683bec002ece",
+          "order": 77
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 12415,
+          "known_for_department": "Writing",
+          "name": "理查德·马西森",
+          "original_name": "Richard Matheson",
+          "popularity": 0.7785,
+          "profile_path": "/fTsTj0EMqH5GfVN0Kj252jsYZnB.jpg",
+          "cast_id": 97,
+          "character": "Senator #3 (uncredited)",
+          "credit_id": "55f218e99251416711002e7a",
+          "order": 78
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 8490,
+          "known_for_department": "Acting",
+          "name": "约翰·梅格纳",
+          "original_name": "John Megna",
+          "popularity": 0.3728,
+          "profile_path": "/u0EkzeWqsD8CPAuoFlHX2cph98t.jpg",
+          "cast_id": 98,
+          "character": "Young Hyman Roth (uncredited)",
+          "credit_id": "55f219119251416701002cf5",
+          "order": 79
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 160627,
+          "known_for_department": "Acting",
+          "name": "Jay Rasumny",
+          "original_name": "Jay Rasumny",
+          "popularity": 0.2961,
+          "profile_path": "/nLUXyuLzK6bx2hZSj99hr2w7zaW.jpg",
+          "cast_id": 100,
+          "character": "Street Vendor (uncredited)",
+          "credit_id": "55f219629251416705002daa",
+          "order": 80
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1209678,
+          "known_for_department": "Acting",
+          "name": "Filomena Spagnuolo",
+          "original_name": "Filomena Spagnuolo",
+          "popularity": 0.1382,
+          "profile_path": null,
+          "cast_id": 101,
+          "character": "Extra in Little Italy (uncredited)",
+          "credit_id": "55f219a2c3a3683bec002ee7",
+          "order": 81
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 59364,
+          "known_for_department": "Acting",
+          "name": "Julian Voloshin",
+          "original_name": "Julian Voloshin",
+          "popularity": 0.1232,
+          "profile_path": "/zvydabJwp6vRLGn3uGqL9VxPVB4.jpg",
+          "cast_id": 102,
+          "character": "Sam Roth (uncredited)",
+          "credit_id": "55f219ee9251414530001826",
+          "order": 82
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 4148712,
+          "known_for_department": "Acting",
+          "name": "Devi Morgan",
+          "original_name": "Devi Morgan",
+          "popularity": 0.0693,
+          "profile_path": "/fXHVQdkHU0rC2nnD8SejRvO3nyy.jpg",
+          "cast_id": 179,
+          "character": "Background (uncredited)",
+          "credit_id": "67780f7a15521f83d9669d92",
+          "order": 83
+        }
+      ],
+      "crew": [
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1776,
+          "known_for_department": "Directing",
+          "name": "弗朗西斯·科波拉",
+          "original_name": "Francis Ford Coppola",
+          "popularity": 4.4785,
+          "profile_path": "/IwGgkmW6IoJ9vuNF0T9CU3FYUX.jpg",
+          "credit_id": "52fe422bc3a36847f80094e3",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3083,
+          "known_for_department": "Writing",
+          "name": "马里奥·普佐",
+          "original_name": "Mario Puzo",
+          "popularity": 0.766,
+          "profile_path": "/lEsT1uCZAZg1nYDQe3Fsj9CalzT.jpg",
+          "credit_id": "52fe422bc3a36847f80094fb",
+          "department": "Writing",
+          "job": "Novel"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3097,
+          "known_for_department": "Camera",
+          "name": "Gordon Willis",
+          "original_name": "Gordon Willis",
+          "popularity": 0.2933,
+          "profile_path": "/6gOmfatlF7UdhaHi2tPsZMb5vmz.jpg",
+          "credit_id": "52fe422bc3a36847f800952f",
+          "department": "Camera",
+          "job": "Director of Photography"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3098,
+          "known_for_department": "Sound",
+          "name": "Nino Rota",
+          "original_name": "Nino Rota",
+          "popularity": 0.4196,
+          "profile_path": "/v42v3uM7jqwoZxDJ8MlEtT6Ol7a.jpg",
+          "credit_id": "52fe422bc3a36847f800953b",
+          "department": "Sound",
+          "job": "Original Music Composer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2875,
+          "known_for_department": "Art",
+          "name": "Dean Tavoularis",
+          "original_name": "Dean Tavoularis",
+          "popularity": 0.2909,
+          "profile_path": "/hrRBaXUn2k29qd1MvAxuag5L32c.jpg",
+          "credit_id": "52fe422bc3a36847f8009541",
+          "department": "Art",
+          "job": "Production Design"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2988,
+          "known_for_department": "Editing",
+          "name": "Barry Malkin",
+          "original_name": "Barry Malkin",
+          "popularity": 0.2,
+          "profile_path": null,
+          "credit_id": "52fe422bc3a36847f8009547",
+          "department": "Editing",
+          "job": "Editor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3175,
+          "known_for_department": "Editing",
+          "name": "Richard Marks",
+          "original_name": "Richard Marks",
+          "popularity": 0.3171,
+          "profile_path": "/gWguYz89bJ4DddPcYr8nntDv10U.jpg",
+          "credit_id": "52fe422bc3a36847f800954d",
+          "department": "Editing",
+          "job": "Editor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3100,
+          "known_for_department": "Editing",
+          "name": "Peter Zinner",
+          "original_name": "Peter Zinner",
+          "popularity": 0.298,
+          "profile_path": null,
+          "credit_id": "52fe422bc3a36847f8009553",
+          "department": "Editing",
+          "job": "Editor"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 597,
+          "known_for_department": "Production",
+          "name": "Jane Feinberg",
+          "original_name": "Jane Feinberg",
+          "popularity": 0.1991,
+          "profile_path": null,
+          "credit_id": "52fe422bc3a36847f8009559",
+          "department": "Production",
+          "job": "Casting"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 598,
+          "known_for_department": "Production",
+          "name": "Mike Fenton",
+          "original_name": "Mike Fenton",
+          "popularity": 0.4296,
+          "profile_path": "/oIKCBb2w47iZps9neDo2GY29g1y.jpg",
+          "credit_id": "52fe422bc3a36847f800955f",
+          "department": "Production",
+          "job": "Casting"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3176,
+          "known_for_department": "Production",
+          "name": "Vic Ramos",
+          "original_name": "Vic Ramos",
+          "popularity": 0.2048,
+          "profile_path": null,
+          "credit_id": "52fe422bc3a36847f8009565",
+          "department": "Production",
+          "job": "Casting"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3102,
+          "known_for_department": "Sound",
+          "name": "Howard Beals",
+          "original_name": "Howard Beals",
+          "popularity": 0.1271,
+          "profile_path": null,
+          "credit_id": "52fe422bc3a36847f800956b",
+          "department": "Sound",
+          "job": "Sound Effects Editor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3177,
+          "known_for_department": "Sound",
+          "name": "Mark Berger",
+          "original_name": "Mark Berger",
+          "popularity": 0.252,
+          "profile_path": null,
+          "credit_id": "52fe422bc3a36847f8009571",
+          "department": "Sound",
+          "job": "Sound Montage Associate"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3179,
+          "known_for_department": "Sound",
+          "name": "George Brand",
+          "original_name": "George Brand",
+          "popularity": 0.1251,
+          "profile_path": null,
+          "credit_id": "52fe422bc3a36847f800957d",
+          "department": "Sound",
+          "job": "Music Editor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 100799,
+          "known_for_department": "Acting",
+          "name": "George Sawaya",
+          "original_name": "George Sawaya",
+          "popularity": 0.7867,
+          "profile_path": null,
+          "credit_id": "652b2325f2883802a00a6094",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 165973,
+          "known_for_department": "Acting",
+          "name": "Wally Rose",
+          "original_name": "Wally Rose",
+          "popularity": 0.2636,
+          "profile_path": null,
+          "credit_id": "652b232b1f3e6001399e6d93",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 34131,
+          "known_for_department": "Acting",
+          "name": "George Robotham",
+          "original_name": "George Robotham",
+          "popularity": 0.2969,
+          "profile_path": null,
+          "credit_id": "652b2331f2883802a1db9c5a",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 8591,
+          "known_for_department": "Acting",
+          "name": "泰迪·格鲁斯曼",
+          "original_name": "Ted Grossman",
+          "popularity": 0.5632,
+          "profile_path": "/2L7S57LmXg1EFwVOkI06JS5oAhM.jpg",
+          "credit_id": "652b233a024ec800aecb6728",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 13413,
+          "known_for_department": "Acting",
+          "name": "Phil Adams",
+          "original_name": "Phil Adams",
+          "popularity": 0.4276,
+          "profile_path": null,
+          "credit_id": "652b233f358da701406c3df1",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 4020084,
+          "known_for_department": "Acting",
+          "name": "Tony Amato Sr.",
+          "original_name": "Tony Amato Sr.",
+          "popularity": 0.0429,
+          "profile_path": null,
+          "credit_id": "652b2343f2883802a327b06a",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 6099,
+          "known_for_department": "Production",
+          "name": "Valerio De Paolis",
+          "original_name": "Valerio De Paolis",
+          "popularity": 0.1645,
+          "profile_path": "/rbsYkbJPgQAMuFY71RYrYatdXWT.jpg",
+          "credit_id": "563e3d519251416cd8003e2d",
+          "department": "Production",
+          "job": "Production Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1427699,
+          "known_for_department": "Directing",
+          "name": "John Franco",
+          "original_name": "John Franco",
+          "popularity": 0.2141,
+          "profile_path": null,
+          "credit_id": "566b7a09c3a3682e98005c33",
+          "department": "Directing",
+          "job": "Script Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1409008,
+          "known_for_department": "Costume & Make-Up",
+          "name": "Charles H. Schram",
+          "original_name": "Charles H. Schram",
+          "popularity": 0.1419,
+          "profile_path": "/fdY09ub1rX0yYh8qcPrWtQurpfi.jpg",
+          "credit_id": "56985c419251412546001488",
+          "department": "Costume & Make-Up",
+          "job": "Makeup Artist"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 29654,
+          "known_for_department": "Costume & Make-Up",
+          "name": "Dick Smith",
+          "original_name": "Dick Smith",
+          "popularity": 0.4388,
+          "profile_path": "/kKCenlQ8iQCTLGfX8ZPpJFpxvwS.jpg",
+          "credit_id": "56a77044c3a36819da0030a1",
+          "department": "Costume & Make-Up",
+          "job": "Makeup Artist"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1419935,
+          "known_for_department": "Costume & Make-Up",
+          "name": "Naomi Cavin",
+          "original_name": "Naomi Cavin",
+          "popularity": 0.0962,
+          "profile_path": null,
+          "credit_id": "56a7705a92514129f5002fed",
+          "department": "Costume & Make-Up",
+          "job": "Hairstylist"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 70250,
+          "known_for_department": "Directing",
+          "name": "Newt Arnold",
+          "original_name": "Newt Arnold",
+          "popularity": 0.4563,
+          "profile_path": null,
+          "credit_id": "56cf3a4bc3a3681e57002da7",
+          "department": "Directing",
+          "job": "Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 18373,
+          "known_for_department": "Camera",
+          "name": "Ralph Gerling",
+          "original_name": "Ralph Gerling",
+          "popularity": 0.1931,
+          "profile_path": null,
+          "credit_id": "56cf3dda9251413e62003001",
+          "department": "Camera",
+          "job": "Camera Operator"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1625347,
+          "known_for_department": "Directing",
+          "name": "Tony Brandt",
+          "original_name": "Tony Brandt",
+          "popularity": 0.1769,
+          "profile_path": null,
+          "credit_id": "57447c8192514110fb00068e",
+          "department": "Directing",
+          "job": "Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 96912,
+          "known_for_department": "Crew",
+          "name": "Joe Lombardi",
+          "original_name": "Joe Lombardi",
+          "popularity": 0.1649,
+          "profile_path": null,
+          "credit_id": "574485d8c3a36807640008d1",
+          "department": "Crew",
+          "job": "Special Effects"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 794,
+          "known_for_department": "Art",
+          "name": "Angelo P. Graham",
+          "original_name": "Angelo P. Graham",
+          "popularity": 0.1587,
+          "profile_path": null,
+          "credit_id": "57471cb39251415f60002932",
+          "department": "Art",
+          "job": "Art Direction"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 8339,
+          "known_for_department": "Art",
+          "name": "George R. Nelson",
+          "original_name": "George R. Nelson",
+          "popularity": 0.1751,
+          "profile_path": null,
+          "credit_id": "57471d159251415e5d002c69",
+          "department": "Art",
+          "job": "Set Decoration"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1343811,
+          "known_for_department": "Production",
+          "name": "Mario Cotone",
+          "original_name": "Mario Cotone",
+          "popularity": 0.3135,
+          "profile_path": null,
+          "credit_id": "57471d8c92514177b00013f1",
+          "department": "Production",
+          "job": "Unit Manager"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 16654,
+          "known_for_department": "Production",
+          "name": "Michael S. Glick",
+          "original_name": "Michael S. Glick",
+          "popularity": 0.2052,
+          "profile_path": null,
+          "credit_id": "57471dc39251417694000543",
+          "department": "Production",
+          "job": "Production Manager"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3085,
+          "known_for_department": "Acting",
+          "name": "詹姆斯·凯恩",
+          "original_name": "James Caan",
+          "popularity": 2.718,
+          "profile_path": "/v3flJtQEyczxENi29yJyvnN6LVt.jpg",
+          "credit_id": "57472235c3a36839df000077",
+          "department": "Crew",
+          "job": "Thanks"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1469560,
+          "known_for_department": "Crew",
+          "name": "Eileen Peterson",
+          "original_name": "Eileen Peterson",
+          "popularity": 0.1071,
+          "profile_path": null,
+          "credit_id": "574dc0d7c3a36858bd0000a0",
+          "department": "Crew",
+          "job": "Unit Publicist"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1518593,
+          "known_for_department": "Directing",
+          "name": "B.J. Bjorkman",
+          "original_name": "B.J. Bjorkman",
+          "popularity": 0.1012,
+          "profile_path": null,
+          "credit_id": "5751b60cc3a3683040000219",
+          "department": "Directing",
+          "job": "Script Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1511706,
+          "known_for_department": "Sound",
+          "name": "Charles M. Wilborn",
+          "original_name": "Charles M. Wilborn",
+          "popularity": 0.2221,
+          "profile_path": null,
+          "credit_id": "58e3cd81925141281902066f",
+          "department": "Sound",
+          "job": "Sound Recordist"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 81538,
+          "known_for_department": "Art",
+          "name": "Wayne Fitzgerald",
+          "original_name": "Wayne Fitzgerald",
+          "popularity": 0.2628,
+          "profile_path": null,
+          "credit_id": "644515f8b3f6f502fc9f189a",
+          "department": "Art",
+          "job": "Title Designer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 6455,
+          "known_for_department": "Costume & Make-Up",
+          "name": "Theadora Van Runkle",
+          "original_name": "Theadora Van Runkle",
+          "popularity": 0.199,
+          "profile_path": null,
+          "credit_id": "5a773cdec3a368224e000e64",
+          "department": "Costume & Make-Up",
+          "job": "Costume Design"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 154,
+          "known_for_department": "Editing",
+          "name": "Walter Murch",
+          "original_name": "Walter Murch",
+          "popularity": 0.7565,
+          "profile_path": "/kQh7U7kRLF9NKEMpxiGjZEIu0o3.jpg",
+          "credit_id": "5a773d1f9251417763000e61",
+          "department": "Sound",
+          "job": "Sound Re-Recording Mixer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2872,
+          "known_for_department": "Sound",
+          "name": "Carmine Coppola",
+          "original_name": "Carmine Coppola",
+          "popularity": 0.2525,
+          "profile_path": "/iURpKXIgdtQoVCBQ8GKGvb0Qw5z.jpg",
+          "credit_id": "6489d964bf31f250569de661",
+          "department": "Crew",
+          "job": "Additional Music"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2872,
+          "known_for_department": "Sound",
+          "name": "Carmine Coppola",
+          "original_name": "Carmine Coppola",
+          "popularity": 0.2525,
+          "profile_path": "/iURpKXIgdtQoVCBQ8GKGvb0Qw5z.jpg",
+          "credit_id": "6489d971e2726001287c1de0",
+          "department": "Sound",
+          "job": "Conductor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1359894,
+          "known_for_department": "Production",
+          "name": "Burt Bluestein",
+          "original_name": "Burt Bluestein",
+          "popularity": 0.1353,
+          "profile_path": null,
+          "credit_id": "6489da9fe375c00139c282cd",
+          "department": "Directing",
+          "job": "Second Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 102589,
+          "known_for_department": "Directing",
+          "name": "Michael Kusley",
+          "original_name": "Michael Kusley",
+          "popularity": 0.1166,
+          "profile_path": null,
+          "credit_id": "6489dabae375c000e251c431",
+          "department": "Directing",
+          "job": "Second Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1630221,
+          "known_for_department": "Directing",
+          "name": "Alan Hopkins",
+          "original_name": "Alan Hopkins",
+          "popularity": 0.2119,
+          "profile_path": null,
+          "credit_id": "6489daeb6f8d95013c754489",
+          "department": "Directing",
+          "job": "Second Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1783080,
+          "known_for_department": "Production",
+          "name": "Henry J. Lange Jr.",
+          "original_name": "Henry J. Lange Jr.",
+          "popularity": 0.1323,
+          "profile_path": null,
+          "credit_id": "6489db0c99259c00e2f77703",
+          "department": "Directing",
+          "job": "Second Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1966431,
+          "known_for_department": "Directing",
+          "name": "Charles Myers",
+          "original_name": "Charles Myers",
+          "popularity": 0.2041,
+          "profile_path": null,
+          "credit_id": "6489db21293835013c342add",
+          "department": "Directing",
+          "job": "Second Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 557873,
+          "known_for_department": "Camera",
+          "name": "Bob Rose",
+          "original_name": "Bob Rose",
+          "popularity": 0.2133,
+          "profile_path": null,
+          "credit_id": "6489dc0ebf31f25054b83e7e",
+          "department": "Camera",
+          "job": "Key Grip"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2350735,
+          "known_for_department": "Crew",
+          "name": "A.D. Flowers",
+          "original_name": "A.D. Flowers",
+          "popularity": 0.124,
+          "profile_path": null,
+          "credit_id": "6489dc65d2b20900ebc27798",
+          "department": "Crew",
+          "job": "Special Effects"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2871,
+          "known_for_department": "Production",
+          "name": "Fred Roos",
+          "original_name": "Fred Roos",
+          "popularity": 0.3902,
+          "profile_path": "/1a7L2qJUB6BRhgdey4oBhzYv2cm.jpg",
+          "credit_id": "6489dcdae272600147bc32bf",
+          "department": "Production",
+          "job": "Co-Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2870,
+          "known_for_department": "Production",
+          "name": "Gray Frederickson",
+          "original_name": "Gray Frederickson",
+          "popularity": 0.2099,
+          "profile_path": null,
+          "credit_id": "6489dce86f8d9500e5016b8b",
+          "department": "Production",
+          "job": "Co-Producer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3170,
+          "known_for_department": "Production",
+          "name": "Mona Skager",
+          "original_name": "Mona Skager",
+          "popularity": 0.0712,
+          "profile_path": null,
+          "credit_id": "6489dcf8293835011ea4d126",
+          "department": "Production",
+          "job": "Associate Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 154,
+          "known_for_department": "Editing",
+          "name": "Walter Murch",
+          "original_name": "Walter Murch",
+          "popularity": 0.7565,
+          "profile_path": "/kQh7U7kRLF9NKEMpxiGjZEIu0o3.jpg",
+          "credit_id": "6489dd6be375c00139c283ed",
+          "department": "Sound",
+          "job": "Sound Editor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3178,
+          "known_for_department": "Sound",
+          "name": "Nathan Boxer",
+          "original_name": "Nathan Boxer",
+          "popularity": 0.1512,
+          "profile_path": null,
+          "credit_id": "6489dd9b29383500e4c5d22f",
+          "department": "Sound",
+          "job": "Sound Recordist"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1054,
+          "known_for_department": "Sound",
+          "name": "James Fritch",
+          "original_name": "James Fritch",
+          "popularity": 0.1052,
+          "profile_path": null,
+          "credit_id": "6489ddb9e375c000ff4acb3d",
+          "department": "Sound",
+          "job": "Sound Effects Editor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3083,
+          "known_for_department": "Writing",
+          "name": "马里奥·普佐",
+          "original_name": "Mario Puzo",
+          "popularity": 0.766,
+          "profile_path": "/lEsT1uCZAZg1nYDQe3Fsj9CalzT.jpg",
+          "credit_id": "64c8795a1fa1c800b0c15bbe",
+          "department": "Writing",
+          "job": "Screenplay"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1535121,
+          "known_for_department": "Lighting",
+          "name": "George Holmes",
+          "original_name": "George Holmes",
+          "popularity": 0.1023,
+          "profile_path": null,
+          "credit_id": "5c6dd75992514120d504f307",
+          "department": "Lighting",
+          "job": "Gaffer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1511713,
+          "known_for_department": "Production",
+          "name": "Jack English",
+          "original_name": "Jack English",
+          "popularity": 0.0741,
+          "profile_path": null,
+          "credit_id": "5e7be9864350113e61257d0f",
+          "department": "Production",
+          "job": "Location Coordinator"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1776,
+          "known_for_department": "Directing",
+          "name": "弗朗西斯·科波拉",
+          "original_name": "Francis Ford Coppola",
+          "popularity": 4.4785,
+          "profile_path": "/IwGgkmW6IoJ9vuNF0T9CU3FYUX.jpg",
+          "credit_id": "5e92517a8e87020016cb1d0e",
+          "department": "Directing",
+          "job": "Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1776,
+          "known_for_department": "Directing",
+          "name": "弗朗西斯·科波拉",
+          "original_name": "Francis Ford Coppola",
+          "popularity": 4.4785,
+          "profile_path": "/IwGgkmW6IoJ9vuNF0T9CU3FYUX.jpg",
+          "credit_id": "5e9251c384448e00128f09b1",
+          "department": "Writing",
+          "job": "Screenplay"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2930663,
+          "known_for_department": "Acting",
+          "name": "Mona Houghton",
+          "original_name": "Mona Houghton",
+          "popularity": 0.3814,
+          "profile_path": null,
+          "credit_id": "5ffb1499a3b5e60040367dc2",
+          "department": "Production",
+          "job": "Location Assistant"
+        }
+      ]
+    },
+    "keywords": {
+      "keywords": [
+        {
+          "id": 613,
+          "name": "new year's eve"
+        },
+        {
+          "id": 242,
+          "name": "new york city"
+        },
+        {
+          "id": 818,
+          "name": "based on novel or book"
+        },
+        {
+          "id": 700,
+          "name": "italian american"
+        },
+        {
+          "id": 701,
+          "name": "cuba"
+        },
+        {
+          "id": 131,
+          "name": "italy"
+        },
+        {
+          "id": 3149,
+          "name": "gangster"
+        },
+        {
+          "id": 6049,
+          "name": "praise"
+        },
+        {
+          "id": 1936,
+          "name": "blackmail"
+        },
+        {
+          "id": 1715,
+          "name": "symbolism"
+        },
+        {
+          "id": 2944,
+          "name": "senator"
+        },
+        {
+          "id": 9748,
+          "name": "revenge"
+        },
+        {
+          "id": 9826,
+          "name": "murder"
+        },
+        {
+          "id": 10085,
+          "name": "betrayal"
+        },
+        {
+          "id": 10291,
+          "name": "organized crime"
+        },
+        {
+          "id": 11259,
+          "name": "extortion"
+        },
+        {
+          "id": 10391,
+          "name": "mafia"
+        },
+        {
+          "id": 10909,
+          "name": "lawyer"
+        },
+        {
+          "id": 14632,
+          "name": "suburb"
+        },
+        {
+          "id": 155538,
+          "name": "sicilian mafia"
+        },
+        {
+          "id": 156024,
+          "name": "corrupt politician"
+        },
+        {
+          "id": 202371,
+          "name": "aggressive"
+        },
+        {
+          "id": 208611,
+          "name": "1950s"
+        },
+        {
+          "id": 252123,
+          "name": "new year"
+        },
+        {
+          "id": 263959,
+          "name": "vindictive"
+        },
+        {
+          "id": 266753,
+          "name": "cautionary"
+        },
+        {
+          "id": 291153,
+          "name": "grand"
+        },
+        {
+          "id": 312898,
+          "name": "violence"
+        },
+        {
+          "id": 325761,
+          "name": "admiring"
+        },
+        {
+          "id": 325773,
+          "name": "audacious"
+        }
+      ]
+    },
+    "translations": {
+      "translations": [
+        {
+          "iso_3166_1": "US",
+          "iso_639_1": "en",
+          "name": "English",
+          "english_name": "English",
+          "data": {
+            "homepage": "",
+            "overview": "In the continuing saga of the Corleone crime family, a young Vito Corleone grows up in Sicily and in 1910s New York. In the 1950s, Michael Corleone attempts to expand the family business into Las Vegas, Hollywood and Cuba.",
+            "runtime": 202,
+            "tagline": "The rise and fall of the Corleone empire.",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "DE",
+          "iso_639_1": "de",
+          "name": "Deutsch",
+          "english_name": "German",
+          "data": {
+            "homepage": "",
+            "overview": "Michael Corleone ist jetzt der Pate seiner Familie und führt diese Aufgabe mit der nötigen Gnadenlosigkeit aus. Als er in Las Vegas und auf Kuba expandieren will, weil ihm die alten Geschäftsideen nichts mehr einbringen, treten Schwierigkeiten auf. Um diese zu klären, veranlaßt Michael eine große Säuberungsaktion, die auch vor den Familienmitgliedern nicht halt macht.",
+            "runtime": 200,
+            "tagline": "",
+            "title": "Der Pate - Teil II"
+          }
+        },
+        {
+          "iso_3166_1": "FI",
+          "iso_639_1": "fi",
+          "name": "suomi",
+          "english_name": "Finnish",
+          "data": {
+            "homepage": "",
+            "overview": "Tämä loistava jatko-osa ensimmäiselle Kummisetä -elokuvalle jatkaa Corleonen perheen mahtimiesten tarinaa. Toisessa osassa ohjaaja Francis Ford Coppola kertoo rinnakkain kahden sukupolven elämästä: Don Viton lapsuuden ja nuoruuden - roolissa lahjakas Robert De Niro - ja perheen nuorimman pojan Michaelin (Al Pacino) nousun uudeksi Doniksi. Ensimmäisen Kummisedän näyttelijäkaarti jatkaa rooleissaan, ja he ovat Coppolan johdolla tehneet kiistatta elokuvahistorian parhaan jatko-osan. Robert De Niro sai ensimmäisen Oscarin ja elokuva palkittiin kuudella Oscarilla, mm. vuoden parhaana elokuvana.",
+            "runtime": 200,
+            "tagline": "",
+            "title": "Kummisetä II"
+          }
+        },
+        {
+          "iso_3166_1": "FR",
+          "iso_639_1": "fr",
+          "name": "Français",
+          "english_name": "French",
+          "data": {
+            "homepage": "",
+            "overview": "Depuis la mort de Don Vito Corleone, son fils Michael règne sur la famille. Amené à négocier avec la mafia juive, il perd alors le soutien d'un de ses lieutenants, Frankie Pentageli. Échappant de justesse à un attentat, Michael tente de retrouver le coupable, soupçonnant Hyman Roth, le chef de la mafia juive. Vito Corleone, immigrant italien, arrive à New York au début du siècle ; très vite, il devient un des caïds du quartier, utilisant la violence comme moyen de régler toutes les affaires. Seul au départ, il bâtit peu à peu un véritable empire, origine de la fortune de la famille des Corleone.",
+            "runtime": 202,
+            "tagline": "Les affaires reprennent.",
+            "title": "Le Parrain, 2e partie"
+          }
+        },
+        {
+          "iso_3166_1": "IT",
+          "iso_639_1": "it",
+          "name": "Italiano",
+          "english_name": "Italian",
+          "data": {
+            "homepage": "",
+            "overview": "Il film tratta della giovinezza e dei primi passi nel mondo del crimine di Vito Corleone, e delle difficoltà cinquant'anni più tardi di suo figlio, Michael, a mantenere in piedi l'impero Corleone. Il tutto tra vicende di emigrazione, tradimenti familiari, inchieste governative e affari.",
+            "runtime": 200,
+            "tagline": "Nella vita una sola cosa è certa: se la storia ci ha insegnato qualcosa, è che si può uccidere chiunque.",
+            "title": "Il padrino - Parte II"
+          }
+        },
+        {
+          "iso_3166_1": "HU",
+          "iso_639_1": "hu",
+          "name": "Magyar",
+          "english_name": "Hungarian",
+          "data": {
+            "homepage": "",
+            "overview": "Vito Corleone halála után Michael lép apja örökébe. A férfi szerteágazó kapcsolatrendszerének felhasználásával új profilt alakít ki a családja vezette maffiának. Hamarosan azonban újabb összeütközések és árulások veszik kezdetüket, amikben az új vezetőnek helyt kell állnia. S Michael nem habozik a legveszedelmesebb fegyverekhez nyúlni, hogy hatalmát, befolyását és pénzét megtartsa, s védelmet biztosítson a családjának. Eközben az is kiderül, hogy néhai apja hogyan alapozta meg a Corleone család hírnevét.",
+            "runtime": 200,
+            "tagline": "Nem érzem úgy Tom, hogy mindenkit ki kell iktatnom. Csak az ellenségeimet.",
+            "title": "A keresztapa 2."
+          }
+        },
+        {
+          "iso_3166_1": "CN",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "homepage": "",
+            "overview": "影片主要讲述第二代教父麦克·柯里昂的奋斗历程，同时回忆了第一代教父维多·柯里昂创业的艰辛，反映了不同历史时期，两代教父的事业、家庭生活。麦克为儿子托尼举行圣餐仪式和庆祝活动的当夜，麦克在家中遭到袭击，凶手被人灭口，面临接管家族事业以来的重重危机，麦克回忆起了父亲维多·柯里昂年轻时在美国的创业历程。麦克一边调查袭击的真相，一边继续开展赌博、酒店等生意，和另一个黑帮人物海门罗斯斗智斗勇，不断扩大势力。终于，麦克的不法行为引起了政府的关注，麦克受到一系列的指控；同时，麦克的家庭也遇到了危机，夫妻感情濒临破裂；而最让麦克痛心的，却是家族中，亲人的背叛。和第一代教父其乐融融的家庭生活比起来，麦克无疑很失败。",
+            "runtime": 200,
+            "tagline": "",
+            "title": "教父2"
+          }
+        },
+        {
+          "iso_3166_1": "RU",
+          "iso_639_1": "ru",
+          "name": "Pусский",
+          "english_name": "Russian",
+          "data": {
+            "homepage": "",
+            "overview": "В центре драмы представители нового поколения гангстерского клана — дона Корлеоне и его сына, для которых не существует моральных преград на пути достижения поставленых целей. Они превращают мафию, построенную по патриархальным, еще сицилийским законам, в весьма прагматичную, жесткую корпорацию, плавно интегрирующуюся в большой бизнес Америки.",
+            "runtime": 200,
+            "tagline": "",
+            "title": "Крёстный отец 2"
+          }
+        },
+        {
+          "iso_3166_1": "TR",
+          "iso_639_1": "tr",
+          "name": "Türkçe",
+          "english_name": "Turkish",
+          "data": {
+            "homepage": "",
+            "overview": "Genç Vito Corleone, Amerika'ya yeni gelmiştir. 1917 yılında, New York şehri'nin yerel mafyalarından birinin liderini öldürünce saygınlık kazanır ve korkulan biri haline gelir.Bu arada, 50 yıl sonra, Michael Corleone, Washington'da senato komitesine aile işleriyle ilgili ifade vermektedir.1972 yapımı ilk filmin devamı niteliğinde, yine yazar Mario Puzo ve yönetmen Francis Ford Coppola'nın yaratıcı ellerinden çıkmış usta işi bir yapım. Eleştirmenler tarafından, önceki filmden daha başarılı bulunan az sayıdaki devam filminden biri olarak kabul ediliyor.",
+            "runtime": 202,
+            "tagline": "Herkesi temizlemem gerektiğini düşünmüyorum Tom. Sadece düşmanlarımı.",
+            "title": "Baba 2"
+          }
+        },
+        {
+          "iso_3166_1": "PT",
+          "iso_639_1": "pt",
+          "name": "Português",
+          "english_name": "Portuguese",
+          "data": {
+            "homepage": "",
+            "overview": "Em 1950, o jovem Michael Corleone, agora à frente da família, tenta expandir o negócio a Las Vegas, Hollywood e Cuba. Paralelamente, revela-se a história do jovem Vito Corleone, e de como saiu da Sicília em 1910 e chegou a Nova Iorque para construir um império do crime.",
+            "runtime": 202,
+            "tagline": "Esse é o negócio que escolhemos.",
+            "title": "O Padrinho: Parte II"
+          }
+        },
+        {
+          "iso_3166_1": "ES",
+          "iso_639_1": "es",
+          "name": "Español",
+          "english_name": "Spanish",
+          "data": {
+            "homepage": "",
+            "overview": "Continuación de la saga de los Corleone con dos historias paralelas: la elección de Michael Corleone como jefe de los negocios familiares y los orígenes del patriarca, el ya fallecido Don Vito, primero en Sicilia y luego en Estados Unidos, donde, empezando desde abajo, llegó a ser un poderosísimo jefe de la mafia de Nueva York.",
+            "runtime": 200,
+            "tagline": "No siento que tengo que eliminar a todo el mundo, Tom. Solo a mis enemigos",
+            "title": "El Padrino Parte II"
+          }
+        },
+        {
+          "iso_3166_1": "NL",
+          "iso_639_1": "nl",
+          "name": "Nederlands",
+          "english_name": "Dutch",
+          "data": {
+            "homepage": "",
+            "overview": "De jonge Vito Corleone groeit op op Sicilië en weet zich in New York op te werken tot een machtige gangster. Zijn zoon Michael probeert eind jaren '50  het \"familiebedrijf\" uit te breiden.",
+            "runtime": 200,
+            "tagline": "",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "SE",
+          "iso_639_1": "sv",
+          "name": "svenska",
+          "english_name": "Swedish",
+          "data": {
+            "homepage": "",
+            "overview": "Den andra delen i det episka kriminaldramat om maffiafamiljen Corleone skildrar den unge Vitos väg från Sicilien till New York, där han slår sig fram i den undre världen. Parallellt får vi också följa familjens utveckling från 1950-talet då sonen Michael tar över som gudfader för klanen Corleone. Michael satsar på att flytta verksamheten till Las Vegas men ju högre upp i samhället han kommer desto farligare blir hans fiender.",
+            "runtime": 200,
+            "tagline": "",
+            "title": "Gudfadern del II"
+          }
+        },
+        {
+          "iso_3166_1": "IR",
+          "iso_639_1": "fa",
+          "name": "فارسی",
+          "english_name": "Persian",
+          "data": {
+            "homepage": "",
+            "overview": "«مایکل کورلئونه» (آل پاچینو) درگیر سرو سامان بخشیدن به امپراتوری ای است که از پدرش، «دون ویتو» (مارلون براندو) به ارث برده است. داستان به طور موازی زندگی «مایکل کورلئونه» قبل از انقلاب کوبا و زندگی «ویتو کورلئونه?» جوان، مهاجرت او از سیسیل به آمریکا و چگونگی رسیدن او به قدرت را نشان می‌دهد و اینکه مایکل چگونه در دادگاه به دفاع از خود در مقابل اتهامات می پردازد…",
+            "runtime": 0,
+            "tagline": "",
+            "title": "پدرخوانده: بخش ۲"
+          }
+        },
+        {
+          "iso_3166_1": "PL",
+          "iso_639_1": "pl",
+          "name": "Polski",
+          "english_name": "Polish",
+          "data": {
+            "homepage": "",
+            "overview": "Ta mistrzowska kontynuacja \"Ojca chrzestnego\" opisuje losy dwóch pokoleń rodu Corleone w bezwzględnym dążeniu do władzy. Francis Ford Coppola podzielił swą powieść na dwie części: w pierwszej przedstawił losy młodego Don Vito, zagranego bezbłędnie przez Roberta De Niro, w drugiej -  przejmowanie przez Michaela (Al Pacino) władzy w mafijnej rodzinie. Ponownie, gromadząc na planie wielu znakomitych artystów, Coppola stworzył bez wątpienia najlepszy sequel w dziejach kina.",
+            "runtime": 200,
+            "tagline": "",
+            "title": "Ojciec chrzestny II"
+          }
+        },
+        {
+          "iso_3166_1": "DK",
+          "iso_639_1": "da",
+          "name": "Dansk",
+          "english_name": "Danish",
+          "data": {
+            "homepage": "",
+            "overview": "I 1958 fejrer mafialederen Michael Corleone sin søns konfirmation med stor festivitas. Udadtil fremviser Corleone-familien en facade uden revner, men facaden dækker i virkeligheden over korruption, vold og mord.",
+            "runtime": 200,
+            "tagline": "",
+            "title": "The Godfather del 2"
+          }
+        },
+        {
+          "iso_3166_1": "CZ",
+          "iso_639_1": "cs",
+          "name": "Český",
+          "english_name": "Czech",
+          "data": {
+            "homepage": "",
+            "overview": "Mladičký Vito Andolini jako jediný z rodiny ujde krutému osudu, který jeho rodičům připravil nelítostný sicilský kmotr Don Francesco Ciccio. Podaří se mu utéci do Ameriky, kde může začít jeho pozvolná cesta, na jejímž konci bude všemocný a obávaný Vito Corleone... O čtyři desítky let později třímá pevně ve svých rukou otěže obrovského impéria Vitův syn Don Michael Corleone, jenž se pokouší rozšířit svoji moc i mimo americké území, brání se pokusu úřadů o zamezení jeho vlivu i podnikání a zároveň se nemilosrdně potýká se zrádci ve vlastních řadách...",
+            "runtime": 193,
+            "tagline": "",
+            "title": "Kmotr II"
+          }
+        },
+        {
+          "iso_3166_1": "RS",
+          "iso_639_1": "sr",
+          "name": "Srpski",
+          "english_name": "Serbian",
+          "data": {
+            "homepage": "",
+            "overview": "Педесете године прошлог века. Мафијашку породицу Корлеоне води Мајкл, који се труди да легализује посао и прошири га. Уз разне пословно-политичке проблеме, Мајкл мора да решава и ситуацију у породици, поготово са сестром Кони. Непосредно након развода, Кони планира да се венча за човека који се Мајклу нимало не допада. Када постане мета покушаја убиства који ипак преживи, Мајкл не сме да верује апсолутно никоме... Чак ни онима за које је мислио да су му најближи. Упоредо са Мајкловом причом пратимо и причу његовог оца, Вита Корлеонеа, који као сироче одраста на Сицилији. Ускоро одлази преко Атлантика, у Америку. Свој први посао добија у малом дућану, после чега следи незаустављив пут према богатству и моћи.",
+            "runtime": 200,
+            "tagline": "Кум 2",
+            "title": "Кум 2"
+          }
+        },
+        {
+          "iso_3166_1": "GR",
+          "iso_639_1": "el",
+          "name": "ελληνικά",
+          "english_name": "Greek",
+          "data": {
+            "homepage": "",
+            "overview": "Ο Μάικλ Κoρλεόvε, διάδoχoς της εγκληματικής αυτoκρατoρίας τoυ πατέρα τoυ, δεv είvαι πια o ιδεαλιστής vέoς πoυ πoλέμησε με αυτoθυσία στov Β Παγκόσμιo Πόλεμo. Αφoύ εξασφαλίζει τη συvεργασία εvός δυvαμικoύ γερoυσιαστή, εκβιάζovτάς τov μ έvα σκάvδαλo από τo παρελθόv τoυ, o Μάικλ πηγαίvει στηv Κoύβα για vα αvoίξει έvα πoλυτελές καζίvo σε συvεργασία με τov Εβραίo Μαφιόζo Χάιμαv Ρoθ. Ωστόσo, εvώ εγκαθιδρύει τηv απόλυτη εξoυσία τoυ στον υπόκοσμο, o Μάικλ Κoρλεόvε απoκτά όλo και περισσότερoυς εχθρoύς, εvώ η σχέση τoυ με τηv έγκυo γυvαίκα τoυ, Κέι, περvάει μια σoβαρή κρίση.",
+            "runtime": 202,
+            "tagline": "",
+            "title": "Ο Νονός 2"
+          }
+        },
+        {
+          "iso_3166_1": "BG",
+          "iso_639_1": "bg",
+          "name": "български език",
+          "english_name": "Bulgarian",
+          "data": {
+            "homepage": "",
+            "overview": "В продължението на сагата за сицилианската фамилия Корлеоне, Франсис Форд Копола разказва две истории: тази за ранните години на Дон Вито и за издигането на сина му Майкъл като новия Дон.",
+            "runtime": 195,
+            "tagline": "",
+            "title": "Кръстникът II"
+          }
+        },
+        {
+          "iso_3166_1": "KR",
+          "iso_639_1": "ko",
+          "name": "한국어/조선말",
+          "english_name": "Korean",
+          "data": {
+            "homepage": "",
+            "overview": "아버지의 장례식 도중에 맏아들 파올로가 총에 맞아 죽고, 비토(로버트 드니로)는 겨우 도망쳐 미국으로 건너온다. 대부로 성장한 후 비토는 다시 치치오를 찾아 복수를 한다. 새롭게 등장한 젊은 대부 마이클(알 파치노)은 본거지를 라스베가스로 옮기고 가족의 사업을 가능한 합법적인 것으로 바꾸려고 애쓴다. 그런 과중 중에 자신을 제거하려는 음모를 알게되고 그는 냉혹하고 신속하게 반대파들을 제거, 조직을 더욱 확대해 나간다. 이를 위해 마이클은 배신한 형마저 죽이고, 일 때문에 아내와 헤어지는 등 인간적으로는 계속 외로워져 가는데...",
+            "runtime": 0,
+            "tagline": "대부가 암시하고 예고한 모든 것",
+            "title": "대부 2"
+          }
+        },
+        {
+          "iso_3166_1": "IL",
+          "iso_639_1": "he",
+          "name": "עִבְרִית",
+          "english_name": "Hebrew",
+          "data": {
+            "homepage": "",
+            "overview": "מייקל קורליאונה לא בוחל באמצעים כדי להרחיב את אימפריית הפשע של משפחתו, ונזכר בדרך שעשה אביו ויטו מבית היתומים בסיציליה ועד לימיו כסנדק של ניו יורק.",
+            "runtime": 0,
+            "tagline": "אני לא צריך להרוג את כולם, טום. רק את האויבים שלי.",
+            "title": "הסנדק: חלק שני"
+          }
+        },
+        {
+          "iso_3166_1": "JP",
+          "iso_639_1": "ja",
+          "name": "日本語",
+          "english_name": "Japanese",
+          "data": {
+            "homepage": "",
+            "overview": "亡き父のあとを継ぎドンとなったマイケルの苦悩と復讐を、父ビトーの少年時代からやがて一大ファミリーを築くまでのエピソードを交えて描いた、名作「ゴッドファーザー」の第2作。幼いビトーが青年となり、やがてファミリーを築くまでの物語と、父のあとを継ぎドンとなったマイケルの、父がそうであった頃と全く変わってしまった時代の中でのドンとしての苦悩と復讐の物語を、巧みに交差しながら展開していく。",
+            "runtime": 200,
+            "tagline": "巨大な組織を 若い新しいゴッドファーザーが 受け継いだ-",
+            "title": "ゴッドファーザー PART II"
+          }
+        },
+        {
+          "iso_3166_1": "UA",
+          "iso_639_1": "uk",
+          "name": "Український",
+          "english_name": "Ukrainian",
+          "data": {
+            "homepage": "",
+            "overview": "Продовження \"Хрещеного батька\", зроблена так само майстерно. Майстерно змонтовані сцени минулого та сьогодення, Коппола в центр драми висуває представників нового покоління гангстерського клану дона Корлеоне та його сина, для яких не існує моральних перешкод на шляху досягнення власної мети. Вони перетворюють мафію, побудовану за патріархальними, ще сицилійськими законами, у цілком прагматичну, жорстку корпорацію, що поступово інтегрується у великий бізнес Америки.",
+            "runtime": 0,
+            "tagline": "Я не хочу стерти усіх, Томе. Лише моїх ворогів.",
+            "title": "Хрещений батько 2"
+          }
+        },
+        {
+          "iso_3166_1": "RO",
+          "iso_639_1": "ro",
+          "name": "Română",
+          "english_name": "Romanian",
+          "data": {
+            "homepage": "",
+            "overview": "În ceea ce fără îndoială este una dintre cele mai bune continuări de film din toate timpurile, Francis Ford Coppola duce mai departe povestea de proporții epice a trilogiei Nașul cu această poveste despre două generații din familia Corleone aflate la putere. Coppola colaborează încă o dată cu scriitorul Mario Puzo, șlefuind două povești întrețesute, care funcționează în egală măsură ca preambul și continuare a originalului. Prima prezintă umilele începuturi ale clanului sicilian și ascensiunea în New York a tânărului Don Vito, interpretat acum într-un rol secundar premiat cu Oscar de Robert De Niro. A doua prezintă ascensiunea lui Michael, noul Don al clanului.",
+            "runtime": 200,
+            "tagline": "Nu vreau să-i distrug pe toți, Tom. Doar pe dușmanii mei.",
+            "title": "Nașul II"
+          }
+        },
+        {
+          "iso_3166_1": "SK",
+          "iso_639_1": "sk",
+          "name": "Slovenčina",
+          "english_name": "Slovak",
+          "data": {
+            "homepage": "",
+            "overview": "Al Pacino a Robert De Niro v hlavných úlohách druhej časti slávnej mafiánskej ságy. Mimoriadny úspech Krstného otca vo svetových kinách viedol k okamžitým úvahám o nakrútení pokračovania. Scenár, ktorý je spoločným dielom autora pôvodnej predlohy Maria Puza a režiséra, rozvíja dve dejové línie - ďalšie osudy nového krstného otca Michaela Corleoneho a začiatky mladého Vita Corleoneho v New Yorku dvadsiatych rokov. Film získal 6 Oscarov.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Krstný otec II"
+          }
+        },
+        {
+          "iso_3166_1": "BR",
+          "iso_639_1": "pt",
+          "name": "Português",
+          "english_name": "Portuguese",
+          "data": {
+            "homepage": "",
+            "overview": "Após a máfia matar sua família, o jovem Vito foge da sua cidade na Sicília e vai para a América. Vito luta para manter sua família. Ele mata Black Hand Fanucci, que exigia dos comerciantes uma parte dos seus ganhos. Com a morte de Fanucci, o poderio de Vito cresce, mas sua família é o que mais importa para ele. Agora baseado no Lago Tahoe, Michael planeja fazer incursões em Las Vegas e Havana instalando negócios ligados ao lazer, mas descobre que aliados como Hyman Roth estão tentando matá-lo.",
+            "runtime": 202,
+            "tagline": "Esse é o negócio que escolhemos.",
+            "title": "O Poderoso Chefão: Parte II"
+          }
+        },
+        {
+          "iso_3166_1": "NO",
+          "iso_639_1": "no",
+          "name": "Norsk",
+          "english_name": "Norwegian",
+          "data": {
+            "homepage": "",
+            "overview": "I fortsettelsen i sagaen om familien Corleone, vokser en ung Vito Corleone opp på Sicilia på 1910-tallet New York. På 1950-tallet forsøker Michael Corleone å utvide familievirksomheten til Las Vegas, Hollywood og Cuba.",
+            "runtime": 200,
+            "tagline": "",
+            "title": "Gudfaren 2"
+          }
+        },
+        {
+          "iso_3166_1": "TW",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "homepage": "",
+            "overview": "影片主要講述第二代教父麥克·柯里昂的奮鬥歷程，同時回憶了第一代教父維多·柯里昂創業的艱辛，反映了不同歷史時期，兩代教父的事業、家庭生活。 麥克為兒子托尼舉行聖餐儀式和慶祝活動的當夜，麥克在家中遭到襲擊，兇手被人滅口，面臨接管家族事業以來的重重危機，麥克回憶起了父親維多·柯里昂年輕時在美國的創業歷程。 麥克一邊調查襲擊的真相，一邊繼續開展賭博、酒店等生意，和另一個黑幫人物海門羅斯鬥智斗勇，不斷擴大勢力。 終於，麥克的不法行為引起了政府的關注，麥克受到一系列的指控；同時，麥克的家庭也遇到了危機，夫妻感情瀕臨破裂；而最讓麥克痛心的，卻是家族中，親人的背叛。和第一代教父其樂融融的家庭生活比起來，麥克無疑很失敗。 麥克怎麼樣面對事業、家庭的雙重危機？為什麼兩代教父會有截然不同的家庭生活？讓我們自己在影片中尋找答案",
+            "runtime": 0,
+            "tagline": "",
+            "title": "教父II"
+          }
+        },
+        {
+          "iso_3166_1": "NO",
+          "iso_639_1": "nb",
+          "name": "Bokmål",
+          "english_name": "Norwegian Bokmål",
+          "data": {
+            "homepage": "",
+            "overview": "I fortsettelsen på sagaen om mafia-familien Corleone, vokser en ung Vito Corleone opp på Sicilia og i New York på 1910-tallet. På 1950-tallet forsøker Michael Corleone å utvide familiebransjen til Las Vegas, Hollywood og Cuba.",
+            "runtime": 230,
+            "tagline": "",
+            "title": "Gudfaren 2"
+          }
+        },
+        {
+          "iso_3166_1": "MX",
+          "iso_639_1": "es",
+          "name": "Español",
+          "english_name": "Spanish",
+          "data": {
+            "homepage": "",
+            "overview": "Continuación de la historia de los Corleone por medio de dos historias paralelas: la elección de Michael como jefe de los negocios familiares y los orígenes del patriarca, Don Vito Corleone, primero en su Sicilia natal y posteriormente en Estados Unidos, donde, empezando desde abajo, llegó a ser un poderosísimo jefe de la mafia de Nueva York.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "El Padrino II"
+          }
+        },
+        {
+          "iso_3166_1": "CA",
+          "iso_639_1": "fr",
+          "name": "Français",
+          "english_name": "French",
+          "data": {
+            "homepage": "",
+            "overview": "Depuis la mort de Don Vito Corleone, son fils Michael règne sur la famille. Amené à négocier avec la mafia juive, il perd alors le soutien d'un de ses lieutenants, Frankie Pentageli. Echappant de justesse à un attentat, Michael tente de retrouver le coupable, soupçonnant Hyman Roth, le chef de la mafia juive.Vito Corleone, immigrant italien, arrive à New York au début du siècle ; très vite, il devient un des caïds du quartier, utilisant la violence comme moyen de régler toutes les affaires. Seul au départ, il bâtit peu à peu un véritable empire, origine de la fortune de la famille des Corleone.",
+            "runtime": 0,
+            "tagline": "Les affaires reprennent.",
+            "title": "Le parrain II"
+          }
+        },
+        {
+          "iso_3166_1": "LV",
+          "iso_639_1": "lv",
+          "name": "Latviešu",
+          "english_name": "Latvian",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Krusttēvs 2"
+          }
+        },
+        {
+          "iso_3166_1": "HR",
+          "iso_639_1": "hr",
+          "name": "Hrvatski",
+          "english_name": "Croatian",
+          "data": {
+            "homepage": "",
+            "overview": "Drugi dio najslavnije mafijaške sage svih vremena paralelno pripovijeda dvije radnje, u dva različita prostorno-vremenska sklopa. Jedna se odvija 1958. godine, kada Don Michael Corleone (Al Pacino) nastavlja voditi obiteljsko carstvo, koje želi proširiti kako na nova polja ljudskog djelovanja, tako i na druge lokacije, uključujući Las Vegas, Hollywood i Kubu. Uz razne poslovno-političke probleme, Michael mora rješavati i situaciju unutar obitelji, pogotovo kod svoje sestre Connie (Talia Shire), koja se vrlo brzo nakon razvoda planira ponovno vjenčati, za čovjeka koji se Michaelu nimalo ne dopada.",
+            "runtime": 0,
+            "tagline": "Drugi dio najslavnije mafijaške sage svih vremena o sicilijanskoj obitelji Corleone",
+            "title": "Kum 2"
+          }
+        },
+        {
+          "iso_3166_1": "LT",
+          "iso_639_1": "lt",
+          "name": "Lietuvių",
+          "english_name": "Lithuanian",
+          "data": {
+            "homepage": "",
+            "overview": "Sumaniai keisdamas dabarties ir praeities scenas, Kopola pasakoja apie ryžtingo garbėtroškos, italų emigranto Vito Korleonės jaunystę, kaip jis tapo mafijos klano \"krikštatėviu\". Jo sūnus Maiklas pateisino tėvo lūkesčius, jam nėra moralinių užtvarų siekiant tikslų. Atmetęs senuosius pagal patriarchalinius Sicilijos mafijos santykius sukurtus įstatymus, Maiklas savo nusikaltėlių klaną paverčia pragmatiška, žiauria organizacija, kuri pamažu vis labiau įsilieja į didįjį JAV verslą.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Krikštatėvis II"
+          }
+        },
+        {
+          "iso_3166_1": "UZ",
+          "iso_639_1": "uz",
+          "name": "ozbek",
+          "english_name": "Uzbek",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Cho‘qintirgan ota 2"
+          }
+        },
+        {
+          "iso_3166_1": "IS",
+          "iso_639_1": "is",
+          "name": "Íslenska",
+          "english_name": "Icelandic",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Guðfaðirinn: Hluti 2"
+          }
+        },
+        {
+          "iso_3166_1": "HK",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "homepage": "",
+            "overview": "柯里安家族幼子米高（阿爾柏仙奴飾）自繼承大權後，續漸將勢力滲入各正當企業及政治圈中，企圖將黑手黨化暗為明。  片中以許多倒敘的片段，描寫米高的父親域圖（羅拔狄尼路飾）在20年代，從西西里島前往紐約發展及建立黑邦的過程。導演將兩段時空互異的情節平行發展，並將畫面處理得完美無瑕。",
+            "runtime": 200,
+            "tagline": "",
+            "title": "教父續集"
+          }
+        },
+        {
+          "iso_3166_1": "VN",
+          "iso_639_1": "vi",
+          "name": "Tiếng Việt",
+          "english_name": "Vietnamese",
+          "data": {
+            "homepage": "",
+            "overview": "The Godfather II là phần tiếp theo của tác phẩm nổi tiếng Bố già sản xuất năm 1972. Trong phần thứ hai này sẽ có hai câu chuyện, hai tuyến nhân vật, hai tuyến thời gian song hành nhau. Một là câu chuyện về gia đình mafia Corleone tiếp tục khi Michael lên làm ông trùm và âm mưu mở rộng địa bàn sang Las Vegas lẫn Cuba, xen lẫn với những hồi ức về Bố già khi mới đặt chân đến New York... Bố già phần II được đánh giá là phần tiếp theo thành công nhất trong lịch sử điện ảnh, nhiều người cho rằng bộ phim hay tương đương, thậm chí là hay hơn phần đầu. Cùng với phần đầu tiên, Bố già II được coi là một trong những bộ phim hay nhất mọi thời đại.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Bố Già 2"
+          }
+        },
+        {
+          "iso_3166_1": "SA",
+          "iso_639_1": "ar",
+          "name": "العربية",
+          "english_name": "Arabic",
+          "data": {
+            "homepage": "",
+            "overview": "تدور أحداث الجزء الثاني حول قصتين متوازيتين؛ الأولى: تتعلق بالابن (مايكل كورليوني) في الخمسينيات من القرن الماضي، بعد نهاية الجزء الأول؛ إذ يسعى للتوسع في نشاط عائلته في أماكن جديدة مثل لاس فيجاس، وهوليوود، وكوبا. والثانية: عودة للماضي لتاريخ الأب (فيتو كورليوني) وطفولته في (صقلية) بإيطاليا في بداية القرن العشرين، هجرته لأمريكا مجبرًا وتأسيسه لعائلة كورليوني الإجرامية في مدينة نيويورك.",
+            "runtime": 0,
+            "tagline": "لا أشعر أنني مضطر لمحو الجميع يا توم. فقط أعدائي.",
+            "title": "العراب: الجزء الثاني"
+          }
+        },
+        {
+          "iso_3166_1": "TH",
+          "iso_639_1": "th",
+          "name": "ภาษาไทย",
+          "english_name": "Thai",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "เดอะ ก็อดฟาเธอร์ ภาค 2"
+          }
+        },
+        {
+          "iso_3166_1": "IN",
+          "iso_639_1": "hi",
+          "name": "हिन्दी",
+          "english_name": "Hindi",
+          "data": {
+            "homepage": "",
+            "overview": "माइकल कोरलियोने ने परिवार के आपराधिक साम्राज्य को बेरहमी से आगे बढ़ाया. यह उसके पिता वीटो के सिसिली में अनाथ होने से लेकर न्यू यॉर्क के गॉडफ़ादर बनने का सफ़र याद दिलाती है.",
+            "runtime": 202,
+            "tagline": "",
+            "title": "द गॉडफ़ादर: पार्ट 2"
+          }
+        },
+        {
+          "iso_3166_1": "ES",
+          "iso_639_1": "ca",
+          "name": "Català",
+          "english_name": "Catalan",
+          "data": {
+            "homepage": "",
+            "overview": "Continuació de la saga dels Corleone amb dues històries paral·leles: l'elecció de Michael Corleone com a cap dels negocis familiars i els orígens del patriarca, el ja mort Don Vito, primer a Sicília i després als Estats Units, on, començant des de baix, va arribar a ser un poderosíssim cap de la màfia de Nova York.",
+            "runtime": 0,
+            "tagline": "No sento que he d'eliminar tothom, Tom. Només els meus enemics",
+            "title": "El padrí 2"
+          }
+        },
+        {
+          "iso_3166_1": "GE",
+          "iso_639_1": "ka",
+          "name": "ქართული",
+          "english_name": "Georgian",
+          "data": {
+            "homepage": "",
+            "overview": "ვიტო კორლეონეს ისტორია,რომელიც სიცილიაზე მისი ბავშვობით იწყება და ნიუ-იორკში მისი ვაჟის, მაიკლ კორლეონეს ამბით გრძელდება, რომელიც თავისი ბიზნესის ლას-ვეგასში, ჰოლივუდსა და კუბაში გაფართოებას ცდილობს.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "ნათლია: ნაწილი მეორე"
+          }
+        },
+        {
+          "iso_3166_1": "EE",
+          "iso_639_1": "et",
+          "name": "Eesti",
+          "english_name": "Estonian",
+          "data": {
+            "homepage": "",
+            "overview": "Jätkub eepiline “Ristiisa” triloogia Corleonede perekonna võimuvõitlusest läbi kahe põlvkonna. Teises osas põimuvad kaks lugu, mis kajastavad nii esimesele filmile eelnevaid kui ka järgnevaid sündmusi. Üks kujutab Sitsiiliast pärit don Vito tõusu New Yorgi maffiaperekonna peaks. Teine osa keskendub sellele, kuidas Vito poeg, Michael, perekonna äri 50nendatel juhib ning lisaks Las Vegases ja Kuubas kanda üritab kinnitada.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Ristiisa 2"
+          }
+        },
+        {
+          "iso_3166_1": "SI",
+          "iso_639_1": "sl",
+          "name": "Slovenščina",
+          "english_name": "Slovenian",
+          "data": {
+            "homepage": "",
+            "overview": "V nadaljevanju sage o kriminalni družini Corleone mladi Vito Corleone odrašča na Siciliji in v 1910-ih v New Yorku. V petdesetih letih prejšnjega stoletja poskuša Michael Corleone družinsko podjetje razširiti v Las Vegas, Hollywood in Kubo.",
+            "runtime": 0,
+            "tagline": "Vzpon in padec imperija Corleonejev.",
+            "title": "Boter 2"
+          }
+        }
+      ]
+    },
+    "external_ids": {
+      "imdb_id": "tt0071562",
+      "wikidata_id": "Q184768",
+      "facebook_id": "thegodfather",
+      "instagram_id": "thegodfathermovie",
+      "twitter_id": "godfathermovie"
+    },
+    "semantic_tags": [
+      "genre:剧情",
+      "genre:犯罪",
+      "decade:1970s",
+      "country:us",
+      "lang:en",
+      "series:230",
+      "theme:gangster"
+    ]
   }
 ]

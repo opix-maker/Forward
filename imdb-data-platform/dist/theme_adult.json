@@ -1,1 +1,985 @@
-[]
+[
+  {
+    "adult": false,
+    "backdrop_path": "/8zfLJUB20LpFiIMoMHmC5u43YH1.jpg",
+    "created_by": [
+      {
+        "id": 2949606,
+        "credit_id": "65de08d8dcb6a3018586b869",
+        "name": "Benito Skinner",
+        "original_name": "Benito Skinner",
+        "gender": 2,
+        "profile_path": "/3oSuDQLNFwy01Nci9xty9P0PuVr.jpg"
+      }
+    ],
+    "episode_run_time": [],
+    "first_air_date": "2025-05-15",
+    "genres": [
+      {
+        "id": 35,
+        "name": "喜剧"
+      }
+    ],
+    "homepage": "https://www.amazon.com/dp/B0DJ1YBFMM",
+    "id": 247619,
+    "in_production": true,
+    "languages": [
+      "en"
+    ],
+    "last_air_date": "2025-05-15",
+    "last_episode_to_air": {
+      "id": 6042130,
+      "name": "王冠落地",
+      "overview": "期末周来临，人际关系面临严峻考验（双关梗懂了吗？）卡门逼迫班尼让他交代他的“千层谎言”，格蕾丝挖到猛料，彼得决定夺回属于他的东西，海莉满世界找她的“鸡血药丸”，而迈尔斯还没搞明白自己到底做错了什么。在学期末的巴德别墅派对上，每一个答案都引出了更多疑问…亲爱的，准备好惊掉下巴吧！",
+      "vote_average": 7,
+      "vote_count": 3,
+      "air_date": "2025-05-15",
+      "episode_number": 8,
+      "episode_type": "finale",
+      "production_code": "",
+      "runtime": 37,
+      "season_number": 1,
+      "show_id": 247619,
+      "still_path": "/QzAflPyr9Ho1SAf2XtnWEcpKCO.jpg"
+    },
+    "name": "矫枉过正",
+    "next_episode_to_air": null,
+    "networks": [
+      {
+        "id": 1024,
+        "logo_path": "/w7HfLNm9CWwRmAMU58udl2L7We7.png",
+        "name": "Prime Video",
+        "origin_country": ""
+      }
+    ],
+    "number_of_episodes": 8,
+    "number_of_seasons": 1,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "Overcompensating",
+    "overview": "《矫枉过正》是由贝尼托斯金纳打造的一部校园群像喜剧，讲述了曾是橄榄球明星和返校节国王的深柜少年班尼 的混乱成长之旅，他与拼命想要融入集体的边缘少女卡门意外成为挚友。这部犀利幽默又不乏温情的作品，深刻展现了我们在寻找真我的过程中用力过猛的狼狈瞬间。",
+    "popularity": 28.0901,
+    "poster_path": "/z58hhd1berLU6UjkA3V34M0TEkn.jpg",
+    "production_companies": [
+      {
+        "id": 169219,
+        "logo_path": "/uprteAU9Rxy87dvfTF4tQ2I6Rmm.png",
+        "name": "Strong Baby Productions",
+        "origin_country": "US"
+      },
+      {
+        "id": 41077,
+        "logo_path": "/1ZXsGaFPgrgS6ZZGS37AqD5uU12.png",
+        "name": "A24",
+        "origin_country": "US"
+      },
+      {
+        "id": 210099,
+        "logo_path": "/d6HwljzlOzxJ4tXlrpRkNZaZMWL.png",
+        "name": "Amazon MGM Studios",
+        "origin_country": "US"
+      },
+      {
+        "id": 262514,
+        "logo_path": null,
+        "name": "The Ladies Auxiliary",
+        "origin_country": "US"
+      },
+      {
+        "id": 262515,
+        "logo_path": null,
+        "name": "Benny Drama Productions",
+        "origin_country": "US"
+      }
+    ],
+    "production_countries": [
+      {
+        "iso_3166_1": "US",
+        "name": "United States of America"
+      }
+    ],
+    "seasons": [
+      {
+        "air_date": "2025-05-15",
+        "episode_count": 8,
+        "id": 381275,
+        "name": "第 1 季",
+        "overview": "",
+        "poster_path": "/3SBdzjuJbQoagCBS8B8RgcGptEj.jpg",
+        "season_number": 1,
+        "vote_average": 6.4
+      }
+    ],
+    "spoken_languages": [
+      {
+        "english_name": "English",
+        "iso_639_1": "en",
+        "name": "English"
+      }
+    ],
+    "status": "Returning Series",
+    "tagline": "",
+    "type": "Scripted",
+    "vote_average": 7.5,
+    "vote_count": 47,
+    "credits": {
+      "cast": [
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2949606,
+          "known_for_department": "Acting",
+          "name": "Benito Skinner",
+          "original_name": "Benito Skinner",
+          "popularity": 0.4873,
+          "profile_path": "/3oSuDQLNFwy01Nci9xty9P0PuVr.jpg",
+          "character": "Benny",
+          "credit_id": "65de084f9ae613018675930a",
+          "order": 0
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 3096248,
+          "known_for_department": "Writing",
+          "name": "Wally Baram",
+          "original_name": "Wally Baram",
+          "popularity": 0.6521,
+          "profile_path": "/lljgSpr3qV2aq7qxc54ZhT1eMWc.jpg",
+          "character": "Carmen",
+          "credit_id": "66901040f307020b2e18184d",
+          "order": 1
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3707386,
+          "known_for_department": "Acting",
+          "name": "Mary Beth Barone",
+          "original_name": "Mary Beth Barone",
+          "popularity": 0.5658,
+          "profile_path": "/gaensa1X7bJERN6vmvtShbUbRO4.jpg",
+          "character": "Grace",
+          "credit_id": "66901049e6db9ece93ff5714",
+          "order": 2
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 936932,
+          "known_for_department": "Acting",
+          "name": "Adam DiMarco",
+          "original_name": "Adam DiMarco",
+          "popularity": 2.6314,
+          "profile_path": "/hj93hLN7qxN0ElBQLl4CBhj2imn.jpg",
+          "character": "Peter",
+          "credit_id": "66901052405fbb2f12f22880",
+          "order": 3
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2341794,
+          "known_for_department": "Acting",
+          "name": "里什·沙阿",
+          "original_name": "Rish Shah",
+          "popularity": 0.9355,
+          "profile_path": "/mxk7ArOC6QjtGitmLDqLvJn6Ra6.jpg",
+          "character": "Miles",
+          "credit_id": "6690105cd4248edd7497b633",
+          "order": 4
+        }
+      ],
+      "crew": [
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2624431,
+          "known_for_department": "Production",
+          "name": "Alison Goodwin",
+          "original_name": "Alison Goodwin",
+          "popularity": 0.1372,
+          "profile_path": null,
+          "credit_id": "65de088aa894d601870d87e7",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 21007,
+          "known_for_department": "Acting",
+          "name": "乔纳·希尔",
+          "original_name": "Jonah Hill",
+          "popularity": 3.3175,
+          "profile_path": "/dq11yEJiM2VTGyd3L3paD5ExCxD.jpg",
+          "credit_id": "65de08763ff2df01870b9624",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2949606,
+          "known_for_department": "Acting",
+          "name": "Benito Skinner",
+          "original_name": "Benito Skinner",
+          "popularity": 0.4873,
+          "profile_path": "/3oSuDQLNFwy01Nci9xty9P0PuVr.jpg",
+          "credit_id": "65de08573ff2df01870b9606",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1529997,
+          "known_for_department": "Acting",
+          "name": "查莉XCX",
+          "original_name": "Charli xcx",
+          "popularity": 1.3208,
+          "profile_path": "/fbO6t6n5PJJmqw8xzZruriyRfrY.jpg",
+          "credit_id": "65de08f0c92c5d017c4862c2",
+          "department": "Crew",
+          "job": "Executive Music Producer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 3096248,
+          "known_for_department": "Writing",
+          "name": "Wally Baram",
+          "original_name": "Wally Baram",
+          "popularity": 0.6521,
+          "profile_path": "/lljgSpr3qV2aq7qxc54ZhT1eMWc.jpg",
+          "credit_id": "6690b48cf62fef3c7281176a",
+          "department": "Production",
+          "job": "Supervising Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 4218444,
+          "known_for_department": "Acting",
+          "name": "Tommy Do",
+          "original_name": "Tommy Do",
+          "popularity": 0.1664,
+          "profile_path": null,
+          "credit_id": "67f66cc0de5e4dec62ace975",
+          "department": "Writing",
+          "job": "Story Editor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2031402,
+          "known_for_department": "Production",
+          "name": "Joshua Bachove",
+          "original_name": "Joshua Bachove",
+          "popularity": 0.2056,
+          "profile_path": null,
+          "credit_id": "67f66ddad4c444a1cc993494",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 564272,
+          "known_for_department": "Directing",
+          "name": "Michael Barnett",
+          "original_name": "Michael Barnett",
+          "popularity": 0.0725,
+          "profile_path": "/hepWp9EVgteGS3S8Y14TvcbOS6J.jpg",
+          "credit_id": "67f66e0ad3ab7d7a8bad017f",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 564272,
+          "known_for_department": "Directing",
+          "name": "Michael Barnett",
+          "original_name": "Michael Barnett",
+          "popularity": 0.0725,
+          "profile_path": "/hepWp9EVgteGS3S8Y14TvcbOS6J.jpg",
+          "credit_id": "67f66e206c3583c97599c12d",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5359509,
+          "known_for_department": "Production",
+          "name": "Colin Bright",
+          "original_name": "Colin Bright",
+          "popularity": 0.0143,
+          "profile_path": null,
+          "credit_id": "67f66e421bc639566ad9181e",
+          "department": "Production",
+          "job": "Associate Producer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1848810,
+          "known_for_department": "Acting",
+          "name": "Mitra Jouhari",
+          "original_name": "Mitra Jouhari",
+          "popularity": 0.3529,
+          "profile_path": "/rc9wRRbMWoANfttKEgICwuBfurr.jpg",
+          "credit_id": "67f66eafde5e4dec62acea1d",
+          "department": "Production",
+          "job": "Co-Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5359510,
+          "known_for_department": "Production",
+          "name": "Scott King",
+          "original_name": "Scott King",
+          "popularity": 0.0239,
+          "profile_path": null,
+          "credit_id": "67f66eec7b43bdce20add245",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3693879,
+          "known_for_department": "Production",
+          "name": "Taja Perkins",
+          "original_name": "Taja Perkins",
+          "popularity": 0.0214,
+          "profile_path": null,
+          "credit_id": "67f66f05d4c444a1cc9934ff",
+          "department": "Production",
+          "job": "Co-Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1494758,
+          "known_for_department": "Sound",
+          "name": "Alex Somers",
+          "original_name": "Alex Somers",
+          "popularity": 0.2183,
+          "profile_path": "/b5QQysdziVC6ACPzJfX64OyoK7M.jpg",
+          "credit_id": "67f66f1b1bc639566ad9186e",
+          "department": "Sound",
+          "job": "Original Music Composer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2547115,
+          "known_for_department": "Production",
+          "name": "Alli Reich",
+          "original_name": "Alli Reich",
+          "popularity": 0.3093,
+          "profile_path": null,
+          "credit_id": "68117211c335138760054d2f",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1529997,
+          "known_for_department": "Acting",
+          "name": "查莉XCX",
+          "original_name": "Charli xcx",
+          "popularity": 1.3208,
+          "profile_path": "/fbO6t6n5PJJmqw8xzZruriyRfrY.jpg",
+          "credit_id": "68356a9da61ef8421deb3741",
+          "department": "Sound",
+          "job": "Songs"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 111946,
+          "known_for_department": "Acting",
+          "name": "布兰妮·斯皮尔斯",
+          "original_name": "Britney Spears",
+          "popularity": 2.3774,
+          "profile_path": "/md4kPfEau2wyMcgCSgBXcwfOmtK.jpg",
+          "credit_id": "68356ad2a64da04346b6be0f",
+          "department": "Sound",
+          "job": "Songs"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 929998,
+          "known_for_department": "Acting",
+          "name": "Skrillex",
+          "original_name": "Skrillex",
+          "popularity": 0.348,
+          "profile_path": "/pI3fpASYPk5RjpVo978BcdOGbfa.jpg",
+          "credit_id": "68356ae8e5b8d06413055bb9",
+          "department": "Sound",
+          "job": "Songs"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 237405,
+          "known_for_department": "Acting",
+          "name": "嘎嘎小姐",
+          "original_name": "Lady Gaga",
+          "popularity": 2.3551,
+          "profile_path": "/asB6CImOsNGA5i9HHt2FFCtP2QJ.jpg",
+          "credit_id": "68356afb3537012a22414790",
+          "department": "Sound",
+          "job": "Songs"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1025375,
+          "known_for_department": "Acting",
+          "name": "维兹·卡利法",
+          "original_name": "Wiz Khalifa",
+          "popularity": 0.7749,
+          "profile_path": "/d8RHCg06AHAyX4F89pDLiCMOktb.jpg",
+          "credit_id": "68356b1f640e05b428b6bc59",
+          "department": "Sound",
+          "job": "Songs"
+        }
+      ]
+    },
+    "keywords": {
+      "results": [
+        {
+          "name": "self-discovery",
+          "id": 2796
+        },
+        {
+          "name": "college",
+          "id": 3616
+        },
+        {
+          "name": "blunt",
+          "id": 34136
+        },
+        {
+          "name": "exploring sexuality",
+          "id": 189464
+        },
+        {
+          "name": "closeted homosexual",
+          "id": 239239
+        },
+        {
+          "name": "gay theme",
+          "id": 258533
+        },
+        {
+          "name": "inspirational",
+          "id": 281585
+        },
+        {
+          "name": "american football player",
+          "id": 313356
+        },
+        {
+          "name": "hilarious",
+          "id": 320420
+        },
+        {
+          "name": "audacious",
+          "id": 325773
+        },
+        {
+          "name": "celebratory",
+          "id": 325781
+        },
+        {
+          "name": "comforting",
+          "id": 325784
+        },
+        {
+          "name": "earnest",
+          "id": 325804
+        },
+        {
+          "name": "exuberant",
+          "id": 325813
+        }
+      ]
+    },
+    "translations": {
+      "translations": [
+        {
+          "iso_3166_1": "US",
+          "iso_639_1": "en",
+          "name": "English",
+          "english_name": "English",
+          "data": {
+            "name": "",
+            "overview": "Closeted former football player and homecoming king Benny becomes fast friends with Carmen, a high school outsider on a mission to fit in at all costs. With guidance from Benny's older sister and her campus-legend boyfriend, Benny and Carmen juggle horrible hookups, flavored vodka, and fake IDs.",
+            "homepage": "",
+            "tagline": "College. Come as you aren't."
+          }
+        },
+        {
+          "iso_3166_1": "RO",
+          "iso_639_1": "ro",
+          "name": "Română",
+          "english_name": "Romanian",
+          "data": {
+            "name": "Jocul perfecțiunii",
+            "overview": "Creat de Benito Skinner, Jocul perfecțiunii este un serial de comedie plasat într-un campus universitar, despre periplul haotic al lui Benny, un fost jucător de fotbal și vedetă locală, care își ascunde identitatea. El leagă rapid o prietenie cu Carmen, o inadaptată hotărâtă să se integreze. Amuzant și personal, serialul explorează cât de mult exagerăm încercând să aflăm cine suntem.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "BE",
+          "iso_639_1": "nl",
+          "name": "Nederlands",
+          "english_name": "Dutch",
+          "data": {
+            "name": "",
+            "overview": "De voormalige footballspeler en homecoming king Benny, die in de kast zit, raakt snel bevriend met Carmen, een buitenstaander op de middelbare school die koste wat kost wil passen. Met begeleiding van Benny's oudere zus en haar campuslegende vriendje, jongleren Benny en Carmen met vreselijke scharrels, gearomatiseerde wodka en valse identiteitsbewijzen.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "NL",
+          "iso_639_1": "nl",
+          "name": "Nederlands",
+          "english_name": "Dutch",
+          "data": {
+            "name": "",
+            "overview": "De voormalige footballspeler en homecoming king Benny, die in de kast zit, raakt snel bevriend met Carmen, een buitenstaander op de middelbare school die koste wat kost wil passen. Met begeleiding van Benny's oudere zus en haar campuslegende vriendje, jongleren Benny en Carmen met vreselijke scharrels, gearomatiseerde wodka en valse identiteitsbewijzen.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "RU",
+          "iso_639_1": "ru",
+          "name": "Pусский",
+          "english_name": "Russian",
+          "data": {
+            "name": "Сверхкомпенсация",
+            "overview": "Бывший звезда футбольной команды и король выпускного Бенни, скрывающий свою истинную сущность, быстро сближается с Кармен — изгоем, готовой на всё, чтобы вписаться в школьную тусовку. Под руководством старшей сестры Бенни и её легендарного парня с кампуса они балансируют между неудачными романами, ароматизированной водкой и поддельными удостоверениями личности.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "ES",
+          "iso_639_1": "es",
+          "name": "Español",
+          "english_name": "Spanish",
+          "data": {
+            "name": "Impostura",
+            "overview": "Una comedia de universitarios sobre el caótico viaje de Benny, que todavía está en el armario, que enseguida se hace amigo de Carmen, una marginada que quiere encajar a toda costa. Muy divertida e íntima, la serie explora la forma en que todos forzamos nuestro comportamiento en el camino de descubrir quiénes somos en realidad.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "BR",
+          "iso_639_1": "pt",
+          "name": "Português",
+          "english_name": "Portuguese",
+          "data": {
+            "name": "Muito Esforçado",
+            "overview": "A jornada caótica de Benny, um ex-jogador de futebol enrustido e rei da festa de boas-vindas, enquanto se torna amigo de Carmen, uma estranha com a missão de se adequar a qualquer custo. Muito engraçada e pessoal, a série explora até que ponto todos nós nos esforçamos muito enquanto descobrimos quem somos.",
+            "homepage": "",
+            "tagline": "Universidade, não seja quem você é: MUITO ESFORÇADO!"
+          }
+        },
+        {
+          "iso_3166_1": "FR",
+          "iso_639_1": "fr",
+          "name": "Français",
+          "english_name": "French",
+          "data": {
+            "name": "Surcompensation",
+            "overview": "Le joueur de football universitaire de l'Idaho, Benny, n'accepte pas son orientation sexuelle. Il se met à surcompenser dans sa pratique sportive pour se convaincre de ce qu'il n'est pas.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "SA",
+          "iso_639_1": "ar",
+          "name": "العربية",
+          "english_name": "Arabic",
+          "data": {
+            "name": "تعويض زائد",
+            "overview": "من ابتكار بينيتو سكينر تعويض زائد هو مسلسل كوميدي تدور أحداثه داخل الجامعة، يتتبع رحلة بيني من بطولة سكينر، لاعب كرة قدم سابق وملك حفل العودة، يخفي ميوله الحقيقية. والذي يجد نفسه فجأة في صداقة وثيقة مع كارمن، فتاة غريبة الأطوار عازمة على الاندماج بأي ثمن. العمل مضحك وشخصي للغاية، ويغوص في الطرق التي نبالغ بها جميعاً لنخفي ما بداخلنا، بينما نحاول اكتشاف من نكون فعلاً.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "CZ",
+          "iso_639_1": "cs",
+          "name": "Český",
+          "english_name": "Czech",
+          "data": {
+            "name": "Splynout s davem",
+            "overview": "Benny, bývalý fotbalista a středoškolský miláček tají, že je gay, se na vysoké rychle spřátelí s Carmen, outsiderkou, co chce za každou cenu zapadnout.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "DK",
+          "iso_639_1": "da",
+          "name": "Dansk",
+          "english_name": "Danish",
+          "data": {
+            "name": "",
+            "overview": "Overcompensating er skabt af Benito Skinner og er en universitetsbaseret ensemblekomedie og handler om Bennys (Skinner) kaotiske rejse. Han er en eksfootballspiller, der ikke er sprunget ud, da han bliver venner med Carmen, en udsider på en mission om at passe ind, koste, hvad det vil. Dybt sjovt og personligt udforsker serien, hvor langt vi alle overkompenserer, mens vi finder ud af, hvem vi er.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "DE",
+          "iso_639_1": "de",
+          "name": "Deutsch",
+          "english_name": "German",
+          "data": {
+            "name": "Überkompensation",
+            "overview": "In Überkompensation von Benito Skinner, einer College-Comedyserie, geht es um Benny, einen ungeouteten Ex-Footballspieler und Homecoming King, der sich schnell mit Carmen anfreundet – einer Außenseiterin, die verzweifelt versucht, dazu zu gehören. Die tief persönliche und urkomische Serie zeigt, wie wir alle überkompensieren, um herauszufinden, wer wir wirklich sind.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "GR",
+          "iso_639_1": "el",
+          "name": "ελληνικά",
+          "english_name": "Greek",
+          "data": {
+            "name": "Υπερπροσπάθεια",
+            "overview": "H κωμωδία Υπερπροσπάθεια ακολουθεί το χαοτικό ταξίδι του Μπένι, ενός πρώην σταρ του φούτμπολ, βασιλιά του χορού και κρυφά γκέι, καθώς γίνεται αμέσως κολλητός με την Κάρμεν, μια περιθωριακή που θα κάνει τα πάντα για να ταιριάξει. Βαθιά αστεία και προσωπική, η σειρά εξερευνά τι υπερπροσπάθεια κάνουμε για να καλύψουμε τις ανασφάλειές μας στην προσπάθεια να ανακαλύψουμε ποιοι είμαστε.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "NO",
+          "iso_639_1": "no",
+          "name": "Norsk",
+          "english_name": "Norwegian",
+          "data": {
+            "name": "",
+            "overview": "Overcompensating, fra serieskaper Benito Skinner, har college som bakteppe til en komedie om den kaotiske reisen til Benny, en eks-fotballspiller og ballkonge som ikke er ute av skapet, som blir venn med Carmen, ei jente som desperat prøver å passe inn. Dypt morsomt og personlig, utforsker serien hvor langt vi kan gå, når vi alle overkompenserer for å prøve å finne oss selv.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "FI",
+          "iso_639_1": "fi",
+          "name": "suomi",
+          "english_name": "Finnish",
+          "data": {
+            "name": "",
+            "overview": "Benito Skinnerin luoma Overcompensating on collegeen sijoittuva komedia, joka kertoo Bennyn, ex-jalkapalloilijan ja tanssiaisten kuninkaan, kaoottisesta matkasta, kun hän ystävystyy Carmenin kanssa, joka on ulkopuolinen ja pyrkii sopeutumaan joukkoon hinnalla millä hyvänsä. Hauska ja henkilökohtainen sarja tutkii, paljonko me kaikki ylikompensoimme, kun selvitämme, keitä oikeasti olemme.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "CA",
+          "iso_639_1": "fr",
+          "name": "Français",
+          "english_name": "French",
+          "data": {
+            "name": "Surcompensation",
+            "overview": "Créée par Benito Skinner, Surcompensation est une comédie qui raconte la vie chaotique de Benny, sportif et ancien roi du bal qui n'a pas fait son coming-out. Il devient rapidement ami avec Carmen, une ancienne lycéenne marginale prête à tout pour s’intégrer. Drôle et intimiste, la série explore à quel point nous surcompensons tous, tandis que l’on découvre qui l’on est vraiment.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "IL",
+          "iso_639_1": "he",
+          "name": "עִבְרִית",
+          "english_name": "Hebrew",
+          "data": {
+            "name": "פיצוי יתר",
+            "overview": "מאת היוצר בניטו סקינר מגיעה \\\"פיצוי יתר\\\", קומדיית אנסמבל שמתרחשת בקולג' ועוסקת במסע הכאוטי של בני (סקינר), הומו בארון שהיה שחקן פוטבול ומלך התיכון, כשהוא הופך לחבר טוב של כרמן, אאוטסיידרית ששמה לה למטרה להשתלב בכל מחיר. הסדרה האישית והמצחיקה הזאת בוחנת כמה רחוק כולנו מוכנים ללכת בזמן שאנחנו מבררים מי אנחנו באמת.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "IN",
+          "iso_639_1": "hi",
+          "name": "हिन्दी",
+          "english_name": "Hindi",
+          "data": {
+            "name": "ओवरकॉम्पेन्सेटिंग",
+            "overview": "बेनितो स्किनर द्वारा निर्मित ओवरकॉम्पेन्सेटिंग कॉलेज के माहौल में बना कॉमेडी शो है जिसमें बेनी (स्किनर) का अस्थिर सफ़र दिखाया है। वह एक छिपा गे फुटबॉल खिलाड़ी और होमकमिंग किंग है जो कारमेन का सबसे अच्छा दोस्त बनता है। कारमेन अलग रहने वाली लड़की है जिसे किसी भी तरह सबके बीच फिट होना है। मज़ेदार और निजी अनुभवों पर आधारित इस शो में दिखाया है कि पहचान समझने की कोशिश करते हुए हम किसी भी हद तक चले जाते हैं।",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "HU",
+          "iso_639_1": "hu",
+          "name": "Magyar",
+          "english_name": "Hungarian",
+          "data": {
+            "name": "Túltolás",
+            "overview": "Benito Skinner sorozata. A Túltolás kollégiumi környezetben játszódó vígjáték Benny, a titokban meleg korábbi futballista és bálkirály kaotikus történetéről, ahogy összebarátkozik a kívülálló Carmennel, aki mindenáron be akar illeszkedni. Az egyszerre vicces és nagyon személyes sorozat azt boncolgatja, hogy mennyire hajlamosak vagyunk a túlkompenzálásra az identitásunk keresése közben.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "ID",
+          "iso_639_1": "id",
+          "name": "Bahasa indonesia",
+          "english_name": "Indonesian",
+          "data": {
+            "name": "",
+            "overview": "Overcompensating karya Benito Skinner adalah komedi ensemble berlatar belakang kampus yang mengisahkan perjalanan kacau Benny, mantan pesepak bola yang merahasiakan orientasi seksualnya dan raja reuni. Dia cepat akrab dengan Carmen, orang luar yang berusaha diterima di pergaulan. Serial lucu dan personal ini membedah sejauh mana kita menutupi kekurangan selagi mencari tahu jati diri.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "IT",
+          "iso_639_1": "it",
+          "name": "Italiano",
+          "english_name": "Italian",
+          "data": {
+            "name": "Overcompensating: l’inganno",
+            "overview": "Creata da Benito Skinner, Overcompensating: l’inganno è una commedia ambientata all’università sul percorso caotico di Benny, ex star del football, re del ballo e gay non dichiarato, e sulla sua amicizia con Carmen, ragazza emarginata che cerca di integrarsi a ogni costo. Una serie divertente e personale che esplora quanto spesso sovracompensiamo mentre proviamo a scoprire chi siamo.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "JP",
+          "iso_639_1": "ja",
+          "name": "日本語",
+          "english_name": "Japanese",
+          "data": {
+            "name": "オーバーコンペンセイト ～イケメン男子の自分探し～",
+            "overview": "ベニート･スキナーが製作した「オーバーコンペンセイト ～イケメン男子の自分探し～」は大学を舞台にした群像コメディ。同性愛者であることを隠した元アメフト選手の人気者ベニー は、周囲になじもうと奮闘するはみ出し者のカルメンと友達になり、めちゃくちゃな大学生活が始まる。ユーモア満載の私的な本作品は、私たちが自分探しをする中で取ってしまう極端な行動を浮き彫りにしている。",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "KR",
+          "iso_639_1": "ko",
+          "name": "한국어/조선말",
+          "english_name": "Korean",
+          "data": {
+            "name": "오버캄펜세이트",
+            "overview": "베니토 스키너가 제작한 '오버캄펜세이트'는 대학을 배경으로 한 앙상블 코미디로, 성적 지향을 숨긴 풋볼 스타 출신의 홈커밍 킹 베니 가 어떤 대가를 치르더라도 적응해야 하는 임무를 띤 아웃사이더 카먼과 순식간에 친구가 되면서 벌어지는 혼란스러운 여정을 다룬다. 아주 재미있으면서도 개인적인 이 쇼는 우리 모두가 진정한 자신을 찾기 위해 어느 정도까지 과잉 보상 하는지를 탐구한다.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "PL",
+          "iso_639_1": "pl",
+          "name": "Polski",
+          "english_name": "Polish",
+          "data": {
+            "name": "Nadrabiaj miną",
+            "overview": "Stworzony przez Benito Skinnera serial „Nadrabiaj miną” to rozgrywająca się w college'u komedia o chaotycznej podróży Benny'ego, potajemnego geja, byłego futbolisty i króla balu maturalnego, który szybko zaprzyjaźnia się z Carmen, outsiderką z misją dopasowania się za wszelką cenę. Głęboko zabawny i osobisty serial bada, jak bardzo możemy przesadzić, próbując odkryć siebie.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "SE",
+          "iso_639_1": "sv",
+          "name": "svenska",
+          "english_name": "Swedish",
+          "data": {
+            "name": "",
+            "overview": "Benito Skinner är skaparen av Overcompensating, en komedi i college-miljö om Benny, en garderobsbög och före detta fotbollsstjärna samt skolbalens kung, som snabbt blir vän med Carmen – en outsider fast besluten att passa in till varje pris. Serien är personlig, rolig och utforskar hur långt vi är villiga att gå för försöka ta reda på vilka vi egentligen är.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "TH",
+          "iso_639_1": "th",
+          "name": "ภาษาไทย",
+          "english_name": "Thai",
+          "data": {
+            "name": "เฟรชชี่วัยใสหัวใจว้าวุ่น",
+            "overview": "สร้างโดยเบนิโต สกินเนอร์ เฟรชชี่วัยใสหัวใจว้าวุ่นเป็นซีรีส์ตลกอิงชีวิตมหาวิทยาลัย เกี่ยวกับการเดินทางอลหม่านของเบนนี่ อดีตนักฟุตบอลแอ๊บแมนและราชาโฮมคัมมิง เขากลายเป็นเพื่อนกับคาร์เมนสาวนอกคอกอย่างรวดเร็วเพราะภารกิจทำทุกอย่างเพื่อเข้ากับคนอื่น ทั้งสนุกและเข้าถึงง่าย ซีรีส์นี้สำรวจว่าเราจะยอมทำขนาดไหนขณะที่หาตัวตนจริงๆ ของเราไปด้วย",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "TR",
+          "iso_639_1": "tr",
+          "name": "Türkçe",
+          "english_name": "Turkish",
+          "data": {
+            "name": "Abartmak",
+            "overview": "Benito Skinner imzalı Abartmak, üniversite ortamında geçen, kaotik ve bol karakterli bir komedi. Henüz açılmamış bir eşcinsel olan eski futbolcu ve balo kralı Benny, ne pahasına olursa olsun ortama uyum sağlamak isteyen Carmen'le sıkı bir dostluk kurar. Hem komik hem de kişisel bir anlatı sunan dizi, kendimizi bulmaya çalışırken ne kadar aşırıya kaçabildiğimizi gözler önüne seriyor.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "CN",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "name": "矫枉过正",
+            "overview": "《矫枉过正》是由贝尼托斯金纳打造的一部校园群像喜剧，讲述了曾是橄榄球明星和返校节国王的深柜少年班尼 的混乱成长之旅，他与拼命想要融入集体的边缘少女卡门意外成为挚友。这部犀利幽默又不乏温情的作品，深刻展现了我们在寻找真我的过程中用力过猛的狼狈瞬间。",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "HK",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "name": "真甲告白",
+            "overview": "大學校園喜劇影集《真甲告白》由貝尼托史基納主創，班尼 是前橄欖球員及舞會之王，認識了有任務在身，想盡辦法要融入環境的局外人卡門並成為好友。本劇以幽默又深入的調性探討尋找自我的過度努力。",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "TW",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "name": "真甲告白",
+            "overview": "大學校園喜劇影集《真甲告白》由貝尼托史基納主創，班尼 是前橄欖球員及舞會之王，認識了有任務在身，想盡辦法要融入環境的局外人卡門並成為好友。本劇以幽默又深入的調性探討尋找自我的過度努力。",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "MX",
+          "iso_639_1": "es",
+          "name": "Español",
+          "english_name": "Spanish",
+          "data": {
+            "name": "Más de la cuenta",
+            "overview": "Una comedia universitaria sobre la caótica experiencia de Benny, un exjugador de fútbol y rey del baile escolar atrapado en el clóset, que rápidamente se hace amigo de Carmen, una inadaptada decidida a encajar a como dé lugar. Esta serie divertida y personal explora lo que todos estamos dispuestos a hacer de más para descubrir quiénes somos.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "PT",
+          "iso_639_1": "pt",
+          "name": "Português",
+          "english_name": "Portuguese",
+          "data": {
+            "name": "",
+            "overview": "Uma comédia passada na universidade sobre o percurso caótico de Benny, um antigo jogador de futebol e aluno popular no secundário, mas ainda no armário, que trava amizade com Carmen, uma solitária que se quer integrar. Extremamente divertida e pessoal, a série explora o quanto nos esforçamos para tentar descobrir quem realmente somos.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "UA",
+          "iso_639_1": "uk",
+          "name": "Український",
+          "english_name": "Ukrainian",
+          "data": {
+            "name": "Надкомпенсація",
+            "overview": "",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "VN",
+          "iso_639_1": "vi",
+          "name": "Tiếng Việt",
+          "english_name": "Vietnamese",
+          "data": {
+            "name": "Giả Bộ Ổn",
+            "overview": "",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "AE",
+          "iso_639_1": "ar",
+          "name": "العربية",
+          "english_name": "Arabic",
+          "data": {
+            "name": "تعويض زائد",
+            "overview": "من ابتكار بينيتو سكينر تعويض زائد هو مسلسل كوميدي تدور أحداثه داخل الجامعة، يتتبع رحلة بيني من بطولة سكينر، لاعب كرة قدم سابق وملك حفل العودة، يخفي ميوله الحقيقية. والذي يجد نفسه فجأة في صداقة وثيقة مع كارمن، فتاة غريبة الأطوار عازمة على الاندماج بأي ثمن. العمل مضحك وشخصي للغاية، ويغوص في الطرق التي نبالغ بها جميعاً لنخفي ما بداخلنا، بينما نحاول اكتشاف من نكون فعلاً.",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "SG",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "name": "过度修正",
+            "overview": "《过度修正》由本尼托斯金纳创作，是一部以大学为背景的群像喜剧，讲述了深柜前橄榄球员兼返校节国王班尼与不惜一切代价试图融入校园的边缘人卡门成为挚友的混乱之旅。这部极度幽默又富有个性的剧集，探讨了人们在寻找真实自我的过程中“过度补偿”的种种表现。",
+            "homepage": "",
+            "tagline": ""
+          }
+        },
+        {
+          "iso_3166_1": "MY",
+          "iso_639_1": "ms",
+          "name": "Bahasa melayu",
+          "english_name": "Malay",
+          "data": {
+            "name": "Terlebih Ganti Rugi",
+            "overview": "Ciptaan Benito Skinner, Terlebih Ganti Rugi, sebuah komedi berlatarkan kehidupan kolej tentang perjalanan kacau-bilau Benny, bekas pemain bola sepak dan raja majlis tarian yang identitinya tersembunyi, apabila dia rapat dengan Carmen, yang sanggup lakukan apa saja untuk diterima. Lucu dan bersifat peribadi, siri ini menyentuh sejauh mana kita berlebihan dalam mencari identiti sebenar.",
+            "homepage": "",
+            "tagline": ""
+          }
+        }
+      ]
+    },
+    "external_ids": {
+      "imdb_id": "tt23488694",
+      "freebase_mid": null,
+      "freebase_id": null,
+      "tvdb_id": 446747,
+      "tvrage_id": null,
+      "wikidata_id": "Q130548389",
+      "facebook_id": null,
+      "instagram_id": "overcompensating",
+      "twitter_id": null
+    },
+    "semantic_tags": [
+      "genre:喜剧",
+      "decade:2020s",
+      "country:us",
+      "lang:en",
+      "theme:adult"
+    ]
+  }
+]

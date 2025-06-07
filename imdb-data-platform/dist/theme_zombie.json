@@ -1,1 +1,5346 @@
-[]
+[
+  {
+    "adult": false,
+    "backdrop_path": "/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg",
+    "belongs_to_collection": {
+      "id": 1461530,
+      "name": "The Minecraft Movie Collection",
+      "poster_path": "/8jMQ2sVZ1RRiYSpcb7Yommo7V4r.jpg",
+      "backdrop_path": "/gvR8XaxV3wZlh1LKpReAjaTWhA2.jpg"
+    },
+    "budget": 150000000,
+    "genres": [
+      {
+        "id": 10751,
+        "name": "家庭"
+      },
+      {
+        "id": 35,
+        "name": "喜剧"
+      },
+      {
+        "id": 12,
+        "name": "冒险"
+      },
+      {
+        "id": 14,
+        "name": "奇幻"
+      }
+    ],
+    "homepage": "",
+    "id": 950387,
+    "imdb_id": "tt3566834",
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_title": "A Minecraft Movie",
+    "overview": "影片讲述四个“异类”——盖瑞特·“拾荒人”·加里森（杰森·莫玛 饰）、亨利（塞巴斯蒂安·尤金·汉森 饰）、娜塔莉（艾玛·迈尔斯 饰）和道恩（丹妮尔·布鲁克斯 饰）——正为生活中的琐事苦恼时，突然被拉入一个神秘的传送门，进入了“主世界”：一个依赖想象力的奇异方块乐园。为了回到现实世界，他们不仅要掌握这个世界的规则，还要在不速之客——资深工匠史蒂夫（杰克·布莱克 饰）的帮助下，迈上一场魔幻探险之旅。探险之旅充满挑战，五人必须要勇敢面对，发掘各自独特的创造力。创造力，正是他们重返现实世界的关键技能。",
+    "popularity": 325.3314,
+    "poster_path": "/otQo3B6uiUIlQ2OGsCgwG56tPA2.jpg",
+    "production_companies": [
+      {
+        "id": 174,
+        "logo_path": "/zhD3hhtKB5qyv7ZeL4uLpNxgMVU.png",
+        "name": "Warner Bros. Pictures",
+        "origin_country": "US"
+      },
+      {
+        "id": 923,
+        "logo_path": "/5UQsZrfbfG2dYJbx8DxfoTr2Bvu.png",
+        "name": "Legendary Pictures",
+        "origin_country": "US"
+      },
+      {
+        "id": 110691,
+        "logo_path": "/i0D9b0veZbValgEFiJjSd0mbb9C.png",
+        "name": "Mojang Studios",
+        "origin_country": "SE"
+      },
+      {
+        "id": 829,
+        "logo_path": "/aXqwCvJSCDbTclkxAYfsT1l4Dsa.png",
+        "name": "Vertigo Entertainment",
+        "origin_country": "US"
+      },
+      {
+        "id": 159602,
+        "logo_path": "/e3KodIPxOSC6xpzgIBISB4COQcu.png",
+        "name": "On the Roam",
+        "origin_country": "US"
+      },
+      {
+        "id": 216687,
+        "logo_path": "/kKVYqekveOvLK1IgqdJojLjQvtu.png",
+        "name": "Domain Entertainment",
+        "origin_country": "US"
+      }
+    ],
+    "production_countries": [
+      {
+        "iso_3166_1": "SE",
+        "name": "Sweden"
+      },
+      {
+        "iso_3166_1": "US",
+        "name": "United States of America"
+      }
+    ],
+    "release_date": "2025-03-31",
+    "revenue": 948128918,
+    "runtime": 101,
+    "spoken_languages": [
+      {
+        "english_name": "English",
+        "iso_639_1": "en",
+        "name": "English"
+      }
+    ],
+    "status": "Released",
+    "tagline": "创造无界 快乐有方",
+    "title": "我的世界大电影",
+    "video": false,
+    "vote_average": 6.503,
+    "vote_count": 1680,
+    "credits": {
+      "cast": [
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 117642,
+          "known_for_department": "Acting",
+          "name": "杰森·莫玛",
+          "original_name": "Jason Momoa",
+          "popularity": 13.3335,
+          "profile_path": "/3troAR6QbSb6nUFMDu61YCCWLKa.jpg",
+          "cast_id": 10,
+          "character": "Garrett",
+          "credit_id": "625db715d266a23317987f90",
+          "order": 0
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 70851,
+          "known_for_department": "Acting",
+          "name": "杰克·布莱克",
+          "original_name": "Jack Black",
+          "popularity": 7.0404,
+          "profile_path": "/rtCx0fiYxJVhzXXdwZE2XRTfIKE.jpg",
+          "cast_id": 26,
+          "character": "Steve",
+          "credit_id": "65945eb92f8d09093937e312",
+          "order": 1
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2680307,
+          "known_for_department": "Acting",
+          "name": "塞巴斯蒂安·尤金·汉森",
+          "original_name": "Sebastian Eugene Hansen",
+          "popularity": 5.0441,
+          "profile_path": "/40HNkoB3RKPMPgLhTyKQU6kG0sc.jpg",
+          "cast_id": 24,
+          "character": "Henry",
+          "credit_id": "65692d2e63536a011bde6ee0",
+          "order": 2
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2604515,
+          "known_for_department": "Acting",
+          "name": "艾玛·迈尔斯",
+          "original_name": "Emma Myers",
+          "popularity": 13.0521,
+          "profile_path": "/v1Y8RP39135ZOary9M4MbkrCAdn.jpg",
+          "cast_id": 25,
+          "character": "Natalie",
+          "credit_id": "65711eaeb04605013a3730f0",
+          "order": 3
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1075037,
+          "known_for_department": "Acting",
+          "name": "达尼埃尔·布鲁克斯",
+          "original_name": "Danielle Brooks",
+          "popularity": 2.3653,
+          "profile_path": "/hwrMFbcALcqrV7S2pRP9C5BXrU0.jpg",
+          "cast_id": 23,
+          "character": "Dawn",
+          "credit_id": "65692978d04d1a010d636db6",
+          "order": 4
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 38334,
+          "known_for_department": "Acting",
+          "name": "詹妮佛·库里奇",
+          "original_name": "Jennifer Coolidge",
+          "popularity": 4.6938,
+          "profile_path": "/hcpbV0dY4ZJxmZi1WcAWe8euqV2.jpg",
+          "cast_id": 29,
+          "character": "Vice Principal Marlene",
+          "credit_id": "65a7fb4811386c012ee62a55",
+          "order": 5
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 15298,
+          "known_for_department": "Acting",
+          "name": "瑞秋·豪斯",
+          "original_name": "Rachel House",
+          "popularity": 2.4445,
+          "profile_path": "/2LCQF7Bn0I91o17GGkox0ZhhbE7.jpg",
+          "cast_id": 102,
+          "character": "Malgosha (voice)",
+          "credit_id": "67c23633a7af2713c3a24b30",
+          "order": 6
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1207281,
+          "known_for_department": "Acting",
+          "name": "Allan Henry",
+          "original_name": "Allan Henry",
+          "popularity": 0.3947,
+          "profile_path": "/iZKNvaQutjb5Otlb7IyYqdfWJ7d.jpg",
+          "cast_id": 121,
+          "character": "Malgosha (Creature Performer)",
+          "credit_id": "67edb6aa54f595bb55a78a73",
+          "order": 7
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 5345339,
+          "known_for_department": "Acting",
+          "name": "Bram Scott-Breheny",
+          "original_name": "Bram Scott-Breheny",
+          "popularity": 0.2401,
+          "profile_path": "/kI51jREZQm4Gvlh4A0PzNmroU6M.jpg",
+          "cast_id": 122,
+          "character": "Young Steve",
+          "credit_id": "67edb6c25f3bd7242e6286bc",
+          "order": 8
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 5345340,
+          "known_for_department": "Acting",
+          "name": "Moana Williams",
+          "original_name": "Moana Williams",
+          "popularity": 0.1485,
+          "profile_path": "/xJnJYBEu2ATZetA6eqEDEDhNFUn.jpg",
+          "cast_id": 123,
+          "character": "Young Garrett",
+          "credit_id": "67edb6d8cf06190cbae1752e",
+          "order": 9
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 55936,
+          "known_for_department": "Acting",
+          "name": "杰梅奈·克莱门特",
+          "original_name": "Jemaine Clement",
+          "popularity": 2.2667,
+          "profile_path": "/6eiNbeurpHb2fxIeT0RrJ0wRI25.jpg",
+          "cast_id": 39,
+          "character": "Daryl / Bruce (voice)",
+          "credit_id": "66365b20c9054f012a8ffdaf",
+          "order": 10
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 81881,
+          "known_for_department": "Acting",
+          "name": "Mark Wright",
+          "original_name": "Mark Wright",
+          "popularity": 0.2159,
+          "profile_path": "/7Qr433sjMWfpqJpsi1Nil8I4aS.jpg",
+          "cast_id": 174,
+          "character": "HR Person",
+          "credit_id": "67f3dd0addf9194387d98593",
+          "order": 11
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1542446,
+          "known_for_department": "Acting",
+          "name": "Yvette Parsons",
+          "original_name": "Yvette Parsons",
+          "popularity": 0.2761,
+          "profile_path": "/rviTXu0eq0OJDWQ8hVxLCEyYUPQ.jpg",
+          "cast_id": 125,
+          "character": "Delivery Person",
+          "credit_id": "67edb74115f6ba86f1e17311",
+          "order": 12
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 5347305,
+          "known_for_department": "Acting",
+          "name": "Hiram Garcia",
+          "original_name": "Hiram Garcia",
+          "popularity": 0.1109,
+          "profile_path": "/tLSwKBX55aS7F5DbrjPVOjplXZp.jpg",
+          "cast_id": 158,
+          "character": "Mr. Gunchie",
+          "credit_id": "67eedc57b3e035286cd90e47",
+          "order": 13
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 105584,
+          "known_for_department": "Acting",
+          "name": "Bret McKenzie",
+          "original_name": "Bret McKenzie",
+          "popularity": 0.646,
+          "profile_path": "/xnoo95JB2XLdHbsYWHfUL7WkpIW.jpg",
+          "cast_id": 127,
+          "character": "Nitwit Onset Performer",
+          "credit_id": "67edb74e4680f26bf3a78c53",
+          "order": 14
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 53925,
+          "known_for_department": "Directing",
+          "name": "杰瑞德·赫斯",
+          "original_name": "Jared Hess",
+          "popularity": 1.1997,
+          "profile_path": "/xUob4AE9C39SsNfhE7z63bMJI75.jpg",
+          "cast_id": 128,
+          "character": "General Chungus (voice)",
+          "credit_id": "67edb75915f6ba86f1e17315",
+          "order": 15
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 5234074,
+          "known_for_department": "Acting",
+          "name": "Batanai Mashingaidze",
+          "original_name": "Batanai Mashingaidze",
+          "popularity": 0.0707,
+          "profile_path": "/gyM8pC0xStN7lK2i4Dq6iWtlhbN.jpg",
+          "cast_id": 129,
+          "character": "Matty the Waitress",
+          "credit_id": "67edb77b03540cf8e56285cd",
+          "order": 16
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1236969,
+          "known_for_department": "Acting",
+          "name": "Amanda Billing",
+          "original_name": "Amanda Billing",
+          "popularity": 1.9225,
+          "profile_path": "/e5mTaNADAsMWv2FO9UMeYeqRZGq.jpg",
+          "cast_id": 130,
+          "character": "Henry's Mother",
+          "credit_id": "67edb7815f3bd7242e6286c9",
+          "order": 17
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 5345349,
+          "known_for_department": "Acting",
+          "name": "Tommy Broadmore",
+          "original_name": "Tommy Broadmore",
+          "popularity": 0.077,
+          "profile_path": "/gMqTFigUdUCiqaIl6Jmfhoc52aI.jpg",
+          "cast_id": 131,
+          "character": "Trevor",
+          "credit_id": "67edb78e4680f26bf3a78c83",
+          "order": 18
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2155937,
+          "known_for_department": "Acting",
+          "name": "Frankie Creagh-Leslie",
+          "original_name": "Frankie Creagh-Leslie",
+          "popularity": 0.1102,
+          "profile_path": "/woq6uTCmWBxT0NGz9eEPISjiv7k.jpg",
+          "cast_id": 132,
+          "character": "Trevor's Friend",
+          "credit_id": "67edb79415f6ba86f1e1732a",
+          "order": 19
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1506181,
+          "known_for_department": "Acting",
+          "name": "Alison Quigan",
+          "original_name": "Alison Quigan",
+          "popularity": 0.1386,
+          "profile_path": "/tchlbVcM2365tUXSLpW4LBjJY2Y.jpg",
+          "cast_id": 133,
+          "character": "Chuggy Executive #1",
+          "credit_id": "67edb7c04909e25b07a78aef",
+          "order": 20
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1505864,
+          "known_for_department": "Acting",
+          "name": "John Smythe",
+          "original_name": "John Smythe",
+          "popularity": 0.1883,
+          "profile_path": "/b3ya1YQSsTZ9xD0BOjjgy2NmWDC.jpg",
+          "cast_id": 134,
+          "character": "Chuggy Executive #2",
+          "credit_id": "67edb7c58689061e1fe1728d",
+          "order": 21
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 5345354,
+          "known_for_department": "Acting",
+          "name": "Alex Tunui",
+          "original_name": "Alex Tunui",
+          "popularity": 0.0327,
+          "profile_path": "/gYBNVEXmp4fwYDI2NsKMsS0eY3U.jpg",
+          "cast_id": 135,
+          "character": "Secretary",
+          "credit_id": "67edb7d55f3bd7242e6286da",
+          "order": 22
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 5345357,
+          "known_for_department": "Acting",
+          "name": "Craig Mckinney",
+          "original_name": "Craig Mckinney",
+          "popularity": 0.0492,
+          "profile_path": null,
+          "cast_id": 136,
+          "character": "Miner",
+          "credit_id": "67edb7ea1d1ccf5f4f628680",
+          "order": 23
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 5345359,
+          "known_for_department": "Acting",
+          "name": "Joel Rindelaub",
+          "original_name": "Joel Rindelaub",
+          "popularity": 0.09,
+          "profile_path": "/qqAKuswRZdUNNjMSry396gLpWsm.jpg",
+          "cast_id": 137,
+          "character": "Arcade Judge",
+          "credit_id": "67edb7f81d1ccf5f4f62868e",
+          "order": 24
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 5345362,
+          "known_for_department": "Acting",
+          "name": "Antony Degreat",
+          "original_name": "Antony Degreat",
+          "popularity": 0.0412,
+          "profile_path": null,
+          "cast_id": 138,
+          "character": "Gamer #1",
+          "credit_id": "67edb8194680f26bf3a78cd5",
+          "order": 25
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 5345364,
+          "known_for_department": "Acting",
+          "name": "Victor Kazaroho",
+          "original_name": "Victor Kazaroho",
+          "popularity": 0.0621,
+          "profile_path": null,
+          "cast_id": 139,
+          "character": "Gamer #2",
+          "credit_id": "67edb827cf06190cbae17588",
+          "order": 26
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 5345368,
+          "known_for_department": "Acting",
+          "name": "Ben Carpenter",
+          "original_name": "Ben Carpenter",
+          "popularity": 0.0877,
+          "profile_path": null,
+          "cast_id": 140,
+          "character": "Henry Picture Double",
+          "credit_id": "67edb8d18689061e1fe172cc",
+          "order": 27
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 5345369,
+          "known_for_department": "Acting",
+          "name": "Rowan Bacal",
+          "original_name": "Rowan Bacal",
+          "popularity": 0.1344,
+          "profile_path": "/4UdB2Cqzx5P060Lry7DfnINCSC8.jpg",
+          "cast_id": 141,
+          "character": "Greta",
+          "credit_id": "67edb90d4680f26bf3a78d63",
+          "order": 28
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 5345370,
+          "known_for_department": "Acting",
+          "name": "Brennan Standing",
+          "original_name": "Brennan Standing",
+          "popularity": 0.0495,
+          "profile_path": null,
+          "cast_id": 142,
+          "character": "Lee",
+          "credit_id": "67edb922cf06190cbae175ba",
+          "order": 29
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 5345371,
+          "known_for_department": "Acting",
+          "name": "Dylan Chitekwe",
+          "original_name": "Dylan Chitekwe",
+          "popularity": 0.0569,
+          "profile_path": null,
+          "cast_id": 143,
+          "character": "Miles",
+          "credit_id": "67edb93a5f3bd7242e62871d",
+          "order": 30
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1488236,
+          "known_for_department": "Acting",
+          "name": "马修·贝瑞",
+          "original_name": "Matt Berry",
+          "popularity": 2.4544,
+          "profile_path": "/1UCAuXgzQfeANlLnZFVSuq0OFhR.jpg",
+          "cast_id": 20,
+          "character": "Nitwit (voice)",
+          "credit_id": "647149c1dd731b01178ed330",
+          "order": 31
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2089332,
+          "known_for_department": "Acting",
+          "name": "Alice May Connolly",
+          "original_name": "Alice May Connolly",
+          "popularity": 0.1094,
+          "profile_path": "/nGZLHw788qEiX1G0ogY1kTNsgRp.jpg",
+          "cast_id": 144,
+          "character": "Alex Double",
+          "credit_id": "67edb9611d1ccf5f4f6286be",
+          "order": 32
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1165391,
+          "known_for_department": "Acting",
+          "name": "Jens Bergensten",
+          "original_name": "Jens Bergensten",
+          "popularity": 0.1582,
+          "profile_path": "/caJh6zmmgQRoyVPLcujORgERQvs.jpg",
+          "cast_id": 104,
+          "character": "Waiter",
+          "credit_id": "67e0953630e65e7beec73637",
+          "order": 33
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 4503356,
+          "known_for_department": "Directing",
+          "name": "Oliver Brotherhood",
+          "original_name": "Oliver Brotherhood",
+          "popularity": 0.1134,
+          "profile_path": "/ujFldwpZja53lOvY9KNDvWkiXLp.jpg",
+          "cast_id": 145,
+          "character": "Auction Attendee",
+          "credit_id": "67edb9804909e25b07a78b54",
+          "order": 34
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2932608,
+          "known_for_department": "Acting",
+          "name": "Daniel Middleton",
+          "original_name": "Daniel Middleton",
+          "popularity": 0.5289,
+          "profile_path": "/sx2DPUunARsqlcLlGuFZ8zw7WL9.jpg",
+          "cast_id": 146,
+          "character": "Auction Attendee",
+          "credit_id": "67edb98ccf06190cbae175bf",
+          "order": 35
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 3819595,
+          "known_for_department": "Acting",
+          "name": "Elizabeth Batty",
+          "original_name": "Elizabeth Batty",
+          "popularity": 0.0602,
+          "profile_path": "/oC8gUVsjJFxMuTRW7pYnAz0skXT.jpg",
+          "cast_id": 106,
+          "character": "Auction Attendee",
+          "credit_id": "67e9c3eb4f741c75bbc6b4a2",
+          "order": 36
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 5338345,
+          "known_for_department": "Acting",
+          "name": "Jessica Bravura",
+          "original_name": "Jessica Bravura",
+          "popularity": 0.0474,
+          "profile_path": "/dcKtrNoaFocpFvuT6TrGhNsxW8C.jpg",
+          "cast_id": 108,
+          "character": "Auction Attendee",
+          "credit_id": "67e9c457983f1aefc7e54859",
+          "order": 37
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1240487,
+          "known_for_department": "Acting",
+          "name": "凯特·麦金农",
+          "original_name": "Kate McKinnon",
+          "popularity": 2.2187,
+          "profile_path": "/7o26OzpEPAUma65jGQZop9d52gy.jpg",
+          "cast_id": 175,
+          "character": "Alex (voice) (uncredited)",
+          "credit_id": "67f477917b43bdce20ad60d4",
+          "order": 38
+        }
+      ],
+      "crew": [
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 21036,
+          "known_for_department": "Production",
+          "name": "罗伊·李",
+          "original_name": "Roy Lee",
+          "popularity": 0.514,
+          "profile_path": "/fMY0MiVyrGaK44ejqWzT2txcRVI.jpg",
+          "credit_id": "6233c4e8da10f00076408d96",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 53925,
+          "known_for_department": "Directing",
+          "name": "杰瑞德·赫斯",
+          "original_name": "Jared Hess",
+          "popularity": 1.1997,
+          "profile_path": "/xUob4AE9C39SsNfhE7z63bMJI75.jpg",
+          "credit_id": "625db6e1d38b5817ae2a800c",
+          "department": "Directing",
+          "job": "Director"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 114408,
+          "known_for_department": "Production",
+          "name": "玛丽·帕伦特",
+          "original_name": "Mary Parent",
+          "popularity": 0.3085,
+          "profile_path": "/jTh9ngfGF8DQvKwGM8rXSmfbQTj.jpg",
+          "credit_id": "625df196bf09d10066c33eed",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 564940,
+          "known_for_department": "Writing",
+          "name": "乔·斯派茨",
+          "original_name": "Jon Spaihts",
+          "popularity": 0.4323,
+          "profile_path": "/n5JF0cYCWe8AUqb4Sto042rnG4e.jpg",
+          "credit_id": "625df1c6229ae2321985b282",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1726476,
+          "known_for_department": "Production",
+          "name": "Vu Bui",
+          "original_name": "Vu Bui",
+          "popularity": 0.0917,
+          "profile_path": "/rGjsS4p6MxQeaEwI8KGNt9SAec1.jpg",
+          "credit_id": "625e6a02d38b5817ae2d664a",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1314,
+          "known_for_department": "Art",
+          "name": "Grant Major",
+          "original_name": "Grant Major",
+          "popularity": 0.3931,
+          "profile_path": "/zh1323jaYUifVyIhOAm6ljM9l0K.jpg",
+          "credit_id": "65a592ce60b58d012811b279",
+          "department": "Art",
+          "job": "Production Design"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1165390,
+          "known_for_department": "Acting",
+          "name": "Markus Persson",
+          "original_name": "Markus Persson",
+          "popularity": 0.303,
+          "profile_path": "/kpKbzs5R6CUnoYwd89NCZuHuuGZ.jpg",
+          "credit_id": "639fb26c2f3b1700e6d9c5ae",
+          "department": "Crew",
+          "job": "Video Game"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 117642,
+          "known_for_department": "Acting",
+          "name": "杰森·莫玛",
+          "original_name": "Jason Momoa",
+          "popularity": 13.3335,
+          "profile_path": "/3troAR6QbSb6nUFMDu61YCCWLKa.jpg",
+          "credit_id": "664cbb1988821f7e16303517",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3917788,
+          "known_for_department": "Directing",
+          "name": "Torfi Frans Ólafsson",
+          "original_name": "Torfi Frans Ólafsson",
+          "popularity": 0.0596,
+          "profile_path": null,
+          "credit_id": "664b6041f60ffeeef292d7db",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1427715,
+          "known_for_department": "Crew",
+          "name": "Jon Valera",
+          "original_name": "Jon Valera",
+          "popularity": 0.5165,
+          "profile_path": "/kvcBOZCEMrHLwfsb7kUBDPl0AMk.jpg",
+          "credit_id": "66892ece5b75e3c4d0180abb",
+          "department": "Directing",
+          "job": "Second Unit Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1427715,
+          "known_for_department": "Crew",
+          "name": "Jon Valera",
+          "original_name": "Jon Valera",
+          "popularity": 0.5165,
+          "profile_path": "/kvcBOZCEMrHLwfsb7kUBDPl0AMk.jpg",
+          "credit_id": "66892f55c75a8c9b14a381eb",
+          "department": "Crew",
+          "job": "Stunt Coordinator"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1542917,
+          "known_for_department": "Editing",
+          "name": "Yvan Lucas",
+          "original_name": "Yvan Lucas",
+          "popularity": 0.4157,
+          "profile_path": "/d4T7CJP3zI41BOTTNKknWMl6XMI.jpg",
+          "credit_id": "66d26020ea22ad562c94454d",
+          "department": "Editing",
+          "job": "Colorist"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 17315,
+          "known_for_department": "Production",
+          "name": "Cale Boyter",
+          "original_name": "Cale Boyter",
+          "popularity": 0.2276,
+          "profile_path": "/meOn0PdVySILF4BmD8HqVAjRPUB.jpg",
+          "credit_id": "66d86b7ec3bea634c929e91e",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 56326,
+          "known_for_department": "Production",
+          "name": "Jill Messick",
+          "original_name": "Jill Messick",
+          "popularity": 0.3236,
+          "profile_path": "/3vwDW6kvL4b4XrPxFPDtiwRSc8r.jpg",
+          "credit_id": "66d86c57b527336d7f6ce988",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 6184,
+          "known_for_department": "Production",
+          "name": "Todd Hallowell",
+          "original_name": "Todd Hallowell",
+          "popularity": 0.6619,
+          "profile_path": "/l5HU6JgdQ8a9RTsU07LEQGm4QZ4.jpg",
+          "credit_id": "66d86c8de6fe0bec7e29e693",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 4923190,
+          "known_for_department": "Production",
+          "name": "Kayleen Walters",
+          "original_name": "Kayleen Walters",
+          "popularity": 0.0563,
+          "profile_path": null,
+          "credit_id": "66d86c9da6340e39739d8263",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1722811,
+          "known_for_department": "Production",
+          "name": "Brian Andrew Mendoza",
+          "original_name": "Brian Andrew Mendoza",
+          "popularity": 0.2536,
+          "profile_path": null,
+          "credit_id": "66d86cac6c474277338f0914",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 4445622,
+          "known_for_department": "Production",
+          "name": "Pete Chiappetta",
+          "original_name": "Pete Chiappetta",
+          "popularity": 0.4444,
+          "profile_path": null,
+          "credit_id": "66d86cc6322156d41a9d2d85",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 17598,
+          "known_for_department": "Camera",
+          "name": "Enrique Chediak",
+          "original_name": "Enrique Chediak",
+          "popularity": 0.1783,
+          "profile_path": "/9JS8TLlDO8Kn5il8Lv0tq8cOO18.jpg",
+          "credit_id": "66d86d1fb9e9a381e96ce6cf",
+          "department": "Camera",
+          "job": "Director of Photography"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1468801,
+          "known_for_department": "Editing",
+          "name": "James Thomas",
+          "original_name": "James Thomas",
+          "popularity": 0.1531,
+          "profile_path": "/bAqb9coqMI3Iwlv1bQIoz1viHI7.jpg",
+          "credit_id": "66d86d39a0a8f35b1826ed2b",
+          "department": "Editing",
+          "job": "Editor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1394070,
+          "known_for_department": "Visual Effects",
+          "name": "Dan Lemmon",
+          "original_name": "Dan Lemmon",
+          "popularity": 0.1977,
+          "profile_path": "/3CO2acKTvPLATjawvZX1VZLw8bm.jpg",
+          "credit_id": "66d86d45867ff3c0ad6047dd",
+          "department": "Visual Effects",
+          "job": "Visual Effects Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 989349,
+          "known_for_department": "Costume & Make-Up",
+          "name": "Amanda Neale",
+          "original_name": "Amanda Neale",
+          "popularity": 0.1168,
+          "profile_path": "/zIC2UYEwrr0sI4DEOXQFBCFRQ3k.jpg",
+          "credit_id": "66d86d6211a5a563859d305e",
+          "department": "Costume & Make-Up",
+          "job": "Costume Design"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1529999,
+          "known_for_department": "Sound",
+          "name": "Gabe Hilfer",
+          "original_name": "Gabe Hilfer",
+          "popularity": 0.3092,
+          "profile_path": "/gKGYccyssgojChyinkPOr4MdXDN.jpg",
+          "credit_id": "66d86d78b1efb0dcea9d82f0",
+          "department": "Sound",
+          "job": "Music Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 6940,
+          "known_for_department": "Sound",
+          "name": "Karyn Rachtman",
+          "original_name": "Karyn Rachtman",
+          "popularity": 0.1765,
+          "profile_path": null,
+          "credit_id": "66d86d83f59f16cbd8182654",
+          "department": "Sound",
+          "job": "Music Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 5666,
+          "known_for_department": "Sound",
+          "name": "Mark Mothersbaugh",
+          "original_name": "Mark Mothersbaugh",
+          "popularity": 0.7575,
+          "profile_path": "/wd3ZoatTz7pZaS8dErNXwYiVB6f.jpg",
+          "credit_id": "66d86d8e226772054a1829e5",
+          "department": "Sound",
+          "job": "Original Music Composer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 4445624,
+          "known_for_department": "Production",
+          "name": "Anthony Tittanegro",
+          "original_name": "Anthony Tittanegro",
+          "popularity": 0.2223,
+          "profile_path": null,
+          "credit_id": "66dcef66b0b84167023aa51d",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 4445623,
+          "known_for_department": "Production",
+          "name": "Andrew Lary",
+          "original_name": "Andrew Lary",
+          "popularity": 0.1895,
+          "profile_path": null,
+          "credit_id": "66dcef79736736058a9a8839",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1325481,
+          "known_for_department": "Camera",
+          "name": "Michael Heathcote",
+          "original_name": "Michael Heathcote",
+          "popularity": 0.3953,
+          "profile_path": null,
+          "credit_id": "670722ac1d96dc6d4769eda8",
+          "department": "Camera",
+          "job": "\"A\" Camera Operator"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1325481,
+          "known_for_department": "Camera",
+          "name": "Michael Heathcote",
+          "original_name": "Michael Heathcote",
+          "popularity": 0.3953,
+          "profile_path": null,
+          "credit_id": "670722b2c92c2e56d86112e1",
+          "department": "Camera",
+          "job": "Steadicam Operator"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2057527,
+          "known_for_department": "Art",
+          "name": "Richard Bennett",
+          "original_name": "Richard Bennett",
+          "popularity": 0.2014,
+          "profile_path": null,
+          "credit_id": "67169d4c4bf37c883cb74250",
+          "department": "Art",
+          "job": "Storyboard Artist"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1415489,
+          "known_for_department": "Visual Effects",
+          "name": "Piotr Karwas",
+          "original_name": "Piotr Karwas",
+          "popularity": 0.0502,
+          "profile_path": null,
+          "credit_id": "672a893c60f5b9ecdff06752",
+          "department": "Visual Effects",
+          "job": "Visual Effects Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1901070,
+          "known_for_department": "Visual Effects",
+          "name": "Sheldon Stopsack",
+          "original_name": "Sheldon Stopsack",
+          "popularity": 0.0773,
+          "profile_path": "/2KxreGyI3BvhOxs5uE6IfbRBdVn.jpg",
+          "credit_id": "674ba7156a60a0b5232b6db5",
+          "department": "Visual Effects",
+          "job": "Visual Effects Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 273434,
+          "known_for_department": "Visual Effects",
+          "name": "Tom Greene",
+          "original_name": "Tom Greene",
+          "popularity": 0.078,
+          "profile_path": null,
+          "credit_id": "674ba72a5d57f1ab009ebc07",
+          "department": "Visual Effects",
+          "job": "Visual Effects Producer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3810931,
+          "known_for_department": "Visual Effects",
+          "name": "Kevin Estey",
+          "original_name": "Kevin Estey",
+          "popularity": 0.0927,
+          "profile_path": null,
+          "credit_id": "674ba73851227e9b99bf334e",
+          "department": "Visual Effects",
+          "job": "Animation Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1378695,
+          "known_for_department": "Sound",
+          "name": "埃里克·阿达尔",
+          "original_name": "Erik Aadahl",
+          "popularity": 0.5069,
+          "profile_path": "/c02IxbuxyZR93j0gaothnjw1lsZ.jpg",
+          "credit_id": "676210386aea1fff30aaebe3",
+          "department": "Sound",
+          "job": "Supervising Sound Editor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1378695,
+          "known_for_department": "Sound",
+          "name": "埃里克·阿达尔",
+          "original_name": "Erik Aadahl",
+          "popularity": 0.5069,
+          "profile_path": "/c02IxbuxyZR93j0gaothnjw1lsZ.jpg",
+          "credit_id": "6762105e94196aaed2ffd4a7",
+          "department": "Sound",
+          "job": "Sound Designer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1378696,
+          "known_for_department": "Sound",
+          "name": "伊桑·范德萊恩",
+          "original_name": "Ethan Van der Ryn",
+          "popularity": 0.5988,
+          "profile_path": "/cee7w7XpNMSXyFv0F7CtwpBtERB.jpg",
+          "credit_id": "6762115240d2c02ecdaaebec",
+          "department": "Sound",
+          "job": "Supervising Sound Editor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1378696,
+          "known_for_department": "Sound",
+          "name": "伊桑·范德萊恩",
+          "original_name": "Ethan Van der Ryn",
+          "popularity": 0.5988,
+          "profile_path": "/cee7w7XpNMSXyFv0F7CtwpBtERB.jpg",
+          "credit_id": "676211586aea1fff30aaec6c",
+          "department": "Sound",
+          "job": "Sound Designer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1531095,
+          "known_for_department": "Art",
+          "name": "Amber Richards",
+          "original_name": "Amber Richards",
+          "popularity": 0.1235,
+          "profile_path": null,
+          "credit_id": "6769c81945cc55ffb764a162",
+          "department": "Art",
+          "job": "Set Decoration"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1797242,
+          "known_for_department": "Costume & Make-Up",
+          "name": "Vinnie Ashton",
+          "original_name": "Vinnie Ashton",
+          "popularity": 0.0879,
+          "profile_path": null,
+          "credit_id": "6769c886416a3443b5a9d86c",
+          "department": "Costume & Make-Up",
+          "job": "Hair Designer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1797242,
+          "known_for_department": "Costume & Make-Up",
+          "name": "Vinnie Ashton",
+          "original_name": "Vinnie Ashton",
+          "popularity": 0.0879,
+          "profile_path": null,
+          "credit_id": "6769c88f416a3443b5a9d870",
+          "department": "Costume & Make-Up",
+          "job": "Makeup Designer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1683351,
+          "known_for_department": "Directing",
+          "name": "Nick Satriano",
+          "original_name": "Nick Satriano",
+          "popularity": 0.3283,
+          "profile_path": null,
+          "credit_id": "676a05052653697f7f64ab5d",
+          "department": "Directing",
+          "job": "First Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1683351,
+          "known_for_department": "Directing",
+          "name": "Nick Satriano",
+          "original_name": "Nick Satriano",
+          "popularity": 0.3283,
+          "profile_path": null,
+          "credit_id": "676a057f475804a99d64a7b0",
+          "department": "Production",
+          "job": "Co-Producer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1394064,
+          "known_for_department": "Art",
+          "name": "Matt Cornelius",
+          "original_name": "Matt Cornelius",
+          "popularity": 0.0836,
+          "profile_path": null,
+          "credit_id": "676a05f445cc55ffb764a894",
+          "department": "Art",
+          "job": "Property Master"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1408301,
+          "known_for_department": "Sound",
+          "name": "Jason W. Jennings",
+          "original_name": "Jason W. Jennings",
+          "popularity": 0.2423,
+          "profile_path": null,
+          "credit_id": "676a06b245cc55ffb764a8f7",
+          "department": "Sound",
+          "job": "Supervising Sound Editor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 132608,
+          "known_for_department": "Sound",
+          "name": "Tony Johnson",
+          "original_name": "Tony Johnson",
+          "popularity": 0.1597,
+          "profile_path": null,
+          "credit_id": "676a06c89348daa54ba9ddbb",
+          "department": "Sound",
+          "job": "Production Sound Mixer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1579414,
+          "known_for_department": "Sound",
+          "name": "Veronica Li",
+          "original_name": "Veronica Li",
+          "popularity": 0.1041,
+          "profile_path": null,
+          "credit_id": "676a07c12a8e1b33ea7eb526",
+          "department": "Sound",
+          "job": "Assistant Sound Editor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1362165,
+          "known_for_department": "Camera",
+          "name": "John Cavill",
+          "original_name": "John Cavill",
+          "popularity": 0.1302,
+          "profile_path": null,
+          "credit_id": "676a1cc44df531caf1a9e8c8",
+          "department": "Camera",
+          "job": "\"B\" Camera Operator"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 132604,
+          "known_for_department": "Art",
+          "name": "Andy McLaren",
+          "original_name": "Andy McLaren",
+          "popularity": 0.1786,
+          "profile_path": null,
+          "credit_id": "67a600d2f196a73ae7671838",
+          "department": "Art",
+          "job": "Art Direction"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1590102,
+          "known_for_department": "Editing",
+          "name": "Jill Bogdanowicz",
+          "original_name": "Jill Bogdanowicz",
+          "popularity": 0.4434,
+          "profile_path": null,
+          "credit_id": "67af9088a18ebf2ac58e700b",
+          "department": "Editing",
+          "job": "Colorist"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1410553,
+          "known_for_department": "Visual Effects",
+          "name": "Jason Bath",
+          "original_name": "Jason Bath",
+          "popularity": 0.1078,
+          "profile_path": null,
+          "credit_id": "67bcedefe050d9b8b3999bfa",
+          "department": "Visual Effects",
+          "job": "Visual Effects Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 82624,
+          "known_for_department": "Writing",
+          "name": "哈贝尔·帕默",
+          "original_name": "Hubbel Palmer",
+          "popularity": 0.2625,
+          "profile_path": "/qiN0sWAucjNQGOGgO5rQBZsg8tI.jpg",
+          "credit_id": "67c20e988674953b7ddbd9c1",
+          "department": "Writing",
+          "job": "Story"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1371386,
+          "known_for_department": "Writing",
+          "name": "克里斯·鲍曼",
+          "original_name": "Chris Bowman",
+          "popularity": 0.3062,
+          "profile_path": "/uEqgNHrT15G2wSxZlQozazZLHp4.jpg",
+          "credit_id": "67c20e9ca7af2713c3a242f5",
+          "department": "Writing",
+          "job": "Story"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 211980,
+          "known_for_department": "Writing",
+          "name": "艾莉森·施罗德",
+          "original_name": "Allison Schroeder",
+          "popularity": 0.3272,
+          "profile_path": "/6xLoig0tXxYu1tWxwvzZlGlxnea.jpg",
+          "credit_id": "67c20ea18674953b7ddbd9c8",
+          "department": "Writing",
+          "job": "Story"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1137990,
+          "known_for_department": "Writing",
+          "name": "克里斯·加莱塔",
+          "original_name": "Chris Galletta",
+          "popularity": 0.1793,
+          "profile_path": "/gRL3pfhJ81yM5jIy6ontVig4ltx.jpg",
+          "credit_id": "67c20ea671804deba153aeba",
+          "department": "Writing",
+          "job": "Screenplay"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1583140,
+          "known_for_department": "Writing",
+          "name": "加文·詹姆斯",
+          "original_name": "Gavin James",
+          "popularity": 0.1759,
+          "profile_path": null,
+          "credit_id": "67c20ecc71804deba153aece",
+          "department": "Writing",
+          "job": "Screenplay"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1583143,
+          "known_for_department": "Writing",
+          "name": "尼尔·怀德纳",
+          "original_name": "Neil Widener",
+          "popularity": 0.18,
+          "profile_path": null,
+          "credit_id": "67c20eed182b1775b8dbd011",
+          "department": "Writing",
+          "job": "Screenplay"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 82624,
+          "known_for_department": "Writing",
+          "name": "哈贝尔·帕默",
+          "original_name": "Hubbel Palmer",
+          "popularity": 0.2625,
+          "profile_path": "/qiN0sWAucjNQGOGgO5rQBZsg8tI.jpg",
+          "credit_id": "67c20ef1104765853253abb7",
+          "department": "Writing",
+          "job": "Screenplay"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1371386,
+          "known_for_department": "Writing",
+          "name": "克里斯·鲍曼",
+          "original_name": "Chris Bowman",
+          "popularity": 0.3062,
+          "profile_path": "/uEqgNHrT15G2wSxZlQozazZLHp4.jpg",
+          "credit_id": "67c20ef7104765853253abc6",
+          "department": "Writing",
+          "job": "Screenplay"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1165391,
+          "known_for_department": "Acting",
+          "name": "Jens Bergensten",
+          "original_name": "Jens Bergensten",
+          "popularity": 0.1582,
+          "profile_path": "/caJh6zmmgQRoyVPLcujORgERQvs.jpg",
+          "credit_id": "67edb5d94680f26bf3a78bb6",
+          "department": "Crew",
+          "job": "Thanks"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1778442,
+          "known_for_department": "Sound",
+          "name": "Samuel Åberg",
+          "original_name": "Samuel Åberg",
+          "popularity": 0.057,
+          "profile_path": null,
+          "credit_id": "67edb5ec1d1ccf5f4f628626",
+          "department": "Crew",
+          "job": "Thanks"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 3356024,
+          "known_for_department": "Acting",
+          "name": "Lydia Winters",
+          "original_name": "Lydia Winters",
+          "popularity": 0.0866,
+          "profile_path": null,
+          "credit_id": "67edb5f55f3bd7242e6286a7",
+          "department": "Crew",
+          "job": "Thanks"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5345330,
+          "known_for_department": "Crew",
+          "name": "Johan Aronsson",
+          "original_name": "Johan Aronsson",
+          "popularity": 0.0478,
+          "profile_path": null,
+          "credit_id": "67edb6004680f26bf3a78bc9",
+          "department": "Crew",
+          "job": "Thanks"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5345331,
+          "known_for_department": "Crew",
+          "name": "Eileen Lee",
+          "original_name": "Eileen Lee",
+          "popularity": 0.0286,
+          "profile_path": null,
+          "credit_id": "67edb61d8689061e1fe17262",
+          "department": "Crew",
+          "job": "Thanks"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5345332,
+          "known_for_department": "Crew",
+          "name": "Kevin Grace",
+          "original_name": "Kevin Grace",
+          "popularity": 0.0214,
+          "profile_path": null,
+          "credit_id": "67edb62dcf06190cbae17500",
+          "department": "Crew",
+          "job": "Thanks"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5345333,
+          "known_for_department": "Crew",
+          "name": "Alex Wiltshire",
+          "original_name": "Alex Wiltshire",
+          "popularity": 0.0362,
+          "profile_path": null,
+          "credit_id": "67edb6414680f26bf3a78bd8",
+          "department": "Crew",
+          "job": "Thanks"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5345334,
+          "known_for_department": "Crew",
+          "name": "Katie Penza",
+          "original_name": "Katie Penza",
+          "popularity": 0.0379,
+          "profile_path": null,
+          "credit_id": "67edb6474909e25b07a78aa9",
+          "department": "Crew",
+          "job": "Thanks"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5345335,
+          "known_for_department": "Crew",
+          "name": "Sean Flanery",
+          "original_name": "Sean Flanery",
+          "popularity": 0.0214,
+          "profile_path": null,
+          "credit_id": "67edb64d8689061e1fe1726e",
+          "department": "Crew",
+          "job": "Thanks"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5345337,
+          "known_for_department": "Crew",
+          "name": "Isabella Balk",
+          "original_name": "Isabella Balk",
+          "popularity": 0.0505,
+          "profile_path": null,
+          "credit_id": "67edb66ecf06190cbae17512",
+          "department": "Crew",
+          "job": "Thanks"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5345338,
+          "known_for_department": "Crew",
+          "name": "Lisa Kempe",
+          "original_name": "Lisa Kempe",
+          "popularity": 0.0338,
+          "profile_path": null,
+          "credit_id": "67edb673cf06190cbae1751c",
+          "department": "Crew",
+          "job": "Thanks"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 5345410,
+          "known_for_department": "Crew",
+          "name": "Markus Toivonen",
+          "original_name": "Markus Toivonen",
+          "popularity": 0.0357,
+          "profile_path": null,
+          "credit_id": "67edc29e4909e25b07a78cec",
+          "department": "Crew",
+          "job": "Thanks"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 132638,
+          "known_for_department": "Crew",
+          "name": "Jonathan Costelloe",
+          "original_name": "Jonathan Costelloe",
+          "popularity": 0.2215,
+          "profile_path": null,
+          "credit_id": "67edc2cbcf06190cbae1771b",
+          "department": "Crew",
+          "job": "Stunt Coordinator"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1447518,
+          "known_for_department": "Crew",
+          "name": "Sean Button",
+          "original_name": "Sean Button",
+          "popularity": 0.1552,
+          "profile_path": null,
+          "credit_id": "67edc2d064a516cc46e1761e",
+          "department": "Crew",
+          "job": "Stunt Coordinator"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1603473,
+          "known_for_department": "Crew",
+          "name": "Cameron Hilts",
+          "original_name": "Cameron Hilts",
+          "popularity": 0.5359,
+          "profile_path": "/imiy7xB8bmwgOCTAwJVjD0i0THl.jpg",
+          "credit_id": "67edc2d45f3bd7242e628883",
+          "department": "Crew",
+          "job": "Stunt Coordinator"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1735551,
+          "known_for_department": "Crew",
+          "name": "Jake De Witt",
+          "original_name": "Jake De Witt",
+          "popularity": 0.1442,
+          "profile_path": null,
+          "credit_id": "67edc2df4680f26bf3a78fe8",
+          "department": "Crew",
+          "job": "Stunt Coordinator"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 5240496,
+          "known_for_department": "Crew",
+          "name": "Jared De Witt",
+          "original_name": "Jared De Witt",
+          "popularity": 0.0336,
+          "profile_path": null,
+          "credit_id": "67edc2e49c68504cf2628bf4",
+          "department": "Crew",
+          "job": "Stunt Coordinator"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1457942,
+          "known_for_department": "Crew",
+          "name": "Ashlen Aquila",
+          "original_name": "Ashlen Aquila",
+          "popularity": 0.1584,
+          "profile_path": null,
+          "credit_id": "67edc32b4680f26bf3a78ff7",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1476970,
+          "known_for_department": "Acting",
+          "name": "Yasushi Asaya",
+          "original_name": "Yasushi Asaya",
+          "popularity": 0.2784,
+          "profile_path": "/fHA0xpagWu33twmJcEI02uCCXYp.jpg",
+          "credit_id": "67edc3321d1ccf5f4f62897f",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3070048,
+          "known_for_department": "Crew",
+          "name": "Matt Bowden",
+          "original_name": "Matt Bowden",
+          "popularity": 0.0297,
+          "profile_path": "/8cWLUI6d5r1tqYACElhMFPlBaj7.jpg",
+          "credit_id": "67edc371b5b1c5a4c3a78aa6",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2360855,
+          "known_for_department": "Crew",
+          "name": "Andrea Berchtold",
+          "original_name": "Andrea Berchtold",
+          "popularity": 0.1973,
+          "profile_path": null,
+          "credit_id": "67edc4234680f26bf3a79006",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2198418,
+          "known_for_department": "Sound",
+          "name": "Alexis Feodoroff",
+          "original_name": "Alexis Feodoroff",
+          "popularity": 0.1518,
+          "profile_path": null,
+          "credit_id": "67f114c60f20f9c45cacfcd9",
+          "department": "Sound",
+          "job": "Sound Re-Recording Mixer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1424615,
+          "known_for_department": "Sound",
+          "name": "Melanie Graham",
+          "original_name": "Melanie Graham",
+          "popularity": 0.1815,
+          "profile_path": null,
+          "credit_id": "67f114d70f20f9c45cacfce7",
+          "department": "Sound",
+          "job": "Sound Effects Editor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2198416,
+          "known_for_department": "Sound",
+          "name": "Andrew Moore",
+          "original_name": "Andrew Moore",
+          "popularity": 0.0861,
+          "profile_path": null,
+          "credit_id": "67f114ee0f20f9c45cacfcf1",
+          "department": "Sound",
+          "job": "Sound Effects Editor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1920425,
+          "known_for_department": "Sound",
+          "name": "Simon Riley",
+          "original_name": "Simon Riley",
+          "popularity": 0.0927,
+          "profile_path": null,
+          "credit_id": "67f115148b1f32eb79d96944",
+          "department": "Sound",
+          "job": "Foley Artist"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 223247,
+          "known_for_department": "Sound",
+          "name": "Julian Slater",
+          "original_name": "Julian Slater",
+          "popularity": 0.3635,
+          "profile_path": null,
+          "credit_id": "67f1152b0f20f9c45cacfd41",
+          "department": "Sound",
+          "job": "Sound Re-Recording Mixer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1457322,
+          "known_for_department": "Sound",
+          "name": "Matt Stutter",
+          "original_name": "Matt Stutter",
+          "popularity": 0.1175,
+          "profile_path": null,
+          "credit_id": "67f11536931ce174a2d98cca",
+          "department": "Sound",
+          "job": "Sound Effects Editor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1860342,
+          "known_for_department": "Sound",
+          "name": "Craig Tomlinson",
+          "original_name": "Craig Tomlinson",
+          "popularity": 0.1924,
+          "profile_path": null,
+          "credit_id": "67f1153faa77e08af7997e25",
+          "department": "Sound",
+          "job": "Foley Editor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1406066,
+          "known_for_department": "Sound",
+          "name": "Dave Whitehead",
+          "original_name": "Dave Whitehead",
+          "popularity": 0.2656,
+          "profile_path": null,
+          "credit_id": "67f1154af5a80aa545998f10",
+          "department": "Sound",
+          "job": "Sound Designer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5350406,
+          "known_for_department": "Costume & Make-Up",
+          "name": "Tish Celestine",
+          "original_name": "Tish Celestine",
+          "popularity": 0.0662,
+          "profile_path": null,
+          "credit_id": "67f11568f5a80aa545998f32",
+          "department": "Costume & Make-Up",
+          "job": "Hairstylist"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1361035,
+          "known_for_department": "Costume & Make-Up",
+          "name": "Jacqui Leung",
+          "original_name": "Jacqui Leung",
+          "popularity": 0.1956,
+          "profile_path": null,
+          "credit_id": "67f11570a7336870ee99296a",
+          "department": "Costume & Make-Up",
+          "job": "Makeup Artist"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1484966,
+          "known_for_department": "Costume & Make-Up",
+          "name": "Anne Morgan",
+          "original_name": "Anne Morgan",
+          "popularity": 0.34,
+          "profile_path": "/i4OXPeBd0RTM1MwJsufZ4aVCccr.jpg",
+          "credit_id": "67f115780f20f9c45cacfda9",
+          "department": "Costume & Make-Up",
+          "job": "Hair Designer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2494530,
+          "known_for_department": "Costume & Make-Up",
+          "name": "Vanya Pell",
+          "original_name": "Vanya Pell",
+          "popularity": 0.0456,
+          "profile_path": null,
+          "credit_id": "67f1158deddec28b03ad0a1a",
+          "department": "Costume & Make-Up",
+          "job": "Hairstylist"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 4758525,
+          "known_for_department": "Costume & Make-Up",
+          "name": "Aly Webby",
+          "original_name": "Aly Webby",
+          "popularity": 0.0544,
+          "profile_path": null,
+          "credit_id": "67f1159df5a80aa545998f77",
+          "department": "Costume & Make-Up",
+          "job": "Key Makeup Artist"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1828255,
+          "known_for_department": "Art",
+          "name": "Zahra Archer",
+          "original_name": "Zahra Archer",
+          "popularity": 0.1399,
+          "profile_path": null,
+          "credit_id": "67f115b3eddec28b03ad0a95",
+          "department": "Art",
+          "job": "Assistant Art Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5154600,
+          "known_for_department": "Art",
+          "name": "Samuel Dobrec",
+          "original_name": "Samuel Dobrec",
+          "popularity": 0.0648,
+          "profile_path": null,
+          "credit_id": "67f115c3eddec28b03ad0a99",
+          "department": "Art",
+          "job": "Set Designer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1922343,
+          "known_for_department": "Directing",
+          "name": "Sophie Calver",
+          "original_name": "Sophie Calver",
+          "popularity": 0.0689,
+          "profile_path": null,
+          "credit_id": "67f4f8268cfccf7bafd9610b",
+          "department": "Directing",
+          "job": "Second Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1431504,
+          "known_for_department": "Production",
+          "name": "Simon Ambridge",
+          "original_name": "Simon Ambridge",
+          "popularity": 0.1212,
+          "profile_path": null,
+          "credit_id": "67f4f838a5471a51ee998aa1",
+          "department": "Production",
+          "job": "Unit Production Manager"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2711815,
+          "known_for_department": "Visual Effects",
+          "name": "Fiona Crawford",
+          "original_name": "Fiona Crawford",
+          "popularity": 0.0916,
+          "profile_path": null,
+          "credit_id": "67f4f85fa5471a51ee998aa9",
+          "department": "Visual Effects",
+          "job": "Visual Effects Producer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1398100,
+          "known_for_department": "Visual Effects",
+          "name": "Kilou Picard",
+          "original_name": "Kilou Picard",
+          "popularity": 0.1062,
+          "profile_path": null,
+          "credit_id": "67f4f875ddf9194387d9db29",
+          "department": "Visual Effects",
+          "job": "Visual Effects Producer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3596370,
+          "known_for_department": "Editing",
+          "name": "Delaney Del Vecchio",
+          "original_name": "Delaney Del Vecchio",
+          "popularity": 0.0505,
+          "profile_path": null,
+          "credit_id": "67f4f8b131c9f27299ad4b10",
+          "department": "Editing",
+          "job": "Additional Editing"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1128841,
+          "known_for_department": "Editing",
+          "name": "Jonathan Woodford-Robinson",
+          "original_name": "Jonathan Woodford-Robinson",
+          "popularity": 0.097,
+          "profile_path": null,
+          "credit_id": "67f4f8c331c9f27299ad4b1d",
+          "department": "Editing",
+          "job": "Additional Editing"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5357172,
+          "known_for_department": "Art",
+          "name": "Paulina Piasta",
+          "original_name": "Paulina Piasta",
+          "popularity": 0.0338,
+          "profile_path": null,
+          "credit_id": "67f4f997ddf9194387d9db69",
+          "department": "Art",
+          "job": "Set Designer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5357173,
+          "known_for_department": "Art",
+          "name": "Ilan Blumberg",
+          "original_name": "Ilan Blumberg",
+          "popularity": 0.0214,
+          "profile_path": null,
+          "credit_id": "67f4f9ad8cfccf7bafd961a8",
+          "department": "Art",
+          "job": "Set Designer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 33303,
+          "known_for_department": "Art",
+          "name": "Simon Bright",
+          "original_name": "Simon Bright",
+          "popularity": 0.1437,
+          "profile_path": null,
+          "credit_id": "67f4f9c38cfccf7bafd961b5",
+          "department": "Art",
+          "job": "Supervising Art Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1951540,
+          "known_for_department": "Art",
+          "name": "Carey Johnson",
+          "original_name": "Carey Johnson",
+          "popularity": 0.0723,
+          "profile_path": null,
+          "credit_id": "67f4f9f9ddf9194387d9db78",
+          "department": "Art",
+          "job": "Art Department Coordinator"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 3133108,
+          "known_for_department": "Production",
+          "name": "Karla Wallace",
+          "original_name": "Karla Wallace",
+          "popularity": 0.0789,
+          "profile_path": null,
+          "credit_id": "67f4fa39a5471a51ee998b23",
+          "department": "Art",
+          "job": "Art Department Coordinator"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5357180,
+          "known_for_department": "Art",
+          "name": "Kim Jarrett",
+          "original_name": "Kim Jarrett",
+          "popularity": 0.0453,
+          "profile_path": null,
+          "credit_id": "67f4fa4d31c9f27299ad4ba6",
+          "department": "Art",
+          "job": "Art Direction"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1431507,
+          "known_for_department": "Art",
+          "name": "Helen Strevens",
+          "original_name": "Helen Strevens",
+          "popularity": 0.0832,
+          "profile_path": null,
+          "credit_id": "67f4fa5fddf9194387d9dba0",
+          "department": "Art",
+          "job": "Art Direction"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5357181,
+          "known_for_department": "Art",
+          "name": "Marcel Vidot",
+          "original_name": "Marcel Vidot",
+          "popularity": 0.0286,
+          "profile_path": null,
+          "credit_id": "67f4fa7b8cfccf7bafd96215",
+          "department": "Art",
+          "job": "Art Direction"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5357192,
+          "known_for_department": "Art",
+          "name": "Talor Wikohika",
+          "original_name": "Talor Wikohika",
+          "popularity": 0.0168,
+          "profile_path": null,
+          "credit_id": "67f4fb6031c9f27299ad4c03",
+          "department": "Art",
+          "job": "Assistant Art Director"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 3180269,
+          "known_for_department": "Art",
+          "name": "Marina Stojanovic",
+          "original_name": "Marina Stojanovic",
+          "popularity": 0.1083,
+          "profile_path": null,
+          "credit_id": "67f4fbd41bb0472899999e47",
+          "department": "Art",
+          "job": "Assistant Art Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1828265,
+          "known_for_department": "Art",
+          "name": "Brendon Sweeney",
+          "original_name": "Brendon Sweeney",
+          "popularity": 0.1204,
+          "profile_path": null,
+          "credit_id": "67f4fbf46c3583c975997354",
+          "department": "Art",
+          "job": "Assistant Art Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1828261,
+          "known_for_department": "Art",
+          "name": "Dylan Coburn",
+          "original_name": "Dylan Coburn",
+          "popularity": 0.1125,
+          "profile_path": null,
+          "credit_id": "67f4fc0831c9f27299ad4c88",
+          "department": "Art",
+          "job": "Storyboard Artist"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 4915460,
+          "known_for_department": "Art",
+          "name": "Martin Bailey",
+          "original_name": "Martin Bailey",
+          "popularity": 0.0759,
+          "profile_path": null,
+          "credit_id": "67f4fc1c8cfccf7bafd962b9",
+          "department": "Art",
+          "job": "Storyboard Artist"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1624728,
+          "known_for_department": "Directing",
+          "name": "Maxime Delalande",
+          "original_name": "Maxime Delalande",
+          "popularity": 0.0726,
+          "profile_path": null,
+          "credit_id": "67f4fc301bb0472899999e65",
+          "department": "Art",
+          "job": "Storyboard Artist"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1828282,
+          "known_for_department": "Camera",
+          "name": "Brenden Holster",
+          "original_name": "Brenden Holster",
+          "popularity": 0.1512,
+          "profile_path": null,
+          "credit_id": "67f4fc5d1bb0472899999e7d",
+          "department": "Camera",
+          "job": "\"C\" Camera Operator"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3571279,
+          "known_for_department": "Camera",
+          "name": "Henry West",
+          "original_name": "Henry West",
+          "popularity": 0.0239,
+          "profile_path": null,
+          "credit_id": "67f4fc796c3583c975997381",
+          "department": "Camera",
+          "job": "First Assistant \"A\" Camera"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2095506,
+          "known_for_department": "Camera",
+          "name": "Sam Bailey",
+          "original_name": "Sam Bailey",
+          "popularity": 0.0804,
+          "profile_path": null,
+          "credit_id": "67f4fca86c3583c975997396",
+          "department": "Camera",
+          "job": "First Assistant \"B\" Camera"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3008353,
+          "known_for_department": "Camera",
+          "name": "Tom Markham-Short",
+          "original_name": "Tom Markham-Short",
+          "popularity": 0.045,
+          "profile_path": null,
+          "credit_id": "67f4fcb831c9f27299ad4cd9",
+          "department": "Camera",
+          "job": "First Assistant \"C\" Camera"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3522956,
+          "known_for_department": "Camera",
+          "name": "Nina Kalkoff",
+          "original_name": "Nina Kalkoff",
+          "popularity": 0.0755,
+          "profile_path": null,
+          "credit_id": "67f4fcca8cfccf7bafd962f4",
+          "department": "Camera",
+          "job": "Second Assistant \"A\" Camera"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 4566394,
+          "known_for_department": "Camera",
+          "name": "Angelu Cayanan",
+          "original_name": "Angelu Cayanan",
+          "popularity": 0.0409,
+          "profile_path": null,
+          "credit_id": "67f4fcde1bb0472899999e9d",
+          "department": "Camera",
+          "job": "Second Assistant \"B\" Camera"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2875003,
+          "known_for_department": "Camera",
+          "name": "Jamieson Montgomery",
+          "original_name": "Jamieson Montgomery",
+          "popularity": 0.0522,
+          "profile_path": null,
+          "credit_id": "67f4fd8a1bb0472899999ef1",
+          "department": "Camera",
+          "job": "Second Assistant \"C\" Camera"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2193894,
+          "known_for_department": "Camera",
+          "name": "A. Kyo Moon",
+          "original_name": "A. Kyo Moon",
+          "popularity": 0.0327,
+          "profile_path": null,
+          "credit_id": "67f4fd9a701b75bfe9acfa72",
+          "department": "Camera",
+          "job": "Digital Imaging Technician"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1828141,
+          "known_for_department": "Directing",
+          "name": "Monique Knight",
+          "original_name": "Monique Knight",
+          "popularity": 0.1647,
+          "profile_path": null,
+          "credit_id": "67f4fe2f8cfccf7bafd9633a",
+          "department": "Directing",
+          "job": "Script Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5357210,
+          "known_for_department": "Production",
+          "name": "Jaclyn Willens",
+          "original_name": "Jaclyn Willens",
+          "popularity": 0.0214,
+          "profile_path": null,
+          "credit_id": "67f4feb0701b75bfe9acfa94",
+          "department": "Production",
+          "job": "Production Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5357211,
+          "known_for_department": "Production",
+          "name": "David Boden",
+          "original_name": "David Boden",
+          "popularity": 0.0168,
+          "profile_path": null,
+          "credit_id": "67f4fee18cfccf7bafd96383",
+          "department": "Production",
+          "job": "Production Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2060868,
+          "known_for_department": "Production",
+          "name": "Holly Keeman",
+          "original_name": "Holly Keeman",
+          "popularity": 0.0743,
+          "profile_path": null,
+          "credit_id": "67f4ff0531c9f27299ad4d9f",
+          "department": "Production",
+          "job": "Production Coordinator"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5357222,
+          "known_for_department": "Production",
+          "name": "Alex McShane",
+          "original_name": "Alex McShane",
+          "popularity": 0.0143,
+          "profile_path": null,
+          "credit_id": "67f4ffd26c3583c97599740a",
+          "department": "Production",
+          "job": "Production Secretary"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5357223,
+          "known_for_department": "Production",
+          "name": "Jono Wilce",
+          "original_name": "Jono Wilce",
+          "popularity": 0.0214,
+          "profile_path": null,
+          "credit_id": "67f4ffe8ddf9194387d9dd4f",
+          "department": "Production",
+          "job": "Production Secretary"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1828136,
+          "known_for_department": "Directing",
+          "name": "Laura Hutton",
+          "original_name": "Laura Hutton",
+          "popularity": 0.0803,
+          "profile_path": null,
+          "credit_id": "67f4fffc31c9f27299ad4de9",
+          "department": "Directing",
+          "job": "Second Second Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5357229,
+          "known_for_department": "Directing",
+          "name": "Ben Bamford",
+          "original_name": "Ben Bamford",
+          "popularity": 0.0286,
+          "profile_path": null,
+          "credit_id": "67f500408cfccf7bafd9643f",
+          "department": "Directing",
+          "job": "Third Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5357231,
+          "known_for_department": "Directing",
+          "name": "Maddy Powell",
+          "original_name": "Maddy Powell",
+          "popularity": 0.0143,
+          "profile_path": null,
+          "credit_id": "67f5005031c9f27299ad4e24",
+          "department": "Directing",
+          "job": "Third Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5357233,
+          "known_for_department": "Directing",
+          "name": "Rosie Vavasour",
+          "original_name": "Rosie Vavasour",
+          "popularity": 0.0429,
+          "profile_path": null,
+          "credit_id": "67f5006b1bb047289999a080",
+          "department": "Directing",
+          "job": "Third Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3082144,
+          "known_for_department": "Crew",
+          "name": "Abigail Callahan",
+          "original_name": "Abigail Callahan",
+          "popularity": 0.0914,
+          "profile_path": null,
+          "credit_id": "67f500a4eddec28b03add45c",
+          "department": "Crew",
+          "job": "Post Production Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1835982,
+          "known_for_department": "Editing",
+          "name": "Dan Pavis",
+          "original_name": "Dan Pavis",
+          "popularity": 0.0256,
+          "profile_path": null,
+          "credit_id": "67f512211bb047289999a965",
+          "department": "Editing",
+          "job": "First Assistant Editor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1088435,
+          "known_for_department": "Editing",
+          "name": "Dan Graham",
+          "original_name": "Dan Graham",
+          "popularity": 0.0498,
+          "profile_path": null,
+          "credit_id": "67f51249701b75bfe9acfd55",
+          "department": "Editing",
+          "job": "Assistant Editor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1486851,
+          "known_for_department": "Editing",
+          "name": "Alex Olivares",
+          "original_name": "Alex Olivares",
+          "popularity": 0.1248,
+          "profile_path": null,
+          "credit_id": "67f512bc8cfccf7bafd96c62",
+          "department": "Editing",
+          "job": "Assistant Editor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5056346,
+          "known_for_department": "Editing",
+          "name": "Finn McGregor",
+          "original_name": "Finn McGregor",
+          "popularity": 0.0297,
+          "profile_path": null,
+          "credit_id": "67f512fe701b75bfe9acfd67",
+          "department": "Crew",
+          "job": "Post Production Assistant"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2553560,
+          "known_for_department": "Production",
+          "name": "Sally Cunningham",
+          "original_name": "Sally Cunningham",
+          "popularity": 0.1377,
+          "profile_path": null,
+          "credit_id": "67f5132631c9f27299ad55f7",
+          "department": "Production",
+          "job": "Post Production Coordinator"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1713958,
+          "known_for_department": "Crew",
+          "name": "Danielle Daly",
+          "original_name": "Danielle Daly",
+          "popularity": 0.0648,
+          "profile_path": null,
+          "credit_id": "67f513416c3583c975997731",
+          "department": "Crew",
+          "job": "Post Production Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2012306,
+          "known_for_department": "Sound",
+          "name": "Jamieson Shaw",
+          "original_name": "Jamieson Shaw",
+          "popularity": 0.1682,
+          "profile_path": null,
+          "credit_id": "67f513698cfccf7bafd96d37",
+          "department": "Sound",
+          "job": "Supervising Music Editor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1536029,
+          "known_for_department": "Sound",
+          "name": "Dominick Certo",
+          "original_name": "Dominick Certo",
+          "popularity": 0.2584,
+          "profile_path": null,
+          "credit_id": "67f513861bb047289999aa00",
+          "department": "Sound",
+          "job": "Music Editor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2137904,
+          "known_for_department": "Sound",
+          "name": "Rose Mackenzie-Peterson",
+          "original_name": "Rose Mackenzie-Peterson",
+          "popularity": 0.044,
+          "profile_path": null,
+          "credit_id": "67f513941bb047289999aa0f",
+          "department": "Sound",
+          "job": "Music Editor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1458425,
+          "known_for_department": "Sound",
+          "name": "Ryan Cole",
+          "original_name": "Ryan Cole",
+          "popularity": 0.2648,
+          "profile_path": null,
+          "credit_id": "67f513bf1bb047289999aa1e",
+          "department": "Sound",
+          "job": "Dialogue Editor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1457323,
+          "known_for_department": "Sound",
+          "name": "Stefanie Ng",
+          "original_name": "Stefanie Ng",
+          "popularity": 0.1207,
+          "profile_path": null,
+          "credit_id": "67f513d27b43bdce20ad7fea",
+          "department": "Sound",
+          "job": "Dialogue Editor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2271245,
+          "known_for_department": "Production",
+          "name": "Jay Ashenfelter",
+          "original_name": "Jay Ashenfelter",
+          "popularity": 0.0478,
+          "profile_path": null,
+          "credit_id": "67f515107b43bdce20ad7ffe",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 66821,
+          "known_for_department": "Production",
+          "name": "Jon Berg",
+          "original_name": "Jon Berg",
+          "popularity": 0.5015,
+          "profile_path": null,
+          "credit_id": "67f5156ea5471a51ee998e83",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 928414,
+          "known_for_department": "Production",
+          "name": "Rachel Tenner",
+          "original_name": "Rachel Tenner",
+          "popularity": 0.3052,
+          "profile_path": "/rc7y4ymAuhItKVVok7EJxxJTTZB.jpg",
+          "credit_id": "67f531977b43bdce20ad8b39",
+          "department": "Production",
+          "job": "Casting"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2231268,
+          "known_for_department": "Crew",
+          "name": "Rosalie Button",
+          "original_name": "Rosalie Button",
+          "popularity": 0.1991,
+          "profile_path": "/bktkbore2i1mpCq66piBOu9edst.jpg",
+          "credit_id": "67f535816c3583c9759984fa",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2756181,
+          "known_for_department": "Crew",
+          "name": "Lee Chesley",
+          "original_name": "Lee Chesley",
+          "popularity": 0.1036,
+          "profile_path": "/t8Wamivhr0k0BqqwGmwLQWAlzNX.jpg",
+          "credit_id": "67f535886c3583c975998500",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2095540,
+          "known_for_department": "Crew",
+          "name": "Paddy Church",
+          "original_name": "Paddy Church",
+          "popularity": 0.0311,
+          "profile_path": null,
+          "credit_id": "67f5358e7b43bdce20ad8cba",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3623704,
+          "known_for_department": "Acting",
+          "name": "Kani Collier",
+          "original_name": "Kani Collier",
+          "popularity": 0.0715,
+          "profile_path": null,
+          "credit_id": "67f5359431c9f27299ad642a",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1915145,
+          "known_for_department": "Lighting",
+          "name": "Dorian Djoudi",
+          "original_name": "Dorian Djoudi",
+          "popularity": 0.0885,
+          "profile_path": "/njZDY76eID3Of9LaaLygOm7i749.jpg",
+          "credit_id": "67f535adddf9194387d9f5cb",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2272446,
+          "known_for_department": "Crew",
+          "name": "Kim Fardy",
+          "original_name": "Kim Fardy",
+          "popularity": 0.241,
+          "profile_path": "/qDyu4KnaWLcnAwmh7RqfNMA2Iqh.jpg",
+          "credit_id": "67f535ddeddec28b03add907",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2612360,
+          "known_for_department": "Crew",
+          "name": "Ashlee Fidow",
+          "original_name": "Ashlee Fidow",
+          "popularity": 0.4559,
+          "profile_path": "/aE0xaTS879yfvK9FCU6SPX8UuMK.jpg",
+          "credit_id": "67f536148cfccf7bafd97a7f",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 92727,
+          "known_for_department": "Acting",
+          "name": "Stephen Grey",
+          "original_name": "Stephen Grey",
+          "popularity": 0.1611,
+          "profile_path": "/ixcErfdiXJkxfVeyqs2Uay64TQc.jpg",
+          "credit_id": "67f5361a7b43bdce20ad8ce3",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1696981,
+          "known_for_department": "Crew",
+          "name": "Akihiro Haga",
+          "original_name": "Akihiro Haga",
+          "popularity": 0.1636,
+          "profile_path": null,
+          "credit_id": "67f536247b43bdce20ad8ce6",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 5357723,
+          "known_for_department": "Crew",
+          "name": "Bevan Hodder",
+          "original_name": "Bevan Hodder",
+          "popularity": 0.0143,
+          "profile_path": null,
+          "credit_id": "67f536356c3583c97599857b",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2935002,
+          "known_for_department": "Crew",
+          "name": "Nailah Johnson",
+          "original_name": "Nailah Johnson",
+          "popularity": 0.1513,
+          "profile_path": null,
+          "credit_id": "67f5366c6c3583c97599859c",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2913930,
+          "known_for_department": "Crew",
+          "name": "Jack Kingsley",
+          "original_name": "Jack Kingsley",
+          "popularity": 0.2197,
+          "profile_path": "/qIEDnM9KDb7hlPCo0qcgnRP47Hc.jpg",
+          "credit_id": "67f536726c3583c97599859f",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2255121,
+          "known_for_department": "Crew",
+          "name": "Scott Marsh",
+          "original_name": "Scott Marsh",
+          "popularity": 0.0969,
+          "profile_path": null,
+          "credit_id": "67f5367d6c3583c9759985aa",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3721504,
+          "known_for_department": "Crew",
+          "name": "Rob McKenzie",
+          "original_name": "Rob McKenzie",
+          "popularity": 0.1608,
+          "profile_path": null,
+          "credit_id": "67f53683ddf9194387d9f635",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 5357724,
+          "known_for_department": "Crew",
+          "name": "Meg Morrison",
+          "original_name": "Meg Morrison",
+          "popularity": 0.0071,
+          "profile_path": null,
+          "credit_id": "67f536957b43bdce20ad8d09",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 5357725,
+          "known_for_department": "Crew",
+          "name": "Kiara Pascale",
+          "original_name": "Kiara Pascale",
+          "popularity": 0.0256,
+          "profile_path": null,
+          "credit_id": "67f536a87b43bdce20ad8d18",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 168815,
+          "known_for_department": "Acting",
+          "name": "Matt Phillips",
+          "original_name": "Matt Phillips",
+          "popularity": 0.0911,
+          "profile_path": null,
+          "credit_id": "67f536c18cfccf7bafd97abb",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2103390,
+          "known_for_department": "Crew",
+          "name": "Anthony Rinna",
+          "original_name": "Anthony Rinna",
+          "popularity": 0.0698,
+          "profile_path": null,
+          "credit_id": "67f5370631c9f27299ad648b",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2477873,
+          "known_for_department": "Acting",
+          "name": "Briar Rose",
+          "original_name": "Briar Rose",
+          "popularity": 0.1174,
+          "profile_path": "/1h8eh6RWxwdt5JpUIz21wmpCDE.jpg",
+          "credit_id": "67f5370e31c9f27299ad6493",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1200415,
+          "known_for_department": "Acting",
+          "name": "安德鲁·斯特林",
+          "original_name": "Andrew Stehlin",
+          "popularity": 0.6273,
+          "profile_path": "/unG7mz8EPYKqK7LCZMfPzT2uDO2.jpg",
+          "credit_id": "67f5371631c9f27299ad649a",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2937753,
+          "known_for_department": "Acting",
+          "name": "Ian Streetz",
+          "original_name": "Ian Streetz",
+          "popularity": 0.1068,
+          "profile_path": null,
+          "credit_id": "67f5371c8cfccf7bafd97ae7",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3213785,
+          "known_for_department": "Acting",
+          "name": "Sharn Te Pou",
+          "original_name": "Sharn Te Pou",
+          "popularity": 0.0505,
+          "profile_path": null,
+          "credit_id": "67f537276c3583c9759985ec",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1828103,
+          "known_for_department": "Crew",
+          "name": "Mark Trotter",
+          "original_name": "Mark Trotter",
+          "popularity": 0.2339,
+          "profile_path": "/q3jSVIXy6xZxizIRE8Eqt0eHWDI.jpg",
+          "credit_id": "67f5372c6c3583c9759985ef",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3990898,
+          "known_for_department": "Crew",
+          "name": "Kyran van Asch",
+          "original_name": "Kyran van Asch",
+          "popularity": 0.0753,
+          "profile_path": null,
+          "credit_id": "67f537338cfccf7bafd97af5",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1668685,
+          "known_for_department": "Crew",
+          "name": "Jimmy Waitman",
+          "original_name": "Jimmy Waitman",
+          "popularity": 0.2379,
+          "profile_path": null,
+          "credit_id": "67f5376cddf9194387d9f6a3",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1964390,
+          "known_for_department": "Crew",
+          "name": "Gemma Weston",
+          "original_name": "Gemma Weston",
+          "popularity": 0.0286,
+          "profile_path": null,
+          "credit_id": "67f537726c3583c97599860b",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 5357731,
+          "known_for_department": "Crew",
+          "name": "Alexandra Whitley",
+          "original_name": "Alexandra Whitley",
+          "popularity": 0.0214,
+          "profile_path": null,
+          "credit_id": "67f5377f6c3583c975998622",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2240031,
+          "known_for_department": "Crew",
+          "name": "Casey Wright",
+          "original_name": "Casey Wright",
+          "popularity": 0.057,
+          "profile_path": null,
+          "credit_id": "67f537c7eddec28b03add94a",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1407515,
+          "known_for_department": "Crew",
+          "name": "こしげなみへい",
+          "original_name": "こしげなみへい",
+          "popularity": 0.2215,
+          "profile_path": null,
+          "credit_id": "67f538266c3583c97599866b",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 5357742,
+          "known_for_department": "Crew",
+          "name": "Esther Lau Young",
+          "original_name": "Esther Lau Young",
+          "popularity": 0.0536,
+          "profile_path": null,
+          "credit_id": "67f538d3240e65996899346d",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 3331041,
+          "known_for_department": "Acting",
+          "name": "BENEE",
+          "original_name": "BENEE",
+          "popularity": 0.1561,
+          "profile_path": "/76MDBVetYIowQaoF7BbpCrmgYqj.jpg",
+          "credit_id": "67f64ad2ea80d85175992d26",
+          "department": "Sound",
+          "job": "Musician"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1876362,
+          "known_for_department": "Editing",
+          "name": "Sloan Struble",
+          "original_name": "Sloan Struble",
+          "popularity": 0.0143,
+          "profile_path": null,
+          "credit_id": "67f64af01bc639566ad91060",
+          "department": "Sound",
+          "job": "Musician"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 56326,
+          "known_for_department": "Production",
+          "name": "Jill Messick",
+          "original_name": "Jill Messick",
+          "popularity": 0.3236,
+          "profile_path": "/3vwDW6kvL4b4XrPxFPDtiwRSc8r.jpg",
+          "credit_id": "67f6c07831775276d6d91c66",
+          "department": "Crew",
+          "job": "In Memory Of"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5441904,
+          "known_for_department": "Production",
+          "name": "Eleanor Calder",
+          "original_name": "Eleanor Calder",
+          "popularity": 0.0168,
+          "profile_path": null,
+          "credit_id": "682713a62944e29f340a8522",
+          "department": "Production",
+          "job": "Assistant Production Coordinator"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2836292,
+          "known_for_department": "Production",
+          "name": "Chelcie Harman",
+          "original_name": "Chelcie Harman",
+          "popularity": 0.0286,
+          "profile_path": null,
+          "credit_id": "682713bb5a0100856da18b2d",
+          "department": "Production",
+          "job": "Assistant Production Coordinator"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5441908,
+          "known_for_department": "Production",
+          "name": "Jason Pike",
+          "original_name": "Jason Pike",
+          "popularity": 0.0143,
+          "profile_path": null,
+          "credit_id": "682713f0bcb6c186156efb82",
+          "department": "Production",
+          "job": "Assistant Production Coordinator"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5441909,
+          "known_for_department": "Production",
+          "name": "Mike Daley",
+          "original_name": "Mike Daley",
+          "popularity": 0.0143,
+          "profile_path": null,
+          "credit_id": "68271408caa68780a5315dae",
+          "department": "Production",
+          "job": "Assistant Production Coordinator"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5441910,
+          "known_for_department": "Production",
+          "name": "Austin Alig",
+          "original_name": "Austin Alig",
+          "popularity": 0.0168,
+          "profile_path": null,
+          "credit_id": "68271416fc29087c4ea17a3d",
+          "department": "Production",
+          "job": "Assistant Production Coordinator"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5259919,
+          "known_for_department": "Sound",
+          "name": "Michael Donaldson",
+          "original_name": "Michael Donaldson",
+          "popularity": 0.0143,
+          "profile_path": null,
+          "credit_id": "6827145920331e815dada61f",
+          "department": "Sound",
+          "job": "Foley Recordist"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1559173,
+          "known_for_department": "Sound",
+          "name": "Callum Scott",
+          "original_name": "Callum Scott",
+          "popularity": 0.0193,
+          "profile_path": null,
+          "credit_id": "68271494936aa744732d2e54",
+          "department": "Sound",
+          "job": "Foley Recordist"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5441913,
+          "known_for_department": "Sound",
+          "name": "Katie Chilton-Towle",
+          "original_name": "Katie Chilton-Towle",
+          "popularity": 0.0168,
+          "profile_path": null,
+          "credit_id": "682714cfd130b2fc6d5a4094",
+          "department": "Sound",
+          "job": "Sound Mix Technician"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2144589,
+          "known_for_department": "Art",
+          "name": "Eliza Meldrum",
+          "original_name": "Eliza Meldrum",
+          "popularity": 0.0807,
+          "profile_path": null,
+          "credit_id": "682715b05a0100856da18b50",
+          "department": "Art",
+          "job": "Assistant Set Decoration"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1219072,
+          "known_for_department": "Art",
+          "name": "Gareth Edwards",
+          "original_name": "Gareth Edwards",
+          "popularity": 0.1981,
+          "profile_path": null,
+          "credit_id": "682715edcaa68780a5315dc7",
+          "department": "Art",
+          "job": "Assistant Set Decoration"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 67114,
+          "known_for_department": "Art",
+          "name": "David Kolff",
+          "original_name": "David Kolff",
+          "popularity": 0.1001,
+          "profile_path": null,
+          "credit_id": "68271658d332be6464a17aeb",
+          "department": "Art",
+          "job": "Leadman"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 4661969,
+          "known_for_department": "Art",
+          "name": "Tim Shortt-Smith",
+          "original_name": "Tim Shortt-Smith",
+          "popularity": 0.0143,
+          "profile_path": null,
+          "credit_id": "6827166b81fecc63912d32e5",
+          "department": "Art",
+          "job": "Set Dresser"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5441923,
+          "known_for_department": "Art",
+          "name": "Haley Williams",
+          "original_name": "Haley Williams",
+          "popularity": 0.0143,
+          "profile_path": null,
+          "credit_id": "682716c53231fb99a95a3f0e",
+          "department": "Art",
+          "job": "Set Dresser"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 4145371,
+          "known_for_department": "Art",
+          "name": "Gareth Mills",
+          "original_name": "Gareth Mills",
+          "popularity": 0.0168,
+          "profile_path": null,
+          "credit_id": "682718bdb90c27d095ada8ab",
+          "department": "Art",
+          "job": "Set Dresser"
+        }
+      ]
+    },
+    "keywords": {
+      "keywords": [
+        {
+          "id": 6054,
+          "name": "friendship"
+        },
+        {
+          "id": 9887,
+          "name": "surrealism"
+        },
+        {
+          "id": 4759,
+          "name": "exploration"
+        },
+        {
+          "id": 7939,
+          "name": "portal"
+        },
+        {
+          "id": 4781,
+          "name": "miner"
+        },
+        {
+          "id": 9713,
+          "name": "friends"
+        },
+        {
+          "id": 10349,
+          "name": "survival"
+        },
+        {
+          "id": 12377,
+          "name": "zombie"
+        },
+        {
+          "id": 41645,
+          "name": "based on video game"
+        },
+        {
+          "id": 179430,
+          "name": "aftercreditsstinger"
+        },
+        {
+          "id": 179431,
+          "name": "duringcreditsstinger"
+        },
+        {
+          "id": 189092,
+          "name": "journey"
+        },
+        {
+          "id": 209220,
+          "name": "live action and animation"
+        },
+        {
+          "id": 259376,
+          "name": "playful"
+        },
+        {
+          "id": 275041,
+          "name": "imagination"
+        },
+        {
+          "id": 285485,
+          "name": "teamwork"
+        },
+        {
+          "id": 293198,
+          "name": "fantasy"
+        },
+        {
+          "id": 333983,
+          "name": "building"
+        }
+      ]
+    },
+    "translations": {
+      "translations": [
+        {
+          "iso_3166_1": "US",
+          "iso_639_1": "en",
+          "name": "English",
+          "english_name": "English",
+          "data": {
+            "homepage": "https://www.minecraft-movie.com",
+            "overview": "Four misfits find themselves struggling with ordinary problems when they are suddenly pulled through a mysterious portal into the Overworld: a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master this world while embarking on a magical quest with an unexpected, expert crafter, Steve.",
+            "runtime": 101,
+            "tagline": "Be there and be square.",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "KR",
+          "iso_639_1": "ko",
+          "name": "한국어/조선말",
+          "english_name": "Korean",
+          "data": {
+            "homepage": "https://www.minecraft.net/ko-kr/minecraft-movie",
+            "overview": "왕년의 게임 챔피언이었지만 지금은 폐업 직전의 게임샵 주인이 된 '개릿'과 엄마를 잃고 낯선 동네로 이사 온 남매 '헨리'와 '나탈리' 그리고 그들을 돕는 부동산 중개업자 '던'. 이들은 ‘개릿’이 수집한 ‘큐브’가 내뿜는 신비한 빛을 따라가다 어느 폐광 속에 열린 포털을 통해 미지의 공간으로 빨려들어간다. 산과 나무, 구름과 달, 심지어 꿀벌까지 상상하는 모든 것이 네모난 현실이 되는 이곳은 바로 ‘오버월드’. 일찍이 이 세계로 넘어와 완벽하게 적응한 ‘스티브’를 만난 네 사람은 지하세계 ‘네더’를 다스리는 마법사 ‘말고샤’의 침공으로 ‘오버월드’가 위험에 빠졌다는 사실을 알게 된다. 현실 세계로 돌아가기 위해서는 일단 살아남아야 하는 법! 다섯 명의 ‘동글이’들은 ‘오버월드’를 구하기 위해 힘을 합치게 되는데…",
+            "runtime": 101,
+            "tagline": "",
+            "title": "A MINECRAFT MOVIE 마인크래프트 무비"
+          }
+        },
+        {
+          "iso_3166_1": "FR",
+          "iso_639_1": "fr",
+          "name": "Français",
+          "english_name": "French",
+          "data": {
+            "homepage": "",
+            "overview": "Quatre mésadaptés traversent soudainement un portail mystérieux menant à la Surface : un étrange univers cubique qui évolue grâce à l’imagination. Pour rentrer chez eux, ils se lancent dans une quête magique avec Steve, un surprenant fabricateur expert. L’aventure les poussera à faire preuve d’audace et à renouer avec les qualités qui donnent à chacun une créativité unique.",
+            "runtime": 101,
+            "tagline": "Un monde carré, des héros à bloc.",
+            "title": "Minecraft, le film"
+          }
+        },
+        {
+          "iso_3166_1": "VN",
+          "iso_639_1": "vi",
+          "name": "Tiếng Việt",
+          "english_name": "Vietnamese",
+          "data": {
+            "homepage": "",
+            "overview": "Chào mừng bạn đến với thế giới của Minecraft, nơi sự sáng tạo không chỉ giúp bạn chế tạo mà còn là yếu tố quan trọng để sống sót! Bốn kẻ lạc lõng - Garrett “The Garbage Man” Garrison (Momoa), Henry (Hansen), Natalie (Myers) và Dawn (Brooks) - bất ngờ gặp rắc rối khi họ bị kéo qua cánh cửa bí ẩn dẫn đến Overworld: một thế giới kỳ lạ được tạo bởi những khối lập phương và phát triển nhờ vào trí tưởng tượng. Để trở về nhà, họ cần phải làm chủ được thế giới này (và bảo vệ nó khỏi những thực thể tà ác như Piglins và Thây Ma) trong khi dấn thân vào chuyến phiêu lưu màu nhiệm với một thợ chế tạo chuyên nghiệp và khó lường - Steve (Black). Chuyến hành trình này sẽ thách thức sự can đảm của cả năm người, thúc đẩy họ tìm lại với những phẩm chất làm nên sự đặc biệt của riêng mình,… đồng thời là những kỹ năng cần thiết để trở lại với thế giới thật.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Một bộ phim Minecraft"
+          }
+        },
+        {
+          "iso_3166_1": "MX",
+          "iso_639_1": "es",
+          "name": "Español",
+          "english_name": "Spanish",
+          "data": {
+            "homepage": "",
+            "overview": "Henry, Natalie, Dawn y Garrett, cuatro inadaptados, son arrastrados a un misterioso portal hacia el extraño y cúbico mundo principal. Para volver a casa, tendrán que dominar este mundo con la ayuda de un artesano inesperado y experto llamado, Steve, mientras se embarcan en una búsqueda mágica.",
+            "runtime": 101,
+            "tagline": "Estar allí y ser cuadrado.",
+            "title": "Una película de Minecraft"
+          }
+        },
+        {
+          "iso_3166_1": "CZ",
+          "iso_639_1": "cs",
+          "name": "Český",
+          "english_name": "Czech",
+          "data": {
+            "homepage": "",
+            "overview": "Vítejte ve světě zvaném Minecraft, kde je vaše schopnost tvořit a vyrábět klíčem k přežití! Nesourodá banda čtyř přátel, mezi které patří Popelář, Henry, Natalie a Dawn, se potýká s všednodenními problémy, když tu je to zčistajasna protáhne záhadným portálem do Nadsvěta: bizarní, krychloidní a zázračné říše, která žije z ryzí představivosti. Aby se parta dostala domů, bude muset pochopit pravidla nového světa (a uchránit ho před rušivými elementy, mezi které patří Vepříci a Zombíci) a podniknout magickou pouť ve společnosti nečekaného experta na craftování, Steva. Hravé dobrodružství přinutí všech pět přátel projevit kuráž a předvést jedinečné tvůrčí schopnosti… což je i to, co by jim mělo pomoci uspět i ve skutečném světě.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Minecraft film"
+          }
+        },
+        {
+          "iso_3166_1": "SK",
+          "iso_639_1": "sk",
+          "name": "Slovenčina",
+          "english_name": "Slovak",
+          "data": {
+            "homepage": "",
+            "overview": "Vitajte vo svete Minecraftu, kde vám kreativita nielen pomáha tvoriť, ale je nevyhnutná pre prežitie! Garrett „Smetiar“ Garrison, Henry, Natalie a Dawn sú vtiahnutí cez tajomný portál do Sveta: bizarnej a kockatej krajiny zázrakov, ktorá prekvitá fantáziou. Aby sa dostali späť domov, budú musieť ovládnuť tento svet (a ochrániť ho aj pred zlými vecami, ako sú prasiatka a zombíci), a zároveň sa pustiť do magického hľadania s nekonvenčným, ale skúseným remeselníkom Steveom.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Minecraft vo Filme"
+          }
+        },
+        {
+          "iso_3166_1": "UA",
+          "iso_639_1": "uk",
+          "name": "Український",
+          "english_name": "Ukrainian",
+          "data": {
+            "homepage": "",
+            "overview": "Ласкаво просимо до світу Minecraft! Творчість тут допомагає не лише майструвати, а й необхідна для існування! Ґаррет «Сміттяр» Ґаррісон, Генрі, Наталі та Дон – це четверо невдах, які вирішують свої буденні проблеми. Та одного дня, пройшовши таємничий портал, вони потрапляють у Верхній світ – химерну кубічну країну чудес, яка процвітає завдяки уяві. Щоб повернутися додому, їм доведеться пізнати цей світ (і захистити його від злих істот, таких як Піґліни та Зомбі). Для цього герої вирушать у магічний квест з новим знайомим, досвідченим майстром Стівом. Спільна пригода випробує усіх п'ятьох на сміливість та подарує можливість віднайти унікальні навички, які роблять кожного з них неповторним творцем... саме ті навички, які їм потрібні для успіху в реальному світі.",
+            "runtime": 0,
+            "tagline": "У цьому світі творчість є ключем до виживання.",
+            "title": "Minecraft: Фільм"
+          }
+        },
+        {
+          "iso_3166_1": "BG",
+          "iso_639_1": "bg",
+          "name": "български език",
+          "english_name": "Bulgarian",
+          "data": {
+            "homepage": "",
+            "overview": "Четирима неудачници – Гарет „Боклукчията“ Гарисън, Хенри, Натали и Доун, се опитват да се справят с обичайните си проблеми, докато един ден не преминават през мистериозен портал към Горния свят: странна кубична вселена отвъд въображението. За да се върнат вкъщи, те ще трябва да усвоят тънкостите на този свят (и да го защитят от зли същества), впускайки се в магическа мисия, заедно с експертния изобретател Стив. Това приключение ще предизвика и петимата да бъдат смели и ще им помогне да преоткрият уникалните си творчески способности, които ги отличават от останалите – най-важното качество, което им е необходимо, за да успеят и в истинския свят.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Minecraft: Филмът"
+          }
+        },
+        {
+          "iso_3166_1": "BR",
+          "iso_639_1": "pt",
+          "name": "Português",
+          "english_name": "Portuguese",
+          "data": {
+            "homepage": "https://www.umfilmeminecraft.com.br/",
+            "overview": "Quatro desajustados enfrentam problemas comuns do dia a dia quando, de repente, são sugados por um portal misterioso para o Overworld: uma terra fascinante e cúbica, movida pela imaginação. Para voltarem para casa, eles precisarão dominar esse novo mundo enquanto embarcam em uma jornada mágica ao lado de um crafter experiente e inesperado: Steve.",
+            "runtime": 101,
+            "tagline": "Prepare-se para a maior aventura já construída.",
+            "title": "Um Filme Minecraft"
+          }
+        },
+        {
+          "iso_3166_1": "ES",
+          "iso_639_1": "es",
+          "name": "Español",
+          "english_name": "Spanish",
+          "data": {
+            "homepage": "https://www.warnerbros.es/peliculas/una-pelicula-de-minecraft",
+            "overview": "Cuatro inadaptados se encuentran luchando con problemas ordinarios cuando de repente se ven arrastrados a través de un misterioso portal al Mundo Exterior: un extraño país de las maravillas cúbico que se nutre de la imaginación. Para volver a casa, tendrán que dominar este mundo mientras se embarcan en una búsqueda mágica con un inesperado experto artesano, Steve.",
+            "runtime": 0,
+            "tagline": "Estar allí y ser cuadrado.",
+            "title": "Una película de Minecraft"
+          }
+        },
+        {
+          "iso_3166_1": "TR",
+          "iso_639_1": "tr",
+          "name": "Türkçe",
+          "english_name": "Turkish",
+          "data": {
+            "homepage": "",
+            "overview": "Dört uyumsuz, gizemli bir portaldan aniden Üst Dünya'ya çekildiklerinde kendilerini sıradan sorunlarla boğuşurken bulurlar: hayal gücüyle beslenen tuhaf, kübik bir harikalar diyarı. Eve geri dönmek için, beklenmedik, uzman bir zanaatkar olan Steve ile büyülü bir göreve çıkarken bu dünyada ustalaşmaları gerekecektir.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Bir Minecraft Filmi"
+          }
+        },
+        {
+          "iso_3166_1": "IT",
+          "iso_639_1": "it",
+          "name": "Italiano",
+          "english_name": "Italian",
+          "data": {
+            "homepage": "",
+            "overview": "Benvenuti nel mondo di Minecraft, dove la creatività non serve solo a costruire, ma è essenziale per la sopravvivenza! Quattro improvvisati avventurieri – Garrett “The Garbage Man” Garrison (Momoa), Henry (Hansen), Natalie (Myers) e Dawn (Brooks) – sono alle prese con problemi quotidiani quando vengono improvvisamente trascinati, attraverso un misterioso portale, nell’Overworld: un bizzarro paese delle meraviglie cubico dove regna l’immaginazione. Per far ritorno a casa, dovranno imparare a padroneggiare questo mondo (e proteggerlo dalla minaccia di Piglins e Zombie) mentre intraprendono una magica missione affiancati da un esperto e inaspettato ‘costruttore’ del posto, Steve (Black). L’avventura metterà alla prova tutti e cinque, sfidandoli a essere coraggiosi e a ritrovare le qualità che rendono ciascuno di loro unico e creativo… le stesse abilità di cui hanno bisogno per tornare a vivere nel mondo reale.",
+            "runtime": 101,
+            "tagline": "Sii presente e sii quadrato.",
+            "title": "Un film Minecraft"
+          }
+        },
+        {
+          "iso_3166_1": "IL",
+          "iso_639_1": "he",
+          "name": "עִבְרִית",
+          "english_name": "Hebrew",
+          "data": {
+            "homepage": "",
+            "overview": "ארבעה מוזרים - גרט \"איש הזבל\", הנרי, נטלי ודון - מוצאים את עצמם נאבקים עם בעיות יומיומיות כשהם נשאבים לפתע דרך שער מסתורי אל עולם פלאי קובייתי שפועל דרך דמיון.  כדי לחזור הביתה, הם יצטרכו ללמוד על העולם הזה, ולהגן עליו גם מדברים רעים. תוך כדי יציאה למסע קסום עם אומן מיומן ומפתיע, סטיב.  יחד, ההרפתקה שלהם תדרוש מכולם להיות נועזים ולהתחבר שוב לתכונות שהופכות כל אחד מהם למיוחד, היכולות שהם זקוקים להן כדי לחזור אל העולם האמיתי.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "מיינקראפט: הסרט"
+          }
+        },
+        {
+          "iso_3166_1": "PL",
+          "iso_639_1": "pl",
+          "name": "Polski",
+          "english_name": "Polish",
+          "data": {
+            "homepage": "",
+            "overview": "Czwórka outsiderów zmaga się ze zwykłymi problemami, gdy nagle zostają wciągnięci przez tajemniczy portal do Overworld: dziwacznej, sześciennej krainy czarów, która rozkwita dzięki wyobraźni. Aby wrócić do domu, będą musieli opanować ten świat, wyruszając na magiczną wyprawę z niespodziewanym, doświadczonym rzemieślnikiem, Stevem.",
+            "runtime": 105,
+            "tagline": "Wpadnij i stwórz co chcesz.",
+            "title": "Minecraft. Film"
+          }
+        },
+        {
+          "iso_3166_1": "CN",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "homepage": "",
+            "overview": "影片讲述四个“异类”——盖瑞特·“拾荒人”·加里森（杰森·莫玛 饰）、亨利（塞巴斯蒂安·尤金·汉森 饰）、娜塔莉（艾玛·迈尔斯 饰）和道恩（丹妮尔·布鲁克斯 饰）——正为生活中的琐事苦恼时，突然被拉入一个神秘的传送门，进入了“主世界”：一个依赖想象力的奇异方块乐园。为了回到现实世界，他们不仅要掌握这个世界的规则，还要在不速之客——资深工匠史蒂夫（杰克·布莱克 饰）的帮助下，迈上一场魔幻探险之旅。探险之旅充满挑战，五人必须要勇敢面对，发掘各自独特的创造力。创造力，正是他们重返现实世界的关键技能。",
+            "runtime": 0,
+            "tagline": "创造无界 快乐有方",
+            "title": "我的世界大电影"
+          }
+        },
+        {
+          "iso_3166_1": "JP",
+          "iso_639_1": "ja",
+          "name": "日本語",
+          "english_name": "Japanese",
+          "data": {
+            "homepage": "https://wwws.warnerbros.co.jp/minecraft-movie/",
+            "overview": "謎のキューブ”の力で、マイクラワールドに転送された4人の仲間たち。そこは考えたモノを何でも作れる不思議な世界・・・だけど、夜になると四角いモンスターたちが襲いかかり、世界はとんでもないことに!? スティーブの力を借りて、4人はこの冒険をどうサバイバルするのか!?",
+            "runtime": 0,
+            "tagline": "",
+            "title": "マインクラフト／ザ・ムービー"
+          }
+        },
+        {
+          "iso_3166_1": "HK",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "homepage": "",
+            "overview": "歡迎來到 MINECRAFT 的世界。  “垃圾佬” 加里森、亨利、妮坦莉、黛恩，四個小人物突然被拉到神秘入口，闖進一個充滿奇想的古怪立方體奇境之中。他們必須掌控這個世界，讓它遠離邪惡事物；同時與專業工匠史提夫聯盟，展開神奇探索冒險之旅！五人面對各種挑戰，各自獨特的創造力重新被激發，目的只有一個：重返現實世界⋯⋯",
+            "runtime": 101,
+            "tagline": "",
+            "title": "MINECRAFT：我的世界大電影"
+          }
+        },
+        {
+          "iso_3166_1": "TH",
+          "iso_639_1": "th",
+          "name": "ภาษาไทย",
+          "english_name": "Thai",
+          "data": {
+            "homepage": "",
+            "overview": "มังกรเอนเดอร์ผู้ชั่วร้ายกำลังนำมาซึ่งความหายนะ ทำให้สาวน้อยคนหนึ่งกับกลุ่มนักผจญภัยต้องออกเดินทางเพื่อช่วยเหลือ โอเวอร์เวิลด์ เอาไว้ให้ได้",
+            "runtime": 0,
+            "tagline": "",
+            "title": "ไมน์คราฟต์ มูฟวี่"
+          }
+        },
+        {
+          "iso_3166_1": "HR",
+          "iso_639_1": "hr",
+          "name": "Hrvatski",
+          "english_name": "Croatian",
+          "data": {
+            "homepage": "",
+            "overview": "Četvero autsajdera - Garrett The Garbage Man Garrison, Henry, Natalie i Dawn; dok se suočavaju s običnim problemima, bivaju uvučeni kroz tajanstveni portal u čudesan Overworld. Ovaj neobični, kubični svijet prepun mašte, donosi im neočekivane izazove, od učenja kako ovladati novim okruženjem do obrane od neprijatelja poput Piglina i Zombija. Na svom putu susreću rudara i graditelja Stevea, i zajedno kreću na epsku avanturu koja će ih naučiti kako iskoristiti vlastitu kreativnost za prevladavanje svih prepreka, kako u svijetu Minecrafta, tako i u stvarnom životu.",
+            "runtime": 0,
+            "tagline": "Blokiramo sve i svašta. To je ono što radimo.",
+            "title": "Minecraft film"
+          }
+        },
+        {
+          "iso_3166_1": "FI",
+          "iso_639_1": "fi",
+          "name": "suomi",
+          "english_name": "Finnish",
+          "data": {
+            "homepage": "",
+            "overview": "Neljä ulkopuoliseksi itsensä tuntevaa tyyppiä—Garrett The Garbage Man Garrison, Henry, Natalie ja Dawn — painiskelevat arkisten pulmien parissa, kun heidät yhtäkkiä tempaistaan mystisen portaalin kautta Ylämaailmaan: omituiseen kuutiomaahan, jossa mielikuvitus pääsee valloilleen. Selviytyäkseen takaisin kotiin heidän tulee oppia hallitsemaan tätä maailmaa (ja lisäksi suojeltava sitä sellaisilta pahiksilta kuin possut ja zombit) heidän suunnatessaan maagiselle seikkailulle yllättävän mestarirakentajan Steven kanssa. Matkan varrella viisikon on yhdessä löydettävä itsestään rohkeutta ja otettava käyttöön omat ainutlaatuiset luovat kykynsä... siis juuri ne taidot, joita he tarvitsevat menestyäkseen oikeassakin maailmassa.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Minecraft-elokuva"
+          }
+        },
+        {
+          "iso_3166_1": "HU",
+          "iso_639_1": "hu",
+          "name": "Magyar",
+          "english_name": "Hungarian",
+          "data": {
+            "homepage": "",
+            "overview": "Négy kívülálló – Garrett Garrison (Jason Momoa), Henry (Sebastian Eugene Hansen), Natalie (Emma Myers) és Dawn (Danielle Brooks) – kiszakad a mindennapi életéből, amikor egy titokzatos portálon keresztül egy különös világba kerülnek: A Felsővilágba, egy furcsa, kocka alakú földre, ahol a fantázia uralkodik.\r Ahhoz, hogy visszataláljanak a valóságba, el kell sajátítaniuk ezt a szokatlan világot, és meg kell védeniük magukat az olyan fenyegetésekkel szemben, mint a zombik és a megvadult disznók. Segítségükre van Steve (Jack Black), egy tapasztalt mesterember, aki elkíséri őket az útjukon. Miközben együtt győzik le a kihívásokat, rájönnek, hogy éppen a kreatív képességek, amelyek jellemzik őket, a siker kulcsa – mind a túlvilágon, mind a saját világukban.",
+            "runtime": 0,
+            "tagline": "Légy ott és légy négyszögletű.",
+            "title": "Egy Minecraft film"
+          }
+        },
+        {
+          "iso_3166_1": "RU",
+          "iso_639_1": "ru",
+          "name": "Pусский",
+          "english_name": "Russian",
+          "data": {
+            "homepage": "",
+            "overview": "Четыре неудачника — Гарретт «Мусорщик» Гаррисон, Генри, Натали и Дон, сталкиваются с обычными проблемами, когда их внезапно затягивает через таинственный портал в Верхний мир: странную кубическую страну чудес, которая процветает благодаря воображению. Чтобы вернуться домой, им придётся освоить этот мир, отправляясь в магическое путешествие с неожиданным экспертом-ремесленником Стивом. Это приключение бросит вызов всем пятерым, заставит их проявить смелость и восстановить качества, которые делают каждого из них уникальным творческим человеком.",
+            "runtime": 0,
+            "tagline": "«Дайте Волю Своему Воображению»",
+            "title": "Minecraft в Кино"
+          }
+        },
+        {
+          "iso_3166_1": "TW",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "homepage": "",
+            "overview": "四位邊緣人「垃圾人」蓋瑞森(傑森摩莫亞 飾)、亨利(賽巴斯汀尤金漢森 飾)、娜塔莉(愛瑪梅耶斯 飾)和譚恩(丹妮爾布魯克斯 飾)，突然被拉進一個神祕入口，進入充滿想像力又古怪的方塊仙境「主世界」中。為了回家，他們必須設法掌控這個世界，並與專業蓋房人史蒂夫(傑克布萊克 飾)，並一同踏上神奇的探索之旅。此趟冒險旅程將挑戰他們五人的勇氣，並重新激發他們每個人具有獨特創造力的特質，而這些正是他們返回現實世界成長茁壯所需的技能。",
+            "runtime": 0,
+            "tagline": "當個創世神",
+            "title": "MINECRAFT麥塊電影"
+          }
+        },
+        {
+          "iso_3166_1": "NO",
+          "iso_639_1": "no",
+          "name": "Norsk",
+          "english_name": "Norwegian",
+          "data": {
+            "homepage": "",
+            "overview": "Fire snålinger sliter alle med helt vanlige problemer når de plutselig blir dratt gjennom en mystisk portal inn i Oververdenen: et bisarrt, kubisk eventyrland som drives av fantasi. For å komme seg hjem igjen må de forstå denne verden mens de legger ut på et magisk oppdrag sammen med eksperthåndverkeren Steve.",
+            "runtime": 100,
+            "tagline": "",
+            "title": "En Minecraft-film"
+          }
+        },
+        {
+          "iso_3166_1": "SI",
+          "iso_639_1": "sl",
+          "name": "Slovenščina",
+          "english_name": "Slovenian",
+          "data": {
+            "homepage": "",
+            "overview": "Pripravi se na ustvarjanje svojega sveta! V filmu po priljubljeni računalniški igri se zlobni zmaj Ender odpravi na pot uničenja, to pa spodbudi nepričakovano skupino pustolovcev z mladim dekletom na čelu, da se podajo na misijo reševanja Nadsveta.",
+            "runtime": 0,
+            "tagline": "Bodi tam in bodi kvadraten.",
+            "title": "Minecraft Film"
+          }
+        },
+        {
+          "iso_3166_1": "CH",
+          "iso_639_1": "de",
+          "name": "Deutsch",
+          "english_name": "German",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Ein Minecraft Film"
+          }
+        },
+        {
+          "iso_3166_1": "EE",
+          "iso_639_1": "et",
+          "name": "Eesti",
+          "english_name": "Estonian",
+          "data": {
+            "homepage": "",
+            "overview": "Tere tulemast Minecrafti maailma, kus loovusest sõltub elus püsimine. Neli heidikut - Garrett “Prügimees” Garrison (Momoa), Henry (Hansen), Natalie (Myers) ja Dawn (Brooks) - vaevlevad tavapäraste probleemide küüsis, kui nad kistakse salapärast portaali kaudu pealmaailma, mis on kujutlusvõimest elatuv veider plokkidest imedemaa. Koju pääsemiseks tuleb neil selles maailmas oskusi näidata (ja kaitsta seda kurjade olendite, näiteks piglinite ja zombide eest) ning neile on sel maagilisel teekonnal abiks meisterehitaja Steve (Black). Seiklus nõuab kõigilt viielt julgust ja nad peavad leidma endas omadused, mis neid ainulaadselt loominguliseks muudavad. Samu oskusi vajavad nad ka päris maailmas edu saavutamiseks.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Minecrafti film"
+          }
+        },
+        {
+          "iso_3166_1": "DE",
+          "iso_639_1": "de",
+          "name": "Deutsch",
+          "english_name": "German",
+          "data": {
+            "homepage": "https://www.warnerbros.de/de-at/filme/minecraft",
+            "overview": "Vier Außenseiter werden durch ein geheimnisvolles Portal gezogen – mitten in ein skurriles kubisches Wunderland, das von der Vorstellungskraft lebt. Um wieder nach Hause zu kommen, begeben sie sich mit dem Handwerker Steve auf eine magische Reise. Es wird ein Abenteuer, das von allen Mut verlangt – auch den, sich wieder mit den Eigenschaften zu verbinden, die jeden von ihnen kreativ machen.",
+            "runtime": 101,
+            "tagline": "",
+            "title": "Ein Minecraft Film"
+          }
+        },
+        {
+          "iso_3166_1": "BY",
+          "iso_639_1": "be",
+          "name": "беларуская мова",
+          "english_name": "Belarusian",
+          "data": {
+            "homepage": "",
+            "overview": "Чатыры няўдачнікі змагаюцца са звычайнымі праблемамі, калі іх раптам цягне праз таямнічы партал у Надземны свет: дзіўную кубічную краіну цудаў, якая квітнее ўяўленнем. Каб вярнуцца дадому, ім давядзецца авалодаць гэтым светам, адпраўляючыся ў магічныя пошукі з нечаканым дасведчаным майстрам Стывам.",
+            "runtime": 101,
+            "tagline": "",
+            "title": "Майнкрафт: фільм"
+          }
+        },
+        {
+          "iso_3166_1": "ES",
+          "iso_639_1": "ca",
+          "name": "Català",
+          "english_name": "Catalan",
+          "data": {
+            "homepage": "",
+            "overview": "Quatre inadaptats es troben lluitant amb problemes mundans quan de sobte es veuen arrossegats a través d'un misteriós portal cap a l'Overworld: una terra de meravelles estranya i cúbica que prospera amb la imaginació. Per tornar a casa, hauran de dominar aquest món mentre s'embarquen en una recerca màgica amb un artesà expert i inesperat, l'Steve.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Una pel·lícula de Minecraft"
+          }
+        },
+        {
+          "iso_3166_1": "LT",
+          "iso_639_1": "lt",
+          "name": "Lietuvių",
+          "english_name": "Lithuanian",
+          "data": {
+            "homepage": "",
+            "overview": "Kokie skirtingi bebūtų, Garetą, Aušrą, Nataliją ir Henrį vienija ta pati savybė: ketveriukei sunkiai sekasi pritapti realiajame pasaulyje. Jie turbūt nebūtų pritapę ir šiame – jei ne Styvas, vidinį Minecraft pasaulį atradęs jau labai seniai. Prieš daugybę metų supratęs, kad čia reikia tiesiog duoti valią savo vaizduotei, Styvas tampa savotišku vedliu keturiems atvykėliams ir naujieji pažįstami kartu leidžiasi į nepamirštamą, nuotykių kupiną kelionę. Jos metu, kad čia išgyventų, kiekvienas penketuko narys bus priverstas atrasti savo vidinę stiprybę, kuri, kaip paaiškės vėliau, yra lygiai tokia pat naudinga ir tikrajame pasaulyje.",
+            "runtime": 101,
+            "tagline": "",
+            "title": "Minecraft filmas"
+          }
+        },
+        {
+          "iso_3166_1": "SE",
+          "iso_639_1": "sv",
+          "name": "svenska",
+          "english_name": "Swedish",
+          "data": {
+            "homepage": "",
+            "overview": "Välkommen till Minecraftvärlden, där kreativitet inte bara hjälper dig att skapa, utan är avgörande för din överlevnad! Fyra udda typer, Garrett \"The Garbage Man\" Garrison, Henry, Natalie och Dawn, kämpar med vardagliga problem när de plötsligt dras in genom en mystisk portal till Övervärlden: ett bisarrt, kubiskt underland som blomstrar av fantasi. För att ta sig tillbaka hem måste de bemästra denna värld, och samtidigt skydda den från onda saker som Piglins och Zombies. De ger sig ut på ett magiskt uppdrag tillsammans med en oväntad byggexpert, Steve. Detta äventyr kommer att utmana dem alla fem till att vara modiga och samtidigt hitta tillbaka till sina unika kreativa egenskaper – egenskaper de behöver för att trivas i den verkliga världen.",
+            "runtime": 0,
+            "tagline": "",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "NL",
+          "iso_639_1": "nl",
+          "name": "Nederlands",
+          "english_name": "Dutch",
+          "data": {
+            "homepage": "",
+            "overview": "Welkom in de wereld van Minecraft, waar creativiteit niet alleen van pas komt, maar van essentieel belang is om te overleven. Vier buitenbeentjes met ieder hun eigen problemen – Garrett “de Vuilnisman” Garrison, Henry, Natalie en Dawn – belanden plotseling via een mysterieus portaal in de Overworld: een bizar kubistisch wonderland waar alles draait om verbeelding. Om terug te keren, moeten ze zich in die nieuwe wereld zien te redden en strijden tegen kwade wezens als Piglins en Zombies. Met onverwachtse hulp van expert Steve gaan ze op een magische missie. De vijf avonturiers zullen moedig moeten zijn en hun eigen unieke creatieve kwaliteiten ontdekken – vaardigheden die ze ook nodig hebben in het echte leven.",
+            "runtime": 101,
+            "tagline": "",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "CA",
+          "iso_639_1": "fr",
+          "name": "Français",
+          "english_name": "French",
+          "data": {
+            "homepage": "",
+            "overview": "Un orphelin est projeté avec sa soeur, un ex-champion de jeux vidéo et une agente immobilière dans un univers virtuel enchanté, menacé de disparition.",
+            "runtime": 101,
+            "tagline": "Soyez là et soyez franc.",
+            "title": "Un film Minecraft"
+          }
+        },
+        {
+          "iso_3166_1": "GR",
+          "iso_639_1": "el",
+          "name": "ελληνικά",
+          "english_name": "Greek",
+          "data": {
+            "homepage": "",
+            "overview": "Καλώς ήλθατε στον κόσμο του Minecraft, όπου η δημιουργικότητα βοηθάει, όχι μόνο να χτίσετε, αλλά και να επιβιώσετε! Τέσσερεις περιθωριακοί τύποι - ο «σκουπιδιάρης» Γκάρετ Γκάρισον, ο Χένρι, η Νάταλι και η Ντον - παλεύουν με την καθημερινότητα όταν μία μυστική πύλη τους μεταφέρει ξαφνικά στον Επάνω Κόσμο: μία αλλόκοτη, μαγική χώρα όπου όλα τα αντικείμενα είναι τετραγωνισμένα και όπου η φαντασία ανθίζει. Για να επιστρέψουν, πρέπει να μάθουν αυτόν τον κόσμο απέξω και ανακατωτά (αλλά και να τον προστατέψουν από κακά πράγματα όπως τα Piglins και τα Zombies), ενώ κινούν για μία μαγική αναζήτηση παρέα με τον ειδήμονα κατασκευαστή Στιβ. Η περιπέτεια αυτή θα τους ενθαρρύνει να είναι τολμηροί και να ανακαλύψουν τις ικανότητες που κάνουν τον καθένα τους δημιουργικό, γιατί αυτές είναι που χρειάζονται για να εξελιχθούν και στον πραγματικό κόσμο.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Μια Ταινία Minecraft"
+          }
+        },
+        {
+          "iso_3166_1": "AZ",
+          "iso_639_1": "az",
+          "name": "Azərbaycan",
+          "english_name": "Azerbaijani",
+          "data": {
+            "homepage": "",
+            "overview": "Dörd autsayder sirli portal vasitəsilə qəribə, kubik möcüzələr ölkəsinə düşür. Evə qayıtmaq üçün sehrli sınaqdan keçməli və Stiv adlı ustayla birlikdə hərəkət etməlidirlər.",
+            "runtime": 120,
+            "tagline": "",
+            "title": "Minecraft kinoda"
+          }
+        },
+        {
+          "iso_3166_1": "IR",
+          "iso_639_1": "fa",
+          "name": "فارسی",
+          "english_name": "Persian",
+          "data": {
+            "homepage": "",
+            "overview": "داستان یک قهرمان جسور در دنیایی ساخته از بلوک‌های ماین‌کرفت که باید در میانه نبردهای اکشن و و چالش‌های خطرناک، با دشمنان قدرتمند مبارزه کند تا بقا و آرامش را برای دوستانش تضمین نماید. با استفاده از خلاقیت و مهارت‌های ویژه، آیا این قهرمان می‌تواند دنیای خود را نجات دهد؟",
+            "runtime": 0,
+            "tagline": "",
+            "title": "ماینکرافت"
+          }
+        },
+        {
+          "iso_3166_1": "LV",
+          "iso_639_1": "lv",
+          "name": "Latviešu",
+          "english_name": "Latvian",
+          "data": {
+            "homepage": "",
+            "overview": "Laipni lūgti “Minecraft” pasaulē, kur radošums ne tikai palīdz jums veidot, bet tas ir arī būtiski izdzīvošanai! Četri atkritēji – Gerets “Grabažu vīrs” Gerisons (Momoa), Henrijs (Hansens), Natālija (Maiersa) un Dona (Bruksa) – nespēj tikt galā ar parastām problēmām, kad pēkšņi viņus izrauj cauri noslēpumainam portālam Augšpasaulē – dīvainā, kubiskā brīnumzemē, kuru veido iztēle.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Minecraft filma"
+          }
+        },
+        {
+          "iso_3166_1": "GE",
+          "iso_639_1": "ka",
+          "name": "ქართული",
+          "english_name": "Georgian",
+          "data": {
+            "homepage": "",
+            "overview": "ბოროტი დრაკონი ენდერი - ყველაფრის განადგურებას იწყებს, რაც ახალგაზრდა გოგონას და მის თავგადასავლებისთვის არც ისე შესაფერის მეგობრებს ჯადოსნური სამყაროს გადასარჩენად ბრძოლას აიძულებს...",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Minecraft კინოში"
+          }
+        },
+        {
+          "iso_3166_1": "DK",
+          "iso_639_1": "da",
+          "name": "Dansk",
+          "english_name": "Danish",
+          "data": {
+            "homepage": "",
+            "overview": "Garrett, Henry, Natalie og Dawn føres uventet ind i det digitale Minecraft-univers. For at vende tilbage til deres egen verden må de navigere gennem farer, bygge strategisk og samarbejde på tværs af forskelligheder.",
+            "runtime": 101,
+            "tagline": "",
+            "title": "En Minecraft film"
+          }
+        },
+        {
+          "iso_3166_1": "PT",
+          "iso_639_1": "pt",
+          "name": "Português",
+          "english_name": "Portuguese",
+          "data": {
+            "homepage": "",
+            "overview": "Quatro desenquadrados debatem-se com problemas do quotidiano quando são repentinamente transportados através de um portal misterioso para a Superfície: um mundo cúbico e bizarro que vive da imaginação. Para voltarem para casa, terão de conquistar este mundo (e protegê-lo de criaturas maléficas como Piglins e Zombies) enquanto embarcam numa missão mágica com um especialista inesperado em construção, Steve. Juntos, a sua aventura desafiará os cinco a serem audaciosos e a reconectar-se com as qualidades que tornam cada um deles criativo… as mesmas habilidades que precisam para prosperar no mundo real.",
+            "runtime": 101,
+            "tagline": "",
+            "title": "Um Filme Minecraft"
+          }
+        },
+        {
+          "iso_3166_1": "RO",
+          "iso_639_1": "ro",
+          "name": "Română",
+          "english_name": "Romanian",
+          "data": {
+            "homepage": "",
+            "overview": "Bine ați venit în lumea Minecraft, unde creativitatea nu doar te ajută să creezi, ci este esențială pentru supraviețuire! Patru rebeli - Garrett „The Garbage Man” Garrison, Henry, Natalie și Dawn - se luptă cu probleme obișnuite atunci când sunt subit atrași printr-un portal misterios în Overworld: o țară cubică si bizară care se hrănește cu imaginație. Pentru a se întoarce acasă, ei vor trebui să stăpânească această lume (și să o protejeze și de lucruri rele precum Piglini și Zombi) în timp ce se îmbarcă într-o căutare magică alături de un expert creator neașteptat, Steve. Aventura lor îi va provoca pe toți cei cinci să fie curajoși și să își recapete calitățile care îl face pe fiecare dintre ei creativ în mod unic... exact abilitățile de care au nevoie pentru a reveni în lumea reală.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Minecraft: Filmul"
+          }
+        },
+        {
+          "iso_3166_1": "SA",
+          "iso_639_1": "ar",
+          "name": "العربية",
+          "english_name": "Arabic",
+          "data": {
+            "homepage": "",
+            "overview": "ينطلق التنين الشرير (إيندر) في طريقه لتدمير كل شيء، فيدفع الأمر فتاة صغيرة وفريقها من المغامرين للتعاون معًا في سبيل إنقاذ العالم من الدمار المحتمل.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "فيلم ماينكرافت"
+          }
+        },
+        {
+          "iso_3166_1": "RS",
+          "iso_639_1": "sr",
+          "name": "Srpski",
+          "english_name": "Serbian",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "MK",
+          "iso_639_1": "mk",
+          "name": "",
+          "english_name": "Macedonian",
+          "data": {
+            "homepage": "",
+            "overview": "Четворица чудаци се вовлечени низ портал во коцкест свет што цвета со вообразба, немајќи друг избор освен да го совладаат светот додека тргнуваат во волшебна потрага со неочекуван, стручен мајстор по име Стив. Заедно, нивното патешествие ќе ги предизвика сите петмина да бидат смели и повторно да се поврзат со квалитетите што ги прави секој од нив исклучително творечки — токму тие вештини што им се потребни за да напредуваат во вистинскиот свет.",
+            "runtime": 0,
+            "tagline": "Блокираме сѐ и сешто. Тоа е она што го правиме.",
+            "title": "Мајнкрафт: Филм"
+          }
+        }
+      ]
+    },
+    "external_ids": {
+      "imdb_id": "tt3566834",
+      "wikidata_id": "Q40083273",
+      "facebook_id": "AMinecraftMovie",
+      "instagram_id": "aminecraftmovie",
+      "twitter_id": "AMinecraftMovie"
+    },
+    "semantic_tags": [
+      "genre:家庭",
+      "genre:喜剧",
+      "genre:冒险",
+      "genre:奇幻",
+      "decade:2020s",
+      "country:us",
+      "country:se",
+      "lang:en",
+      "series:1461530",
+      "theme:zombie"
+    ]
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/5z314zU4iraY1ZhbIvgfpbMRVA7.jpg",
+    "belongs_to_collection": {
+      "id": 1565,
+      "name": "惊变28天（系列）",
+      "poster_path": "/4AeGz1Jwnq6ky2kfLT95Tm8nEiw.jpg",
+      "backdrop_path": "/bpn1vynevsKLwAMRikY1L6cb18p.jpg"
+    },
+    "budget": 75000000,
+    "genres": [
+      {
+        "id": 27,
+        "name": "恐怖"
+      },
+      {
+        "id": 53,
+        "name": "惊悚"
+      },
+      {
+        "id": 878,
+        "name": "科幻"
+      }
+    ],
+    "homepage": "",
+    "id": 1100988,
+    "imdb_id": "tt10548174",
+    "origin_country": [
+      "GB"
+    ],
+    "original_language": "en",
+    "original_title": "28 Years Later",
+    "overview": "",
+    "popularity": 23.457,
+    "poster_path": "/c74TdFM1eiT3UEBwivbG1YocZvU.jpg",
+    "production_companies": [
+      {
+        "id": 284,
+        "logo_path": "/6a26if3IKy7mlrQuGHHVp6ufQtF.png",
+        "name": "DNA Films",
+        "origin_country": "GB"
+      },
+      {
+        "id": 8286,
+        "logo_path": null,
+        "name": "Decibel Films",
+        "origin_country": "GB"
+      },
+      {
+        "id": 5,
+        "logo_path": "/71BqEFAF4V3qjjMPCpLuyJFB9A.png",
+        "name": "Columbia Pictures",
+        "origin_country": "US"
+      },
+      {
+        "id": 7281,
+        "logo_path": "/iI7qdR1OFPo0U41BlpKBLD3xesh.png",
+        "name": "BFI",
+        "origin_country": "GB"
+      }
+    ],
+    "production_countries": [
+      {
+        "iso_3166_1": "GB",
+        "name": "United Kingdom"
+      },
+      {
+        "iso_3166_1": "US",
+        "name": "United States of America"
+      }
+    ],
+    "release_date": "2025-06-18",
+    "revenue": 0,
+    "runtime": 115,
+    "spoken_languages": [
+      {
+        "english_name": "English",
+        "iso_639_1": "en",
+        "name": "English"
+      }
+    ],
+    "status": "Post Production",
+    "tagline": "",
+    "title": "惊变28年",
+    "video": false,
+    "vote_average": 0,
+    "vote_count": 0,
+    "credits": {
+      "cast": [
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1388593,
+          "known_for_department": "Acting",
+          "name": "朱迪·科默",
+          "original_name": "Jodie Comer",
+          "popularity": 3.8346,
+          "profile_path": "/iOP2tHyxtPiUzIBHzxxehBy9Khu.jpg",
+          "cast_id": 10,
+          "character": "Isla",
+          "credit_id": "6616793b66a0d3017d3085d9",
+          "order": 0
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 27428,
+          "known_for_department": "Acting",
+          "name": "亚伦·泰勒-约翰逊",
+          "original_name": "Aaron Taylor-Johnson",
+          "popularity": 5.8807,
+          "profile_path": "/pFtHhih2XEaFaD3qOFyQW6q83br.jpg",
+          "cast_id": 13,
+          "character": "Jamie",
+          "credit_id": "662974bf2e2b2c01876b8f9b",
+          "order": 1
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 85065,
+          "known_for_department": "Acting",
+          "name": "杰克·奥康奈尔",
+          "original_name": "Jack O'Connell",
+          "popularity": 5.8542,
+          "profile_path": "/tCzR4clrIkbkijuJBYsNoEuwRDa.jpg",
+          "cast_id": 14,
+          "character": "Jimmy Crystal",
+          "credit_id": "663a6e58613b291b9d9a907e",
+          "order": 2
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 5107934,
+          "known_for_department": "Acting",
+          "name": "Alfie Williams",
+          "original_name": "Alfie Williams",
+          "popularity": 0.2314,
+          "profile_path": "/wqfyAhZH6uCu5J4THsz2gJxsizB.jpg",
+          "cast_id": 54,
+          "character": "Spike",
+          "credit_id": "67582d3a0adb637add930ad7",
+          "order": 3
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 5469,
+          "known_for_department": "Acting",
+          "name": "拉尔夫·费因斯",
+          "original_name": "Ralph Fiennes",
+          "popularity": 4.4141,
+          "profile_path": "/u29BOqiV5GCQ8k8WUJM50i9xlBf.jpg",
+          "cast_id": 12,
+          "character": "Dr. Ian Kelson",
+          "credit_id": "6616794cfac50201620b453b",
+          "order": 4
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1672504,
+          "known_for_department": "Acting",
+          "name": "艾琳·凯利曼",
+          "original_name": "Erin Kellyman",
+          "popularity": 0.9088,
+          "profile_path": "/f7XXomAaSRxE3h5NT0sAlcQTjPL.jpg",
+          "cast_id": 19,
+          "character": "Jimmy Ink",
+          "credit_id": "6667662d0a4e0068a1d017b3",
+          "order": 5
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1747159,
+          "known_for_department": "Acting",
+          "name": "Geoffrey Newland",
+          "original_name": "Geoffrey Newland",
+          "popularity": 0.3148,
+          "profile_path": "/49G0jk4I31yxkTSPeTKHiWOT4rj.jpg",
+          "cast_id": 52,
+          "character": "Anthony",
+          "credit_id": "6752f4f5871a42c9c2453421",
+          "order": 6
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 563560,
+          "known_for_department": "Acting",
+          "name": "Gordon Alexander",
+          "original_name": "Gordon Alexander",
+          "popularity": 0.7917,
+          "profile_path": "/d7Z5Rbctu6Jj9WmJJgrMHk8mhK6.jpg",
+          "cast_id": 65,
+          "character": "Jonno",
+          "credit_id": "679d7f7f176fdb2244cb2fed",
+          "order": 7
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1585961,
+          "known_for_department": "Acting",
+          "name": "Kim Allan",
+          "original_name": "Kim Allan",
+          "popularity": 0.2958,
+          "profile_path": "/lvFLHDgJvepgOZCCmH7ZruNPogq.jpg",
+          "cast_id": 60,
+          "character": "Jimmy's Aunt",
+          "credit_id": "6780f8c5ee84fa4def7b0dbb",
+          "order": 8
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1762444,
+          "known_for_department": "Acting",
+          "name": "Joe Blakemore",
+          "original_name": "Joe Blakemore",
+          "popularity": 0.2554,
+          "profile_path": "/aOQvPN905z41pW2fgiAuEH9IIih.jpg",
+          "cast_id": 51,
+          "character": "Dave",
+          "credit_id": "6752f48ab1eaa5c891dafc2c",
+          "order": 9
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1344320,
+          "known_for_department": "Acting",
+          "name": "Chi Lewis-Parry",
+          "original_name": "Chi Lewis-Parry",
+          "popularity": 0.4742,
+          "profile_path": "/eS5mcqDMYtwHJ8lnwXkIjkz88WO.jpg",
+          "cast_id": 46,
+          "character": "Samson",
+          "credit_id": "671e70f56d6b705dc871cb3e",
+          "order": 10
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 6970,
+          "known_for_department": "Acting",
+          "name": "Christopher Fulford",
+          "original_name": "Christopher Fulford",
+          "popularity": 0.6498,
+          "profile_path": "/2n73aEyiU4fJprC2vHIf0M7YJ62.jpg",
+          "cast_id": 68,
+          "character": "Sam",
+          "credit_id": "679d80b0ebb9962403261fbf",
+          "order": 11
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2290611,
+          "known_for_department": "Acting",
+          "name": "艾玛·莱尔德",
+          "original_name": "Emma Laird",
+          "popularity": 0.8205,
+          "profile_path": "/lcsyb7KZUcg8LRBkiCJScYD2rYT.jpg",
+          "cast_id": 66,
+          "character": "Jimmima",
+          "credit_id": "679d7fcd176fdb2244cb300c",
+          "order": 12
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1694984,
+          "known_for_department": "Acting",
+          "name": "Sandy Batchelor",
+          "original_name": "Sandy Batchelor",
+          "popularity": 0.2111,
+          "profile_path": "/8EhALIbWq6LGba8vz3eNKj0ZeBF.jpg",
+          "cast_id": 69,
+          "character": "",
+          "credit_id": "679d80f6f0f9dbdba6953538",
+          "order": 13
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 3122023,
+          "known_for_department": "Acting",
+          "name": "Celi Crossland",
+          "original_name": "Celi Crossland",
+          "popularity": 0.2298,
+          "profile_path": "/cBVbqPOAOH8zxl4BbGTJM3RNYGK.jpg",
+          "cast_id": 49,
+          "character": "",
+          "credit_id": "6752f3f0ab6cc3a4c8fc8d50",
+          "order": 14
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 997644,
+          "known_for_department": "Acting",
+          "name": "艾德文·瑞丁",
+          "original_name": "Edvin Ryding",
+          "popularity": 2.0588,
+          "profile_path": "/95mT0rw94k1MhrPRzdnEkokVXHQ.jpg",
+          "cast_id": 20,
+          "character": "E. Sundqvist",
+          "credit_id": "668d7e429a8f1e48c9c5f7c7",
+          "order": 15
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3916722,
+          "known_for_department": "Acting",
+          "name": "Ghazi Al Ruffai",
+          "original_name": "Ghazi Al Ruffai",
+          "popularity": 0.1356,
+          "profile_path": "/iaoN4uHwbLmVmt4ESxeardbJmRG.jpg",
+          "cast_id": 70,
+          "character": "",
+          "credit_id": "67c61aed48ee9015ab7aa271",
+          "order": 16
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5363693,
+          "known_for_department": "Acting",
+          "name": "Kat Kitchener",
+          "original_name": "Kat Kitchener",
+          "popularity": 0.0538,
+          "profile_path": null,
+          "cast_id": 73,
+          "character": "Slow Low",
+          "credit_id": "6802d1bf5570cba9e1acfa2c",
+          "order": 17
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 4502181,
+          "known_for_department": "Acting",
+          "name": "Robert Rhodes",
+          "original_name": "Robert Rhodes",
+          "popularity": 0.1324,
+          "profile_path": "/d3fUGvffYdI6pxmEID3O5a3rPZk.jpg",
+          "cast_id": 74,
+          "character": "",
+          "credit_id": "6802d20ef39c730125d9b182",
+          "order": 18
+        }
+      ],
+      "crew": [
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2036,
+          "known_for_department": "Writing",
+          "name": "亚历克斯·加兰",
+          "original_name": "Alex Garland",
+          "popularity": 1.4554,
+          "profile_path": "/qSWzYnDw68xm4i5xprH9BwQ6q25.jpg",
+          "credit_id": "659f34fb7776f000ee2dbe38",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2034,
+          "known_for_department": "Directing",
+          "name": "丹尼·博伊尔",
+          "original_name": "Danny Boyle",
+          "popularity": 1.4108,
+          "profile_path": "/b5qQpFHmgNyvV1t81ou17Jt2fRj.jpg",
+          "credit_id": "659f34f0d6590b014a28e4d5",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 4474842,
+          "known_for_department": "Production",
+          "name": "Peter Rice",
+          "original_name": "Peter Rice",
+          "popularity": 0.1029,
+          "profile_path": "/eSsmBBf59xWmn1oAKfXtf3F1vz6.jpg",
+          "credit_id": "659f50f325a53601303038e7",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2035,
+          "known_for_department": "Production",
+          "name": "安德鲁·麦克唐纳",
+          "original_name": "Andrew Macdonald",
+          "popularity": 0.2426,
+          "profile_path": "/j6C8BwvLK0R0rxYZI8sCU8KPkrd.jpg",
+          "credit_id": "659f50eb25a536012d303934",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2037,
+          "known_for_department": "Acting",
+          "name": "基利安·墨菲",
+          "original_name": "Cillian Murphy",
+          "popularity": 7.0526,
+          "profile_path": "/llkbyWKwpfowZ6C8peBjIV9jj99.jpg",
+          "credit_id": "65bab3aae9da69017bf66b6e",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2071,
+          "known_for_department": "Art",
+          "name": "Mark Tildesley",
+          "original_name": "Mark Tildesley",
+          "popularity": 0.3317,
+          "profile_path": "/xhO34UiM3TpkxvxaLzaPeTh3twU.jpg",
+          "credit_id": "65c2383d9369a201639cb731",
+          "department": "Art",
+          "job": "Production Design"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2034,
+          "known_for_department": "Directing",
+          "name": "丹尼·博伊尔",
+          "original_name": "Danny Boyle",
+          "popularity": 1.4108,
+          "profile_path": "/b5qQpFHmgNyvV1t81ou17Jt2fRj.jpg",
+          "credit_id": "64131684323eba010b92e48e",
+          "department": "Directing",
+          "job": "Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2036,
+          "known_for_department": "Writing",
+          "name": "亚历克斯·加兰",
+          "original_name": "Alex Garland",
+          "popularity": 1.4554,
+          "profile_path": "/qSWzYnDw68xm4i5xprH9BwQ6q25.jpg",
+          "credit_id": "663d4846914d573978a3ceb4",
+          "department": "Writing",
+          "job": "Writer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 17599,
+          "known_for_department": "Production",
+          "name": "Bernard Bellew",
+          "original_name": "Bernard Bellew",
+          "popularity": 0.3711,
+          "profile_path": null,
+          "credit_id": "6646b6ee4a1447d6659f84bc",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1570,
+          "known_for_department": "Camera",
+          "name": "Anthony Dod Mantle",
+          "original_name": "Anthony Dod Mantle",
+          "popularity": 0.3641,
+          "profile_path": "/lxrdzWHzefBPYTllaYDkj3bQBEi.jpg",
+          "credit_id": "664e0752781a6a5f8a18914b",
+          "department": "Camera",
+          "job": "Director of Photography"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1504849,
+          "known_for_department": "Production",
+          "name": "Rebecca Farhall",
+          "original_name": "Rebecca Farhall",
+          "popularity": 0.1468,
+          "profile_path": null,
+          "credit_id": "66a964a3dd9d9856e65c515d",
+          "department": "Production",
+          "job": "Casting"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2044038,
+          "known_for_department": "Directing",
+          "name": "Lucy Hatherley",
+          "original_name": "Lucy Hatherley",
+          "popularity": 0.0393,
+          "profile_path": null,
+          "credit_id": "66a965ae4a724c5b61284689",
+          "department": "Directing",
+          "job": "Script Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 101095,
+          "known_for_department": "Directing",
+          "name": "Richard Styles",
+          "original_name": "Richard Styles",
+          "popularity": 0.1834,
+          "profile_path": null,
+          "credit_id": "66a9657f68efed09eb87e9f6",
+          "department": "Directing",
+          "job": "First Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3226141,
+          "known_for_department": "Art",
+          "name": "Ewa Galak",
+          "original_name": "Ewa Galak",
+          "popularity": 0.0579,
+          "profile_path": null,
+          "credit_id": "66a96502f5379e508cbfcc74",
+          "department": "Art",
+          "job": "Art Direction"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1922284,
+          "known_for_department": "Production",
+          "name": "Bryony Chaplin",
+          "original_name": "Bryony Chaplin",
+          "popularity": 0.0589,
+          "profile_path": null,
+          "credit_id": "66a965645ac70f39be284640",
+          "department": "Production",
+          "job": "Unit Production Manager"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2073,
+          "known_for_department": "Production",
+          "name": "Gail Stevens",
+          "original_name": "Gail Stevens",
+          "popularity": 0.2571,
+          "profile_path": null,
+          "credit_id": "66a964b478440332f94e30e8",
+          "department": "Production",
+          "job": "Casting"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1266574,
+          "known_for_department": "Art",
+          "name": "Naomi Moore",
+          "original_name": "Naomi Moore",
+          "popularity": 0.1226,
+          "profile_path": null,
+          "credit_id": "66a96539d792dd03d4e0b75d",
+          "department": "Art",
+          "job": "Set Decoration"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2810060,
+          "known_for_department": "Crew",
+          "name": "Nick Wilkinson",
+          "original_name": "Nick Wilkinson",
+          "popularity": 0.3246,
+          "profile_path": null,
+          "credit_id": "66a964e55d7f317f7687e9f5",
+          "department": "Art",
+          "job": "Art Direction"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1114,
+          "known_for_department": "Editing",
+          "name": "约翰·哈里斯",
+          "original_name": "Jon Harris",
+          "popularity": 0.2445,
+          "profile_path": "/danhYU2edlYBsCFfNhGVkFNB7yG.jpg",
+          "credit_id": "66a96496ee1366b7d8b43748",
+          "department": "Editing",
+          "job": "Editor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 15909,
+          "known_for_department": "Crew",
+          "name": "Sam Conway",
+          "original_name": "Sam Conway",
+          "popularity": 0.2532,
+          "profile_path": null,
+          "credit_id": "66a96596f52e43262a02e172",
+          "department": "Visual Effects",
+          "job": "Special Effects Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1548953,
+          "known_for_department": "Production",
+          "name": "Dan Clay",
+          "original_name": "Dan Clay",
+          "popularity": 0.1431,
+          "profile_path": null,
+          "credit_id": "66c8fd6e5afb98924d949559",
+          "department": "Art",
+          "job": "Art Direction"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3239934,
+          "known_for_department": "Costume & Make-Up",
+          "name": "Beau Townshend",
+          "original_name": "Beau Townshend",
+          "popularity": 0.0658,
+          "profile_path": null,
+          "credit_id": "66c8feb114ada4ca41ea9d53",
+          "department": "Crew",
+          "job": "Special Effects Technician"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1705818,
+          "known_for_department": "Editing",
+          "name": "Gareth Pugh",
+          "original_name": "Gareth Pugh",
+          "popularity": 0.0338,
+          "profile_path": null,
+          "credit_id": "66c8fdb2642afc8025b10279",
+          "department": "Costume & Make-Up",
+          "job": "Costume Design"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2160715,
+          "known_for_department": "Directing",
+          "name": "Emily Perowne",
+          "original_name": "Emily Perowne",
+          "popularity": 0.1013,
+          "profile_path": null,
+          "credit_id": "66c8fe23909d50d74e2d318e",
+          "department": "Directing",
+          "job": "Second Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2309109,
+          "known_for_department": "Sound",
+          "name": "Barry Coxhead",
+          "original_name": "Barry Coxhead",
+          "popularity": 0.0666,
+          "profile_path": null,
+          "credit_id": "66c8fe4bfa12b644f08f136b",
+          "department": "Sound",
+          "job": "Boom Operator"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1394721,
+          "known_for_department": "Visual Effects",
+          "name": "Adam Gascoyne",
+          "original_name": "Adam Gascoyne",
+          "popularity": 0.1633,
+          "profile_path": null,
+          "credit_id": "66c8fee54dc5ca0d0cb101c1",
+          "department": "Visual Effects",
+          "job": "Visual Effects Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 3167147,
+          "known_for_department": "Directing",
+          "name": "Sarah Mulberge",
+          "original_name": "Sarah Mulberge",
+          "popularity": 0.158,
+          "profile_path": null,
+          "credit_id": "66c8fe34825e4e3e6bead6b2",
+          "department": "Directing",
+          "job": "Third Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1942773,
+          "known_for_department": "Sound",
+          "name": "Denise Yarde",
+          "original_name": "Denise Yarde",
+          "popularity": 0.1099,
+          "profile_path": null,
+          "credit_id": "66c8fe714badea611bea9b6e",
+          "department": "Sound",
+          "job": "Sound Mixer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2591913,
+          "known_for_department": "Crew",
+          "name": "Alastair Vardy",
+          "original_name": "Alastair Vardy",
+          "popularity": 0.0982,
+          "profile_path": null,
+          "credit_id": "66c8fed08dcaad8722949573",
+          "department": "Crew",
+          "job": "Special Effects Assistant"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1376804,
+          "known_for_department": "Visual Effects",
+          "name": "Clare Norman",
+          "original_name": "Clare Norman",
+          "popularity": 0.0627,
+          "profile_path": null,
+          "credit_id": "66c8ff026480acefe3ead9b4",
+          "department": "Visual Effects",
+          "job": "Visual Effects Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 141358,
+          "known_for_department": "Crew",
+          "name": "Julian Spencer",
+          "original_name": "Julian Spencer",
+          "popularity": 0.4321,
+          "profile_path": null,
+          "credit_id": "66c8ff16d34dcbb9b91d4295",
+          "department": "Crew",
+          "job": "Stunt Coordinator"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2362083,
+          "known_for_department": "Sound",
+          "name": "Simon Astall",
+          "original_name": "Simon Astall",
+          "popularity": 0.0957,
+          "profile_path": null,
+          "credit_id": "66c8ff2ff9187ef686b306a7",
+          "department": "Sound",
+          "job": "Music Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1665616,
+          "known_for_department": "Art",
+          "name": "Matt Curtis",
+          "original_name": "Matt Curtis",
+          "popularity": 0.7691,
+          "profile_path": "/ijoE4C3RQvaLqaDSxkDiEgpQXNv.jpg",
+          "credit_id": "67254a9ce7b37c73c69d3852",
+          "department": "Art",
+          "job": "Main Title Designer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1341735,
+          "known_for_department": "Sound",
+          "name": "Johnnie Burn",
+          "original_name": "Johnnie Burn",
+          "popularity": 0.2358,
+          "profile_path": "/tet4Lh1uEKKwwI18gfAlx5vONLb.jpg",
+          "credit_id": "67554c7a520ce3b50f2f55ee",
+          "department": "Sound",
+          "job": "Sound Designer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2034,
+          "known_for_department": "Directing",
+          "name": "丹尼·博伊尔",
+          "original_name": "Danny Boyle",
+          "popularity": 1.4108,
+          "profile_path": "/b5qQpFHmgNyvV1t81ou17Jt2fRj.jpg",
+          "credit_id": "6766ec6e330bce6ec99108f1",
+          "department": "Writing",
+          "job": "Writer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 17794,
+          "known_for_department": "Art",
+          "name": "Paul Ghirardani",
+          "original_name": "Paul Ghirardani",
+          "popularity": 0.2398,
+          "profile_path": "/1wHyjI72QBjF3oE0RavWfHTz7YJ.jpg",
+          "credit_id": "676dfcec3dff0de99b6163e5",
+          "department": "Art",
+          "job": "Supervising Art Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 40810,
+          "known_for_department": "Sound",
+          "name": "格伦·弗里曼托",
+          "original_name": "Glenn Freemantle",
+          "popularity": 0.6783,
+          "profile_path": "/qbPg2w1AoSVrbHJbQUbs9P5jD8y.jpg",
+          "credit_id": "6775abee194b5816d7614182",
+          "department": "Sound",
+          "job": "Supervising Sound Editor"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1419168,
+          "known_for_department": "Costume & Make-Up",
+          "name": "Sally Alcott",
+          "original_name": "Sally Alcott",
+          "popularity": 0.093,
+          "profile_path": null,
+          "credit_id": "6796b696013209f8918f3dc9",
+          "department": "Costume & Make-Up",
+          "job": "Special Effects Makeup Artist"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 23774,
+          "known_for_department": "Costume & Make-Up",
+          "name": "Jo Grover",
+          "original_name": "Jo Grover",
+          "popularity": 0.107,
+          "profile_path": null,
+          "credit_id": "6796b6c809c252e3ab23b9ba",
+          "department": "Costume & Make-Up",
+          "job": "Special Effects Makeup Artist"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 4309265,
+          "known_for_department": "Costume & Make-Up",
+          "name": "Jodie Llewellyn",
+          "original_name": "Jodie Llewellyn",
+          "popularity": 0.0764,
+          "profile_path": null,
+          "credit_id": "6796b6e809c252e3ab23b9cc",
+          "department": "Costume & Make-Up",
+          "job": "Makeup Artist"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 4452151,
+          "known_for_department": "Sound",
+          "name": "Maximilian Behrens",
+          "original_name": "Maximilian Behrens",
+          "popularity": 0.0906,
+          "profile_path": null,
+          "credit_id": "67e5a7082580eef1e8006223",
+          "department": "Sound",
+          "job": "Sound Editor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1644255,
+          "known_for_department": "Visual Effects",
+          "name": "Paul O'Hara",
+          "original_name": "Paul O'Hara",
+          "popularity": 0.1253,
+          "profile_path": null,
+          "credit_id": "680143aa2e8958f0f9994fdd",
+          "department": "Visual Effects",
+          "job": "Visual Effects Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1405198,
+          "known_for_department": "Lighting",
+          "name": "David Sinfield",
+          "original_name": "David Sinfield",
+          "popularity": 0.3036,
+          "profile_path": null,
+          "credit_id": "6802f6e3b113ff8723d9ba38",
+          "department": "Lighting",
+          "job": "Chief Lighting Technician"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3425097,
+          "known_for_department": "Sound",
+          "name": "Alloysious Massaquoi",
+          "original_name": "Alloysious Massaquoi",
+          "popularity": 0.0882,
+          "profile_path": "/8V5w3ll3t7oGaZe7hbH3btveByp.jpg",
+          "credit_id": "6828ea87f5604cf01e9e2df8",
+          "department": "Sound",
+          "job": "Original Music Composer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3425099,
+          "known_for_department": "Acting",
+          "name": "Kayus Bankole",
+          "original_name": "Kayus Bankole",
+          "popularity": 0.053,
+          "profile_path": null,
+          "credit_id": "6828ea9059e04d4dba648605",
+          "department": "Sound",
+          "job": "Original Music Composer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 4140175,
+          "known_for_department": "Acting",
+          "name": "'G' Hastings",
+          "original_name": "'G' Hastings",
+          "popularity": 0.0368,
+          "profile_path": null,
+          "credit_id": "6828ea99e1b02296f58bff7c",
+          "department": "Sound",
+          "job": "Original Music Composer"
+        }
+      ]
+    },
+    "keywords": {
+      "keywords": [
+        {
+          "id": 4458,
+          "name": "post-apocalyptic future"
+        },
+        {
+          "id": 9663,
+          "name": "sequel"
+        },
+        {
+          "id": 12377,
+          "name": "zombie"
+        },
+        {
+          "id": 186565,
+          "name": "zombie apocalypse"
+        }
+      ]
+    },
+    "translations": {
+      "translations": [
+        {
+          "iso_3166_1": "US",
+          "iso_639_1": "en",
+          "name": "English",
+          "english_name": "English",
+          "data": {
+            "homepage": "https://28yearslater.movie",
+            "overview": "Twenty-eight years since the rage virus escaped a biological weapons laboratory, now, still in a ruthlessly enforced quarantine, some have found ways to exist amidst the infected. One such group lives on a small island connected to the mainland by a single, heavily-defended causeway. When one member departs on a mission into the dark heart of the mainland, he discovers secrets, wonders, and horrors that have mutated not only the infected but other survivors as well.",
+            "runtime": 115,
+            "tagline": "In 28 days it began. In 28 weeks it spread. In 28 years it evolved.",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "DE",
+          "iso_639_1": "de",
+          "name": "Deutsch",
+          "english_name": "German",
+          "data": {
+            "homepage": "https://www.sonypictures.de/filme/28-years-later",
+            "overview": "Es ist fast drei Jahrzehnte her, dass das Rage-Virus aus einem biologischen Waffenlabor entkommen ist, und noch immer gilt eine strikt verordnete Quarantäne. Einige Menschen haben Wege gefunden, inmitten der Infizierten zu existieren. Eine solche Gruppe von Überlebenden lebt auf einer kleinen Insel, die durch einen einzigen, stark verteidigten Damm mit dem Festland verbunden ist. Als einer der Bewohner die Insel verlässt, um in das dunkle Innere des Festlandes vorzudringen, entdeckt er Geheimnisse, Wunder und Schrecken und dass nicht nur die Infizierten, sondern auch die Überlebenden mutiert sind.",
+            "runtime": 0,
+            "tagline": "",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "KR",
+          "iso_639_1": "ko",
+          "name": "한국어/조선말",
+          "english_name": "Korean",
+          "data": {
+            "homepage": "",
+            "overview": "28년 전 생물학 무기 연구소에서 세상을 재앙으로 몰아넣은 바이러스가 유출된 후, 일부 생존자들이 모여 철저히 격리된 채 살아가는 섬 홀리 아일랜드. 이곳에서 태어나 한 번도 섬 밖을 나가 본 적 없는 소년 스파이크는 어느 날 섬을 떠나 본토에 발을 들이게 되고 난생처음 바이러스에 잠식된 세상을 마주하게 된다. 변이된 바이러스는 10,228일의 시간 동안 감염자들을 더욱 충격적으로 진화시켰고 스파이크는 그 실체를 목격하며 극강의 공포에 휩싸이게 되는데...",
+            "runtime": 0,
+            "tagline": "28일 후 시작, 28주 후 전염, 28년 후 진화... 태어나 처음 마주한 바이러스에 감염된 세상, 충격을 넘어선 극강의 공포가 밀려온다!",
+            "title": "28년 후"
+          }
+        },
+        {
+          "iso_3166_1": "CZ",
+          "iso_639_1": "cs",
+          "name": "Český",
+          "english_name": "Czech",
+          "data": {
+            "homepage": "",
+            "overview": "Od chvíle, kdy virus zuřivosti unikl z laboratoře na výrobu biologických zbraní, uplynuly už téměř tři desítky let a nyní, stále v nemilosrdně vynucené karanténě, si někteří našli způsob, jak mezi nakaženými existovat. Jedna taková skupina přeživších žije na malém ostrově spojeném s pevninou jedinou, silně chráněnou hrází. Když jeden ze skupiny opustí ostrov a vydá se na misi do temného srdce pevniny, objeví tajemství, zázraky a hrůzy, které zmutovaly nejen nakažené, ale i ostatní přeživší.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "28 let poté"
+          }
+        },
+        {
+          "iso_3166_1": "GE",
+          "iso_639_1": "ka",
+          "name": "ქართული",
+          "english_name": "Georgian",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "28 წლის შემდეგ"
+          }
+        },
+        {
+          "iso_3166_1": "VN",
+          "iso_639_1": "vi",
+          "name": "Tiếng Việt",
+          "english_name": "Vietnamese",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "28 ngày khởi nguồn. 28 tuần lây lan. 28 năm xâm chiếm.",
+            "title": "28 Năm Sau: Hậu Tận Thế"
+          }
+        },
+        {
+          "iso_3166_1": "FR",
+          "iso_639_1": "fr",
+          "name": "Français",
+          "english_name": "French",
+          "data": {
+            "homepage": "",
+            "overview": "Cela fait près de trente ans que le Virus de la Fureur s’est échappé d’un laboratoire d’armement biologique. Alors qu’un confinement très strict a été mis en place, certains ont trouvé le moyen de survivre parmi les personnes infectées. C’est ainsi qu’une communauté de rescapés s’est réfugiée sur une petite île seulement reliée au continent par une route, placée sous haute protection. Lorsque l’un des habitants de l’île est envoyé en mission sur le continent, il découvre que non seulement les infectés ont muté, mais que d’autres survivants aussi, dans un contexte à la fois mystérieux et terrifiant…",
+            "runtime": 0,
+            "tagline": "Rien n'a changé avec le temps",
+            "title": "28 Ans plus tard"
+          }
+        },
+        {
+          "iso_3166_1": "TR",
+          "iso_639_1": "tr",
+          "name": "Türkçe",
+          "english_name": "Turkish",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "28 Günde başladı. 28 Haftada yayıldı. 28 Yılda evrimleşti.",
+            "title": "28 Yıl Sonra"
+          }
+        },
+        {
+          "iso_3166_1": "ES",
+          "iso_639_1": "es",
+          "name": "Español",
+          "english_name": "Spanish",
+          "data": {
+            "homepage": "",
+            "overview": "Años transcurridos tras los sucesos de \"28 semanas después\", el virus de la ira ha regresado y un grupo de supervivientes debe sobrevivir en un mundo asolado por hordas de infectados. Rodada con un iPhone 15 Pro Max y con la ayuda de numerosos accesorios especializados.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "28 años después"
+          }
+        },
+        {
+          "iso_3166_1": "GR",
+          "iso_639_1": "el",
+          "name": "ελληνικά",
+          "english_name": "Greek",
+          "data": {
+            "homepage": "",
+            "overview": "Το τρίτο μέρος του franchise 28 Days Later και το πρώτο μιας νέας τριλογίας, διαδραματίζεται σε έναν μετα-αποκαλυπτικό κόσμο και ακολουθεί το ταξίδι επιβίωσης και ανακάλυψης ενός νεαρού αγοριού.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "28 Χρόνια Μετά"
+          }
+        },
+        {
+          "iso_3166_1": "CN",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "惊变28年"
+          }
+        },
+        {
+          "iso_3166_1": "TH",
+          "iso_639_1": "th",
+          "name": "ภาษาไทย",
+          "english_name": "Thai",
+          "data": {
+            "homepage": "",
+            "overview": "เป็นเวลาเกือบสามทศวรรษแล้ว นับตั้งแต่เชื้อไวรัสหายนะหลุดออกมาจากห้องทดลองอาวุธชีวภาพ และในตอนนี้ แม้จะยังคงมีการกักกันอย่างเข้มงวดอยจะยังคงอยู่ บางคนก็หาวิธีเอาชีวิตรอดท่ามกลางเหล่าผู้ติดเชื้อได้ โดยหนึ่งในกลุ่มผู้รอดชีวิตนี้อาศัยอยู่บนเกาะเล็ก ๆ ที่เชื่อมต่อกับแผ่นดินใหญ่ด้วยสะพานเส้นเดียวที่ได้รับการป้องกันอย่างแน่นหนา แต่เมื่อหนึ่งในสมาชิกของกลุ่มออกจากเกาะเพื่อปฏิบัติภารกิจในส่วนลึกของแผ่นดินใหญ่ เขาก็ได้ค้นพบความลับ ความมหัศจรรย์ และความสยองขวัญที่ไม่ได้เปลี่ยนแปลงแค่ผู้ติดเชื้อ แต่รวมถึงผู้รอดชีวิตคนอื่น ๆ ด้วย",
+            "runtime": 0,
+            "tagline": "",
+            "title": "28 ปีให้หลัง เชื้อเขมือบคน"
+          }
+        },
+        {
+          "iso_3166_1": "IT",
+          "iso_639_1": "it",
+          "name": "Italiano",
+          "english_name": "Italian",
+          "data": {
+            "homepage": "",
+            "overview": "Sono passati quasi tre decenni da quando il virus della rabbia è fuoriuscito da un laboratorio di armi biologiche e ora, ancora in una quarantena forzata e brutale, alcuni sono riusciti a sopravvivere in mezzo agli infetti. Un gruppo di sopravvissuti vive su una piccola isola collegata alla terraferma da un'unica strada rialzata ed estremamente protetta. Quando uno di questi  lascia l'isola per una missione diretta nel profondo della terraferma, scoprirà segreti, meraviglie e orrori che hanno mutato non solo gli infetti ma anche gli altri sopravvissuti.",
+            "runtime": 0,
+            "tagline": "In 28 giorni si è manifestato. In 28 settimane si è diffuso. In 28 anni si è evoluto.",
+            "title": "28 anni dopo"
+          }
+        },
+        {
+          "iso_3166_1": "PL",
+          "iso_639_1": "pl",
+          "name": "Polski",
+          "english_name": "Polish",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "28 lat później"
+          }
+        },
+        {
+          "iso_3166_1": "HK",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "28年後"
+          }
+        },
+        {
+          "iso_3166_1": "MX",
+          "iso_639_1": "es",
+          "name": "Español",
+          "english_name": "Spanish",
+          "data": {
+            "homepage": "",
+            "overview": "Casi tres décadas desde que el virus de la ira escapó de un laboratorio de armas biológicas. Uno de los supervivientes abandona la pequeña isla en una misión hacía el oscuro corazón del continente, descubriendo secretos, maravillas y horrores que han mutado no sólo a los infectados, sino también a otros supervivientes.",
+            "runtime": 0,
+            "tagline": "En 28 días empezó. En 28 semanas se extendió. En 28 años evolucionó.",
+            "title": "Exterminio: La evolución"
+          }
+        },
+        {
+          "iso_3166_1": "IL",
+          "iso_639_1": "he",
+          "name": "עִבְרִית",
+          "english_name": "Hebrew",
+          "data": {
+            "homepage": "",
+            "overview": "עברו כמעט שלושה עשורים מאז שהתפשט וירוס הזעם ממעבדת הנשק הביולוגי ועדיין כולם חיים בהכרח בסגר, חלק מהאנשים מצאו דרך לשרוד לצד הנגועים.  קבוצה אחת כזו של שורדים גרה באי קטן המחובר ליבשת המרכזית באמצעות דרך אחת מאובטחת, כאשר אחד מהקבוצה עוזב את האי למשימה בלב היבשת האפלה הוא מגלה סודות, פלאות וזוועות ששינו לא רק את מי שנדבק אלא גם את השורדים עצמם.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "28 שנה אחרי"
+          }
+        },
+        {
+          "iso_3166_1": "JP",
+          "iso_639_1": "ja",
+          "name": "日本語",
+          "english_name": "Japanese",
+          "data": {
+            "homepage": "https://www.28years-later.jp",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "28年後..."
+          }
+        },
+        {
+          "iso_3166_1": "BR",
+          "iso_639_1": "pt",
+          "name": "Português",
+          "english_name": "Portuguese",
+          "data": {
+            "homepage": "",
+            "overview": "Já se passaram quase três décadas desde que o vírus da raiva escapou de um laboratório de armas biológicas. Agora, sob uma quarentena rigidamente imposta, alguns conseguiram encontrar maneiras de sobreviver em meio aos infectados. Um desses grupos vive em uma pequena ilha, ligada ao continente por uma única passagem fortemente protegida. Quando um dos membros parte em uma missão rumo ao sombrio coração do continente, ele descobre segredos, maravilhas e horrores que transformaram não apenas os infectados, mas também outros sobreviventes.",
+            "runtime": 0,
+            "tagline": "O tempo não cura nada.",
+            "title": "Extermínio: A Evolução"
+          }
+        },
+        {
+          "iso_3166_1": "UA",
+          "iso_639_1": "uk",
+          "name": "Український",
+          "english_name": "Ukrainian",
+          "data": {
+            "homepage": "",
+            "overview": "Минуло майже три десятиліття з моменту, як вірус люті вирвався з лабораторії біологічної зброї. Зараз, перебуваючи під жорстким карантином, деякі все ж знайшли способи виживати серед інфікованих. Одна з таких груп, що вижили, живе на маленькому острові, з’єднаному з материком лише одним ретельно укріпленим мостом. Коли один із членів групи вирушає на материк із небезпечною місією в темне серце зараженої землі, він відкриває таємниці, дивовижі та жахи, які змінили не тільки інфікованих, але й інших людей, які вижили.",
+            "runtime": 0,
+            "tagline": "Час нічого не лікує",
+            "title": "28 років по тому"
+          }
+        },
+        {
+          "iso_3166_1": "SK",
+          "iso_639_1": "sk",
+          "name": "Slovenčina",
+          "english_name": "Slovak",
+          "data": {
+            "homepage": "",
+            "overview": "Takmer tridsať rokov po vypuknutí smrtiacej epidémie sa niektorí naučili existovať medzi infikovanými. Jeden z preživších sa rozhodne podstúpiť nebezpečnú výpravu, opúšťa svoju komunitu na malom izolovanom ostrove a vyberá sa v ústrety nástrahám pevniny. Tam objaví nové hrôzy infikovaných, no narazí aj na zvyšky kedysi civilizovanej spoločnosti.",
+            "runtime": 0,
+            "tagline": "Čas nič nevylieči",
+            "title": "28 rokov potom"
+          }
+        },
+        {
+          "iso_3166_1": "TW",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "homepage": "https://www.sonypictures.com.tw/movies/28nianhuimiedaoshu-28-years-later",
+            "overview": "自從致命的病毒從化學武器實驗室流出後，至今已經過了28年，在仍舊嚴格的隔離政策下，人類漸漸找到與感染者共存的生存方式。其中一群生還者，生活在一座有戒備森嚴單一出入口的離島，但是當他們被迫離開家園深入黑暗的外界時，將發現令感染者和生還者突變的駭人秘密。",
+            "runtime": 0,
+            "tagline": "",
+            "title": "28年毀滅倒數"
+          }
+        },
+        {
+          "iso_3166_1": "FI",
+          "iso_639_1": "fi",
+          "name": "suomi",
+          "english_name": "Finnish",
+          "data": {
+            "homepage": "",
+            "overview": "On kulunut lähes kolme vuosikymmentä siitä, kun “raivovirus” pääsi leviämään biologisten aseiden laboratoriosta. Jotkut ovat löytäneet keinot selviytyä armottomasti valvotussa karanteenissa, tartunnan saaneiden keskuudessa. Yksi selviytyjien ryhmä asuttaa pientä saarta, joka on yhteydessä mantereeseen vain yhden ankarasti vartioidun maantien kautta. Kun yksi ryhmän jäsenistä lähtee saarelta tehtävälle mantereen synkkään sydämeen, saa hän selville salaisuuksia, ihmeitä ja kauheuksia, jotka ovat muokanneet niin tartunnan saaneita kuin muita selviytyjiä.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "28 vuotta myöhemmin"
+          }
+        },
+        {
+          "iso_3166_1": "BG",
+          "iso_639_1": "bg",
+          "name": "български език",
+          "english_name": "Bulgarian",
+          "data": {
+            "homepage": "",
+            "overview": "За 28 дни започна. За 28 седмици се разпространи. За 28 години еволюира.\r Действието на 28 години по-късно се развива почти три десетилетия, след като предизвикващ неконтролируема ярост смъртоносен патоген излиза от пределите на лаборатория за биологични оръжия и предизвиква катастрофа с невиждани пропорции. Сега, в ситуация на все още безмилостно налагана карантина, някои хора намират начини да съществуват сред заразените, подобно на група оцелели, които живеят на малък остров, свързан със сушата чрез силно защитен път. Когато един човек напуска острова, отправил се на мисия право в тъмното сърце на континента, той открива тайни, чудеса и ужаси, които са видоизменили не само заразените, но и други оцелели…",
+            "runtime": 0,
+            "tagline": "",
+            "title": "28 години по-късно"
+          }
+        },
+        {
+          "iso_3166_1": "PT",
+          "iso_639_1": "pt",
+          "name": "Português",
+          "english_name": "Portuguese",
+          "data": {
+            "homepage": "",
+            "overview": "Quase três décadas após um vírus mortal escapar de um laboratório de armas biológicas, o mundo permanece sob uma quarentena rígida. Apesar das adversidades, um grupo de sobreviventes encontrou refúgio numa ilha isolada, ligada ao continente por uma única passagem altamente protegida. Quando um dos membros parte em busca de respostas numa missão arriscada, é confrontado com segredos e horrores que moldaram não só os infetados, mas também os poucos humanos que sobreviveram.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "28 Anos Depois"
+          }
+        },
+        {
+          "iso_3166_1": "HU",
+          "iso_639_1": "hu",
+          "name": "Magyar",
+          "english_name": "Hungarian",
+          "data": {
+            "homepage": "",
+            "overview": "Nagy-Britanniában 28 éve tart egy szörnyű járvány, a fertőzöttek erőszakos, veszett emberek. Egy fiatal fiúnak orvost kell találnia, hogy segítsen haldokló édesanyján, akit végigvezet a gyönyörű észak-angliai tájon, miközben körülöttük az erdőkben és dombokon megbújva ott leselkednek a fertőzöttek.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "28 évvel később"
+          }
+        },
+        {
+          "iso_3166_1": "HR",
+          "iso_639_1": "hr",
+          "name": "Hrvatski",
+          "english_name": "Croatian",
+          "data": {
+            "homepage": "",
+            "overview": "Prošlo je gotovo 30 godina otkako je smrtonosni virus bijesa poharao čovječanstvo. Karantena traje i dalje, brutalna i neumoljiva. No preživjeli postoje – i prilagodili su se. Na malom otoku, povezanom s kopnom samo jednim, strogo čuvanim prolazom, skupina ljudi pokušava očuvati nadu. No kad jedan od njih krene na opasnu misiju u srce zaraženog teritorija... otkriva da se nije promijenilo samo ono što nas ubija – već i ono što nas čini ljudima.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "28 godina kasnije"
+          }
+        },
+        {
+          "iso_3166_1": "RU",
+          "iso_639_1": "ru",
+          "name": "Pусский",
+          "english_name": "Russian",
+          "data": {
+            "homepage": "",
+            "overview": "28 лет в Великобритании бушует вирус, превращающий заражённых в агрессивных плотоядных тварей. В этом ужасном мире маленький мальчик пытается найти врача для умирающей мамы.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "28 лет спустя"
+          }
+        },
+        {
+          "iso_3166_1": "SI",
+          "iso_639_1": "sl",
+          "name": "Slovenščina",
+          "english_name": "Slovenian",
+          "data": {
+            "homepage": "",
+            "overview": "Skoraj tri desetletja so minila, odkar je virus besa ušel iz laboratorija za biološko orožje in v času, ko oblasti še vedno neusmiljeno uveljavljajo strogo karanteno, so nekateri našli načine za preživetje med okuženimi. Ena od skupin preživelih živi na majhnem otoku, ki ga s kopnim povezuje en sam močno branjen nasip. Ko eden od članov skupine zapusti otok in se odpravi v temno srce celine, odkrije skrivnosti, čudeže in grozote, ki niso spremenile samo okuženih, temveč tudi druge preživele.",
+            "runtime": 0,
+            "tagline": "V 28 dneh se je začel. V 28 tednih se je razširil. V 28 letih se je razvil.",
+            "title": "28 let pozneje"
+          }
+        },
+        {
+          "iso_3166_1": "CA",
+          "iso_639_1": "fr",
+          "name": "Français",
+          "english_name": "French",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "Rien n'a Changé avec le Temps",
+            "title": "28 ans Plus Tard"
+          }
+        },
+        {
+          "iso_3166_1": "EE",
+          "iso_639_1": "et",
+          "name": "Eesti",
+          "english_name": "Estonian",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "Aeg ei parandanud midagi",
+            "title": "28 aastat hiljem"
+          }
+        },
+        {
+          "iso_3166_1": "LV",
+          "iso_639_1": "lv",
+          "name": "Latviešu",
+          "english_name": "Latvian",
+          "data": {
+            "homepage": "",
+            "overview": "Pagājušas gandrīz trīs desmitgades kopš niknuma vīruss izkļuva no bioloģisko ieroču laboratorijas, un tagad nežēlīgi īstenotas karantīnas apstākļos daļa cilvēku ir iemācījusies eksistēt inficēto vidū.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "28 gadus vēlāk"
+          }
+        },
+        {
+          "iso_3166_1": "SA",
+          "iso_639_1": "ar",
+          "name": "العربية",
+          "english_name": "Arabic",
+          "data": {
+            "homepage": "",
+            "overview": "انقضت ثلاثة عقود على تسرب فيروس \"آر في\" من مختبر للأسلحة البيولوجية، ولا يزال الحجر الصارم يخنق العالم، والمصابون يعيثون فيه دمارًا. في جزيرة نائية لا تصلها اليابسة إلا عبر ممر واحد محصن، تحاول مجموعة من الناجين التشبث بالحياة. وحين يخرج أحدهم في مهمة إلى قلب اليابسة، يصطدم بأسرار وهول لم يترك أثره على المصابين فحسب، بل بدّل ملامح من نجا أيضًا.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "28 عاما لاحقا"
+          }
+        },
+        {
+          "iso_3166_1": "IR",
+          "iso_639_1": "fa",
+          "name": "فارسی",
+          "english_name": "Persian",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "۲۸ سال بعد"
+          }
+        },
+        {
+          "iso_3166_1": "SE",
+          "iso_639_1": "sv",
+          "name": "svenska",
+          "english_name": "Swedish",
+          "data": {
+            "homepage": "",
+            "overview": "Det har gått nästan tre decennier sedan raseri-viruset läckte ut från ett biologiskt vapenlaboratorium. Än idag, under en hänsynslöst upprätthållen karantän, har vissa lyckats överleva bland de infekterade. En av dessa grupper lever på en liten ö, förbunden med fastlandet via en enda, tungt försvarad landtunga. När en av dem ger sig av på ett uppdrag in i fastlandets mörka hjärta, upptäcker han hemligheter, underverk och fasor – som har förändrat inte bara de infekterade, utan även andra överlevare.",
+            "runtime": 0,
+            "tagline": "",
+            "title": ""
+          }
+        }
+      ]
+    },
+    "external_ids": {
+      "imdb_id": "tt10548174",
+      "wikidata_id": "Q125392328",
+      "facebook_id": "28yearslaterofficial",
+      "instagram_id": "28yearslatermovie",
+      "twitter_id": "28YearsLaterMov"
+    },
+    "semantic_tags": [
+      "genre:恐怖",
+      "genre:惊悚",
+      "genre:科幻",
+      "decade:2020s",
+      "country:gb",
+      "country:us",
+      "lang:en",
+      "series:1565",
+      "theme:post-apocalyptic",
+      "theme:zombie"
+    ]
+  }
+]
