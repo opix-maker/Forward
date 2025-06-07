@@ -1,0 +1,1154 @@
+{
+  "buildTimestamp": "2025-06-07T13:10:32.010Z",
+  "imdb": {
+    "mostPopularMovies": [],
+    "topRatedMovies": [
+      {
+        "imdb_id": "tt0111161",
+        "imdb_rating": 9.3,
+        "imdb_rank": 1,
+        "tmdb_id": 278,
+        "title": "The Shawshank Redemption",
+        "original_title": "The Shawshank Redemption",
+        "overview": "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg",
+        "release_date": "1994-09-23",
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "vote_average": 8.711,
+        "vote_count": 28402,
+        "media_type": "movie",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0068646",
+        "imdb_rating": 9.2,
+        "imdb_rank": 2,
+        "tmdb_id": 238,
+        "title": "The Godfather",
+        "original_title": "The Godfather",
+        "overview": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/tmU7GeKVybMWFButWEGl2M4GeiP.jpg",
+        "release_date": "1972-03-14",
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "vote_average": 8.686,
+        "vote_count": 21503,
+        "media_type": "movie",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0468569",
+        "imdb_rating": 9,
+        "imdb_rank": 3,
+        "tmdb_id": 155,
+        "title": "The Dark Knight",
+        "original_title": "The Dark Knight",
+        "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/enNubozHn9pXi0ycTVYUWfpHZm.jpg",
+        "release_date": "2008-07-16",
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime",
+          "Thriller"
+        ],
+        "vote_average": 8.52,
+        "vote_count": 33920,
+        "media_type": "movie",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0071562",
+        "imdb_rating": 9,
+        "imdb_rank": 4,
+        "tmdb_id": 240,
+        "title": "The Godfather Part II",
+        "original_title": "The Godfather Part II",
+        "overview": "In the continuing saga of the Corleone crime family, a young Vito Corleone grows up in Sicily and in 1910s New York. In the 1950s, Michael Corleone attempts to expand the family business into Las Vegas, Hollywood and Cuba.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/kGzFbGhp99zva6oZODW5atUtnqi.jpg",
+        "release_date": "1974-12-20",
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "vote_average": 8.57,
+        "vote_count": 12990,
+        "media_type": "movie",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0050083",
+        "imdb_rating": 9,
+        "imdb_rank": 5,
+        "tmdb_id": 389,
+        "title": "12 Angry Men",
+        "original_title": "12 Angry Men",
+        "overview": "The defense and the prosecution have rested and the jury is filing into the jury room to decide if a young Spanish-American is guilty or innocent of murdering his father. What begins as an open and shut case soon becomes a mini-drama of each of the jurors' prejudices and preconceptions about the trial, the accused, and each other.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/ow3wq89wM8qd5X7hWKxiRfsFf9C.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/bxgTSUenZDHNFerQ1whRKplrMKF.jpg",
+        "release_date": "1957-04-10",
+        "genres": [
+          "Drama"
+        ],
+        "vote_average": 8.548,
+        "vote_count": 9159,
+        "media_type": "movie",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0167260",
+        "imdb_rating": 9,
+        "imdb_rank": 6,
+        "tmdb_id": 122,
+        "title": "The Lord of the Rings: The Return of the King",
+        "original_title": "The Lord of the Rings: The Return of the King",
+        "overview": "As armies mass for a final battle that will decide the fate of the world--and powerful, ancient forces of Light and Dark compete to determine the outcome--one member of the Fellowship of the Ring is revealed as the noble heir to the throne of the Kings of Men. Yet, the sole hope for triumph over evil lies with a brave hobbit, Frodo, who, accompanied by his loyal friend Sam and the hideous, wretched Gollum, ventures deep into the very dark heart of Mordor on his seemingly impossible quest to destroy the Ring of Power.​",
+        "poster_path": "https://image.tmdb.org/t/p/w500/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg",
+        "release_date": "2003-12-17",
+        "genres": [
+          "Adventure",
+          "Fantasy",
+          "Action"
+        ],
+        "vote_average": 8.485,
+        "vote_count": 25125,
+        "media_type": "movie",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0108052",
+        "imdb_rating": 9,
+        "imdb_rank": 7,
+        "tmdb_id": 424,
+        "title": "Schindler's List",
+        "original_title": "Schindler's List",
+        "overview": "The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis while they worked as slaves in his factory during World War II.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/zb6fM1CX41D9rF9hdgclu0peUmy.jpg",
+        "release_date": "1993-12-15",
+        "genres": [
+          "Drama",
+          "History",
+          "War"
+        ],
+        "vote_average": 8.564,
+        "vote_count": 16465,
+        "media_type": "movie",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0110912",
+        "imdb_rating": 8.9,
+        "imdb_rank": 8,
+        "tmdb_id": 680,
+        "title": "Pulp Fiction",
+        "original_title": "Pulp Fiction",
+        "overview": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
+        "release_date": "1994-09-10",
+        "genres": [
+          "Thriller",
+          "Crime"
+        ],
+        "vote_average": 8.489,
+        "vote_count": 28716,
+        "media_type": "movie",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0120737",
+        "imdb_rating": 8.9,
+        "imdb_rank": 9,
+        "tmdb_id": 120,
+        "title": "The Lord of the Rings: The Fellowship of the Ring",
+        "original_title": "The Lord of the Rings: The Fellowship of the Ring",
+        "overview": "Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/x2RS3uTcsJJ9IfjNPcgDmukoEcQ.jpg",
+        "release_date": "2001-12-18",
+        "genres": [
+          "Adventure",
+          "Fantasy",
+          "Action"
+        ],
+        "vote_average": 8.422,
+        "vote_count": 26012,
+        "media_type": "movie",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0060196",
+        "imdb_rating": 8.8,
+        "imdb_rank": 10,
+        "tmdb_id": 429,
+        "title": "The Good, the Bad and the Ugly",
+        "original_title": "Il buono, il brutto, il cattivo",
+        "overview": "While the Civil War rages on between the Union and the Confederacy, three men – a quiet loner, a ruthless hitman, and a Mexican bandit – comb the American Southwest in search of a strongbox containing $200,000 in stolen gold.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/x4biAVdPVCghBlsVIzB6NmbghIz.jpg",
+        "release_date": "1966-12-22",
+        "genres": [
+          "Western"
+        ],
+        "vote_average": 8.461,
+        "vote_count": 9007,
+        "media_type": "movie",
+        "origin_country": [
+          "IT"
+        ]
+      },
+      {
+        "imdb_id": "tt0109830",
+        "imdb_rating": 8.8,
+        "imdb_rank": 11,
+        "tmdb_id": 13,
+        "title": "Forrest Gump",
+        "original_title": "Forrest Gump",
+        "overview": "A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/tlEFuIlaxRPXIYVHXbOSAMCfWqk.jpg",
+        "release_date": "1994-06-23",
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Romance"
+        ],
+        "vote_average": 8.468,
+        "vote_count": 28260,
+        "media_type": "movie",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0167261",
+        "imdb_rating": 8.8,
+        "imdb_rank": 12,
+        "tmdb_id": 121,
+        "title": "The Lord of the Rings: The Two Towers",
+        "original_title": "The Lord of the Rings: The Two Towers",
+        "overview": "Frodo Baggins and the other members of the Fellowship continue on their sacred quest to destroy the One Ring--but on separate paths. Their destinies lie at two towers--Orthanc Tower in Isengard, where the corrupt wizard Saruman awaits, and Sauron's fortress at Barad-dur, deep within the dark lands of Mordor. Frodo and Sam are trekking to Mordor to destroy the One Ring of Power while Gimli, Legolas and Aragorn search for the orc-captured Merry and Pippin. All along, nefarious wizard Saruman awaits the Fellowship members at the Orthanc Tower in Isengard.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/jfEOzpsjc6JDlKhUHb4toWQPt.jpg",
+        "release_date": "2002-12-18",
+        "genres": [
+          "Adventure",
+          "Fantasy",
+          "Action"
+        ],
+        "vote_average": 8.4,
+        "vote_count": 22617,
+        "media_type": "movie",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0137523",
+        "imdb_rating": 8.8,
+        "imdb_rank": 13,
+        "tmdb_id": 550,
+        "title": "Fight Club",
+        "original_title": "Fight Club",
+        "overview": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/xRyINp9KfMLVjRiO5nCsoRDdvvF.jpg",
+        "release_date": "1999-10-15",
+        "genres": [
+          "Drama"
+        ],
+        "vote_average": 8.437,
+        "vote_count": 30331,
+        "media_type": "movie",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt1375666",
+        "imdb_rating": 8.8,
+        "imdb_rank": 14,
+        "tmdb_id": 27205,
+        "title": "Inception",
+        "original_title": "Inception",
+        "overview": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg",
+        "release_date": "2010-07-15",
+        "genres": [
+          "Action",
+          "Science Fiction",
+          "Adventure"
+        ],
+        "vote_average": 8.369,
+        "vote_count": 37524,
+        "media_type": "movie",
+        "origin_country": [
+          "US",
+          "GB"
+        ]
+      },
+      {
+        "imdb_id": "tt0080684",
+        "imdb_rating": 8.7,
+        "imdb_rank": 15,
+        "tmdb_id": 1891,
+        "title": "The Empire Strikes Back",
+        "original_title": "The Empire Strikes Back",
+        "overview": "The epic saga continues as Luke Skywalker, in hopes of defeating the evil Galactic Empire, learns the ways of the Jedi from aging master Yoda. But Darth Vader is more determined than ever to capture Luke. Meanwhile, rebel leader Princess Leia, cocky Han Solo, Chewbacca, and droids C-3PO and R2-D2 are thrown into various stages of capture, betrayal and despair.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/nNAeTmF4CtdSgMDplXTDPOpYzsX.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/dMZxEdrWIzUmUoOz2zvmFuutbj7.jpg",
+        "release_date": "1980-05-20",
+        "genres": [
+          "Adventure",
+          "Action",
+          "Science Fiction"
+        ],
+        "vote_average": 8.395,
+        "vote_count": 17437,
+        "media_type": "movie",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0133093",
+        "imdb_rating": 8.7,
+        "imdb_rank": 16,
+        "tmdb_id": 603,
+        "title": "The Matrix",
+        "original_title": "The Matrix",
+        "overview": "Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/dXNAPwY7VrqMAo51EKhhCJfaGb5.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/icmmSD4vTTDKOq2vvdulafOGw93.jpg",
+        "release_date": "1999-03-31",
+        "genres": [
+          "Action",
+          "Science Fiction"
+        ],
+        "vote_average": 8.226,
+        "vote_count": 26432,
+        "media_type": "movie",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0099685",
+        "imdb_rating": 8.7,
+        "imdb_rank": 17,
+        "tmdb_id": 769,
+        "title": "GoodFellas",
+        "original_title": "GoodFellas",
+        "overview": "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/aKuFiU82s5ISJpGZp7YkIr3kCUd.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/7TF4p86ZafnxFuNqWdhpHXFO244.jpg",
+        "release_date": "1990-09-12",
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "vote_average": 8.455,
+        "vote_count": 13404,
+        "media_type": "movie",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0816692",
+        "imdb_rating": 8.7,
+        "imdb_rank": 18,
+        "tmdb_id": 157336,
+        "title": "Interstellar",
+        "original_title": "Interstellar",
+        "overview": "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/l33oR0mnvf20avWyIMxW02EtQxn.jpg",
+        "release_date": "2014-11-05",
+        "genres": [
+          "Adventure",
+          "Drama",
+          "Science Fiction"
+        ],
+        "vote_average": 8.455,
+        "vote_count": 37231,
+        "media_type": "movie",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0073486",
+        "imdb_rating": 8.7,
+        "imdb_rank": 19,
+        "tmdb_id": 510,
+        "title": "One Flew Over the Cuckoo's Nest",
+        "original_title": "One Flew Over the Cuckoo's Nest",
+        "overview": "A petty criminal fakes insanity to serve his sentence in a mental ward rather than prison. He soon finds himself as a leader to the other patients—and an enemy to the cruel, domineering nurse who runs the ward.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/kjWsMh72V6d8KRLV4EOoSJLT1H7.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/uA8eSNAUUUyfHNIrG4h0zHxzt9W.jpg",
+        "release_date": "1975-11-19",
+        "genres": [
+          "Drama"
+        ],
+        "vote_average": 8.413,
+        "vote_count": 10783,
+        "media_type": "movie",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0114369",
+        "imdb_rating": 8.6,
+        "imdb_rank": 20,
+        "tmdb_id": 807,
+        "title": "Se7en",
+        "original_title": "Se7en",
+        "overview": "Two homicide detectives are on a desperate hunt for a serial killer whose crimes are based on the \"seven deadly sins\" in this dark and haunting film that takes viewers from the tortured remains of one victim to the next. The seasoned Det. Somerset researches each sin in an effort to get inside the killer's mind, while his novice partner, Mills, scoffs at his efforts to unravel the case.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/191nKfP0ehp3uIvWqgPbFmI4lv9.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/p1PLSI5Nw2krGxD7X4ulul1tDAk.jpg",
+        "release_date": "1995-09-22",
+        "genres": [
+          "Crime",
+          "Mystery",
+          "Thriller"
+        ],
+        "vote_average": 8.376,
+        "vote_count": 21760,
+        "media_type": "movie",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0038650",
+        "imdb_rating": 8.6,
+        "imdb_rank": 21,
+        "tmdb_id": 1585,
+        "title": "It's a Wonderful Life",
+        "original_title": "It's a Wonderful Life",
+        "overview": "A holiday favourite for generations...  George Bailey has spent his entire life giving to the people of Bedford Falls.  All that prevents rich skinflint Mr. Potter from taking over the entire town is George's modest building and loan company.  But on Christmas Eve the business's $8,000 is lost and George's troubles begin.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/bSqt9rhDZx1Q7UZ86dBPKdNomp2.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/3q35nBLCIdEbxYfsr7D5ocYQXKz.jpg",
+        "release_date": "1946-12-20",
+        "genres": [
+          "Drama",
+          "Family",
+          "Fantasy"
+        ],
+        "vote_average": 8.279,
+        "vote_count": 4507,
+        "media_type": "movie",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0102926",
+        "imdb_rating": 8.6,
+        "imdb_rank": 22,
+        "tmdb_id": 274,
+        "title": "The Silence of the Lambs",
+        "original_title": "The Silence of the Lambs",
+        "overview": "Clarice Starling is a top student at the FBI's training academy.  Jack Crawford wants Clarice to interview Dr. Hannibal Lecter, a brilliant psychiatrist who is also a violent psychopath, serving life behind bars for various acts of murder and cannibalism.  Crawford believes that Lecter may have insight into a case and that Starling, as an attractive young woman, may be just the bait to draw him out.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/aYcnDyLMnpKce1FOYUpZrXtgUye.jpg",
+        "release_date": "1991-02-14",
+        "genres": [
+          "Crime",
+          "Drama",
+          "Thriller"
+        ],
+        "vote_average": 8.347,
+        "vote_count": 16842,
+        "media_type": "movie",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0047478",
+        "imdb_rating": 8.6,
+        "imdb_rank": 23,
+        "tmdb_id": 346,
+        "title": "Seven Samurai",
+        "original_title": "七人の侍",
+        "overview": "A samurai answers a village's request for protection after he falls on hard times. The town needs protection from bandits, so the samurai gathers six others to help him teach the people how to defend themselves, and the villagers provide the soldiers with food.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/8OKmBV5BUFzmozIC3pPWKHy17kx.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/sJNNMCc6B7KZIY3LH3JMYJJNH5j.jpg",
+        "release_date": "1954-04-26",
+        "genres": [
+          "Action",
+          "Drama"
+        ],
+        "vote_average": 8.5,
+        "vote_count": 3900,
+        "media_type": "movie",
+        "origin_country": [
+          "JP"
+        ]
+      },
+      {
+        "imdb_id": "tt0120815",
+        "imdb_rating": 8.6,
+        "imdb_rank": 24,
+        "tmdb_id": 857,
+        "title": "Saving Private Ryan",
+        "original_title": "Saving Private Ryan",
+        "overview": "As U.S. troops storm the beaches of Normandy, three brothers lie dead on the battlefield, with a fourth trapped behind enemy lines. Ranger captain John Miller and seven men are tasked with penetrating German-held territory and bringing the boy home.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/uqx37cS8cpHg8U35f9U5IBlrCV3.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/rW2xRFlJRbTnBJlQTSjQmjevIwb.jpg",
+        "release_date": "1998-07-24",
+        "genres": [
+          "Drama",
+          "History",
+          "War"
+        ],
+        "vote_average": 8.219,
+        "vote_count": 16318,
+        "media_type": "movie",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0317248",
+        "imdb_rating": 8.6,
+        "imdb_rank": 25,
+        "tmdb_id": 598,
+        "title": "City of God",
+        "original_title": "Cidade de Deus",
+        "overview": "In the poverty-stricken favelas of Rio de Janeiro in the 1970s, two young men choose different paths. Rocket is a budding photographer who documents the increasing drug-related violence of his neighborhood, while José “Zé” Pequeno is an ambitious drug dealer diving into a dangerous life of crime.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/k7eYdWvhYQyRQoU2TB2A2Xu2TfD.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/uvitbjFU4JqvMwIkMWHp69bmUzG.jpg",
+        "release_date": "2002-08-30",
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "vote_average": 8.429,
+        "vote_count": 7662,
+        "media_type": "movie",
+        "origin_country": [
+          "BR"
+        ]
+      }
+    ],
+    "mostPopularTV": [
+      {
+        "imdb_id": "tt27995114",
+        "imdb_rating": 8.3,
+        "imdb_rank": null,
+        "tmdb_id": 245703,
+        "title": "Dept. Q",
+        "original_title": "Dept. Q",
+        "overview": "A brash but brilliant cop becomes head of a new police department, where he leads an unlikely team of misfits in solving Edinburgh's cold cases.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/zOkpWMqpdIV1qeiEiArjaReKxzm.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/wIoxMHbyUJnx5Fm9tI26hIYGI1D.jpg",
+        "release_date": "2025-05-29",
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "vote_average": 7.849,
+        "vote_count": 63,
+        "media_type": "tv",
+        "origin_country": [
+          "GB"
+        ]
+      }
+    ],
+    "topRatedTV": [
+      {
+        "imdb_id": "tt0903747",
+        "imdb_rating": 9.5,
+        "imdb_rank": 1,
+        "tmdb_id": 1396,
+        "title": "Breaking Bad",
+        "original_title": "Breaking Bad",
+        "overview": "Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/ztkUQFLlC19CCMYHW9o1zWhJRNq.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/9faGSFi5jam6pDWGNd0p8JcJgXQ.jpg",
+        "release_date": "2008-01-20",
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "vote_average": 8.926,
+        "vote_count": 15624,
+        "media_type": "tv",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt5491994",
+        "imdb_rating": 9.4,
+        "imdb_rank": 2,
+        "tmdb_id": 68595,
+        "title": "Planet Earth II",
+        "original_title": "Planet Earth II",
+        "overview": "David Attenborough presents a documentary series exploring how animals meet the challenges of surviving in the most iconic habitats on earth.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/tUKomxy50suT4MyxjYfOJDkZUq3.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/1DYpBOVdb7Mzc9DgMCdIBTN1JEC.jpg",
+        "release_date": "2016-11-06",
+        "genres": [
+          "Documentary",
+          "Family"
+        ],
+        "vote_average": 8.6,
+        "vote_count": 828,
+        "media_type": "tv",
+        "origin_country": [
+          "GB"
+        ]
+      },
+      {
+        "imdb_id": "tt0795176",
+        "imdb_rating": 9.4,
+        "imdb_rank": 3,
+        "tmdb_id": 1044,
+        "title": "Planet Earth",
+        "original_title": "Planet Earth",
+        "overview": "David Attenborough celebrates the amazing variety of the natural world in this epic documentary series, filmed over four years across 64 different countries.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/mfXulHiALTloIqivuC4Q3lI3RGw.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/qmRUwosX4BsCj6QanpBYScLl3Sp.jpg",
+        "release_date": "2006-03-05",
+        "genres": [
+          "Documentary"
+        ],
+        "vote_average": 8.578,
+        "vote_count": 1130,
+        "media_type": "tv",
+        "origin_country": [
+          "GB"
+        ]
+      },
+      {
+        "imdb_id": "tt0185906",
+        "imdb_rating": 9.4,
+        "imdb_rank": 4,
+        "tmdb_id": 4613,
+        "title": "Band of Brothers",
+        "original_title": "Band of Brothers",
+        "overview": "Drawn from interviews with survivors of Easy Company, as well as their journals and letters, Band of Brothers chronicles the experiences of these men from paratrooper training in Georgia through the end of the war. As an elite rifle company parachuting into Normandy early on D-Day morning, participants in the Battle of the Bulge, and witness to the horrors of war, the men of Easy knew extraordinary bravery and extraordinary fear - and became the stuff of legend. Based on Stephen E. Ambrose's acclaimed book of the same name.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/pGzV187ogXzgJrvPRy2YPi29ofH.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/2yDV0xLyqW88dn5qE7YCRnoYmfy.jpg",
+        "release_date": "2001-09-09",
+        "genres": [
+          "Drama",
+          "War & Politics"
+        ],
+        "vote_average": 8.563,
+        "vote_count": 3767,
+        "media_type": "tv",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt7366338",
+        "imdb_rating": 9.3,
+        "imdb_rank": 5,
+        "tmdb_id": 87108,
+        "title": "Chernobyl",
+        "original_title": "Chernobyl",
+        "overview": "The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/900tHlUYUkp7Ol04XFSoAaEIXcT.jpg",
+        "release_date": "2019-05-06",
+        "genres": [
+          "Drama"
+        ],
+        "vote_average": 8.687,
+        "vote_count": 6881,
+        "media_type": "tv",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0306414",
+        "imdb_rating": 9.3,
+        "imdb_rank": 6,
+        "tmdb_id": 1438,
+        "title": "The Wire",
+        "original_title": "The Wire",
+        "overview": "Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets, the series captures a universe in which the national war on drugs has become a permanent, self-sustaining bureaucracy, and distinctions between good and evil are routinely obliterated.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/4lbclFySvugI51fwsyxBTOm4DqK.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/layPSOJGckJv3PXZDIVluMq69mn.jpg",
+        "release_date": "2002-06-02",
+        "genres": [
+          "Crime",
+          "Drama"
+        ],
+        "vote_average": 8.6,
+        "vote_count": 2368,
+        "media_type": "tv",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0417299",
+        "imdb_rating": 9.3,
+        "imdb_rank": 7,
+        "tmdb_id": 246,
+        "title": "Avatar: The Last Airbender",
+        "original_title": "Avatar: The Last Airbender",
+        "overview": "In a war-torn world of elemental magic, a young boy reawakens to undertake a dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace to the world.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/v2vn1coUMPKw0GI1KGC5J4IXtqp.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/kU98MbVVgi72wzceyrEbClZmMFe.jpg",
+        "release_date": "2005-02-21",
+        "genres": [
+          "Animation",
+          "Action & Adventure",
+          "Sci-Fi & Fantasy"
+        ],
+        "vote_average": 8.747,
+        "vote_count": 4368,
+        "media_type": "tv",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt6769208",
+        "imdb_rating": 9.3,
+        "imdb_rank": 8,
+        "tmdb_id": 74313,
+        "title": "Blue Planet II",
+        "original_title": "Blue Planet II",
+        "overview": "There is nowhere more powerful and unforgiving yet more beautiful and compelling than the ocean. Join us and explore the greatest yet least known parts of our planet.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/j1NsoYYDYHnPkRr7Enqr8tlexgO.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/1nfIEJu02Zhv9omTKkzwHnK8Dji.jpg",
+        "release_date": "2017-10-29",
+        "genres": [
+          "Documentary",
+          "Family"
+        ],
+        "vote_average": 8.534,
+        "vote_count": 291,
+        "media_type": "tv",
+        "origin_country": [
+          "GB"
+        ]
+      },
+      {
+        "imdb_id": "tt0141842",
+        "imdb_rating": 9.2,
+        "imdb_rank": 9,
+        "tmdb_id": 1398,
+        "title": "The Sopranos",
+        "original_title": "The Sopranos",
+        "overview": "The story of New Jersey-based Italian-American mobster Tony Soprano and the difficulties he faces as he tries to balance the conflicting requirements of his home life and the criminal organization he heads. Those difficulties are often highlighted through his ongoing professional relationship with psychiatrist Jennifer Melfi. The show features Tony's family members and Mafia associates in prominent roles and story arcs, most notably his wife Carmela and his cousin and protégé Christopher Moltisanti.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/rTc7ZXdroqjkKivFPvCPX0Ru7uw.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/lNpkvX2s8LGB0mjGODMT4o6Up7j.jpg",
+        "release_date": "1999-01-10",
+        "genres": [
+          "Crime",
+          "Drama"
+        ],
+        "vote_average": 8.6,
+        "vote_count": 2984,
+        "media_type": "tv",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt2395695",
+        "imdb_rating": 9.2,
+        "imdb_rank": 10,
+        "tmdb_id": 58474,
+        "title": "Cosmos",
+        "original_title": "Cosmos",
+        "overview": "Famed astrophysicist Neil deGrasse Tyson provides clarity for the vision of the cosmos as he voyages across the universe with never-before-told stories that delve into the scientific concepts of the laws of gravity and the origins of space and time.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/5o07ps0QZ0bNoRYxTn9cPdRWlUu.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/2Nwbv0hrN8sThLvgooShcPqmFrO.jpg",
+        "release_date": "2014-03-09",
+        "genres": [
+          "Documentary"
+        ],
+        "vote_average": 8.468,
+        "vote_count": 1575,
+        "media_type": "tv",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt0081846",
+        "imdb_rating": 9.3,
+        "imdb_rank": 11,
+        "tmdb_id": 1430,
+        "title": "Cosmos: A Personal Voyage",
+        "original_title": "Cosmos: A Personal Voyage",
+        "overview": "Carl Sagan covers a wide range of scientific subjects, including the origin of life and a perspective of our place in the universe.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/nOGArjE0WMkzY2GW1taJm8l9gxD.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/hjJ5XDKP7XY2ADUuMdHM5NsC32s.jpg",
+        "release_date": "1980-09-28",
+        "genres": [
+          "Documentary"
+        ],
+        "vote_average": 8.571,
+        "vote_count": 385,
+        "media_type": "tv",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt9253866",
+        "imdb_rating": 9.2,
+        "imdb_rank": 12,
+        "tmdb_id": 83880,
+        "title": "Our Planet",
+        "original_title": "Our Planet",
+        "overview": "Experience our planet's natural beauty and examine how climate change impacts all living creatures in this ambitious documentary of spectacular scope.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/wRSnArnQBmeUYb5GWDU595bGsBr.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/p8EUX6MPSNLxVwqO3fCYTi896Ro.jpg",
+        "release_date": "2019-04-05",
+        "genres": [
+          "Documentary",
+          "Action & Adventure"
+        ],
+        "vote_average": 8.496,
+        "vote_count": 397,
+        "media_type": "tv",
+        "origin_country": [
+          "GB"
+        ]
+      },
+      {
+        "imdb_id": "tt0944947",
+        "imdb_rating": 9.2,
+        "imdb_rank": 13,
+        "tmdb_id": 1399,
+        "title": "Game of Thrones",
+        "original_title": "Game of Thrones",
+        "overview": "Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/zZqpAXxVSBtxV9qPBcscfXBcL2w.jpg",
+        "release_date": "2011-04-17",
+        "genres": [
+          "Sci-Fi & Fantasy",
+          "Drama",
+          "Action & Adventure"
+        ],
+        "vote_average": 8.457,
+        "vote_count": 25083,
+        "media_type": "tv",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt7678620",
+        "imdb_rating": 9.3,
+        "imdb_rank": 14,
+        "tmdb_id": 82728,
+        "title": "Bluey",
+        "original_title": "Bluey",
+        "overview": "Bluey is an inexhaustible six year-old Blue Heeler dog, who loves to play and turns everyday family life into extraordinary adventures, developing her imagination as well as her mental, physical and emotional resilience.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/9p4pNoGcuyCfHcGWKNrTopqMWtq.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/g88VMPtog8sl8riaIRtz4U80dMK.jpg",
+        "release_date": "2018-10-01",
+        "genres": [
+          "Animation",
+          "Kids",
+          "Comedy"
+        ],
+        "vote_average": 8.604,
+        "vote_count": 611,
+        "media_type": "tv",
+        "origin_country": [
+          "AU"
+        ]
+      },
+      {
+        "imdb_id": "tt0071075",
+        "imdb_rating": 9.2,
+        "imdb_rank": 15,
+        "tmdb_id": 751,
+        "title": "The World at War",
+        "original_title": "The World at War",
+        "overview": "A documentary series that gives a historical account of the events of World War II, from its roots in the 1920s to the aftermath and the lives it profoundly influenced.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/bWdwEYQQEsz9HuXy5m95z95BYQM.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/bhLMDDvxa2bIaGyjo5SQqJ89R6W.jpg",
+        "release_date": "1973-10-31",
+        "genres": [
+          "Documentary",
+          "War & Politics"
+        ],
+        "vote_average": 8.24,
+        "vote_count": 156,
+        "media_type": "tv",
+        "origin_country": [
+          "GB"
+        ]
+      },
+      {
+        "imdb_id": "tt1355642",
+        "imdb_rating": 9.1,
+        "imdb_rank": 16,
+        "tmdb_id": 31911,
+        "title": "Fullmetal Alchemist: Brotherhood",
+        "original_title": "鋼の錬金術師 FULLMETAL ALCHEMIST",
+        "overview": "Disregard for alchemy’s laws ripped half of Edward Elric’s limbs from his body and left his brother Alphonse’s soul clinging to a suit of armor. To restore what was lost, the brothers seek the Philosopher’s Stone. Enemies and allies – the corrupt military, the Homunculi, and foreign alchemists – will alter the Elric brothers course, but their purpose will remain unchanged and their bond unbreakable.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/5ZFUEOULaVml7pQuXxhpR2SmVUw.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/A6tMQAo6t6eRFCPhsrShmxZLqFB.jpg",
+        "release_date": "2009-04-05",
+        "genres": [
+          "Action & Adventure",
+          "Animation",
+          "Sci-Fi & Fantasy",
+          "Comedy"
+        ],
+        "vote_average": 8.695,
+        "vote_count": 2195,
+        "media_type": "tv",
+        "origin_country": [
+          "JP"
+        ]
+      },
+      {
+        "imdb_id": "tt1533395",
+        "imdb_rating": 9.1,
+        "imdb_rank": 17,
+        "tmdb_id": 16946,
+        "title": "Life",
+        "original_title": "Life",
+        "overview": "David Attenborough looks at the extraordinary ends to which animals and plants go in order to survive. Featuring epic spectacles, amazing TV firsts and examples of new wildlife behaviour.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/9dVHGMYfI6T6p07UHfYVUk1Wzit.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/4Wix9wMSArpgYBMV5ndZCJqEQbG.jpg",
+        "release_date": "2009-10-11",
+        "genres": [
+          "Documentary"
+        ],
+        "vote_average": 8.339,
+        "vote_count": 364,
+        "media_type": "tv",
+        "origin_country": [
+          "GB"
+        ]
+      },
+      {
+        "imdb_id": "tt2861424",
+        "imdb_rating": 9.1,
+        "imdb_rank": 18,
+        "tmdb_id": 60625,
+        "title": "Rick and Morty",
+        "original_title": "Rick and Morty",
+        "overview": "Rick is a mentally-unbalanced but scientifically gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/WGRQ8FpjkDTzivQJ43t94bOuY0.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/Ao5pBFuWY32cVuh6iYjEjZMEscN.jpg",
+        "release_date": "2013-12-02",
+        "genres": [
+          "Animation",
+          "Comedy",
+          "Sci-Fi & Fantasy",
+          "Action & Adventure"
+        ],
+        "vote_average": 8.686,
+        "vote_count": 10194,
+        "media_type": "tv",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt8420184",
+        "imdb_rating": 9,
+        "imdb_rank": 19,
+        "tmdb_id": 79525,
+        "title": "The Last Dance",
+        "original_title": "The Last Dance",
+        "overview": "A 10-part documentary chronicling the untold story of Michael Jordan and the Chicago Bulls dynasty with rare, never-before-seen footage and sound from the 1997-98 championship season – plus over 100 interviews with famous figures and basketball’s biggest names.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/oVf4xGGbDtwVHiKn8uTuSriY7PH.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/kY0h95L73t7a6ev6Rv0aHSCtN7y.jpg",
+        "release_date": "2020-04-19",
+        "genres": [
+          "Documentary"
+        ],
+        "vote_average": 8.246,
+        "vote_count": 1355,
+        "media_type": "tv",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt2560140",
+        "imdb_rating": 9.1,
+        "imdb_rank": 20,
+        "tmdb_id": 1429,
+        "title": "Attack on Titan",
+        "original_title": "進撃の巨人",
+        "overview": "Many years ago, the last remnants of humanity were forced to retreat behind the towering walls of a fortified city to escape the massive, man-eating Titans that roamed the land outside their fortress. Only the heroic members of the Scouting Legion dared to stray beyond the safety of the walls – but even those brave warriors seldom returned alive. Those within the city clung to the illusion of a peaceful existence until the day that dream was shattered, and their slim chance at survival was reduced to one horrifying choice: kill – or be devoured!",
+        "poster_path": "https://image.tmdb.org/t/p/w500/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/aok7IhrbA83josNz9Dqh8tNA0Ao.jpg",
+        "release_date": "2013-04-07",
+        "genres": [
+          "Animation",
+          "Sci-Fi & Fantasy",
+          "Action & Adventure"
+        ],
+        "vote_average": 8.665,
+        "vote_count": 6790,
+        "media_type": "tv",
+        "origin_country": [
+          "JP"
+        ]
+      },
+      {
+        "imdb_id": "tt0052520",
+        "imdb_rating": 9,
+        "imdb_rank": 21,
+        "tmdb_id": 6357,
+        "title": "The Twilight Zone",
+        "original_title": "The Twilight Zone",
+        "overview": "A series of unrelated stories containing drama, psychological thriller, fantasy, science fiction, suspense, and/or horror, often concluding with a macabre or unexpected twist.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/v6mHYpO4NG2O3F1S4YFf08iV01f.jpg",
+        "release_date": "1959-10-02",
+        "genres": [
+          "Sci-Fi & Fantasy",
+          "Mystery",
+          "Drama"
+        ],
+        "vote_average": 8.447,
+        "vote_count": 939,
+        "media_type": "tv",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt1877514",
+        "imdb_rating": 9.1,
+        "imdb_rank": 22,
+        "tmdb_id": 46434,
+        "title": "The Vietnam War",
+        "original_title": "The Vietnam War",
+        "overview": "An immersive 360-degree narrative telling the epic story of the Vietnam War as it has never before been told on film. Featuring testimony from nearly 80 witnesses, including many Americans who fought in the war and others who opposed it, as well as Vietnamese combatants and civilians from both the winning and losing sides.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/tKt4lYTA4YmfBUH5Vtd7qqgqGBW.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/xxxcjcIoK4OuVjchnnpUuSSE8Ks.jpg",
+        "release_date": "2017-09-17",
+        "genres": [
+          "Documentary",
+          "War & Politics"
+        ],
+        "vote_average": 8.2,
+        "vote_count": 191,
+        "media_type": "tv",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt1475582",
+        "imdb_rating": 9,
+        "imdb_rank": 23,
+        "tmdb_id": 19885,
+        "title": "Sherlock",
+        "original_title": "Sherlock",
+        "overview": "A modern update finds the famous sleuth and his doctor partner solving crime in 21st century London.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/cIfGAkpvWD2zxHrXzhv3uptYbyV.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/hmLTIRtVyTHShJl2Wb8LHmvUgJm.jpg",
+        "release_date": "2010-07-25",
+        "genres": [
+          "Crime",
+          "Drama",
+          "Mystery"
+        ],
+        "vote_average": 8.513,
+        "vote_count": 5773,
+        "media_type": "tv",
+        "origin_country": [
+          "GB"
+        ]
+      },
+      {
+        "imdb_id": "tt0103359",
+        "imdb_rating": 9,
+        "imdb_rank": 24,
+        "tmdb_id": 2098,
+        "title": "Batman: The Animated Series",
+        "original_title": "Batman: The Animated Series",
+        "overview": "Vowing to avenge the murder of his parents, Bruce Wayne devotes his life to wiping out crime in Gotham City as the masked vigilante \"Batman\".",
+        "poster_path": "https://image.tmdb.org/t/p/w500/lBomQFW1vlm1yUYMNSbFZ45R4Ox.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/jszr5nLTaK946h85MBl1K2dkvKN.jpg",
+        "release_date": "1992-09-05",
+        "genres": [
+          "Action & Adventure",
+          "Animation",
+          "Drama",
+          "Mystery"
+        ],
+        "vote_average": 8.545,
+        "vote_count": 1668,
+        "media_type": "tv",
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "imdb_id": "tt11126994",
+        "imdb_rating": 9,
+        "imdb_rank": 25,
+        "tmdb_id": 94605,
+        "title": "Arcane",
+        "original_title": "Arcane",
+        "overview": "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.",
+        "poster_path": "https://image.tmdb.org/t/p/w500/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w780/wQEW3xLrQAThu1GvqpsKQyejrYS.jpg",
+        "release_date": "2021-11-06",
+        "genres": [
+          "Animation",
+          "Sci-Fi & Fantasy",
+          "Drama",
+          "Action & Adventure"
+        ],
+        "vote_average": 8.767,
+        "vote_count": 5155,
+        "media_type": "tv",
+        "origin_country": [
+          "US"
+        ]
+      }
+    ]
+  }
+}
