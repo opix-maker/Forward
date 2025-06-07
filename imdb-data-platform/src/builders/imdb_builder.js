@@ -1,111 +1,109 @@
-import fetch from 'node-fetch';
-import * as cheerio from 'cheerio';
-import { sleep, parseImdbRating } from '../utils/helpers.js';
+import { STATIC_CHARTS_CONFIG, CURATED_LISTS_CONFIG, fetchImdbIdList } from './src/builders/imdb_builder.js';
+import { findByImdbId, getTmdbDetails } from './src/utils/tmdb_api.js';
+import { sleep, writeJsonFile } from './src/utils/helpers.js';
 
-const IMDB_BASE_URL = 'https://www.imdb.com';
+const MAX_CONCURRENT_ENRICHMENTS = 10;
+const OUTPUT_DIR = './dist'; // 所有JSON文件将输出到这个目录
 
-// 定义地区代码和高级搜索的对应关系
-const REGIONS = {
-    ALL: { name: '全球', countries: null }, // 总榜单
-    US: { name: '美国', countries: 'us' },
-    GB: { name: '英国', countries: 'gb' },
-    JP: { name: '日本', countries: 'jp' },
-    KR: { name: '韩国', countries: 'kr' },
-    IN: { name: '印度', countries: 'in' },
-    FR: { name: '法国', countries: 'fr' },
-    DE: { name: '德国', countries: 'de' },
-};
+/**
+ * 接收IMDb ID列表，并用TMDB的中文信息进行丰富
+ * @param {Array<string>} imdbIdList - IMDb ID 列表
+ * @returns {Array} - 包含完整TMDB中文信息的对象数组
+ */
+async function enrichListWithTmdb(imdbIdList) {
+    const enrichedItems = [];
+    for (let i = 0; i < imdbIdList.length; i += MAX_CONCURRENT_ENRICHMENTS) {
+        const batch = imdbIdList.slice(i, i + MAX_CONCURRENT_ENRICHMENTS);
+        const promises = batch.map(async (imdbId) => {
+            if (!imdbId) return null;
+            
+            const tmdbSearchResult = await findByImdbId(imdbId);
+            if (!tmdbSearchResult) return null;
 
-async function fetchImdbPage(path, queryParams = {}) {
-    const url = new URL(`${IMDB_BASE_URL}${path}`);
-    Object.entries(queryParams).forEach(([key, value]) => {
-        if (value) url.searchParams.set(key, value);
-    });
-    
-    console.log(`  Fetching IMDb page: ${url.toString()}`);
-    const response = await fetch(url.toString(), {
-        headers: {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-            'Accept-Language': 'en-US,en;q=0.9'
-        }
-    });
-    if (!response.ok) {
-        throw new Error(`Failed to fetch IMDb page: ${response.statusText}`);
-    }
-    return response.text();
-}
+            const mediaType = tmdbSearchResult.media_type || 'movie';
+            const tmdbDetails = await getTmdbDetails(tmdbSearchResult.id, mediaType);
+            if (!tmdbDetails) return null;
 
-function parseImdbChart(html) {
-    const $ = cheerio.load(html);
-    const items = [];
-    // IMDb的列表项选择器可能会变化，这里使用一个更通用的
-    $('li.ipc-metadata-list-summary-item').each((_, element) => {
-        const $item = $(element);
-        const titleElement = $item.find('h3.ipc-title__text');
-        const rankText = titleElement.text().match(/^(\d+)\./);
-        const rank = rankText ? parseInt(rankText[1], 10) : null;
-        const title = titleElement.text().replace(/^(\d+)\.\s*/, '').trim();
-        
-        const imdbId = $item.find('a.ipc-title-link-wrapper').attr('href')?.match(/tt\d+/)?.[0];
-        
-        const metadataItems = $item.find('.ipc-title-metadata-item');
-        const year = metadataItems.eq(0)?.text().trim();
-        const rating = $item.find('span.ipc-rating-star').text().trim();
+            // 提取中文标题和简介
+            const chineseTranslation = tmdbDetails.translations?.translations?.find(t => t.iso_639_1 === 'zh');
+            const title_zh = chineseTranslation?.data?.title || chineseTranslation?.data?.name || tmdbDetails.title || tmdbDetails.name;
+            const overview_zh = chineseTranslation?.data?.overview || tmdbDetails.overview;
 
-        if (imdbId && title) {
-            items.push({
-                imdbId,
-                title,
-                rank,
-                year,
-                rating: parseImdbRating(rating),
-            });
-        }
-    });
-    return items;
-}
+            return {
+                imdb_id: imdbId,
+                tmdb_id: tmdbDetails.id,
+                title: title_zh,
+                overview: overview_zh,
+                poster_path: tmdbDetails.poster_path,
+                backdrop_path: tmdbDetails.backdrop_path,
+                release_date: tmdbDetails.release_date || tmdbDetails.first_air_date,
+                genres: tmdbDetails.genres.map(g => g.name),
+                vote_average: tmdbDetails.vote_average,
+                vote_count: tmdbDetails.vote_count,
+                media_type: mediaType,
+            };
+        });
 
-const CHARTS_CONFIG = {
-    mostPopular: { name: '热门榜单', path: '/chart/moviemeter/' },
-    topRated: { name: '高分榜单', path: '/chart/top/' },
-};
-
-export async function buildImdbData() {
-    console.log('Building IMDb data module...');
-    const imdbData = {};
-
-    for (const [chartKey, chart] of Object.entries(CHARTS_CONFIG)) {
-        imdbData[chartKey] = {};
-        console.log(`- Building chart type: ${chart.name}`);
-        
-        for (const [regionKey, region] of Object.entries(REGIONS)) {
-            try {
-                console.log(`  - Building region: ${region.name}`);
-                let items;
-                if (regionKey === 'ALL') {
-                    // 总榜单使用固定的chart路径
-                    const html = await fetchImdbPage(chart.path);
-                    items = parseImdbChart(html);
-                } else {
-                    // 地区榜单使用高级搜索
-                    const html = await fetchImdbPage('/search/title/', {
-                        'title_type': 'feature',
-                        'countries': region.countries,
-                        'sort': 'moviemeter,asc' // 按热度排序
-                    });
-                    items = parseImdbChart(html);
-                }
-                
-                imdbData[chartKey][regionKey] = items.slice(0, 50); // 每个榜单只取前50
-                console.log(`    Found ${items.length} items, taking top 50 for ${region.name}.`);
-                await sleep(1000);
-            } catch (error) {
-                console.error(`    Failed to build ${chart.name} for region ${region.name}:`, error.message);
-                imdbData[chartKey][regionKey] = [];
+        const settledResults = await Promise.allSettled(promises);
+        settledResults.forEach(result => {
+            if (result.status === 'fulfilled' && result.value) {
+                enrichedItems.push(result.value);
             }
-        }
+        });
+        await sleep(500);
     }
-
-    console.log('IMDb data module build finished.');
-    return imdbData;
+    return enrichedItems;
 }
+
+async function main() {
+    console.log('Starting main build process...');
+    const startTime = Date.now();
+    
+    const allTasks = {
+        ...STATIC_CHARTS_CONFIG,
+        ...CURATED_LISTS_CONFIG
+    };
+
+    try {
+        for (const [key, config] of Object.entries(allTasks)) {
+            console.log(`\nProcessing task: ${config.name} (${key})`);
+            
+            // 1. 获取IMDb ID列表
+            const imdbIdList = await fetchImdbIdList(config);
+            if (!imdbIdList || imdbIdList.length === 0) {
+                console.warn(`  No items found for ${config.name}. Skipping.`);
+                continue;
+            }
+            console.log(`  Found ${imdbIdList.length} IMDb IDs.`);
+
+            // 2. 丰富TMDB数据
+            const enrichedData = await enrichListWithTmdb(imdbIdList);
+            console.log(`  Enriched ${enrichedData.length} items with TMDB data.`);
+
+            // 3. 写入独立的JSON文件
+            const outputPath = `${OUTPUT_DIR}/${key}.json`;
+            await writeJsonFile(outputPath, enrichedData);
+            console.log(`  Successfully wrote data to ${outputPath}`);
+
+            await sleep(1000); // 在任务之间礼貌性等待
+        }
+
+        // 4. 创建一个索引文件，方便客户端知道有哪些榜单
+        const index = {
+            staticCharts: Object.keys(STATIC_CHARTS_CONFIG).map(key => ({ id: key, name: STATIC_CHARTS_CONFIG[key].name })),
+            curatedLists: Object.keys(CURATED_LISTS_CONFIG).map(key => ({ id: key, name: CURATED_LISTS_CONFIG[key].name })),
+            buildTimestamp: new Date().toISOString()
+        };
+        await writeJsonFile(`${OUTPUT_DIR}/index.json`, index);
+        console.log(`\nSuccessfully wrote index file to ${OUTPUT_DIR}/index.json`);
+
+        const duration = (Date.now() - startTime) / 1000;
+        console.log(`\n✅ Build process successful! Took ${duration.toFixed(2)} seconds.`);
+
+    } catch (error) {
+        console.error('\n❌ FATAL ERROR during build process:', error);
+        process.exit(1);
+    }
+}
+
+main();
