@@ -1,0 +1,1074 @@
+[
+  {
+    "adult": false,
+    "backdrop_path": "/lAnkMSDISzMYLWICS7m16rSTUHD.jpg",
+    "belongs_to_collection": {
+      "id": 8580,
+      "name": "龙威小子（系列）",
+      "poster_path": "/7tuwH4tZZy4BHe7mivXmmSYg3kx.jpg",
+      "backdrop_path": "/wVG4aeLvlDmjAA9voP87u2qdEWv.jpg"
+    },
+    "budget": 45000000,
+    "genres": [
+      {
+        "id": 28,
+        "name": "动作"
+      },
+      {
+        "id": 12,
+        "name": "冒险"
+      },
+      {
+        "id": 18,
+        "name": "剧情"
+      }
+    ],
+    "homepage": "",
+    "id": 1011477,
+    "imdb_id": "tt1674782",
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_title": "Karate Kid: Legends",
+    "overview": "　　功夫少年李峰（王班 饰）初入纽约，因帮朋友解围反遭当地空手道冠军“美式霸凌”，便决心参加空手道大赛赢回尊重。昔日恩师韩师傅（成龙 饰）远渡重洋携空手道大师丹尼尔（拉尔夫·马基奥 饰）出手相助，将纽约化成训练场对李峰开启宗师特训。在师傅们的教导下，李峰能否将两个武术流派融会贯通，用胜利赢得尊重并开辟属于自己的武学之道？",
+    "popularity": 91.2151,
+    "poster_path": "/vLSMpla6S8pMtgOU201tya6tDtH.jpg",
+    "production_companies": [
+      {
+        "id": 5,
+        "logo_path": "/71BqEFAF4V3qjjMPCpLuyJFB9A.png",
+        "name": "Columbia Pictures",
+        "origin_country": "US"
+      },
+      {
+        "id": 5219,
+        "logo_path": null,
+        "name": "Sunswept Entertainment",
+        "origin_country": "US"
+      }
+    ],
+    "production_countries": [
+      {
+        "iso_3166_1": "US",
+        "name": "United States of America"
+      }
+    ],
+    "release_date": "2025-05-08",
+    "revenue": 51487036,
+    "runtime": 94,
+    "spoken_languages": [
+      {
+        "english_name": "English",
+        "iso_639_1": "en",
+        "name": "English"
+      }
+    ],
+    "status": "Released",
+    "tagline": "",
+    "title": "功夫梦：融合之道",
+    "video": false,
+    "vote_average": 7,
+    "vote_count": 87,
+    "credits": {
+      "cast": [
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 18897,
+          "known_for_department": "Acting",
+          "name": "成龙",
+          "original_name": "成龍",
+          "popularity": 11.651,
+          "profile_path": "/nraZoTzwJQPHspAVsKfgl3RXKKa.jpg",
+          "cast_id": 2,
+          "character": "Mr. Han",
+          "credit_id": "64d22a0c85090f00e7988224",
+          "order": 0
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3033265,
+          "known_for_department": "Acting",
+          "name": "王班",
+          "original_name": "Ben Wang",
+          "popularity": 2.5233,
+          "profile_path": "/5A6JgNR9nlFVjuzJ1oOXyj2hfJo.jpg",
+          "cast_id": 8,
+          "character": "Li Fong",
+          "credit_id": "65ca78ca4350110149e7a4ab",
+          "order": 1
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2877,
+          "known_for_department": "Acting",
+          "name": "拉尔夫·马奇奥",
+          "original_name": "Ralph Macchio",
+          "popularity": 3.0144,
+          "profile_path": "/8zw5vcKlg05Is12Fww4QxRjO1f3.jpg",
+          "cast_id": 3,
+          "character": "Daniel LaRusso",
+          "credit_id": "655ce7ebea84c710922b55e4",
+          "order": 2
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 11866,
+          "known_for_department": "Acting",
+          "name": "乔舒亚·杰克逊",
+          "original_name": "Joshua Jackson",
+          "popularity": 4.1079,
+          "profile_path": "/mH2a5YFd8J7upjjWwEzM75vitA2.jpg",
+          "cast_id": 9,
+          "character": "Victor Lipani",
+          "credit_id": "65e25f15dd25890163f1e598",
+          "order": 3
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2030076,
+          "known_for_department": "Acting",
+          "name": "赛迪·斯坦利",
+          "original_name": "Sadie Stanley",
+          "popularity": 1.9366,
+          "profile_path": "/zfjr9nkUTWJ2EekyiWmYdxscrSJ.jpg",
+          "cast_id": 10,
+          "character": "Mia Lipani",
+          "credit_id": "65e8d201713ea6017c52ff49",
+          "order": 4
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 21702,
+          "known_for_department": "Acting",
+          "name": "温明娜",
+          "original_name": "Ming-Na Wen",
+          "popularity": 2.792,
+          "profile_path": "/eqCzFF83It56cUdjpskzvg8jgq.jpg",
+          "cast_id": 11,
+          "character": "Li Fong's Mother",
+          "credit_id": "65e8f6847f4f21017bd9b50b",
+          "order": 5
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 204191,
+          "known_for_department": "Acting",
+          "name": "阿拉米斯·奈特",
+          "original_name": "Aramis Knight",
+          "popularity": 1.5396,
+          "profile_path": "/bddQ59CujLfAHEcDqAyIXXufJtC.jpg",
+          "cast_id": 14,
+          "character": "Conor Day",
+          "credit_id": "660d8d9235818f01623a7708",
+          "order": 6
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1148455,
+          "known_for_department": "Acting",
+          "name": "怀特·欧雷夫",
+          "original_name": "Wyatt Oleff",
+          "popularity": 0.958,
+          "profile_path": "/9i2EuZz7Oh2zOV6Y2ijThW94MeM.jpg",
+          "cast_id": 13,
+          "character": "Alan",
+          "credit_id": "660d8d8ba88587017ce88cf4",
+          "order": 7
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1787399,
+          "known_for_department": "Acting",
+          "name": "Shaunette Renée Wilson",
+          "original_name": "Shaunette Renée Wilson",
+          "popularity": 0.9961,
+          "profile_path": "/fPjeTxxE2sB0bQUcAoO13mKsKK5.jpg",
+          "cast_id": 23,
+          "character": "Ms Morgan",
+          "credit_id": "67671702919287ef53910f7a",
+          "order": 8
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 4813280,
+          "known_for_department": "Acting",
+          "name": "David Robitaille",
+          "original_name": "David Robitaille",
+          "popularity": 0.1602,
+          "profile_path": "/afbqXtEo1sfx5XSEO523oedZTcQ.jpg",
+          "cast_id": 25,
+          "character": "High School Kid",
+          "credit_id": "67736009e9cac07ec412d216",
+          "order": 9
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 56124,
+          "known_for_department": "Acting",
+          "name": "威廉·扎布卡",
+          "original_name": "William Zabka",
+          "popularity": 2.6235,
+          "profile_path": "/AoTxNif6Kv5KtIk3YdfQUxLrLeR.jpg",
+          "cast_id": 29,
+          "character": "Johnny Lawrence",
+          "credit_id": "681d73e9d4640b66d40b2d27",
+          "order": 10
+        }
+      ],
+      "crew": [
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 61,
+          "known_for_department": "Writing",
+          "name": "罗伯特·马克·卡门",
+          "original_name": "Robert Mark Kamen",
+          "popularity": 0.7047,
+          "profile_path": "/t7XwxMyS2ANsDDsRWJY7FhdjgQ5.jpg",
+          "credit_id": "65605024244182014e884f87",
+          "department": "Writing",
+          "job": "Characters"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 484466,
+          "known_for_department": "Writing",
+          "name": "克里斯托弗·墨菲",
+          "original_name": "Christopher Murphey",
+          "popularity": 0.3436,
+          "profile_path": null,
+          "credit_id": "65605031244182010cb3ff32",
+          "department": "Writing",
+          "job": "Characters"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1203521,
+          "known_for_department": "Writing",
+          "name": "罗伯·列博",
+          "original_name": "Rob Lieber",
+          "popularity": 0.4487,
+          "profile_path": "/1HgV4XOcFc7yvDyeOqwJRXXnKYc.jpg",
+          "credit_id": "6326b33a89b5610083540844",
+          "department": "Writing",
+          "job": "Writer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 10569,
+          "known_for_department": "Production",
+          "name": "Karen Rosenfelt",
+          "original_name": "Karen Rosenfelt",
+          "popularity": 0.263,
+          "profile_path": "/oLPdV2FysVgAbIKURSA9SiYPwMJ.jpg",
+          "credit_id": "655ce84953866e00ff0ab735",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1674284,
+          "known_for_department": "Directing",
+          "name": "乔纳森·恩特威斯尔",
+          "original_name": "Jonathan Entwistle",
+          "popularity": 0.6595,
+          "profile_path": "/d4fX4VcnkSQcqYWukzDE5Nm7wGp.jpg",
+          "credit_id": "655ce81a7f054018d344f35c",
+          "department": "Directing",
+          "job": "Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1868938,
+          "known_for_department": "Camera",
+          "name": "Justin Brown",
+          "original_name": "Justin Brown",
+          "popularity": 0.1834,
+          "profile_path": null,
+          "credit_id": "660d67c015dea0017c3652b5",
+          "department": "Camera",
+          "job": "Director of Photography"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1868277,
+          "known_for_department": "Directing",
+          "name": "Richard Graves",
+          "original_name": "Richard Graves",
+          "popularity": 0.3182,
+          "profile_path": null,
+          "credit_id": "66cb721a1b064392ba48b30f",
+          "department": "Directing",
+          "job": "First Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1056043,
+          "known_for_department": "Production",
+          "name": "Jenny Hinkey",
+          "original_name": "Jenny Hinkey",
+          "popularity": 0.3832,
+          "profile_path": null,
+          "credit_id": "67130158e818700f3054ab3e",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2877,
+          "known_for_department": "Acting",
+          "name": "拉尔夫·马奇奥",
+          "original_name": "Ralph Macchio",
+          "popularity": 3.0144,
+          "profile_path": "/8zw5vcKlg05Is12Fww4QxRjO1f3.jpg",
+          "credit_id": "6713015ff9c663319123ec55",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1192700,
+          "known_for_department": "Sound",
+          "name": "George Drakoulias",
+          "original_name": "George Drakoulias",
+          "popularity": 0.2718,
+          "profile_path": "/7oiF0TXUhNQRsugEkmwsOQyik0V.jpg",
+          "credit_id": "6761fe473327e5e5e3c26f33",
+          "department": "Sound",
+          "job": "Music Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1404094,
+          "known_for_department": "Sound",
+          "name": "多米尼克·刘易斯",
+          "original_name": "Dominic Lewis",
+          "popularity": 0.2506,
+          "profile_path": "/8r3uR9LxtCG72l9JS4fjfVc3wdZ.jpg",
+          "credit_id": "6761fe503327e5e5e3c26f44",
+          "department": "Sound",
+          "job": "Original Music Composer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1397713,
+          "known_for_department": "Costume & Make-Up",
+          "name": "Mirren Gordon-Crozier",
+          "original_name": "Mirren Gordon-Crozier",
+          "popularity": 0.1405,
+          "profile_path": null,
+          "credit_id": "6761fe5b3327e5e5e3c26f48",
+          "department": "Costume & Make-Up",
+          "job": "Costume Design"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 52450,
+          "known_for_department": "Editing",
+          "name": "Dana E. Glauberman",
+          "original_name": "Dana E. Glauberman",
+          "popularity": 0.2219,
+          "profile_path": "/dlik9ug8g80f2PWacp2Qdu3gyfD.jpg",
+          "credit_id": "6761fe649c68a885a6bdeccc",
+          "department": "Editing",
+          "job": "Editor"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1155578,
+          "known_for_department": "Art",
+          "name": "Maya Sigel",
+          "original_name": "Maya Sigel",
+          "popularity": 0.0646,
+          "profile_path": null,
+          "credit_id": "6761fe71c75632d622bdedb4",
+          "department": "Art",
+          "job": "Production Design"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1890965,
+          "known_for_department": "Art",
+          "name": "Frédéric Berthiaume",
+          "original_name": "Frédéric Berthiaume",
+          "popularity": 0.1381,
+          "profile_path": null,
+          "credit_id": "676dfa8e4ca2fbbfca61592c",
+          "department": "Art",
+          "job": "Art Direction"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1790333,
+          "known_for_department": "Directing",
+          "name": "Shanna Roberts Salée",
+          "original_name": "Shanna Roberts Salée",
+          "popularity": 0.099,
+          "profile_path": "/8lqq4Hylw8LhAeC27nLqjBDY0XN.jpg",
+          "credit_id": "67d1d7812575f01b3a606bb9",
+          "department": "Directing",
+          "job": "Second Second Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1331704,
+          "known_for_department": "Crew",
+          "name": "Peng Zhang",
+          "original_name": "Peng Zhang",
+          "popularity": 0.2616,
+          "profile_path": null,
+          "credit_id": "68082498276bf64e41ab278b",
+          "department": "Directing",
+          "job": "Second Unit Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1331704,
+          "known_for_department": "Crew",
+          "name": "Peng Zhang",
+          "original_name": "Peng Zhang",
+          "popularity": 0.2616,
+          "profile_path": null,
+          "credit_id": "68082523276bf64e41ab27d3",
+          "department": "Crew",
+          "job": "Stunt Coordinator"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 13179,
+          "known_for_department": "Sound",
+          "name": "Tony Lamberti",
+          "original_name": "Tony Lamberti",
+          "popularity": 0.3659,
+          "profile_path": "/gICSJtipCXdHOoQ7QSBesXDgppg.jpg",
+          "credit_id": "6829f1d374d5a83882f5580f",
+          "department": "Sound",
+          "job": "Sound Re-Recording Mixer"
+        }
+      ]
+    },
+    "keywords": {
+      "keywords": [
+        {
+          "id": 242,
+          "name": "new york city"
+        },
+        {
+          "id": 779,
+          "name": "martial arts"
+        },
+        {
+          "id": 780,
+          "name": "kung fu"
+        },
+        {
+          "id": 1310,
+          "name": "mentor"
+        },
+        {
+          "id": 3436,
+          "name": "karate"
+        },
+        {
+          "id": 33683,
+          "name": "beijing, china"
+        },
+        {
+          "id": 156159,
+          "name": "martial arts tournament"
+        },
+        {
+          "id": 156162,
+          "name": "martial arts training"
+        },
+        {
+          "id": 328222,
+          "name": "moving to another country"
+        }
+      ]
+    },
+    "translations": {
+      "translations": [
+        {
+          "iso_3166_1": "US",
+          "iso_639_1": "en",
+          "name": "English",
+          "english_name": "English",
+          "data": {
+            "homepage": "https://karatekid.movie",
+            "overview": "After a family tragedy, kung fu prodigy Li Fong is uprooted from his home in Beijing and forced to move to New York City with his mother. When a new friend needs his help, Li enters a karate competition – but his skills alone aren't enough. Li's kung fu teacher Mr. Han enlists original Karate Kid Daniel LaRusso for help, and Li learns a new way to fight, merging their two styles into one for the ultimate martial arts showdown.",
+            "runtime": 94,
+            "tagline": "When masters unite a new legacy begins.",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "ES",
+          "iso_639_1": "es",
+          "name": "Español",
+          "english_name": "Spanish",
+          "data": {
+            "homepage": "",
+            "overview": "Tras una tragedia familiar, el prodigio del kung fu Li Fong se ve obligado a abandonar su hogar en Pekín y trasladarse a Nueva York con su madre. Cuando un nuevo amigo necesita su ayuda, Li se presenta a una competición de kárate, pero sus habilidades no son suficientes. El profesor de kung fu de Li, el Sr. Han, pide ayuda al Karate Kid original, Daniel LaRusso, y Li aprende una nueva forma de luchar, fusionando sus dos estilos en uno solo para el enfrentamiento definitivo de artes marciales.",
+            "runtime": 0,
+            "tagline": "",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "VN",
+          "iso_639_1": "vi",
+          "name": "Tiếng Việt",
+          "english_name": "Vietnamese",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Siêu Nhí Karate: Những Huyền Thoại"
+          }
+        },
+        {
+          "iso_3166_1": "FR",
+          "iso_639_1": "fr",
+          "name": "Français",
+          "english_name": "French",
+          "data": {
+            "homepage": "",
+            "overview": "Li Fong, un adolescent qui fréquente l'école de kung-fu de M. Han en Chine, doit déménager à New York avec sa mère. Celle-ci souhaite que son fils intègre une école prestigieuse et qu'il mette de côté son sport de combat. À son arrivée dans sa nouvelle ville, Li rencontre Mia, une camarade de classe, ainsi que le père de celle-ci avec lesquels il se lie d'amitié. Li se retrouve ensuite entraîné dans une compétition d'arts martiaux où il doit affronter un redoutable champion de karaté.",
+            "runtime": 0,
+            "tagline": "",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "JP",
+          "iso_639_1": "ja",
+          "name": "日本語",
+          "english_name": "Japanese",
+          "data": {
+            "homepage": "https://www.bestkid-legends.jp",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "ベスト・キッド：レジェンズ"
+          }
+        },
+        {
+          "iso_3166_1": "HU",
+          "iso_639_1": "hu",
+          "name": "Magyar",
+          "english_name": "Hungarian",
+          "data": {
+            "homepage": "",
+            "overview": "A Kungfu mesterei legyőzhetetlenek. De a mesterek ritkák: hosszú és fáradságos út vezet a csúcsra. És általában kell hozzá egy mester.  A fiatal, és szupertehetséges kungfus, Li Fong (Ben Wang) és az édesanyja egy családi tragédia után kénytelen Pekingből New Yorkba költözni. A srácot egyszerre gyötri a maga mögött hagyott múlt és az új környezet: új osztálytársaival nem találja meg a hangot, folyton bajba keveredik – bármit csinál, botrány és felfordulás kíséri.  Amikor egy új barátja bajba kerül, ő azzal segít rajta, hogy indul egy karatebajnokságon: de ehhez nem elég jó. Az edzője, Mr. Han (Jackie Chan) segítségül hívja az eredeti Karate Kölyköt (Raph Macchio), és kettejük segítségével Li két stílust keverve próbál helyt állni a harcművészek között – a végső nagy összecsapás során.",
+            "runtime": 118,
+            "tagline": "Ha a mesterek összefognak, egy új hagyomány kezdődik",
+            "title": "Karate kölyök: Legendák"
+          }
+        },
+        {
+          "iso_3166_1": "PL",
+          "iso_639_1": "pl",
+          "name": "Polski",
+          "english_name": "Polish",
+          "data": {
+            "homepage": "https://tylkohity.pl/filmy/karate-kid-575",
+            "overview": "Po rodzinnej tragedii utalentowany zawodnik kung fu Li Forg (Ben Warg) jest zmuszony do przeprowadzki z matką z Pekinu do Nowego Jorku. Li stara się zapomnieć o swojej przeszłości, próbując dopasować się do nowych okoliczności. Kiedy nowa znajoma potrzebuje pomocy, Li postanawia wziąć udział w turnieju karate, lecz jego umiejętności okazują się niewystarczające. Jego nauczyciel Pan Han (Jackie Chan) zwraca się o pomoc do Daniela LaRusso (Ralph Macchio), aby nauczył chłopca nowego stylu walki. Połączenie dwóch różnych filozofii ma pomóc Li w wygraniu turnieju i przezwyciężeniu własnych słabości.",
+            "runtime": 94,
+            "tagline": "",
+            "title": "Karate Kid: Legendy"
+          }
+        },
+        {
+          "iso_3166_1": "MX",
+          "iso_639_1": "es",
+          "name": "Español",
+          "english_name": "Spanish",
+          "data": {
+            "homepage": "https://www.sonypictures.com.mx/peliculas/karate-kid-leyendas",
+            "overview": "Después de una tragedia familiar, el prodigio del kung fu Li Fong es desarraigado de su hogar en Beijing y obligado a mudarse a la ciudad de Nueva York con su madre. Cuando un nuevo amigo necesita su ayuda, Li participa en una competencia de kárate, pero sus habilidades por sí solas no son suficientes. El maestro de kung fu de Li, el Sr. Han, recluta al Karate Kid original Daniel LaRusso para que lo ayude, y Li aprende una nueva forma de luchar, fusionando sus dos estilos en uno para el enfrentamiento definitivo de artes marciales.",
+            "runtime": 0,
+            "tagline": "Dos ramas. Un árbol.",
+            "title": "Karate Kid: Leyendas"
+          }
+        },
+        {
+          "iso_3166_1": "BR",
+          "iso_639_1": "pt",
+          "name": "Português",
+          "english_name": "Portuguese",
+          "data": {
+            "homepage": "https://karatekidlendas.com.br",
+            "overview": "Após uma tragédia familiar, o prodígio do kung fu Li Fong é forçado a deixar sua casa em Pequim e se mudar para Nova York com sua mãe. Li luta para deixar o passado para trás enquanto tenta se enturmar com seus novos colegas de classe, e, embora não queira brigar, os problemas parecem encontrá-lo por toda parte. Quando um novo amigo precisa de sua ajuda, Li entra em uma competição de karatê – mas suas habilidades sozinhas não são suficientes. O professor de kung fu de Li, Sr. Han, recruta o lendário Karatê Kid original, Daniel LaRusso, para ajudá-lo, e Li aprende uma nova forma de lutar, combinando seus dois estilos em um confronto épico de artes marciais.",
+            "runtime": 90,
+            "tagline": "As lendas são eternas.",
+            "title": "Karatê Kid: Lendas"
+          }
+        },
+        {
+          "iso_3166_1": "IL",
+          "iso_639_1": "he",
+          "name": "עִבְרִית",
+          "english_name": "Hebrew",
+          "data": {
+            "homepage": "",
+            "overview": "לאחר טרגדיה משפחתית, לי פונג הסיני, העילוי החדש של הקונג פו, נאלץ לעבור לניו יורק עם אימו, בניסיון להשתחרר מכבלי העבר, להימנע מצרות מיותרות ולהשתלב עם בני כיתתו בבית הספר החדש.  אבל נדמה כי הצרות מוצאות אותו בכל מקום וכאשר חברו החדש זקוק לעזרה, לי נרשם לתחרות קראטה – ומגייס לקראתה את מורה הקונג פו מר האן (ג'קי צ'אן) שמזעיק את הקראטה קיד המקורי דניאל לרוסו (ראלף מאצ'יו). יחד עם שני המאסטרים לי לומד דרך חדשה להילחם עם שילוב בין שני הסגנונות של מוריו כדי להפוך את התחרות למופע ראווה אחד גדול של אומנות הלחימה האולטימטיבית.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "קראטה קיד: הגדולים מכולם"
+          }
+        },
+        {
+          "iso_3166_1": "TR",
+          "iso_639_1": "tr",
+          "name": "Türkçe",
+          "english_name": "Turkish",
+          "data": {
+            "homepage": "",
+            "overview": "Pekin'den New York'a taşınan genç kung fu yeteneği Li Fong'un hikâyesi anlatılıyor. Ailevi bir trajedinin ardından yeni hayatına uyum sağlamaya çalışan Li, bir arkadaşına yardım etmek için bir karate turnuvasına katılmaya karar verir. Ancak, kung fu bilgisi yeterli olmadığından, eğitmeni Bay Han, orijinal Karate Kid olan Daniel LaRusso'dan yardım ister. İkili, Li'yi hem kung fu hem de karate teknikleriyle eğiterek, onu turnuvaya hazırlar.",
+            "runtime": 0,
+            "tagline": "Öğren, Savun, Kazan!",
+            "title": "Karate Kid: Efsane Dövüşçüler"
+          }
+        },
+        {
+          "iso_3166_1": "BG",
+          "iso_639_1": "bg",
+          "name": "български език",
+          "english_name": "Bulgarian",
+          "data": {
+            "homepage": "",
+            "overview": "Ли Фонг се старае да се впише в новото училище и иска да стои на страна от неприятности, но проблемите го преследват на всяка крачка. Когато негов приятел се оказва в опасност, Ли се намесва и попада в ситуация, в която кунгфу уменията му няма да са достатъчни. В играта се включва г-н Хан (Чан), мъдрият и непоколебим учител на Ли, който се обръща за помощ към Даниел ЛаРусо (Мачио), самият Карате Кид. Заедно те учат Ли да съчетава прецизността на каратето с плавната сила на кунгфу, за да го подготвят за епичен сблъсък на арената, на която ще бъде определен абсолютният майстор на бойните изкуства.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Карате Кид: Легенди"
+          }
+        },
+        {
+          "iso_3166_1": "CN",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "homepage": "",
+            "overview": "　　功夫少年李峰（王班 饰）初入纽约，因帮朋友解围反遭当地空手道冠军“美式霸凌”，便决心参加空手道大赛赢回尊重。昔日恩师韩师傅（成龙 饰）远渡重洋携空手道大师丹尼尔（拉尔夫·马基奥 饰）出手相助，将纽约化成训练场对李峰开启宗师特训。在师傅们的教导下，李峰能否将两个武术流派融会贯通，用胜利赢得尊重并开辟属于自己的武学之道？",
+            "runtime": 0,
+            "tagline": "",
+            "title": "功夫梦：融合之道"
+          }
+        },
+        {
+          "iso_3166_1": "TH",
+          "iso_639_1": "th",
+          "name": "ภาษาไทย",
+          "english_name": "Thai",
+          "data": {
+            "homepage": "",
+            "overview": "หลังจากโศกนาฏกรรมที่เกิดขึ้นในครอบครัว หลี่ฟง ต้องโยกย้ายถิ่นฐานจากบ้านเกิดที่ปักกิ่งไปยังเมืองนิวยอร์กพร้อมกับแม่ของเขา และในตอนที่เพื่อนใหม่ของเขาต้องการความช่วยเหลือ หลี่ ก็ได้เข้าร่วมการแข่งขันคาราเต้ แต่ความสามารถของเขายังไม่มากพอ คุณฮาน อาจารย์สอนกังฟูของ หลี่ จึงได้นำเอาตัว แดเนียล ลารุสโซ เข้ามาช่วยเหลือ ทำให้ หลี่ ได้เรียนรู้วิธีการต่อสู้แบบใหม่ ด้วยการรวมเอาสองแนวทางการต่อสู้มาเป็นหนึ่งเดียว เพื่อชิงชัยในการแข่งขันศิลปะการต่อสู้ครั้งยิ่งใหญ่",
+            "runtime": 0,
+            "tagline": "เมื่อสองพลังร่วมผสาน... ตำนานบทใหม่จึงอุบัติ",
+            "title": "คาราเต้ คิด ผนึกพลังตำนานนักสู้"
+          }
+        },
+        {
+          "iso_3166_1": "SK",
+          "iso_639_1": "sk",
+          "name": "Slovenčina",
+          "english_name": "Slovak",
+          "data": {
+            "homepage": "",
+            "overview": "Mladý bojovník kung fu Li sa po presťahovaní z Pekingu do New Yorku prispôsobuje len ťažko. Napriek snahe zabudnúť na minulosť a zapadnúť medzi ostatných naňho všade číhajú problémy. Keď však jeho nový známy potrebuje pomoc, Li sa prihlási do súťaže v karate s vidinou štedrej výhry. Jeho učiteľ kung fu na pomoc zavolá aj pôvodného Karate Kida. Li sa musí naučiť, ako spojiť dva odlišné bojové štýly do jedného a stať sa majstrom bojových umení. Bude to však stačiť?",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Karate Kid: Legendy"
+          }
+        },
+        {
+          "iso_3166_1": "IT",
+          "iso_639_1": "it",
+          "name": "Italiano",
+          "english_name": "Italian",
+          "data": {
+            "homepage": "",
+            "overview": "Dopo una tragedia familiare, il ragazzo prodigio del kung fu, Li Fong (Ben Wang), è costretto a lasciare la sua casa di Pechino e a trasferirsi a New York con la madre. Li Fong cerca di liberarsi del suo passato e integrarsi con i suoi nuovi compagni di classe. Malgrado non voglia combattere, i guai sembrano raggiungerlo ovunque: infatti, per aiutare un suo nuovo amico in difficoltà, è costretto a partecipare a una gara di karate. Tuttavia, le sue abilità non bastano. A questo punto, l'insegnante di kung fu di Li Fong, Mr. Han (Jackie Chan), chiede aiuto al primo “Karate Kid”, Daniel LaRusso (Ralph Macchio). Il ragazzo imparerà un nuovo modo di combattere fondendo gli stili dei due maestri in uno solo per la resa dei conti nelle arti marziali.",
+            "runtime": 0,
+            "tagline": "",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "FI",
+          "iso_639_1": "fi",
+          "name": "suomi",
+          "english_name": "Finnish",
+          "data": {
+            "homepage": "",
+            "overview": "kung fu -ihmelapsi Li Fong joutuu jättämään kotinsa Pekingissä perhetragedian myötä ja muuttamaan äitinsä kanssa New Yorkiin. Li yrittää päästää irti menneisyydestään yrittäessään sopeutua uusien luokkatovereidensa joukkoon, ja vaikka hän ei halua tapella, ongelmat tuntuvat löytävän hänet kaikkialta. Kun hänen uusi ystävänsä tarvitsee hänen apuaan, osallistuu  Li karatekilpailuun - mutta hänen taitonsa yksin eivät riitä. Lin kung fu -opettaja Mr. Han kääntyy pyytämään apua alkuperäiseltä Karate Kidiltä, Daniel LaRussolta. Li oppii uuden tavan taistella, jolloin heidän kaksi tyyliään yhdistyvät yhdeksi, mikä johtaa lopulliseen taistelulajien koitokseen.",
+            "runtime": 0,
+            "tagline": "",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "RU",
+          "iso_639_1": "ru",
+          "name": "Pусский",
+          "english_name": "Russian",
+          "data": {
+            "homepage": "",
+            "overview": "Молодой и талантливый каратист Ли Фонг из-за случившейся трагедии переезжает из Китая в США вместе с матерью. Ли нелегко расстаться с прошлой жизнью и адаптироваться к новой, требующей от него постоянной борьбы. Чтобы помочь новому другу, Ли записывается на соревнование по каратэ. Но понимает, что для выигрыша его умений недостаточно. Тогда его наставник мистер Хан обращается за помощью к Дэниелу Ларуссо, легендарному мастеру каратэ.",
+            "runtime": 0,
+            "tagline": "«Две Ветки. Одно Дерево»",
+            "title": "Каратэ-пацан: Легенды"
+          }
+        },
+        {
+          "iso_3166_1": "GE",
+          "iso_639_1": "ka",
+          "name": "ქართული",
+          "english_name": "Georgian",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "კარატისტი ბიჭუნა: ლეგენდები"
+          }
+        },
+        {
+          "iso_3166_1": "HR",
+          "iso_639_1": "hr",
+          "name": "Hrvatski",
+          "english_name": "Croatian",
+          "data": {
+            "homepage": "",
+            "overview": "Nakon što se zbog obiteljske tragedije mora s majkom preseliti iz Beijinga u New York, mladi kung fu talent Li Fong nikako se ne može snaći u novoj sredini i pomiriti s prošlošću, a nevolje ga lako pronalaze iako ih pokušava izbjeći. Ali kad njegov novi prijatelj zatreba pomoć, Li se prijavljuje na karate natjecanje gdje će mu pomoći kung-fu učitelj Mr. Han i legendarni borac, originalni Karate Kid, Daniel LaRusso. Li će tako morati spojiti dva borilačka stila kako bi osvojio natjecanje i pomogao prijatelju.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Karate Kid: Legende"
+          }
+        },
+        {
+          "iso_3166_1": "RO",
+          "iso_639_1": "ro",
+          "name": "Română",
+          "english_name": "Romanian",
+          "data": {
+            "homepage": "",
+            "overview": "În urma unei tragedii în familie, minunele kung fu Li Fong este dezrădăcinat de casa sa din Beijing și forțat să se mute la New York împreună cu mama sa. Când un nou prieten are nevoie de ajutorul său, Li se înscrie într-o competiție de karate, dar abilitățile sale nu sunt suficiente. Profesorul de kung fu al lui Li, dl Han, îi cere ajutorul originalului Karate Kid, Daniel LaRusso, iar Li învață un nou mod de a lupta, îmbinând cele două stiluri într-unul singur pentru cea mai tare confruntare de arte marțiale.",
+            "runtime": 0,
+            "tagline": "Două ramuri. Un copac.",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "SI",
+          "iso_639_1": "sl",
+          "name": "Slovenščina",
+          "english_name": "Slovenian",
+          "data": {
+            "homepage": "",
+            "overview": "Po družinski tragediji je čudežni deček kung fuja Li Fong iztrgan iz svojega doma v Pekingu in se mora z materjo preseliti v New York. Ko Li potrebuje pomoč novega prijatelja, se prijavi na tekmovanje v karateju, vendar samo njegovo znanje ni dovolj. Lijev učitelj kung fuja gospod Han za pomoč zaprosi originalnega Karate Kida Daniela LaRussa, Li pa se nauči novega načina bojevanja in združi svoja dva sloga v enega za vrhunski obračun v borilnih veščinah.",
+            "runtime": 0,
+            "tagline": "Dve veji. Eno drevo.",
+            "title": "Karate Kid: Legende"
+          }
+        },
+        {
+          "iso_3166_1": "PT",
+          "iso_639_1": "pt",
+          "name": "Português",
+          "english_name": "Portuguese",
+          "data": {
+            "homepage": "",
+            "overview": "Após uma tragédia familiar, Fu Li Fong, o prodígio do Kung Fu, é forçado a abandonar a sua casa em Pequim e muda-se para Nova Iorque com a sua mãe. Li luta para deixar o seu passado para trás enquanto tenta adaptar-se aos novos colegas de turma e, embora não queira lutar, os problemas parecem encontrá-lo em todo o lado. Quando um novo amigo precisa da sua ajuda, Li entra numa competição de karaté, mas as suas habilidades por si só não são suficientes. O professor de Kung Fu de Li, Mr. Han, convoca o Karate Kid original Daniel LaRusso para ajudar, e Li aprende uma nova forma de lutar,unindo os seus dois estilos num só para o derradeiro confronto de artes marciais.",
+            "runtime": 118,
+            "tagline": "",
+            "title": "Karate Kid: Os Campeões"
+          }
+        },
+        {
+          "iso_3166_1": "UA",
+          "iso_639_1": "uk",
+          "name": "Український",
+          "english_name": "Ukrainian",
+          "data": {
+            "homepage": "",
+            "overview": "Після сімейної трагедії юний майстер кунг-фу Лі Фан змушений покинути свій дім у Пекіні й переїхати до Нью-Йорка разом із матір'ю. Лі намагається залишити минуле позаду та знайти своє місце серед нових однокласників. Коли новому другу потрібна його допомога, Лі бере участь у змаганнях з карате. Вчитель Лі, містер Хан, звертається по допомогу до справжнього Карате Кіда – Даніеля ЛаРуссо. Тож, Лі відкриває для себе новий підхід до бою, поєднуючи два стилі в один для вирішального поєдинку у світі бойових мистецтв.",
+            "runtime": 0,
+            "tagline": "Коли майстри об'єднуються, народжується нова спадщина.",
+            "title": "Карате Кід: Легенди"
+          }
+        },
+        {
+          "iso_3166_1": "IN",
+          "iso_639_1": "hi",
+          "name": "हिन्दी",
+          "english_name": "Hindi",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "कराटे किड: लेजेंड्स"
+          }
+        },
+        {
+          "iso_3166_1": "DE",
+          "iso_639_1": "de",
+          "name": "Deutsch",
+          "english_name": "German",
+          "data": {
+            "homepage": "https://www.sonypictures.de/filme/karate-kid-legends",
+            "overview": "Nach einer Familientragödie wird das Kung-Fu-Wunderkind Li Fong aus seinem Zuhause in Peking gerissen und muss mit seiner Mutter nach New York City ziehen. Li kämpft damit, seine Vergangenheit hinter sich zu lassen, während er versucht, Anschluss bei seinen neuen Klassenkameraden zu finden. Doch obwohl er nicht kämpfen will, scheint der Ärger ihn zu verfolgen. Als ein neuer Freund seine Hilfe braucht, nimmt Li an einem Karatewettbewerb teil – aber seine Fähigkeiten allein reichen nicht aus. Lis Kung-Fu-Lehrer Mr. Han holt das legendäre Karate Kid Daniel LaRusso zu Hilfe und Li lernt eine neue Art zu kämpfen, indem er die Stile der beiden Meister für den ultimativen Martial-Arts-Showdown miteinander vereint.",
+            "runtime": 94,
+            "tagline": "",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "HK",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "homepage": "",
+            "overview": "功夫神童李風（Ben Wang飾）隨母親從北京搬到紐約。李風本以為可以安靜地適應新生活，但他不得不為了朋友挺身而出，一場意想不到的空手道比賽將他推向了命運的十字路口⋯⋯然而，單憑自身的功夫技巧還遠遠不夠，於是他的功夫老師韓先生（成龍飾），有請《龍威小子》Daniel LaRusso（賴夫馬奇奧 Ralph Macchio 飾）助陣。 在兩位武術大師的指導下，李風融合截然不同的武術風格，為終極對決做好準備！他能否在比賽中脫穎而出？",
+            "runtime": 0,
+            "tagline": "",
+            "title": "功夫夢：傳奇少年"
+          }
+        },
+        {
+          "iso_3166_1": "CA",
+          "iso_639_1": "fr",
+          "name": "Français",
+          "english_name": "French",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Karaté Kid : Légendes"
+          }
+        },
+        {
+          "iso_3166_1": "LV",
+          "iso_639_1": "lv",
+          "name": "Latviešu",
+          "english_name": "Latvian",
+          "data": {
+            "homepage": "",
+            "overview": "Jaunākā daļa \"Karatē puikas\" filmu sērijā.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Karatē puika: Leģendas"
+          }
+        },
+        {
+          "iso_3166_1": "GR",
+          "iso_639_1": "el",
+          "name": "ελληνικά",
+          "english_name": "Greek",
+          "data": {
+            "homepage": "",
+            "overview": "Στην ταινία «Karate Kid: Θρύλοι», το παιδί-θαύμα Li Fong (Ben Wang), μετά από μια οικογενειακή τραγωδία, ξεριζώνεται από το σπίτι του στο Πεκίνο και αναγκάζεται να μετακομίσει στη Νέα Υόρκη με τη μητέρα του.  Ο Li αγωνίζεται να αφήσει πίσω το παρελθόν του καθώς προσπαθεί να προσαρμοστεί στο νέο του σχολείο και παρόλο που δεν θέλει να παλεύει, οι μπελάδες φαίνεται να τον ακολουθούν παντού. Όταν ένας νέος φίλος χρειαστεί τη βοήθειά του, ο Li θα συμμετάσχει σε έναν διαγωνισμό καράτε - αλλά οι ικανότητές του από μόνες τους δεν αρκούν.  Ο δάσκαλος κουνγκ φου του Li, ο κ. Han (Jackie Chan), επιστρατεύει τον «αυθεντικό» Karate Kid Daniel LaRusso (Ralph Macchio) για βοήθεια, και ο Li μαθαίνει έναν νέο τρόπο να μάχεται, ενώνοντας τα δυο στιλ τους σε ένα για την απόλυτη αναμέτρηση πολεμικών τεχνών.",
+            "runtime": 0,
+            "tagline": "Δύο δάσκαλοι, μια νέα γενιά",
+            "title": "Karate Kid: Θρύλοι"
+          }
+        },
+        {
+          "iso_3166_1": "KR",
+          "iso_639_1": "ko",
+          "name": "한국어/조선말",
+          "english_name": "Korean",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "가라데 키드: 레전드"
+          }
+        },
+        {
+          "iso_3166_1": "IR",
+          "iso_639_1": "fa",
+          "name": "فارسی",
+          "english_name": "Persian",
+          "data": {
+            "homepage": "",
+            "overview": "لی که پدیده کونگ فو در پکن است مجبور به نقل مکان به نیویورک شده و در آنجا وارد یک مسابقه کاراته می شود. هان، معلم لی از دنیل، بچه کاراته کار اصلی در این مسابقات کمک می گیرد...",
+            "runtime": 0,
+            "tagline": "",
+            "title": "پسر کاراته باز : اسطوره ها"
+          }
+        },
+        {
+          "iso_3166_1": "SA",
+          "iso_639_1": "ar",
+          "name": "العربية",
+          "english_name": "Arabic",
+          "data": {
+            "homepage": "https://karatekid.movie",
+            "overview": "بعد مأساة عائلية، يُجبر لي فونغ، عبقري الكونغ فو، على مغادرة منزله في بكين والانتقال إلى مدينة نيويورك مع والدته. عندما يحتاج صديق جديد لمساعدته، يشارك لي في مسابقة كاراتيه، لكن مهاراته وحدها لا تكفي. يستعين السيد هان، معلم الكونغ فو الخاص به، بفتى الكاراتيه الأصلي دانيال لاروسو للمساعدة، ويتعلم لي أسلوبًا جديدًا في القتال، جامعًا بين أسلوبيهما في أسلوب واحد للمواجهة القتالية الأبرز.",
+            "runtime": 94,
+            "tagline": "عندما يتّحد الأساتذة يبدأ إرث جديد.",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "EE",
+          "iso_639_1": "et",
+          "name": "Eesti",
+          "english_name": "Estonian",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Karatekutt: Legendid"
+          }
+        },
+        {
+          "iso_3166_1": "TW",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "homepage": "",
+            "overview": "空手道小子 #雷夫馬奇歐 傳承信念  #王班 接手締造新傳奇",
+            "runtime": 0,
+            "tagline": "",
+            "title": "小子難纏：空手道傳奇"
+          }
+        },
+        {
+          "iso_3166_1": "NL",
+          "iso_639_1": "nl",
+          "name": "Nederlands",
+          "english_name": "Dutch",
+          "data": {
+            "homepage": "",
+            "overview": "Als kungfu-talent Li Fong met zijn moeder naar New York verhuist om naar een prestigieuze nieuwe school te gaan, put hij troost uit een nieuwe vriendschap met een klasgenootje en haar vader. Aan die periode van rust komt snel een einde als hij onbedoeld de aandacht trekt van een beruchte lokale karatekampioen. Om zichzelf te verdedigen begint Li aan een traject om uiteindelijk aan het ultieme karatekampioenschap mee te doen. Onder leiding van zijn wijze kungfu-leraar Mr Han en de legendarische Karate Kid Daniel LaRusso, weet Li hun unieke stijlen te combineren tijdens zijn voorbereiding op een legendarische martial arts-showdown.",
+            "runtime": 94,
+            "tagline": "",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "SE",
+          "iso_639_1": "sv",
+          "name": "svenska",
+          "english_name": "Swedish",
+          "data": {
+            "homepage": "",
+            "overview": "När kung-fu-lärlingen Li Fong flyttar till New York City med sin mamma för att börja på en prestigefylld skola, uppstår en ny vänskap med en klasskamrat och hennes far. Men han drar till sig oönskad uppmärksamhet från en lokal karatemästare. För att kunna försvara sig själv börjar Li träna för att delta i en stor karatetävling. Med hjälp av sin kung-fu-lärare, herr Han, och den legendariske Karate Kid, Daniel LaRusso, kombinerar Li deras unika stilar för att förbereda sig för en storslagen match.",
+            "runtime": 0,
+            "tagline": "",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "LT",
+          "iso_639_1": "lt",
+          "name": "Lietuvių",
+          "english_name": "Lithuanian",
+          "data": {
+            "homepage": "",
+            "overview": "Kung-fu vunderkindas Li Fongas su motina iš Pekino persikelia gyventi į Niujorką. Čia vaikinas stengiasi niekam nekristi į akis, tačiau problemos jį kažkaip pačios susiranda. Ypač vietinio karatė čempiono Konoro pavidalu. Supratęs, kad strategija neišsišokti teigiamų rezultatų neduoda, Li pasiryžta už save pastovėti. Deja, jo kung-fu įgūdžių bei talento Niujorko karatė turnyrui nepakanka.\r Vaikino mokytojas Hanas į pagalbą pasikviečia seną savo pažįstamą ir tikrą legendą – „Karatė vaikį“ Danielį LaRusso. Kartu jie ima treniruoti jaunąjį Li Fongą, kuris iš abiejų kovos stilių pasiima sau tinkamiausias technikas ir atranda kažką visiškai naujo. Tiesa, įsisavinti naująjį stilių reikia greitai, nes kovos menų turnyras, kuriame teks stoti prieš Konorą, nenumaldomai artėja.",
+            "runtime": 118,
+            "tagline": "",
+            "title": "Karatė vaikis: Legendos"
+          }
+        },
+        {
+          "iso_3166_1": "AZ",
+          "iso_639_1": "az",
+          "name": "Azərbaycan",
+          "english_name": "Azerbaijani",
+          "data": {
+            "homepage": "",
+            "overview": "Amerikalı oğlanın kung-fu yarışlarında qalib gəldiyi və ona bu çətin yolda kömək edən yaşlı ustanın hekayəsinin davamı.",
+            "runtime": 110,
+            "tagline": "",
+            "title": "Karate oğlan: Əfsanələr"
+          }
+        },
+        {
+          "iso_3166_1": "AE",
+          "iso_639_1": "ar",
+          "name": "العربية",
+          "english_name": "Arabic",
+          "data": {
+            "homepage": "",
+            "overview": "بعد مأساة عائلية، يُجبر لي فونغ، عبقري الكونغ فو، على مغادرة منزله في بكين والانتقال إلى مدينة نيويورك مع والدته. عندما يحتاج صديق جديد لمساعدته، يشارك لي في مسابقة كاراتيه، لكن مهاراته وحدها لا تكفي. يستعين السيد هان، معلم الكونغ فو الخاص به، بفتى الكاراتيه الأصلي دانيال لاروسو للمساعدة، ويتعلم لي أسلوبًا جديدًا في القتال، جامعًا بين أسلوبيهما في أسلوب واحد للمواجهة القتالية الأبرز.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "فتى الكاراتيه: الأساطير"
+          }
+        },
+        {
+          "iso_3166_1": "ID",
+          "iso_639_1": "id",
+          "name": "Bahasa indonesia",
+          "english_name": "Indonesian",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": ""
+          }
+        }
+      ]
+    },
+    "external_ids": {
+      "imdb_id": "tt1674782",
+      "wikidata_id": "Q124246470",
+      "facebook_id": "TheKarateKid",
+      "instagram_id": "karatekidmovie",
+      "twitter_id": "KarateKidMovie"
+    },
+    "semantic_tags": [
+      "genre:动作",
+      "genre:冒险",
+      "genre:剧情",
+      "decade:2020s",
+      "country:us",
+      "lang:en",
+      "series:8580"
+    ]
+  }
+]

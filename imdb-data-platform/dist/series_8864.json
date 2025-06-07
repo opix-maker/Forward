@@ -1,0 +1,2475 @@
+[
+  {
+    "adult": false,
+    "backdrop_path": "/uIpJPDNFoeX0TVml9smPrs9KUVx.jpg",
+    "belongs_to_collection": {
+      "id": 8864,
+      "name": "死神来了（系列）",
+      "poster_path": "/zUpGpgpdoBPUhpbMPgVSiZ5bmS3.jpg",
+      "backdrop_path": "/y3aWOInifbGKXM34KjtcMITrZRZ.jpg"
+    },
+    "budget": 50000000,
+    "genres": [
+      {
+        "id": 27,
+        "name": "恐怖"
+      },
+      {
+        "id": 9648,
+        "name": "悬疑"
+      }
+    ],
+    "homepage": "",
+    "id": 574475,
+    "imdb_id": "tt9619824",
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_title": "Final Destination Bloodlines",
+    "overview": "　　大学生史蒂芬妮（凯特琳·桑塔·胡安娜 Kaitlyn Santa Juana 饰）饱受反复出现的暴力恶梦所困扰，于是决定回到家乡，寻找唯一可能打破这个循环的人，并拯救家人免于无法避免的可怕厄运。",
+    "popularity": 265.4529,
+    "poster_path": "/ebTm4k4EkHuGzum8xFJqIiQCZFj.jpg",
+    "production_companies": [
+      {
+        "id": 12,
+        "logo_path": "/2ycs64eqV5rqKYHyQK0GVoKGvfX.png",
+        "name": "New Line Cinema",
+        "origin_country": "US"
+      },
+      {
+        "id": 48788,
+        "logo_path": null,
+        "name": "Practical Pictures",
+        "origin_country": "US"
+      },
+      {
+        "id": 252366,
+        "logo_path": null,
+        "name": "Freshman Year",
+        "origin_country": ""
+      },
+      {
+        "id": 252367,
+        "logo_path": null,
+        "name": "Fireside Films",
+        "origin_country": "US"
+      },
+      {
+        "id": 216687,
+        "logo_path": "/kKVYqekveOvLK1IgqdJojLjQvtu.png",
+        "name": "Domain Entertainment",
+        "origin_country": "US"
+      }
+    ],
+    "production_countries": [
+      {
+        "iso_3166_1": "US",
+        "name": "United States of America"
+      }
+    ],
+    "release_date": "2025-05-14",
+    "revenue": 235964623,
+    "runtime": 109,
+    "spoken_languages": [
+      {
+        "english_name": "English",
+        "iso_639_1": "en",
+        "name": "English"
+      }
+    ],
+    "status": "Released",
+    "tagline": "",
+    "title": "死神来了6：血脉诅咒",
+    "video": false,
+    "vote_average": 7,
+    "vote_count": 586,
+    "credits": {
+      "cast": [
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 3480304,
+          "known_for_department": "Acting",
+          "name": "凯特琳·桑塔·胡安娜",
+          "original_name": "Kaitlyn Santa Juana",
+          "popularity": 13.99,
+          "profile_path": "/75Tdc3wg9mklJHy5LEj8OMjcPw8.jpg",
+          "cast_id": 18,
+          "character": "Stefanie Reyes",
+          "credit_id": "65f212be2fe2fa0148ecb133",
+          "order": 0
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1547148,
+          "known_for_department": "Acting",
+          "name": "特欧·布里奥尼斯",
+          "original_name": "Teo Briones",
+          "popularity": 10.2838,
+          "profile_path": "/cyykbm4Xht2Pi7brr88FcmS1LPb.jpg",
+          "cast_id": 16,
+          "character": "Charlie Reyes",
+          "credit_id": "65f212a506f984016243a480",
+          "order": 1
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 58724,
+          "known_for_department": "Acting",
+          "name": "莱亚·吉斯特德",
+          "original_name": "Rya Kihlstedt",
+          "popularity": 2.2198,
+          "profile_path": "/86ysgxNPkckt8jp715X79CdopB7.jpg",
+          "cast_id": 23,
+          "character": "Darlene Campbell-Reyes",
+          "credit_id": "6605f5f6d4fe04014926ae66",
+          "order": 2
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 144852,
+          "known_for_department": "Acting",
+          "name": "理查德·哈蒙",
+          "original_name": "Richard Harmon",
+          "popularity": 4.551,
+          "profile_path": "/tlWgu5Kp37C7XsgJVLmYsPKiAd6.jpg",
+          "cast_id": 20,
+          "character": "Erik Campbell",
+          "credit_id": "65f3b5da3852020149e17b35",
+          "order": 3
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1482198,
+          "known_for_department": "Acting",
+          "name": "欧文·帕特里克·乔伊纳",
+          "original_name": "Owen Patrick Joyner",
+          "popularity": 0.9414,
+          "profile_path": "/eTZiPEsHZmmgQKEhC8HDf28sFmY.jpg",
+          "cast_id": 17,
+          "character": "Bobby Campbell",
+          "credit_id": "65f212af99259c01865f0147",
+          "order": 4
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1441215,
+          "known_for_department": "Acting",
+          "name": "安娜·洛尔",
+          "original_name": "Anna Lore",
+          "popularity": 4.5431,
+          "profile_path": "/jhm19VLTh8bxOj9thXnbVyp3vBl.jpg",
+          "cast_id": 14,
+          "character": "Julia Campbell",
+          "credit_id": "65e8dee00443c9018657be40",
+          "order": 5
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1469128,
+          "known_for_department": "Acting",
+          "name": "布瑞克·巴辛格",
+          "original_name": "Brec Bassinger",
+          "popularity": 2.3872,
+          "profile_path": "/ggGaeipC6rPreZFPjqIeVZs5ZlX.jpg",
+          "cast_id": 19,
+          "character": "Iris Campbell (young)",
+          "credit_id": "65f3b5c8a698cf0186f62f7e",
+          "order": 6
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 19384,
+          "known_for_department": "Acting",
+          "name": "托尼·托德",
+          "original_name": "Tony Todd",
+          "popularity": 3.1227,
+          "profile_path": "/6mzKpHdwfFY6sUpTS7cMPCoLzB3.jpg",
+          "cast_id": 25,
+          "character": "William John Bludworth",
+          "credit_id": "6606485ee1faed014af9869d",
+          "order": 7
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1376128,
+          "known_for_department": "Acting",
+          "name": "Andrew Tinpo Lee",
+          "original_name": "Andrew Tinpo Lee",
+          "popularity": 1.1448,
+          "profile_path": "/hod73YmXiv3ZfDCMoJwBYXPqPzZ.jpg",
+          "cast_id": 24,
+          "character": "Marty Reyes",
+          "credit_id": "6605f5fdfdf8b70163f23535",
+          "order": 8
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 58804,
+          "known_for_department": "Acting",
+          "name": "加布里埃尔·罗斯",
+          "original_name": "Gabrielle Rose",
+          "popularity": 1.8246,
+          "profile_path": "/obWfgaR4YBk648USvpLrJC64DVU.jpg",
+          "cast_id": 235,
+          "character": "Iris Campbell",
+          "credit_id": "67e31692a63bcc4997dc8f61",
+          "order": 9
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 62919,
+          "known_for_department": "Acting",
+          "name": "Alex Zahara",
+          "original_name": "Alex Zahara",
+          "popularity": 1.078,
+          "profile_path": "/8T6k1sBrWyLI368Mk9iyYuwpqv2.jpg",
+          "cast_id": 229,
+          "character": "Howard Campbell",
+          "credit_id": "67a1c23c605fa0d5000307ec",
+          "order": 10
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 45428,
+          "known_for_department": "Acting",
+          "name": "April Telek",
+          "original_name": "April Telek",
+          "popularity": 0.9264,
+          "profile_path": "/2D80ewwe0KVbsyXRFIVoyzKbIe.jpg",
+          "cast_id": 28,
+          "character": "Brenda Campbell",
+          "credit_id": "6617b2400a517c017dffeb5f",
+          "order": 11
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 83186,
+          "known_for_department": "Acting",
+          "name": "Max Lloyd-Jones",
+          "original_name": "Max Lloyd-Jones",
+          "popularity": 1.4201,
+          "profile_path": "/4ZXdk1YXG3xYonid1DPDOVKsNPE.jpg",
+          "cast_id": 22,
+          "character": "Paul Campbell",
+          "credit_id": "6605f5f0d4fe04016226b5a5",
+          "order": 12
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2051988,
+          "known_for_department": "Acting",
+          "name": "Brenna Llewellyn",
+          "original_name": "Brenna Llewellyn",
+          "popularity": 0.3851,
+          "profile_path": "/c7fhxUFFv7iTLNpmYpt72puVKfr.jpg",
+          "cast_id": 234,
+          "character": "Val",
+          "credit_id": "67acfc1e8c5579ba6e36d35a",
+          "order": 13
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1512170,
+          "known_for_department": "Acting",
+          "name": "Natasha Burnett",
+          "original_name": "Natasha Burnett",
+          "popularity": 0.2342,
+          "profile_path": "/kdvbHys0cv36NBB6VeQ1beySyNV.jpg",
+          "cast_id": 257,
+          "character": "Evie",
+          "credit_id": "68275c4b29582e1112a17d9d",
+          "order": 14
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 4444280,
+          "known_for_department": "Acting",
+          "name": "Jayden Oniah",
+          "original_name": "Jayden Oniah",
+          "popularity": 0.1773,
+          "profile_path": null,
+          "cast_id": 256,
+          "character": "JB",
+          "credit_id": "681f85f55a0100856da1598e",
+          "order": 15
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 153847,
+          "known_for_department": "Acting",
+          "name": "Mark Brandon",
+          "original_name": "Mark Brandon",
+          "popularity": 1.1763,
+          "profile_path": "/tlghFTHocWRGd010vni5ZhbvlVp.jpg",
+          "cast_id": 27,
+          "character": "Mr. Fuller",
+          "credit_id": "6617b21dd133240130e3be6c",
+          "order": 16
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2029947,
+          "known_for_department": "Acting",
+          "name": "Yvette Ferguson",
+          "original_name": "Yvette Ferguson",
+          "popularity": 0.208,
+          "profile_path": null,
+          "cast_id": 26,
+          "character": "Mrs. Fuller",
+          "credit_id": "6617b209e8a3e1017ca1a49b",
+          "order": 17
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1004890,
+          "known_for_department": "Acting",
+          "name": "Travis Turner",
+          "original_name": "Travis Turner",
+          "popularity": 0.6675,
+          "profile_path": "/A8j6zZcdXjTnLJ4l9T9Th8V04fG.jpg",
+          "cast_id": 31,
+          "character": "Chet",
+          "credit_id": "6649be406c5e66fe4d95f7b0",
+          "order": 18
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 4750181,
+          "known_for_department": "Acting",
+          "name": "Noah Bromley",
+          "original_name": "Noah Bromley",
+          "popularity": 0.1805,
+          "profile_path": null,
+          "cast_id": 233,
+          "character": "Penny Kid",
+          "credit_id": "67a1c2c2605fa0d500030818",
+          "order": 19
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2528464,
+          "known_for_department": "Acting",
+          "name": "Janelle Beadall",
+          "original_name": "Janelle Beadall",
+          "popularity": 0.1189,
+          "profile_path": "/juyCzlR1GnkWYCnV7ZVS3UMkzNC.jpg",
+          "cast_id": 62,
+          "character": "Tara",
+          "credit_id": "67a1a4f8ed829ebc56e2c572",
+          "order": 20
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1219446,
+          "known_for_department": "Acting",
+          "name": "Panou",
+          "original_name": "Panou",
+          "popularity": 0.5195,
+          "profile_path": "/sTzo3nVxCyZanJqnBPFGgd8wxNI.jpg",
+          "cast_id": 230,
+          "character": "Plaza Security Guard",
+          "credit_id": "67a1c280716bfd74ece2cad0",
+          "order": 21
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2103024,
+          "known_for_department": "Acting",
+          "name": "Jeanie Cloutier",
+          "original_name": "Jeanie Cloutier",
+          "popularity": 0.8476,
+          "profile_path": "/vytDdT5JO3xyRBLEHp1ab4DWagV.jpg",
+          "cast_id": 232,
+          "character": "Suspicious Doctor",
+          "credit_id": "67a1c2aced829ebc56e2cdc5",
+          "order": 22
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 440439,
+          "known_for_department": "Acting",
+          "name": "马蒂·菲诺奇奥",
+          "original_name": "Matty Finochio",
+          "popularity": 0.5358,
+          "profile_path": "/7I2iawz7YHZDbH15V4Om0Tdep9c.jpg",
+          "cast_id": 34,
+          "character": "Mr. Reddick",
+          "credit_id": "665c4d173300f3b83b88163a",
+          "order": 23
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 4588226,
+          "known_for_department": "Acting",
+          "name": "Sophia Chapdelaine",
+          "original_name": "Sophia Chapdelaine",
+          "popularity": 0.1562,
+          "profile_path": null,
+          "cast_id": 231,
+          "character": "Jenny Reddick",
+          "credit_id": "67a1c296716bfd74ece2cae5",
+          "order": 24
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 62709,
+          "known_for_department": "Acting",
+          "name": "Garfield Wilson",
+          "original_name": "Garfield Wilson",
+          "popularity": 0.5931,
+          "profile_path": "/d1ycbA0KKegwqKXsswagsuvRypU.jpg",
+          "cast_id": 258,
+          "character": "Chuck",
+          "credit_id": "68275cb2ef9ce2e32d0a8787",
+          "order": 25
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1846336,
+          "known_for_department": "Crew",
+          "name": "Shawn C. Orr",
+          "original_name": "Shawn C. Orr",
+          "popularity": 0.3653,
+          "profile_path": "/btjofxWzTi8FKU4b3tMbCdHvVEK.jpg",
+          "cast_id": 263,
+          "character": "Mo, The Garbage Truck Driver",
+          "credit_id": "6829126dc5a5bb50540bd17c",
+          "order": 26
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 27119,
+          "known_for_department": "Acting",
+          "name": "Bernard Cuffling",
+          "original_name": "Bernard Cuffling",
+          "popularity": 0.3664,
+          "profile_path": "/rla86XNirzJYWLY7TLV92jhKrXt.jpg",
+          "cast_id": 264,
+          "character": "Sky View Maitre'D",
+          "credit_id": "682912ae80692bab55648700",
+          "order": 27
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1404066,
+          "known_for_department": "Acting",
+          "name": "Justin Stone",
+          "original_name": "Justin Stone",
+          "popularity": 0.1982,
+          "profile_path": "/aGtoZFJ0VHbRuWgyPkJ6bUbrz7M.jpg",
+          "cast_id": 265,
+          "character": "Sky View Bartender",
+          "credit_id": "682912c6f6cf2076f3e24607",
+          "order": 28
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1433401,
+          "known_for_department": "Acting",
+          "name": "Megan Hui",
+          "original_name": "Megan Hui",
+          "popularity": 0.1889,
+          "profile_path": "/4saC8gBCvTk3Iq62KM33Prjxt3X.jpg",
+          "cast_id": 266,
+          "character": "Sky Deck Hat Lady",
+          "credit_id": "682912ec4b404174342f6cd5",
+          "order": 29
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1843783,
+          "known_for_department": "Acting",
+          "name": "Nikolai Witschl",
+          "original_name": "Nikolai Witschl",
+          "popularity": 0.5831,
+          "profile_path": "/sU6VZJsc2avH6l1AjTTalDEp0Qd.jpg",
+          "cast_id": 267,
+          "character": "Morgue Worker",
+          "credit_id": "6829130915a01d5a44e2455d",
+          "order": 30
+        }
+      ],
+      "crew": [
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1938317,
+          "known_for_department": "Directing",
+          "name": "亚当 B·斯坦因",
+          "original_name": "Adam B. Stein",
+          "popularity": 0.3263,
+          "profile_path": "/aobQq1YDiny8Fmr9Sk1sh8SqcRM.jpg",
+          "credit_id": "632e15654c1bb0007f327912",
+          "department": "Directing",
+          "job": "Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1181022,
+          "known_for_department": "Directing",
+          "name": "扎克·利波夫斯基",
+          "original_name": "Zach Lipovsky",
+          "popularity": 0.5611,
+          "profile_path": "/hdRnSPmRjYpAEGrpddwxnfqGdmQ.jpg",
+          "credit_id": "632e157855937b008e542f0c",
+          "department": "Directing",
+          "job": "Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3379400,
+          "known_for_department": "Production",
+          "name": "Sheila Hanahan Taylor",
+          "original_name": "Sheila Hanahan Taylor",
+          "popularity": 0.0704,
+          "profile_path": null,
+          "credit_id": "61de7cbf5c071b0066ed2a26",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1661850,
+          "known_for_department": "Writing",
+          "name": "盖伊·布西克",
+          "original_name": "Guy Busick",
+          "popularity": 0.3893,
+          "profile_path": "/JREA3WijyjCgG70P8PI9OcngTg.jpg",
+          "credit_id": "61ddc5db68b1ea00195b190f",
+          "department": "Writing",
+          "job": "Screenplay"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1293994,
+          "known_for_department": "Directing",
+          "name": "乔恩·沃茨",
+          "original_name": "Jon Watts",
+          "popularity": 0.6962,
+          "profile_path": "/fkXChMX6CUXY1yOxBehAzvaTCl7.jpg",
+          "credit_id": "61ddc5f65c071b0066eac42c",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2198345,
+          "known_for_department": "Writing",
+          "name": "洛丽·埃文斯·泰勒",
+          "original_name": "Lori Evans Taylor",
+          "popularity": 0.1292,
+          "profile_path": null,
+          "credit_id": "61ddc609a35c8e00a4dda67a",
+          "department": "Writing",
+          "job": "Screenplay"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1293994,
+          "known_for_department": "Directing",
+          "name": "乔恩·沃茨",
+          "original_name": "Jon Watts",
+          "popularity": 0.6962,
+          "profile_path": "/fkXChMX6CUXY1yOxBehAzvaTCl7.jpg",
+          "credit_id": "61ddc6484c1d9a00424d2533",
+          "department": "Writing",
+          "job": "Story"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 21585,
+          "known_for_department": "Production",
+          "name": "Craig Perry",
+          "original_name": "Craig Perry",
+          "popularity": 0.1762,
+          "profile_path": null,
+          "credit_id": "61ddc690a35c8e00a4dda777",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3378351,
+          "known_for_department": "Production",
+          "name": "Dianne McGunigle",
+          "original_name": "Dianne McGunigle",
+          "popularity": 0.0495,
+          "profile_path": null,
+          "credit_id": "61ddc6d6b0040a001c6475fb",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 57429,
+          "known_for_department": "Writing",
+          "name": "杰弗里·雷迪克",
+          "original_name": "Jeffrey Reddick",
+          "popularity": 0.448,
+          "profile_path": "/888kI5eR2aoGbNIlgtB99gqL5KV.jpg",
+          "credit_id": "5c5306b492514154485e3b38",
+          "department": "Writing",
+          "job": "Characters"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1661850,
+          "known_for_department": "Writing",
+          "name": "盖伊·布西克",
+          "original_name": "Guy Busick",
+          "popularity": 0.3893,
+          "profile_path": "/JREA3WijyjCgG70P8PI9OcngTg.jpg",
+          "credit_id": "677143b077e2b6d478927d57",
+          "department": "Writing",
+          "job": "Story"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2198345,
+          "known_for_department": "Writing",
+          "name": "洛丽·埃文斯·泰勒",
+          "original_name": "Lori Evans Taylor",
+          "popularity": 0.1292,
+          "profile_path": null,
+          "credit_id": "677143b677e2b6d478927d5d",
+          "department": "Writing",
+          "job": "Story"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 10830,
+          "known_for_department": "Production",
+          "name": "托比·艾默里奇",
+          "original_name": "Toby Emmerich",
+          "popularity": 0.6312,
+          "profile_path": "/gMrRcEvV1kqTFQ3N2i9qkSY98qd.jpg",
+          "credit_id": "67a0fc7750f5d47625265080",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1514577,
+          "known_for_department": "Editing",
+          "name": "Sabrina Pitre",
+          "original_name": "Sabrina Pitre",
+          "popularity": 0.2001,
+          "profile_path": "/uingCqTAc6UoFwe4YqFXhJU7iyw.jpg",
+          "credit_id": "67a0fce1776edf4be3956dda",
+          "department": "Editing",
+          "job": "Editor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 4445624,
+          "known_for_department": "Production",
+          "name": "Anthony Tittanegro",
+          "original_name": "Anthony Tittanegro",
+          "popularity": 0.2223,
+          "profile_path": null,
+          "credit_id": "67a19f7253aeaa2b44e2c62f",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 4445623,
+          "known_for_department": "Production",
+          "name": "Andrew Lary",
+          "original_name": "Andrew Lary",
+          "popularity": 0.1895,
+          "profile_path": null,
+          "credit_id": "67a19f8153aeaa2b44e2c63b",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 4445622,
+          "known_for_department": "Production",
+          "name": "Pete Chiappetta",
+          "original_name": "Pete Chiappetta",
+          "popularity": 0.4444,
+          "profile_path": null,
+          "credit_id": "67a19f8d53aeaa2b44e2c649",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 4020,
+          "known_for_department": "Camera",
+          "name": "Christian Sebaldt",
+          "original_name": "Christian Sebaldt",
+          "popularity": 0.2574,
+          "profile_path": null,
+          "credit_id": "67a1a01350f5d47625265c45",
+          "department": "Camera",
+          "job": "Director of Photography"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1460758,
+          "known_for_department": "Art",
+          "name": "Rachel O'Toole",
+          "original_name": "Rachel O'Toole",
+          "popularity": 0.1883,
+          "profile_path": null,
+          "credit_id": "67a1a02950f5d47625265c4b",
+          "department": "Art",
+          "job": "Production Design"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1587107,
+          "known_for_department": "Sound",
+          "name": "Tim Wynn",
+          "original_name": "Tim Wynn",
+          "popularity": 0.1406,
+          "profile_path": null,
+          "credit_id": "67a1a04b53aeaa2b44e2c675",
+          "department": "Sound",
+          "job": "Original Music Composer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1399864,
+          "known_for_department": "Visual Effects",
+          "name": "Nordin Rahhali",
+          "original_name": "Nordin Rahhali",
+          "popularity": 0.1628,
+          "profile_path": null,
+          "credit_id": "67a1a082605fa0d500030190",
+          "department": "Visual Effects",
+          "job": "Visual Effects Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 928272,
+          "known_for_department": "Production",
+          "name": "Rich Delia",
+          "original_name": "Rich Delia",
+          "popularity": 0.6269,
+          "profile_path": "/UiNvcLDmStXxpEmx6JrGKRI7UF.jpg",
+          "credit_id": "67a1a0c0605fa0d5000301c4",
+          "department": "Production",
+          "job": "Casting"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 14753,
+          "known_for_department": "Production",
+          "name": "David Siegel",
+          "original_name": "David Siegel",
+          "popularity": 0.3304,
+          "profile_path": null,
+          "credit_id": "67a1a2760f96f416df02f885",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 21586,
+          "known_for_department": "Production",
+          "name": "Warren Zide",
+          "original_name": "Warren Zide",
+          "popularity": 0.1588,
+          "profile_path": null,
+          "credit_id": "67a1a28cbeb8ffee852648af",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 57430,
+          "known_for_department": "Production",
+          "name": "Richard Brener",
+          "original_name": "Richard Brener",
+          "popularity": 0.3899,
+          "profile_path": "/i1nFbAKpbtjxBr2vkY5WeYRs250.jpg",
+          "credit_id": "67a1a482ed829ebc56e2c553",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2138579,
+          "known_for_department": "Production",
+          "name": "Alice S. Kim",
+          "original_name": "Alice S. Kim",
+          "popularity": 0.1308,
+          "profile_path": null,
+          "credit_id": "67a1a494ed829ebc56e2c561",
+          "department": "Production",
+          "job": "Co-Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1771287,
+          "known_for_department": "Production",
+          "name": "Bliss McDonald",
+          "original_name": "Bliss McDonald",
+          "popularity": 0.1499,
+          "profile_path": null,
+          "credit_id": "67a1a4a30f96f416df02f949",
+          "department": "Production",
+          "job": "Co-Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 969283,
+          "known_for_department": "Production",
+          "name": "Dave Neustadter",
+          "original_name": "Dave Neustadter",
+          "popularity": 0.2779,
+          "profile_path": null,
+          "credit_id": "67a1a4b969038ddb47e2c663",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3581371,
+          "known_for_department": "Production",
+          "name": "Chris Pan",
+          "original_name": "Chris Pan",
+          "popularity": 0.1279,
+          "profile_path": null,
+          "credit_id": "67a1a4ca69038ddb47e2c66e",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2138579,
+          "known_for_department": "Production",
+          "name": "Alice S. Kim",
+          "original_name": "Alice S. Kim",
+          "popularity": 0.1308,
+          "profile_path": null,
+          "credit_id": "67a1a57ded829ebc56e2c586",
+          "department": "Production",
+          "job": "Production Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1771287,
+          "known_for_department": "Production",
+          "name": "Bliss McDonald",
+          "original_name": "Bliss McDonald",
+          "popularity": 0.1499,
+          "profile_path": null,
+          "credit_id": "67a1a591ed829ebc56e2c593",
+          "department": "Production",
+          "job": "Production Manager"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2302941,
+          "known_for_department": "Production",
+          "name": "Stephen Chan",
+          "original_name": "Stephen Chan",
+          "popularity": 0.0387,
+          "profile_path": null,
+          "credit_id": "67a1b0200f96f416df02fa67",
+          "department": "Visual Effects",
+          "job": "Visual Effects Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1763813,
+          "known_for_department": "Directing",
+          "name": "Raphaël Gaudin",
+          "original_name": "Raphaël Gaudin",
+          "popularity": 0.0409,
+          "profile_path": null,
+          "credit_id": "67a1b0fa716bfd74ece2c3d1",
+          "department": "Visual Effects",
+          "job": "Visual Effects Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1545113,
+          "known_for_department": "Visual Effects",
+          "name": "Adam Lagattuta",
+          "original_name": "Adam Lagattuta",
+          "popularity": 0.0702,
+          "profile_path": null,
+          "credit_id": "67a1b113beb8ffee85264b21",
+          "department": "Visual Effects",
+          "job": "Visual Effects Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1466442,
+          "known_for_department": "Directing",
+          "name": "Morgan Beggs",
+          "original_name": "Morgan Beggs",
+          "popularity": 0.1883,
+          "profile_path": null,
+          "credit_id": "67feba29437f0b80eead4a66",
+          "department": "Directing",
+          "job": "First Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1033175,
+          "known_for_department": "Directing",
+          "name": "Carl Mason",
+          "original_name": "Carl Mason",
+          "popularity": 0.0629,
+          "profile_path": null,
+          "credit_id": "67feba6aef5ae687cbd97fc8",
+          "department": "Directing",
+          "job": "First Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2842759,
+          "known_for_department": "Directing",
+          "name": "Aimee Scott",
+          "original_name": "Aimee Scott",
+          "popularity": 0.0707,
+          "profile_path": null,
+          "credit_id": "67feba7c437f0b80eead4a7c",
+          "department": "Directing",
+          "job": "Second Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1375561,
+          "known_for_department": "Acting",
+          "name": "Timothy Paul Coderre",
+          "original_name": "Timothy Paul Coderre",
+          "popularity": 0.1952,
+          "profile_path": null,
+          "credit_id": "67feba9b3110bd82dfad89a5",
+          "department": "Directing",
+          "job": "Third Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1826644,
+          "known_for_department": "Directing",
+          "name": "Amanda Petura",
+          "original_name": "Amanda Petura",
+          "popularity": 0.0777,
+          "profile_path": null,
+          "credit_id": "67febaa4d8b85eb782d93a7d",
+          "department": "Directing",
+          "job": "Third Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2547716,
+          "known_for_department": "Directing",
+          "name": "Philip Nee Nee",
+          "original_name": "Philip Nee Nee",
+          "popularity": 0.1238,
+          "profile_path": null,
+          "credit_id": "67febab8437f0b80eead4a8d",
+          "department": "Directing",
+          "job": "Second Unit First Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1652036,
+          "known_for_department": "Directing",
+          "name": "Emely Martin",
+          "original_name": "Emely Martin",
+          "popularity": 0.0617,
+          "profile_path": null,
+          "credit_id": "67febace9d1f778ab8998a5b",
+          "department": "Directing",
+          "job": "Second Unit First Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1569155,
+          "known_for_department": "Sound",
+          "name": "Scott Aitken",
+          "original_name": "Scott Aitken",
+          "popularity": 0.1447,
+          "profile_path": null,
+          "credit_id": "67febaf49d1f778ab8998a63",
+          "department": "Sound",
+          "job": "Production Sound Mixer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1380479,
+          "known_for_department": "Sound",
+          "name": "Jeremy Peirson",
+          "original_name": "Jeremy Peirson",
+          "popularity": 0.3944,
+          "profile_path": null,
+          "credit_id": "67febb1ad8b85eb782d93a96",
+          "department": "Sound",
+          "job": "Sound Designer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1380479,
+          "known_for_department": "Sound",
+          "name": "Jeremy Peirson",
+          "original_name": "Jeremy Peirson",
+          "popularity": 0.3944,
+          "profile_path": null,
+          "credit_id": "67febb20aacf7cfb2699ca70",
+          "department": "Sound",
+          "job": "Supervising Sound Editor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1380479,
+          "known_for_department": "Sound",
+          "name": "Jeremy Peirson",
+          "original_name": "Jeremy Peirson",
+          "popularity": 0.3944,
+          "profile_path": null,
+          "credit_id": "67febb2c9d1f778ab8998a9d",
+          "department": "Sound",
+          "job": "Sound Re-Recording Mixer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1404366,
+          "known_for_department": "Sound",
+          "name": "Thomas Jones",
+          "original_name": "Thomas Jones",
+          "popularity": 0.3007,
+          "profile_path": null,
+          "credit_id": "67febc7cd645e41e0999344e",
+          "department": "Sound",
+          "job": "Supervising Sound Editor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1392969,
+          "known_for_department": "Sound",
+          "name": "Jonathan Wales",
+          "original_name": "Jonathan Wales",
+          "popularity": 0.2851,
+          "profile_path": null,
+          "credit_id": "67febc86d8b85eb782d93aec",
+          "department": "Sound",
+          "job": "Sound Re-Recording Mixer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1440920,
+          "known_for_department": "Acting",
+          "name": "Simon Burnett",
+          "original_name": "Simon Burnett",
+          "popularity": 0.2969,
+          "profile_path": "/63qDTgL9kIrcuQcpR4zAIQtgU4A.jpg",
+          "credit_id": "67febd8561b1c4bb329983cd",
+          "department": "Crew",
+          "job": "Stunt Coordinator"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1887785,
+          "known_for_department": "Crew",
+          "name": "Jon Kralt",
+          "original_name": "Jon Kralt",
+          "popularity": 0.3837,
+          "profile_path": "/uFPksyKnf02yprLZNCbqqvCUSCZ.jpg",
+          "credit_id": "67febdb5437f0b80eead4ae6",
+          "department": "Crew",
+          "job": "Stunt Coordinator"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1613992,
+          "known_for_department": "Lighting",
+          "name": "Sean Rooney",
+          "original_name": "Sean Rooney",
+          "popularity": 0.1039,
+          "profile_path": null,
+          "credit_id": "67febdec83c6e567c7d90f84",
+          "department": "Lighting",
+          "job": "Gaffer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5223707,
+          "known_for_department": "Directing",
+          "name": "Mia Bolton",
+          "original_name": "Mia Bolton",
+          "popularity": 0.0357,
+          "profile_path": null,
+          "credit_id": "6816bafef26c89b8d684cdf3",
+          "department": "Directing",
+          "job": "Third Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 4122292,
+          "known_for_department": "Production",
+          "name": "Dominic Dobrzensky",
+          "original_name": "Dominic Dobrzensky",
+          "popularity": 0.0379,
+          "profile_path": null,
+          "credit_id": "6816bb20c3e7e09fac908312",
+          "department": "Directing",
+          "job": "Assistant Director Trainee"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1090304,
+          "known_for_department": "Directing",
+          "name": "Gary Hawes",
+          "original_name": "Gary Hawes",
+          "popularity": 0.3012,
+          "profile_path": "/ti5vQnlGaqjIN0A5IUfUWemm6y6.jpg",
+          "credit_id": "6816bb3846c5e0c8049084b9",
+          "department": "Directing",
+          "job": "Second Unit Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5223716,
+          "known_for_department": "Directing",
+          "name": "Mackenzie McElligott",
+          "original_name": "Mackenzie McElligott",
+          "popularity": 0.0256,
+          "profile_path": null,
+          "credit_id": "6816bb512c3ce95b51076f25",
+          "department": "Directing",
+          "job": "Assistant Director Trainee"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1333986,
+          "known_for_department": "Art",
+          "name": "Shannon Grover",
+          "original_name": "Shannon Grover",
+          "popularity": 0.1715,
+          "profile_path": null,
+          "credit_id": "68277286f63b2f0108316132",
+          "department": "Art",
+          "job": "Art Direction"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2125610,
+          "known_for_department": "Art",
+          "name": "Natasha Stoesz",
+          "original_name": "Natasha Stoesz",
+          "popularity": 0.1367,
+          "profile_path": null,
+          "credit_id": "6827729520415f9e284b5a2a",
+          "department": "Art",
+          "job": "Art Direction"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3921983,
+          "known_for_department": "Art",
+          "name": "Benjamin Mullen",
+          "original_name": "Benjamin Mullen",
+          "popularity": 0.052,
+          "profile_path": null,
+          "credit_id": "682772a553f6015367ada7e6",
+          "department": "Art",
+          "job": "Set Decoration"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1535347,
+          "known_for_department": "Costume & Make-Up",
+          "name": "Michelle Hunter",
+          "original_name": "Michelle Hunter",
+          "popularity": 0.157,
+          "profile_path": null,
+          "credit_id": "682772b620415f9e284b5a2d",
+          "department": "Costume & Make-Up",
+          "job": "Costume Design"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1849917,
+          "known_for_department": "Editing",
+          "name": "Mark Dennison",
+          "original_name": "Mark Dennison",
+          "popularity": 0.062,
+          "profile_path": null,
+          "credit_id": "6829e648b7c48cb8a2db28d1",
+          "department": "Editing",
+          "job": "Online Editor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2895560,
+          "known_for_department": "Editing",
+          "name": "Liz Calandrello",
+          "original_name": "Liz Calandrello",
+          "popularity": 0.0989,
+          "profile_path": null,
+          "credit_id": "6829e774b600b5be458c0197",
+          "department": "Editing",
+          "job": "Additional Editing"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2952873,
+          "known_for_department": "Editing",
+          "name": "Ashley McCloud",
+          "original_name": "Ashley McCloud",
+          "popularity": 0.0379,
+          "profile_path": null,
+          "credit_id": "6829e7cc55e73d0353e2480f",
+          "department": "Editing",
+          "job": "Assistant Editor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1746623,
+          "known_for_department": "Editing",
+          "name": "Stuart Sperling",
+          "original_name": "Stuart Sperling",
+          "popularity": 0.094,
+          "profile_path": null,
+          "credit_id": "6829e8188de1323ad8db24f7",
+          "department": "Editing",
+          "job": "Assistant Editor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2148140,
+          "known_for_department": "Camera",
+          "name": "Wil Parrott",
+          "original_name": "Wil Parrott",
+          "popularity": 0.0824,
+          "profile_path": null,
+          "credit_id": "6829e914bdd07163dd2f706c",
+          "department": "Camera",
+          "job": "Key Grip"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1398160,
+          "known_for_department": "Camera",
+          "name": "Eric Milner",
+          "original_name": "Eric Milner",
+          "popularity": 0.0901,
+          "profile_path": null,
+          "credit_id": "6829e9b1fc4fc9c6fd5b570a",
+          "department": "Camera",
+          "job": "Still Photographer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2126705,
+          "known_for_department": "Camera",
+          "name": "Grace Loeppky",
+          "original_name": "Grace Loeppky",
+          "popularity": 0.0377,
+          "profile_path": null,
+          "credit_id": "6829eb8a5af708fe099e31c5",
+          "department": "Camera",
+          "job": "Dolly Grip"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1804884,
+          "known_for_department": "Camera",
+          "name": "John Kuchera",
+          "original_name": "John Kuchera",
+          "popularity": 0.1569,
+          "profile_path": null,
+          "credit_id": "6829ebfe1939824f11db27ce",
+          "department": "Camera",
+          "job": "Key Grip"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1438624,
+          "known_for_department": "Camera",
+          "name": "Braden Haggerty",
+          "original_name": "Braden Haggerty",
+          "popularity": 0.2772,
+          "profile_path": null,
+          "credit_id": "6829ecffd5b21f63686489b0",
+          "department": "Camera",
+          "job": "Underwater Camera"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2445657,
+          "known_for_department": "Production",
+          "name": "Tara Mews",
+          "original_name": "Tara Mews",
+          "popularity": 0.1218,
+          "profile_path": null,
+          "credit_id": "6829efaac264ae362964893c",
+          "department": "Production",
+          "job": "Production Coordinator"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5223740,
+          "known_for_department": "Art",
+          "name": "Rebeca Nunes De Angeli",
+          "original_name": "Rebeca Nunes De Angeli",
+          "popularity": 0.0357,
+          "profile_path": null,
+          "credit_id": "6829f15817f4b9cfc8db26c6",
+          "department": "Art",
+          "job": "Set Designer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2561209,
+          "known_for_department": "Art",
+          "name": "Justin Neenan",
+          "original_name": "Justin Neenan",
+          "popularity": 0.109,
+          "profile_path": null,
+          "credit_id": "6829f19e4f17777272e24786",
+          "department": "Art",
+          "job": "Set Designer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2139247,
+          "known_for_department": "Art",
+          "name": "Janette Rhee",
+          "original_name": "Janette Rhee",
+          "popularity": 0.0997,
+          "profile_path": null,
+          "credit_id": "6829f1c05211a914f28c024a",
+          "department": "Art",
+          "job": "Set Designer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2015751,
+          "known_for_department": "Art",
+          "name": "Jennifer Yee",
+          "original_name": "Jennifer Yee",
+          "popularity": 0.1027,
+          "profile_path": null,
+          "credit_id": "6829f257162d2e2858e24990",
+          "department": "Art",
+          "job": "Set Designer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 14753,
+          "known_for_department": "Production",
+          "name": "David Siegel",
+          "original_name": "David Siegel",
+          "popularity": 0.3304,
+          "profile_path": null,
+          "credit_id": "6829f396a91b6791f76488f8",
+          "department": "Production",
+          "job": "Unit Production Manager"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1768379,
+          "known_for_department": "Directing",
+          "name": "Cindy Smith",
+          "original_name": "Cindy Smith",
+          "popularity": 0.1546,
+          "profile_path": null,
+          "credit_id": "6829f4558a8e3de9759e310a",
+          "department": "Production",
+          "job": "Unit Manager"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1793316,
+          "known_for_department": "Production",
+          "name": "Darin Read",
+          "original_name": "Darin Read",
+          "popularity": 0.083,
+          "profile_path": null,
+          "credit_id": "6829f617de6c434d038c0284",
+          "department": "Crew",
+          "job": "Post Production Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 112660,
+          "known_for_department": "Costume & Make-Up",
+          "name": "Christopher Mark Pinhey",
+          "original_name": "Christopher Mark Pinhey",
+          "popularity": 0.1598,
+          "profile_path": null,
+          "credit_id": "6829f7d35af708fe099e31d3",
+          "department": "Costume & Make-Up",
+          "job": "Makeup Department Head"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 19384,
+          "known_for_department": "Acting",
+          "name": "托尼·托德",
+          "original_name": "Tony Todd",
+          "popularity": 3.1227,
+          "profile_path": "/6mzKpHdwfFY6sUpTS7cMPCoLzB3.jpg",
+          "credit_id": "682a1bc71e90923045f5588b",
+          "department": "Crew",
+          "job": "In Memory Of"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1491704,
+          "known_for_department": "Costume & Make-Up",
+          "name": "Todd Masters",
+          "original_name": "Todd Masters",
+          "popularity": 0.4061,
+          "profile_path": "/7yvsloILeAFHxmdYq7I8SSFVwMq.jpg",
+          "credit_id": "683297608928f411f4eb2be4",
+          "department": "Costume & Make-Up",
+          "job": "Makeup Designer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1814884,
+          "known_for_department": "Crew",
+          "name": "Tommy Clarke",
+          "original_name": "Tommy Clarke",
+          "popularity": 0.3,
+          "profile_path": "/fUGeKtPB2tNQO4B6pC10GqdZlIm.jpg",
+          "credit_id": "6832978ba32c69e61c054e09",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 3470202,
+          "known_for_department": "Crew",
+          "name": "Jennifer Clarke",
+          "original_name": "Jennifer Clarke",
+          "popularity": 0.2709,
+          "profile_path": "/mNvNkb5Jn8n3lr7hEDEwKz4W6pG.jpg",
+          "credit_id": "68329791958826d3b1413d32",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 113195,
+          "known_for_department": "Crew",
+          "name": "Guy Bews",
+          "original_name": "Guy Bews",
+          "popularity": 0.3802,
+          "profile_path": "/dWXgP9nazjFlVkKi4vyh9vcBr3v.jpg",
+          "credit_id": "6832979e80869b124c72f674",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 4123579,
+          "known_for_department": "Crew",
+          "name": "Milena Brewster",
+          "original_name": "Milena Brewster",
+          "popularity": 0.0919,
+          "profile_path": "/rWokK1GwrosP1UpPvJOqRNebql7.jpg",
+          "credit_id": "683297a2a5f2332a3172f72e",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1233162,
+          "known_for_department": "Crew",
+          "name": "Mike Desabrais",
+          "original_name": "Mike Desabrais",
+          "popularity": 0.3333,
+          "profile_path": null,
+          "credit_id": "683297ab2efd43839f837948",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1288830,
+          "known_for_department": "Crew",
+          "name": "克里斯特尔·达尔曼",
+          "original_name": "Crystal Dalman",
+          "popularity": 0.3993,
+          "profile_path": "/3xapSBLyiaVfpLPBRoxRXOZ9HfO.jpg",
+          "credit_id": "683297b20e931d3beeb6af2e",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2569010,
+          "known_for_department": "Acting",
+          "name": "Don Lew",
+          "original_name": "Don Lew",
+          "popularity": 0.4608,
+          "profile_path": "/ox3u2JdooBxTgNusjPw2u1gAxX4.jpg",
+          "credit_id": "683297bc3e3a24251c054cf6",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1822244,
+          "known_for_department": "Crew",
+          "name": "Chad Sayn",
+          "original_name": "Chad Sayn",
+          "popularity": 0.255,
+          "profile_path": "/vha5kzAcHUdrFvegWFZxW99vf03.jpg",
+          "credit_id": "683297cd49d299fbdd2b6d68",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1235815,
+          "known_for_department": "Crew",
+          "name": "Owen Walstrom",
+          "original_name": "Owen Walstrom",
+          "popularity": 0.5283,
+          "profile_path": "/95b5hRbxXzQx7uDSwDmySwxBJZ8.jpg",
+          "credit_id": "683297d2a642dbf53e2b6c82",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 84339,
+          "known_for_department": "Acting",
+          "name": "Rorelee Tio",
+          "original_name": "Rorelee Tio",
+          "popularity": 0.4323,
+          "profile_path": "/xuLynMK55lTQ6XHHAzyEBGHPsm.jpg",
+          "credit_id": "683297ddbc1e644c7a837882",
+          "department": "Crew",
+          "job": "Stunt Double"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 113211,
+          "known_for_department": "Acting",
+          "name": "Chris Webb",
+          "original_name": "Chris Webb",
+          "popularity": 0.5947,
+          "profile_path": "/lEDEd4EGe3hNNOnW5KlR7TPfwqK.jpg",
+          "credit_id": "683297e949d299fbdd2b6d6b",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1433401,
+          "known_for_department": "Acting",
+          "name": "Megan Hui",
+          "original_name": "Megan Hui",
+          "popularity": 0.1889,
+          "profile_path": "/4saC8gBCvTk3Iq62KM33Prjxt3X.jpg",
+          "credit_id": "683297fafa7a79b8128377c1",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1075842,
+          "known_for_department": "Acting",
+          "name": "Lisa Chandler",
+          "original_name": "Lisa Chandler",
+          "popularity": 0.8259,
+          "profile_path": "/eak6gzmQkFwTGhbYyEykpKaZP4l.jpg",
+          "credit_id": "683298008ece7a1dae413acd",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2577027,
+          "known_for_department": "Acting",
+          "name": "Brittany Spiteri",
+          "original_name": "Brittany Spiteri",
+          "popularity": 0.2058,
+          "profile_path": "/76B3rJIG0eXTHtFm7azyQz2aExE.jpg",
+          "credit_id": "68329805d6983cd216413de3",
+          "department": "Crew",
+          "job": "Stunt Double"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 111938,
+          "known_for_department": "Acting",
+          "name": "Wyatt Cameron",
+          "original_name": "Wyatt Cameron",
+          "popularity": 0.1991,
+          "profile_path": "/meWM5OH0gChuTgT4VRvUEZyWtyV.jpg",
+          "credit_id": "683298100c728a9ee2837884",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1440920,
+          "known_for_department": "Acting",
+          "name": "Simon Burnett",
+          "original_name": "Simon Burnett",
+          "popularity": 0.2969,
+          "profile_path": "/63qDTgL9kIrcuQcpR4zAIQtgU4A.jpg",
+          "credit_id": "68329817b457cf5dd1054e74",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1275224,
+          "known_for_department": "Acting",
+          "name": "Janene Carleton",
+          "original_name": "Janene Carleton",
+          "popularity": 0.4402,
+          "profile_path": "/6UJHWZysnE52q4KQRRrZRv3kGZk.jpg",
+          "credit_id": "6832981c1ce59bcc97b6afcf",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1814838,
+          "known_for_department": "Crew",
+          "name": "Holly Raczynski",
+          "original_name": "Holly Raczynski",
+          "popularity": 0.0932,
+          "profile_path": "/1iTS0E0dMOfSBKNmUXGEbSid8O4.jpg",
+          "credit_id": "68329833b8500c9085eb2be4",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 4956602,
+          "known_for_department": "Crew",
+          "name": "Gael Mackie",
+          "original_name": "Gael Mackie",
+          "popularity": 0.0585,
+          "profile_path": "/vTpesAXUeSv5W4nC4tS4Z8OoytL.jpg",
+          "credit_id": "68329838e4293714eaeb2af3",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2284578,
+          "known_for_department": "Crew",
+          "name": "米特拉·苏里",
+          "original_name": "Mitra Suri",
+          "popularity": 0.2912,
+          "profile_path": "/yYfJcAYcupuXYa1ON7JxG6NZCqV.jpg",
+          "credit_id": "6832984670315f34812b6b43",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 3790695,
+          "known_for_department": "Acting",
+          "name": "凯莉·海曼",
+          "original_name": "Kailey Hyman",
+          "popularity": 0.4624,
+          "profile_path": "/aiREJkXiIT2GIzZcl6M9LPOFbuI.jpg",
+          "credit_id": "68329855fa7a79b8128377c4",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2300488,
+          "known_for_department": "Acting",
+          "name": "Matt Kennedy",
+          "original_name": "Matt Kennedy",
+          "popularity": 0.3504,
+          "profile_path": "/rywFuoNe1aFAPQFai2BR3O8Op8j.jpg",
+          "credit_id": "6832985d0cb72accea83781d",
+          "department": "Crew",
+          "job": "Stunt Double"
+        }
+      ]
+    },
+    "keywords": {
+      "keywords": [
+        {
+          "id": 1946,
+          "name": "restaurant"
+        },
+        {
+          "id": 10292,
+          "name": "gore"
+        },
+        {
+          "id": 9663,
+          "name": "sequel"
+        },
+        {
+          "id": 10170,
+          "name": "premonition"
+        },
+        {
+          "id": 10855,
+          "name": "fate"
+        },
+        {
+          "id": 34079,
+          "name": "death"
+        },
+        {
+          "id": 199686,
+          "name": "near-death experience"
+        },
+        {
+          "id": 208992,
+          "name": "1960s"
+        },
+        {
+          "id": 240606,
+          "name": "cheating death"
+        },
+        {
+          "id": 256183,
+          "name": "supernatural horror"
+        },
+        {
+          "id": 315058,
+          "name": "horror"
+        },
+        {
+          "id": 325778,
+          "name": "bold"
+        },
+        {
+          "id": 342995,
+          "name": "teen scream"
+        }
+      ]
+    },
+    "translations": {
+      "translations": [
+        {
+          "iso_3166_1": "US",
+          "iso_639_1": "en",
+          "name": "English",
+          "english_name": "English",
+          "data": {
+            "homepage": "https://www.finaldestinationmovie.com",
+            "overview": "Plagued by a violent recurring nightmare, college student Stefanie heads home to track down the one person who might be able to break the cycle and save her family from the grisly demise that inevitably awaits them all.",
+            "runtime": 110,
+            "tagline": "Death runs in the family.",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "KR",
+          "iso_639_1": "ko",
+          "name": "한국어/조선말",
+          "english_name": "Korean",
+          "data": {
+            "homepage": "",
+            "overview": "끝없는 악몽에 시달리던 스테파니는 그 원인을 찾던 중 집안 대대로 내려오는 죽음의 저주와 그 실체를 알게 된다. 놀랍게도, 죽음의 순서가 자신의 가족에게 이어졌음을 알게 되는데...  이제, 다음 차례는 누구?",
+            "runtime": 0,
+            "tagline": "죽음이 피보다 진하게 대물림된다",
+            "title": "파이널 데스티네이션: 블러드라인"
+          }
+        },
+        {
+          "iso_3166_1": "BG",
+          "iso_639_1": "bg",
+          "name": "български език",
+          "english_name": "Bulgarian",
+          "data": {
+            "homepage": "",
+            "overview": "Ако се намесиш в плановете на Смъртта, нещата бързо ще загрубеят.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Последен изход: Наследство"
+          }
+        },
+        {
+          "iso_3166_1": "MX",
+          "iso_639_1": "es",
+          "name": "Español",
+          "english_name": "Spanish",
+          "data": {
+            "homepage": "https://www.warnerbroslatino.com/es-mx/peliculas/destino-final-lazos-de-sangre",
+            "overview": "Atragantada por una violenta pesadilla recurrente, la estudiante universitaria Stefanie regresa a casa para encontrar a la única persona que podría romper el ciclo y salvar a su familia de la horrible muerte que inevitablemente les espera a todos.",
+            "runtime": 100,
+            "tagline": "La muerte corre en la familia.",
+            "title": "Destino final lazos de sangre"
+          }
+        },
+        {
+          "iso_3166_1": "BR",
+          "iso_639_1": "pt",
+          "name": "Português",
+          "english_name": "Portuguese",
+          "data": {
+            "homepage": "https://www.premonicao6filme.com.br/",
+            "overview": "Atormentada por um pesadelo violento recorrente, a estudante universitária Stefanie volta para casa para encontrar a única pessoa que pode quebrar o ciclo e salvar sua família do destino horrível que inevitavelmente os aguarda.",
+            "runtime": 110,
+            "tagline": "A morte está na família",
+            "title": "Premonição 6: Laços de Sangue"
+          }
+        },
+        {
+          "iso_3166_1": "CN",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "homepage": "",
+            "overview": "　　大学生史蒂芬妮（凯特琳·桑塔·胡安娜 Kaitlyn Santa Juana 饰）饱受反复出现的暴力恶梦所困扰，于是决定回到家乡，寻找唯一可能打破这个循环的人，并拯救家人免于无法避免的可怕厄运。",
+            "runtime": 109,
+            "tagline": "",
+            "title": "死神来了6：血脉诅咒"
+          }
+        },
+        {
+          "iso_3166_1": "VN",
+          "iso_639_1": "vi",
+          "name": "Tiếng Việt",
+          "english_name": "Vietnamese",
+          "data": {
+            "homepage": "",
+            "overview": "Thương hiệu kinh dị đình đám Hollywood Final Destination sẽ trở lại với phần phim mới, hứa hẹn khuấy đảo phòng vé mùa hè 2025. Final Destination: Bloodlines là phần thứ 6 trong series, và cho đến hiện tại, các thông tin về nội dung phần phim này vẫn đang được giữ kín. Bộ đôi Zach Lipovsky và Adam Stein được chọn từ hơn 200 ứng viên để ngồi ghế đạo diễn, trong khi Guy Busick – biên kịch của Ready or Not sẽ chấp bút cho bộ phim. Tony Todd – gương mặt quen thuộc của series cũng sẽ trở lại trong phần 6 với vai diễn William Bludworth.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Lưỡi hái tử thần 6: Huyết thống"
+          }
+        },
+        {
+          "iso_3166_1": "UA",
+          "iso_639_1": "uk",
+          "name": "Український",
+          "english_name": "Ukrainian",
+          "data": {
+            "homepage": "",
+            "overview": "Стефані – студентка коледжу, яку постійно мучить один і той самий кошмар. Вона вирушає додому в пошуках єдиної людини, яка здатна врятувати родину Стефані і розірвати цикл жахливих подій.",
+            "runtime": 0,
+            "tagline": "Смерть передається у спадок",
+            "title": "Пункт призначення: Родове прокляття"
+          }
+        },
+        {
+          "iso_3166_1": "PT",
+          "iso_639_1": "pt",
+          "name": "Português",
+          "english_name": "Portuguese",
+          "data": {
+            "homepage": "",
+            "overview": "Atormentada por um recorrente pesadelo violento, a estudante universitária Stefanie regressa a casa determinada a encontrar a única pessoa que pode quebrar o ciclo e salvar a sua família do terrível destino que inevitavelmente os aguarda.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "O Último Destino: Descendência"
+          }
+        },
+        {
+          "iso_3166_1": "FR",
+          "iso_639_1": "fr",
+          "name": "Français",
+          "english_name": "French",
+          "data": {
+            "homepage": "https://newsroom.warnerbros.fr/final-destination-bloodlines",
+            "overview": "Stefani, 18 ans, fait d’affreux cauchemars. Dans ceux-ci, elle voit sa grand-mère échapper à la mort dans un accident qui aurait dû la tuer il y a 50 ans. Son ancêtre a réussi alors à esquiver le décès jusqu’à l’âge de 80 ans ou elle meurt de façon naturelle. À cause de ce miracle, toute sa descendance doit quelque chose à la mort.",
+            "runtime": 0,
+            "tagline": "La mort n'oublie pas. La mort ne pardonne pas.",
+            "title": "Destination finale : Bloodlines"
+          }
+        },
+        {
+          "iso_3166_1": "HR",
+          "iso_639_1": "hr",
+          "name": "Hrvatski",
+          "english_name": "Croatian",
+          "data": {
+            "homepage": "",
+            "overview": "Nasilni, ponavljajući košmar progonjuje studenticu Stefanie. Odlučna prekinuti taj smrtonosni ciklus, vraća se kući kako bi pronašla osobu koja bi joj mogla pomoći spasiti obitelj od neizbježne sudbine.",
+            "runtime": 0,
+            "tagline": "Smrt ostaje u obitelji.",
+            "title": "Put bez povratka: Nasljeđa"
+          }
+        },
+        {
+          "iso_3166_1": "GR",
+          "iso_639_1": "el",
+          "name": "ελληνικά",
+          "english_name": "Greek",
+          "data": {
+            "homepage": "",
+            "overview": "Βασανισμένη από έναν βίαιο εφιάλτη που όλο επανέρχεται, η φοιτήτρια Stefanie αναζητά το μοναδικό άτομο που μπορεί να σπάσει τον φαύλο κύκλο και να σώσει την οικογένεια της από την αναπόδραστη, φρικτή μοίρα.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Βλέπω το Θάνατό σου 6: Δεσμοί Αίματος"
+          }
+        },
+        {
+          "iso_3166_1": "RU",
+          "iso_639_1": "ru",
+          "name": "Pусский",
+          "english_name": "Russian",
+          "data": {
+            "homepage": "",
+            "overview": "18-летнюю Стефани временами мучают жестокие ночные кошмары. Она каждый раз становится свидетельницей того, как погибает в результате аварии на башне в 1960-х годах. Но вскоре она понимает, что на самом деле этот сон — это предчувствие, которое когда-то было у ее бабушки Эстер, когда она была маленькой. 50 лет назад она смогла перехитрить смерть. Это спасло ей жизнь, а также жизнь всем остальным, кто погиб бы в результате разрушительной катастрофы. Спустя пять десятилетий всех выживших, которые на самом деле должны были быть мертвы, преследует смерть. Но это еще не все: потомков тоже следует стереть, потому что они вообще не должны были рождаться...",
+            "runtime": 110,
+            "tagline": "",
+            "title": "Пункт назначения: Узы крови"
+          }
+        },
+        {
+          "iso_3166_1": "CA",
+          "iso_639_1": "fr",
+          "name": "Français",
+          "english_name": "French",
+          "data": {
+            "homepage": "",
+            "overview": "Une étudiante voit la Mort réclamer des membres de sa famille, en raison de la survie miraculeuse de sa grand-mère dans l'effondrement d'un immeuble 50 ans plus tôt.",
+            "runtime": 0,
+            "tagline": "La Mort est une Histoire de Famille",
+            "title": "Destination Ultime : Liens de Sang"
+          }
+        },
+        {
+          "iso_3166_1": "TH",
+          "iso_639_1": "th",
+          "name": "ภาษาไทย",
+          "english_name": "Thai",
+          "data": {
+            "homepage": "",
+            "overview": "สเตฟานี นักศึกษาวิทยาลัยต้องเจอกับฝันร้ายที่รุนแรงซ้ำแล้วซ้ำเล่า จึงมุ่งหน้ากลับบ้านเพื่อตามหาคนๆ หนึ่งที่อาจสามารถทำลายวงจรนี้และช่วยครอบครัวของเธอจากการตายอันน่าสยดสยองที่รอพวกเขาอยู่อย่างหลีกเลี่ยงไม่ได้",
+            "runtime": 0,
+            "tagline": "ความตายสืบทอดทางสายเลือด",
+            "title": "ไฟนอล เดสติเนชั่น ทายาทโกงตาย"
+          }
+        },
+        {
+          "iso_3166_1": "ES",
+          "iso_639_1": "es",
+          "name": "Español",
+          "english_name": "Spanish",
+          "data": {
+            "homepage": "",
+            "overview": "Acosada por una violenta pesadilla recurrente, la estudiante universitaria Stefanie se dirige a casa para localizar a la única persona que podría ser capaz de romper el ciclo y salvar a su familia de la espeluznante muerte que inevitablemente les espera a todos.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Destino final: Lazos de sangre"
+          }
+        },
+        {
+          "iso_3166_1": "TR",
+          "iso_639_1": "tr",
+          "name": "Türkçe",
+          "english_name": "Turkish",
+          "data": {
+            "homepage": "",
+            "overview": "Eğer \"ölümün\" planlarını bozarsanız, işler çok karmaşık bir hal alabilir... Sürekli tekrar eden şiddetli bir kâbusla boğuşan üniversite öğrencisi Stefanie, bu döngüyü kırıp aile fertlerini, onları bekleyen korkunç ölümden kurtarabilecek tek kişinin izini sürmek için eve döner.",
+            "runtime": 0,
+            "tagline": "Ölüm ailemizin kaderi.",
+            "title": "Son Durak: Kan Bağı"
+          }
+        },
+        {
+          "iso_3166_1": "RO",
+          "iso_639_1": "ro",
+          "name": "Română",
+          "english_name": "Romanian",
+          "data": {
+            "homepage": "",
+            "overview": "Bântuită de același coșmar violent, studenta Stefanie se întoarce acasă pentru a găsi acea singură persoană care poate rupe lanțul blestemelor și îi poate salva familia de la iminentul final macabru.",
+            "runtime": 0,
+            "tagline": "Moartea rămâne în familie.",
+            "title": "Destinație finală: Succesorii"
+          }
+        },
+        {
+          "iso_3166_1": "HK",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "homepage": "",
+            "overview": "大學生 Stefanie 被一個反覆出現的暴力噩夢困擾，於是她回到家中，找出唯一可以打破這個循環的人，拯救整個家族，務求令各人逃出走不掉的可怕死亡魔咒。",
+            "runtime": 0,
+            "tagline": "",
+            "title": "死神來了：血脈"
+          }
+        },
+        {
+          "iso_3166_1": "IT",
+          "iso_639_1": "it",
+          "name": "Italiano",
+          "english_name": "Italian",
+          "data": {
+            "homepage": "",
+            "overview": "Tormentata da un violento incubo ricorrente, Stefanie torna a casa dal college per rintracciare l'unica persona in grado di interrompere un ciclo mortale che coinvolge i membri della sua famiglia, e salvarli dalla macabra fine che inevitabilmente li attende.",
+            "runtime": 0,
+            "tagline": "Una famiglia con la morte nel sangue.",
+            "title": "Final Destination: Bloodlines"
+          }
+        },
+        {
+          "iso_3166_1": "IR",
+          "iso_639_1": "fa",
+          "name": "فارسی",
+          "english_name": "Persian",
+          "data": {
+            "homepage": "",
+            "overview": "استفانی، دانشجوی دانشگاه که به خاطر یک کابوس مکرر و وحشتناک دچار عذاب است، به خانه برمی‌گردد تا شخصی را پیدا کند که ممکن است بتواند این چرخه را بشکند و خانواده‌اش را از سرنوشت خونینی که به طور حتم در انتظارشان است نجات دهد.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "مقصد نهایی : اصل و نسب"
+          }
+        },
+        {
+          "iso_3166_1": "SK",
+          "iso_639_1": "sk",
+          "name": "Slovenčina",
+          "english_name": "Slovak",
+          "data": {
+            "homepage": "",
+            "overview": "Vysokoškolská študentka, sužovaná opakujúcou sa nočnou morou, sa vracia domov, aby našla jedinú osobu, ktorá môže prelomiť kruh a zachrániť jej rodinu pred strašným osudom, ktorý ich čaká.",
+            "runtime": 0,
+            "tagline": "Smrť majú v rodine",
+            "title": "Nezvratný osud: Pokrvné puto"
+          }
+        },
+        {
+          "iso_3166_1": "PL",
+          "iso_639_1": "pl",
+          "name": "Polski",
+          "english_name": "Polish",
+          "data": {
+            "homepage": "",
+            "overview": "Dręczona przez powtarzający się koszmar, studentka Stefanie wraca do domu, aby odnaleźć osobę, która mogłaby przerwać cykl i ocalić jej rodzinę przed makabryczną śmiercią, która nieuchronnie czeka ich wszystkich.",
+            "runtime": 100,
+            "tagline": "Śmierć jest dziedziczna.",
+            "title": "Oszukać przeznaczenie: Więzy krwi"
+          }
+        },
+        {
+          "iso_3166_1": "LT",
+          "iso_639_1": "lt",
+          "name": "Lietuvių",
+          "english_name": "Lithuanian",
+          "data": {
+            "homepage": "",
+            "overview": "Stefaniją jau kuris laikas vargina tas pats košmaras: mergina nuolat sapnuoja, kad žūva gaisre, kuris įvyko praėjusio amžiaus viduryje. Išvarginta košmaro, ji pamažu išsiaiškina, kad bent jau kai kurie sapno įvykiai – absoliuti tiesa. Jos močiutė iš tiesų vos nesudegė gaisre, ir nors šiai tuomet pavyko išsigelbėti, mirtis visada pasiima savo aukas. Dabar, kai pavojus gresia jau pačiai Stefanijai ir jos šeimai, merginai teks surasti būdą, kaip dar kartą apgauti mirtį.",
+            "runtime": 110,
+            "tagline": "",
+            "title": "Galutinis tikslas. Kraujo linija"
+          }
+        },
+        {
+          "iso_3166_1": "TW",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "homepage": "",
+            "overview": "故事描述大學生史黛芬妮飽受反覆出現的暴力惡夢所困擾，於是決定回到家鄉，尋找唯一可能打破這個循環的人，並拯救家人免於無法避免的可怕厄運。",
+            "runtime": 0,
+            "tagline": "如果你與死神作對，一切會變得非常……混亂",
+            "title": "絕命終結站：血脈"
+          }
+        },
+        {
+          "iso_3166_1": "FI",
+          "iso_639_1": "fi",
+          "name": "suomi",
+          "english_name": "Finnish",
+          "data": {
+            "homepage": "",
+            "overview": "Toistuvan väkivaltaisen painajaisunen vaivaama opiskelija Stefanie lähtee kotiinsa jäljittämään ainoaa henkilöä, joka voisi katkaista painajaiskierteen ja pelastaa hänen perheensä kammottavalta kuolemalta, joka väistämättä odottaa heitä kaikkia.",
+            "runtime": 0,
+            "tagline": "Kuolema on sukuvika",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "DE",
+          "iso_639_1": "de",
+          "name": "Deutsch",
+          "english_name": "German",
+          "data": {
+            "homepage": "",
+            "overview": "Immer wieder wird die Studentin Stefanie von einem schrecklichen Albtraum heimgesucht. Sie beschließt, in ihre Heimatstadt zurückzukehren. Dort hofft sie, die einzige Person zu finden, die den Teufelskreis durchbrechen und ihre gesamte Familie vor dem grausamen Tod bewahren kann, der sie alle unweigerlich erwartet …",
+            "runtime": 110,
+            "tagline": "Der Tod liegt in der Familie.",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "IL",
+          "iso_639_1": "he",
+          "name": "עִבְרִית",
+          "english_name": "Hebrew",
+          "data": {
+            "homepage": "",
+            "overview": "סטפני, סטודנטית צעירה, נרדפת על ידי סיוט אלים שחוזר על עצמו. נחושה לשבור את המעגל ולמנוע את הגורל המזעזע שמאיים על משפחתה, היא חוזרת הביתה כדי למצוא את האדם היחיד שעשוי להיות מסוגל להציל אותם מהתהום האיומה אשר, באופן בלתי נמנע, מחכה להם.",
+            "runtime": 0,
+            "tagline": "כל דור והצרות שלו.",
+            "title": "יעד סופי: קשר דם"
+          }
+        },
+        {
+          "iso_3166_1": "IN",
+          "iso_639_1": "hi",
+          "name": "हिन्दी",
+          "english_name": "Hindi",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "फाइनल डेस्टिनेशन ब्लडलाइन्स"
+          }
+        },
+        {
+          "iso_3166_1": "ID",
+          "iso_639_1": "id",
+          "name": "Bahasa indonesia",
+          "english_name": "Indonesian",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "HU",
+          "iso_639_1": "hu",
+          "name": "Magyar",
+          "english_name": "Hungarian",
+          "data": {
+            "homepage": "",
+            "overview": "A halál igazságos. Aki véletlenül elkerüli a neki rendelt sorsot, és megússza a rég megírt véget, annak utánamegy. A halál szorgalmas: hiába hajol el valaki sokszor a kasza éle elől, ő addig ügyeskedik, míg el nem kapja azt, akinek meg kell halnia. A halál rafinált: akit egyszerűen nem sikerül megölnie, azt egyre furcsább, vadabb, meghökkentőbb módszerekkel végzi ki. Stefanie-t egy makacsul visszatérő rémálom gyötri. Így hát hazamegy az egyetemi kollégiumból, hogy megkeresse azt az egyetlen embert, aki megtörheti a gyilkos spirált, és megmentheti a családját a szörnyű végtől – ami elkerülhetetlenül leselkedik rájuk.",
+            "runtime": 0,
+            "tagline": "A halál családi hagyomány",
+            "title": "Végső állomás: Vérvonalak"
+          }
+        },
+        {
+          "iso_3166_1": "CZ",
+          "iso_639_1": "cs",
+          "name": "Český",
+          "english_name": "Czech",
+          "data": {
+            "homepage": "",
+            "overview": "Vysokoškolačku Stefanie pronásledují děsivé noční můry plné násilí. Ve snaze odhalit pravdu se vrací domů, kde se snaží najít jediného člověka, který by mohl přerušit řetězec tragických událostí a zachránit její rodinu před nevyhnutelným osudem.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Nezvratný osud: Pokrevní linie"
+          }
+        },
+        {
+          "iso_3166_1": "CH",
+          "iso_639_1": "de",
+          "name": "Deutsch",
+          "english_name": "German",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Final Destination 6: Bloodlines"
+          }
+        },
+        {
+          "iso_3166_1": "EE",
+          "iso_639_1": "et",
+          "name": "Eesti",
+          "english_name": "Estonian",
+          "data": {
+            "homepage": "",
+            "overview": "Ülikoolitudengit Stefaniet painab korduv vägivaldne õudusunenägu. Ta suundub koju, et leida üles ainus, kes suudaks nõiaringi lõhkuda ja päästa pere neid paratamatult ootava kohutava lõpu käest.",
+            "runtime": 0,
+            "tagline": "Surm liigub peres",
+            "title": "Lõpp-punkt: Vereliinid"
+          }
+        },
+        {
+          "iso_3166_1": "LV",
+          "iso_639_1": "lv",
+          "name": "Latviešu",
+          "english_name": "Latvian",
+          "data": {
+            "homepage": "",
+            "overview": "Pastāvīgi redzot varmācīgus murgus, koledžas studente Stefanija dodas uz mājām, lai atrastu vienīgo cilvēku, kurš spētu izbeigt notikumu atkārtošanos un izglābt viņas ģimeni no briesmīgās nāves, kas nenovēršami gaida viņus visus.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Ceļa gals: Asinssaites"
+          }
+        },
+        {
+          "iso_3166_1": "IN",
+          "iso_639_1": "ta",
+          "name": "தமிழ்",
+          "english_name": "Tamil",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "ஃபைனல் டெஸ்டினேஷன் ப்ளட்லைன்ஸ்"
+          }
+        },
+        {
+          "iso_3166_1": "IN",
+          "iso_639_1": "te",
+          "name": "తెలుగు",
+          "english_name": "Telugu",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "ఫైనల్ డెస్టినేషన్ బ్లడ్‌లైన్స్"
+          }
+        },
+        {
+          "iso_3166_1": "SI",
+          "iso_639_1": "sl",
+          "name": "Slovenščina",
+          "english_name": "Slovenian",
+          "data": {
+            "homepage": "",
+            "overview": "Študentka Stefanie, ki jo mučijo kronične nočne more, se vrne domov, da bi našla osebo, ki bi lahko edina prekinila ta mučni krog in rešila njeno družino pred grozljivo smrtjo, ki neizogibno čaka vse.",
+            "runtime": 0,
+            "tagline": "Smrt je v družini.",
+            "title": "Brez povratka: Nasledstvo"
+          }
+        },
+        {
+          "iso_3166_1": "NL",
+          "iso_639_1": "nl",
+          "name": "Nederlands",
+          "english_name": "Dutch",
+          "data": {
+            "homepage": "",
+            "overview": "Geplaagd door een gewelddadige terugkerende nachtmerrie, gaat student Stefanie naar huis om de ene persoon op te sporen die mogelijk de cyclus kan doorbreken en haar familie kan redden van de griezelige ondergang die onvermijdelijk op hen wacht.",
+            "runtime": 0,
+            "tagline": "",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "SE",
+          "iso_639_1": "sv",
+          "name": "svenska",
+          "english_name": "Swedish",
+          "data": {
+            "homepage": "",
+            "overview": "College-studenten Stefani plågas av en våldsam och återkommande mardröm. Hon återvänder hem för att leta upp den enda person som kanske kan bryta den onda cirkeln och rädda hennes familj från det grymma öde som oundvikligen väntar dem alla.",
+            "runtime": 0,
+            "tagline": "",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "SA",
+          "iso_639_1": "ar",
+          "name": "العربية",
+          "english_name": "Arabic",
+          "data": {
+            "homepage": "https://www.finaldestinationmovie.com",
+            "overview": "بعد أن عانت من كابوس عنيف متكرر، تعود طالبة الجامعة ستيفاني إلى منزلها لتعقب الشخص الوحيد الذي قد يكون قادرًا على كسر هذه الدائرة وإنقاذ عائلتها من الموت المروع الذي ينتظرهم جميعًا حتمًا.",
+            "runtime": 110,
+            "tagline": "الموت يجري في العائلة.",
+            "title": "الوجهة النهائية: خطوط الدم"
+          }
+        },
+        {
+          "iso_3166_1": "GE",
+          "iso_639_1": "ka",
+          "name": "ქართული",
+          "english_name": "Georgian",
+          "data": {
+            "homepage": "",
+            "overview": "ძალადობრივი, განმეორებადი კოშმარებით შეპყრობილი კოლეჯის სტუდენტი სტეფანი სახლში მიდის, რათა იპოვოს ერთადერთი ადამიანი, რომელსაც შეუძლია ციკლის გაწყვეტა და ოჯახის გადარჩენა იმ საშინელი დაღუპვისგან, რომელიც გარდაუვლად ელის ყველას...",
+            "runtime": 0,
+            "tagline": "",
+            "title": "დანიშნულების ადგილი: სისხლიანი კავშირები"
+          }
+        },
+        {
+          "iso_3166_1": "AE",
+          "iso_639_1": "ar",
+          "name": "العربية",
+          "english_name": "Arabic",
+          "data": {
+            "homepage": "",
+            "overview": "بعد أن عانت من كابوس عنيف متكرر، تعود طالبة الجامعة ستيفاني إلى منزلها لتعقب الشخص الوحيد الذي قد يكون قادرًا على كسر هذه الدائرة وإنقاذ عائلتها من الموت المروع الذي ينتظرهم جميعًا حتمًا.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "الوجهة النهائية: خطوط الدم"
+          }
+        },
+        {
+          "iso_3166_1": "AZ",
+          "iso_639_1": "az",
+          "name": "Azərbaycan",
+          "english_name": "Azerbaijani",
+          "data": {
+            "homepage": "",
+            "overview": "Təkrarlanan dəhşətli kabusdan əziyyət çəkən universitet tələbəsi evinə qayıdır ki, bu dövrəni qıra və ailəsini qaçılmaz qorxunc taledən xilas edə biləcək yeganə şəxsi tapsın.",
+            "runtime": 125,
+            "tagline": "",
+            "title": "Təyinat nöqtəsi: Qan bağları"
+          }
+        }
+      ]
+    },
+    "external_ids": {
+      "imdb_id": "tt9619824",
+      "wikidata_id": "Q118212751",
+      "facebook_id": "finaldestinationmovie",
+      "instagram_id": "finaldestinationmovie",
+      "twitter_id": "FDMovie"
+    },
+    "semantic_tags": [
+      "genre:恐怖",
+      "genre:悬疑",
+      "decade:2020s",
+      "country:us",
+      "lang:en",
+      "series:8864"
+    ]
+  }
+]

@@ -1,0 +1,2557 @@
+[
+  {
+    "adult": false,
+    "backdrop_path": "/aEG09hZZEDZ23Y9WYI701W6Gwnb.jpg",
+    "belongs_to_collection": {
+      "id": 87359,
+      "name": "碟中谍（系列）",
+      "poster_path": "/odgJESjVbkgCu5aK47pNcXgKroZ.jpg",
+      "backdrop_path": "/mroWh717g0Ah2c0rrPGW6f3EWMM.jpg"
+    },
+    "budget": 400000000,
+    "genres": [
+      {
+        "id": 28,
+        "name": "动作"
+      },
+      {
+        "id": 12,
+        "name": "冒险"
+      },
+      {
+        "id": 53,
+        "name": "惊悚"
+      }
+    ],
+    "homepage": "http://www.missionimpossible.com",
+    "id": 575265,
+    "imdb_id": "tt9603208",
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_title": "Mission: Impossible - The Final Reckoning",
+    "overview": "超级人工智能“智体”即将引爆全球核弹危机，把世界推向毁灭边缘。而伊森·亨特和他的IMF小队在上次行动中遭遇重创，团队濒临分崩离析。虽然伊森已获得关闭“智体”的钥匙，但要彻底消灭“智体”，完成这一拯救全人类的终极任务，仍需要IMF小队齐心协力突破重重困难。他们不仅要面对全知全能又无影无形的“智体”与其手下盖布瑞尔的百般阻拦，还要解决来自过去的种种恩怨。每个抉择都关乎信念与命运，等待伊森和IMF小队的，究竟是怎样的结局？",
+    "popularity": 214.5334,
+    "poster_path": "/uXuUzW7RlB4V3YLTh3VZigsdN7M.jpg",
+    "production_companies": [
+      {
+        "id": 4,
+        "logo_path": "/gz66EfNoYPqHTYI4q9UEN4CbHRc.png",
+        "name": "Paramount Pictures",
+        "origin_country": "US"
+      },
+      {
+        "id": 82819,
+        "logo_path": "/gXfFl9pRPaoaq14jybEn1pHeldr.png",
+        "name": "Skydance Media",
+        "origin_country": "US"
+      },
+      {
+        "id": 21777,
+        "logo_path": null,
+        "name": "TC Productions",
+        "origin_country": "US"
+      }
+    ],
+    "production_countries": [
+      {
+        "iso_3166_1": "US",
+        "name": "United States of America"
+      }
+    ],
+    "release_date": "2025-05-17",
+    "revenue": 389533211,
+    "runtime": 170,
+    "spoken_languages": [
+      {
+        "english_name": "French",
+        "iso_639_1": "fr",
+        "name": "Français"
+      },
+      {
+        "english_name": "English",
+        "iso_639_1": "en",
+        "name": "English"
+      },
+      {
+        "english_name": "Inuktitut",
+        "iso_639_1": "iu",
+        "name": ""
+      }
+    ],
+    "status": "Released",
+    "tagline": "",
+    "title": "碟中谍8：最终清算",
+    "video": false,
+    "vote_average": 7.163,
+    "vote_count": 646,
+    "credits": {
+      "cast": [
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 500,
+          "known_for_department": "Acting",
+          "name": "汤姆·克鲁斯",
+          "original_name": "Tom Cruise",
+          "popularity": 18.7121,
+          "profile_path": "/eOh4ubpOm2Igdg0QH2ghj0mFtC.jpg",
+          "cast_id": 4,
+          "character": "Ethan Hunt",
+          "credit_id": "5c3d2b2a9251416b02acec9f",
+          "order": 0
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 39459,
+          "known_for_department": "Acting",
+          "name": "海莉·阿特维尔",
+          "original_name": "Hayley Atwell",
+          "popularity": 12.6956,
+          "profile_path": "/x57wXHexIjD2ywly9cRA4rov7cu.jpg",
+          "cast_id": 39,
+          "character": "Grace",
+          "credit_id": "636ab473d4cc8e007e0299a4",
+          "order": 1
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 10182,
+          "known_for_department": "Acting",
+          "name": "文·瑞姆斯",
+          "original_name": "Ving Rhames",
+          "popularity": 5.0296,
+          "profile_path": "/4gpLVNKPZlVucc4fT2fSZ7DksTK.jpg",
+          "cast_id": 36,
+          "character": "Luther Stickell",
+          "credit_id": "62f5424d1d3143007a8fbb3c",
+          "order": 2
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 11108,
+          "known_for_department": "Acting",
+          "name": "西蒙·佩吉",
+          "original_name": "Simon Pegg",
+          "popularity": 4.3902,
+          "profile_path": "/jw8bEEoTOithyNf0qxu4Zt1yaKp.jpg",
+          "cast_id": 35,
+          "character": "Benji Dunn",
+          "credit_id": "62f54236c3bffe0087767641",
+          "order": 3
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 65344,
+          "known_for_department": "Acting",
+          "name": "埃赛·莫拉莱斯",
+          "original_name": "Esai Morales",
+          "popularity": 2.4511,
+          "profile_path": "/cNYciYzUzxraGlw0BPql1QePi5H.jpg",
+          "cast_id": 42,
+          "character": "Gabriel",
+          "credit_id": "636ab4a2d363e50079b97539",
+          "order": 4
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 139820,
+          "known_for_department": "Acting",
+          "name": "庞·克莱门捷夫",
+          "original_name": "Pom Klementieff",
+          "popularity": 5.664,
+          "profile_path": "/hfUKAI2kXTMMWjno0i4sLPJud5N.jpg",
+          "cast_id": 40,
+          "character": "Paris",
+          "credit_id": "636ab47d350398007ace0de2",
+          "order": 5
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 15319,
+          "known_for_department": "Acting",
+          "name": "亨利·车尔尼",
+          "original_name": "Henry Czerny",
+          "popularity": 1.9615,
+          "profile_path": "/zOWZzRmliKf9032IOOq0a3jXhVv.jpg",
+          "cast_id": 32,
+          "character": "Kittridge",
+          "credit_id": "62e85a14308131005d205189",
+          "order": 6
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 7497,
+          "known_for_department": "Acting",
+          "name": "霍特·麦克卡兰尼",
+          "original_name": "Holt McCallany",
+          "popularity": 2.3795,
+          "profile_path": "/tnXVshv7CD9b53BRjYrLjVJvnDS.jpg",
+          "cast_id": 29,
+          "character": "Serling",
+          "credit_id": "62e2b904b234b900525660ff",
+          "order": 7
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 47627,
+          "known_for_department": "Acting",
+          "name": "珍妮特·麦克蒂尔",
+          "original_name": "Janet McTeer",
+          "popularity": 3.4766,
+          "profile_path": "/qOKAI6aunD4J5MXiwwomAhI3jI2.jpg",
+          "cast_id": 31,
+          "character": "Walters",
+          "credit_id": "62e81d671c09fb0060014400",
+          "order": 8
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 17039,
+          "known_for_department": "Acting",
+          "name": "尼克·奥弗曼",
+          "original_name": "Nick Offerman",
+          "popularity": 11.709,
+          "profile_path": "/zhmWZEJkzqgkIbSqZmFtUm0AwUV.jpg",
+          "cast_id": 30,
+          "character": "General Sidney",
+          "credit_id": "62e81d571c635b0058c619c0",
+          "order": 9
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1278487,
+          "known_for_department": "Acting",
+          "name": "汉娜·沃丁厄姆",
+          "original_name": "Hannah Waddingham",
+          "popularity": 5.8444,
+          "profile_path": "/eHAICyhvjiRZCgzKyJCk9hWnnjr.jpg",
+          "cast_id": 54,
+          "character": "Admiral Neely",
+          "credit_id": "640b600e18b751010bd2009b",
+          "order": 10
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2028037,
+          "known_for_department": "Acting",
+          "name": "特拉梅尔·提尔曼",
+          "original_name": "Tramell Tillman",
+          "popularity": 1.6351,
+          "profile_path": "/ynvIVKFoUmHitMp6kd6NegZ5lw1.jpg",
+          "cast_id": 61,
+          "character": "Captain Bledsoe",
+          "credit_id": "6626c9c425882301319054b9",
+          "order": 11
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 9780,
+          "known_for_department": "Acting",
+          "name": "安吉拉·贝塞特",
+          "original_name": "Angela Bassett",
+          "popularity": 4.0485,
+          "profile_path": "/tKnuviliyeKNGlo26IU5gIrJAtd.jpg",
+          "cast_id": 79,
+          "character": "Erika Sloane",
+          "credit_id": "673212930447470da614a745",
+          "order": 12
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 74242,
+          "known_for_department": "Acting",
+          "name": "谢伊·惠格姆",
+          "original_name": "Shea Whigham",
+          "popularity": 3.2596,
+          "profile_path": "/suwW5Gv06Po1RzcSKVAPANrVvo3.jpg",
+          "cast_id": 41,
+          "character": "Briggs",
+          "credit_id": "636ab4980d1e7f007d4538ef",
+          "order": 13
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2080646,
+          "known_for_department": "Acting",
+          "name": "格雷格·塔爾贊·戴維斯",
+          "original_name": "Greg Tarzan Davis",
+          "popularity": 1.1017,
+          "profile_path": "/mRWnRkEeV9lRICrz7DF0wpWxW47.jpg",
+          "cast_id": 57,
+          "character": "Degas",
+          "credit_id": "65b4ae864f33ad01310b4ee4",
+          "order": 14
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 124112,
+          "known_for_department": "Acting",
+          "name": "查尔斯·帕内尔",
+          "original_name": "Charles Parnell",
+          "popularity": 0.8844,
+          "profile_path": "/wLywO5xtR97YKtkYb57hXEFpL7j.jpg",
+          "cast_id": 33,
+          "character": "Richards",
+          "credit_id": "62e939fd6d9fe8005eed2b06",
+          "order": 15
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 34546,
+          "known_for_department": "Acting",
+          "name": "马克·加蒂斯",
+          "original_name": "Mark Gatiss",
+          "popularity": 1.9478,
+          "profile_path": "/jf6vBlhsDbKR8N3rjl5ulqz9ltB.jpg",
+          "cast_id": 80,
+          "character": "Angstrom",
+          "credit_id": "67333929e2cb62b5bc1652d8",
+          "order": 16
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 151438,
+          "known_for_department": "Acting",
+          "name": "罗尔夫·撒克逊",
+          "original_name": "Rolf Saxon",
+          "popularity": 1.0941,
+          "profile_path": "/gKsxLuENgiRgt1dRxtXwtJ5hLOn.jpg",
+          "cast_id": 55,
+          "character": "William Donloe",
+          "credit_id": "641b66b8688cd0008fd22631",
+          "order": 17
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 97302,
+          "known_for_department": "Acting",
+          "name": "Lucy Tulugarjuk",
+          "original_name": "Lucy Tulugarjuk",
+          "popularity": 0.6957,
+          "profile_path": "/17dXYLSZp4HjFIRJeMaytCXdWF9.jpg",
+          "cast_id": 56,
+          "character": "Tapeesa",
+          "credit_id": "641b685d5907de008385bb9b",
+          "order": 18
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2130,
+          "known_for_department": "Acting",
+          "name": "加利·艾尔维斯",
+          "original_name": "Cary Elwes",
+          "popularity": 3.0475,
+          "profile_path": "/5PAcQuB2fFzGq5fjyugNlOpndk4.jpg",
+          "cast_id": 119,
+          "character": "Denlinger",
+          "credit_id": "68271983ad38fbeed26efb7e",
+          "order": 19
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2252989,
+          "known_for_department": "Acting",
+          "name": "凯蒂·M·奥布莱恩",
+          "original_name": "Katy O'Brian",
+          "popularity": 2.9653,
+          "profile_path": "/b7i6dQrHhCYu4Z9bgaXO5U2hrgP.jpg",
+          "cast_id": 59,
+          "character": "Kodiak",
+          "credit_id": "660446bd770700017c11da34",
+          "order": 20
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1451123,
+          "known_for_department": "Acting",
+          "name": "Stephen Oyoung",
+          "original_name": "Stephen Oyoung",
+          "popularity": 0.8819,
+          "profile_path": "/oMdNxSd8cSZaYhpaDkaYQ40Z5o0.jpg",
+          "cast_id": 78,
+          "character": "Pills",
+          "credit_id": "6695907ba8cd0f073ee61ea4",
+          "order": 21
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2963838,
+          "known_for_department": "Crew",
+          "name": "Tomás Paredes",
+          "original_name": "Tomás Paredes",
+          "popularity": 0.2263,
+          "profile_path": null,
+          "cast_id": 135,
+          "character": "Hagar",
+          "credit_id": "682b38eaeeec5423d90bd83e",
+          "order": 22
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1488465,
+          "known_for_department": "Acting",
+          "name": "保罗·布林",
+          "original_name": "Paul Bullion",
+          "popularity": 0.5495,
+          "profile_path": "/uR76mlAgEpmj0WNnzJ7jG337fZF.jpg",
+          "cast_id": 136,
+          "character": "Shirley",
+          "credit_id": "682b39d607605cb2a60bdb8c",
+          "order": 23
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 52762,
+          "known_for_department": "Acting",
+          "name": "帕沙·D·林奇尼科夫",
+          "original_name": "Pasha D. Lychnikoff",
+          "popularity": 1.3341,
+          "profile_path": "/xftO8wDW9j4RBO91g9wWzDAAHbz.jpg",
+          "cast_id": 137,
+          "character": "Captain Koltsov",
+          "credit_id": "682b39e589abd112419e3952",
+          "order": 24
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2151680,
+          "known_for_department": "Acting",
+          "name": "Kwabena Ansah",
+          "original_name": "Kwabena Ansah",
+          "popularity": 0.1093,
+          "profile_path": null,
+          "cast_id": 138,
+          "character": "Erika's Son",
+          "credit_id": "682b39fb53048815305b59f7",
+          "order": 25
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5453383,
+          "known_for_department": "Acting",
+          "name": "Ryn Alleyne",
+          "original_name": "Ryn Alleyne",
+          "popularity": 0.0581,
+          "profile_path": null,
+          "cast_id": 175,
+          "character": "Acolyte",
+          "credit_id": "682e1eb380692bab55649a4a",
+          "order": 26
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 4293424,
+          "known_for_department": "Acting",
+          "name": "Ned Campbell",
+          "original_name": "Ned Campbell",
+          "popularity": 0.1286,
+          "profile_path": "/xKMKA16yrxwUD2JtSsiUc0sFU8n.jpg",
+          "cast_id": 140,
+          "character": "Acolyte",
+          "credit_id": "682b3fa7c78f4532bf2f755f",
+          "order": 27
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5335021,
+          "known_for_department": "Acting",
+          "name": "Charlie Carter",
+          "original_name": "Charlie Carter",
+          "popularity": 0.1294,
+          "profile_path": null,
+          "cast_id": 141,
+          "character": "Acolyte",
+          "credit_id": "682b3fc4917f9501805b5a79",
+          "order": 28
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5453385,
+          "known_for_department": "Acting",
+          "name": "Chantelle Roman",
+          "original_name": "Chantelle Roman",
+          "popularity": 0.0591,
+          "profile_path": null,
+          "cast_id": 176,
+          "character": "Acolyte",
+          "credit_id": "682e1eda84c17c112f8c14e1",
+          "order": 29
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3473918,
+          "known_for_department": "Acting",
+          "name": "Mark Taqqaugaq",
+          "original_name": "Mark Taqqaugaq",
+          "popularity": 0.0528,
+          "profile_path": null,
+          "cast_id": 142,
+          "character": "Inuit Fisherman",
+          "credit_id": "682b3fdca926e745695b5b27",
+          "order": 30
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1948110,
+          "known_for_department": "Acting",
+          "name": "Ipeelie Ootoova",
+          "original_name": "Ipeelie Ootoova",
+          "popularity": 0.1763,
+          "profile_path": "/yAYW9o0eZxhRl1tSNoqNdvV6CrA.jpg",
+          "cast_id": 143,
+          "character": "Inuit Fisherman",
+          "credit_id": "682b3fe94f17777272e24cae",
+          "order": 31
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2189841,
+          "known_for_department": "Acting",
+          "name": "Jacky Qrunnut",
+          "original_name": "Jacky Qrunnut",
+          "popularity": 0.0589,
+          "profile_path": null,
+          "cast_id": 144,
+          "character": "Inuit Fisherman",
+          "credit_id": "682b3ff39ab81af505f55ddd",
+          "order": 32
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5453387,
+          "known_for_department": "Acting",
+          "name": "Izyan Hay",
+          "original_name": "Izyan Hay",
+          "popularity": 0.0398,
+          "profile_path": null,
+          "cast_id": 177,
+          "character": "Nurse",
+          "credit_id": "682e1f08425c06076e2f1703",
+          "order": 33
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 56366,
+          "known_for_department": "Acting",
+          "name": "罗斯·麦考尔",
+          "original_name": "Ross McCall",
+          "popularity": 1.1741,
+          "profile_path": "/bUJgldKbFVlSIxxLbdViOxCS6Gd.jpg",
+          "cast_id": 145,
+          "character": "Agent Boulding",
+          "credit_id": "682b400e296100ffde648dea",
+          "order": 34
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 4917708,
+          "known_for_department": "Acting",
+          "name": "Hugo Salter",
+          "original_name": "Hugo Salter",
+          "popularity": 0.1172,
+          "profile_path": null,
+          "cast_id": 146,
+          "character": "Agent Brock",
+          "credit_id": "682b40178e0013b8515b599e",
+          "order": 35
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5453388,
+          "known_for_department": "Acting",
+          "name": "Jess Khan-Lee",
+          "original_name": "Jess Khan-Lee",
+          "popularity": 0.074,
+          "profile_path": null,
+          "cast_id": 178,
+          "character": "Mount Weather - Marine Sergeant",
+          "credit_id": "682e1f3ff0c5ed6dbd9e42b2",
+          "order": 36
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3861486,
+          "known_for_department": "Acting",
+          "name": "Harrison Daniels",
+          "original_name": "Harrison Daniels",
+          "popularity": 0.0743,
+          "profile_path": "/wlLi0CXdN9vroyQ1IgoBfAC9JHM.jpg",
+          "cast_id": 179,
+          "character": "Mount Weather - Marine Sergeant",
+          "credit_id": "682e1f56010214cda59e44ad",
+          "order": 37
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1203293,
+          "known_for_department": "Acting",
+          "name": "Alan Calton",
+          "original_name": "Alan Calton",
+          "popularity": 0.3549,
+          "profile_path": "/uynym1kWiWfH4J5amF1J1hQhD8Z.jpg",
+          "cast_id": 180,
+          "character": "Mount Weather - Secret Service Agent",
+          "credit_id": "682e1f62363fe5d2f6e2589f",
+          "order": 38
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 2992036,
+          "known_for_department": "Acting",
+          "name": "Lorraine Tai",
+          "original_name": "Lorraine Tai",
+          "popularity": 0.1482,
+          "profile_path": null,
+          "cast_id": 181,
+          "character": "Mount Weather - Secret Service Agent",
+          "credit_id": "682e1f7f7e07d6ffec9e4415",
+          "order": 39
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1754784,
+          "known_for_department": "Acting",
+          "name": "托米·厄尔·詹金斯",
+          "original_name": "Tommie Earl Jenkins",
+          "popularity": 0.2666,
+          "profile_path": "/kl2dzZU3p6pOjuKBi52wOnEGvEp.jpg",
+          "cast_id": 182,
+          "character": "Mount Weather - Colonel Burdick",
+          "credit_id": "682e1f8d1939824f11db3a24",
+          "order": 40
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3976045,
+          "known_for_department": "Acting",
+          "name": "Shamail Ali",
+          "original_name": "Shamail Ali",
+          "popularity": 0.1358,
+          "profile_path": null,
+          "cast_id": 183,
+          "character": "Mount Weather - Aide de Camp",
+          "credit_id": "682e1fba43d7e0c0bc2f805f",
+          "order": 41
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 4262155,
+          "known_for_department": "Acting",
+          "name": "Peter Devlin",
+          "original_name": "Peter Devlin",
+          "popularity": 0.0808,
+          "profile_path": null,
+          "cast_id": 184,
+          "character": "Mount Weather - Runner",
+          "credit_id": "682e1fef4b404174342f834f",
+          "order": 42
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 3593833,
+          "known_for_department": "Acting",
+          "name": "裘德·马克",
+          "original_name": "Jude Mack",
+          "popularity": 0.2287,
+          "profile_path": "/iZbW7IkBCFkt164Hh3Oa2PBpNr8.jpg",
+          "cast_id": 185,
+          "character": "Mount Weather - Runner",
+          "credit_id": "682e1ffb5613abdd990be5db",
+          "order": 43
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5453392,
+          "known_for_department": "Acting",
+          "name": "Stefanie Nieuwenhuyse",
+          "original_name": "Stefanie Nieuwenhuyse",
+          "popularity": 0.044,
+          "profile_path": null,
+          "cast_id": 186,
+          "character": "Mount Weather - Operator",
+          "credit_id": "682e201e2d841d6a612f8026",
+          "order": 44
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 3442851,
+          "known_for_department": "Acting",
+          "name": "茜妮·科尔·亚历山大",
+          "original_name": "Sydney Cole Alexander",
+          "popularity": 0.5422,
+          "profile_path": "/yenCGtAl6GsRD6ofelurkSvfmHS.jpg",
+          "cast_id": 147,
+          "character": "USS George H.W. Bush - Lt. Cmdr. Bennet",
+          "credit_id": "682b4028363fe5d2f6e24d42",
+          "order": 45
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2823828,
+          "known_for_department": "Acting",
+          "name": "Gabriella Piazza",
+          "original_name": "Gabriella Piazza",
+          "popularity": 0.4448,
+          "profile_path": "/2537mu5XWRc5zwnpFNVQ4Nm1UWz.jpg",
+          "cast_id": 84,
+          "character": "USS George H.W. Bush - Lt. Acosta",
+          "credit_id": "67461179dcbb15c89a8b6a2b",
+          "order": 46
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5180813,
+          "known_for_department": "Acting",
+          "name": "Elliot Janks",
+          "original_name": "Elliot Janks",
+          "popularity": 0.075,
+          "profile_path": null,
+          "cast_id": 148,
+          "character": "USS George H.W. Bush - Chief Collins",
+          "credit_id": "682b403ebdfecb719a8c08be",
+          "order": 47
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 36901,
+          "known_for_department": "Acting",
+          "name": "马丁·麦克杜格尔",
+          "original_name": "Martin McDougall",
+          "popularity": 0.5728,
+          "profile_path": "/sqosciocBl1OgQmnBXjSOafDvpt.jpg",
+          "cast_id": 149,
+          "character": "USS George H.W. Bush - Captain",
+          "credit_id": "682b404c24aa9556cf5b5bd1",
+          "order": 48
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3962161,
+          "known_for_department": "Acting",
+          "name": "Edem Atsu-Swanzy",
+          "original_name": "Edem Atsu-Swanzy",
+          "popularity": 0.2586,
+          "profile_path": null,
+          "cast_id": 150,
+          "character": "USS George H.W. Bush - Navigator",
+          "credit_id": "682b4057f43368e0f5e25127",
+          "order": 49
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 4137133,
+          "known_for_department": "Acting",
+          "name": "Madeline Day",
+          "original_name": "Madeline Day",
+          "popularity": 0.0975,
+          "profile_path": null,
+          "cast_id": 187,
+          "character": "USS George H.W. Bush - Neely's Aide",
+          "credit_id": "682e209c00d1cec6c1db36e8",
+          "order": 50
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 591295,
+          "known_for_department": "Acting",
+          "name": "马辛·多洛辛斯基",
+          "original_name": "Marcin Dorociński",
+          "popularity": 0.761,
+          "profile_path": "/zUeDxxtpPBMVQxTFhhqczXNX4L2.jpg",
+          "cast_id": 151,
+          "character": "Sevastopol - Captain",
+          "credit_id": "682b4078b600b5be458c081a",
+          "order": 51
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1983019,
+          "known_for_department": "Acting",
+          "name": "Иван Ивашкин",
+          "original_name": "Иван Ивашкин",
+          "popularity": 0.3896,
+          "profile_path": "/oFWQW9i2qyGeThim48Y0kOX7Bm8.jpg",
+          "cast_id": 152,
+          "character": "Sevastopol - Executive Officer",
+          "credit_id": "682b409007605cb2a60bdba5",
+          "order": 52
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 84197,
+          "known_for_department": "Acting",
+          "name": "扎哈利·巴哈罗夫",
+          "original_name": "Zahari Baharov",
+          "popularity": 0.7668,
+          "profile_path": "/jMh4cpfxu0hLdjlqTDCrMq2jKOc.jpg",
+          "cast_id": 153,
+          "character": "Sevastopol - Deck Officer",
+          "credit_id": "682b409b8e0013b8515b59a6",
+          "order": 53
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2510263,
+          "known_for_department": "Acting",
+          "name": "Jean Kartal",
+          "original_name": "Jean Kartal",
+          "popularity": 0.0853,
+          "profile_path": "/cvylgyygXEP6EBggBBco2fCPQIy.jpg",
+          "cast_id": 154,
+          "character": "Sevastopol - Sonarman",
+          "credit_id": "682b40a5f06930f8c5e24de7",
+          "order": 54
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2342066,
+          "known_for_department": "Acting",
+          "name": "Os Leanse",
+          "original_name": "Os Leanse",
+          "popularity": 0.1113,
+          "profile_path": "/3uUelq41MhzBLRTph1dldUIx58c.jpg",
+          "cast_id": 155,
+          "character": "Sevastopol - Sonarman",
+          "credit_id": "682b40b09ab81af505f55de1",
+          "order": 55
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1873162,
+          "known_for_department": "Acting",
+          "name": "马特·马莱茨基",
+          "original_name": "Mateusz Malecki",
+          "popularity": 0.1675,
+          "profile_path": "/lZdbGTYVVC7g2n3Mq5MLTIeiYi8.jpg",
+          "cast_id": 156,
+          "character": "Sevastopol - Stern Plane Operator",
+          "credit_id": "682b40b9a91b6791f7648def",
+          "order": 56
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2597739,
+          "known_for_department": "Acting",
+          "name": "Jay Saighal",
+          "original_name": "Jay Saighal",
+          "popularity": 0.1429,
+          "profile_path": null,
+          "cast_id": 157,
+          "character": "SSGN Ohio - Officer of the Deck",
+          "credit_id": "682b40c4bb2a3d77b7f55de7",
+          "order": 57
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3585419,
+          "known_for_department": "Acting",
+          "name": "Kyle Abdullah",
+          "original_name": "Kyle Abdullah",
+          "popularity": 0.2329,
+          "profile_path": null,
+          "cast_id": 158,
+          "character": "SSGN Ohio - Chief of the Watch",
+          "credit_id": "682b40cfb1b47c49e85b5a93",
+          "order": 58
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5453395,
+          "known_for_department": "Acting",
+          "name": "Isata Kamara",
+          "original_name": "Isata Kamara",
+          "popularity": 0.0465,
+          "profile_path": null,
+          "cast_id": 188,
+          "character": "SSGN Ohio - Sonar",
+          "credit_id": "682e2113162d2e2858e25d4b",
+          "order": 59
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5453397,
+          "known_for_department": "Acting",
+          "name": "Shane Afolabi",
+          "original_name": "Shane Afolabi",
+          "popularity": 0.0448,
+          "profile_path": null,
+          "cast_id": 189,
+          "character": "SSGN Ohio - Helmsman",
+          "credit_id": "682e211cf5604cf01e9e42e2",
+          "order": 60
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2695,
+          "known_for_department": "Acting",
+          "name": "迪伦·库斯曼",
+          "original_name": "Dylan Kussman",
+          "popularity": 0.5912,
+          "profile_path": "/nw57BEEtnfNuydQxZxqQzFrWgDm.jpg",
+          "cast_id": 159,
+          "character": "SSGN Ohio - Radio",
+          "credit_id": "682b40e755e73d0353e24df6",
+          "order": 61
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2937608,
+          "known_for_department": "Acting",
+          "name": "Bridgette Amofah",
+          "original_name": "Bridgette Amofah",
+          "popularity": 0.081,
+          "profile_path": null,
+          "cast_id": 160,
+          "character": "SSGN Ohio - Crew",
+          "credit_id": "682b40f2e63fce75345b5b2d",
+          "order": 62
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 4770237,
+          "known_for_department": "Acting",
+          "name": "Katie Bernstein",
+          "original_name": "Katie Bernstein",
+          "popularity": 0.0636,
+          "profile_path": null,
+          "cast_id": 161,
+          "character": "SSGN Ohio - Crew",
+          "credit_id": "682b40fe2d841d6a612f751d",
+          "order": 63
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 4181285,
+          "known_for_department": "Acting",
+          "name": "Andrew Prince Boateng",
+          "original_name": "Andrew Prince Boateng",
+          "popularity": 0.1127,
+          "profile_path": null,
+          "cast_id": 162,
+          "character": "SSGN Ohio - Crew",
+          "credit_id": "682b410bb600b5be458c081e",
+          "order": 64
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1487958,
+          "known_for_department": "Acting",
+          "name": "Stanley Eldridge",
+          "original_name": "Stanley Eldridge",
+          "popularity": 0.1315,
+          "profile_path": null,
+          "cast_id": 163,
+          "character": "SSGN Ohio - Crew",
+          "credit_id": "682b4113a58c5098532f75a1",
+          "order": 65
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3818228,
+          "known_for_department": "Acting",
+          "name": "Aisha-May Hunte",
+          "original_name": "Aisha-May Hunte",
+          "popularity": 0.1393,
+          "profile_path": null,
+          "cast_id": 164,
+          "character": "SSGN Ohio - Crew",
+          "credit_id": "682b411dd5b21f6368648f14",
+          "order": 66
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1969540,
+          "known_for_department": "Acting",
+          "name": "Dominic Leeder",
+          "original_name": "Dominic Leeder",
+          "popularity": 0.2445,
+          "profile_path": null,
+          "cast_id": 165,
+          "character": "SSGN Ohio - Crew",
+          "credit_id": "682b41285613abdd990bd9c3",
+          "order": 67
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2603289,
+          "known_for_department": "Acting",
+          "name": "Sam Lilja",
+          "original_name": "Sam Lilja",
+          "popularity": 0.2433,
+          "profile_path": null,
+          "cast_id": 166,
+          "character": "SSGN Ohio - Crew",
+          "credit_id": "682b41325ca7f2b329e24c87",
+          "order": 68
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2178375,
+          "known_for_department": "Acting",
+          "name": "Lloyd James",
+          "original_name": "Lloyd James",
+          "popularity": 0.0585,
+          "profile_path": null,
+          "cast_id": 190,
+          "character": "SSGN Ohio - Crew",
+          "credit_id": "682e2189c264ae3629649825",
+          "order": 69
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5453398,
+          "known_for_department": "Acting",
+          "name": "Adrian Muykanovich",
+          "original_name": "Adrian Muykanovich",
+          "popularity": 0.0645,
+          "profile_path": null,
+          "cast_id": 191,
+          "character": "SSGN Ohio - Crew",
+          "credit_id": "682e219d9d572efec60be5a1",
+          "order": 70
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 4641527,
+          "known_for_department": "Directing",
+          "name": "Jacob O'Connor",
+          "original_name": "Jacob O'Connor",
+          "popularity": 0.0495,
+          "profile_path": null,
+          "cast_id": 192,
+          "character": "SSGN Ohio - Crew",
+          "credit_id": "682e21ac4b404174342f8368",
+          "order": 71
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5448552,
+          "known_for_department": "Acting",
+          "name": "Seb Slade",
+          "original_name": "Seb Slade",
+          "popularity": 0.048,
+          "profile_path": null,
+          "cast_id": 167,
+          "character": "SSGN Ohio - Crew",
+          "credit_id": "682b4177846aa0a86cdb2c4b",
+          "order": 72
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1611250,
+          "known_for_department": "Acting",
+          "name": "Nathan Wiley",
+          "original_name": "Nathan Wiley",
+          "popularity": 0.3115,
+          "profile_path": "/2IYxilaXkkblcSBb5HAeffCUb3v.jpg",
+          "cast_id": 168,
+          "character": "SSGN Ohio - Crew",
+          "credit_id": "682b41885211a914f28c07ee",
+          "order": 73
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5448553,
+          "known_for_department": "Acting",
+          "name": "René Valius",
+          "original_name": "René Valius",
+          "popularity": 0.0591,
+          "profile_path": null,
+          "cast_id": 169,
+          "character": "SSGN Ohio - Crew",
+          "credit_id": "682b41a21454889f4b8c0802",
+          "order": 74
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5453400,
+          "known_for_department": "Acting",
+          "name": "John Romain",
+          "original_name": "John Romain",
+          "popularity": 0.0522,
+          "profile_path": null,
+          "cast_id": 193,
+          "character": "Gabriel's Henchman",
+          "credit_id": "682e21ea15a01d5a44e25914",
+          "order": 75
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 3750511,
+          "known_for_department": "Acting",
+          "name": "Rene Vrabel",
+          "original_name": "Rene Vrabel",
+          "popularity": 0.1501,
+          "profile_path": null,
+          "cast_id": 194,
+          "character": "Gabriel's Henchman",
+          "credit_id": "682e21f47f67ac825a2f16c8",
+          "order": 76
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1301638,
+          "known_for_department": "Acting",
+          "name": "Lee Charles",
+          "original_name": "Lee Charles",
+          "popularity": 0.4086,
+          "profile_path": "/hPcEeF8mG9PiOJmnduVjq9yH9jD.jpg",
+          "cast_id": 170,
+          "character": "Gabriel's Henchman",
+          "credit_id": "682b41b563fc3c228a2f746a",
+          "order": 77
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 4931173,
+          "known_for_department": "Crew",
+          "name": "Kyle Freemantle",
+          "original_name": "Kyle Freemantle",
+          "popularity": 0.0769,
+          "profile_path": null,
+          "cast_id": 195,
+          "character": "Gabriel's Henchman",
+          "credit_id": "682e220bcc923137c0649cce",
+          "order": 78
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 5453401,
+          "known_for_department": "Acting",
+          "name": "Igor Karpovich",
+          "original_name": "Igor Karpovich",
+          "popularity": 0.0815,
+          "profile_path": null,
+          "cast_id": 196,
+          "character": "Gabriel's Henchman",
+          "credit_id": "682e221589c9d95cbe2f1616",
+          "order": 79
+        }
+      ],
+      "crew": [
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 15312,
+          "known_for_department": "Writing",
+          "name": "布鲁斯·盖勒",
+          "original_name": "Bruce Geller",
+          "popularity": 0.7632,
+          "profile_path": "/rFhBjRNvwuibgV89VjWL0NZUBz8.jpg",
+          "credit_id": "629ff2d6d2147c117e6574d9",
+          "department": "Writing",
+          "job": "Original Series Creator"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 9217,
+          "known_for_department": "Sound",
+          "name": "Lalo Schifrin",
+          "original_name": "Lalo Schifrin",
+          "popularity": 0.4147,
+          "profile_path": "/z0oiAAkTufe6TJPtI7IeUd5fPuj.jpg",
+          "credit_id": "629ffc8f5507e973af6f204b",
+          "department": "Sound",
+          "job": "Main Title Theme Composer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1411144,
+          "known_for_department": "Directing",
+          "name": "Rebecca Sheridan",
+          "original_name": "Rebecca Sheridan",
+          "popularity": 0.1037,
+          "profile_path": null,
+          "credit_id": "63abca947ef3811f6084de7b",
+          "department": "Directing",
+          "job": "Script Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 71577,
+          "known_for_department": "Art",
+          "name": "Matthew Gray",
+          "original_name": "Matthew Gray",
+          "popularity": 0.2521,
+          "profile_path": null,
+          "credit_id": "63abc99709dda4009f839859",
+          "department": "Art",
+          "job": "Supervising Art Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2041452,
+          "known_for_department": "Sound",
+          "name": "Lloyd Dudley",
+          "original_name": "Lloyd Dudley",
+          "popularity": 0.1016,
+          "profile_path": null,
+          "credit_id": "63abca3ea24c5000cfab93cc",
+          "department": "Sound",
+          "job": "Production Sound Mixer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1410279,
+          "known_for_department": "Art",
+          "name": "Cecelia van Straaten",
+          "original_name": "Cecelia van Straaten",
+          "popularity": 0.1693,
+          "profile_path": null,
+          "credit_id": "63abc9c6c56d2d00d8411374",
+          "department": "Art",
+          "job": "Art Direction"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 105780,
+          "known_for_department": "Sound",
+          "name": "克里斯·门罗",
+          "original_name": "Chris Munro",
+          "popularity": 0.3663,
+          "profile_path": null,
+          "credit_id": "63abca2abe4b3600d73e6800",
+          "department": "Sound",
+          "job": "Production Sound Mixer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1444952,
+          "known_for_department": "Art",
+          "name": "Raffaella Giovannetti",
+          "original_name": "Raffaella Giovannetti",
+          "popularity": 0.1343,
+          "profile_path": null,
+          "credit_id": "63abc9f8be4b360082815ee4",
+          "department": "Art",
+          "job": "Set Decoration"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1322138,
+          "known_for_department": "Art",
+          "name": "Gary Freeman",
+          "original_name": "Gary Freeman",
+          "popularity": 0.2511,
+          "profile_path": null,
+          "credit_id": "63abc97ec8113d00c88e64b0",
+          "department": "Art",
+          "job": "Production Design"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1390349,
+          "known_for_department": "Art",
+          "name": "Tom Weaving",
+          "original_name": "Tom Weaving",
+          "popularity": 0.1124,
+          "profile_path": null,
+          "credit_id": "63abc9d77ef3811fab63212c",
+          "department": "Art",
+          "job": "Art Direction"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1978560,
+          "known_for_department": "Art",
+          "name": "Matt Sharp",
+          "original_name": "Matt Sharp",
+          "popularity": 0.0843,
+          "profile_path": null,
+          "credit_id": "63abc9afbe4b36007c107946",
+          "department": "Art",
+          "job": "Art Direction"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 29018,
+          "known_for_department": "Production",
+          "name": "Dana Goldberg",
+          "original_name": "Dana Goldberg",
+          "popularity": 0.3361,
+          "profile_path": "/AtiT0HTrrrvVVjZgOXpxKxVFyAb.jpg",
+          "credit_id": "663b9f7269daf33d968dce67",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1750922,
+          "known_for_department": "Directing",
+          "name": "Tommy Gormley",
+          "original_name": "Tommy Gormley",
+          "popularity": 0.1934,
+          "profile_path": "/cG3FmevSbDfCpsoopL0bkHo3KyO.jpg",
+          "credit_id": "663b9f7fc9549871bf3f6914",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 58433,
+          "known_for_department": "Production",
+          "name": "大卫·埃里森",
+          "original_name": "David Ellison",
+          "popularity": 0.5482,
+          "profile_path": "/jOhjFZWW2KqsOzm4IiE71FHmcIf.jpg",
+          "credit_id": "663b9f4814553072179abcf8",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 56737,
+          "known_for_department": "Production",
+          "name": "Don Granger",
+          "original_name": "Don Granger",
+          "popularity": 0.3326,
+          "profile_path": "/nSxcIZC2Oentvy31pV8rnT5Cwd8.jpg",
+          "credit_id": "663b9f8df9c33ed62fecaf3e",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 29608,
+          "known_for_department": "Production",
+          "name": "Jake Myers",
+          "original_name": "Jake Myers",
+          "popularity": 0.3769,
+          "profile_path": null,
+          "credit_id": "663ba031cf6ba94a953f5a84",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 86907,
+          "known_for_department": "Production",
+          "name": "Susan E. Novick",
+          "original_name": "Susan E. Novick",
+          "popularity": 0.2146,
+          "profile_path": null,
+          "credit_id": "663ba03fff31fa4851ecb23a",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1408796,
+          "known_for_department": "Production",
+          "name": "Chris Brock",
+          "original_name": "Chris Brock",
+          "popularity": 0.1724,
+          "profile_path": null,
+          "credit_id": "663b9f5a08ba251f1805be1e",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2213019,
+          "known_for_department": "Production",
+          "name": "Gina Hallas",
+          "original_name": "Gina Hallas",
+          "popularity": 0.2555,
+          "profile_path": null,
+          "credit_id": "663ba00c23b085be4e0b67c0",
+          "department": "Production",
+          "job": "Co-Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 9033,
+          "known_for_department": "Writing",
+          "name": "克里斯托弗·麦夸里",
+          "original_name": "Christopher McQuarrie",
+          "popularity": 1.8994,
+          "profile_path": "/xVbQBRpqzKkllUAvjJbgnAmTwaZ.jpg",
+          "credit_id": "663ba019399e50e9449abd36",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 9033,
+          "known_for_department": "Writing",
+          "name": "克里斯托弗·麦夸里",
+          "original_name": "Christopher McQuarrie",
+          "popularity": 1.8994,
+          "profile_path": "/xVbQBRpqzKkllUAvjJbgnAmTwaZ.jpg",
+          "credit_id": "66458a6387eef200375cc55c",
+          "department": "Writing",
+          "job": "Writer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 33312,
+          "known_for_department": "Writing",
+          "name": "埃里克·延德雷森",
+          "original_name": "Erik Jendresen",
+          "popularity": 0.3646,
+          "profile_path": "/t22zGRpEKbRTaiKsJEsop4dqZ8t.jpg",
+          "credit_id": "66458a67cf73ef091f82ca4e",
+          "department": "Writing",
+          "job": "Writer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 2770611,
+          "known_for_department": "Crew",
+          "name": "Bogdan Kumšackij",
+          "original_name": "Bogdan Kumšackij",
+          "popularity": 0.4452,
+          "profile_path": "/bJSkpkpRSbb7DgIVovxKu2cagN6.jpg",
+          "credit_id": "668da3e4942e4a4f8342283c",
+          "department": "Crew",
+          "job": "Stunts"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 500,
+          "known_for_department": "Acting",
+          "name": "汤姆·克鲁斯",
+          "original_name": "Tom Cruise",
+          "popularity": 18.7121,
+          "profile_path": "/eOh4ubpOm2Igdg0QH2ghj0mFtC.jpg",
+          "credit_id": "5c3d2b1b0e0a2655c48e53c4",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 9033,
+          "known_for_department": "Writing",
+          "name": "克里斯托弗·麦夸里",
+          "original_name": "Christopher McQuarrie",
+          "popularity": 1.8994,
+          "profile_path": "/xVbQBRpqzKkllUAvjJbgnAmTwaZ.jpg",
+          "credit_id": "5c3d2b05c3a36805733dbb50",
+          "department": "Directing",
+          "job": "Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1556313,
+          "known_for_department": "Crew",
+          "name": "Wade Eastwood",
+          "original_name": "Wade Eastwood",
+          "popularity": 0.5193,
+          "profile_path": "/ec6HXwGEtfIB81aygI4EyNM2fek.jpg",
+          "credit_id": "5d514aea9c055052434515dc",
+          "department": "Crew",
+          "job": "Stunt Coordinator"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1556313,
+          "known_for_department": "Crew",
+          "name": "Wade Eastwood",
+          "original_name": "Wade Eastwood",
+          "popularity": 0.5193,
+          "profile_path": "/ec6HXwGEtfIB81aygI4EyNM2fek.jpg",
+          "credit_id": "5d514afc9c0550521e451785",
+          "department": "Directing",
+          "job": "Second Unit Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 49809,
+          "known_for_department": "Editing",
+          "name": "Eddie Hamilton",
+          "original_name": "Eddie Hamilton",
+          "popularity": 0.2415,
+          "profile_path": "/wEVKpiHNSQLTWlm8MwwuRI9yGf7.jpg",
+          "credit_id": "5d80fc1dcddbbc0012f6734c",
+          "department": "Editing",
+          "job": "Editor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1373711,
+          "known_for_department": "Sound",
+          "name": "Ben Meechan",
+          "original_name": "Ben Meechan",
+          "popularity": 0.3342,
+          "profile_path": null,
+          "credit_id": "5eedf10d9661fc003664878b",
+          "department": "Sound",
+          "job": "Sound Effects Editor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1415986,
+          "known_for_department": "Camera",
+          "name": "Fraser Taggart",
+          "original_name": "Fraser Taggart",
+          "popularity": 0.6129,
+          "profile_path": "/yHeHwqEtEIrsoowL2r3D2Oj3Zop.jpg",
+          "credit_id": "5fc606030328b9003e6c7f67",
+          "department": "Camera",
+          "job": "Director of Photography"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1774880,
+          "known_for_department": "Visual Effects",
+          "name": "Jeff Sutherland",
+          "original_name": "Jeff Sutherland",
+          "popularity": 0.199,
+          "profile_path": null,
+          "credit_id": "6737cb41443543191ccbac8b",
+          "department": "Visual Effects",
+          "job": "Visual Effects Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1998244,
+          "known_for_department": "Visual Effects",
+          "name": "Lee Briggs",
+          "original_name": "Lee Briggs",
+          "popularity": 0.2309,
+          "profile_path": "/zRvlrS7KkqHPMyRegutjdfIXHm.jpg",
+          "credit_id": "6737cb7d443543191ccbac97",
+          "department": "Crew",
+          "job": "Executive Visual Effects Producer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1447621,
+          "known_for_department": "Visual Effects",
+          "name": "Graeme Puttock",
+          "original_name": "Graeme Puttock",
+          "popularity": 0.1327,
+          "profile_path": null,
+          "credit_id": "6737cb8e097d404fd666eb8e",
+          "department": "Visual Effects",
+          "job": "Visual Effects Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 5096672,
+          "known_for_department": "Camera",
+          "name": "Christopher Knight",
+          "original_name": "Christopher Knight",
+          "popularity": 0.0491,
+          "profile_path": null,
+          "credit_id": "674ef171b209e01eaa8991c5",
+          "department": "Camera",
+          "job": "Drone Pilot"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2396253,
+          "known_for_department": "Production",
+          "name": "Matt Craufurd",
+          "original_name": "Matt Craufurd",
+          "popularity": 0.1669,
+          "profile_path": null,
+          "credit_id": "6758580a1287d9b46ba19a67",
+          "department": "Production",
+          "job": "Location Manager"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 6044,
+          "known_for_department": "Production",
+          "name": "Mindy Marin",
+          "original_name": "Mindy Marin",
+          "popularity": 0.2443,
+          "profile_path": null,
+          "credit_id": "676df7fbaa8f3159d612a91a",
+          "department": "Production",
+          "job": "Casting"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1385883,
+          "known_for_department": "Art",
+          "name": "Anthony Caron-Delion",
+          "original_name": "Anthony Caron-Delion",
+          "popularity": 0.2209,
+          "profile_path": null,
+          "credit_id": "676df8154ca2fbbfca6158c2",
+          "department": "Art",
+          "job": "Art Direction"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 53527,
+          "known_for_department": "Costume & Make-Up",
+          "name": "Jill Taylor",
+          "original_name": "Jill Taylor",
+          "popularity": 0.7734,
+          "profile_path": null,
+          "credit_id": "676df868cfe62644df12a895",
+          "department": "Costume & Make-Up",
+          "job": "Costume Design"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1417826,
+          "known_for_department": "Visual Effects",
+          "name": "Paul J. Franklin",
+          "original_name": "Paul J. Franklin",
+          "popularity": 0.2314,
+          "profile_path": "/kbldzjeqTPn4Jc7DydxNjd4Q5Ov.jpg",
+          "credit_id": "677f16aa2037ff04c94e7a84",
+          "department": "Visual Effects",
+          "job": "Visual Effects Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1750922,
+          "known_for_department": "Directing",
+          "name": "Tommy Gormley",
+          "original_name": "Tommy Gormley",
+          "popularity": 0.1934,
+          "profile_path": "/cG3FmevSbDfCpsoopL0bkHo3KyO.jpg",
+          "credit_id": "679ebe877ebb0614ff263bdf",
+          "department": "Directing",
+          "job": "First Assistant Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1855205,
+          "known_for_department": "Art",
+          "name": "Yasmin Al-Naib",
+          "original_name": "Yasmin Al-Naib",
+          "popularity": 0.1136,
+          "profile_path": null,
+          "credit_id": "679ebed904cb6f41b9cb59fd",
+          "department": "Art",
+          "job": "Assistant Art Director"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 2723116,
+          "known_for_department": "Art",
+          "name": "Declan O'Brien",
+          "original_name": "Declan O'Brien",
+          "popularity": 0.0724,
+          "profile_path": null,
+          "credit_id": "679ebefb04cb6f41b9cb5a1a",
+          "department": "Art",
+          "job": "Assistant Art Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1551911,
+          "known_for_department": "Visual Effects",
+          "name": "Alex Wuttke",
+          "original_name": "Alex Wuttke",
+          "popularity": 0.247,
+          "profile_path": null,
+          "credit_id": "67aa4755c1cef4d0581d785e",
+          "department": "Visual Effects",
+          "job": "Visual Effects Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1401728,
+          "known_for_department": "Visual Effects",
+          "name": "Robin Saxen",
+          "original_name": "Robin Saxen",
+          "popularity": 0.1864,
+          "profile_path": null,
+          "credit_id": "67aa476437ae39678b1d7549",
+          "department": "Visual Effects",
+          "job": "Visual Effects Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1415157,
+          "known_for_department": "Visual Effects",
+          "name": "Joel Green",
+          "original_name": "Joel Green",
+          "popularity": 0.1455,
+          "profile_path": null,
+          "credit_id": "67aa4777c1cef4d0581d7873",
+          "department": "Visual Effects",
+          "job": "Visual Effects Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1558985,
+          "known_for_department": "Sound",
+          "name": "Max Aruj",
+          "original_name": "Max Aruj",
+          "popularity": 0.1413,
+          "profile_path": null,
+          "credit_id": "6803ca5ae3fac2f90289a7e4",
+          "department": "Sound",
+          "job": "Original Music Composer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3279842,
+          "known_for_department": "Sound",
+          "name": "Alfie Godfrey",
+          "original_name": "Alfie Godfrey",
+          "popularity": 0.0785,
+          "profile_path": null,
+          "credit_id": "6803ca6fe4753425efad7e8e",
+          "department": "Sound",
+          "job": "Original Music Composer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 929145,
+          "known_for_department": "Sound",
+          "name": "洛恩·巴尔夫",
+          "original_name": "Lorne Balfe",
+          "popularity": 0.7869,
+          "profile_path": "/ryV3HjdAiFH2VQGQY6yXy4z9Xbk.jpg",
+          "credit_id": "6803ca9403344aee70899f84",
+          "department": "Crew",
+          "job": "Score Engineer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 3439000,
+          "known_for_department": "Directing",
+          "name": "Lucas Boetsch",
+          "original_name": "Lucas Boetsch",
+          "popularity": 0.0618,
+          "profile_path": null,
+          "credit_id": "681b6b14dbcc5abcc9469270",
+          "department": "Crew",
+          "job": "Set Production Assistant"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 1797832,
+          "known_for_department": "Crew",
+          "name": "Cali Nelle",
+          "original_name": "Cali Nelle",
+          "popularity": 0.3075,
+          "profile_path": "/9JsBGeqfSe0Hugz9IWdkUUGIhhL.jpg",
+          "credit_id": "6823634168736a23834b4c8a",
+          "department": "Crew",
+          "job": "Stunts"
+        }
+      ]
+    },
+    "keywords": {
+      "keywords": [
+        {
+          "id": 310,
+          "name": "artificial intelligence (a.i.)"
+        },
+        {
+          "id": 269,
+          "name": "diving"
+        },
+        {
+          "id": 339,
+          "name": "submarine"
+        },
+        {
+          "id": 5265,
+          "name": "espionage"
+        },
+        {
+          "id": 470,
+          "name": "spy"
+        },
+        {
+          "id": 3312,
+          "name": "nuclear missile"
+        },
+        {
+          "id": 4289,
+          "name": "secret agent"
+        },
+        {
+          "id": 5452,
+          "name": "stunt"
+        },
+        {
+          "id": 9663,
+          "name": "sequel"
+        },
+        {
+          "id": 161520,
+          "name": "terrorist plot"
+        },
+        {
+          "id": 185655,
+          "name": "misinformation"
+        },
+        {
+          "id": 269769,
+          "name": "based on tv series"
+        },
+        {
+          "id": 321464,
+          "name": "intense"
+        },
+        {
+          "id": 325777,
+          "name": "bewildered"
+        }
+      ]
+    },
+    "translations": {
+      "translations": [
+        {
+          "iso_3166_1": "US",
+          "iso_639_1": "en",
+          "name": "English",
+          "english_name": "English",
+          "data": {
+            "homepage": "https://www.missionimpossible.com",
+            "overview": "Ethan Hunt and team continue their search for the terrifying AI known as the Entity — which has infiltrated intelligence networks all over the globe — with the world's governments and a mysterious ghost from Hunt's past on their trail. Joined by new allies and armed with the means to shut the Entity down for good, Hunt is in a race against time to prevent the world as we know it from changing forever.",
+            "runtime": 170,
+            "tagline": "Our lives are the sum of our choices.",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "BG",
+          "iso_639_1": "bg",
+          "name": "български език",
+          "english_name": "Bulgarian",
+          "data": {
+            "homepage": "",
+            "overview": "След съприкосновението му със Същността, Итън Хънт е принуден да мине в отстъпление и да преосмисли действията си. Той вече плати твърде висока цена за своите решения до момента, а бъдещето се очертава дори още по-мрачно и пълната му капитулация звучи като единственото логично нещо. Но колкото и разумно да изглежда на пръв поглед, оттеглянето му ще доведе до много по-тежки последици за света и Итън ще трябва да жертва всичко, дори собствения си живот, за да надделее в тази битка. Всеки негов избор е водил до тук, а финалният сблъсък ще остане в историята!",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Мисията невъзможна: Възмездие"
+          }
+        },
+        {
+          "iso_3166_1": "DE",
+          "iso_639_1": "de",
+          "name": "Deutsch",
+          "english_name": "German",
+          "data": {
+            "homepage": "https://paramount.de/mission-impossible-the-final-reckoning",
+            "overview": "Die Jagd ist noch nicht vorbei: Ethan Hunt und sein Team von der legendären Impossible Mission Force (IMF) sehen sich weiterhin einer extrem mächtigen und die Welt bedrohgenden künstlichen Intelligenz, die nur die „Entität\" genannt wird, gegenüber. Dafür müssen sie das den Namen „Sewastopol“ tragende russische U-Boot finden, dem eine Schlüsselrolle in diesem brodelnden Konflikt zukommt. Doch mit diesem Ziel sind Hunt und sein Team natürlich nicht alleine: Auch Gabriel, letztlich ein Handlanger der Entität, sucht fieberhaft nach der Sewastopol. Denn für ihn ist sie der Schlüssel, der sozusagen das Tor zur Hölle auf Erden öffnet, mit dem die Welt ins Chaos gestürzt werden kann. Gabriel scheint in diesem erbitterten Kampf eine Geheimwaffe in der Hinterhand zu haben, denn er und Hunt haben offenbar eine gemeinsame Vergangenheit, die den IMF-Agenten nun endgültig einholt...",
+            "runtime": 174,
+            "tagline": "",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "FR",
+          "iso_639_1": "fr",
+          "name": "Français",
+          "english_name": "French",
+          "data": {
+            "homepage": "",
+            "overview": "Ethan Hunt se rend à Londres avec son équipe dans l'espoir de remonter la piste du mystérieux Gabriel, qu'il a affronté deux mois auparavant à bort de l'Orient-Express et qui détient la clé contrôlant l’intelligence artificielle toute puissante surnommée l'Entité. Adulée par les uns, redoutée par les autres, l’Entité se distingue par sa capacité à prédire toutes les éventualités possibles. Elle connaît parfaitement les forces et faiblesses d’Ethan et de son équipe. Gabriel compte l'utiliser pour mettre en œuvre son plan ultime : annihiler Ethan et son équipe, s’emparer de tous les systèmes de défense planétaires et déclencher la Troisième Guerre mondiale.",
+            "runtime": 163,
+            "tagline": "Nos vies sont la somme de nos choix.",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "KR",
+          "iso_639_1": "ko",
+          "name": "한국어/조선말",
+          "english_name": "Korean",
+          "data": {
+            "homepage": "",
+            "overview": "디지털상의 모든 정보를 통제할 수 있는 사상 초유의 무기로 인해 전 세계 국가와 조직의 기능이 마비되고, 인류 전체가 위협받는 절체절명의 위기가 찾아온다. 이를 막을 수 있는 건 오직 존재 자체가 기밀인 에단 헌트와 그가 소속된 IMF뿐이다. 무기를 무력화하는 데 반드시 필요한 키를 손에 쥔 에단 헌트. 오랜 동료 루터와 벤지, 그리고 새로운 팀원이 된 그레이스, 파리, 드가와 함께 지금껏 경험했던 그 어떤 상대보다도 강력한 적에 맞서 모두의 운명을 건 불가능한 미션에 뛰어든다.",
+            "runtime": 0,
+            "tagline": "모든 선택이 향하는 단 하나의 미션",
+            "title": "미션 임파서블: 파이널 레코닝"
+          }
+        },
+        {
+          "iso_3166_1": "TH",
+          "iso_639_1": "th",
+          "name": "ภาษาไทย",
+          "english_name": "Thai",
+          "data": {
+            "homepage": "",
+            "overview": "หลังจากเอาตัวรอดจากเหตุการณ์อุบัติเหตุบนรถไฟครั้งใหญ่ อีธาน ก็ได้รู้ว่า เดอะ เอนทิตี้ ถูกเก็บเอาไว้บนเรือดำนํ้าเก่าของรัสเซีย แต่ศัตรูจากอดีตของเขาที่มีชื่อว่า เกเบรียล ก็ตามรอยมันอยู่ด้วยเช่นกัน",
+            "runtime": 0,
+            "tagline": "",
+            "title": "มิชชั่น: อิมพอสซิเบิ้ล ปิดปฏิบัติการล่าพิกัดมรณะ"
+          }
+        },
+        {
+          "iso_3166_1": "MX",
+          "iso_639_1": "es",
+          "name": "Español",
+          "english_name": "Spanish",
+          "data": {
+            "homepage": "https://www.misionimposible.com.mx",
+            "overview": "La Entidad, la IA experimental que se ha convertido en el villano de la historia, sigue activa y cuenta con el apoyo del malvado Gabriel en el mundo de los cárnicos. Por suerte, Ethan y su equipo tienen la llave que les podría dar el control de la Entidad, algo que les obligará a arriesgarse para eliminar a esa IA que descansa en el fondo del mar.",
+            "runtime": 0,
+            "tagline": "Cada una de sus decisiones lo ha traído hasta aquí.",
+            "title": "Misión: Imposible - La sentencia final"
+          }
+        },
+        {
+          "iso_3166_1": "ES",
+          "iso_639_1": "es",
+          "name": "Español",
+          "english_name": "Spanish",
+          "data": {
+            "homepage": "",
+            "overview": "El agente Ethan Hunt continúa su misión de impedir que Gabriel controle el tecnológicamente omnipotente programa de IA conocido como \"the Entity\".",
+            "runtime": 169,
+            "tagline": "Cada elección, cada misión, ha conducido a esto.",
+            "title": "Misión: Imposible - Sentencia final"
+          }
+        },
+        {
+          "iso_3166_1": "BR",
+          "iso_639_1": "pt",
+          "name": "Português",
+          "english_name": "Portuguese",
+          "data": {
+            "homepage": "",
+            "overview": "Depois de escapar de um acidente de trem calamitoso, Ethan percebe que a Entidade está escondida a bordo de um antigo submarino russo, mas um inimigo do seu passado chamado Gabriel também está no encalço.",
+            "runtime": 169,
+            "tagline": "Nossas vidas são a soma de nossas escolhas.",
+            "title": "Missão: Impossível - O Acerto Final"
+          }
+        },
+        {
+          "iso_3166_1": "CN",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "homepage": "http://www.missionimpossible.com",
+            "overview": "超级人工智能“智体”即将引爆全球核弹危机，把世界推向毁灭边缘。而伊森·亨特和他的IMF小队在上次行动中遭遇重创，团队濒临分崩离析。虽然伊森已获得关闭“智体”的钥匙，但要彻底消灭“智体”，完成这一拯救全人类的终极任务，仍需要IMF小队齐心协力突破重重困难。他们不仅要面对全知全能又无影无形的“智体”与其手下盖布瑞尔的百般阻拦，还要解决来自过去的种种恩怨。每个抉择都关乎信念与命运，等待伊森和IMF小队的，究竟是怎样的结局？",
+            "runtime": 170,
+            "tagline": "",
+            "title": "碟中谍8：最终清算"
+          }
+        },
+        {
+          "iso_3166_1": "IT",
+          "iso_639_1": "it",
+          "name": "Italiano",
+          "english_name": "Italian",
+          "data": {
+            "homepage": "https://www.missionimpossible.com",
+            "overview": "La fine del mondo è vicina ma Ethan Hunt non è lontano e riparte da dove aveva lasciato. Recuperata una preziosa chiave crociata, deve raggiungere adesso il Sevastopol, un sottomarino nucleare russo, distrutto dall'Intelligenza Artificiale, che giace sotto la calotta polare. La chiave gli permetterà di recuperare il 'codice sorgente' dell'IA e di disinnescarla. Ormai autonoma e 'cosciente', l'Entità accede a qualsiasi sistema operativo, manipola fatti, dati e persone ed è determinata a sterminare la razza umana. Mentre Hunt cerca una soluzione, l'IA prende progressivamente il controllo delle armi di distruzione di massa. Il tempo stringe, non resta che correre. Ancora e ancora.",
+            "runtime": 170,
+            "tagline": "",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "RU",
+          "iso_639_1": "ru",
+          "name": "Pусский",
+          "english_name": "Russian",
+          "data": {
+            "homepage": "",
+            "overview": "Итан Хант пытается разыскать инновационный искусственный интеллект, угрожающий существованию всего мира.",
+            "runtime": 0,
+            "tagline": "«Каждый Выбор вёл к Этому Моменту»",
+            "title": "Миссия Невыполнима: Финальная Расплата"
+          }
+        },
+        {
+          "iso_3166_1": "ID",
+          "iso_639_1": "id",
+          "name": "Bahasa indonesia",
+          "english_name": "Indonesian",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "HR",
+          "iso_639_1": "hr",
+          "name": "Hrvatski",
+          "english_name": "Croatian",
+          "data": {
+            "homepage": "",
+            "overview": "Nakon što je pobjegao od katastrofalne željezničke nesreće, Ethan shvaća da je Entity skriven na staroj ruskoj podmornici, ali neprijatelj iz njegove prošlosti po imenu Gabriel također je na tragu.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Nemoguća misija: Konačna odmazda"
+          }
+        },
+        {
+          "iso_3166_1": "TR",
+          "iso_639_1": "tr",
+          "name": "Türkçe",
+          "english_name": "Turkish",
+          "data": {
+            "homepage": "https://www.missionimpossible.com/synopsis/",
+            "overview": "\"Mission: Impossible - Ölümcül Hesaplaşma Birinci Bölüm\"ün bıraktığı yerden devam ediyor. Ethan Hunt ve ekibinin, yanlış ellerde dünyanın sonunu getirebilecek bir yapay zekâ programı olan \"Varlık\"a ulaşma mücadelesini anlatıyor. Ethan, bu kez sadece dünyayı kurtarmakla kalmaz, aynı zamanda geçmişteki hesaplaşmaları da sonlandırmak zorundadır.",
+            "runtime": 0,
+            "tagline": "Hayatımız, tüm tercihlerimizin ortak eseridir.",
+            "title": "Mission: Impossible - Son Hesaplaşma"
+          }
+        },
+        {
+          "iso_3166_1": "HU",
+          "iso_639_1": "hu",
+          "name": "Magyar",
+          "english_name": "Hungarian",
+          "data": {
+            "homepage": "",
+            "overview": "Tom Cruise nyolcadik alkalommal tér vissza Ethan Hunt szerepében, akit a film megjelenésekor már több mint 28 éve formál megmeg.  Várhatóan ez lesz az utolsó szereplése a sorozatban. A már ismert főszereplők mellett most megerősítették Rolf Saxon részvételét is, aki az első Mission: Impossible-filmben William Donloe CIA-elemzőt alakította.",
+            "runtime": 0,
+            "tagline": "Az életünk a döntéseink összessége.",
+            "title": "Mission: Impossible 8. - A végső leszámolás"
+          }
+        },
+        {
+          "iso_3166_1": "UA",
+          "iso_639_1": "uk",
+          "name": "Український",
+          "english_name": "Ukrainian",
+          "data": {
+            "homepage": "",
+            "overview": "Цього разу на головного героя очікує найбільш небезпечна та непередбачувана місія, в якій він має докласти максимум своїх професіональних зусиль, щоб зрештою знищити штучний інтелект, паралельно із цим зупинити свого давнього супротивника, який знову виходить на арену, аби втілити в реальність черговий підступний та зловісний план. Час фінальної розплати вже настав.",
+            "runtime": 0,
+            "tagline": "Наше життя — це сума наших виборів.",
+            "title": "Місія неможлива: Фінальна розплата"
+          }
+        },
+        {
+          "iso_3166_1": "VN",
+          "iso_639_1": "vi",
+          "name": "Tiếng Việt",
+          "english_name": "Vietnamese",
+          "data": {
+            "homepage": "",
+            "overview": "Sau khi thoát khỏi vụ tai nạn tàu hỏa thảm khốc, Ethan nhận ra The Entity đang được giấu trên một chiếc tàu ngầm cũ của Nga, nhưng một kẻ thù trong quá khứ của anh tên là Gabriel cũng đang truy đuổi.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Nhiệm Vụ: Bất Khả Thi - Nghiệp Báo Cuối Cùng"
+          }
+        },
+        {
+          "iso_3166_1": "JP",
+          "iso_639_1": "ja",
+          "name": "日本語",
+          "english_name": "Japanese",
+          "data": {
+            "homepage": "https://missionimpossible.jp",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "ミッション：インポッシブル／ファイナル・レコニング"
+          }
+        },
+        {
+          "iso_3166_1": "CZ",
+          "iso_639_1": "cs",
+          "name": "Český",
+          "english_name": "Czech",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 169,
+            "tagline": "",
+            "title": "Mission: Impossible - Poslední zúčtování"
+          }
+        },
+        {
+          "iso_3166_1": "PT",
+          "iso_639_1": "pt",
+          "name": "Português",
+          "english_name": "Portuguese",
+          "data": {
+            "homepage": "",
+            "overview": "Após escapar a um violento acidente de comboio, Ethan apercebe-se de que a Entidade foi escondida a bordo de um antigo submarino russo e que Gabriel, um rival do seu passado, também está a seguir a mesma pista.",
+            "runtime": 0,
+            "tagline": "As nossas vidas são a soma das nossas escolhas.",
+            "title": "Missão: Impossível - O Ajuste de Contas Final"
+          }
+        },
+        {
+          "iso_3166_1": "PL",
+          "iso_639_1": "pl",
+          "name": "Polski",
+          "english_name": "Polish",
+          "data": {
+            "homepage": "https://tylkohity.pl/filmy/mission-impossible-8-426",
+            "overview": "Ethan Hunt i zespół IMF kontynuują poszukiwania przerażającej SI znanej jako Entity - która zinfiltrowała sieci wywiadowcze na całym świecie - z rządami świata i tajemniczym duchem z przeszłości Ethana na ich tropie. Dołączyli do nich nowi sojusznicy i uzbrojeni w środki, aby raz na zawsze zamknąć Entity, Hunt ściga się z czasem, aby zapobiec zmianie świata, jaki znamy, na zawsze.",
+            "runtime": 0,
+            "tagline": "Nasze życie jest sumą naszych decyzji.",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "IL",
+          "iso_639_1": "he",
+          "name": "עִבְרִית",
+          "english_name": "Hebrew",
+          "data": {
+            "homepage": "",
+            "overview": "אית'ן האנט והצוות שלו ממשיכים בחיפושיהם אחר הבינה המלאכותית המפחידה הידועה בשם \"הישות\", אשר חדרה לרשתות מודיעין ברחבי העולם. כשהוא מצטרף לבעלי ברית חדשים ומצויד באמצעים לסגור את הישות אחת ולתמיד, האנט נמצא במרוץ חוצה יבשות במאבק שיקבע את גורל העולם.",
+            "runtime": 0,
+            "tagline": "כל בחירה, כל משימה, הכל הוביל לזה.",
+            "title": "משימה בלתי אפשרית: חשבון סופי"
+          }
+        },
+        {
+          "iso_3166_1": "IR",
+          "iso_639_1": "fa",
+          "name": "فارسی",
+          "english_name": "Persian",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "مأموریت: غیرممکن – روزشمار نهایی"
+          }
+        },
+        {
+          "iso_3166_1": "HK",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "homepage": "",
+            "overview": "超級人工智能系統「個體」，即將引爆全球核子巨災，把世界推向滅絕邊緣。伊頓幾經艱苦，雖然成功奪得關鍵鑰匙，但要消滅「個體」，完成這場挽回全人類命運的終極任務，卻仍得與隊友衝破重重難關。他不但要迎接前所未有的考驗，還要面對過去的種種恩怨。每個抉擇都關乎信念與命運，等待伊頓自投羅網的，究竟會是怎樣的一個終局？",
+            "runtime": 0,
+            "tagline": "",
+            "title": "職業特工隊：最終清算"
+          }
+        },
+        {
+          "iso_3166_1": "RS",
+          "iso_639_1": "sr",
+          "name": "Srpski",
+          "english_name": "Serbian",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Немогућа мисија: Коначни обрачун"
+          }
+        },
+        {
+          "iso_3166_1": "TW",
+          "iso_639_1": "zh",
+          "name": "普通话",
+          "english_name": "Mandarin",
+          "data": {
+            "homepage": "",
+            "overview": "我們的人生取決於我們所有的選擇。湯姆克魯斯在《不可能的任務：最終清算》中再度飾演伊森韓特。湯姆克魯斯在片中所穿的裝扮，與他在 2024年8月11日巴黎奧運閉幕式上完成驚險特技表演時的穿著相同，完美呈現“伊森韓特”的經典形象。",
+            "runtime": 0,
+            "tagline": "我們的人生取決於我們所有的選擇",
+            "title": "不可能的任務：最終清算"
+          }
+        },
+        {
+          "iso_3166_1": "CH",
+          "iso_639_1": "de",
+          "name": "Deutsch",
+          "english_name": "German",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Mission: Impossible – The Final Reckoning"
+          }
+        },
+        {
+          "iso_3166_1": "SA",
+          "iso_639_1": "ar",
+          "name": "العربية",
+          "english_name": "Arabic",
+          "data": {
+            "homepage": "",
+            "overview": "بعد الهروب من حادث قطار كارثي، يدرك إيثان أن الكيان مختبئ على متن غواصة روسية قديمة، لكن عدوًا من ماضيه يدعى غابرييل يلاحقه أيضًا.",
+            "runtime": 0,
+            "tagline": "حياتنا هي مجموع اختياراتنا.",
+            "title": "المهمة المستحيلة - الحساب النهائي"
+          }
+        },
+        {
+          "iso_3166_1": "RO",
+          "iso_639_1": "ro",
+          "name": "Română",
+          "english_name": "Romanian",
+          "data": {
+            "homepage": "",
+            "overview": "După ce a scăpat de un accident de tren dezastruos, Ethan își dă seama că Entitatea este ascunsă la bordul unui vechi submarin rusesc, dar un dușman din trecutul său, pe nume Gabriel, este și el pe urmele sale.",
+            "runtime": 0,
+            "tagline": "Viețile noastre sunt suma alegerilor noastre.",
+            "title": "Misiune: Imposibilă - Răfuială mortală finală"
+          }
+        },
+        {
+          "iso_3166_1": "SI",
+          "iso_639_1": "sl",
+          "name": "Slovenščina",
+          "english_name": "Slovenian",
+          "data": {
+            "homepage": "",
+            "overview": "Potem ko je Ethan pobegnil iz katastrofalne železniške nesreče, ugotovi, da je Entiteta skrita na krovu stare ruske podmornice, a na sledi mu je tudi sovražnik iz njegove preteklosti po imenu Gabriel.",
+            "runtime": 0,
+            "tagline": "Naše življenje je vsota naših odločitev.",
+            "title": "Misija: Nemogoče - Zadnje maščevanje"
+          }
+        },
+        {
+          "iso_3166_1": "AZ",
+          "iso_639_1": "az",
+          "name": "Azərbaycan",
+          "english_name": "Azerbaijani",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Qeyri-mümkün missiya: Sonuncu haqq-hesab"
+          }
+        },
+        {
+          "iso_3166_1": "EE",
+          "iso_639_1": "et",
+          "name": "Eesti",
+          "english_name": "Estonian",
+          "data": {
+            "homepage": "",
+            "overview": "Meie elu pole muud kui meie poolt tehtud valikute summa. Seda teab kõige paremini superagent Ethan Hunt (Tom Cruise), kelle valikud on toonud ta praegusesse seisu...",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Võimatu missioon: lõplik otsus"
+          }
+        },
+        {
+          "iso_3166_1": "SK",
+          "iso_639_1": "sk",
+          "name": "Slovenčina",
+          "english_name": "Slovak",
+          "data": {
+            "homepage": "",
+            "overview": "V ôsmom (podľa všetkého aj poslednom) pokračovaní série MIssion: Impossible, čelí Ethan Hunt svojej doposiaľ najťažšej misii. Tentoraz ide o oveľa viac, ako si vyrovnať účty s dávnym nepriateľom Gabrielom. Musí zachrániť svet pred Entitou – mocnou umelou inteligenciou, ktorá bez zľutovania túži ovládnuť a mať pod kontrolou celý svet. Našťastie Ethan nie je sám. Jeho tím, ktorý prešiel viacerými zmenami, zohráva v tomto príbehu kľúčovú rolu. A práve zloženie tímu je jedným z mnohých prekvapení, ktoré si pre divákov pripravil režisér Christopher McQuarrie.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Mission: Impossible - Posledné zúčtovanie"
+          }
+        },
+        {
+          "iso_3166_1": "IN",
+          "iso_639_1": "hi",
+          "name": "हिन्दी",
+          "english_name": "Hindi",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "मिशनः इम्पॉसिबल - द फाइनल रेकनिंग"
+          }
+        },
+        {
+          "iso_3166_1": "CA",
+          "iso_639_1": "fr",
+          "name": "Français",
+          "english_name": "French",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Mission: Impossible - Bilan Final"
+          }
+        },
+        {
+          "iso_3166_1": "LV",
+          "iso_639_1": "lv",
+          "name": "Latviešu",
+          "english_name": "Latvian",
+          "data": {
+            "homepage": "",
+            "overview": "Astotā filma ilgstošajā “Neiespējamās misijas” franšīzē.",
+            "runtime": 0,
+            "tagline": "",
+            "title": "Neiespējamā misija: Pēdējā atmaksa"
+          }
+        },
+        {
+          "iso_3166_1": "GR",
+          "iso_639_1": "el",
+          "name": "ελληνικά",
+          "english_name": "Greek",
+          "data": {
+            "homepage": "https://www.missionimpossible.com",
+            "overview": "Η ζωή σου είναι το άθροισμα των επιλογών σου. Ό,τι ήσουν, ό,τι έκανες, σε οδήγησε ως εδώ.  Ο Ίθαν Χαντ συνεχίζει την υπερπροσπάθεια να σταματήσει τον Γκάμπριελ από το να αποκτήσει το AI πρόγραμμα με την ονομασία Οντότητα…  Το τελευταίο κεφάλαιο φιλοδοξεί να κορυφώσει μια ιστορία 30 ετών με ένα υπερθέαμα που δοκιμάζει τα όρια του εφικτού στην οθόνη.",
+            "runtime": 0,
+            "tagline": "Οι ζωές μας είναι το άθροισμα των επιλογών μας.",
+            "title": "Επικίνδυνη Αποστολή: Η Έσχατη Τιμωρία"
+          }
+        },
+        {
+          "iso_3166_1": "LT",
+          "iso_639_1": "lt",
+          "name": "Lietuvių",
+          "english_name": "Lithuanian",
+          "data": {
+            "homepage": "",
+            "overview": "Po įvykių, kuriuos matėme ankstesnėje dalyje Itanas ir jo komanda susiduria su su pavojinga dirbtinio intelekto sistema “The Entity”. Jie siekia surasti nuskendusį rusų povandeninį laivą, kuriame slypi svarbus „The Entity“ pirminis kodas, galintis nulemti kovos su šia grėsme baigtį. Šį kartą, kovodami su technologijomis, galinčiomis sunaikinti pasaulį, jie turi priimti dar sudėtingesnius sprendimus ir susidurti su savo praeities pasirinkimais, kurie gali pakeisti viską.",
+            "runtime": 169,
+            "tagline": "",
+            "title": "Neįmanoma misija. Galutinis atpildas"
+          }
+        },
+        {
+          "iso_3166_1": "SE",
+          "iso_639_1": "sv",
+          "name": "svenska",
+          "english_name": "Swedish",
+          "data": {
+            "homepage": "",
+            "overview": "Ethan Hunt och hans IMF-team fortsätter sitt sökande efter den skrämmande AI som kallas Entiteten, som har infiltrerat underrättelsenätverk över hela världen, med världens regeringar och en mystisk vålnad från Ethans förflutna hack i häl. Tillsammans med nya allierade och beväpnad med medlen för att stänga ner Entity för gott befinner Hunt sig i en kapplöpning mot tiden för att förhindra att världen som vi känner den förändras för alltid.",
+            "runtime": 0,
+            "tagline": "",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "NL",
+          "iso_639_1": "nl",
+          "name": "Nederlands",
+          "english_name": "Dutch",
+          "data": {
+            "homepage": "https://www.mission-impossible.nl/",
+            "overview": "Ons leven is een optelsom van onze keuzes. Tom Cruise is Ethan Hunt in Mission: Impossible – The Final Reckoning.",
+            "runtime": 169,
+            "tagline": "Every choice, every mission, has all led to this.",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "DK",
+          "iso_639_1": "da",
+          "name": "Dansk",
+          "english_name": "Danish",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "IN",
+          "iso_639_1": "ta",
+          "name": "தமிழ்",
+          "english_name": "Tamil",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "மிஷன்: இம்பாஸிபில் - தி ஃபைனல் ரெக்கனிங்"
+          }
+        },
+        {
+          "iso_3166_1": "IN",
+          "iso_639_1": "te",
+          "name": "తెలుగు",
+          "english_name": "Telugu",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "మిషన్: ఇంపాన బుల్ - ద ఫైనల్ రెకనింగ్"
+          }
+        },
+        {
+          "iso_3166_1": "PK",
+          "iso_639_1": "ur",
+          "name": "اردو",
+          "english_name": "Urdu",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": ""
+          }
+        },
+        {
+          "iso_3166_1": "GE",
+          "iso_639_1": "ka",
+          "name": "ქართული",
+          "english_name": "Georgian",
+          "data": {
+            "homepage": "",
+            "overview": "",
+            "runtime": 0,
+            "tagline": "",
+            "title": "შეუსრულებელი მისია: უკანასკნელი ანგარიშსწორება"
+          }
+        },
+        {
+          "iso_3166_1": "ES",
+          "iso_639_1": "ca",
+          "name": "Català",
+          "english_name": "Catalan",
+          "data": {
+            "homepage": "",
+            "overview": "L'agent Ethan Hunt continua la seva missió d'impedir que Gabriel controli el tecnològicament omnipotent programa d'IA conegut com \"L'Entitat\".",
+            "runtime": 169,
+            "tagline": "Cada elecció, cada missió, hi ha conduït.",
+            "title": "Missió: Impossible - Sentència final"
+          }
+        }
+      ]
+    },
+    "external_ids": {
+      "imdb_id": "tt9603208",
+      "wikidata_id": "Q61876374",
+      "facebook_id": "MissionImpossible",
+      "instagram_id": "missionimpossible",
+      "twitter_id": "MissionFilm"
+    },
+    "semantic_tags": [
+      "genre:动作",
+      "genre:冒险",
+      "genre:惊悚",
+      "decade:2020s",
+      "country:us",
+      "lang:en",
+      "series:87359"
+    ]
+  }
+]
