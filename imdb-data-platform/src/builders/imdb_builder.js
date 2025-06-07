@@ -1,29 +1,13 @@
 import fetch from 'node-fetch';
 import * as cheerio from 'cheerio';
-import { sleep, parseImdbRating } from '../utils/helpers.js';
+import { sleep } from '../utils/helpers.js';
 
 const IMDB_BASE_URL = 'https://www.imdb.com';
-const MAX_ITEMS_PER_LIST = 50;
+const MAX_ITEMS_PER_LIST = 100; // 扩大抓取范围，为后续筛选提供充足数据
 
-export const STATIC_CHARTS_CONFIG = {
-    popularMovies: { name: '热门电影', path: '/chart/moviemeter/' },
-    topMovies: { name: '高分电影', path: '/chart/top/' },
-    popularTV: { name: '热门剧集', path: '/chart/tvmeter/' },
-    topTV: { name: '高分剧集', path: '/chart/toptv/' },
-};
-
-export const CURATED_LISTS_CONFIG = {
-    topSciFiMovies: { name: '高分科幻电影', params: { title_type: 'feature', genres: 'sci-fi', user_rating: '8.0,10', num_votes: '25000,', sort: 'user_rating,desc' } },
-    topHorrorMovies: { name: '高分恐怖电影', params: { title_type: 'feature', genres: 'horror', user_rating: '7.5,10', num_votes: '20000,', sort: 'user_rating,desc' } },
-    recentPopularSeries: { name: '近期热门剧集 (2022-)', params: { title_type: 'tv_series', release_date: '2022-01-01,', sort: 'moviemeter,asc' } },
-    topActionSeries: { name: '高分动作剧集', params: { title_type: 'tv_series', genres: 'action', user_rating: '8.2,10', num_votes: '15000,', sort: 'user_rating,desc' } },
-    gemsFromAsia: { name: '亚洲之光', params: { title_type: 'feature,tv_series', countries: 'jp,kr,cn,hk,tw,in,th', user_rating: '8.0,10', num_votes: '5000,', sort: 'user_rating,desc' } },
-    mindBenders: { name: '烧脑神作', params: { title_type: 'feature', keywords: 'mind-bender,time-travel,plot-twist', user_rating: '7.5,10', sort: 'user_rating,desc' } },
-};
-
-async function fetchImdbPage(path, queryParams = {}) {
-    const url = new URL(`${IMDB_BASE_URL}${path}`);
-    Object.entries(queryParams).forEach(([key, value]) => {
+async function fetchImdbPage(params) {
+    const url = new URL(`${IMDB_BASE_URL}/search/title/`);
+    Object.entries(params).forEach(([key, value]) => {
         if (value) url.searchParams.set(key, value);
     });
     
@@ -45,40 +29,26 @@ function parseIntelligent(html) {
         if (scriptTag) {
             const jsonData = JSON.parse(scriptTag);
             if (jsonData && jsonData.itemListElement) {
-                console.log('    Parsing via JSON-LD (Success).');
-                return jsonData.itemListElement.map(entry => ({
-                    imdbId: entry.item.url?.match(/tt\d+/)?.[0],
-                    title: entry.item.name,
-                })).filter(item => item.imdbId && item.title);
+                return jsonData.itemListElement.map(entry => entry.item.url?.match(/tt\d+/)?.[0]).filter(Boolean);
             }
         }
-    } catch (e) {
-        console.warn('    JSON-LD parsing failed, falling back to HTML parsing.');
-    }
+    } catch (e) { /* fallback */ }
 
-    console.log('    Parsing via HTML tags.');
     const items = [];
     $('li.ipc-metadata-list-summary-item').each((_, element) => {
-        const $item = $(element);
-        const titleElement = $item.find('h3.ipc-title__text');
-        const title = titleElement.text().replace(/^(\d+)\.\s*/, '').trim();
-        const imdbId = $item.find('a.ipc-title-link-wrapper').attr('href')?.match(/tt\d+/)?.[0];
-        if (imdbId && title) {
-            items.push({ imdbId, title });
-        }
+        const imdbId = $(element).find('a.ipc-title-link-wrapper').attr('href')?.match(/tt\d+/)?.[0];
+        if (imdbId) items.push(imdbId);
     });
     return items;
 }
 
-export async function fetchImdbIdList(config) {
-    let html;
-    if (config.path) {
-        html = await fetchImdbPage(config.path);
-    } else if (config.params) {
-        html = await fetchImdbPage('/search/title/', config.params);
-    } else {
-        return [];
-    }
-    const items = parseIntelligent(html);
-    return items.slice(0, MAX_ITEMS_PER_LIST).map(item => item.imdbId);
+/**
+ * 根据IMDb高级搜索参数，抓取一个IMDb ID列表
+ * @param {object} params - IMDb高级搜索的参数
+ * @returns {Array<string>} - IMDb ID 列表
+ */
+export async function fetchImdbIdList(params) {
+    const html = await fetchImdbPage(params);
+    const ids = parseIntelligent(html);
+    return ids.slice(0, MAX_ITEMS_PER_LIST);
 }
