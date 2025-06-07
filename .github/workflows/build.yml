@@ -3,7 +3,7 @@ name: Build IMDb Data Platform
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */12 * * *' # 每12小时运行一次
+    - cron: '0 */12 * * *'
 
 permissions:
   contents: write
@@ -11,7 +11,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # 指定工作目录为我们的新平台文件夹
     defaults:
       run:
         working-directory: ./imdb-data-platform
@@ -20,12 +19,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Synchronize with remote branch
+        run: git pull --rebase
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
-          # 指定缓存目录
           cache-dependency-path: imdb-data-platform/package.json
 
       - name: Install dependencies
@@ -36,12 +37,8 @@ jobs:
           TMDB_ACCESS_TOKEN_V4: ${{ secrets.TMDB_ACCESS_TOKEN_V4 }}
         run: npm run build
 
-      - name: Pull latest changes before commit
-        run: git pull --rebase
-
       - name: Commit and push if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'chore(data): Auto-update IMDb precomputed data'
-          # 指定要提交的文件
           file_pattern: 'imdb-data-platform/imdb_precomputed_data.json'
