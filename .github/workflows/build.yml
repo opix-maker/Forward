@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./imdb-data-platform
+        working-directory: ./imdb-data-v2
 
     steps:
       - name: Checkout repository
@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: imdb-data-platform/package.json
+          cache-dependency-path: imdb-data-v2/package.json
 
       - name: Install dependencies
         run: npm install
@@ -41,4 +41,5 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'chore(data): Auto-update IMDb precomputed data'
-          file_pattern: 'imdb-data-platform/imdb_precomputed_data.json'
+          # 监控整个输出目录的变化
+          file_pattern: 'imdb-data-v2/dist/*.json'
