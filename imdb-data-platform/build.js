@@ -8,8 +8,10 @@ import readline from 'readline';
 import { findByImdbId, getTmdbDetails } from './src/utils/tmdb_api.js';
 import { analyzeAndTagItem } from './src/core/analyzer.js';
 
+const IMDB_BASE_URL = 'https://www.imdb.com';
+
 const DATASET_DIR = './datasets';
-const TEMP_DIR = './temp'; // 临时文件目录
+const TEMP_DIR = './temp';
 const OUTPUT_DIR = './dist';
 const MAX_CONCURRENT_ENRICHMENTS = 20;
 const DATA_LAKE_FILE = path.join(TEMP_DIR, 'datalake.jsonl');
@@ -75,7 +77,6 @@ async function buildAndEnrichDataLake() {
     await fs.mkdir(TEMP_DIR, { recursive: true });
     const writeStream = createWriteStream(DATA_LAKE_FILE, { flags: 'a' });
 
-    // 1. 抓取ID池
     const allImdbIds = new Set();
     for (const task of CRAWL_MATRIX) {
         const url = task.path ? `${IMDB_BASE_URL}${task.path}` : `https://www.imdb.com/search/title/?${new URLSearchParams(task.params)}`;
@@ -88,7 +89,6 @@ async function buildAndEnrichDataLake() {
     }
     console.log(`  Crawled ${allImdbIds.size} unique IMDb IDs.`);
 
-    // 2. 分批增强并写入磁盘
     const imdbIdArray = Array.from(allImdbIds);
     for (let i = 0; i < imdbIdArray.length; i += MAX_CONCURRENT_ENRICHMENTS) {
         const batch = imdbIdArray.slice(i, i + MAX_CONCURRENT_ENRICHMENTS);
@@ -118,16 +118,14 @@ async function sliceDataMartsFromLake() {
 
     await processTsvByLine(DATA_LAKE_FILE, (line) => {
         const item = JSON.parse(line);
-        fullDatabase.push(item); // 填充完整数据库
+        fullDatabase.push(item);
 
-        // 智能派生榜单
         if (item.belongs_to_collection) {
             const id = item.belongs_to_collection.id;
             if (!collections.has(id)) collections.set(id, { name: item.belongs_to_collection.name, items: [] });
             collections.get(id).items.push(item);
         }
 
-        // 标签过滤榜单
         for (const [key, config] of Object.entries(BUILD_MATRIX)) {
             if (config.tags) {
                 if (config.tags.every(tag => item.semantic_tags.includes(tag))) {
@@ -140,7 +138,6 @@ async function sliceDataMartsFromLake() {
     });
     console.log(`  Finished reading data lake. Found ${fullDatabase.length} total items.`);
 
-    // 处理派生榜单
     const now = new Date();
     listBuckets.inTheaters = fullDatabase.filter(item => {
         const releaseDate = new Date(item.release_date);
@@ -157,7 +154,6 @@ async function sliceDataMartsFromLake() {
         return c;
     });
 
-    // 排序和切片
     await fs.rm(OUTPUT_DIR, { recursive: true, force: true });
     await fs.mkdir(OUTPUT_DIR, { recursive: true });
 
@@ -171,26 +167,21 @@ async function sliceDataMartsFromLake() {
         console.log(`  Generated list: ${config.name} -> ${key}.json (${finalData.length} items)`);
     }
     
-    // 写入一个包含所有分类浏览所需数据的精简版数据库
     const clientDatabase = fullDatabase.map(item => ({
-        id: item.id,
-        title: item.title,
-        poster_path: item.poster_path,
-        release_year: item.release_year,
-        vote_average: item.vote_average,
-        popularity: item.popularity,
-        semantic_tags: item.semantic_tags,
+        id: item.id, title: item.title, poster_path: item.poster_path,
+        release_year: item.release_year, vote_average: item.vote_average,
+        popularity: item.popularity, semantic_tags: item.semantic_tags,
     }));
     await fs.writeFile(`${OUTPUT_DIR}/client_database.json`, JSON.stringify(clientDatabase));
     console.log(`  Generated client-side database with ${clientDatabase.length} items.`);
 
     const index = { buildTimestamp: new Date().toISOString(), lists: Object.entries(BUILD_MATRIX).map(([id, { name }]) => ({ id, name })) };
-    await fs.writeFile(`${OUTPUT_DIR}/index.json`, JSON.stringify(index));
+    await fs.writeFile(path.join(OUTPUT_DIR, 'index.json'), JSON.stringify(index));
     console.log(`\nSuccessfully wrote index file.`);
 }
 
 async function main() {
-    console.log('Starting IMDb Discovery Engine build process v5.0 (Disk-Backed)...');
+    console.log('Starting IMDb Discovery Engine build process v5.1 (Final)...');
     const startTime = Date.now();
     try {
         await buildAndEnrichDataLake();
@@ -201,7 +192,7 @@ async function main() {
         console.error('\n❌ FATAL ERROR during build process:', error);
         process.exit(1);
     } finally {
-        await fs.rm(TEMP_DIR, { recursive: true, force: true }); // 清理临时文件
+        await fs.rm(TEMP_DIR, { recursive: true, force: true });
     }
 }
 
