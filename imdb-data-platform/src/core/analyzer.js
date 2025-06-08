@@ -1,4 +1,3 @@
-// --- 语义标签词典 ---
 const KEYWORD_TO_THEME_MAP = {
     // 科幻
     'cyberpunk': 'theme:cyberpunk', 'dystopia': 'theme:cyberpunk', 'virtual reality': 'theme:cyberpunk', 'artificial intelligence': 'theme:cyberpunk', 'neo-noir': 'theme:cyberpunk',
@@ -31,62 +30,38 @@ const KEYWORD_TO_THEME_MAP = {
 
 export function analyzeAndTagItem(item) {
     if (!item) return null;
-
     const tags = new Set();
     const year = item.release_date ? new Date(item.release_date).getFullYear() : (item.first_air_date ? new Date(item.first_air_date).getFullYear() : null);
 
-    // 1. 基础类型标签 (type:movie, type:tv)
     if (item.media_type) tags.add(`type:${item.media_type}`);
+    (item.genres || []).forEach(g => { if (g.name) tags.add(`genre:${g.name}`); });
+    if (item.genres?.some(g => g.id === 16)) tags.add('type:animation');
+    if (year) tags.add(`decade:${Math.floor(year / 10) * 10}s`);
 
-    // 2. 类型标签 (genre:科幻, genre:动画)
-    (item.genres || []).forEach(g => {
-        if (g.name) tags.add(`genre:${g.name}`);
-    });
-    // 特殊处理动画
-    if (item.genres?.some(g => g.id === 16)) {
-        tags.add('type:animation');
-    }
-
-    // 3. 年代标签 (decade:1990s)
-    if (year) {
-        const decade = Math.floor(year / 10) * 10;
-        tags.add(`decade:${decade}s`);
-    }
-
-    // 4. 制作国家/地区标签 (country:us, country:jp)
     const countries = new Set();
     (item.origin_country || []).forEach(c => countries.add(c.toLowerCase()));
     (item.production_countries || []).forEach(pc => countries.add(pc.iso_3166_1.toLowerCase()));
     countries.forEach(c => tags.add(`country:${c}`));
 
-    // 5. 原始语言标签 (lang:en, lang:ja, lang:chinese)
     if (item.original_language) {
         const lang = item.original_language;
         tags.add(`lang:${lang}`);
-        if (['zh', 'cmn', 'yue'].includes(lang)) {
-            tags.add('lang:chinese');
-        }
+        if (['zh', 'cmn', 'yue'].includes(lang)) tags.add('lang:chinese');
     }
 
-    // 6. 主题标签 (theme:cyberpunk)
     const keywords = (item.keywords?.keywords || item.keywords?.results || []).map(k => k.name.toLowerCase());
     keywords.forEach(keyword => {
         for (const [mapKey, theme] of Object.entries(KEYWORD_TO_THEME_MAP)) {
-            if (keyword.includes(mapKey)) {
-                tags.add(theme);
-            }
+            if (keyword.includes(mapKey)) tags.add(theme);
         }
     });
     
-    // 7. 成人内容标签
     if (item.adult) tags.add('theme:adult');
 
-    // 提取中文标题和简介
     const chineseTranslation = item.translations?.translations?.find(t => t.iso_639_1 === 'zh');
     const title_zh = chineseTranslation?.data?.title || chineseTranslation?.data?.name || item.title || item.name;
     const overview_zh = chineseTranslation?.data?.overview || item.overview;
 
-    // 返回一个干净、扁平化的对象
     return {
         id: item.id,
         imdb_id: item.external_ids?.imdb_id,
