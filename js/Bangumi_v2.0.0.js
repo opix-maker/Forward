@@ -17,12 +17,14 @@ var WidgetMetadata = {
     author: "Autism ",
     site: "https://github.com/opix-maker/Forward",
     requiredVersion: "0.0.1",
+    detailCacheDuration: 60,
     modules: [
         {
             title: "近期热门",
             description: "按作品类型浏览近期热门内容 (固定按热度 trends 排序)",
             requiresWebView: false,
             functionName: "fetchRecentHot",
+            cacheDuration: 20000,
             params: [
                 { name: "category", title: "分类", type: "enumeration", value: "anime", enumOptions: [ { title: "动画", value: "anime" } ] },
                 { name: "page", title: "页码", type: "page", value: "1" }
