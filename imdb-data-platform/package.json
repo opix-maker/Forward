@@ -1,14 +1,13 @@
 {
   "name": "imdb-discovery-engine",
-  "version": "6.0.0",
-  "description": "Builds data marts by processing the official IMDb datasets.",
+  "version": "7.0.0",
+  "description": "Builds a comprehensive data lake by processing the official IMDb datasets.",
   "main": "build.js",
   "type": "module",
   "scripts": {
     "build": "node build.js"
   },
   "dependencies": {
-    "node-fetch": "^3.3.2",
-    "gunzip-file": "^0.1.1"
+    "node-fetch": "^3.3.2"
   }
 }
