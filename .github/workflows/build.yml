@@ -40,7 +40,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: ./imdb-data-platform
-        run: npm ci 
+        run: npm install
 
       - name: Run build script
         working-directory: ./imdb-data-platform
