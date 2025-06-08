@@ -5,55 +5,20 @@ import { pipeline } from 'stream/promises';
 import { createWriteStream, createReadStream } from 'fs';
 import zlib from 'zlib';
 import readline from 'readline';
-import * as cheerio from 'cheerio';
 import { findByImdbId, getTmdbDetails } from './src/utils/tmdb_api.js';
 import { analyzeAndTagItem } from './src/core/analyzer.js';
 
-const IMDB_BASE_URL = 'https://www.imdb.com';
 const DATASET_DIR = './datasets';
 const TEMP_DIR = './temp';
 const OUTPUT_DIR = './dist';
-const MAX_ITEMS_PER_CRAWL = 500;
-const MAX_CONCURRENT_ENRICHMENTS = 20;
+const MAX_CONCURRENT_ENRICHMENTS = 25; // 稍微提高并发
 const DATA_LAKE_FILE = path.join(TEMP_DIR, 'datalake.jsonl');
+const FINAL_DATABASE_FILE = path.join(OUTPUT_DIR, 'database.json');
 
-// --- 抓取任务矩阵  ---
-const CRAWL_MATRIX = [
-    // 核心榜单 
-    { path: '/chart/moviemeter/', limit: 500 }, { path: '/chart/top/', limit: 500 },
-    { path: '/chart/tvmeter/', limit: 500 }, { path: '/chart/toptv/', limit: 500 },
-    // 亚洲地区专项
-    { params: { countries: 'jp', title_type: 'feature,tv_series', sort: 'user_rating,desc' }, limit: 250 },
-    { params: { countries: 'kr', title_type: 'feature,tv_series', sort: 'user_rating,desc' }, limit: 250 },
-    { params: { countries: 'cn,hk,tw', title_type: 'feature,tv_series', sort: 'user_rating,desc' }, limit: 250 },
-    { params: { countries: 'in', title_type: 'feature', sort: 'user_rating,desc' }, limit: 250 },
-    // 欧美地区专项
-    { params: { countries: 'us', title_type: 'feature,tv_series', sort: 'user_rating,desc' }, limit: 250 },
-    { params: { countries: 'gb', title_type: 'feature,tv_series', sort: 'user_rating,desc' }, limit: 250 },
-    // 核心类型专项
-    { params: { genres: 'sci-fi', sort: 'user_rating,desc' }, limit: 250 },
-    { params: { genres: 'horror', sort: 'user_rating,desc' }, limit: 250 },
-    { params: { genres: 'animation', sort: 'user_rating,desc' }, limit: 250 },
-    { params: { genres: 'comedy', sort: 'user_rating,desc' }, limit: 250 },
-    { params: { genres: 'action', sort: 'user_rating,desc' }, limit: 250 },
-    { params: { genres: 'documentary', sort: 'user_rating,desc' }, limit: 250 },
-    { params: { genres: 'romance', sort: 'user_rating,desc' }, limit: 250 },
-    { params: { genres: 'thriller', sort: 'user_rating,desc' }, limit: 250 },
-];
-
-const BUILD_MATRIX = {
-    inTheaters: { name: '院线热映', derive: true, type: 'inTheaters' },
-    weeklyTrending: { name: '本周热门', derive: true, type: 'weeklyTrending' },
-    annualBest_2024: { name: '2024年度口碑榜', derive: true, type: 'annualBest', year: 2024 },
-    annualBest_2023: { name: '2023年度口碑榜', derive: true, type: 'annualBest', year: 2023 },
-    recentlyPopular: { name: '近期流行', derive: true, type: 'recentlyPopular' },
-    theme_mindBenders: { name: '烧脑神作', tags: ['style:plot-twist'], sortBy: 'vote_average' },
-    theme_hiddenGems: { name: '冷门高分', derive: true, type: 'hiddenGems' },
-    seriesUniverse: { name: '系列宇宙', derive: true, type: 'seriesUniverse' },
-    top_rated_movies: { name: '影史高分电影', tags: ['type:movie'], sortBy: 'vote_average', minVotes: 25000 },
-    top_rated_tv: { name: '影史高分剧集', tags: ['type:tv'], sortBy: 'vote_average', minVotes: 10000 },
-    top_rated_jp_anime: { name: '高分日系动画', tags: ['category:jp_anime'], sortBy: 'vote_average', minVotes: 1000 },
-    popular_us_tv: { name: '热门美剧', tags: ['category:us-eu_tv'], sortBy: 'popularity' },
+const DATASETS = {
+    basics: { url: 'https://datasets.imdbws.com/title.basics.tsv.gz', local: 'title.basics.tsv' },
+    akas: { url: 'https://datasets.imdbws.com/title.akas.tsv.gz', local: 'title.akas.tsv' },
+    ratings: { url: 'https://datasets.imdbws.com/title.ratings.tsv.gz', local: 'title.ratings.tsv' },
 };
 
 async function downloadAndUnzip(url, localPath) {
@@ -81,31 +46,56 @@ async function processTsvByLine(filePath, processor) {
     }
 }
 
-async function buildAndEnrichDataLake() {
-    console.log('\nPHASE 1: Building and Enriching Data Lake to Disk...');
+async function buildAndEnrichToDisk() {
+    console.log('\nPHASE 1: Building lightweight indexes...');
+    const ratingsIndex = new Map();
+    const akasIndex = new Map();
+
+    const ratingsPath = path.join(DATASET_DIR, DATASETS.ratings.local);
+    await downloadAndUnzip(DATASETS.ratings.url, ratingsPath);
+    await processTsvByLine(ratingsPath, (line) => {
+        const [tconst, averageRating, numVotes] = line.split('\t');
+        ratingsIndex.set(tconst, { rating: parseFloat(averageRating) || 0, votes: parseInt(numVotes, 10) || 0 });
+    });
+
+    const akasPath = path.join(DATASET_DIR, DATASETS.akas.local);
+    await downloadAndUnzip(DATASETS.akas.url, akasPath);
+    await processTsvByLine(akasPath, (line) => {
+        const [titleId, , , region] = line.split('\t');
+        if (!region || region === '\\N') return;
+        if (!akasIndex.has(titleId)) akasIndex.set(titleId, new Set());
+        akasIndex.get(titleId).add(region);
+    });
+
+    console.log('\nPHASE 2: Streaming basics, filtering, and enriching to disk...');
     await fs.rm(TEMP_DIR, { recursive: true, force: true });
     await fs.mkdir(TEMP_DIR, { recursive: true });
     const writeStream = createWriteStream(DATA_LAKE_FILE, { flags: 'a' });
+    
+    const idPool = [];
+    const basicsPath = path.join(DATASET_DIR, DATASETS.basics.local);
+    await downloadAndUnzip(DATASETS.basics.url, basicsPath);
+    await processTsvByLine(basicsPath, (line) => {
+        const [tconst, titleType, , , isAdult, startYear] = line.split('\t');
+        if (!tconst.startsWith('tt') || isAdult === '1') return;
+        const ratingInfo = ratingsIndex.get(tconst);
+        // 预筛选，只保留有足够信息和关注度的条目
+        if (ratingInfo && ratingInfo.votes > 100 && parseInt(startYear, 10) > 1960) {
+            idPool.push(tconst);
+        }
+    });
+    console.log(`  Initial pool contains ${idPool.length} potentially interesting items.`);
 
-    const allImdbIds = new Set();
-    for (const task of CRAWL_MATRIX) {
-        const url = task.path ? `${IMDB_BASE_URL}${task.path}` : `https://www.imdb.com/search/title/?${new URLSearchParams(task.params)}`;
-        console.log(`  Crawling: ${url}`);
-        const html = await fetch(url).then(res => res.text());
-        const $ = cheerio.load(html);
-        const ids = [];
-        $('li.ipc-metadata-list-summary-item a.ipc-title-link-wrapper').each((_, el) => {
-            const imdbId = $(el).attr('href')?.match(/tt\d+/)?.[0];
-            if (imdbId) ids.push(imdbId);
+    for (let i = 0; i < idPool.length; i += MAX_CONCURRENT_ENRICHMENTS) {
+        const batch = idPool.slice(i, i + MAX_CONCURRENT_ENRICHMENTS);
+        const promises = batch.map(id => {
+            const ratingInfo = ratingsIndex.get(id);
+            const regionInfo = akasIndex.get(id);
+            const itemShell = { id, ...ratingInfo, regions: regionInfo };
+            return findByImdbId(id)
+                .then(info => info ? getTmdbDetails(info.id, info.media_type) : null)
+                .then(details => analyzeAndTagItem(details));
         });
-        ids.slice(0, task.limit || 100).forEach(id => allImdbIds.add(id));
-    }
-    console.log(`  Crawled ${allImdbIds.size} unique IMDb IDs.`);
-
-    const imdbIdArray = Array.from(allImdbIds);
-    for (let i = 0; i < imdbIdArray.length; i += MAX_CONCURRENT_ENRICHMENTS) {
-        const batch = imdbIdArray.slice(i, i + MAX_CONCURRENT_ENRICHMENTS);
-        const promises = batch.map(id => findByImdbId(id).then(info => info ? getTmdbDetails(info.id, info.media_type) : null).then(details => analyzeAndTagItem(details)));
         const results = await Promise.allSettled(promises);
         
         let writeBuffer = '';
@@ -117,92 +107,42 @@ async function buildAndEnrichDataLake() {
         if (writeBuffer) {
             writeStream.write(writeBuffer);
         }
-        console.log(`  Enriched and wrote batch ${i / MAX_CONCURRENT_ENRICHMENTS + 1} / ${Math.ceil(imdbIdArray.length / MAX_CONCURRENT_ENRICHMENTS)}`);
+        console.log(`  Enriched and wrote batch ${Math.ceil((i + batch.length) / MAX_CONCURRENT_ENRICHMENTS)} / ${Math.ceil(idPool.length / MAX_CONCURRENT_ENRICHMENTS)}`);
     }
-    await new Promise(resolve => writeStream.end(resolve)); // 确保流完全关闭
+    await new Promise(resolve => writeStream.end(resolve));
     console.log(`  Data Lake written to ${DATA_LAKE_FILE}`);
 }
 
-async function sliceDataMartsFromLake() {
-    console.log('\nPHASE 2: Slicing Data Marts from Data Lake on Disk...');
-    const listBuckets = Object.fromEntries(Object.keys(BUILD_MATRIX).map(key => [key, []]));
-    const fullDatabase = [];
-    const collections = new Map();
-
-    await processTsvByLine(DATA_LAKE_FILE, (line) => {
-        try {
-            const item = JSON.parse(line);
-            fullDatabase.push(item);
-
-            if (item.belongs_to_collection) {
-                const id = item.belongs_to_collection.id;
-                if (!collections.has(id)) collections.set(id, { name: item.belongs_to_collection.name, items: [] });
-                collections.get(id).items.push(item);
-            }
-
-            for (const [key, config] of Object.entries(BUILD_MATRIX)) {
-                if (config.tags) {
-                    if (config.tags.every(tag => item.semantic_tags.includes(tag))) {
-                        if (!config.minVotes || (item.vote_count || 0) >= config.minVotes) {
-                            listBuckets[key].push(item);
-                        }
-                    }
-                }
-            }
-        } catch(e) {
-            console.warn(`  Could not parse line in datalake.jsonl: ${line.substring(0, 50)}...`);
-        }
-    });
-    console.log(`  Finished reading data lake. Found ${fullDatabase.length} total items.`);
-
-    const now = new Date();
-    listBuckets.inTheaters = fullDatabase.filter(item => {
-        const releaseDate = new Date(item.release_date);
-        return item.semantic_tags.includes('type:movie') && releaseDate >= new Date(now.getTime() - 6 * 7 * 24 * 60 * 60 * 1000) && releaseDate <= new Date(now.getTime() + 4 * 7 * 24 * 60 * 60 * 1000);
-    }).sort((a, b) => b.popularity - a.popularity);
-
-    listBuckets.weeklyTrending = [...fullDatabase].sort((a, b) => b.popularity - a.popularity);
-    listBuckets.recentlyPopular = fullDatabase.filter(item => new Date(item.release_date) >= new Date(now.getTime() - 180 * 24 * 60 * 60 * 1000)).sort((a, b) => b.popularity - a.popularity);
-    listBuckets.annualBest_2024 = fullDatabase.filter(item => item.release_year === 2024 && item.vote_count > 1000).sort((a, b) => b.vote_average - a.vote_average);
-    listBuckets.annualBest_2023 = fullDatabase.filter(item => item.release_year === 2023 && item.vote_count > 1000).sort((a, b) => b.vote_average - a.vote_average);
-    listBuckets.theme_hiddenGems = fullDatabase.filter(item => item.vote_average > 8.0 && item.vote_count > 5000 && item.vote_count < 25000).sort((a, b) => b.vote_average - a.vote_average);
-    listBuckets.seriesUniverse = Array.from(collections.values()).filter(c => c.items.length > 1).map(c => {
-        c.items.sort((a, b) => new Date(a.release_date) - new Date(b.release_date));
-        return c;
-    });
-
+async function assembleFinalDatabase() {
+    console.log('\nPHASE 3: Assembling final database from data lake...');
     await fs.rm(OUTPUT_DIR, { recursive: true, force: true });
     await fs.mkdir(OUTPUT_DIR, { recursive: true });
 
-    for (const [key, config] of Object.entries(BUILD_MATRIX)) {
-        const bucket = listBuckets[key];
-        if (config.sortBy) {
-            bucket.sort((a, b) => (b[config.sortBy] || 0) - (a[config.sortBy] || 0));
-        }
-        const finalData = bucket.slice(0, config.limit || 50);
-        await fs.writeFile(`${OUTPUT_DIR}/${key}.json`, JSON.stringify(finalData));
-        console.log(`  Generated list: ${config.name} -> ${key}.json (${finalData.length} items)`);
-    }
-    
-    const clientDatabase = fullDatabase.map(item => ({
-        id: item.id, title: item.title, poster_path: item.poster_path,
-        release_year: item.release_year, vote_average: item.vote_average,
-        popularity: item.popularity, semantic_tags: item.semantic_tags,
-    }));
-    await fs.writeFile(`${OUTPUT_DIR}/client_database.json`, JSON.stringify(clientDatabase));
-    console.log(`  Generated client-side database with ${clientDatabase.length} items.`);
+    const writeStream = createWriteStream(FINAL_DATABASE_FILE);
+    writeStream.write(`{"buildTimestamp":"${new Date().toISOString()}","database":[`);
 
-    const index = { buildTimestamp: new Date().toISOString(), lists: Object.entries(BUILD_MATRIX).map(([id, { name }]) => ({ id, name })) };
-    await fs.writeFile(path.join(OUTPUT_DIR, 'index.json'), JSON.stringify(index));
-    console.log(`\nSuccessfully wrote index file.`);
+    const rl = readline.createInterface({ input: createReadStream(DATA_LAKE_FILE), crlfDelay: Infinity });
+    let firstLine = true;
+    for await (const line of rl) {
+        if (!line.trim()) continue;
+        if (!firstLine) {
+            writeStream.write(',');
+        }
+        writeStream.write(line);
+        firstLine = false;
+    }
+
+    writeStream.write(']}');
+    await new Promise(resolve => writeStream.end(resolve));
+    console.log(`  Final database written to ${FINAL_DATABASE_FILE}`);
 }
 
 async function main() {
-    console.log('Starting IMDb Discovery Engine build process v5.2 (Expanded Crawl)...');
+    console.log('Starting IMDb Discovery Engine build process v7.0 (Genesis)...');
     const startTime = Date.now();
     try {
-        await buildAndEnrichDataLake();
-        await sliceDataMartsFromLake();
+        await buildAndEnrichToDisk();
+        await assembleFinalDatabase();
         const duration = (Date.now() - startTime) / 1000;
         console.log(`\n✅ Build process successful! Took ${duration.toFixed(2)} seconds.`);
     } catch (error) {
