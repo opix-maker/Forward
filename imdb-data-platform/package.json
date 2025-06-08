@@ -1,7 +1,7 @@
 {
   "name": "imdb-discovery-engine",
   "version": "3.0.0",
-  "description": "Builds a comprehensive data lake from IMDb for a high-performance discovery widget.",
+  "description": "Builds a comprehensive data lake and sliced data marts from IMDb for a high-performance discovery widget.",
   "main": "build.js",
   "type": "module",
   "scripts": {
@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "gunzip-file": "^0.1.1"
   }
 }
