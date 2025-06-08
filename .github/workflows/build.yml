@@ -41,6 +41,5 @@ jobs:
       - name: Commit and push if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: 'chore(data): Auto-update IMDb data marts'
-          # 监控整个输出目录的变化
-          file_pattern: 'imdb-data-platform/dist/*.json'
+          commit_message: 'chore(data): Auto-update IMDb discovery database'
+          file_pattern: 'imdb-discovery-engine/dist/database.json'
