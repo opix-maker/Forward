@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 import fetch from 'node-fetch';
-import { gunzip } from 'gunzip-file';
+import gunzip from 'gunzip-file'; // <--- 核心修复：从命名导入改为默认导入
 import { findByImdbId, getTmdbDetails } from './src/utils/tmdb_api.js';
 import { analyzeAndTagItem } from './src/core/analyzer.js';
 
@@ -114,7 +114,6 @@ function queryDatabase(db, { types, minVotes = 0, regions, genres, keywords }) {
         if (minVotes && (item.votes || 0) < minVotes) return false;
         if (regions && ![...item.regions].some(r => regions.includes(r))) return false;
         if (genres && !genres.some(g => item.genres.includes(g))) return false;
-        // 关键词筛选将在TMDB增强后进行，因为IMDb数据集不直接提供关键词
         return true;
     });
 }
@@ -159,9 +158,8 @@ async function main() {
         for (const [key, config] of Object.entries(BUILD_MATRIX)) {
             let listData = queryResults[key]
                 .map(item => enrichedDataLake.get(item.id))
-                .filter(Boolean); // 过滤掉增强失败的条目
+                .filter(Boolean);
 
-            // 补充关键词筛选
             if (config.filters.keywords) {
                 listData = listData.filter(item => config.filters.keywords.some(kw => item.semantic_tags.some(tag => tag.includes(kw))));
             }
