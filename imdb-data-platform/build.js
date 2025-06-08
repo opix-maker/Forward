@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 import fetch from 'node-fetch';
-import gunzip from 'gunzip-file'; // <--- 核心修复：从命名导入改为默认导入
+import gunzip from 'gunzip-file';
 import { findByImdbId, getTmdbDetails } from './src/utils/tmdb_api.js';
 import { analyzeAndTagItem } from './src/core/analyzer.js';
 
@@ -18,15 +18,12 @@ const DATASETS = {
 
 // --- 数据切片矩阵：定义最终输出的JSON文件 ---
 const BUILD_MATRIX = {
-    // 官方榜单 (通过高投票数和高评分模拟)
     official_top_movies: { name: '高分电影', filters: { types: ['movie'], minVotes: 25000 }, sortBy: 'rating', limit: 250 },
     official_top_tv: { name: '高分剧集', filters: { types: ['tvseries', 'tvminiseries'], minVotes: 10000 }, sortBy: 'rating', limit: 250 },
-    // 亚洲精选
     jp_anime_top: { name: '高分日漫', filters: { types: ['movie', 'tvseries'], regions: ['JP'], genres: ['Animation'] }, sortBy: 'rating', minVotes: 1000, limit: 100 },
     kr_tv_top: { name: '高分韩剧', filters: { types: ['tvseries'], regions: ['KR'] }, sortBy: 'rating', minVotes: 1000, limit: 100 },
     cn_movie_top: { name: '高分国产电影', filters: { types: ['movie'], regions: ['CN', 'HK', 'TW'] }, sortBy: 'rating', minVotes: 1000, limit: 100 },
     cn_tv_top: { name: '高分国产剧', filters: { types: ['tvseries'], regions: ['CN', 'HK', 'TW'] }, sortBy: 'rating', minVotes: 500, limit: 100 },
-    // 主题探索
     theme_cyberpunk: { name: '赛博朋克精选', filters: { genres: ['Sci-Fi'], keywords: ['cyberpunk', 'dystopia'] }, sortBy: 'rating', limit: 50 },
     theme_zombie: { name: '僵尸末日', filters: { genres: ['Horror'], keywords: ['zombie'] }, sortBy: 'rating', limit: 50 },
     theme_wuxia: { name: '武侠世界', filters: { genres: ['Action', 'Adventure'], regions: ['CN', 'HK', 'TW'], keywords: ['wuxia', 'martial-arts'] }, sortBy: 'rating', limit: 50 },
@@ -36,12 +33,22 @@ const BUILD_MATRIX = {
 
 async function downloadAndUnzip(url, localPath) {
     const gzPath = `${localPath}.gz`;
+    
+    // ===================================================================
+    //  核心修复：在写入文件前，确保目标目录存在
+    // ===================================================================
+    const dir = path.dirname(gzPath);
+    await fs.mkdir(dir, { recursive: true });
+
     console.log(`  Downloading ${url}...`);
     const response = await fetch(url);
     if (!response.ok) throw new Error(`Failed to download ${url}`);
+    
     await fs.writeFile(gzPath, response.body);
+    
     console.log(`  Unzipping ${gzPath}...`);
     await gunzip(gzPath, localPath);
+    
     await fs.unlink(gzPath);
 }
 
@@ -65,16 +72,13 @@ async function buildLocalDatabase() {
     console.log('\nPHASE 1: Building local IMDb database from datasets...');
     const db = new Map();
 
-    // 1. 加载 basics 数据
     const basicsTsv = await loadDataset('basics');
     basicsTsv.split('\n').forEach(line => {
         const [tconst, titleType, primaryTitle, , isAdult, startYear, , genres] = line.split('\t');
         if (tconst === 'tconst' || !tconst.startsWith('tt')) return;
-        if (isAdult === '1') return; // 过滤成人内容
+        if (isAdult === '1') return;
         db.set(tconst, {
-            id: tconst,
-            type: titleType.toLowerCase(),
-            title: primaryTitle,
+            id: tconst, type: titleType.toLowerCase(), title: primaryTitle,
             year: parseInt(startYear, 10) || null,
             genres: genres ? genres.split(',') : [],
             regions: new Set(),
@@ -82,7 +86,6 @@ async function buildLocalDatabase() {
     });
     console.log(`  Processed ${db.size} basic title entries.`);
 
-    // 2. 加载 akas 数据 (用于地区识别)
     const akasTsv = await loadDataset('akas');
     akasTsv.split('\n').forEach(line => {
         const [titleId, , , region] = line.split('\t');
@@ -93,7 +96,6 @@ async function buildLocalDatabase() {
     });
     console.log(`  Enriched with regional (akas) data.`);
 
-    // 3. 加载 ratings 数据
     const ratingsTsv = await loadDataset('ratings');
     ratingsTsv.split('\n').forEach(line => {
         const [tconst, averageRating, numVotes] = line.split('\t');
@@ -108,7 +110,7 @@ async function buildLocalDatabase() {
     return Array.from(db.values());
 }
 
-function queryDatabase(db, { types, minVotes = 0, regions, genres, keywords }) {
+function queryDatabase(db, { types, minVotes = 0, regions, genres }) {
     return db.filter(item => {
         if (types && !types.includes(item.type)) return false;
         if (minVotes && (item.votes || 0) < minVotes) return false;
