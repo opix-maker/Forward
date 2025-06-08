@@ -3,7 +3,7 @@ name: Build IMDb Discovery Engine Data
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *' # 每天运行一次
+    - cron: '0 0 * * *'
 
 permissions:
   contents: write
@@ -11,11 +11,8 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 30 
-    defaults:
-      run:
-        working-directory: ./imdb-data-platform
-
+    timeout-minutes: 30
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -32,15 +29,17 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./imdb-data-platform
 
       - name: Run build script
         env:
           TMDB_ACCESS_TOKEN_V4: ${{ secrets.TMDB_ACCESS_TOKEN_V4 }}
         run: npm run build
+        working-directory: ./imdb-data-platform
 
       - name: Commit and push if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          working_directory: ./imdb-data-platform
-          commit_message: 'chore(data): Auto-update IMDb discovery database'
-          file_pattern: 'dist/database.json'
+          commit_message: 'chore(data): Auto-update IMDb data marts'
+          # 这个action默认在仓库根目录运行，所以路径必须是相对于根目录的
+          file_pattern: 'imdb-data-platform/dist/*.json'
