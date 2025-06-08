@@ -11,6 +11,9 @@ const DATASET_DIR = './datasets';
 const OUTPUT_DIR = './dist';
 const MAX_CONCURRENT_ENRICHMENTS = 20;
 
+// ===================================================================
+//  核心修复：使用您提供的、经过验证的官方权威URL
+// ===================================================================
 const DATASETS = {
     basics: { url: 'https://datasets.imdbws.com/title.basics.tsv.gz', local: 'title.basics.tsv' },
     akas: { url: 'https://datasets.imdbws.com/title.akas.tsv.gz', local: 'title.akas.tsv' },
@@ -45,7 +48,13 @@ async function downloadAndUnzip(url, localPath) {
         }
     });
 
-    if (!response.ok) throw new Error(`Failed to download ${url} - Status: ${response.status}`);
+    // ===================================================================
+    //  核心修复：增加详细的错误诊断日志
+    // ===================================================================
+    if (!response.ok) {
+        const errorBody = await response.text();
+        throw new Error(`Failed to download ${url} - Status: ${response.status} ${response.statusText}. Body: ${errorBody}`);
+    }
     
     await pipeline(response.body, createWriteStream(gzPath));
     console.log(`  Download complete. Unzipping ${gzPath}...`);
@@ -126,7 +135,7 @@ function queryDatabase(db, { types, minVotes = 0, regions, genres }) {
 // --- 主执行流程 ---
 
 async function main() {
-    console.log('Starting IMDb Dataset Engine build process v4.1 (URL Corrected)...');
+    console.log('Starting IMDb Dataset Engine build process v4.2 (URL & Diagnostics Corrected)...');
     const startTime = Date.now();
 
     try {
