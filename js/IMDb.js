@@ -43,8 +43,8 @@ const themeParam = { name: "theme", title: "选择主题", type: "enumeration", 
 // --- Widget Metadata ---
 var WidgetMetadata = {
     id: "imdb_discovery_curated_local__final",
-    title: "IMDb 精选浏览 (Local Final)",
-    description: "基于 GitHub Action 数据的策展式浏览列表。",
+    title: "IMDb 探索发现",
+    description: "聚合 IMDb海量数据，由 GitHub Actions 每日自动构建。提供基于热度算法的近期热门、电影、剧集及动画分类榜单。",
     author: "Autism", site: `https://github.com/${GITHUB_OWNER}/${GITHUB_REPO}`, version: "1.0.0", requiredVersion: "0.0.1",
     detailCacheDuration: 3600, cacheDuration: 18000, 
     modules: [
