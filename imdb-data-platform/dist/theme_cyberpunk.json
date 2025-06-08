@@ -1877,7 +1877,7 @@
   },
   {
     "adult": false,
-    "backdrop_path": "/aEG09hZZEDZ23Y9WYI701W6Gwnb.jpg",
+    "backdrop_path": "/xOuhhbQ3Nzznt5MjRdLBJb0CmDE.jpg",
     "belongs_to_collection": {
       "id": 87359,
       "name": "碟中谍（系列）",
@@ -1960,8 +1960,8 @@
     "tagline": "",
     "title": "碟中谍8：最终清算",
     "video": false,
-    "vote_average": 7.163,
-    "vote_count": 646,
+    "vote_average": 7.171,
+    "vote_count": 662,
     "credits": {
       "cast": [
         {
@@ -3002,7 +3002,7 @@
         },
         {
           "adult": false,
-          "gender": 0,
+          "gender": 2,
           "id": 5448553,
           "known_for_department": "Acting",
           "name": "René Valius",
@@ -3114,16 +3114,16 @@
         },
         {
           "adult": false,
-          "gender": 1,
-          "id": 1411144,
-          "known_for_department": "Directing",
-          "name": "Rebecca Sheridan",
-          "original_name": "Rebecca Sheridan",
-          "popularity": 0.1037,
+          "gender": 2,
+          "id": 1322138,
+          "known_for_department": "Art",
+          "name": "Gary Freeman",
+          "original_name": "Gary Freeman",
+          "popularity": 0.2511,
           "profile_path": null,
-          "credit_id": "63abca947ef3811f6084de7b",
-          "department": "Directing",
-          "job": "Script Supervisor"
+          "credit_id": "63abc97ec8113d00c88e64b0",
+          "department": "Art",
+          "job": "Production Design"
         },
         {
           "adult": false,
@@ -3141,15 +3141,15 @@
         {
           "adult": false,
           "gender": 0,
-          "id": 2041452,
-          "known_for_department": "Sound",
-          "name": "Lloyd Dudley",
-          "original_name": "Lloyd Dudley",
-          "popularity": 0.1016,
+          "id": 1978560,
+          "known_for_department": "Art",
+          "name": "Matt Sharp",
+          "original_name": "Matt Sharp",
+          "popularity": 0.0843,
           "profile_path": null,
-          "credit_id": "63abca3ea24c5000cfab93cc",
-          "department": "Sound",
-          "job": "Production Sound Mixer"
+          "credit_id": "63abc9afbe4b36007c107946",
+          "department": "Art",
+          "job": "Art Direction"
         },
         {
           "adult": false,
@@ -3167,15 +3167,15 @@
         {
           "adult": false,
           "gender": 2,
-          "id": 105780,
-          "known_for_department": "Sound",
-          "name": "克里斯·门罗",
-          "original_name": "Chris Munro",
-          "popularity": 0.3663,
+          "id": 1390349,
+          "known_for_department": "Art",
+          "name": "Tom Weaving",
+          "original_name": "Tom Weaving",
+          "popularity": 0.1124,
           "profile_path": null,
-          "credit_id": "63abca2abe4b3600d73e6800",
-          "department": "Sound",
-          "job": "Production Sound Mixer"
+          "credit_id": "63abc9d77ef3811fab63212c",
+          "department": "Art",
+          "job": "Art Direction"
         },
         {
           "adult": false,
@@ -3193,41 +3193,67 @@
         {
           "adult": false,
           "gender": 2,
-          "id": 1322138,
-          "known_for_department": "Art",
-          "name": "Gary Freeman",
-          "original_name": "Gary Freeman",
-          "popularity": 0.2511,
+          "id": 105780,
+          "known_for_department": "Sound",
+          "name": "克里斯·门罗",
+          "original_name": "Chris Munro",
+          "popularity": 0.3663,
           "profile_path": null,
-          "credit_id": "63abc97ec8113d00c88e64b0",
-          "department": "Art",
-          "job": "Production Design"
-        },
-        {
-          "adult": false,
-          "gender": 2,
-          "id": 1390349,
-          "known_for_department": "Art",
-          "name": "Tom Weaving",
-          "original_name": "Tom Weaving",
-          "popularity": 0.1124,
-          "profile_path": null,
-          "credit_id": "63abc9d77ef3811fab63212c",
-          "department": "Art",
-          "job": "Art Direction"
+          "credit_id": "63abca2abe4b3600d73e6800",
+          "department": "Sound",
+          "job": "Production Sound Mixer"
         },
         {
           "adult": false,
           "gender": 0,
-          "id": 1978560,
-          "known_for_department": "Art",
-          "name": "Matt Sharp",
-          "original_name": "Matt Sharp",
-          "popularity": 0.0843,
+          "id": 2041452,
+          "known_for_department": "Sound",
+          "name": "Lloyd Dudley",
+          "original_name": "Lloyd Dudley",
+          "popularity": 0.1016,
           "profile_path": null,
-          "credit_id": "63abc9afbe4b36007c107946",
-          "department": "Art",
-          "job": "Art Direction"
+          "credit_id": "63abca3ea24c5000cfab93cc",
+          "department": "Sound",
+          "job": "Production Sound Mixer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 1411144,
+          "known_for_department": "Directing",
+          "name": "Rebecca Sheridan",
+          "original_name": "Rebecca Sheridan",
+          "popularity": 0.1037,
+          "profile_path": null,
+          "credit_id": "63abca947ef3811f6084de7b",
+          "department": "Directing",
+          "job": "Script Supervisor"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 58433,
+          "known_for_department": "Production",
+          "name": "大卫·埃里森",
+          "original_name": "David Ellison",
+          "popularity": 0.5482,
+          "profile_path": "/jOhjFZWW2KqsOzm4IiE71FHmcIf.jpg",
+          "credit_id": "663b9f4814553072179abcf8",
+          "department": "Production",
+          "job": "Executive Producer"
+        },
+        {
+          "adult": false,
+          "gender": 0,
+          "id": 1408796,
+          "known_for_department": "Production",
+          "name": "Chris Brock",
+          "original_name": "Chris Brock",
+          "popularity": 0.1724,
+          "profile_path": null,
+          "credit_id": "663b9f5a08ba251f1805be1e",
+          "department": "Production",
+          "job": "Executive Producer"
         },
         {
           "adult": false,
@@ -3258,19 +3284,6 @@
         {
           "adult": false,
           "gender": 2,
-          "id": 58433,
-          "known_for_department": "Production",
-          "name": "大卫·埃里森",
-          "original_name": "David Ellison",
-          "popularity": 0.5482,
-          "profile_path": "/jOhjFZWW2KqsOzm4IiE71FHmcIf.jpg",
-          "credit_id": "663b9f4814553072179abcf8",
-          "department": "Production",
-          "job": "Executive Producer"
-        },
-        {
-          "adult": false,
-          "gender": 2,
           "id": 56737,
           "known_for_department": "Production",
           "name": "Don Granger",
@@ -3278,45 +3291,6 @@
           "popularity": 0.3326,
           "profile_path": "/nSxcIZC2Oentvy31pV8rnT5Cwd8.jpg",
           "credit_id": "663b9f8df9c33ed62fecaf3e",
-          "department": "Production",
-          "job": "Executive Producer"
-        },
-        {
-          "adult": false,
-          "gender": 2,
-          "id": 29608,
-          "known_for_department": "Production",
-          "name": "Jake Myers",
-          "original_name": "Jake Myers",
-          "popularity": 0.3769,
-          "profile_path": null,
-          "credit_id": "663ba031cf6ba94a953f5a84",
-          "department": "Production",
-          "job": "Producer"
-        },
-        {
-          "adult": false,
-          "gender": 1,
-          "id": 86907,
-          "known_for_department": "Production",
-          "name": "Susan E. Novick",
-          "original_name": "Susan E. Novick",
-          "popularity": 0.2146,
-          "profile_path": null,
-          "credit_id": "663ba03fff31fa4851ecb23a",
-          "department": "Production",
-          "job": "Executive Producer"
-        },
-        {
-          "adult": false,
-          "gender": 0,
-          "id": 1408796,
-          "known_for_department": "Production",
-          "name": "Chris Brock",
-          "original_name": "Chris Brock",
-          "popularity": 0.1724,
-          "profile_path": null,
-          "credit_id": "663b9f5a08ba251f1805be1e",
           "department": "Production",
           "job": "Executive Producer"
         },
@@ -3345,6 +3319,32 @@
           "credit_id": "663ba019399e50e9449abd36",
           "department": "Production",
           "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 29608,
+          "known_for_department": "Production",
+          "name": "Jake Myers",
+          "original_name": "Jake Myers",
+          "popularity": 0.3769,
+          "profile_path": null,
+          "credit_id": "663ba031cf6ba94a953f5a84",
+          "department": "Production",
+          "job": "Producer"
+        },
+        {
+          "adult": false,
+          "gender": 1,
+          "id": 86907,
+          "known_for_department": "Production",
+          "name": "Susan E. Novick",
+          "original_name": "Susan E. Novick",
+          "popularity": 0.2146,
+          "profile_path": null,
+          "credit_id": "663ba03fff31fa4851ecb23a",
+          "department": "Production",
+          "job": "Executive Producer"
         },
         {
           "adult": false,
@@ -3388,19 +3388,6 @@
         {
           "adult": false,
           "gender": 2,
-          "id": 500,
-          "known_for_department": "Acting",
-          "name": "汤姆·克鲁斯",
-          "original_name": "Tom Cruise",
-          "popularity": 18.7121,
-          "profile_path": "/eOh4ubpOm2Igdg0QH2ghj0mFtC.jpg",
-          "credit_id": "5c3d2b1b0e0a2655c48e53c4",
-          "department": "Production",
-          "job": "Producer"
-        },
-        {
-          "adult": false,
-          "gender": 2,
           "id": 9033,
           "known_for_department": "Writing",
           "name": "克里斯托弗·麦夸里",
@@ -3410,6 +3397,19 @@
           "credit_id": "5c3d2b05c3a36805733dbb50",
           "department": "Directing",
           "job": "Director"
+        },
+        {
+          "adult": false,
+          "gender": 2,
+          "id": 500,
+          "known_for_department": "Acting",
+          "name": "汤姆·克鲁斯",
+          "original_name": "Tom Cruise",
+          "popularity": 18.7121,
+          "profile_path": "/eOh4ubpOm2Igdg0QH2ghj0mFtC.jpg",
+          "credit_id": "5c3d2b1b0e0a2655c48e53c4",
+          "department": "Production",
+          "job": "Producer"
         },
         {
           "adult": false,
@@ -4498,8 +4498,8 @@
     "tagline": "",
     "title": "头山",
     "video": false,
-    "vote_average": 5.5,
-    "vote_count": 47,
+    "vote_average": 5.458,
+    "vote_count": 48,
     "credits": {
       "cast": [
         {
@@ -5914,6 +5914,14 @@
         {
           "id": 239687,
           "name": "fake news"
+        },
+        {
+          "id": 309974,
+          "name": "absurd"
+        },
+        {
+          "id": 315053,
+          "name": "critical"
         },
         {
           "id": 344083,
