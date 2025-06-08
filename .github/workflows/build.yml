@@ -15,7 +15,7 @@ jobs:
     timeout-minutes: 30 
     defaults:
       run:
-        working-directory: ./imdb-dataset-engine
+        working-directory: ./imdb-data-platform
 
     steps:
       - name: Checkout repository
@@ -29,7 +29,7 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: imdb-dataset-engine/package.json
+          cache-dependency-path: imdb-data-platform/package.json
 
       - name: Install dependencies
         run: npm install
@@ -43,4 +43,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'chore(data): Auto-update IMDb data marts'
-          file_pattern: 'imdb-dataset-engine/dist/*.json'
+          file_pattern: 'imdb-data-platform/dist/*.json'
