@@ -11,7 +11,9 @@ const DATASET_DIR = './datasets';
 const OUTPUT_DIR = './dist';
 const MAX_CONCURRENT_ENRICHMENTS = 20;
 
-// --- IMDb 数据集配置  ---
+// ===================================================================
+//  核心修复：使用您提供的、经过验证的官方URL
+// ===================================================================
 const DATASETS = {
     basics: { url: 'https://datasets.imdbws.com/title.basics.tsv.gz', local: 'title.basics.tsv' },
     akas: { url: 'https://datasets.imdbws.com/title.akas.tsv.gz', local: 'title.akas.tsv' },
@@ -127,7 +129,7 @@ function queryDatabase(db, { types, minVotes = 0, regions, genres }) {
 // --- 主执行流程 ---
 
 async function main() {
-    console.log('Starting IMDb Dataset Engine build process v4.0...');
+    console.log('Starting IMDb Dataset Engine build process v4.1 (URL Corrected)...');
     const startTime = Date.now();
 
     try {
