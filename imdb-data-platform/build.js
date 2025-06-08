@@ -11,7 +11,7 @@ import { analyzeAndTagItem } from './src/core/analyzer.js';
 const DATASET_DIR = './datasets';
 const TEMP_DIR = './temp';
 const OUTPUT_DIR = './dist';
-const MAX_CONCURRENT_ENRICHMENTS = 50; 
+const MAX_CONCURRENT_ENRICHMENTS = 100; // 并发数
 const DATA_LAKE_FILE = path.join(TEMP_DIR, 'datalake.jsonl');
 const FINAL_DATABASE_FILE = path.join(OUTPUT_DIR, 'database.json');
 
@@ -20,30 +20,6 @@ const DATASETS = {
     akas: { url: 'https://datasets.imdbws.com/title.akas.tsv.gz', local: 'title.akas.tsv' },
     ratings: { url: 'https://datasets.imdbws.com/title.ratings.tsv.gz', local: 'title.ratings.tsv' },
 };
-
-// --- 抓取任务矩阵 ---
-const CRAWL_MATRIX = [
-    // 核心榜单 
-    { path: '/chart/moviemeter/', limit: 500 }, { path: '/chart/top/', limit: 500 },
-    { path: '/chart/tvmeter/', limit: 500 }, { path: '/chart/toptv/', limit: 500 },
-    // 亚洲地区专项
-    { params: { countries: 'jp', title_type: 'feature,tv_series', sort: 'user_rating,desc' }, limit: 250 },
-    { params: { countries: 'kr', title_type: 'feature,tv_series', sort: 'user_rating,desc' }, limit: 250 },
-    { params: { countries: 'cn,hk,tw', title_type: 'feature,tv_series', sort: 'user_rating,desc' }, limit: 250 },
-    { params: { countries: 'in', title_type: 'feature', sort: 'user_rating,desc' }, limit: 250 },
-    // 欧美地区专项
-    { params: { countries: 'us', title_type: 'feature,tv_series', sort: 'user_rating,desc' }, limit: 250 },
-    { params: { countries: 'gb', title_type: 'feature,tv_series', sort: 'user_rating,desc' }, limit: 250 },
-    // 核心类型专项
-    { params: { genres: 'sci-fi', sort: 'user_rating,desc' }, limit: 250 },
-    { params: { genres: 'horror', sort: 'user_rating,desc' }, limit: 250 },
-    { params: { genres: 'animation', sort: 'user_rating,desc' }, limit: 250 },
-    { params: { genres: 'comedy', sort: 'user_rating,desc' }, limit: 250 },
-    { params: { genres: 'action', sort: 'user_rating,desc' }, limit: 250 },
-    { params: { genres: 'documentary', sort: 'user_rating,desc' }, limit: 250 },
-    { params: { genres: 'romance', sort: 'user_rating,desc' }, limit: 250 },
-    { params: { genres: 'thriller', sort: 'user_rating,desc' }, limit: 250 },
-];
 
 async function downloadAndUnzip(url, localPath) {
     const dir = path.dirname(localPath);
@@ -73,6 +49,7 @@ async function processTsvByLine(filePath, processor) {
 async function processInParallel(items, concurrency, task) {
     const queue = [...items];
     let processedCount = 0;
+    const totalCount = items.length;
 
     const worker = async () => {
         while (queue.length > 0) {
@@ -80,8 +57,9 @@ async function processInParallel(items, concurrency, task) {
             if (item) {
                 await task(item);
                 processedCount++;
-                if (processedCount % 100 === 0 || processedCount === items.length) {
-                    console.log(`  Progress: ${processedCount} / ${items.length}`);
+                // 每处理100个或最后几个时打印进度
+                if (processedCount % 100 === 0 || processedCount === totalCount) {
+                    console.log(`  Progress: ${processedCount} / ${totalCount}`);
                 }
             }
         }
@@ -91,7 +69,6 @@ async function processInParallel(items, concurrency, task) {
     for (let i = 0; i < concurrency; i++) {
         workers.push(worker());
     }
-
     await Promise.all(workers);
 }
 
@@ -106,7 +83,6 @@ async function buildAndEnrichToDisk() {
         const [tconst, averageRating, numVotes] = line.split('\t');
         ratingsIndex.set(tconst, { rating: parseFloat(averageRating) || 0, votes: parseInt(numVotes, 10) || 0 });
     });
-    console.log(`  Ratings index built with ${ratingsIndex.size} entries.`);
 
     const akasPath = path.join(DATASET_DIR, DATASETS.akas.local);
     await downloadAndUnzip(DATASETS.akas.url, akasPath);
@@ -116,9 +92,8 @@ async function buildAndEnrichToDisk() {
         if (!akasIndex.has(titleId)) akasIndex.set(titleId, new Set());
         akasIndex.get(titleId).add(region);
     });
-    console.log(`  Akas index built with ${akasIndex.size} entries.`);
 
-    console.log('\nPHASE 2: Streaming basics and filtering to create ID pool...');
+    console.log('\nPHASE 2: Streaming basics and filtering to create final ID pool...');
     const idPool = new Set();
     const basicsPath = path.join(DATASET_DIR, DATASETS.basics.local);
     await downloadAndUnzip(DATASETS.basics.url, basicsPath);
@@ -130,19 +105,30 @@ async function buildAndEnrichToDisk() {
             idPool.add(tconst);
         }
     });
-    console.log(`  Initial pool contains ${idPool.size} potentially interesting items.`);
+    console.log(`  Final ID pool contains ${idPool.size} items to process.`);
 
-    console.log(`\nPHASE 3: Enriching ${idPool.size} unique items via concurrent pipeline...`);
+    console.log(`\nPHASE 3: Enriching all items via hyper-parallel pipeline...`);
     await fs.rm(TEMP_DIR, { recursive: true, force: true });
     await fs.mkdir(TEMP_DIR, { recursive: true });
     const writeStream = createWriteStream(DATA_LAKE_FILE, { flags: 'a' });
 
     const enrichmentTask = async (id) => {
-        const details = await findByImdbId(id)
-            .then(info => info ? getTmdbDetails(info.id, info.media_type) : null)
-            .then(details => analyzeAndTagItem(details));
-        if (details) {
-            writeStream.write(JSON.stringify(details) + '\n');
+        try {
+
+            const findPromise = findByImdbId(id);
+            const detailsPromise = findPromise.then(info => 
+                info ? getTmdbDetails(info.id, info.media_type) : null
+            );
+            
+            const details = await detailsPromise;
+            if (details) {
+                const analyzedItem = analyzeAndTagItem(details);
+                if (analyzedItem) {
+                    writeStream.write(JSON.stringify(analyzedItem) + '\n');
+                }
+            }
+        } catch (error) {
+            console.warn(`  Skipping ID ${id} due to enrichment error: ${error.message}`);
         }
     };
 
@@ -177,7 +163,7 @@ async function assembleFinalDatabase() {
 }
 
 async function main() {
-    console.log('Starting IMDb Discovery Engine build process v7.1 (Velocity)...');
+    console.log('Starting IMDb Discovery Engine build process v8.0 (Velocity Prime)...');
     const startTime = Date.now();
     try {
         await buildAndEnrichToDisk();
