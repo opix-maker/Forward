@@ -2,8 +2,9 @@ import fs from 'fs/promises';
 import path from 'path';
 import fetch from 'node-fetch';
 import { pipeline } from 'stream/promises';
-import { createWriteStream } from 'fs';
-import zlib from 'zlib'; 
+import { createWriteStream, createReadStream } from 'fs';
+import zlib from 'zlib';
+import readline from 'readline'; // <--- 核心修复：导入readline模块
 import { findByImdbId, getTmdbDetails } from './src/utils/tmdb_api.js';
 import { analyzeAndTagItem } from './src/core/analyzer.js';
 
@@ -32,65 +33,72 @@ const BUILD_MATRIX = {
 async function downloadAndUnzip(url, localPath) {
     const dir = path.dirname(localPath);
     await fs.mkdir(dir, { recursive: true });
-
     console.log(`  Downloading from official URL: ${url}`);
-    const response = await fetch(url, {
-        headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36' }
-    });
+    const response = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36' } });
     if (!response.ok) {
         const errorBody = await response.text();
         throw new Error(`Failed to download ${url} - Status: ${response.status} ${response.statusText}. Body: ${errorBody}`);
     }
-    
-    // ===================================================================
-    //  核心修复：使用Node.js原生流管道进行下载和解压，不再依赖第三方库
-    // ===================================================================
     const gunzip = zlib.createGunzip();
     const destination = createWriteStream(localPath);
     await pipeline(response.body, gunzip, destination);
-    
     console.log(`  Download and unzip complete for ${path.basename(localPath)}.`);
 }
 
-async function loadDataset(name) {
-    const config = DATASETS[name];
-    const localPath = path.join(DATASET_DIR, config.local);
-    try {
-        await fs.access(localPath);
-        console.log(`  Dataset '${name}' found locally.`);
-    } catch {
-        console.log(`  Dataset '${name}' not found. Downloading...`);
-        await downloadAndUnzip(config.url, localPath);
+async function processTsvByLine(filePath, processor) {
+    const fileStream = createReadStream(filePath);
+    const rl = readline.createInterface({
+        input: fileStream,
+        crlfDelay: Infinity
+    });
+    let isFirstLine = true;
+    for await (const line of rl) {
+        if (isFirstLine) {
+            isFirstLine = false;
+            continue; // 跳过标题行
+        }
+        processor(line);
     }
-    console.log(`  Reading ${path.basename(localPath)}...`);
-    return fs.readFile(localPath, 'utf-8');
 }
 
 async function buildLocalDatabase() {
     console.log('\nPHASE 1: Building local IMDb database from datasets...');
     const db = new Map();
-    const basicsTsv = await loadDataset('basics');
-    basicsTsv.split('\n').forEach(line => {
+
+    // 1. 加载 basics 数据
+    const basicsPath = path.join(DATASET_DIR, DATASETS.basics.local);
+    await downloadAndUnzip(DATASETS.basics.url, basicsPath);
+    console.log(`  Reading ${path.basename(basicsPath)}...`);
+    await processTsvByLine(basicsPath, (line) => {
         const [tconst, titleType, primaryTitle, , isAdult, startYear, , genres] = line.split('\t');
-        if (tconst === 'tconst' || !tconst.startsWith('tt') || isAdult === '1') return;
+        if (!tconst.startsWith('tt') || isAdult === '1') return;
         db.set(tconst, { id: tconst, type: titleType.toLowerCase(), title: primaryTitle, year: parseInt(startYear, 10) || null, genres: genres ? genres.split(',') : [], regions: new Set() });
     });
     console.log(`  Processed ${db.size} basic title entries.`);
-    const akasTsv = await loadDataset('akas');
-    akasTsv.split('\n').forEach(line => {
+
+    // 2. 加载 akas 数据
+    const akasPath = path.join(DATASET_DIR, DATASETS.akas.local);
+    await downloadAndUnzip(DATASETS.akas.url, akasPath);
+    console.log(`  Reading ${path.basename(akasPath)}...`);
+    await processTsvByLine(akasPath, (line) => {
         const [titleId, , , region] = line.split('\t');
-        if (titleId === 'titleId' || !region || region === '\\N' || !db.has(titleId)) return;
+        if (!region || region === '\\N' || !db.has(titleId)) return;
         db.get(titleId).regions.add(region);
     });
     console.log(`  Enriched with regional (akas) data.`);
-    const ratingsTsv = await loadDataset('ratings');
-    ratingsTsv.split('\n').forEach(line => {
+
+    // 3. 加载 ratings 数据
+    const ratingsPath = path.join(DATASET_DIR, DATASETS.ratings.local);
+    await downloadAndUnzip(DATASETS.ratings.url, ratingsPath);
+    console.log(`  Reading ${path.basename(ratingsPath)}...`);
+    await processTsvByLine(ratingsPath, (line) => {
         const [tconst, averageRating, numVotes] = line.split('\t');
-        if (tconst === 'tconst' || !db.has(tconst)) return;
+        if (!db.has(tconst)) return;
         db.get(tconst).rating = parseFloat(averageRating) || 0;
         db.get(tconst).votes = parseInt(numVotes, 10) || 0;
     });
     console.log(`  Enriched with ratings data.`);
+
     return Array.from(db.values());
 }
 
@@ -105,7 +113,7 @@ function queryDatabase(db, { types, minVotes = 0, regions, genres }) {
 }
 
 async function main() {
-    console.log('Starting IMDb Dataset Engine build process v4.4 (Native Unzip)...');
+    console.log('Starting IMDb Dataset Engine build process v4.5 (Stream Processing)...');
     const startTime = Date.now();
     try {
         await fs.mkdir(DATASET_DIR, { recursive: true });
