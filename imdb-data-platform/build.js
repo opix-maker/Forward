@@ -11,9 +11,6 @@ const DATASET_DIR = './datasets';
 const OUTPUT_DIR = './dist';
 const MAX_CONCURRENT_ENRICHMENTS = 20;
 
-// ===================================================================
-//  核心修复：使用您提供的、经过验证的官方URL
-// ===================================================================
 const DATASETS = {
     basics: { url: 'https://datasets.imdbws.com/title.basics.tsv.gz', local: 'title.basics.tsv' },
     akas: { url: 'https://datasets.imdbws.com/title.akas.tsv.gz', local: 'title.akas.tsv' },
