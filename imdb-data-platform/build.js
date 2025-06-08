@@ -1,5 +1,3 @@
-// imdb-data-platform/build.js
-
 import fs from 'fs/promises';
 import { constants as fsConstants } from 'fs';
 import path from 'path';
@@ -22,11 +20,9 @@ const ALLOWED_TITLE_TYPES = new Set(['movie', 'tvSeries', 'tvMiniSeries', 'tvMov
 // --- PATHS ---
 const DATASET_DIR = './datasets';
 const TEMP_DIR = './temp';
-// 路径修复: workflow working-directory 是 ./imdb-data-platform,
-// git-auto-commit-action 期望的路径是相对于根目录的 imdb-discovery-engine/dist/
-const FINAL_OUTPUT_DIR = '../imdb-discovery-engine/dist'; 
-const DATA_LAKE_FILE = path.join(TEMP_DIR, 'datalake.jsonl'); // Data lake 仍在 temp
-const FINAL_DATABASE_FILE = path.join(FINAL_OUTPUT_DIR, 'database.json'); // 最终文件放到目标位置
+const FINAL_OUTPUT_DIR = './dist'; 
+const DATA_LAKE_FILE = path.join(TEMP_DIR, 'datalake.jsonl'); 
+const FINAL_DATABASE_FILE = path.join(FINAL_OUTPUT_DIR, 'database.json');
 
 
 const DATASETS = {
