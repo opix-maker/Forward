@@ -5,12 +5,11 @@ import { pipeline } from 'stream/promises';
 import { createWriteStream, createReadStream } from 'fs';
 import zlib from 'zlib';
 import readline from 'readline';
-import cheerio from 'cheerio';
+import cheerio from 'cheerio'; 
 import { findByImdbId, getTmdbDetails } from './src/utils/tmdb_api.js';
 import { analyzeAndTagItem } from './src/core/analyzer.js';
 
 const IMDB_BASE_URL = 'https://www.imdb.com';
-
 const DATASET_DIR = './datasets';
 const TEMP_DIR = './temp';
 const OUTPUT_DIR = './dist';
