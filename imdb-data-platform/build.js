@@ -7,20 +7,18 @@ import { createWriteStream } from 'fs';
 import { findByImdbId, getTmdbDetails } from './src/utils/tmdb_api.js';
 import { analyzeAndTagItem } from './src/core/analyzer.js';
 
-const DATASET_DIR = './datasets';
-const OUTPUT_DIR = './dist';
+const CWD = process.cwd(); // 获取当前工作目录
+const DATASET_DIR = path.resolve(CWD, 'datasets');
+const OUTPUT_DIR = path.resolve(CWD, 'dist');
+
 const MAX_CONCURRENT_ENRICHMENTS = 20;
 
-// ===================================================================
-//  核心修复：使用您提供的、经过验证的官方权威URL
-// ===================================================================
 const DATASETS = {
     basics: { url: 'https://datasets.imdbws.com/title.basics.tsv.gz', local: 'title.basics.tsv' },
     akas: { url: 'https://datasets.imdbws.com/title.akas.tsv.gz', local: 'title.akas.tsv' },
     ratings: { url: 'https://datasets.imdbws.com/title.ratings.tsv.gz', local: 'title.ratings.tsv' },
 };
 
-// --- 数据切片矩阵：定义最终输出的JSON文件 ---
 const BUILD_MATRIX = {
     official_top_movies: { name: '高分电影', filters: { types: ['movie'], minVotes: 25000 }, sortBy: 'rating', limit: 250 },
     official_top_tv: { name: '高分剧集', filters: { types: ['tvseries', 'tvminiseries'], minVotes: 10000 }, sortBy: 'rating', limit: 250 },
@@ -33,31 +31,22 @@ const BUILD_MATRIX = {
     theme_wuxia: { name: '武侠世界', filters: { genres: ['Action', 'Adventure'], regions: ['CN', 'HK', 'TW'], keywords: ['wuxia', 'martial-arts'] }, sortBy: 'rating', limit: 50 },
 };
 
-// --- 数据集处理函数 ---
-
 async function downloadAndUnzip(url, localPath) {
     const gzPath = `${localPath}.gz`;
     const dir = path.dirname(gzPath);
     await fs.mkdir(dir, { recursive: true });
 
-    console.log(`  Downloading from official URL: ${url}...`);
-    
+    console.log(`  Downloading from official URL: ${url}`);
     const response = await fetch(url, {
-        headers: {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-        }
+        headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36' }
     });
-
-    // ===================================================================
-    //  核心修复：增加详细的错误诊断日志
-    // ===================================================================
     if (!response.ok) {
         const errorBody = await response.text();
         throw new Error(`Failed to download ${url} - Status: ${response.status} ${response.statusText}. Body: ${errorBody}`);
     }
     
     await pipeline(response.body, createWriteStream(gzPath));
-    console.log(`  Download complete. Unzipping ${gzPath}...`);
+    console.log(`  Download complete. Unzipping ${path.basename(gzPath)}...`);
     
     await gunzip(gzPath, localPath);
     
@@ -74,51 +63,35 @@ async function loadDataset(name) {
         console.log(`  Dataset '${name}' not found. Downloading...`);
         await downloadAndUnzip(config.url, localPath);
     }
-    console.log(`  Reading ${localPath}...`);
+    console.log(`  Reading ${path.basename(localPath)}...`);
     return fs.readFile(localPath, 'utf-8');
 }
-
-// --- 数据库构建与查询 ---
 
 async function buildLocalDatabase() {
     console.log('\nPHASE 1: Building local IMDb database from datasets...');
     const db = new Map();
-
     const basicsTsv = await loadDataset('basics');
     basicsTsv.split('\n').forEach(line => {
         const [tconst, titleType, primaryTitle, , isAdult, startYear, , genres] = line.split('\t');
-        if (tconst === 'tconst' || !tconst.startsWith('tt')) return;
-        if (isAdult === '1') return;
-        db.set(tconst, {
-            id: tconst, type: titleType.toLowerCase(), title: primaryTitle,
-            year: parseInt(startYear, 10) || null,
-            genres: genres ? genres.split(',') : [],
-            regions: new Set(),
-        });
+        if (tconst === 'tconst' || !tconst.startsWith('tt') || isAdult === '1') return;
+        db.set(tconst, { id: tconst, type: titleType.toLowerCase(), title: primaryTitle, year: parseInt(startYear, 10) || null, genres: genres ? genres.split(',') : [], regions: new Set() });
     });
     console.log(`  Processed ${db.size} basic title entries.`);
-
     const akasTsv = await loadDataset('akas');
     akasTsv.split('\n').forEach(line => {
         const [titleId, , , region] = line.split('\t');
-        if (titleId === 'titleId' || !region || region === '\\N') return;
-        if (db.has(titleId)) {
-            db.get(titleId).regions.add(region);
-        }
+        if (titleId === 'titleId' || !region || region === '\\N' || !db.has(titleId)) return;
+        db.get(titleId).regions.add(region);
     });
     console.log(`  Enriched with regional (akas) data.`);
-
     const ratingsTsv = await loadDataset('ratings');
     ratingsTsv.split('\n').forEach(line => {
         const [tconst, averageRating, numVotes] = line.split('\t');
-        if (tconst === 'tconst') return;
-        if (db.has(tconst)) {
-            db.get(tconst).rating = parseFloat(averageRating) || 0;
-            db.get(tconst).votes = parseInt(numVotes, 10) || 0;
-        }
+        if (tconst === 'tconst' || !db.has(tconst)) return;
+        db.get(tconst).rating = parseFloat(averageRating) || 0;
+        db.get(tconst).votes = parseInt(numVotes, 10) || 0;
     });
     console.log(`  Enriched with ratings data.`);
-
     return Array.from(db.values());
 }
 
@@ -132,31 +105,24 @@ function queryDatabase(db, { types, minVotes = 0, regions, genres }) {
     });
 }
 
-// --- 主执行流程 ---
-
 async function main() {
-    console.log('Starting IMDb Dataset Engine build process v4.2 (URL & Diagnostics Corrected)...');
+    console.log('Starting IMDb Dataset Engine build process v4.3 (Absolute Paths)...');
     const startTime = Date.now();
-
     try {
         await fs.mkdir(DATASET_DIR, { recursive: true });
         const localDB = await buildLocalDatabase();
-
         console.log('\nPHASE 2: Querying database and enriching with TMDB...');
         const allImdbIdsToEnrich = new Set();
         const queryResults = {};
-
         for (const [key, config] of Object.entries(BUILD_MATRIX)) {
             let results = queryDatabase(localDB, config.filters);
             results.sort((a, b) => (b[config.sortBy] || 0) - (a[config.sortBy] || 0));
             queryResults[key] = results.slice(0, config.limit || 100);
             queryResults[key].forEach(item => allImdbIdsToEnrich.add(item.id));
         }
-
         const enrichedDataLake = new Map();
         const imdbIdArray = Array.from(allImdbIdsToEnrich);
         console.log(`  Found ${imdbIdArray.length} unique IMDb IDs to enrich...`);
-
         for (let i = 0; i < imdbIdArray.length; i += MAX_CONCURRENT_ENRICHMENTS) {
             const batch = imdbIdArray.slice(i, i + MAX_CONCURRENT_ENRICHMENTS);
             const promises = batch.map(id => findByImdbId(id).then(info => info ? getTmdbDetails(info.id, info.media_type) : null).then(details => analyzeAndTagItem(details)));
@@ -164,34 +130,23 @@ async function main() {
             results.forEach(r => r.status === 'fulfilled' && r.value && enrichedDataLake.set(r.value.imdb_id, r.value));
         }
         console.log(`  Enriched data lake contains ${enrichedDataLake.size} items.`);
-
         console.log('\nPHASE 3: Slicing data lake into final data marts...');
         await fs.rm(OUTPUT_DIR, { recursive: true, force: true });
         await fs.mkdir(OUTPUT_DIR, { recursive: true });
-
         for (const [key, config] of Object.entries(BUILD_MATRIX)) {
-            let listData = queryResults[key]
-                .map(item => enrichedDataLake.get(item.id))
-                .filter(Boolean);
-
+            let listData = queryResults[key].map(item => enrichedDataLake.get(item.id)).filter(Boolean);
             if (config.filters.keywords) {
                 listData = listData.filter(item => config.filters.keywords.some(kw => item.semantic_tags.some(tag => tag.includes(kw))));
             }
-            
-            await fs.writeFile(`${OUTPUT_DIR}/${key}.json`, JSON.stringify(listData));
-            console.log(`  Generated list: ${config.name} -> ${key}.json (${listData.length} items)`);
+            const outputPath = path.join(OUTPUT_DIR, `${key}.json`);
+            await fs.writeFile(outputPath, JSON.stringify(listData));
+            console.log(`  Generated list: ${config.name} -> ${path.basename(outputPath)} (${listData.length} items)`);
         }
-
-        const index = {
-            buildTimestamp: new Date().toISOString(),
-            lists: Object.entries(BUILD_MATRIX).map(([id, { name }]) => ({ id, name })),
-        };
-        await fs.writeFile(`${OUTPUT_DIR}/index.json`, JSON.stringify(index));
+        const index = { buildTimestamp: new Date().toISOString(), lists: Object.entries(BUILD_MATRIX).map(([id, { name }]) => ({ id, name })) };
+        await fs.writeFile(path.join(OUTPUT_DIR, 'index.json'), JSON.stringify(index));
         console.log(`\nSuccessfully wrote index file.`);
-
         const duration = (Date.now() - startTime) / 1000;
         console.log(`\n✅ Build process successful! Took ${duration.toFixed(2)} seconds.`);
-
     } catch (error) {
         console.error('\n❌ FATAL ERROR during build process:', error);
         process.exit(1);
