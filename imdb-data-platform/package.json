@@ -1,7 +1,7 @@
 {
-  "name": "imdb-data-platform-v2",
-  "version": "2.0.0",
-  "description": "Advanced build system for pre-computing multi-faceted IMDb data.",
+  "name": "imdb-discovery-engine",
+  "version": "3.0.0",
+  "description": "Builds a comprehensive data lake from IMDb for a high-performance discovery widget.",
   "main": "build.js",
   "type": "module",
   "scripts": {
