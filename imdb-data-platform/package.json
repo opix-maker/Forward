@@ -1,14 +1,14 @@
 {
-  "name": "imdb-dataset-engine",
-  "version": "3.0.0",
-  "description": "Builds a comprehensive data lake and sliced data marts from IMDb for a high-performance discovery widget.",
+  "name": "imdb-discovery-engine",
+  "version": "6.0.0",
+  "description": "Builds data marts by processing the official IMDb datasets.",
   "main": "build.js",
   "type": "module",
   "scripts": {
     "build": "node build.js"
   },
   "dependencies": {
-    "cheerio": "^1.0.0-rc.12",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "gunzip-file": "^0.1.1"
   }
 }
