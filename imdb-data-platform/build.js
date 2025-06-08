@@ -2,8 +2,8 @@ import fs from 'fs/promises';
 import path from 'path';
 import fetch from 'node-fetch';
 import gunzip from 'gunzip-file';
-import { pipeline } from 'stream/promises'; // <--- 核心修复：导入pipeline
-import { createWriteStream } from 'fs';      // <--- 核心修复：导入createWriteStream
+import { pipeline } from 'stream/promises';
+import { createWriteStream } from 'fs';
 import { findByImdbId, getTmdbDetails } from './src/utils/tmdb_api.js';
 import { analyzeAndTagItem } from './src/core/analyzer.js';
 
@@ -11,7 +11,7 @@ const DATASET_DIR = './datasets';
 const OUTPUT_DIR = './dist';
 const MAX_CONCURRENT_ENRICHMENTS = 20;
 
-// --- IMDb 数据集配置 ---
+// --- IMDb 数据集配置  ---
 const DATASETS = {
     basics: { url: 'https://datasets.imdbws.com/title.basics.tsv.gz', local: 'title.basics.tsv' },
     akas: { url: 'https://datasets.imdbws.com/title.akas.tsv.gz', local: 'title.akas.tsv' },
@@ -38,13 +38,16 @@ async function downloadAndUnzip(url, localPath) {
     const dir = path.dirname(gzPath);
     await fs.mkdir(dir, { recursive: true });
 
-    console.log(`  Downloading ${url}...`);
-    const response = await fetch(url);
-    if (!response.ok) throw new Error(`Failed to download ${url}`);
+    console.log(`  Downloading from official URL: ${url}...`);
     
-    // ===================================================================
-    //  核心修复：使用 pipeline 来健壮地处理流式写入
-    // ===================================================================
+    const response = await fetch(url, {
+        headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        }
+    });
+
+    if (!response.ok) throw new Error(`Failed to download ${url} - Status: ${response.status}`);
+    
     await pipeline(response.body, createWriteStream(gzPath));
     console.log(`  Download complete. Unzipping ${gzPath}...`);
     
