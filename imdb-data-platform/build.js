@@ -1,98 +1,171 @@
 import fs from 'fs/promises';
-import * as cheerio from 'cheerio';
+import path from 'path';
+import fetch from 'node-fetch';
+import { gunzip } from 'gunzip-file';
 import { findByImdbId, getTmdbDetails } from './src/utils/tmdb_api.js';
 import { analyzeAndTagItem } from './src/core/analyzer.js';
 
-const IMDB_BASE_URL = 'https://www.imdb.com';
-const MAX_ITEMS_PER_CRAWL = 250;
-const MAX_CONCURRENT_ENRICHMENTS = 15;
+const DATASET_DIR = './datasets';
 const OUTPUT_DIR = './dist';
+const MAX_CONCURRENT_ENRICHMENTS = 20;
 
-// --- 抓取任务矩阵：定义数据湖的源头 ---
-const CRAWL_MATRIX = [
-    // 核心榜单
-    { path: '/chart/moviemeter/' }, { path: '/chart/top/' },
-    { path: '/chart/tvmeter/' }, { path: '/chart/toptv/' },
-    // 亚洲地区专项抓取 (确保数据多样性)
-    { params: { countries: 'jp', title_type: 'feature,tv_series', sort: 'user_rating,desc' } },
-    { params: { countries: 'kr', title_type: 'tv_series', sort: 'user_rating,desc' } },
-    { params: { countries: 'cn,hk,tw', title_type: 'feature,tv_series', sort: 'user_rating,desc' } },
-    // 核心类型专项抓取
-    { params: { genres: 'sci-fi', sort: 'user_rating,desc' } },
-    { params: { genres: 'horror', sort: 'user_rating,desc' } },
-    { params: { genres: 'animation', sort: 'user_rating,desc' } },
-];
+// --- IMDb 数据集配置 ---
+const DATASETS = {
+    basics: { url: 'https://datasets.imdbws.com/title.basics.tsv.gz', local: 'title.basics.tsv' },
+    akas: { url: 'https://datasets.imdbws.com/title.akas.tsv.gz', local: 'title.akas.tsv' },
+    ratings: { url: 'https://datasets.imdbws.com/title.ratings.tsv.gz', local: 'title.ratings.tsv' },
+};
 
 // --- 数据切片矩阵：定义最终输出的JSON文件 ---
 const BUILD_MATRIX = {
-    official_popular_movies: { name: '热门电影', tags: ['type:movie'], sortBy: 'popularity' },
-    official_top_movies: { name: '高分电影', tags: ['type:movie'], sortBy: 'vote_average' },
-    official_popular_tv: { name: '热门剧集', tags: ['type:tv'], sortBy: 'popularity' },
-    official_top_tv: { name: '高分剧集', tags: ['type:tv'], sortBy: 'vote_average' },
-    
-    jp_anime_top: { name: '高分日漫', tags: ['type:animation', 'country:jp'], sortBy: 'vote_average' },
-    us_scifi_top: { name: '高分科幻美剧', tags: ['type:tv', 'genre:科幻', 'country:us'], sortBy: 'vote_average' },
-    kr_tv_popular: { name: '热门韩剧', tags: ['type:tv', 'country:kr'], sortBy: 'popularity' },
-    cn_movie_top: { name: '高分国产电影', tags: ['type:movie', 'lang:chinese'], sortBy: 'vote_average' },
-
-    theme_cyberpunk: { name: '赛博朋克精选', tags: ['theme:cyberpunk'], sortBy: 'vote_average' },
-    theme_zombie: { name: '僵尸末日', tags: ['theme:zombie'], sortBy: 'vote_average' },
-    theme_wuxia: { name: '武侠世界', tags: ['theme:wuxia'], sortBy: 'vote_average' },
-    theme_film_noir: { name: '黑色电影', tags: ['theme:film-noir'], sortBy: 'vote_average' },
+    // 官方榜单 (通过高投票数和高评分模拟)
+    official_top_movies: { name: '高分电影', filters: { types: ['movie'], minVotes: 25000 }, sortBy: 'rating', limit: 250 },
+    official_top_tv: { name: '高分剧集', filters: { types: ['tvseries', 'tvminiseries'], minVotes: 10000 }, sortBy: 'rating', limit: 250 },
+    // 亚洲精选
+    jp_anime_top: { name: '高分日漫', filters: { types: ['movie', 'tvseries'], regions: ['JP'], genres: ['Animation'] }, sortBy: 'rating', minVotes: 1000, limit: 100 },
+    kr_tv_top: { name: '高分韩剧', filters: { types: ['tvseries'], regions: ['KR'] }, sortBy: 'rating', minVotes: 1000, limit: 100 },
+    cn_movie_top: { name: '高分国产电影', filters: { types: ['movie'], regions: ['CN', 'HK', 'TW'] }, sortBy: 'rating', minVotes: 1000, limit: 100 },
+    cn_tv_top: { name: '高分国产剧', filters: { types: ['tvseries'], regions: ['CN', 'HK', 'TW'] }, sortBy: 'rating', minVotes: 500, limit: 100 },
+    // 主题探索
+    theme_cyberpunk: { name: '赛博朋克精选', filters: { genres: ['Sci-Fi'], keywords: ['cyberpunk', 'dystopia'] }, sortBy: 'rating', limit: 50 },
+    theme_zombie: { name: '僵尸末日', filters: { genres: ['Horror'], keywords: ['zombie'] }, sortBy: 'rating', limit: 50 },
+    theme_wuxia: { name: '武侠世界', filters: { genres: ['Action', 'Adventure'], regions: ['CN', 'HK', 'TW'], keywords: ['wuxia', 'martial-arts'] }, sortBy: 'rating', limit: 50 },
 };
 
-async function fetchImdbPage(config) {
-    const url = config.path ? new URL(`${IMDB_BASE_URL}${config.path}`) : new URL(`${IMDB_BASE_URL}/search/title/`);
-    if (config.params) {
-        Object.entries(config.params).forEach(([key, value]) => url.searchParams.set(key, value));
-    }
-    const response = await fetch(url.toString(), { headers: { 'Accept-Language': 'en-US,en' } });
-    if (!response.ok) throw new Error(`Failed to fetch IMDb page: ${response.statusText}`);
-    return response.text();
+// --- 数据集处理函数 ---
+
+async function downloadAndUnzip(url, localPath) {
+    const gzPath = `${localPath}.gz`;
+    console.log(`  Downloading ${url}...`);
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`Failed to download ${url}`);
+    await fs.writeFile(gzPath, response.body);
+    console.log(`  Unzipping ${gzPath}...`);
+    await gunzip(gzPath, localPath);
+    await fs.unlink(gzPath);
 }
 
-function parseIntelligent(html) {
-    const $ = cheerio.load(html);
-    const ids = new Set();
-    $('li.ipc-metadata-list-summary-item a.ipc-title-link-wrapper').each((_, el) => {
-        const imdbId = $(el).attr('href')?.match(/tt\d+/)?.[0];
-        if (imdbId) ids.add(imdbId);
-    });
-    return Array.from(ids);
+async function loadDataset(name) {
+    const config = DATASETS[name];
+    const localPath = path.join(DATASET_DIR, config.local);
+    try {
+        await fs.access(localPath);
+        console.log(`  Dataset '${name}' found locally.`);
+    } catch {
+        console.log(`  Dataset '${name}' not found. Downloading...`);
+        await downloadAndUnzip(config.url, localPath);
+    }
+    console.log(`  Reading ${localPath}...`);
+    return fs.readFile(localPath, 'utf-8');
 }
+
+// --- 数据库构建与查询 ---
+
+async function buildLocalDatabase() {
+    console.log('\nPHASE 1: Building local IMDb database from datasets...');
+    const db = new Map();
+
+    // 1. 加载 basics 数据
+    const basicsTsv = await loadDataset('basics');
+    basicsTsv.split('\n').forEach(line => {
+        const [tconst, titleType, primaryTitle, , isAdult, startYear, , genres] = line.split('\t');
+        if (tconst === 'tconst' || !tconst.startsWith('tt')) return;
+        if (isAdult === '1') return; // 过滤成人内容
+        db.set(tconst, {
+            id: tconst,
+            type: titleType.toLowerCase(),
+            title: primaryTitle,
+            year: parseInt(startYear, 10) || null,
+            genres: genres ? genres.split(',') : [],
+            regions: new Set(),
+        });
+    });
+    console.log(`  Processed ${db.size} basic title entries.`);
+
+    // 2. 加载 akas 数据 (用于地区识别)
+    const akasTsv = await loadDataset('akas');
+    akasTsv.split('\n').forEach(line => {
+        const [titleId, , , region] = line.split('\t');
+        if (titleId === 'titleId' || !region || region === '\\N') return;
+        if (db.has(titleId)) {
+            db.get(titleId).regions.add(region);
+        }
+    });
+    console.log(`  Enriched with regional (akas) data.`);
+
+    // 3. 加载 ratings 数据
+    const ratingsTsv = await loadDataset('ratings');
+    ratingsTsv.split('\n').forEach(line => {
+        const [tconst, averageRating, numVotes] = line.split('\t');
+        if (tconst === 'tconst') return;
+        if (db.has(tconst)) {
+            db.get(tconst).rating = parseFloat(averageRating) || 0;
+            db.get(tconst).votes = parseInt(numVotes, 10) || 0;
+        }
+    });
+    console.log(`  Enriched with ratings data.`);
+
+    return Array.from(db.values());
+}
+
+function queryDatabase(db, { types, minVotes = 0, regions, genres, keywords }) {
+    return db.filter(item => {
+        if (types && !types.includes(item.type)) return false;
+        if (minVotes && (item.votes || 0) < minVotes) return false;
+        if (regions && ![...item.regions].some(r => regions.includes(r))) return false;
+        if (genres && !genres.some(g => item.genres.includes(g))) return false;
+        // 关键词筛选将在TMDB增强后进行，因为IMDb数据集不直接提供关键词
+        return true;
+    });
+}
+
+// --- 主执行流程 ---
 
 async function main() {
-    console.log('Starting data lake build process v3.0...');
+    console.log('Starting IMDb Dataset Engine build process v4.0...');
     const startTime = Date.now();
-    const allImdbIds = new Set();
 
     try {
-        console.log('\nPHASE 1: Crawling IMDb ID lists to build raw ID pool...');
-        for (const task of CRAWL_MATRIX) {
-            const ids = parseIntelligent(await fetchImdbPage(task));
-            ids.slice(0, MAX_ITEMS_PER_CRAWL).forEach(id => allImdbIds.add(id));
-        }
-        console.log(`  Raw ID pool contains ${allImdbIds.size} unique items.`);
+        await fs.mkdir(DATASET_DIR, { recursive: true });
+        const localDB = await buildLocalDatabase();
 
-        console.log(`\nPHASE 2: Enriching all items to create data lake...`);
-        const dataLake = [];
-        const imdbIdArray = Array.from(allImdbIds);
+        console.log('\nPHASE 2: Querying database and enriching with TMDB...');
+        const allImdbIdsToEnrich = new Set();
+        const queryResults = {};
+
+        for (const [key, config] of Object.entries(BUILD_MATRIX)) {
+            let results = queryDatabase(localDB, config.filters);
+            results.sort((a, b) => (b[config.sortBy] || 0) - (a[config.sortBy] || 0));
+            queryResults[key] = results.slice(0, config.limit || 100);
+            queryResults[key].forEach(item => allImdbIdsToEnrich.add(item.id));
+        }
+
+        const enrichedDataLake = new Map();
+        const imdbIdArray = Array.from(allImdbIdsToEnrich);
+        console.log(`  Found ${imdbIdArray.length} unique IMDb IDs to enrich...`);
+
         for (let i = 0; i < imdbIdArray.length; i += MAX_CONCURRENT_ENRICHMENTS) {
             const batch = imdbIdArray.slice(i, i + MAX_CONCURRENT_ENRICHMENTS);
             const promises = batch.map(id => findByImdbId(id).then(info => info ? getTmdbDetails(info.id, info.media_type) : null).then(details => analyzeAndTagItem(details)));
             const results = await Promise.allSettled(promises);
-            results.forEach(r => r.status === 'fulfilled' && r.value && dataLake.push(r.value));
+            results.forEach(r => r.status === 'fulfilled' && r.value && enrichedDataLake.set(r.value.imdb_id, r.value));
         }
-        console.log(`  Data lake created with ${dataLake.length} fully analyzed items.`);
+        console.log(`  Enriched data lake contains ${enrichedDataLake.size} items.`);
 
-        console.log('\nPHASE 3: Slicing data lake into individual data marts...');
-        await fs.rm(OUTPUT_DIR, { recursive: true, force: true }); // 清理旧数据
+        console.log('\nPHASE 3: Slicing data lake into final data marts...');
+        await fs.rm(OUTPUT_DIR, { recursive: true, force: true });
         await fs.mkdir(OUTPUT_DIR, { recursive: true });
 
         for (const [key, config] of Object.entries(BUILD_MATRIX)) {
-            let listData = dataLake.filter(item => config.tags.every(tag => item.semantic_tags.includes(tag)));
-            listData.sort((a, b) => (b[config.sortBy] || 0) - (a[config.sortBy] || 0));
-            listData = listData.slice(0, 50);
+            let listData = queryResults[key]
+                .map(item => enrichedDataLake.get(item.id))
+                .filter(Boolean); // 过滤掉增强失败的条目
+
+            // 补充关键词筛选
+            if (config.filters.keywords) {
+                listData = listData.filter(item => config.filters.keywords.some(kw => item.semantic_tags.some(tag => tag.includes(kw))));
+            }
+            
             await fs.writeFile(`${OUTPUT_DIR}/${key}.json`, JSON.stringify(listData));
             console.log(`  Generated list: ${config.name} -> ${key}.json (${listData.length} items)`);
         }
