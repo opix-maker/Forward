@@ -7,17 +7,29 @@ on:
 
 permissions:
   contents: write
+  actions: write 
+
+
+concurrency:
+  group: ${{ github.workflow }}-build
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    # 设置超时时间，防止因 API 问题或数据量过大导致任务永久挂起，浪费 Action 分钟数 (例如 3 小时)
+    timeout-minutes: 180 
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 保持本地分支与远程同步，减少 rebase/merge 冲突
       - name: Synchronize with remote branch
-        run: git pull --rebase
+        run: |
+           git config --global user.email "action@github.com"
+           git config --global user.name "GitHub Action"
+           git pull --rebase
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -27,19 +39,24 @@ jobs:
           cache-dependency-path: imdb-data-platform/package.json
 
       - name: Install dependencies
-        # 指定工作目录
         working-directory: ./imdb-data-platform
-        run: npm install
+        run: npm ci 
 
       - name: Run build script
-        # 指定工作目录
         working-directory: ./imdb-data-platform
         env:
           TMDB_ACCESS_TOKEN_V4: ${{ secrets.TMDB_ACCESS_TOKEN_V4 }}
-        run: npm run build
+        run: npm run build 
+
 
       - name: Commit and push if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'chore(data): Auto-update IMDb discovery database'
           file_pattern: 'imdb-discovery-engine/dist/database.json'
+          commit_options: '--no-verify'
+ 
+          
+      - name: Notify on Failure
+        if: failure() 
+        run: echo "❌ Build workflow failed! Check logs."
