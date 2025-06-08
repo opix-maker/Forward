@@ -5,7 +5,7 @@ import { pipeline } from 'stream/promises';
 import { createWriteStream, createReadStream } from 'fs';
 import zlib from 'zlib';
 import readline from 'readline';
-import cheerio from 'cheerio'; 
+import * as cheerio from 'cheerio'; // <--- 核心修复：从默认导入改为命名空间导入
 import { findByImdbId, getTmdbDetails } from './src/utils/tmdb_api.js';
 import { analyzeAndTagItem } from './src/core/analyzer.js';
 
