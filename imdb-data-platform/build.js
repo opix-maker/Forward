@@ -1,16 +1,14 @@
 import fs from 'fs/promises';
 import path from 'path';
 import fetch from 'node-fetch';
-import gunzip from 'gunzip-file';
 import { pipeline } from 'stream/promises';
 import { createWriteStream } from 'fs';
+import zlib from 'zlib'; 
 import { findByImdbId, getTmdbDetails } from './src/utils/tmdb_api.js';
 import { analyzeAndTagItem } from './src/core/analyzer.js';
 
-const CWD = process.cwd(); // 获取当前工作目录
-const DATASET_DIR = path.resolve(CWD, 'datasets');
-const OUTPUT_DIR = path.resolve(CWD, 'dist');
-
+const DATASET_DIR = './datasets';
+const OUTPUT_DIR = './dist';
 const MAX_CONCURRENT_ENRICHMENTS = 20;
 
 const DATASETS = {
@@ -32,8 +30,7 @@ const BUILD_MATRIX = {
 };
 
 async function downloadAndUnzip(url, localPath) {
-    const gzPath = `${localPath}.gz`;
-    const dir = path.dirname(gzPath);
+    const dir = path.dirname(localPath);
     await fs.mkdir(dir, { recursive: true });
 
     console.log(`  Downloading from official URL: ${url}`);
@@ -45,12 +42,14 @@ async function downloadAndUnzip(url, localPath) {
         throw new Error(`Failed to download ${url} - Status: ${response.status} ${response.statusText}. Body: ${errorBody}`);
     }
     
-    await pipeline(response.body, createWriteStream(gzPath));
-    console.log(`  Download complete. Unzipping ${path.basename(gzPath)}...`);
+    // ===================================================================
+    //  核心修复：使用Node.js原生流管道进行下载和解压，不再依赖第三方库
+    // ===================================================================
+    const gunzip = zlib.createGunzip();
+    const destination = createWriteStream(localPath);
+    await pipeline(response.body, gunzip, destination);
     
-    await gunzip(gzPath, localPath);
-    
-    await fs.unlink(gzPath);
+    console.log(`  Download and unzip complete for ${path.basename(localPath)}.`);
 }
 
 async function loadDataset(name) {
@@ -106,7 +105,7 @@ function queryDatabase(db, { types, minVotes = 0, regions, genres }) {
 }
 
 async function main() {
-    console.log('Starting IMDb Dataset Engine build process v4.3 (Absolute Paths)...');
+    console.log('Starting IMDb Dataset Engine build process v4.4 (Native Unzip)...');
     const startTime = Date.now();
     try {
         await fs.mkdir(DATASET_DIR, { recursive: true });
