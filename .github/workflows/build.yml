@@ -3,7 +3,7 @@ name: Build IMDb Discovery Engine Data
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */12 * * *'
+    - cron: '0 0 * * *' # 每天运行一次
 
 permissions:
   contents: write
@@ -11,9 +11,11 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # 增加超时设置，以防数据集下载和处理时间过长
+    timeout-minutes: 30 
     defaults:
       run:
-        working-directory: ./imdb-data-platform
+        working-directory: ./imdb-dataset-engine
 
     steps:
       - name: Checkout repository
@@ -27,7 +29,7 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: imdb-data-platform/package.json
+          cache-dependency-path: imdb-dataset-engine/package.json
 
       - name: Install dependencies
         run: npm install
@@ -41,4 +43,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'chore(data): Auto-update IMDb data marts'
-          file_pattern: 'imdb-data-platform/dist/*.json'
+          file_pattern: 'imdb-dataset-engine/dist/*.json'
