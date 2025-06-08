@@ -2,6 +2,8 @@ import fs from 'fs/promises';
 import path from 'path';
 import fetch from 'node-fetch';
 import gunzip from 'gunzip-file';
+import { pipeline } from 'stream/promises'; // <--- 核心修复：导入pipeline
+import { createWriteStream } from 'fs';      // <--- 核心修复：导入createWriteStream
 import { findByImdbId, getTmdbDetails } from './src/utils/tmdb_api.js';
 import { analyzeAndTagItem } from './src/core/analyzer.js';
 
@@ -33,10 +35,6 @@ const BUILD_MATRIX = {
 
 async function downloadAndUnzip(url, localPath) {
     const gzPath = `${localPath}.gz`;
-    
-    // ===================================================================
-    //  核心修复：在写入文件前，确保目标目录存在
-    // ===================================================================
     const dir = path.dirname(gzPath);
     await fs.mkdir(dir, { recursive: true });
 
@@ -44,9 +42,12 @@ async function downloadAndUnzip(url, localPath) {
     const response = await fetch(url);
     if (!response.ok) throw new Error(`Failed to download ${url}`);
     
-    await fs.writeFile(gzPath, response.body);
+    // ===================================================================
+    //  核心修复：使用 pipeline 来健壮地处理流式写入
+    // ===================================================================
+    await pipeline(response.body, createWriteStream(gzPath));
+    console.log(`  Download complete. Unzipping ${gzPath}...`);
     
-    console.log(`  Unzipping ${gzPath}...`);
     await gunzip(gzPath, localPath);
     
     await fs.unlink(gzPath);
