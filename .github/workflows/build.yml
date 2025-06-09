@@ -53,7 +53,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'chore(data): Auto-update IMDb discovery database'
-          file_pattern: 'imdb-data-platform/dist/database.json'
+          file_pattern: 'imdb-data-platform/dist/'
           commit_options: '--no-verify'
  
           
