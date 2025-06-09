@@ -166,21 +166,24 @@ async function shardDatabase() {
     });
 
     const writeShard = async (filePath, data) => {
-        const dir = path.dirname(filePath);
+        
+        const fullPath = path.join(FINAL_OUTPUT_DIR, filePath);
+        const dir = path.dirname(fullPath);
+        
         await fs.mkdir(dir, { recursive: true });
-        // 减小文件体积
         const minifiedData = data.map(item => ({
              id: item.id,
-             p: item.poster_path,
-             b: item.backdrop_path,
-             t: item.title,
-             r: item.vote_average,
-             y: item.release_year,
-             hs: parseFloat(item.hotness_score.toFixed(3)),
-             d: parseFloat(item.default_order.toFixed(3)),
-             mt: item.mediaType,
+             p: item.poster_path, // poster_path -> p
+             b: item.backdrop_path, // backdrop_path -> b
+             t: item.title, // title -> t
+             r: item.vote_average, // vote_average -> r
+             y: item.release_year, // release_year -> y
+             hs: parseFloat(item.hotness_score.toFixed(3)), // hotness_score -> hs
+             d: parseFloat(item.default_order.toFixed(3)), // default_order -> d
+             mt: item.mediaType, // mediaType -> mt
         }));
-        await fs.writeFile(path.join(FINAL_OUTPUT_DIR, filePath), JSON.stringify(minifiedData));
+        
+        await fs.writeFile(fullPath, JSON.stringify(minifiedData));
     };
 
     // --- Generate Shards ---
