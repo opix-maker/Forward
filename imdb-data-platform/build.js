@@ -165,26 +165,29 @@ async function shardDatabase() {
         item.mediaType = isTV ? 'tv' : 'movie';
     });
 
+
     const writeShard = async (filePath, data) => {
-        
         const fullPath = path.join(FINAL_OUTPUT_DIR, filePath);
         const dir = path.dirname(fullPath);
-        
         await fs.mkdir(dir, { recursive: true });
+        
+        
         const minifiedData = data.map(item => ({
              id: item.id,
-             p: item.poster_path, // poster_path -> p
-             b: item.backdrop_path, // backdrop_path -> b
-             t: item.title, // title -> t
-             r: item.vote_average, // vote_average -> r
-             y: item.release_year, // release_year -> y
-             hs: parseFloat(item.hotness_score.toFixed(3)), // hotness_score -> hs
-             d: parseFloat(item.default_order.toFixed(3)), // default_order -> d
-             mt: item.mediaType, // mediaType -> mt
+             p: item.poster_path,
+             b: item.backdrop_path,
+             t: item.title,
+             r: item.vote_average,
+             y: item.release_year,
+             hs: parseFloat(item.hotness_score.toFixed(3)),
+             d: parseFloat(item.default_order.toFixed(3)),
+             mt: item.mediaType,
+             o: item.overview 
         }));
         
         await fs.writeFile(fullPath, JSON.stringify(minifiedData));
     };
+
 
     // --- Generate Shards ---
     console.log('  Generating shards...');
