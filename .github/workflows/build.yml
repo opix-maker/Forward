@@ -10,15 +10,18 @@ permissions:
   actions: write 
 
 
+# 设置并发组，确保同时只有一个实例在运行，新的运行会取消旧的
+
 concurrency:
-  group: ${{ github.workflow }}-build
+  group: ${{ github.workflow }}-build 
   cancel-in-progress: true
+
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    # 设置超时时间，防止因 API 问题或数据量过大导致任务永久挂起，浪费 Action 分钟数 (例如 3 小时)
-    timeout-minutes: 180 
+    # 设置超时时间，防止因 API 问题或数据量过大导致任务永久挂起
+    timeout-minutes: 60
     
     steps:
       - name: Checkout repository
