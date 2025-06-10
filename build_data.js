@@ -386,7 +386,6 @@ async function main() {
                 finalData.airtimeRanking.anime[year][month] = {};
                 for (const sort of sortsToBuild) {
                     console.log(`- Building Anime, Year: ${year}, Month: ${month}, Sort: ${sort}`);
-                    // **核心修复**：为每个季度/全年组合都构建数据
                     finalData.airtimeRanking.anime[year][month][sort] = await buildAirtimeRanking('anime', year, month, sort, 5);
                 }
             }
@@ -395,7 +394,7 @@ async function main() {
         console.log("\n[3/3] Building Daily Calendar...");
         finalData.dailyCalendar.all_week = await buildDailyCalendar();
 
-        await fs.writeFile('precomputed_data.json', JSON.stringify(finalData, null, 2));
+        await fs.writeFile('recent_data.json', JSON.stringify(finalData, null, 2));
 
         const duration = (Date.now() - startTime) / 1000;
         console.log(`\nBuild process finished in ${duration.toFixed(2)} seconds.`);
