@@ -4,7 +4,12 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 */8 * * *'
-    - cron: '0 0 * * *'
+
+
+# 设置并发组，确保同时只有一个实例在运行，新的运行会取消旧的
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
 
 
 permissions:
@@ -17,8 +22,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 建议配置 user/email 以便 rebase 成功
       - name: Synchronize with remote branch
-        run: git pull --rebase
+        run: |
+           git config --global user.email "action@github.com"
+           git config --global user.name "GitHub Action"
+           git pull --rebase
 
       - name: Build Recent Data
         env:
