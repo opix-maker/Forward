@@ -398,7 +398,7 @@ async function main() {
 
         const duration = (Date.now() - startTime) / 1000;
         console.log(`\nBuild process finished in ${duration.toFixed(2)} seconds.`);
-        console.log("`precomputed_data.json` has been successfully generated.");
+        console.log("`recent_data.json` has been successfully generated.");
 
     } catch (error) {
         console.error("\nFATAL ERROR during build process:", error);
