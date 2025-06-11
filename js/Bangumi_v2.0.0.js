@@ -13,18 +13,19 @@ for (let year = startYear; year >= 1940; year--) {
 var WidgetMetadata = {
     id: "bangumi_charts_tmdb_v3",
     title: "Bangumi 热门榜单",
+    description: "获取Bangumi近期热门、每日放送数据，支持榜单筛选。",
     version: "2.0.0",
     author: "Autism ",
     site: "https://github.com/opix-maker/Forward",
     requiredVersion: "0.0.1",
-    detailCacheDuration: 60,
+    detailCacheDuration: 6000,
     modules: [
         {
             title: "近期热门",
             description: "按作品类型浏览近期热门内容 (固定按热度 trends 排序)",
             requiresWebView: false,
             functionName: "fetchRecentHot",
-            cacheDuration: 20000,
+            cacheDuration: 500000,
             params: [
                 { name: "category", title: "分类", type: "enumeration", value: "anime", enumOptions: [ { title: "动画", value: "anime" } ] },
                 { name: "page", title: "页码", type: "page", value: "1" }
@@ -35,6 +36,7 @@ var WidgetMetadata = {
             description: "按年份、季度/全年及作品类型浏览排行",
             requiresWebView: false,
             functionName: "fetchAirtimeRanking",
+            cacheDuration: 1000000,
             params: [
                 { name: "category", title: "分类", type: "enumeration", value: "anime", enumOptions: [ { title: "动画", value: "anime" }, { title: "三次元", value: "real" } ] },
                 { 
@@ -50,12 +52,13 @@ var WidgetMetadata = {
                 { name: "page", title: "页码", type: "page", value: "1" }
             ]
         },
-        // ... (每日放送模块保持不变)
+        
         {
             title: "每日放送",
             description: "查看指定范围的放送（数据来自Bangumi API）",
             requiresWebView: false,
             functionName: "fetchDailyCalendarApi",
+            cacheDuration: 20000,
             params: [
                 {
                     name: "filterType",
