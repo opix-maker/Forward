@@ -1,5 +1,3 @@
-
-
 const GITHUB_OWNER = "opix-maker";
 const GITHUB_REPO = "Forward";
 const GITHUB_BRANCH = "main";
@@ -125,23 +123,35 @@ const cachedRegionIdSets = {};
 async function fetchShard(shardPath) {
     if (!shardPath || typeof shardPath !== 'string' || !shardPath.endsWith('.json')) {
        return [];
-     }
-    const url = `${BASE_DATA_URL}/${shardPath}?cache_buster=${getCacheBuster()}`;
-     if (cachedData[url]) { 
+    }
+
+    const rawUrl = `${BASE_DATA_URL}/${shardPath}?cache_buster=${getCacheBuster()}`;
+
+    const encodedUrl = encodeURI(rawUrl);
+    
+    if (cachedData[encodedUrl]) { 
         if(DEBUG_LOG) console.log(`[IMDb-v1 DEBUG] Cache HIT: ${shardPath}`);
-        return cachedData[url]; 
-     }
-     if(DEBUG_LOG) console.log(`[IMDb-v1 DEBUG] Fetching: ${url}`);
+        return cachedData[encodedUrl]; 
+    }
+
+    if(DEBUG_LOG) console.log(`[IMDb-v1 DEBUG] Fetching: ${encodedUrl}`); 
     let response;
     try {
-        response = await Widget.http.get(url, { timeout: 35000, headers: {'User-Agent': 'ForwardWidget/IMDb-v1'} }); 
-    } catch (e) { console.error(`[IMDb-v1 ERROR] 网络请求失败 ${url}: ${e.message}`); throw new Error(`网络请求失败: ${e.message || '未知网络错误'}`);}
+        // 使用编码后的URL发起请求
+        response = await Widget.http.get(encodedUrl, { timeout: 35000, headers: {'User-Agent': 'ForwardWidget/IMDb-v1'} }); 
+    } catch (e) { 
+        console.error(`[IMDb-v1 ERROR] 网络请求失败 ${encodedUrl}: ${e.message}`); 
+        throw new Error(`网络请求失败: ${e.message || '未知网络错误'}`);
+    }
+
     if (!response || typeof response.statusCode !== 'number' || response.statusCode !== 200 || !response.data ) {
-       console.error(`[IMDb-v1 ERROR] 获取数据响应异常. Status: ${response ? response.statusCode : 'N/A'}, URL: ${url}`);
+       console.error(`[IMDb-v1 ERROR] 获取数据响应异常. Status: ${response ? response.statusCode : 'N/A'}, URL: ${encodedUrl}`);
         throw new Error(`获取数据失败 (Status: ${response ? response.statusCode : 'N/A'})`);
     }
-      const data = Array.isArray(response.data) ? response.data : [];
-    cachedData[url] = data;
+
+    const data = Array.isArray(response.data) ? response.data : [];
+    // 使用编码后的URL作为缓存的key
+    cachedData[encodedUrl] = data; 
     return data;
 }
 
