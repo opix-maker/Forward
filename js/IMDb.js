@@ -120,26 +120,29 @@ const cachedRegionIdSets = {};
     return Math.floor(Date.now() / (1000 * 60 * 30)); // 30 mins
  }
 
+// --- 修改后的代码 (After) - 请复制并替换 ---
 async function fetchShard(shardPath) {
     if (!shardPath || typeof shardPath !== 'string' || !shardPath.endsWith('.json')) {
        return [];
-    }
+     }
 
     const rawUrl = `${BASE_DATA_URL}/${shardPath}?cache_buster=${getCacheBuster()}`;
 
+
     const encodedUrl = encodeURI(rawUrl);
-    
+
     if (cachedData[encodedUrl]) { 
         if(DEBUG_LOG) console.log(`[IMDb-v1 DEBUG] Cache HIT: ${shardPath}`);
         return cachedData[encodedUrl]; 
     }
 
-    if(DEBUG_LOG) console.log(`[IMDb-v1 DEBUG] Fetching: ${encodedUrl}`); 
+    if(DEBUG_LOG) console.log(`[IMDb-v1 DEBUG] Fetching: ${encodedUrl}`);
     let response;
     try {
-        // 使用编码后的URL发起请求
+        // 使用编码后的 encodedUrl 发起网络请求
         response = await Widget.http.get(encodedUrl, { timeout: 35000, headers: {'User-Agent': 'ForwardWidget/IMDb-v1'} }); 
     } catch (e) { 
+
         console.error(`[IMDb-v1 ERROR] 网络请求失败 ${encodedUrl}: ${e.message}`); 
         throw new Error(`网络请求失败: ${e.message || '未知网络错误'}`);
     }
@@ -150,11 +153,9 @@ async function fetchShard(shardPath) {
     }
 
     const data = Array.isArray(response.data) ? response.data : [];
-    // 使用编码后的URL作为缓存的key
-    cachedData[encodedUrl] = data; 
+    cachedData[encodedUrl] = data;
     return data;
 }
-
 async function getAnimeIds() {
     if (animeIdCache !== null) return animeIdCache;
     try {
