@@ -19,31 +19,26 @@ jobs:
     timeout-minutes: 60 # 设置超时时间
     
     steps:
+      # --- 1. 检出代码 ---
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 保持本地分支与远程同步
-      - name: Synchronize with remote branch
-        run: |
-           git config --global user.email "action@github.com"
-           git config --global user.name "GitHub Action"
-           git pull --rebase
-
-      # --- 1. 生成日期键，用于数据缓存 ---
+      # --- 2. 生成日期键，用于数据缓存---
       - name: Get current date for cache key (UTC)
         id: date
         run: echo "date=$(date -u +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
-      # --- 2. 设置 Node.js 并配置 NPM 缓存 ---
+      # --- 3. 设置 Node.js  ---
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
-          # 修复：这里应该指向 lock 文件！
-          cache-dependency-path: imdb-data-platform/package-lock.json 
+          # 移除了 cache: 'npm'
+          # 移除了 cache-dependency-path: ...
+          # 这样它就不会尝试使用不存在或损坏的 lock 文件进行缓存
 
-      # --- 3. 缓存 IMDb 数据集和中间数据湖  ---
+      # --- 4. 缓存 IMDb 数据集和中间数据湖 (保持不变，这部分非常重要) ---
+      # 这部分缓存了 API 请求结果（30分钟的耗时），与 npm 依赖无关
       - name: Cache IMDb datasets and temp datalake
         id: cache-imdb-data
         uses: actions/cache@v4
@@ -55,13 +50,14 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-imdb-data-
 
-      # --- 4. 安装依赖 ---
+      # --- 5. 安装依赖 ---
       - name: Install dependencies
-        # 确保命令在正确的子目录中运行
         working-directory: ./imdb-data-platform
+        # 由于没有 lock 文件，npm install 会根据 package.json 安装最新的兼容版本
+        # 这将解决 EINTEGRITY 错误
         run: npm install
 
-      # --- 5. 运行构建脚本 ---
+      # --- 6. 运行构建脚本 ---
       - name: Run build script
         working-directory: ./imdb-data-platform
         env:
@@ -69,21 +65,19 @@ jobs:
           TMDB_API_KEY: ${{ secrets.TMDB_ACCESS_TOKEN_V4 }} 
         run: npm run build 
 
-      # --- 6. 部署构建产物  ---
+      # --- 7. 部署构建 ---
       - name: Deploy generated data to target branch
         uses: peaceiris/actions-gh-pages@v3
         with:
-          # 使用 GitHub 提供的 Token 进行认证
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # 指定要发布的构建产物目录
+          # 要发布的目录
           publish_dir: ./imdb-data-platform/dist
-          # 指定目标分支 (例如 data-deploy 或 gh-pages)
+          # 目标分支 
           publish_branch: data-deploy 
           commit_message: 'Deploy: Automated data update ${{ steps.date.outputs.date }}'
-          # 每次部署都清空目标分支，只保留最新数据
           keep_files: false 
 
-      # --- 7. 失败通知 ---
+      # --- 8. 失败通知 ---
       - name: Notify on Failure
         if: failure() 
         run: echo "❌ Build workflow failed! Check logs."
