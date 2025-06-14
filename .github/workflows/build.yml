@@ -5,10 +5,8 @@ on:
   schedule:
     - cron: '0 */12 * * *' # 每 12 小时触发一次
 
-# --- 修改权限 ---
 permissions:
-  contents: write
-  # actions: write
+  contents: write # 部署到分支需要写权限
 
 # 并发控制
 concurrency:
@@ -18,33 +16,34 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 60 # 设置超时时间
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 保持同步
+      # 保持本地分支与远程同步
       - name: Synchronize with remote branch
         run: |
            git config --global user.email "action@github.com"
            git config --global user.name "GitHub Action"
            git pull --rebase
 
-      # 生成缓存键 
+      # --- 1. 生成日期键，用于数据缓存 ---
       - name: Get current date for cache key (UTC)
         id: date
         run: echo "date=$(date -u +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
-      # Node.js 设置 
+      # --- 2. 设置 Node.js 并配置 NPM 缓存 ---
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
+          # 修复：这里应该指向 lock 文件！
           cache-dependency-path: imdb-data-platform/package-lock.json 
 
-      # 添加缓存 
+      # --- 3. 缓存 IMDb 数据集和中间数据湖  ---
       - name: Cache IMDb datasets and temp datalake
         id: cache-imdb-data
         uses: actions/cache@v4
@@ -56,36 +55,35 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-imdb-data-
 
-      # 安装依赖 (保持不变)
+      # --- 4. 安装依赖 ---
       - name: Install dependencies
+        # 确保命令在正确的子目录中运行
         working-directory: ./imdb-data-platform
         run: npm install
 
-      # 运行构建脚本
+      # --- 5. 运行构建脚本 ---
       - name: Run build script
         working-directory: ./imdb-data-platform
         env:
-    
+          # 将您的 Secret 映射到脚本期望的环境变量名
           TMDB_API_KEY: ${{ secrets.TMDB_ACCESS_TOKEN_V4 }} 
         run: npm run build 
 
-      
-
+      # --- 6. 部署构建产物  ---
       - name: Deploy generated data to target branch
         uses: peaceiris/actions-gh-pages@v3
         with:
-          # 使用 GitHub 默认提供的 Token 进行身份验证
+          # 使用 GitHub 提供的 Token 进行认证
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # 指定要部署的目录
+          # 指定要发布的构建产物目录
           publish_dir: ./imdb-data-platform/dist
-          # 指定目标分支
+          # 指定目标分支 (例如 data-deploy 或 gh-pages)
           publish_branch: data-deploy 
-          # 自定义提交信息
-          commit_message: 'Deploy: Auto-update IMDb discovery database ${{ steps.date.outputs.date }}'
-          # 保持目标分支干净
+          commit_message: 'Deploy: Automated data update ${{ steps.date.outputs.date }}'
+          # 每次部署都清空目标分支，只保留最新数据
           keep_files: false 
 
-      # 失败通知
+      # --- 7. 失败通知 ---
       - name: Notify on Failure
         if: failure() 
         run: echo "❌ Build workflow failed! Check logs."
