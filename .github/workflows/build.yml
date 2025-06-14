@@ -16,14 +16,14 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 60 # 设置超时时间
+    timeout-minutes: 60
     
     steps:
       # --- 1. 检出代码 ---
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # --- 2. 生成日期键，用于数据缓存---
+      # --- 2. 生成日期键  ---
       - name: Get current date for cache key (UTC)
         id: date
         run: echo "date=$(date -u +'%Y-%m-%d')" >> $GITHUB_OUTPUT
@@ -33,12 +33,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          # 移除了 cache: 'npm'
-          # 移除了 cache-dependency-path: ...
-          # 这样它就不会尝试使用不存在或损坏的 lock 文件进行缓存
 
-      # --- 4. 缓存 IMDb 数据集和中间数据湖 (保持不变，这部分非常重要) ---
-      # 这部分缓存了 API 请求结果（30分钟的耗时），与 npm 依赖无关
+      # --- 4. 缓存 IMDb 数据集和中间数据湖 ---
       - name: Cache IMDb datasets and temp datalake
         id: cache-imdb-data
         uses: actions/cache@v4
@@ -53,26 +49,22 @@ jobs:
       # --- 5. 安装依赖 ---
       - name: Install dependencies
         working-directory: ./imdb-data-platform
-        # 由于没有 lock 文件，npm install 会根据 package.json 安装最新的兼容版本
-        # 这将解决 EINTEGRITY 错误
+        # 根据 package.json 安装依赖
         run: npm install
 
-      # --- 6. 运行构建脚本 ---
+      # --- 6. 运行构建脚本  ---
       - name: Run build script
         working-directory: ./imdb-data-platform
         env:
-          # 将您的 Secret 映射到脚本期望的环境变量名
-          TMDB_API_KEY: ${{ secrets.TMDB_ACCESS_TOKEN_V4 }} 
+          TMDB_ACCESS_TOKEN_V4: ${{ secrets.TMDB_ACCESS_TOKEN_V4 }} 
         run: npm run build 
 
-      # --- 7. 部署构建 ---
+      # --- 7. 部署构建  ---
       - name: Deploy generated data to target branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # 要发布的目录
           publish_dir: ./imdb-data-platform/dist
-          # 目标分支 
           publish_branch: data-deploy 
           commit_message: 'Deploy: Automated data update ${{ steps.date.outputs.date }}'
           keep_files: false 
