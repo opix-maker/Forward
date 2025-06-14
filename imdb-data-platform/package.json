@@ -1,7 +1,7 @@
 {
-  "name": "imdb-discovery-engine",
-  "version": "7.0.0",
-  "description": "Builds a comprehensive data lake by processing the official IMDb datasets.",
+  "name": "imdb-data-builder",
+  "version": "1.0.0",
+  "description": "Builds and shards IMDb/TMDB data for fast client-side access.",
   "main": "build.js",
   "type": "module",
   "scripts": {
@@ -9,5 +9,8 @@
   },
   "dependencies": {
     "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
