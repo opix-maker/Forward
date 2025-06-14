@@ -12,12 +12,14 @@ import { analyzeAndTagItem } from './src/core/analyzer.js';
 // --- CONFIGURATION ---
 const MAX_CONCURRENT_ENRICHMENTS = 80;
 const MAX_DOWNLOAD_AGE_MS = 20 * 60 * 60 * 1000; // 20 hours
-const MIN_VOTES = 2500; 
-const MIN_YEAR = 1990; 
+
+const MIN_VOTES = 1000; 
+const MIN_YEAR = 1980; 
 const MIN_RATING = 6.0; 
 const ALLOWED_TITLE_TYPES = new Set(['movie', 'tvSeries', 'tvMiniSeries', 'tvMovie']);
 const CURRENT_YEAR = new Date().getFullYear();
 const RECENT_YEAR_THRESHOLD = CURRENT_YEAR - 1;
+
 const ITEMS_PER_PAGE = 30; 
 const SORT_CONFIG = {
     // key: 客户端使用的短名称, value: data lake 中的完整属性名
@@ -35,10 +37,10 @@ const DATA_LAKE_FILE = path.join(TEMP_DIR, 'datalake.jsonl');
 const DATASETS = {
     basics: { url: 'https://datasets.imdbws.com/title.basics.tsv.gz', local: 'title.basics.tsv' },
     ratings: { url: 'https://datasets.imdbws.com/title.ratings.tsv.gz', local: 'title.ratings.tsv' },
+    akas: { url: 'https://datasets.imdbws.com/title.akas.tsv.gz', local: 'title.akas.tsv' }, 
 };
 
 // --- 分片配置 ---
-// 注意: 'all' 必须包含在内
 const REGIONS = ['all', 'region:chinese', 'region:us-eu', 'region:east-asia', 'country:cn', 'country:hk', 'country:tw', 'country:us', 'country:gb', 'country:jp', 'country:kr', 'country:fr', 'country:de', 'country:ca', 'country:au'];
 const GENRES_AND_THEMES = ['genre:爱情', 'genre:冒险', 'genre:悬疑', 'genre:惊悚', 'genre:恐怖', 'genre:科幻', 'genre:奇幻', 'genre:动作', 'genre:喜剧', 'genre:剧情', 'genre:历史', 'genre:战争', 'genre:犯罪', 'theme:whodunit', 'theme:spy', 'theme:courtroom', 'theme:slice-of-life', 'theme:wuxia', 'theme:superhero', 'theme:cyberpunk', 'theme:space-opera', 'theme:time-travel', 'theme:post-apocalyptic', 'theme:mecha', 'theme:zombie', 'theme:monster', 'theme:ghost', 'theme:magic', 'theme:gangster', 'theme:film-noir', 'theme:serial-killer', 'theme:xianxia', 'theme:kaiju', 'theme:isekai'];
 const YEARS = Array.from({length: CURRENT_YEAR - 1990 + 1}, (_, i) => 1990 + i).reverse();
@@ -55,23 +57,39 @@ async function downloadAndUnzipWithCache(url, localPath, maxAgeMs) {
        }
    } catch (e) { /* no cache */ }
    console.log(`  Downloading from: ${url}`);
-   // 使用 node-fetch V2+ 兼容的写法
    const response = await fetch(url, { headers: { 'User-Agent': 'IMDb-Builder/1.0' } });
    if (!response.ok) throw new Error(`Failed to download ${url}: ${response.statusText}`);
    const gunzip = zlib.createGunzip();
    const destination = createWriteStream(localPath);
-   await pipeline(response.body, gunzip, destination);
-   console.log(`  Download and unzip complete for ${path.basename(localPath)}.`);
+   // 确保 response.body 可读
+   if (!response.body) throw new Error(`Response body is null for ${url}`);
+   try {
+        await pipeline(response.body, gunzip, destination);
+        console.log(`  Download and unzip complete for ${path.basename(localPath)}.`);
+   } catch (error) {
+        console.error(`  Error during download/unzip for ${url}:`, error);
+        // 清理失败的文件
+        await fs.unlink(localPath).catch(() => {}); 
+        throw error;
+   }
 }
 
 async function processTsvByLine(filePath, processor) {
    const fileStream = createReadStream(filePath);
    const rl = readline.createInterface({ input: fileStream, crlfDelay: Infinity });
    let isFirstLine = true;
+   let count = 0;
    for await (const line of rl) {
        if (isFirstLine) { isFirstLine = false; continue; }
-       if (line && line.includes('\t')) processor(line);
+       if (line && line.includes('\t')) {
+           processor(line);
+           count++;
+           if (count % 500000 === 0) {
+                process.stdout.write(`    Processed ${count} lines...\r`);
+           }
+       }
    }
+   process.stdout.write(`    Processed total ${count} lines from ${path.basename(filePath)}.\n`);
 }
 
 async function processInParallel(items, concurrency, task) {
@@ -95,50 +113,96 @@ async function processInParallel(items, concurrency, task) {
 
 // --- 主要构建流程 ---
 
-// --- Phase 1-3: 构建数据湖 ---
+// --- Phase 1-3: 构建数据湖 (集成 AKAS) ---
 async function buildDataLake() {
-    console.log('\nPHASE 1: Building indexes & Caching...');
+    // --- Phase 1: 构建评分索引 ---
+    console.log('\nPHASE 1: Building ratings index & Caching...');
     const ratingsIndex = new Map();
     const ratingsPath = path.join(DATASET_DIR, DATASETS.ratings.local);
     await downloadAndUnzipWithCache(DATASETS.ratings.url, ratingsPath, MAX_DOWNLOAD_AGE_MS);
     await processTsvByLine(ratingsPath, (line) => {
-        const [tconst, averageRating, numVotes] = line.split('\t');
-        const votes = parseInt(numVotes, 10) || 0; const rating = parseFloat(averageRating) || 0;
-        if (votes >= MIN_VOTES && rating >= MIN_RATING) ratingsIndex.set(tconst, { rating, votes });
+        // tconst[0], averageRating[1], numVotes[2]
+        const parts = line.split('\t');
+        const votes = parseInt(parts[2], 10) || 0; 
+        const rating = parseFloat(parts[1]) || 0;
+        // 使用新的 MIN_VOTES (1000)
+        if (votes >= MIN_VOTES && rating >= MIN_RATING) ratingsIndex.set(parts[0], { rating, votes });
     });
-    console.log(`  Ratings index built with ${ratingsIndex.size} items.`);
+    console.log(`  Ratings index built with ${ratingsIndex.size} items (Min Votes: ${MIN_VOTES}).`);
 
+    // --- Phase 2: 筛选基础ID池 ---
     console.log(`\nPHASE 2: Streaming basics & filtering...`);
     const idPool = new Set();
     const basicsPath = path.join(DATASET_DIR, DATASETS.basics.local);
     await downloadAndUnzipWithCache(DATASETS.basics.url, basicsPath, MAX_DOWNLOAD_AGE_MS);
     await processTsvByLine(basicsPath, (line) => {
-        const [tconst, titleType, , , isAdult, startYear] = line.split('\t');
-        const year = parseInt(startYear, 10);
-        if (!tconst.startsWith('tt') || isAdult === '1' || !ALLOWED_TITLE_TYPES.has(titleType) || isNaN(year) || year < MIN_YEAR || !ratingsIndex.has(tconst)) return;
+        // tconst[0], titleType[1], ..., isAdult[4], startYear[5]
+        const parts = line.split('\t');
+        const tconst = parts[0];
+        const year = parseInt(parts[5], 10);
+        // 检查条件：有效ID, 非成人, 允许的类型, 年份达标, 有评分记录
+        if (!tconst.startsWith('tt') || parts[4] === '1' || !ALLOWED_TITLE_TYPES.has(parts[1]) || isNaN(year) || year < MIN_YEAR || !ratingsIndex.has(tconst)) return;
         idPool.add(tconst);
     });
     console.log(`  Filtered ID pool contains ${idPool.size} items to enrich.`);
 
+    // --- Phase 2.5 (NEW): 构建地区/语言索引 (仅针对 ID Pool) ---
+    console.log(`\nPHASE 2.5: Building region/language index from AKAS...`);
+    const akasIndex = new Map(); // Map<tconst, { regions: Set<string>, languages: Set<string> }>
+    const akasPath = path.join(DATASET_DIR, DATASETS.akas.local);
+    await downloadAndUnzipWithCache(DATASETS.akas.url, akasPath, MAX_DOWNLOAD_AGE_MS);
+    
+    await processTsvByLine(akasPath, (line) => {
+        // titleId[0], ordering[1], title[2], region[3], language[4]
+        const parts = line.split('\t');
+        const tconst = parts[0];
+
+        // 只处理我们需要的 ID
+        if (idPool.has(tconst)) {
+            // IMDb 数据使用 '\N' 表示 NULL
+            const region = parts[3] && parts[3] !== '\\N' ? parts[3].toLowerCase() : null;
+            const language = parts[4] && parts[4] !== '\\N' ? parts[4].toLowerCase() : null;
+
+            if (!akasIndex.has(tconst)) {
+                akasIndex.set(tconst, { regions: new Set(), languages: new Set() });
+            }
+            const entry = akasIndex.get(tconst);
+            if (region) entry.regions.add(region);
+            if (language) entry.languages.add(language);
+        }
+    });
+    console.log(`  AKAS index built for ${akasIndex.size} items.`);
+
+
+    // --- Phase 3: 丰富数据 (使用 TMDB + AKAS 索引) ---
     console.log(`\nPHASE 3: Enriching items via TMDB API...`);
     // 确保 TEMP_DIR 存在且为空
     await fs.rm(TEMP_DIR, { recursive: true, force: true }).catch(() => {}); 
     await fs.mkdir(TEMP_DIR, { recursive: true });
 
     const writeStream = createWriteStream(DATA_LAKE_FILE, { flags: 'a' });
-    const enrichmentTask = async (id) => {
+    
+    const enrichmentTask = async (imdbId) => { // 传入的是 IMDb ID (tconst)
          try {
-            const info = await findByImdbId(id);
+            // 1. 通过 IMDb ID 查找 TMDB ID 和类型
+            const info = await findByImdbId(imdbId);
             if (!info || !info.id || !info.media_type) return;
+
+            // 2. 获取 TMDB 详情
             const details = await getTmdbDetails(info.id, info.media_type);
             if (details) {
-                const analyzedItem = analyzeAndTagItem(details); 
+                // 3. 获取该 IMDb ID 的 AKAS 信息
+                const imdbAkasInfo = akasIndex.get(imdbId) || { regions: new Set(), languages: new Set() };
+                
+                // 4. 分析和打标签 (传入 TMDB 详情和 IMDb AKAS 信息)
+                const analyzedItem = analyzeAndTagItem(details, imdbAkasInfo); 
                 if (analyzedItem) {
+                    // 写入数据湖
                     writeStream.write(JSON.stringify(analyzedItem) + '\n');
                 }
             }
         } catch (error) {
-            console.warn(`  Skipping ID ${id} due to enrichment error: ${error.message}`);
+            console.warn(`  Skipping ID ${imdbId} due to enrichment error: ${error.message}`);
         }
     };
     await processInParallel(Array.from(idPool), MAX_CONCURRENT_ENRICHMENTS, enrichmentTask);
@@ -147,9 +211,9 @@ async function buildDataLake() {
 }
 
 
-// --- Phase 4: 分片、排序和分页 ---
+// --- Phase 4: 分片、排序和分页 (保持不变) ---
 
-// 精简条目 (用于最终输出)，包含所有必要字段
+// 精简条目
 function minifyItem(item) {
     return {
         id: item.id,
@@ -158,7 +222,7 @@ function minifyItem(item) {
         t: item.title,             // 标题
         r: item.vote_average,      // 评分 (原始评分)
         y: item.release_year,      // 年份
-        rd: item.release_date,     // <<< 完整日期
+        rd: item.release_date,     // 完整日期
         hs: parseFloat(item.hotness_score.toFixed(3)), // 热度分
         d: parseFloat(item.default_order.toFixed(3)),  // 默认分 (popularity)
         mt: item.mediaType,        // 媒体类型: movie, tv, anime
@@ -168,10 +232,7 @@ function minifyItem(item) {
 
 // 排序、分页并写入分片
 async function processAndWriteSortedPaginatedShards(basePath, data) {
-    if (data.length === 0) {
-        // console.log(`  Skipping empty shard: ${basePath}`);
-        return;
-    }
+    if (data.length === 0) return;
     
     const metadata = { total_items: data.length, items_per_page: ITEMS_PER_PAGE, pages: {} };
 
@@ -202,12 +263,11 @@ async function processAndWriteSortedPaginatedShards(basePath, data) {
         }
     }
 
-    // 4. 写入元数据文件: dist/base/path/meta.json
+    // 4. 写入元数据文件: dist/base/path/meta.json (可选，方便调试)
     const metaPath = path.join(FINAL_OUTPUT_DIR, basePath, 'meta.json');
     const metaDir = path.dirname(metaPath);
     await fs.mkdir(metaDir, { recursive: true });
     await fs.writeFile(metaPath, JSON.stringify(metadata));
-    // console.log(`  ✅ Generated shard: ${basePath} (${data.length} items, ${Object.keys(metadata.pages).length} sorts)`);
 }
 
 
@@ -246,23 +306,19 @@ async function shardDatabase() {
     });
 
 
-    // --- 生成分片 (使用预排序和预分页) ---
+    // --- 生成分片 ---
     console.log('  Generating sorted and paginated shards...');
     let shardCount = 0;
 
     const contentTypes = ['all', 'movie', 'tv', 'anime'];
-    const definedRegions = REGIONS; // 使用 build.js 中定义的 region 列表
+    const definedRegions = REGIONS; 
 
-    // 辅助函数
+    // 辅助函数：根据类型和地区过滤数据
     const filterData = (baseData, type, region) => {
         let filtered = baseData;
-        
-        // 1. 按类型过滤
         if (type !== 'all') {
             filtered = filtered.filter(i => i.mediaType === type);
         }
-
-        // 2. 按地区过滤
         if (region !== 'all') {
             filtered = filtered.filter(i => i.semantic_tags.includes(region));
         }
@@ -270,7 +326,6 @@ async function shardDatabase() {
     };
 
     // 1. 近期热门 (结合 Type 和 Region)
-    console.log('  Processing: Recent Hot...');
     const recentHotBase = database.filter(i => i.release_year >= RECENT_YEAR_THRESHOLD);
     for (const type of contentTypes) {
         for (const region of definedRegions) {
@@ -282,8 +337,6 @@ async function shardDatabase() {
     }
 
     // 2. 按分类/主题 (结合 Type 和 Region)
-    console.log('  Processing: Categories/Themes...');
-    // 添加“全部分类”
     const allCategories = ['all', ...GENRES_AND_THEMES]; 
     for (const tag of allCategories) {
         const tagBaseData = (tag === 'all') ? database : database.filter(i => i.semantic_tags.includes(tag));
@@ -298,8 +351,6 @@ async function shardDatabase() {
     }
 
     // 3. 按年份 (结合 Type 和 Region)
-    console.log('  Processing: Years...');
-    // 添加“全部年份”
     const allYears = ['all', ...YEARS]; 
     for (const year of allYears) {
         const yearBaseData = (year === 'all') ? database : database.filter(i => i.release_year === year);
@@ -314,8 +365,6 @@ async function shardDatabase() {
     }
 
     // 4. 独立的电影/剧集/动画列表 (按 Region)
-    // 这些是之前客户端直接调用的，现在也统一为预分页
-    console.log('  Processing: Direct Types (Movies, TV, Anime)...');
     const directTypes = [
         { name: 'movies', mediaType: 'movie' },
         { name: 'tvseries', mediaType: 'tv' },
@@ -346,7 +395,7 @@ async function shardDatabase() {
 
 // --- 主函数 ---
 async function main() {
-    console.log('Starting IMDb Sharded Build Process...');
+    console.log('Starting IMDb Sharded Build Process (v2.1)...');
     const startTime = Date.now();
     try {
         await buildDataLake();
@@ -354,7 +403,7 @@ async function main() {
         const duration = (Date.now() - startTime) / 1000;
         console.log(`\n✅ Build process successful! Took ${duration.toFixed(2)} seconds.`);
     } catch (error) {
-        console.error('\n❌ FATAL ERROR during build process:', error);
+        console.error('\n❌ FATAL ERROR during build process:', error.stack || error);
         process.exit(1);
     } finally {
         // 清理临时文件 (开发时可以注释掉以便检查 datalake.jsonl)
