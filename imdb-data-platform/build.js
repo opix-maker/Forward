@@ -10,17 +10,20 @@ import { findByImdbId, getTmdbDetails } from './src/utils/tmdb_api.js';
 import { analyzeAndTagItem } from './src/core/analyzer.js';
 
 // --- CONFIGURATION ---
-const MAX_CONCURRENT_ENRICHMENTS = 80; // API 并发数
+const MAX_CONCURRENT_ENRICHMENTS = 80;
 const MAX_CONCURRENT_FILE_IO = 64;     
-const MAX_DOWNLOAD_AGE_MS = 20 * 60 * 60 * 1000; // 20 hours
 
+// --- 缓存设置 ---
+const MAX_DOWNLOAD_AGE_MS = 20 * 60 * 60 * 1000; // 20 hours 
+const DATA_LAKE_CACHE_AGE_MS = 20 * 60 * 60 * 1000; 
+
+// --- 阈值和参数 ---
 const MIN_VOTES = 1000; 
 const MIN_YEAR = 1990; 
 const MIN_RATING = 6.0; 
 const ALLOWED_TITLE_TYPES = new Set(['movie', 'tvSeries', 'tvMiniSeries', 'tvMovie']);
 const CURRENT_YEAR = new Date().getFullYear();
 const RECENT_YEAR_THRESHOLD = CURRENT_YEAR - 1;
-
 const ITEMS_PER_PAGE = 30;
 const SORT_CONFIG = { 'hs': 'hotness_score', 'r': 'vote_average', 'd': 'default_order' };
 
@@ -28,7 +31,7 @@ const SORT_CONFIG = { 'hs': 'hotness_score', 'r': 'vote_average', 'd': 'default_
 const DATASET_DIR = './datasets';
 const TEMP_DIR = './temp';
 const FINAL_OUTPUT_DIR = './dist';
-const DATA_LAKE_FILE = path.join(TEMP_DIR, 'datalake.jsonl');
+const DATA_LAKE_FILE = path.join(TEMP_DIR, 'datalake.jsonl'); // 我们的核心缓存文件
 
 const DATASETS = {
     basics: { url: 'https://datasets.imdbws.com/title.basics.tsv.gz', local: 'title.basics.tsv' },
@@ -41,7 +44,27 @@ const REGIONS = ['all', 'region:chinese', 'region:us-eu', 'region:east-asia', 'c
 const GENRES_AND_THEMES = ['genre:爱情', 'genre:冒险', 'genre:悬疑', 'genre:惊悚', 'genre:恐怖', 'genre:科幻', 'genre:奇幻', 'genre:动作', 'genre:喜剧', 'genre:剧情', 'genre:历史', 'genre:战争', 'genre:犯罪', 'theme:whodunit', 'theme:spy', 'theme:courtroom', 'theme:slice-of-life', 'theme:wuxia', 'theme:superhero', 'theme:cyberpunk', 'theme:space-opera', 'theme:time-travel', 'theme:post-apocalyptic', 'theme:mecha', 'theme:zombie', 'theme:monster', 'theme:ghost', 'theme:magic', 'theme:gangster', 'theme:film-noir', 'theme:serial-killer', 'theme:xianxia', 'theme:kaiju', 'theme:isekai'];
 const YEARS = Array.from({length: CURRENT_YEAR - 1990 + 1}, (_, i) => 1990 + i).reverse();
 
+
 // --- 辅助函数 ---
+
+// --- 缓存检查函数 ---
+async function isDataLakeCacheValid(filePath, maxAgeMs) {
+    try {
+        const stats = await fs.stat(filePath);
+        const ageMs = Date.now() - stats.mtimeMs;
+        console.log(`  > Data Lake file found. Age: ${(ageMs / 1000 / 60).toFixed(1)} minutes.`);
+        return ageMs < maxAgeMs;
+    } catch (e) {
+        if (e.code === 'ENOENT') {
+            console.log('  > Data Lake file not found.');
+        } else {
+            console.error('  > Error checking Data Lake cache:', e.message);
+        }
+        return false; // 文件不存在或读取错误
+    }
+}
+
+// --- 下载和解压 ---
 async function downloadAndUnzipWithCache(url, localPath, maxAgeMs) {
     const dir = path.dirname(localPath);
     await fs.mkdir(dir, { recursive: true });
@@ -68,6 +91,7 @@ async function downloadAndUnzipWithCache(url, localPath, maxAgeMs) {
    }
 }
 
+// --- TSV 文件处理  ---
 async function processTsvByLine(filePath, processor) {
    const fileStream = createReadStream(filePath);
    const rl = readline.createInterface({ input: fileStream, crlfDelay: Infinity });
@@ -86,7 +110,7 @@ async function processTsvByLine(filePath, processor) {
    process.stdout.write(`    Processed total ${count} lines from ${path.basename(filePath)}.\n`);
 }
 
-// 核心并发控制函数 (用于 Phase 3 和 Phase 4)
+// --- 核心并发控制函数 ---
 async function processInParallel(items, concurrency, task) {
    const queue = [...items]; 
    let processedCount = 0; 
@@ -97,7 +121,6 @@ async function processInParallel(items, concurrency, task) {
        while (queue.length > 0) {
            const item = queue.shift();
            if (item) {
-               // 执行任务，并捕获返回值（例如文件写入数量）
                const result = await task(item);
                processedCount++;
 
@@ -106,7 +129,8 @@ async function processInParallel(items, concurrency, task) {
                }
 
                // 调整进度更新频率，避免控制台输出混乱
-               if (processedCount % Math.ceil(concurrency / 2) === 0 || processedCount === totalCount) {
+               const updateFrequency = Math.max(1, Math.ceil(concurrency / 4));
+               if (processedCount % updateFrequency === 0 || processedCount === totalCount) {
                    let progressLine = `  Progress: ${processedCount} / ${totalCount}`;
                    if (totalFiles > 0) {
                        progressLine += ` (Files written: ${totalFiles})`;
@@ -117,14 +141,18 @@ async function processInParallel(items, concurrency, task) {
        }
    };
 
-   // 启动指定数量的 worker
    const workers = Array(Math.min(concurrency, items.length)).fill(null).map(() => worker());
    await Promise.all(workers);
-   process.stdout.write('\n'); // 确保最后换行
+   process.stdout.write('\n');
    return totalFiles;
 }
 
-// --- Phase 1-3: 构建数据湖 ---
+
+// --- Phase 1-3: 构建数据湖 (仅在缓存失效时运行) ---
+// 存储全局索引，以便在 Phase 3 使用
+let idPool = new Map();
+let akasIndex = new Map();
+
 async function buildDataLake() {
     // --- Phase 1: 评分索引 ---
     console.log('\nPHASE 1: Building ratings index & Caching...');
@@ -140,7 +168,7 @@ async function buildDataLake() {
 
     // --- Phase 2: ID 池 + IMDb 类型 ---
     console.log(`\nPHASE 2: Streaming basics, filtering, and extracting IMDb genres...`);
-    const idPool = new Map(); // Map<tconst, genresString>
+    idPool.clear(); // 使用全局变量
     const basicsPath = path.join(DATASET_DIR, DATASETS.basics.local);
     await downloadAndUnzipWithCache(DATASETS.basics.url, basicsPath, MAX_DOWNLOAD_AGE_MS);
     await processTsvByLine(basicsPath, (line) => {
@@ -155,7 +183,7 @@ async function buildDataLake() {
 
     // --- Phase 2.5: AKAS 地区/语言索引 ---
     console.log(`\nPHASE 2.5: Building region/language index from AKAS...`);
-    const akasIndex = new Map(); // Map<tconst, { regions: Set<string>, languages: Set<string> }>
+    akasIndex.clear(); // 使用全局变量
     const akasPath = path.join(DATASET_DIR, DATASETS.akas.local);
     await downloadAndUnzipWithCache(DATASETS.akas.url, akasPath, MAX_DOWNLOAD_AGE_MS);
     await processTsvByLine(akasPath, (line) => {
@@ -174,8 +202,11 @@ async function buildDataLake() {
 
     // --- Phase 3: TMDB API 丰富 ---
     console.log(`\nPHASE 3: Enriching items via TMDB API (Concurrency: ${MAX_CONCURRENT_ENRICHMENTS})...`);
+    
+    // <<< 重要改动: 仅在执行 buildDataLake 时清理并创建 TEMP 目录
     await fs.rm(TEMP_DIR, { recursive: true, force: true }).catch(() => {}); 
     await fs.mkdir(TEMP_DIR, { recursive: true });
+
     const writeStream = createWriteStream(DATA_LAKE_FILE, { flags: 'a' });
     
     const enrichmentTask = async (imdbId) => {
@@ -193,20 +224,20 @@ async function buildDataLake() {
                 }
             }
         } catch (error) {
-            console.warn(`  Skipping ID ${imdbId} due to enrichment error: ${error.message}`);
+            // console.warn(`  Skipping ID ${imdbId} due to enrichment error: ${error.message}`);
         }
     };
 
     // 使用并发控制函数
     await processInParallel(Array.from(idPool.keys()), MAX_CONCURRENT_ENRICHMENTS, enrichmentTask);
     await new Promise(resolve => writeStream.end(resolve));
-    console.log(`  Data Lake written to ${DATA_LAKE_FILE}`);
+    console.log(`  Data Lake freshly built and written to ${DATA_LAKE_FILE}`);
 }
 
 
-// --- Phase 4: 分片、排序和分页 (并行 I/O + 并发控制) ---
+// --- Phase 4: 分片、排序和分页 ---
 
-// 精简条目
+// 精简条目 
 function minifyItem(item) {
     return {
         id: item.id,
@@ -217,13 +248,10 @@ function minifyItem(item) {
     };
 }
 
-// --- I/O 优化辅助 ---
-// 使用 Map 异步创建和缓存目录
+// I/O 优化辅助 
 const dirCreationPromises = new Map();
 async function ensureDir(dir) {
-    if (dirCreationPromises.has(dir)) {
-        return dirCreationPromises.get(dir);
-    }
+    if (dirCreationPromises.has(dir)) return dirCreationPromises.get(dir);
     const promise = fs.mkdir(dir, { recursive: true }).catch(err => {
         if (err.code !== 'EEXIST') throw err; 
     });
@@ -231,18 +259,16 @@ async function ensureDir(dir) {
     return promise;
 }
 
-// 单个分片的处理函数 (并行写入文件，但由外部控制并发数)
+// 单个分片的处理函数 
 async function processAndWriteSortedPaginatedShards(task) {
-    const { basePath, data } = task; // 接收任务对象
-    if (data.length === 0) return 0; // 返回写入的文件数 0
+    const { basePath, data } = task;
+    if (data.length === 0) return 0;
 
-    const currentShardWritePromises = []; // 当前分片内的文件写入 Promise
+    const currentShardWritePromises = [];
     const metadata = { total_items: data.length, items_per_page: ITEMS_PER_PAGE, pages: {} };
 
     for (const [sortPrefix, internalKey] of Object.entries(SORT_CONFIG)) {
-        // 1. 排序 (CPU操作)
         const sortedData = [...data].sort((a, b) => (b[internalKey] || 0) - (a[internalKey] || 0));
-
         const numPages = Math.ceil(sortedData.length / ITEMS_PER_PAGE);
         metadata.pages[sortPrefix] = numPages;
 
@@ -254,7 +280,6 @@ async function processAndWriteSortedPaginatedShards(task) {
             const finalPath = path.join(FINAL_OUTPUT_DIR, basePath, `by_${sortPrefix}`, `page_${page}.json`);
             const dir = path.dirname(finalPath);
             
-            // 异步确保目录存在，然后异步写入
             const writePromise = ensureDir(dir).then(() => 
                 fs.writeFile(finalPath, JSON.stringify(minifiedPageData))
             );
@@ -262,7 +287,6 @@ async function processAndWriteSortedPaginatedShards(task) {
         }
     }
 
-    // 写入元数据 (异步)
     const metaPath = path.join(FINAL_OUTPUT_DIR, basePath, 'meta.json');
     const metaDir = path.dirname(metaPath);
     const metaWritePromise = ensureDir(metaDir).then(() => 
@@ -270,23 +294,27 @@ async function processAndWriteSortedPaginatedShards(task) {
     );
     currentShardWritePromises.push(metaWritePromise);
 
-    // 等待当前分片的所有文件写入完成
     await Promise.all(currentShardWritePromises);
-
-    // 返回写入的文件数量
     return currentShardWritePromises.length; 
 }
 
-
-// 数据库分片主函数 (使用并发控制)
+// 数据库分片主函数 
 async function shardDatabase() {
     console.log(`\nPHASE 4: Sharding, Sorting, and Paginating database (I/O Concurrency: ${MAX_CONCURRENT_FILE_IO})...`);
     await fs.rm(FINAL_OUTPUT_DIR, { recursive: true, force: true }).catch(() => {});
     await fs.mkdir(FINAL_OUTPUT_DIR, { recursive: true });
-    dirCreationPromises.clear(); // 重置目录缓存
+    dirCreationPromises.clear();
 
     // --- 加载数据湖 ---
     const database = [];
+    // 确保文件存在
+    try {
+        await fs.access(DATA_LAKE_FILE, fsConstants.R_OK);
+    } catch (e) {
+        console.error(`\n❌ FATAL ERROR: Data Lake file ${DATA_LAKE_FILE} not found or not readable.`);
+        throw new Error("Data Lake file missing.");
+    }
+    
     const rl = readline.createInterface({ input: createReadStream(DATA_LAKE_FILE), crlfDelay: Infinity });
     for await (const line of rl) { if (line.trim()) database.push(JSON.parse(line)); }
     console.log(`  Loaded ${database.length} items from data lake.`);
@@ -308,15 +336,13 @@ async function shardDatabase() {
         item.default_order = pop;
     });
 
-
     // --- 收集所有分片任务 ---
     console.log('  Collecting all shard tasks...');
-    const shardTasksDefinitions = []; // 存储所有任务的定义 { basePath, data }
+    const shardTasksDefinitions = []; // { basePath, data }
 
     const contentTypes = ['all', 'movie', 'tv', 'anime'];
     const definedRegions = REGIONS; 
 
-    // 辅助函数：过滤数据 
     const filterData = (baseData, type, region) => {
         let filtered = baseData;
         if (type !== 'all') filtered = filtered.filter(i => i.mediaType === type);
@@ -324,7 +350,6 @@ async function shardDatabase() {
         return filtered;
     };
 
-    // 辅助函数：添加任务定义
     const addShardDefinition = (pathName, data) => {
         shardTasksDefinitions.push({ basePath: pathName, data: data });
     };
@@ -376,18 +401,15 @@ async function shardDatabase() {
         }
     }
 
-    // --- 关键：使用并发控制执行所有分片任务 ---
+    // --- 执行分片任务 (使用并发控制) ---
     console.log(`  Processing ${shardTasksDefinitions.length} shards with controlled concurrency...`);
-    // 使用 processInParallel 处理所有任务定义，限制并发数为 MAX_CONCURRENT_FILE_IO
-    // 任务函数是 processAndWriteSortedPaginatedShards
     const totalFiles = await processInParallel(
         shardTasksDefinitions, 
         MAX_CONCURRENT_FILE_IO, 
         processAndWriteSortedPaginatedShards
     );
 
-
-    // --- 生成 Manifest (最后执行) ---
+    // --- 生成 Manifest ---
     await fs.writeFile(path.join(FINAL_OUTPUT_DIR, 'manifest.json'), JSON.stringify({
         buildTimestamp: new Date().toISOString(),
         regions: REGIONS, tags: GENRES_AND_THEMES, years: YEARS,
@@ -397,22 +419,37 @@ async function shardDatabase() {
     console.log(`  ✅ Sharding, Sorting, and Paginating complete. Processed ${shardTasksDefinitions.length} shards and wrote ${totalFiles} files.`);
 }
 
-// --- 主函数 ---
+
+// --- 主函数  ---
 async function main() {
-    console.log('Starting IMDb Sharded Build Process (v2.4 - Controlled Concurrency)...');
+    console.log('Starting IMDb Sharded Build Process (v2.5 - Caching & Concurrency Control)...');
     const startTime = Date.now();
+
     try {
-        await buildDataLake();
-        await shardDatabase();
+        // --- 缓存检查 ---
+        console.log('\nChecking Data Lake cache validity...');
+        const cacheValid = await isDataLakeCacheValid(DATA_LAKE_FILE, DATA_LAKE_CACHE_AGE_MS);
+
+        if (cacheValid) {
+            console.log('✅ Cache hit! Using existing Data Lake. Skipping Phases 1-3.');
+        } else {
+            console.log('❌ Cache miss or stale. Starting full build (Phases 1-3). This may take ~30 minutes...');
+            await buildDataLake(); // 仅在缓存无效时运行
+        }
+
+        // --- 总是运行 Phase 4 ---
+        // 这将使用刚刚生成的或缓存中的 datalake.jsonl
+        await shardDatabase(); 
+
         const duration = (Date.now() - startTime) / 1000;
         console.log(`\n✅ Build process successful! Took ${duration.toFixed(2)} seconds.`);
+
     } catch (error) {
         console.error('\n❌ FATAL ERROR during build process:', error.stack || error);
         process.exit(1);
     } finally {
-        // 清理临时文件
-        // await fs.rm(TEMP_DIR, { recursive: true, force: true }).catch(() => {}); 
-        console.log('Build finished.');
+        console.log(`Build finished. Cache file preserved at ${DATA_LAKE_FILE}`);
+        console.log('To force a full rebuild, delete the "temp" directory manually.');
     }
 }
 
