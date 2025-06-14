@@ -6,11 +6,11 @@ const KEYWORD_TO_THEME_MAP = {
     'post-apocalyptic': 'theme:post-apocalyptic', 'dystopian': 'theme:post-apocalyptic',
     'superhero': 'theme:superhero', 'marvel comics': 'theme:superhero', 'dc comics': 'theme:superhero', 'comic book': 'theme:superhero',
     'mecha': 'theme:mecha', 'giant robot': 'theme:mecha',
-    // 奇幻/恐怖
     'zombie': 'theme:zombie', 'undead': 'theme:zombie',
-    'vampire': 'theme:vampire', 'werewolf': 'theme:werewolf', 'monster': 'theme:monster',
+    'vampire': 'theme:vampire', 'werewolf': 'theme:werewolf', 'monster': 'theme:monster', 'kaiju': 'theme:kaiju', 
     'ghost': 'theme:ghost', 'haunting': 'theme:ghost', 'supernatural horror': 'theme:ghost',
-    'found footage': 'theme:found-footage', 'slasher': 'theme:slasher', 'body horror': 'theme:body-horror', 'folk horror': 'theme:folk-horror',
+    'slasher': 'theme:slasher', 'body horror': 'theme:body-horror', 'folk horror': 'theme:folk-horror',
+    // 奇幻
     'magic': 'theme:magic', 'sword and sorcery': 'theme:magic',
     // 犯罪/悬疑
     'gangster': 'theme:gangster', 'mafia': 'theme:gangster', 'mobster': 'theme:gangster',
@@ -20,33 +20,56 @@ const KEYWORD_TO_THEME_MAP = {
     // 亚洲文化
     'wuxia': 'theme:wuxia', 'martial arts': 'theme:wuxia', 'kung fu': 'theme:wuxia',
     'xianxia': 'theme:xianxia', 'samurai': 'theme:samurai', 'ninja': 'theme:ninja', 'yakuza': 'theme:yakuza',
-    'kaiju': 'theme:kaiju', 'tokusatsu': 'theme:tokusatsu',
+    'tokusatsu': 'theme:tokusatsu',
     'isekai': 'theme:isekai', 'slice of life': 'theme:slice-of-life', 'high school': 'theme:slice-of-life',
-    // 奖项
-    'oscar (best picture)': 'award:oscar-winner', 'golden globe (best motion picture)': 'award:golden-globe-winner', 'palme d\'or': 'award:cannes-winner',
-    // 情感/风格
-    'tearjerker': 'mood:tearjerker', 'sadness': 'mood:tearjerker',
-    'feel-good': 'mood:feel-good', 'uplifting': 'mood:feel-good',
-    'suspense': 'mood:suspenseful', 'thrilling': 'mood:suspenseful',
-    'visually stunning': 'style:visual-spectacle', 'epic': 'style:visual-spectacle',
-    'plot twist': 'style:plot-twist', 'mind-bender': 'style:plot-twist',
+    // 其他
+    'found footage': 'theme:found-footage',
 };
+
+// 类型门控：指定哪些主题需要匹配特定的基础类型
+const GATED_THEMES = {
+    'theme:ghost': ['恐怖', '惊悚', '悬疑'],
+    'theme:zombie': ['恐怖'],
+    'theme:vampire': ['恐怖', '奇幻'],
+    'theme:werewolf': ['恐怖', '奇幻'],
+    'theme:monster': ['恐怖', '科幻', '奇幻'],
+    'theme:slasher': ['恐怖', '惊悚'],
+    'theme:body-horror': ['恐怖'],
+    'theme:kaiju': ['科幻', '动作', '恐怖'],
+    'theme:serial-killer': ['犯罪', '惊悚', '恐怖', '悬疑'],
+};
+
+// 预编译正则表达式，使用单词边界 (\b)
+const COMPILED_REGEX_MAP = {};
+for (const [keyword, theme] of Object.entries(KEYWORD_TO_THEME_MAP)) {
+    // 创建一个只匹配独立单词的正则表达式，忽略大小写
+    COMPILED_REGEX_MAP[keyword] = {
+        regex: new RegExp(`\\b${keyword.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')}\\b`, 'i'),
+        theme: theme
+    };
+}
+
 
 export function analyzeAndTagItem(item) {
     if (!item) return null;
 
     const tags = new Set();
-    const year = item.release_date ? new Date(item.release_date).getFullYear() : (item.first_air_date ? new Date(item.first_air_date).getFullYear() : null);
+    // --- 确定日期和年份 ---
+    const release_date = item.release_date || item.first_air_date;
+    const year = release_date ? new Date(release_date).getFullYear() : null;
+
 
     // 1. 基础类型标签 (type:movie, type:tv)
     const mediaType = item.media_type || (item.seasons ? 'tv' : 'movie');
     tags.add(`type:${mediaType}`);
 
-    // 2. 类型标签 (genre:科幻, genre:动画)
+    // 2. 类型标签 (genre:科幻, genre:动画) - 收集类型用于后续门控
     const genreNames = new Set();
     (item.genres || []).forEach(g => { if (g.name) genreNames.add(g.name); });
     genreNames.forEach(name => tags.add(`genre:${name}`));
-    if (genreNames.has('动画')) {
+    
+    const isAnimation = genreNames.has('动画');
+    if (isAnimation) {
         tags.add('type:animation');
     }
 
@@ -55,26 +78,49 @@ export function analyzeAndTagItem(item) {
         tags.add(`decade:${Math.floor(year / 10) * 10}s`);
     }
 
-    // 4. 制作国家/地区标签 (country:us, country:jp)
+    // 4. 制作国家/地区标签
     const countries = new Set();
     (item.origin_country || []).forEach(c => countries.add(c.toLowerCase()));
     (item.production_countries || []).forEach(pc => countries.add(pc.iso_3166_1.toLowerCase()));
     countries.forEach(c => tags.add(`country:${c}`));
 
-    // 5. 聚合地区标签 (region:us-eu, region:east-asia, region:chinese)
-    if (countries.has('us') || countries.has('gb') || countries.has('fr') || countries.has('de')) tags.add('region:us-eu');
+    // 5. 聚合地区标签
+    if (countries.has('us') || countries.has('gb') || countries.has('fr') || countries.has('de') || countries.has('ca') || countries.has('au')) tags.add('region:us-eu');
     if (countries.has('jp') || countries.has('kr')) tags.add('region:east-asia');
     if (countries.has('cn') || countries.has('hk') || countries.has('tw')) tags.add('region:chinese');
 
     // 6. 关键词/主题/风格/情绪标签
-    const keywords = (item.keywords?.keywords || item.keywords?.results || []).map(k => k.name.toLowerCase());
-    keywords.forEach(keyword => {
-        for (const [mapKey, theme] of Object.entries(KEYWORD_TO_THEME_MAP)) {
-            if (keyword.includes(mapKey)) tags.add(theme);
+    const tmdbKeywords = (item.keywords?.keywords || item.keywords?.results || []).map(k => k.name.toLowerCase());
+    const foundThemes = new Set();
+
+    tmdbKeywords.forEach(tmdbKeyword => {
+        for (const { regex, theme } of Object.values(COMPILED_REGEX_MAP)) {
+            // 使用正则表达式进行单词边界匹配
+            if (regex.test(tmdbKeyword)) {
+                foundThemes.add(theme);
+            }
         }
     });
-    
-    // 7. 聚合分类标签 (category:us_tv, category:jp_anime)
+
+    // 应用类型门控
+    foundThemes.forEach(theme => {
+        const requiredGenres = GATED_THEMES[theme];
+        if (requiredGenres) {
+            // 检查该影片的类型是否包含任一所需类型
+            const genreGatePassed = requiredGenres.some(requiredGenre => genreNames.has(requiredGenre));
+            if (genreGatePassed) {
+                tags.add(theme);
+            } else {
+                // 如果未通过，但该主题非常重要且是动画，可以特殊处理 
+                // console.log(`Genre gate blocked ${theme} for item ${item.id} (Genres: ${Array.from(genreNames).join(',')})`);
+            }
+        } else {
+            // 无需门控的主题直接添加
+            tags.add(theme);
+        }
+    });
+
+    // 7. 聚合分类标签 (不变)
     if (tags.has('type:tv')) {
         if (tags.has('region:us-eu')) tags.add('category:us-eu_tv');
         if (tags.has('region:east-asia')) tags.add('category:east-asia_tv');
@@ -85,9 +131,21 @@ export function analyzeAndTagItem(item) {
         if (tags.has('country:cn')) tags.add('category:cn_anime');
     }
 
-    const chineseTranslation = item.translations?.translations?.find(t => t.iso_639_1 === 'zh');
+    // --- 提取中文信息 ---
+    const chineseTranslation = item.translations?.translations?.find(t => t.iso_639_1 === 'zh' || t.iso_639_1 === 'zh-CN');
     const title_zh = chineseTranslation?.data?.title || chineseTranslation?.data?.name || item.title || item.name;
     const overview_zh = chineseTranslation?.data?.overview || item.overview;
+
+    // --- 确定统一的 mediaType ---
+    // 优先级: 动画 > 剧集 > 电影
+    let finalMediaType = 'movie'; // 默认电影
+    if (tags.has('type:tv')) {
+        finalMediaType = 'tv';
+    }
+    if (tags.has('type:animation')) {
+        // 如果是动画，统一使用 anime，但保留原始的 movie/tv 标签用于区分动画电影和动画剧集
+        finalMediaType = 'anime'; 
+    }
 
     return {
         id: item.id,
@@ -96,12 +154,12 @@ export function analyzeAndTagItem(item) {
         overview: overview_zh,
         poster_path: item.poster_path,
         backdrop_path: item.backdrop_path,
-        release_date: item.release_date || item.first_air_date,
+        release_date: release_date, // 使用统一的完整日期
         release_year: year,
-        vote_average: item.vote_average,
+        vote_average: item.vote_average, // 对应客户端的 r
         vote_count: item.vote_count,
-        popularity: item.popularity,
-        belongs_to_collection: item.belongs_to_collection,
+        popularity: item.popularity, // 对应客户端的 d (default_order)
+        mediaType: finalMediaType, // 统一的类型: movie, tv, anime
         semantic_tags: Array.from(tags),
     };
 }
