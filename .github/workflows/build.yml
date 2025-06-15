@@ -64,65 +64,54 @@ jobs:
   # =================================================================
   deploy:
     runs-on: ubuntu-latest
-    needs: build
-    timeout-minutes: 90
+    needs: build # 依赖于 build 作业成功
+    timeout-minutes: 90 # 为部署留足时间
 
     steps:
-      # --- 1. 检出主仓库，以获得一个有效的 .git 目录 ---
+      # --- 1-3. 准备工作 ---
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      # --- 2. 下载构件 ---
       - name: Download build artifact
         uses: actions/download-artifact@v4
         with:
           name: build-data
-
-      # --- 3. 准备部署分支 ---
       - name: Prepare deployment branch
         run: |
           git config user.name "GitHub Action (Deploy)"
           git config user.email "action@github.com"
-          
-          # 创建一个全新的、无历史的孤立分支
           git checkout --orphan data-deploy
-          
-          # 清理工作区，删除所有旧的主分支文件
           git rm -rf . --quiet
           echo "Switched to a clean, orphaned data-deploy branch."
-
-      # --- 4. 提取构件到分支根目录 ---
       - name: Extract artifacts to branch root
         run: |
-          echo "Listing directory contents to verify artifact path..."
-          ls -l
-          
-          echo "Extracting artifacts..."
           tar -xzf dist.tar.gz -C .
-          
-          echo "Cleaning up temporary artifact..."
           rm dist.tar.gz
-          
           echo "✅ Artifacts extracted and cleaned up."
 
-      # --- 5. 分块提交和推送 ---
+      # --- 5. 分批提交并分批推送 ---
       - name: Commit and Push in Batches
         run: |
-          echo "Staging and Committing files in batches of 5000..."
+          echo "Staging and Committing files in local batches..."
+          # 1. 本地分批提交
           find . -name .git -prune -o -type f -print0 | xargs -0 -n 5000 sh -c '
-            echo "Processing a batch of $# files..."
             git add -- "$@"
             git commit --quiet -m "Deploy: data batch"
           ' _
-          
-          echo "✅ All batches committed."
-          if git rev-parse HEAD >/dev/null 2>&1; then
-            echo "Amending final commit message..."
-            git commit --amend --quiet -m "Deploy: Automated data update"
-            
-            echo "Pushing changes to data-deploy..."
-            git push --force origin data-deploy
-            echo "✅ Deployment complete."
-          else
+          echo "✅ All local batches committed."
+
+          # 2. 检查是否有任何提交产生
+          if ! git rev-parse HEAD >/dev/null 2>&1; then
             echo "No changes detected, nothing to push."
+            exit 0
           fi
+          
+          echo "🚀 Starting sequential push to remote..."
+          echo "This will push each local commit batch one by one to avoid server timeouts."
+
+
+          git rev-list --reverse HEAD | while read -r commit_hash; do
+            echo "  -> Pushing commit: ${commit_hash}"
+            git push --force origin "${commit_hash}:refs/heads/data-deploy"
+          done
+          
+          echo "🎉🎉🎉 Deployment complete! All batches pushed successfully."
