@@ -15,7 +15,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 90 # 将超时时间延长到 90 分钟，为 Git 操作留足时间
+    timeout-minutes: 90 
     
     steps:
       # --- 1. 检出主仓库 ---
@@ -66,9 +66,6 @@ jobs:
         run: |
           git config user.name "GitHub Action (Deploy)"
           git config user.email "action@github.com"
-          
-          # 创建一个全新的、无历史记录的孤立分支，命名为 data-deploy
-          # 这是存放构建产物的最佳实践
           git checkout --orphan data-deploy
           
           # 清理工作区，删除所有旧的主分支文件
@@ -79,8 +76,8 @@ jobs:
       # --- 6. 移动构建产物到根目录 ---
       - name: Move build artifacts to root
         run: |
-          echo "Moving 390k+ files to the repository root..."
-          # 使用 rsync 进行高效移动
+          echo "Moving 400k+ files to the repository root..."
+          # 使用 rsync 
           rsync -a --remove-source-files ./imdb-data-platform/dist/ .
           echo "✅ Files moved."
 
