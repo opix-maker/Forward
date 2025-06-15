@@ -30,13 +30,10 @@ jobs:
           node-version: '20'
 
       - name: Cache IMDb datasets
-        id: cache-imdb-data
         uses: actions/cache@v4
         with:
           path: imdb-data-platform/datasets/
-          key: ${{ runner.os }}-imdb-data-${{ hashFiles('**/package-lock.json') }} # 更可靠的缓存键
-          restore-keys: |
-            ${{ runner.os }}-imdb-data-
+          key: ${{ runner.os }}-imdb-data-${{ hashFiles('**/package.json') }}
 
       - name: Install dependencies
         working-directory: ./imdb-data-platform
@@ -61,7 +58,7 @@ jobs:
         with:
           name: build-data # 构件名称
           path: dist.tar.gz # 上传打包好的文件
-          retention-days: 1 # 只保留1天
+          retention-days: 1
 
   # =================================================================
   # JOB 2: 从构件部署
@@ -72,35 +69,48 @@ jobs:
     timeout-minutes: 90
 
     steps:
-      - name: Download build artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: build-data
-
-      - name: Checkout target branch (data-deploy)
+      # --- 1. 检出主仓库，以获得一个有效的 .git 目录 ---
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          ref: data-deploy
-          # 如果分支不存在，会导致失败，但这是预期的
-          fetch-depth: 1
 
-      - name: Prepare deployment area
+      # --- 2. 下载并解压构件 ---
+      - name: Download and extract build artifact
         run: |
-          echo "Cleaning the deployment area..."
-          # 删除所有旧文件，但不删除 .git 目录
-          git rm -rf . --quiet
+          # 下载构件，它会创建一个 build-data 目录
+          gh artifact download build-data
           
           echo "Extracting artifacts..."
-          # -x 解压，-z gzip，-f 文件
-          tar -xzf dist.tar.gz
-          rm dist.tar.gz # 删除压缩包以节省空间
+          tar -xzf build-data/dist.tar.gz
+          
+          # 清理下载的目录和压缩包
+          rm -rf build-data
           echo "✅ Artifacts extracted."
-
-      - name: Commit and Push in Batches
+        env:
+          # 使用 gh cli 需要 GITHUB_TOKEN
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      # --- 3. 准备部署分支 ---
+      - name: Prepare deployment branch
         run: |
-          git config user.name "GitHub Action (Batch Deploy)"
+          git config user.name "GitHub Action (Deploy)"
           git config user.email "action@github.com"
           
+          # 创建一个全新的、无历史的孤立分支，命名为 data-deploy
+          git checkout --orphan data-deploy
+          
+          # 清理工作区，删除所有旧的主分支文件
+          git rm -rf . --quiet
+          
+          echo "Switched to a clean, orphaned data-deploy branch."
+
+      # --- 4. 移动构建产物到根目录 ---
+      - name: Move build artifacts to root
+        run: |
+          echo "Staging all files for commit..."
+
+      # --- 5. 分块提交和推送 ---
+      - name: Commit and Push in Batches
+        run: |
           echo "Staging and Committing files in batches of 5000..."
           
           # 查找所有文件，分批 add 和 commit
