@@ -35,7 +35,7 @@ async function fetchWithRetry(url) {
                     continue;
                 }
             }
-            return response; // Return failed response after max retries or for non-retryable errors
+            return response;
         } catch (networkError) {
             console.warn(`  Network error on attempt ${attempt}: ${networkError.message}`);
             if (attempt >= MAX_RETRIES) {
@@ -48,9 +48,8 @@ async function fetchWithRetry(url) {
 }
 
 
-
-export async function getFullDetailsByImdbId(imdbId) {
-    // --- Step 1: Find the TMDB ID and media type from IMDb ID ---
+export async function getSupplementaryTmdbDetails(imdbId) {
+    // --- Step 1: Find the TMDB ID and media type ---
     const findUrl = new URL(`${API_BASE_URL}/find/${imdbId}`);
     findUrl.searchParams.append('external_source', 'imdb_id');
     
@@ -60,28 +59,32 @@ export async function getFullDetailsByImdbId(imdbId) {
     const findData = await findResponse.json();
     const result = findData.movie_results?.[0] || findData.tv_results?.[0];
     
-    if (!result || !result.id) {
-        return null;
-    }
+    if (!result || !result.id) return null;
     
     const tmdbId = result.id;
     const mediaType = findData.movie_results?.length > 0 ? 'movie' : 'tv';
 
-    // --- Step 2: Get the FULL details using the found TMDB ID ---
+    // --- Step 2: Get the details  ---
+    // 请求中文以获得最好的标题和简介，但分析不依赖它
     const detailsUrl = new URL(`${API_BASE_URL}/${mediaType}/${tmdbId}`);
     detailsUrl.searchParams.append('language', 'zh-CN');
-    detailsUrl.searchParams.append('append_to_response', 'keywords,translations,external_ids');
+    // 只请求主题分析所必需的 keywords
+    detailsUrl.searchParams.append('append_to_response', 'keywords');
 
     const detailsResponse = await fetchWithRetry(detailsUrl.toString());
     if (!detailsResponse.ok) {
-        // 如果中文请求失败 (e.g., 404), 尝试用英文回退，确保能拿到基础数据
-        console.warn(`  Could not fetch Chinese details for ${imdbId} (${tmdbId}). Falling back to English.`);
+         // 如果中文请求失败，用英文回退
+        console.warn(`  Could not fetch Chinese details for ${imdbId}. Falling back to English.`);
         const fallbackUrl = new URL(`${API_BASE_URL}/${mediaType}/${tmdbId}`);
-        fallbackUrl.searchParams.append('append_to_response', 'keywords,translations,external_ids');
+        fallbackUrl.searchParams.append('append_to_response', 'keywords');
         const fallbackResponse = await fetchWithRetry(fallbackUrl.toString());
         if (!fallbackResponse.ok) return null;
-        return fallbackResponse.json();
+        const fallbackData = await fallbackResponse.json();
+        fallbackData.media_type = mediaType; 
+        return fallbackData;
     }
     
-    return detailsResponse.json();
+    const data = await detailsResponse.json();
+    data.media_type = mediaType;
+    return data;
 }
