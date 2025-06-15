@@ -13,35 +13,31 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  # =================================================================
+  # JOB 1: 构建并打包产物
+  # =================================================================
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 60 
+    timeout-minutes: 60
     
     steps:
-      # --- 1. 检出主仓库 ---
       - name: Checkout main repository
         uses: actions/checkout@v4
       
-      # --- 2. 设置环境和缓存 ---
-      - name: Get current date for cache key (UTC)
-        id: date
-        run: echo "date=$(date -u +'%Y-%m-%d')" >> $GITHUB_OUTPUT
-
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      - name: Cache IMDb datasets and temp datalake
+      - name: Cache IMDb datasets
         id: cache-imdb-data
         uses: actions/cache@v4
         with:
           path: imdb-data-platform/datasets/
-          key: ${{ runner.os }}-imdb-data-${{ steps.date.outputs.date }}
+          key: ${{ runner.os }}-imdb-data-${{ hashFiles('**/package-lock.json') }} # 更可靠的缓存键
           restore-keys: |
             ${{ runner.os }}-imdb-data-
-      
-      # --- 3. 安装和构建 ---
+
       - name: Install dependencies
         working-directory: ./imdb-data-platform
         run: npm install
@@ -51,37 +47,78 @@ jobs:
         env:
           TMDB_ACCESS_TOKEN_V4: ${{ secrets.TMDB_ACCESS_TOKEN_V4 }} 
         run: npm run build 
-        # 此时 39万+ 文件在 ./imdb-data-platform/dist/
 
-      # --- 4. 清理磁盘空间 ---
-      - name: Free up disk space before deployment
+      - name: Archive build artifacts
         run: |
-          echo "Deleting intermediate files to create space for deployment..."
-          # 删除原始数据和中间文件
-          rm -rf imdb-data-platform/datasets
-          rm -rf imdb-data-platform/temp
-          rm -rf imdb-data-platform/node_modules
-          echo "Disk space freed."
+          echo "Archiving the dist directory..."
+          cd imdb-data-platform/dist
+          # 打包成 tar.gz 格式，-c 创建，-z gzip压缩，-f 指定文件名
+          tar -czf ../../dist.tar.gz .
+          echo "✅ Artifacts archived to dist.tar.gz"
 
-      # --- 5. 最终部署 ---
-      - name: Deploy generated data to target branch
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
         with:
-          # 提供 Token 进行认证
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          
-          # 指定要部署的目录 (我们的构建产物)
-          publish_dir: ./imdb-data-platform/dist
-          
-          # 指定目标分支
-          publish_branch: data-deploy 
-          
-          # 提交信息
-          commit_message: 'Deploy: Automated data update ${{ steps.date.outputs.date }}'
-          keep_files: false
-          force_orphan: true
+          name: build-data # 构件名称
+          path: dist.tar.gz # 上传打包好的文件
+          retention-days: 1 # 只保留1天
 
-      # --- 6. 失败通知 ---
-      - name: Notify on Failure
-        if: failure() 
-        run: echo "❌ Build workflow failed! Check logs."
+  # =================================================================
+  # JOB 2: 从构件部署
+  # =================================================================
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build # 依赖于 build 作业成功
+    timeout-minutes: 90
+
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build-data
+
+      - name: Checkout target branch (data-deploy)
+        uses: actions/checkout@v4
+        with:
+          ref: data-deploy
+          # 如果分支不存在，会导致失败，但这是预期的
+          fetch-depth: 1
+
+      - name: Prepare deployment area
+        run: |
+          echo "Cleaning the deployment area..."
+          # 删除所有旧文件，但不删除 .git 目录
+          git rm -rf . --quiet
+          
+          echo "Extracting artifacts..."
+          # -x 解压，-z gzip，-f 文件
+          tar -xzf dist.tar.gz
+          rm dist.tar.gz # 删除压缩包以节省空间
+          echo "✅ Artifacts extracted."
+
+      - name: Commit and Push in Batches
+        run: |
+          git config user.name "GitHub Action (Batch Deploy)"
+          git config user.email "action@github.com"
+          
+          echo "Staging and Committing files in batches of 5000..."
+          
+          # 查找所有文件，分批 add 和 commit
+          find . -type f -print0 | xargs -0 -n 5000 sh -c '
+            echo "Processing a batch of $# files..."
+            git add --quiet -- "$@"
+            git commit --quiet -m "Deploy: data batch"
+          ' _
+          
+          echo "✅ All batches committed."
+          
+          if git rev-parse HEAD >/dev/null 2>&1; then
+            echo "Amending final commit message..."
+            git commit --amend --quiet -m "Deploy: Automated data update"
+            
+            echo "Pushing changes to data-deploy..."
+            git push --force origin data-deploy
+            echo "✅ Deployment complete."
+          else
+            echo "No changes detected."
+          fi
