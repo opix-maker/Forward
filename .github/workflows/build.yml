@@ -49,7 +49,6 @@ jobs:
         run: |
           echo "Archiving the dist directory..."
           cd imdb-data-platform/dist
-          # 打包成 tar.gz 格式，-c 创建，-z gzip压缩，-f 指定文件名
           tar -czf ../../dist.tar.gz .
           echo "✅ Artifacts archived to dist.tar.gz"
 
@@ -57,7 +56,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build-data # 构件名称
-          path: dist.tar.gz # 上传打包好的文件
+          path: dist.tar.gz
           retention-days: 1
 
   # =================================================================
@@ -66,49 +65,44 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: build # 依赖于 build 作业成功
-    timeout-minutes: 90
+    timeout-minutes: 90 # 为部署留足时间
 
     steps:
       # --- 1. 检出主仓库，以获得一个有效的 .git 目录 ---
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # --- 2. 下载并解压构件 ---
-      - name: Download and extract build artifact
-        run: |
-          # 下载构件，它会创建一个 build-data 目录
-          gh artifact download build-data
-          
-          echo "Extracting artifacts..."
-          tar -xzf build-data/dist.tar.gz
-          
-          # 清理下载的目录和压缩包
-          rm -rf build-data
-          echo "✅ Artifacts extracted."
-        env:
-          # 使用 gh cli 需要 GITHUB_TOKEN
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
+      # --- 2. 下载构件 ---
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build-data
+
       # --- 3. 准备部署分支 ---
       - name: Prepare deployment branch
         run: |
           git config user.name "GitHub Action (Deploy)"
           git config user.email "action@github.com"
           
-          # 创建一个全新的、无历史的孤立分支，命名为 data-deploy
+          # 创建一个全新的、无历史的孤立分支
           git checkout --orphan data-deploy
           
           # 清理工作区，删除所有旧的主分支文件
           git rm -rf . --quiet
-          
           echo "Switched to a clean, orphaned data-deploy branch."
 
-      # --- 4. 移动构建产物到根目录 ---
-      - name: Move build artifacts to root
+      # --- 4. 提取构件到分支根目录 ---
+      - name: Extract artifacts to branch root
         run: |
-          echo "Staging all files for commit..."
+          echo "Extracting artifacts..."
+          # ！！！修正路径：从下载的 build-data 目录中解压 tar 文件到当前目录 (.)
+          tar -xzf build-data/dist.tar.gz -C .
+          
+          # 清理下载的目录
+          rm -rf build-data
+          echo "✅ Artifacts extracted."
 
-      # --- 5. 分块提交和推送 ---
+      # --- 5. 分块提交和推送 (此逻辑已被证明正确) ---
       - name: Commit and Push in Batches
         run: |
           echo "Staging and Committing files in batches of 5000..."
@@ -122,6 +116,7 @@ jobs:
           
           echo "✅ All batches committed."
           
+          # 检查是否有提交产生
           if git rev-parse HEAD >/dev/null 2>&1; then
             echo "Amending final commit message..."
             git commit --amend --quiet -m "Deploy: Automated data update"
@@ -130,5 +125,5 @@ jobs:
             git push --force origin data-deploy
             echo "✅ Deployment complete."
           else
-            echo "No changes detected."
+            echo "No changes detected, nothing to push."
           fi
