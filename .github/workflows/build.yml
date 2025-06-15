@@ -1,13 +1,15 @@
 name: Build IMDb Discovery Engine Data
 
 on:
-  workflow_dispatch: 
+  workflow_dispatch: # 手动触发
   schedule:
-    - cron: '0 */12 * * *' 
+    - cron: '0 */12 * * *' # 每 12 小时触发
 
+# 权限设置
 permissions:
-  contents: write
+  contents: write # 部署到分支需要写权限
 
+# 并发控制
 concurrency:
   group: ${{ github.workflow }}-build 
   cancel-in-progress: true
@@ -15,13 +17,14 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 60 # 设置 60 分钟超时
     
     steps:
-      # --- 1-3. 设置环境和数据缓存  ---
+      # --- 1. 检出代码 ---
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # --- 2. 设置环境和缓存 (跳过 API 请求) ---
       - name: Get current date for cache key (UTC)
         id: date
         run: echo "date=$(date -u +'%Y-%m-%d')" >> $GITHUB_OUTPUT
@@ -42,52 +45,48 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-imdb-data-
 
-      # --- 4-5. 安装和构建  ---
+      # --- 3. 安装依赖 ---
       - name: Install dependencies
         working-directory: ./imdb-data-platform
         run: npm install
 
+      # --- 4. 运行构建脚本 ---
       - name: Run build script
         working-directory: ./imdb-data-platform
         env:
           TMDB_ACCESS_TOKEN_V4: ${{ secrets.TMDB_ACCESS_TOKEN_V4 }} 
         run: npm run build 
+        # 此时磁盘使用率最高：datasets, temp, node_modules, dist 都存在
 
-
-      - name: Free up disk space
+      # --- 5. 清理磁盘空间 ---
+      - name: Free up disk space before deployment
         run: |
-          echo "Deleting large intermediate and raw data files..."
-          rm -rf imdb-data-platform/datasets  # 删除原始 IMDb 数据 (释放 3-5 GB)
-          rm -rf imdb-data-platform/temp      # 删除中间数据湖
-          rm -rf imdb-data-platform/node_modules # 删除依赖
-          echo "Disk space freed. Ready for deployment."
+          echo "Current disk usage before cleanup:"
+          df -h
+          echo "Deleting intermediate files (datasets, temp, node_modules)..."
+          rm -rf imdb-data-platform/datasets
+          rm -rf imdb-data-platform/temp
+          rm -rf imdb-data-platform/node_modules
+          echo "Cleanup complete. Disk usage after cleanup:"
+          df -h
 
-      # --- 6. 准备部署暂存区 ---
-      - name: Prepare deployment staging area
-        run: |
-          mkdir -p deployment_staging
-          echo "Moving final build artifacts to staging area..."
-          shopt -s dotglob # 确保隐藏文件也被移动
-          # 将最终结果 (dist/) 移动到干净的暂存区
-          mv imdb-data-platform/dist/* deployment_staging/
-          echo "Moved 160k+ files to deployment_staging/"
 
-      # --- 7. 分块提交和部署  ---
-      - name: Deploy data with chunked git operations
-        uses: EndBug/add-and-commit@v9
+      # --- 6. 部署文件 ---
+      # 回归使用 peaceiris/actions-gh-pages，现在有足够空间了
+      - name: Deploy generated data to target branch
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: data-deploy
-          cwd: './deployment_staging'
-          message: 'Deploy: Automated data update (${{ steps.date.outputs.date }})'
-          add: '.'
-          # 分块处理，每批 5000 个文件
-          split: 5000 
-          # 覆盖目标分支
-          push: 'origin data-deploy --force' 
-          remove: '.' 
-          token: ${{ secrets.GITHUB_TOKEN }}
+          # 使用 GitHub 提供的 Token 进行认证
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # 指定要部署的目录：我们构建的最终产物
+          publish_dir: ./imdb-data-platform/dist
+          # 指定目标分支
+          publish_branch: data-deploy 
+          # 提交信息
+          commit_message: 'Deploy: Automated data update ${{ steps.date.outputs.date }}'
+          keep_files: false 
 
-      # --- 8. 失败通知 ---
+      # --- 7. 失败通知 ---
       - name: Notify on Failure
         if: failure() 
         run: echo "❌ Build workflow failed! Check logs."
