@@ -65,7 +65,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: build # 依赖于 build 作业成功
-    timeout-minutes: 90
+    timeout-minutes: 90 # 为部署留足时间
 
     steps:
       # --- 1. 检出主仓库，以获得一个有效的 .git 目录 ---
@@ -95,13 +95,15 @@ jobs:
       - name: Extract artifacts to branch root
         run: |
           echo "Listing directory contents to verify artifact path..."
-          ls -l # 增加调试步骤，确认文件位置
+          ls -l
           
           echo "Extracting artifacts..."
-          # FIX: actions/download-artifact@v4 将单个文件的构件直接放在工作目录下
-          # 因此，我们直接解压 dist.tar.gz，而不是 build-data/dist.tar.gz
           tar -xzf dist.tar.gz -C .
-          echo "✅ Artifacts extracted."
+          
+          echo "Cleaning up temporary artifact..."
+          rm dist.tar.gz # FIX: 删除临时的压缩包，避免污染提交
+          
+          echo "✅ Artifacts extracted and cleaned up."
 
       # --- 5. 分块提交和推送 ---
       - name: Commit and Push in Batches
@@ -111,7 +113,8 @@ jobs:
           # 查找所有文件，分批 add 和 commit
           find . -type f -print0 | xargs -0 -n 5000 sh -c '
             echo "Processing a batch of $# files..."
-            git add --quiet -- "$@"
+            # FIX: git add 没有 --quiet 选项，将其移除
+            git add -- "$@"
             git commit --quiet -m "Deploy: data batch"
           ' _
           
