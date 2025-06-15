@@ -6,7 +6,7 @@ import { pipeline } from 'stream/promises';
 import { createWriteStream, createReadStream } from 'fs';
 import zlib from 'zlib';
 import readline from 'readline';
-import { getFullDetailsByImdbId } from './src/utils/tmdb_api.js'; 
+import { getSupplementaryTmdbDetails } from './src/utils/tmdb_api.js'; 
 import { analyzeAndTagItem } from './src/core/analyzer.js';
 
 // --- 配置 ---
@@ -31,7 +31,7 @@ const REGIONS = ['all', 'region:chinese', 'region:us-eu', 'region:east-asia', 'c
 const GENRES_AND_THEMES = ['genre:爱情', 'genre:冒险', 'genre:悬疑', 'genre:惊悚', 'genre:恐怖', 'genre:科幻', 'genre:奇幻', 'genre:动作', 'genre:喜剧', 'genre:剧情', 'genre:历史', 'genre:战争', 'genre:犯罪', 'theme:whodunit', 'theme:spy', 'theme:courtroom', 'theme:slice-of-life', 'theme:wuxia', 'theme:superhero', 'theme:cyberpunk', 'theme:space-opera', 'theme:time-travel', 'theme:post-apocalyptic', 'theme:mecha', 'theme:zombie', 'theme:monster', 'theme:ghost', 'theme:magic', 'theme:gangster', 'theme:film-noir', 'theme:serial-killer', 'theme:xianxia', 'theme:kaiju', 'theme:isekai'];
 const YEARS = Array.from({length: CURRENT_YEAR - 1990 + 1}, (_, i) => 1990 + i).reverse();
 
-// --- 辅助函数 ---
+// --- 辅助函数 (保持不变) ---
 async function isDataLakeCacheValid(filePath, maxAgeMs) { try { const stats = await fs.stat(filePath); const ageMs = Date.now() - stats.mtimeMs; console.log(`  > Data Lake file found. Age: ${(ageMs / 1000 / 60).toFixed(1)} minutes.`); return ageMs < maxAgeMs; } catch (e) { if (e.code === 'ENOENT') { console.log('  > Data Lake file not found.'); } else { console.error('  > Error checking Data Lake cache:', e.message); } return false; } }
 async function downloadAndUnzipWithCache(url, localPath, maxAgeMs) { const dir = path.dirname(localPath); await fs.mkdir(dir, { recursive: true }); try { const stats = await fs.stat(localPath); if (Date.now() - stats.mtimeMs < maxAgeMs) { console.log(`  ✅ Cache hit for ${path.basename(localPath)}.`); return; } } catch (e) { /* no cache */ } console.log(`  ⏳ Downloading from: ${url}`); const response = await fetch(url, { headers: { 'User-Agent': 'IMDb-Builder/1.0' } }); if (!response.ok) throw new Error(`Failed to download ${url}: ${response.statusText}`); if (!response.body) throw new Error(`Response body is null for ${url}`); const gunzip = zlib.createGunzip(); const destination = createWriteStream(localPath); try { await pipeline(response.body, gunzip, destination); console.log(`  ✅ Download and unzip complete for ${path.basename(localPath)}.`); } catch (error) { console.error(`  ❌ Error during download/unzip for ${url}:`, error); await fs.unlink(localPath).catch(() => {}); throw error; } }
 async function processTsvByLine(filePath, processor) { const fileStream = createReadStream(filePath); const rl = readline.createInterface({ input: fileStream, crlfDelay: Infinity }); let isFirstLine = true; let count = 0; for await (const line of rl) { if (isFirstLine) { isFirstLine = false; continue; } if (line && line.includes('\t')) { processor(line); count++; if (count % 2000000 === 0) { console.log(`    ... Processed ${count} lines...`); } } } console.log(`    ✅ Processed total ${count} lines from ${path.basename(filePath)}.`); }
@@ -41,22 +41,25 @@ async function processInParallel(items, concurrency, task) { const queue = [...i
 let idPool = new Map();
 let akasIndex = new Map();
 async function buildDataLake() {
-    console.log('\n--- PHASE 1 & 2: Building Local Indexes ---');
+    console.log('\n--- PHASE 1 & 2: Building Local IMDb Indexes ---');
     const ratingsIndex = new Map();
     const ratingsPath = path.join(DATASET_DIR, DATASETS.ratings.local);
     await downloadAndUnzipWithCache(DATASETS.ratings.url, ratingsPath, MAX_DOWNLOAD_AGE_MS);
     await processTsvByLine(ratingsPath, (line) => { const parts = line.split('\t'); const votes = parseInt(parts[2], 10) || 0; const rating = parseFloat(parts[1]) || 0; if (votes >= MIN_VOTES && rating >= MIN_RATING) { ratingsIndex.set(parts[0], { rating, votes }); } });
+    
     idPool.clear();
     const basicsPath = path.join(DATASET_DIR, DATASETS.basics.local);
     await downloadAndUnzipWithCache(DATASETS.basics.url, basicsPath, MAX_DOWNLOAD_AGE_MS);
     await processTsvByLine(basicsPath, (line) => { const parts = line.split('\t'); const tconst = parts[0]; const year = parseInt(parts[5], 10); const genres = parts[8]; if (!tconst.startsWith('tt') || parts[4] === '1' || !ALLOWED_TITLE_TYPES.has(parts[1]) || isNaN(year) || year < MIN_YEAR || !ratingsIndex.has(tconst)) { return; } idPool.set(tconst, genres); });
+    
     akasIndex.clear();
     const akasPath = path.join(DATASET_DIR, DATASETS.akas.local);
     await downloadAndUnzipWithCache(DATASETS.akas.url, akasPath, MAX_DOWNLOAD_AGE_MS);
     await processTsvByLine(akasPath, (line) => { const parts = line.split('\t'); const tconst = parts[0]; if (idPool.has(tconst)) { const region = parts[3] && parts[3] !== '\\N' ? parts[3].toLowerCase() : null; const language = parts[4] && parts[4] !== '\\N' ? parts[4].toLowerCase() : null; if (!akasIndex.has(tconst)) { akasIndex.set(tconst, { regions: new Set(), languages: new Set() }); } const entry = akasIndex.get(tconst); if (region) entry.regions.add(region); if (language) entry.languages.add(language); } });
-    console.log(`  ✅ Local indexes built. Filtered ID pool: ${idPool.size}.`);
     
-    console.log(`\n--- PHASE 3: Enriching Data via TMDB API (Concurrency: ${MAX_CONCURRENT_ENRICHMENTS}) ---`);
+    console.log(`  ✅ Local IMDb indexes built. Filtered ID pool: ${idPool.size}.`);
+    
+    console.log(`\n--- PHASE 3: Enriching with Supplementary TMDB Data (Concurrency: ${MAX_CONCURRENT_ENRICHMENTS}) ---`);
     await fs.rm(TEMP_DIR, { recursive: true, force: true }).catch(() => {}); 
     await fs.mkdir(TEMP_DIR, { recursive: true });
     const writeStream = createWriteStream(DATA_LAKE_FILE, { flags: 'a' });
@@ -64,13 +67,16 @@ async function buildDataLake() {
 
     const enrichmentTask = async (imdbId) => {
          try {
-            // 关键改动：只调用一个函数，获取所有数据
-            const fullDetails = await getFullDetailsByImdbId(imdbId);
+            // 最终修复：调用获取补充性数据的函数
+            const supplementaryDetails = await getSupplementaryTmdbDetails(imdbId);
             
-            if (fullDetails) {
+            if (supplementaryDetails) {
+                // 获取权威的 IMDb 数据
                 const imdbAkasInfo = akasIndex.get(imdbId) || { regions: new Set(), languages: new Set() };
                 const imdbGenresString = idPool.get(imdbId);
-                const analyzedItem = analyzeAndTagItem(fullDetails, imdbAkasInfo, imdbGenresString);
+                
+                // 传入补充性 TMDB 数据和权威的 IMDb 数据进行分析
+                const analyzedItem = analyzeAndTagItem(supplementaryDetails, imdbAkasInfo, imdbGenresString);
                 
                 if (analyzedItem) {
                     writeStream.write(JSON.stringify(analyzedItem) + '\n'); 
@@ -87,7 +93,7 @@ async function buildDataLake() {
     console.log(`  ✅ Data Lake freshly built. Total items skipped due to errors: ${apiErrorCount}`);
 }
 
-// --- 阶段 4: 分片 ---
+// --- 阶段 4: 分片、排序和分页 ---
 function minifyItem(item) { return { id: item.id, p: item.poster_path, b: item.backdrop_path, t: item.title, r: item.vote_average, y: item.release_year, rd: item.release_date, hs: parseFloat(item.hotness_score.toFixed(3)), d: parseFloat(item.default_order.toFixed(3)), mt: item.mediaType, o: item.overview }; }
 const dirCreationPromises = new Map();
 async function ensureDir(dir) { if (dirCreationPromises.has(dir)) { return dirCreationPromises.get(dir); } const promise = fs.mkdir(dir, { recursive: true }).catch(err => { if (err.code !== 'EEXIST') throw err; }); dirCreationPromises.set(dir, promise); return promise; }
@@ -128,7 +134,7 @@ async function shardDatabase() {
 
 // --- 主执行入口 ---
 async function main() {
-    console.log('🎬 Starting IMDb Discovery Engine Build Process (v3 - Final Fix)...');
+    console.log('🎬 Starting IMDb Discovery Engine Build Process (v4 - IMDb First Principle)...');
     const startTime = Date.now();
     try {
         console.log('\n🔍 Checking Data Lake cache...');
