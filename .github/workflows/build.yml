@@ -8,6 +8,7 @@ on:
 permissions:
   contents: write # 部署到分支需要写权限
 
+# 并发控制
 concurrency:
   group: ${{ github.workflow }}-build 
   cancel-in-progress: true
@@ -18,13 +19,12 @@ jobs:
     timeout-minutes: 60
     
     steps:
-      # --- 1. 检出代码 (主分支) ---
-      - name: Checkout repository (main)
+      # --- 1. 检出代码 ---
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          path: main_repo # 将主分支检出到 main_repo 目录
+        # 检出到默认位置
 
-      # --- 2. 设置环境和缓存 (跳过 API 请求) ---
+      # --- 2. 设置环境和缓存 ---
       - name: Get current date for cache key (UTC)
         id: date
         run: echo "date=$(date -u +'%Y-%m-%d')" >> $GITHUB_OUTPUT
@@ -38,78 +38,58 @@ jobs:
         id: cache-imdb-data
         uses: actions/cache@v4
         with:
-          # 缓存路径现在需要指向 main_repo 内部
           path: |
-            main_repo/imdb-data-platform/datasets/
-            main_repo/imdb-data-platform/temp/
+            imdb-data-platform/datasets/
+            imdb-data-platform/temp/
           key: ${{ runner.os }}-imdb-data-${{ steps.date.outputs.date }}
           restore-keys: |
             ${{ runner.os }}-imdb-data-
 
-      # --- 3. 安装和构建 ---
+      # --- 3. 安装和构建 (生成 16 万个文件) ---
       - name: Install dependencies
-        working-directory: ./main_repo/imdb-data-platform
+        working-directory: ./imdb-data-platform
         run: npm install
 
       - name: Run build script
-        working-directory: ./main_repo/imdb-data-platform
+        working-directory: ./imdb-data-platform
         env:
           TMDB_ACCESS_TOKEN_V4: ${{ secrets.TMDB_ACCESS_TOKEN_V4 }} 
         run: npm run build 
-        # 16万个文件现在位于 main_repo/imdb-data-platform/dist/
+        # 此时 160k+ 文件在 imdb-data-platform/dist/
 
-      # --- 4. 清理磁盘空间 ---
-      - name: Free up disk space
+      # --- 4. 清理磁盘空间 (解决 "No space left on device") ---
+      - name: Free up disk space before deployment
         run: |
-          echo "Deleting intermediate files to save space..."
-          rm -rf main_repo/imdb-data-platform/datasets
-          rm -rf main_repo/imdb-data-platform/temp
-          rm -rf main_repo/imdb-data-platform/node_modules
+          echo "Deleting intermediate files (datasets, temp, node_modules)..."
+          rm -rf imdb-data-platform/datasets
+          rm -rf imdb-data-platform/temp
+          rm -rf imdb-data-platform/node_modules
+          echo "Disk space freed."
 
-      # --- 5. 检出目标分支 ---
-      - name: Checkout target branch (data-deploy)
-        uses: actions/checkout@v4
+      # --- 5. 准备部署暂存区 ---
+      - name: Prepare deployment staging area
+        run: |
+          mkdir -p deployment_staging
+          echo "Moving 160k+ final build artifacts to staging area..."
+          shopt -s dotglob
+          mv imdb-data-platform/dist/* deployment_staging/
+          echo "Files moved to deployment_staging/"
+
+      # --- 6. 使用分块 Git 操作进行部署  ---
+      - name: Deploy data with chunked git operations
+        uses: EndBug/add-and-commit@v9
         with:
-          ref: data-deploy
-          path: deployment_repo # 将目标分支检出到 deployment_repo 目录
-          # 如果分支不存在，允许它是一个孤立分支
-          fetch-depth: 0 
-
-      # --- 6.使用 rsync 静默同步文件 ---
-      - name: Synchronize files with rsync
-        run: |
-          echo "Starting efficient and quiet file sync using rsync..."
-          # -a: 归档模式
-          # --delete: 删除目标目录中源目录没有的文件（清理旧数据）
-          # --quiet: 只报告错误
-          # 源目录: main_repo/imdb-data-platform/dist/ (末尾斜杠很重要！)
-          # 目标目录: deployment_repo/
-          rsync -a --delete --quiet ./main_repo/imdb-data-platform/dist/ ./deployment_repo/
-          echo "✅ Rsync complete."
-
-      # --- 7. 提交和推送更改 ---
-      - name: Commit and Push changes
-        working-directory: ./deployment_repo # 在目标分支的目录中工作
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action (Rsync Deploy)"
+          # 工作目录
+          cwd: './deployment_staging'
+          # 提交信息
+          message: 'Deploy: Automated data update (${{ steps.date.outputs.date }})'
+          add: '.'
+          split: "5000" 
+          push: 'origin HEAD:data-deploy --force' 
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           
-          echo "Staging all changes (160k+ files)..."
-          # 这仍然可能需要一些时间，但比 cp/rm 快
-          git add . 
 
-          # 检查是否有更改
-          if git diff --staged --quiet; then
-            echo "No changes detected, nothing to commit."
-          else
-            echo "Committing changes..."
-            git commit -m "Deploy: Automated data update (${{ steps.date.outputs.date }})" --quiet
-            echo "Pushing changes to data-deploy..."
-            git push --force origin data-deploy --quiet
-            echo "✅ Deployment push complete."
-          fi
-
-      # --- 8. 失败通知 ---
+      # --- 7. 失败通知 ---
       - name: Notify on Failure
         if: failure() 
         run: echo "❌ Build workflow failed! Check logs."
