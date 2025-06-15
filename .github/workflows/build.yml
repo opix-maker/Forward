@@ -6,7 +6,7 @@ on:
     - cron: '0 */12 * * *' # 每 12 小时触发
 
 permissions:
-  contents: write # 部署到分支需要写权限
+  contents: write
 
 concurrency:
   group: ${{ github.workflow }}-build 
@@ -15,7 +15,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 90 
+    timeout-minutes: 60 
     
     steps:
       # --- 1. 检出主仓库 ---
@@ -51,52 +51,37 @@ jobs:
         env:
           TMDB_ACCESS_TOKEN_V4: ${{ secrets.TMDB_ACCESS_TOKEN_V4 }} 
         run: npm run build 
-        # 文件现在在 ./imdb-data-platform/dist/
+        # 此时 39万+ 文件在 ./imdb-data-platform/dist/
 
       # --- 4. 清理磁盘空间 ---
       - name: Free up disk space before deployment
         run: |
-          echo "Deleting intermediate files to save space..."
+          echo "Deleting intermediate files to create space for deployment..."
+          # 删除原始数据和中间文件
           rm -rf imdb-data-platform/datasets
           rm -rf imdb-data-platform/temp
           rm -rf imdb-data-platform/node_modules
+          echo "Disk space freed."
 
-      # --- 5. 准备部署分支 ---
-      - name: Prepare deployment branch
-        run: |
-          git config user.name "GitHub Action (Deploy)"
-          git config user.email "action@github.com"
-          git checkout --orphan data-deploy
+      # --- 5. 最终部署 ---
+      - name: Deploy generated data to target branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          # 提供 Token 进行认证
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           
-          # 清理工作区，删除所有旧的主分支文件
-          git rm -rf .
+          # 指定要部署的目录 (我们的构建产物)
+          publish_dir: ./imdb-data-platform/dist
           
-          echo "Switched to a clean, orphaned data-deploy branch."
-      
-      # --- 6. 移动构建产物到根目录 ---
-      - name: Move build artifacts to root
-        run: |
-          echo "Moving 400k+ files to the repository root..."
-          # 使用 rsync 
-          rsync -a --remove-source-files ./imdb-data-platform/dist/ .
-          echo "✅ Files moved."
+          # 指定目标分支
+          publish_branch: data-deploy 
+          
+          # 提交信息
+          commit_message: 'Deploy: Automated data update ${{ steps.date.outputs.date }}'
+          keep_files: false
+          force_orphan: true
 
-      # --- 7. 手动分块提交和推送---
-      - name: Commit and Push changes in Batches
-        run: |
-          echo "Staging files in batches of 5000 to avoid memory issues..."
-          # 关键命令：查找所有文件，然后通过 xargs 每 5000 个文件执行一次 git add
-          find . -type f -print0 | xargs -0 -n 5000 git add
-          echo "✅ All files staged."
-
-          # 检查是否有更改
-          if git diff --staged --quiet; then
-            echo "No changes detected, nothing to commit."
-          else
-            echo "Committing 390k+ file changes..."
-            git commit -m "Deploy: Automated data update (${{ steps.date.outputs.date }})"
-            
-            echo "Pushing changes to data-deploy branch..."
-            git push --force origin data-deploy
-            echo "✅ Deployment push complete."
-          fi
+      # --- 6. 失败通知 ---
+      - name: Notify on Failure
+        if: failure() 
+        run: echo "❌ Build workflow failed! Check logs."
